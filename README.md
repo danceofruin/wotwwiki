@@ -6,7 +6,7 @@ Spielerbezogenes Kampagnenwiki für *Way of the Wicked*.
 - Kampagnenstand: 1. Februar 4712 AR, später am Tag
 - Quellenstand: 10. September 2026
 - Redaktionsstand: 13. September 2026
-- Version: 1.4.1
+- Version: 1.4.1 (Bildkorrektur)
 
 ## Benutzung
 
