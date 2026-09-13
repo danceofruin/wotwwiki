@@ -6,7 +6,7 @@ Spielerbezogenes Kampagnenwiki für *Way of the Wicked*.
 - Kampagnenstand: 1. Februar 4712 AR, später am Tag
 - Quellenstand: 10. September 2026
 - Redaktionsstand: 13. September 2026
-- Version: 1.4
+- Version: 1.4.1
 
 ## Benutzung
 
@@ -24,9 +24,9 @@ Die privaten Akten behandeln Körpermerkmale, Begehren, Scham, Macht, intime Bez
 
 Lokale Illustrationen zeigen Styke, Vesper, Valeria, Kaitlyn, Tacitus, Thorn, Tiadora, Grumblejack, Sakkarot, Balentyne und den gemeinsamen Kriegsrat. Vesper, Valeria und Tiadora erhielten in Version 1.4 getrennte Physiognomien und Kompositionen:
 
-- Vesper liest seitlich am Fenster in ihrem roten Buch.
+- Vesper liest seitlich am Fenster in ihrem roten Buch; ihr dünner Schwanz bleibt eine kleine anatomische Nebenlinie.
 - Valeria legt im verschneiten Hof ihre Beinschiene an.
-- Tiadora steigt in schwarzer Trauerkleidung eine Treppe hinab und blickt über die Schulter zurück.
+- Tiadora steigt in schwarzer Trauerkleidung eine Treppe hinab; Schulter, Ellbogen und Hand am Geländer bilden jetzt eine durchgehende anatomische Linie.
 
 Die Bilder sind atmosphärische Charaktervisualisierungen und keine maßstabgetreuen Karten oder neuen Kampagnenereignisse.
 
