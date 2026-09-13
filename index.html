@@ -11,7 +11,7 @@
 <script>
 (async function(){
   try {
-    const res=await fetch('template.html?v=20260913-valeria18',{cache:'no-store'});
+    const res=await fetch('template.html?v=20260913-responsive-art-v1',{cache:'no-store'});
     if(!res.ok) throw new Error('HTTP '+res.status);
     let html=await res.text();
     const marker="  'anatomie-kaitlyn':[";
@@ -20,7 +20,24 @@
       if(!html.includes(marker)) throw new Error('Artwork marker not found');
       html=html.replace(marker,artwork+marker);
     }
-    html=html.replace('"version":"1.4.1"','"version":"1.4.2"');
+
+    const responsiveArtworkCss=`<style id="responsive-artwork-fix">
+.wiki-art img,
+.article-artwork img,
+.featured-gallery img{
+  display:block !important;
+  width:100% !important;
+  height:auto !important;
+  max-height:none !important;
+  aspect-ratio:auto !important;
+  object-fit:contain !important;
+  object-position:center center !important;
+}
+.wiki-art{height:auto !important;min-height:0 !important;}
+</style>`;
+    html=html.replace('</head>',responsiveArtworkCss+'</head>');
+    html=html.replace('"version":"1.4.1"','"version":"1.4.3"');
+    html=html.replace('"version":"1.4.2"','"version":"1.4.3"');
     document.open();
     document.write(html);
     document.close();
