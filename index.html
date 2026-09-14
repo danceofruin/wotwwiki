@@ -11,14 +11,29 @@
 <script>
 (async function(){
   try {
-    const res=await fetch('template.html?v=20260913-responsive-art-v1',{cache:'no-store'});
+    const res=await fetch('template.html?v=20260914-elise-art-v1',{cache:'no-store'});
     if(!res.ok) throw new Error('HTTP '+res.status);
     let html=await res.text();
+
     const marker="  'anatomie-kaitlyn':[";
     const artwork="  'anatomie-valeria':[{src:'assets/valeria-private-night.webp',alt:'Valeria in dunkelblauer Seide und Spitze in einem kerzenbeleuchteten gotischen Gemach.',title:'Valeria – private Charakterstudie',caption:'Rüstung und Schwert sind abgelegt. Die Haltung nicht.'}],\n";
     if(!html.includes("'anatomie-valeria':")) {
       if(!html.includes(marker)) throw new Error('Artwork marker not found');
       html=html.replace(marker,artwork+marker);
+    }
+
+    const elisePublicMarker="  styke:[";
+    const elisePublicArtwork="  elise:[{src:'assets/elise-raven-study.webp',alt:'Elise Zadaria mit Frost in einer verschneiten nordischen Landschaft zwischen alten Steinen.',title:'Elise Zadaria',caption:'Elise fern von Balentyne: Winter, alte Steine und Frost an ihrer Seite. Eine gefährliche Hexe und Anführerin, nicht bloß ein weiterer Schatten vor derselben Festungsmauer.'}],\n";
+    if(!html.includes("  elise:[{src:'assets/elise-raven-study.webp'")) {
+      if(!html.includes(elisePublicMarker)) throw new Error('Elise public artwork marker not found');
+      html=html.replace(elisePublicMarker,elisePublicArtwork+elisePublicMarker);
+    }
+
+    const elisePrivateMarker="  'anatomie-kaitlyn':[";
+    const elisePrivateArtwork="  'intim-elise':[{src:'assets/elise-private-raven.webp',alt:'Elise Zadaria sitzt in einer privaten winterlichen Kammer in dunkler Seide und Spitze; Frost sitzt neben ihr.',title:'Elise – private Charakterstudie',caption:'Nähe ohne Leine: Elise bleibt auch in privater Ruhe vollständig Herrin über Haltung, Abstand und Entscheidung.'}],\n";
+    if(!html.includes("  'intim-elise':[{src:'assets/elise-private-raven.webp'")) {
+      if(!html.includes(elisePrivateMarker)) throw new Error('Elise private artwork marker not found');
+      html=html.replace(elisePrivateMarker,elisePrivateArtwork+elisePrivateMarker);
     }
 
     const responsiveArtworkCss=`<style id="responsive-artwork-fix">
@@ -36,8 +51,9 @@
 .wiki-art{height:auto !important;min-height:0 !important;}
 </style>`;
     html=html.replace('</head>',responsiveArtworkCss+'</head>');
-    html=html.replace('"version":"1.4.1"','"version":"1.4.3"');
-    html=html.replace('"version":"1.4.2"','"version":"1.4.3"');
+    html=html.replace('"version":"1.4.1"','"version":"1.4.4"');
+    html=html.replace('"version":"1.4.2"','"version":"1.4.4"');
+    html=html.replace('"version":"1.4.3"','"version":"1.4.4"');
     document.open();
     document.write(html);
     document.close();
