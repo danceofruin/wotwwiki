@@ -42,7 +42,7 @@ const ARTWORKS={
   thorn:[{src:'assets/thorn-study.webp',alt:'Kardinal Adrastus Thorn als elegant gekleideter, dunkelhaariger Mann in seinem kerzenbeleuchteten Arbeitszimmer.',title:'Kardinal Adrastus Thorn',caption:'Thorn, wie der Knoten ihn kennt: kultiviert, beinahe freundlich und vollkommen Herr des Raumes – Macht ohne sichtbare Anstrengung.'}],
   tiadora:[{src:'assets/tiadora-normal-v1.webp',alt:'Tiadora steht in einem schwarzroten Kleid auf der Treppe von Thorns Anwesen und hält einen versiegelten Brief.',title:'Tiadora',caption:'Thorns Botin mit einem Brief in der Hand: vollkommen beherrscht und niemals bloß schmückendes Beiwerk.'}],
   elise:[
-    {src:'assets/elise-normal-v1.webp',alt:'Elise steht in einem schwarzen Kleid mit einem weißen Raben vor einem winterlichen Fenster.',title:'Elise Zadaria',caption:'Die Anführerin der White Ravens, in Schwarz vor Schnee und mit dem weißen Raben an ihrer Seite.'},
+    {src:'assets/elise-normal-v2.webp',alt:'Elise steht in einem schwarzen Kleid mit einem weißen Raben vor einem winterlichen Fenster.',title:'Elise Zadaria',caption:'Die Anführerin der White Ravens, in Schwarz vor Schnee und mit dem weißen Raben an ihrer Seite.'},
     {src:'assets/elise-private-v1.webp',alt:'Elise sitzt in einem schwarzen Kleid am winterlichen Fenster, der weiße Rabe neben ihr und ein Bein entblößt.',title:'Elise – privat',caption:'Derselbe kalte Raum, nur ohne die förmliche Distanz der stehenden Anführerin.'}
   ],
   mara:[
@@ -234,12 +234,26 @@ function patchedNavigation(){
   out+='<div class="nav-label">Mein Archiv</div>'+navItem('favoriten','Lesezeichen')+navItem('notizen','Eigene Notizen')+navItem('quellen','Quellen & Stand');
   $('#navigation').innerHTML=out;
 }
+function dossierIndexCard(a){return '<article class="card"><span class="eyebrow">'+esc(CATS[a.category]?.title||'Dossier')+'</span><h3><a href="#/artikel/'+a.id+'">'+esc(a.title)+'</a></h3><p>'+esc(a.summary||'')+'</p><div class="card-bottom"><span>'+(a.aliases?.length?esc(a.aliases[0]):'Kampagnenakte')+'</span><a href="#/artikel/'+a.id+'">Akte öffnen →</a></div></article>';}
 function dossiersPage(){
   const core=['styke','vesper','valeria'].map(id=>BYID[id]).filter(Boolean);
-  const rest=ARTICLES.filter(a=>isDossier(a)&&!core.some(x=>x.id===a.id)).sort((a,b)=>a.title.localeCompare(b.title,'de'));
-  let out=pageHead('Figuren','Dossiers','Eine Figur, eine Akte. Biografie, Beziehungen, Erscheinung, Sexualität und vorhandene Spielwerte liegen zusammen.');
+  const allRest=ARTICLES.filter(a=>isDossier(a)&&!core.some(x=>x.id===a.id)).sort((a,b)=>a.title.localeCompare(b.title,'de'));
+  const byId=Object.fromEntries(allRest.map(a=>[a.id,a]));
+  const groups=[
+    {title:'Der Knoten & engster Kreis',desc:'Gebundene Mitglieder, vorgesehene Rekrutinnen, enge Vertraute und Grumblejack.',ids:['tamsin','nella','tacitus','kaitlyn','elise','grumblejack']},
+    {title:'Begleiter & Sonderfälle',desc:'Verse und Zorn, Timeon sowie Grumblejacks Pferd Varlet.',ids:['verse','zorn','timeon','varlet']},
+    {title:'Henchmen & Feldgruppe',desc:'Hakon und die bezahlten Norspiker, die außerhalb Aldencross bereitstehen.',ids:['hakon','arved','eirik','ketil','sten','torvald']},
+    {title:'Asmodeus-Anhänger & andere Knoten',desc:'Thorns unmittelbares Umfeld, die übrigen White Ravens und Sakkarot Fire-Axe.',ids:['thorn','tiadora','sakkarot','trik','trak','dostan','frost']},
+    {title:'Balentyne & Aldencross',desc:'Offiziere, Klerus, Handwerker und Kontakte rund um die Festung.',ids:['havelyn','franz','zack','donnagin','barnabus','jacobian','giuseppe']},
+    {title:'Stykes Eskapaden',desc:'Mara – früher Hazel – und Ellyn, die in den alten Notizen Sunny hieß.',ids:['mara','ellyn']},
+    {title:'Nordfahrt & Frosthamar',desc:'Bekanntschaften, Gegner und Überlebende der Reise in den Norden.',ids:['white-tusk','joseph','odenkirk','sambryl','nerianus','kiliketz']},
+    {title:'Vergangenheit & frühere Gegner',desc:'Personen, deren wichtigste Begegnung mit dem Knoten bereits hinter ihm liegt.',ids:['varning','matilda','darran-vell']}
+  ];
+  const used=new Set(groups.flatMap(g=>g.ids));
+  groups.push({title:'Minor NPCs & lose Spuren',desc:'Randbekanntschaften, Gerüchte und Personen mit bislang geringer Bedeutung.',ids:['bellam','alicia','copper-server','marel','sir-justin','arienne','marlowe','zarik',...allRest.filter(a=>!used.has(a.id)).map(a=>a.id)]});
+  let out=pageHead('Figuren','Dossiers','Nach Stellung im Knoten, Zugehörigkeit und Bedeutung für die laufende Kampagne sortiert.');
   out+=section('Kernfiguren')+'<div class="grid party-grid">'+PARTY.map(partyCard).join('')+'</div>';
-  out+=section('Weitere Personen & Gefährten')+'<div class="dossier-index">'+rest.map(a=>'<article class="card"><span class="eyebrow">'+esc(CATS[a.category]?.title||'Dossier')+'</span><h3><a href="#/artikel/'+a.id+'">'+esc(a.title)+'</a></h3><p>'+esc(a.summary||'')+'</p><div class="card-bottom"><span>'+(a.aliases?.length?esc(a.aliases[0]):'Kampagnenakte')+'</span><a href="#/artikel/'+a.id+'">Akte öffnen →</a></div></article>').join('')+'</div>';
+  groups.forEach(g=>{const rows=[...new Set(g.ids)].map(id=>byId[id]).filter(Boolean);if(!rows.length)return;out+='<section class="dossier-group">'+section(g.title)+'<p class="muted dossier-group-copy">'+esc(g.desc)+'</p><div class="dossier-index">'+rows.map(dossierIndexCard).join('')+'</div></section>';});
   return out;
 }
 function markActive(path){document.querySelectorAll('.nav-link').forEach(a=>{const on=a.dataset.nav===path;a.classList.toggle('active',on);if(on)a.setAttribute('aria-current','page');else a.removeAttribute('aria-current');});}
