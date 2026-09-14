@@ -3,10 +3,10 @@
 Spielerbezogenes Kampagnenwiki für *Way of the Wicked*.
 
 - Live: https://danceofruin.github.io/wotwwiki/
-- Kampagnenstand: 1. Februar 4712 AR, später am Tag
-- Quellenstand: 10. September 2026
+- Kampagnenstand: 2. Februar 4712 AR, späte Nacht
+- Quellenstand: 14. September 2026
 - Technischer Stand: 14. September 2026
-- Version: 2.0.0
+- Version: 2.1.0
 
 ## Benutzung
 
@@ -33,7 +33,7 @@ Es gibt keine nachträglich injizierten Hotfix-Skripte, keine Base64-Bildteile u
 
 ## Bilder
 
-Illustrationen werden als normale PNG- oder WebP-Dateien eingecheckt. Unvollständige Dateien werden von der Integritätsprüfung abgewiesen. Neue Bilder sollen aus den Originaldateien erzeugt und erst nach Prüfung von Abmessungen, Dateivollständigkeit und sichtbarer Qualität eingebunden werden.
+Illustrationen werden als normale PNG- oder WebP-Dateien eingecheckt. Unvollständige Dateien werden von der Integritätsprüfung abgewiesen. Die Charaktergalerien verwenden nach Möglichkeit ein normales und ein privates Motiv. Neue Bilder werden aus den Originaldateien in hoher Qualität erzeugt und erst nach Prüfung von Abmessungen, Dateivollständigkeit und sichtbarer Qualität eingebunden.
 
 ## Notizen
 
