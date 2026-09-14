@@ -11,15 +11,11 @@
 <script>
 (async function(){
  try{
-  try{
-   localStorage.setItem('wotw-wiki-age18-first-v3','confirmed');
-   sessionStorage.setItem('wotw-wiki-age18-v1','confirmed');
-  }catch(e){}
-  const res=await fetch('template.html?v=20260914-dossier-v5',{cache:'no-store'});
+  const res=await fetch('template.html?v=20260914-dossier-v6',{cache:'no-store'});
   if(!res.ok)throw new Error('HTTP '+res.status);
   let html=await res.text();
-  html=html.replace('</head>','<link rel="stylesheet" href="dossier-v3.css?v=20260914-3"></head>');
-  const patch='<script src="dossier-v4.js?v=20260914-3"><'+'/script><script src="dossier-hotfix-v1.js?v=20260914-3"><'+'/script>';
+  html=html.replace('</head>','<link rel="stylesheet" href="dossier-v3.css?v=20260914-4"></head>');
+  const patch='<script>adultUnlocked=true;document.body.classList.remove("first-age-gate");<'+'/script><script src="dossier-v4.js?v=20260914-4"><'+'/script><script src="dossier-hotfix-v1.js?v=20260914-4"><'+'/script>';
   html=html.replace('</body>',patch+'</body>');
   document.open();document.write(html);document.close();
  }catch(err){
