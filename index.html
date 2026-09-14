@@ -11,52 +11,116 @@
 <script>
 (async function(){
   try {
-    const res=await fetch('template.html?v=20260914-elise-art-v1',{cache:'no-store'});
+    const res=await fetch('template.html?v=20260914-single-dossier-v1',{cache:'no-store'});
     if(!res.ok) throw new Error('HTTP '+res.status);
     let html=await res.text();
 
-    const marker="  'anatomie-kaitlyn':[";
-    const artwork="  'anatomie-valeria':[{src:'assets/valeria-private-night.webp',alt:'Valeria in dunkelblauer Seide und Spitze in einem kerzenbeleuchteten gotischen Gemach.',title:'Valeria – private Charakterstudie',caption:'Rüstung und Schwert sind abgelegt. Die Haltung nicht.'}],\n";
-    if(!html.includes("'anatomie-valeria':")) {
-      if(!html.includes(marker)) throw new Error('Artwork marker not found');
-      html=html.replace(marker,artwork+marker);
-    }
-
-    const elisePublicMarker="  styke:[";
-    const elisePublicArtwork="  elise:[{src:'assets/elise-raven-study.webp',alt:'Elise Zadaria mit Frost in einer verschneiten nordischen Landschaft zwischen alten Steinen.',title:'Elise Zadaria',caption:'Elise fern von Balentyne: Winter, alte Steine und Frost an ihrer Seite. Eine gefährliche Hexe und Anführerin, nicht bloß ein weiterer Schatten vor derselben Festungsmauer.'}],\n";
-    if(!html.includes("  elise:[{src:'assets/elise-raven-study.webp'")) {
-      if(!html.includes(elisePublicMarker)) throw new Error('Elise public artwork marker not found');
-      html=html.replace(elisePublicMarker,elisePublicArtwork+elisePublicMarker);
-    }
-
-    const elisePrivateMarker="  'anatomie-kaitlyn':[";
-    const elisePrivateArtwork="  'intim-elise':[{src:'assets/elise-private-raven.webp',alt:'Elise Zadaria sitzt in einer privaten winterlichen Kammer in dunkler Seide und Spitze; Frost sitzt neben ihr.',title:'Elise – private Charakterstudie',caption:'Nähe ohne Leine: Elise bleibt auch in privater Ruhe vollständig Herrin über Haltung, Abstand und Entscheidung.'}],\n";
-    if(!html.includes("  'intim-elise':[{src:'assets/elise-private-raven.webp'")) {
-      if(!html.includes(elisePrivateMarker)) throw new Error('Elise private artwork marker not found');
-      html=html.replace(elisePrivateMarker,elisePrivateArtwork+elisePrivateMarker);
-    }
-
     const responsiveArtworkCss=`<style id="responsive-artwork-fix">
-.wiki-art img,
-.article-artwork img,
-.featured-gallery img{
-  display:block !important;
-  width:100% !important;
-  height:auto !important;
-  max-height:none !important;
-  aspect-ratio:auto !important;
-  object-fit:contain !important;
-  object-position:center center !important;
-}
-.wiki-art{height:auto !important;min-height:0 !important;}
+.wiki-art img,.article-artwork img,.featured-gallery img{display:block!important;width:100%!important;height:auto!important;max-height:none!important;aspect-ratio:auto!important;object-fit:contain!important;object-position:center center!important}
+.wiki-art{height:auto!important;min-height:0!important}
+.merged-private{margin-top:64px;padding-top:28px;border-top:2px solid var(--accent)}
+.merged-private>.private-dossier-head{padding:20px 22px;margin:0 0 24px;background:linear-gradient(110deg,var(--panel),var(--wash));border:1px solid var(--line);border-radius:7px}
+.merged-private>.private-dossier-head h2{border:0;padding:0;margin:6px 0 8px}
+.merged-private .wiki-art{margin:22px 0 26px}
+.dossier-fold{border:1px solid var(--line);background:var(--panel);border-radius:6px;margin:30px 0;overflow:hidden}
+.dossier-fold>summary{cursor:pointer;padding:14px 18px;color:var(--accent);font-family:var(--serif);font-size:1.08rem;background:var(--wash)}
+.dossier-fold>.dossier-fold-body{padding:4px 20px 20px}
+.article-body .merged-private h2:first-of-type{margin-top:0}
 </style>`;
     html=html.replace('</head>',responsiveArtworkCss+'</head>');
-    html=html.replace('"version":"1.4.1"','"version":"1.4.4"');
-    html=html.replace('"version":"1.4.2"','"version":"1.4.4"');
-    html=html.replace('"version":"1.4.3"','"version":"1.4.4"');
-    document.open();
-    document.write(html);
-    document.close();
+
+    const patch=`<script id="single-dossier-patch">
+(function(){
+  const MERGE={
+    styke:['psy-styke','dreierkonstellation','bogen-styke','intim-styke','intim-styke-vesper','intim-styke-valeria','anatomie-styke'],
+    vesper:['psy-vesper','dreierkonstellation','bogen-vesper','intim-vesper','intim-styke-vesper','intim-vesper-valeria','anatomie-vesper'],
+    valeria:['psy-valeria','dreierkonstellation','bogen-valeria','intim-valeria','intim-styke-valeria','intim-vesper-valeria','anatomie-valeria'],
+    kaitlyn:['intim-kaitlyn','intim-kaitlyn-korruption','anatomie-kaitlyn'],
+    tacitus:['anatomie-tacitus'],
+    elise:['intim-elise'],
+    tamsin:['intim-tamsin','anatomie-tamsin'],
+    mara:['intim-mara'],
+    ellyn:['intim-ellyn']
+  };
+  const PRIVATE_ART={vesper:'anatomie-vesper',valeria:'anatomie-valeria',kaitlyn:'anatomie-kaitlyn',elise:'intim-elise',tamsin:'intim-tamsin',mara:'intim-mara',ellyn:'intim-ellyn',tacitus:'anatomie-tacitus'};
+  const HIDDEN=new Set(Object.values(MERGE).flat());
+  const PARENT={}; Object.entries(MERGE).forEach(([p,ids])=>ids.forEach(id=>{if(!PARENT[id])PARENT[id]=p;}));
+
+  Object.assign(ARTWORKS,{
+    tiadora:[{src:'assets/tiadora-manor-v4.webp',alt:'Tiadora in schwarzer aristokratischer Kleidung auf der Treppe eines dunklen Herrenhauses, einen versiegelten Brief in der Hand.',title:'Tiadora',caption:'Thorns Botin in ihrem eigenen Element: kein Schlachtfeld, sondern eine Treppe, ein Siegel und die Gewissheit, dass sie den Raum bereits beherrscht.'}],
+    tamsin:[{src:'assets/tamsin-stableyard.webp',alt:'Tamsin Blackerly in einem winterlichen Stallhof, robust gekleidet und mit Schlüsselbund.',title:'Tamsin Blackerly',caption:'Praktisch, wachsam und ohne höfische Politur: Tamsin gehört in den Hof, zwischen Holz, Stroh und Arbeit.'}],
+    mara:[{src:'assets/mara-washhouse.webp',alt:'Mara Fenner im warmen Waschhaus zwischen Leinen, Bottichen und Dampf.',title:'Mara Fenner',caption:'Mara in ihrer Welt: warmes Licht, nasse Arbeit und eine Frau, die weder Dienstbarkeit noch Sinnlichkeit mit Schwäche verwechselt.'}],
+    ellyn:[{src:'assets/ellyn-serviceyard.webp',alt:'Ellyn Reed mit Wäschekorb in einem kalten Diensthof.',title:'Ellyn Reed',caption:'Leiser als Mara, aber nicht unsichtbar: Ellyn zwischen Arbeit, Winterlicht und dem Blick einer Frau, die mehr bemerkt als sie sagt.'}],
+    'intim-tamsin':[{src:'assets/tamsin-private.webp',alt:'Tamsin sitzt in einer schlichten privaten Kammer auf einem Holzstuhl.',title:'Tamsin – private Charakterstudie',caption:'Keine Boudoirpose: dieselbe robuste Frau, nur ohne Hof, Rüstung und Publikum.'}],
+    'intim-mara':[{src:'assets/mara-private.webp',alt:'Mara sitzt nach der Arbeit in einer warmen Waschhauskammer.',title:'Mara – private Charakterstudie',caption:'Wärme, Arbeit und selbstverständliche Körperlichkeit bleiben auch privat ihre Sprache.'}],
+    'intim-ellyn':[{src:'assets/ellyn-private.webp',alt:'Ellyn liegt in einem einfachen Nachthemd auf einem schmalen Bett.',title:'Ellyn – private Charakterstudie',caption:'Eine ruhigere Form von Nähe: weniger Pose, mehr zögernde Neugier.'}],
+    'anatomie-kaitlyn':[{src:'assets/kaitlyn-private-v2.webp',alt:'Kaitlyn Mott sitzt in roter Seide vor einem Spiegel im Kerzenschein.',title:'Kaitlyn – private Charakterstudie',caption:'Hinter der gesellschaftlichen Fassade: rote Seide, Spiegel und eine Frau, die sich selbst beim Überschreiten ihrer alten Grenzen beobachtet.'}],
+    'anatomie-valeria':[{src:'assets/valeria-private-night.webp',alt:'Valeria in dunkelblauer Seide und Spitze in einem kerzenbeleuchteten gotischen Gemach.',title:'Valeria – private Charakterstudie',caption:'Rüstung und Schwert sind abgelegt. Die Haltung nicht.'}]
+  });
+
+  const baseRefresh=refreshVisibleData;
+  refreshVisibleData=function(){
+    baseRefresh();
+    DATA={...DATA,
+      articles:DATA.articles.filter(a=>!HIDDEN.has(a.id)),
+      edges:DATA.edges.filter(e=>!HIDDEN.has(e.a)&&!HIDDEN.has(e.b)),
+      categories:Object.fromEntries(Object.entries(DATA.categories).filter(([k])=>!['profile','boegen','intimitaet'].includes(k)))
+    };
+    ARTICLES=DATA.articles;
+    BYID=Object.assign(Object.create(null),Object.fromEntries(ARTICLES.map(a=>[a.id,a])));
+    CATS=DATA.categories;
+  };
+
+  navigation=function(){
+    let out='<div class="nav-label">Die Kampagne</div>'+navItem('start','Am Spieltisch')+navItem('artikel/story-so-far','Die Geschichte bisher')+navItem('chronik','Chronik & Kalender',DATA.events.length);
+    out+='<div class="nav-label">Personen</div>'+navItem('kategorie/charaktere','Kernfiguren',ARTICLES.filter(a=>a.category==='charaktere').length)+navItem('kategorie/personen','Personen & Gefährten',ARTICLES.filter(a=>a.category==='personen').length)+navItem('beziehungen','Beziehungsatlas',DATA.edges.length);
+    out+='<div class="nav-label">Welt</div>'+navItem('kategorie/orte','Orte & Wege',ARTICLES.filter(a=>a.category==='orte').length)+navItem('kategorie/gruppen','Gruppen & Institutionen',ARTICLES.filter(a=>a.category==='gruppen').length)+navItem('kategorie/gegenstaende','Gegenstände & Belege',ARTICLES.filter(a=>a.category==='gegenstaende').length)+navItem('kategorie/welt','Setting & Weltwissen',ARTICLES.filter(a=>a.category==='welt').length);
+    out+='<div class="nav-label">Planung & Regeln</div>'+navItem('kategorie/vorhaben','Pläne & offene Fäden',ARTICLES.filter(a=>a.category==='vorhaben').length)+navItem('kategorie/faehigkeiten','Zauber & Fähigkeiten',ARTICLES.filter(a=>a.category==='faehigkeiten').length)+navItem('kategorie/regeln','Regeln & Konventionen',ARTICLES.filter(a=>a.category==='regeln').length);
+    out+='<div class="nav-label">Mein Archiv</div>'+navItem('favoriten','Lesezeichen')+navItem('notizen','Eigene Notizen')+navItem('quellen','Quellen & Stand');
+    $('#navigation').innerHTML=out;
+  };
+
+  const baseArticle=article;
+  article=function(a){
+    if(!a)return baseArticle(a);
+    const ids=MERGE[a.id]||[];
+    if(!ids.length)return baseArticle(a);
+    const publicParts=[],privateParts=[],sources=[...(a.sources||[])],links=[...(a.links||[])],backs=[...(a.backlinks||[])];
+    ids.forEach(id=>{
+      const x=RAW_BYID[id]; if(!x)return;
+      (x.sources||[]).forEach(s=>sources.push(s)); (x.links||[]).forEach(s=>links.push(s)); (x.backlinks||[]).forEach(s=>backs.push(s));
+      const title='<h2>'+esc(x.title)+'</h2>';
+      if(x.adult) privateParts.push(title+x.body); else if(x.category==='boegen') publicParts.push('<details class="dossier-fold"><summary>'+esc(x.title)+'</summary><div class="dossier-fold-body">'+x.body+'</div></details>'); else publicParts.push(title+x.body);
+    });
+    let body=a.body+publicParts.join('');
+    if(adultUnlocked&&privateParts.length){
+      const artId=PRIVATE_ART[a.id],arts=artId?(ARTWORKS[artId]||[]):[];
+      body+='<section class="merged-private"><div class="private-dossier-head"><div class="eyebrow">Private Akte · 18+</div><h2>Was unter Rüstung, Kleidern und guten Manieren bleibt</h2><p>Intime Kontinuität, Körpermerkmale und Beziehungsentwicklung dieser erwachsenen fiktiven Figur. Derselbe Charakter, dieselbe Akte.</p></div>'+(arts.length?arts.map(x=>renderArtworkFigure(x)).join(''):'')+privateParts.join('')+'</section>';
+    }
+    const clean=x=>[...new Set(x)].filter(id=>!HIDDEN.has(id));
+    return baseArticle({...a,body,sources:[...new Set(sources)],links:clean(links),backlinks:clean(backs)});
+  };
+
+  const baseRoute=route;
+  route=function(){
+    let raw=location.hash.startsWith('#/')?location.hash.slice(2):'start',parts=raw.split('?')[0].split('/'),view=parts[0]||'start',id=parts[1];
+    if(view==='ab18'||(view==='kategorie'&&id==='intimitaet')){location.hash='#/start';return;}
+    if(view==='artikel'&&PARENT[id]){location.hash='#/artikel/'+PARENT[id];return;}
+    if(view==='artikel'&&MERGE[id]&&!adultUnlocked&&MERGE[id].some(x=>RAW_BYID[x]?.adult)){showAgeGate(location.hash||('#/artikel/'+id));return;}
+    return baseRoute();
+  };
+
+  refreshVisibleData();
+  navigation();
+  route();
+})();
+<\/script>`;
+    html=html.replace('</body>',patch+'</body>');
+    html=html.replace('"version":"1.4.1"','"version":"1.5.0"');
+    html=html.replace('"version":"1.4.2"','"version":"1.5.0"');
+    html=html.replace('"version":"1.4.3"','"version":"1.5.0"');
+    html=html.replace('"version":"1.4.4"','"version":"1.5.0"');
+    document.open(); document.write(html); document.close();
   } catch(err) {
     document.getElementById('boot').innerHTML='Das Archiv konnte nicht geladen werden.<br><br><a href="template.html">Ungepatchte Fassung öffnen</a>';
     console.error(err);
