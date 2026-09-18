@@ -1,0 +1,341 @@
+{
+  "meta": {
+    "schemaVersion": 1,
+    "authority": "GENERATED VIEW. DO NOT USE AS CAMPAIGN AUTHORITY.",
+    "generated": true,
+    "playerSafe": true,
+    "generatedAt": "2026-09-18T14:44:38+00:00",
+    "sourceRevision": "b5bb6d372eb4bd92fcda2f06d5d5ff5ca6525255c092483cdb3a0c94e0f636f2",
+    "reviewedAt": "2026-09-18",
+    "sheetRevision": "ffc7eb12d523a9d0a758eda59dbcc4d2f2162279f97f283b0f7dc59694b7a906"
+  },
+  "scene": {
+    "date": "4712-02-06",
+    "dateLabel": "6. Februar 4712 AR",
+    "time": "Vor Morgengrauen",
+    "location": "Lord’s Dalliance",
+    "locationId": "dalliance",
+    "detail": "Rückwärtiges Zimmer im Obergeschoss · Aldencross",
+    "summary": "Styke, Vesper, Valeria und Kaitlyn schlafen. Verse ist im Zimmer. Die nächste Szene beginnt hier.",
+    "rest": "Schlaf läuft. Eine abgeschlossene Rast oder tägliche Auffrischung ist noch nicht bestätigt."
+  },
+  "quests": [
+    {
+      "id": "mott",
+      "title": "Mott · Kaitlyn · Eddarly",
+      "status": "active",
+      "updated": "4712-02-06",
+      "summary": "Die Briefe liegen offen. Was Franz oder Zack daraus machen, ist noch unbekannt.",
+      "known": [
+        "Vesper hat die echten Zack-Briefe in Kaitlyns Truhe offengelegt. Ein- und Ausstieg gelangen ohne Alarm.",
+        "Kaitlyn ist dem Knoten beigetreten.",
+        "Noch keine neue Nachricht über Franz oder Zack."
+      ],
+      "next": "Eine glaubwürdige Nachricht oder eigene Beobachtung abwarten bzw. beschaffen.",
+      "links": [
+        "kaitlyn",
+        "franz",
+        "zack"
+      ]
+    },
+    {
+      "id": "worker",
+      "title": "Vesper in Balentyne",
+      "status": "active",
+      "updated": "4712-02-06",
+      "summary": "Die Arbeitertarnung bleibt ein Zugang zur Festung.",
+      "known": [
+        "Vesper kann Zack sicher wiedererkennen.",
+        "Ein verlässlicher Dienstplan von Zack liegt nicht vor."
+      ],
+      "next": "Den etablierten Zugang nutzen; neue Erkenntnisse erst nach tatsächlicher Beobachtung eintragen.",
+      "links": [
+        "vesper",
+        "balentyne",
+        "zack"
+      ]
+    },
+    {
+      "id": "nella-tamsin",
+      "title": "Nella & Tamsin",
+      "status": "waiting",
+      "updated": "4712-02-06",
+      "summary": "Familienauftrag und Botengang laufen; die Rückkehrfrist bleibt relevant.",
+      "known": [
+        "Nella und Tamsin sind beauftragt, Nellas Familie fortzubringen und Hakon zu erreichen.",
+        "Rückkehr spätestens am 7. Februar.",
+        "Nella hat die graue Mietstute; Tamsin ein Vell-Reitpferd."
+      ],
+      "next": "Rückkehr oder Nachricht abwarten. Ihr genauer Aufenthaltsort ist hier nicht bekannt.",
+      "links": [
+        "nella",
+        "tamsin",
+        "hakon"
+      ]
+    },
+    {
+      "id": "mirelle",
+      "title": "Mirelles Maßarbeit",
+      "status": "scheduled",
+      "updated": "4712-02-06",
+      "summary": "Anprobe nach Ladenschluss am 6. Februar.",
+      "known": [
+        "Stykes Unterwäsche und Valerias Rüstungsunterkleidung sind bestellt.",
+        "Eine mögliche Aufnahme Mirelles ist eine Absicht, kein bereits vereinbarter Pakt."
+      ],
+      "next": "Termin wahrnehmen.",
+      "links": [
+        "mirelle",
+        "valeria"
+      ]
+    },
+    {
+      "id": "tacitus",
+      "title": "Tacitus & Jacobian",
+      "status": "scheduled",
+      "updated": "4712-02-06",
+      "summary": "Das gemeinsame Abendessen ist zugesagt.",
+      "known": [
+        "8. Februar, ungefähr 20:00 Uhr im Lord’s Dalliance.",
+        "Tacitus hat mit Jacobian als Begleitung zugesagt; auch er hat zugestimmt."
+      ],
+      "next": "Vorbereitung und Termin. Eine spätere Rekrutierung ist nicht vereinbart.",
+      "links": [
+        "tacitus",
+        "jacobian",
+        "dalliance"
+      ]
+    },
+    {
+      "id": "balentyne",
+      "title": "Balentyne vorbereiten",
+      "status": "scheduled",
+      "updated": "4712-02-06",
+      "summary": "Der gewählte Haupttermin bleibt die Nacht vom 8. auf den 9. Februar.",
+      "known": [
+        "Die Gelegenheit beim wöchentlichen Eintopf am 8. Februar ist weiterhin geplant.",
+        "Sechs Giftpakete sind vorhanden; Zusammensetzung, Dosis, Regelwirkung und Zugang sind offen.",
+        "Der verborgene Gang ist intakt. Zwei gewöhnliche Wandketten sind im Tunnel angebracht."
+      ],
+      "next": "Offene Vorbereitung klären. Die Befehle an Hakon bleiben Rückhalt, Sicherung und Evakuierung.",
+      "links": [
+        "balentyne",
+        "hakon",
+        "grumblejack",
+        "dalliance"
+      ]
+    },
+    {
+      "id": "kaitlyn-bound",
+      "title": "Kaitlyn tritt dem Knoten bei",
+      "status": "completed",
+      "updated": "4712-02-05",
+      "summary": "Kaitlyns Bindung wurde am späten 5. Februar vollzogen.",
+      "known": [
+        "Der Pakt ist geschlossen.",
+        "Für die unmittelbare Zerstörung Aldencross’ ist ihr Verbergen und Abwarten zugesagt.",
+        "Sie ist kein Mitglied des Collective."
+      ],
+      "next": "Ihre unauffällige Unterbringung und eine mögliche Haarfärbung sind noch zu klären.",
+      "links": [
+        "kaitlyn",
+        "vesper"
+      ]
+    },
+    {
+      "id": "rental",
+      "title": "Mietpferde geregelt",
+      "status": "completed",
+      "updated": "4712-02-05",
+      "summary": "Die Rückgabe der zwei Pferde in Aldencross wurde am 5. Februar geregelt.",
+      "known": [
+        "Die graue Stute bleibt bei Nella.",
+        "Fehl- bzw. Verspätungskosten für die Stute werden vorerst aus der bestehenden Kaution bestritten."
+      ],
+      "next": "Die Stute bei Rückkehr zurückbringen; genauer Kautionsrest offen.",
+      "links": [
+        "nella",
+        "tamsin"
+      ]
+    }
+  ],
+  "appointments": [
+    {
+      "id": "fitting",
+      "date": "4712-02-06",
+      "label": "6. Feb.",
+      "time": "Nach Ladenschluss",
+      "title": "Anprobe bei Mirelle",
+      "note": "Unterwäsche / Rüstungsunterkleidung",
+      "links": [
+        "mirelle",
+        "valeria"
+      ]
+    },
+    {
+      "id": "return",
+      "date": "4712-02-07",
+      "label": "7. Feb.",
+      "time": "Spätestens",
+      "title": "Nella & Tamsin zurück",
+      "note": "Rückkehrfrist, kein bestätigter Ankunftszeitpunkt",
+      "links": [
+        "nella",
+        "tamsin"
+      ]
+    },
+    {
+      "id": "stew",
+      "date": "4712-02-08",
+      "label": "8. Feb.",
+      "time": "Uhrzeit offen",
+      "title": "Giuseppes Eintopf",
+      "note": "Geplante Gelegenheit; Durchführung offen",
+      "links": [
+        "giuseppe",
+        "balentyne"
+      ]
+    },
+    {
+      "id": "dinner",
+      "date": "4712-02-08",
+      "label": "8. Feb.",
+      "time": "Etwa 20:00",
+      "title": "Tacitus & Jacobian",
+      "note": "Zugesagt · Lord’s Dalliance",
+      "links": [
+        "tacitus",
+        "jacobian",
+        "dalliance"
+      ]
+    },
+    {
+      "id": "assault",
+      "date": "4712-02-08",
+      "label": "8. → 9. Feb.",
+      "time": "In der Nacht",
+      "title": "Balentyne-Hauptaktion",
+      "note": "Gewählter Plantermin",
+      "links": [
+        "balentyne",
+        "hakon",
+        "grumblejack"
+      ]
+    }
+  ],
+  "missions": [
+    {
+      "id": "treasury",
+      "label": "Knotenkasse",
+      "value": "7.531 gp",
+      "note": "Liquide Mittel; keine persönliche Geldbörse."
+    },
+    {
+      "id": "poison",
+      "label": "Rattengift",
+      "value": "6 Pakete",
+      "note": "Zusammensetzung, Dosis und PF-Wirkung noch offen."
+    },
+    {
+      "id": "laxative",
+      "label": "Altes Abführmittel",
+      "value": "Aufgebraucht",
+      "note": "Kein Restbestand aus Januar."
+    },
+    {
+      "id": "hakon",
+      "label": "Hakon & sechs Nordmänner",
+      "value": "Bereitschaft befohlen",
+      "note": "Letzter bekannter Auftrag: Rückhalt, Sicherung, Evakuierung."
+    },
+    {
+      "id": "grumblejack",
+      "label": "Grumblejack",
+      "value": "Ablenkung vorgesehen",
+      "note": "Außen bleiben, einmal ablenken, dann zurückziehen."
+    },
+    {
+      "id": "trace",
+      "label": "Einbruchsgut bei Vesper",
+      "value": "2 Leuchter · 4 Löffel",
+      "note": "Kleine Silberstücke; nicht in liquide Kasse umgerechnet."
+    }
+  ],
+  "people": [
+    "kaitlyn",
+    "franz",
+    "zack",
+    "tacitus",
+    "jacobian",
+    "mirelle",
+    "nella",
+    "tamsin"
+  ],
+  "party": [
+    {
+      "id": "styke",
+      "name": "Styke",
+      "class": "Zelot 4 / Psion (Egoist) 1",
+      "hp": {
+        "current": 34,
+        "max": 34
+      },
+      "conditions": [],
+      "state": "Schläft",
+      "resourceNote": "Letzter bestätigter Kampfstand; kein späterer HP- oder PP-Verbrauch festgehalten.",
+      "gearNote": "Eiserner Stirnreif im Besitz, derzeit inaktiv. Rüstung im Schlaf nicht als angelegt bestätigt.",
+      "pp": {
+        "current": 11,
+        "max": 11
+      },
+      "focus": true
+    },
+    {
+      "id": "vesper",
+      "name": "Vesper",
+      "class": "Oracle (Spirit Guide) 5",
+      "hp": {
+        "current": 28,
+        "max": 28
+      },
+      "conditions": [],
+      "state": "Schläft",
+      "resourceNote": "Verbleibende Zauberplätze sind nicht bestätigt. 7 / 5 sind Tageskapazitäten; Schlaf setzt sie nicht automatisch zurück.",
+      "gearNote": "Mithralkettenhemd und Mithralschild im Besitz. Kampfprofil gilt mit angelegter Ausrüstung.",
+      "verse": {
+        "present": true,
+        "hpCurrent": null,
+        "hpMax": 14
+      },
+      "slots": [
+        {
+          "level": 1,
+          "current": null,
+          "max": 7
+        },
+        {
+          "level": 2,
+          "current": null,
+          "max": 5
+        }
+      ],
+      "essence": {
+        "total": 2,
+        "standard": "1 Spoils of War · 1 für Witness to Glory"
+      }
+    },
+    {
+      "id": "valeria",
+      "name": "Valeria",
+      "class": "Fighter 5",
+      "hp": {
+        "current": 42,
+        "max": 42
+      },
+      "conditions": [],
+      "state": "Schläft",
+      "resourceNote": "Keine Verletzung oder regeltechnische Zustandsbeeinträchtigung bestätigt.",
+      "gearNote": "Plattenrüstung, Meisterarbeits-Großschwert und Cloak of Resistance +1 im Besitz. Rüstung beim Schlafen nicht angelegt."
+    }
+  ]
+}

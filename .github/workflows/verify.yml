@@ -17,3 +17,4 @@ jobs:
         with:
           node-version: 20
       - run: node verify.mjs
+      - run: node scripts/test-live.mjs

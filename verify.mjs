@@ -1,6 +1,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { validate } from './scripts/validate-live.mjs';
 
 const root = path.dirname(fileURLToPath(import.meta.url));
 const read = file => fs.readFileSync(path.join(root, file));
@@ -11,6 +12,12 @@ const check = (condition, message) => { if (!condition) failures.push(message); 
 const html = text('index.html');
 const app = text('app.js');
 const css = text('styles.css');
+try {
+  new Function(text('live.js'));
+  validate(JSON.parse(text('data/live.json')), JSON.parse(text('data/sheets.json')));
+} catch (error) {
+  failures.push(`Live-Play-Prüfung: ${error.message}`);
+}
 const dataMatch = html.match(/<script id="wiki-data" type="application\/json">([\s\S]*?)<\/script>/);
 
 check(Boolean(dataMatch), 'index.html enthält keinen wiki-data-Datensatz');
@@ -55,6 +62,7 @@ try {
 
 check(!/document\.write|fetch\(['"]template\.html/.test(app + html), 'Legacy-Loader oder document.write ist wieder aktiv');
 check((html.match(/<script src="app\.js/g) || []).length === 1, 'index.html muss genau app.js laden');
+check((html.match(/<script src="live\.js/g) || []).length === 1, 'index.html muss genau live.js laden');
 check((html.match(/<link rel="stylesheet" href="styles\.css/g) || []).length === 1, 'index.html muss genau styles.css laden');
 
 for (const obsolete of ['dossier-v3.js', 'dossier-v4.js', 'dossier-hotfix-v1.js', 'core-ui-v1.js', 'dossier-v3.css']) {
