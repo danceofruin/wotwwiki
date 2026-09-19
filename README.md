@@ -3,10 +3,10 @@
 Spielerbezogenes Kampagnenwiki für *Way of the Wicked*.
 
 - Live: https://danceofruin.github.io/wotwwiki/
-- Live-Play-Stand: siehe `data/live.json` (initial: 6. Februar 4712 AR, vor Morgengrauen)
-- Artikelarchiv: Nacht 3./4. Februar 4712 AR; behält seinen eigenen älteren Stand
-- Technischer Stand: 18. September 2026
-- Version: 3.0.0
+- Live-Play-Stand: siehe `data/live.json` (6. Februar 4712 AR, später Abend vor Mitternacht)
+- Artikelarchiv: vollständig bis zum späten 6. Februar 4712 AR
+- Technischer Stand: 19. September 2026
+- Version: 3.1.0
 
 ## Live Play
 
@@ -18,7 +18,7 @@ Spielerbezogenes Kampagnenwiki für *Way of the Wicked*.
 
 Das private Kampagnenrepository enthält den Exporter `tools/export_wiki.py` und den Wartungsablauf `tools/WIKI_SYNC.md`. Er liest nur ausdrücklich ausgewählte Mechanikabschnitte und einen gegen exakte Quelldateien geprüften Spielerexport. Veränderte Quellen machen die Prüfung ungültig und stoppen den Export. Die beiden JSON-Dateien sind generierte Ansichten, **niemals Kanon**. Die semantische Spoilerprüfung erfolgt vor dem Export; ein Schema allein kann sie nicht ersetzen.
 
-Die Ressourcensynchronisation ändert nur kleine Datenobjekte, nicht die Wiki-Artikel oder Oberfläche. GitHub Pages kann den statischen Auftritt bei einem Datencommit erneut deployen; das ist keine vollständige inhaltliche Wiki-Neugenerierung.
+Die Ressourcensynchronisation aktualisiert die kleinen Live-Datenobjekte. Dossiers und Chronik werden zusätzlich redaktionell gegen den akzeptierten Kampagnenstand geprüft. GitHub Pages kann den statischen Auftritt bei einem Datencommit erneut deployen; das ist keine vollständige inhaltliche Wiki-Neugenerierung.
 
 ## Benutzung
 

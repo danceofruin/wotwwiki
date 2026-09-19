@@ -4,20 +4,20 @@
     "authority": "GENERATED VIEW. DO NOT USE AS CAMPAIGN AUTHORITY.",
     "generated": true,
     "playerSafe": true,
-    "generatedAt": "2026-09-18T14:44:38+00:00",
-    "sourceRevision": "b5bb6d372eb4bd92fcda2f06d5d5ff5ca6525255c092483cdb3a0c94e0f636f2",
-    "reviewedAt": "2026-09-18",
+    "generatedAt": "2026-09-19T15:47:55.081Z",
+    "sourceRevision": "8f4f11149b561b045a2509d5c68e9e1e3f633e9d9f00f5e4b3f12ea7f6914b32",
+    "reviewedAt": "2026-09-19",
     "sheetRevision": "ffc7eb12d523a9d0a758eda59dbcc4d2f2162279f97f283b0f7dc59694b7a906"
   },
   "scene": {
     "date": "4712-02-06",
     "dateLabel": "6. Februar 4712 AR",
-    "time": "Vor Morgengrauen",
+    "time": "Später Abend, vor Mitternacht",
     "location": "Lord’s Dalliance",
     "locationId": "dalliance",
     "detail": "Rückwärtiges Zimmer im Obergeschoss · Aldencross",
-    "summary": "Styke, Vesper, Valeria und Kaitlyn schlafen. Verse ist im Zimmer. Die nächste Szene beginnt hier.",
-    "rest": "Schlaf läuft. Eine abgeschlossene Rast oder tägliche Auffrischung ist noch nicht bestätigt."
+    "summary": "Styke, Vesper und Valeria schlafen zusammen. Verse ist im Zimmer. Kaitlyn und Mirelle sind nicht anwesend.",
+    "rest": "Der Schlaf hat gerade begonnen. Rast, Tageswechsel und Ressourcenauffrischung sind noch nicht bestätigt."
   },
   "quests": [
     {
@@ -25,17 +25,18 @@
       "title": "Mott · Kaitlyn · Eddarly",
       "status": "active",
       "updated": "4712-02-06",
-      "summary": "Die Briefe liegen offen. Was Franz oder Zack daraus machen, ist noch unbekannt.",
+      "summary": "Kaitlyn ging zum Mott-Haus zurück. Vesper sah Franz und Zack angespannt miteinander; mehr ist nicht bekannt.",
       "known": [
-        "Vesper hat die echten Zack-Briefe in Kaitlyns Truhe offengelegt. Ein- und Ausstieg gelangen ohne Alarm.",
-        "Kaitlyn ist dem Knoten beigetreten.",
-        "Noch keine neue Nachricht über Franz oder Zack."
+        "Vesper hat die echten Zack-Briefe offengelegt und den Einbruch inszeniert.",
+        "Kaitlyn ist vollständig gebunden und soll am 8. Februar zurückkehren.",
+        "Zack war nach dem Gespräch mit Franz noch lebend, allein und bewaffnet."
       ],
-      "next": "Eine glaubwürdige Nachricht oder eigene Beobachtung abwarten bzw. beschaffen.",
+      "next": "Auf Kaitlyns Rückkehr oder eine belastbare Nachricht warten. Keine unbekannten Haus- oder Gesprächsergebnisse vorwegnehmen.",
       "links": [
         "kaitlyn",
         "franz",
-        "zack"
+        "zack",
+        "mott-plan"
       ]
     },
     {
@@ -43,16 +44,18 @@
       "title": "Vesper in Balentyne",
       "status": "active",
       "updated": "4712-02-06",
-      "summary": "Die Arbeitertarnung bleibt ein Zugang zur Festung.",
+      "summary": "Die Arbeitertarnung hielt auch am 6. Februar.",
       "known": [
         "Vesper kann Zack sicher wiedererkennen.",
-        "Ein verlässlicher Dienstplan von Zack liegt nicht vor."
+        "Ein verlässlicher Dienstplan von Zack liegt nicht vor.",
+        "Die beobachtete Begegnung mit Franz lieferte keinen hörbaren Wortlaut."
       ],
-      "next": "Den etablierten Zugang nutzen; neue Erkenntnisse erst nach tatsächlicher Beobachtung eintragen.",
+      "next": "Den etablierten Zugang nur anhand wirklicher Beobachtungen fortschreiben.",
       "links": [
         "vesper",
         "balentyne",
-        "zack"
+        "zack",
+        "franz"
       ]
     },
     {
@@ -60,33 +63,37 @@
       "title": "Nella & Tamsin",
       "status": "waiting",
       "updated": "4712-02-06",
-      "summary": "Familienauftrag und Botengang laufen; die Rückkehrfrist bleibt relevant.",
+      "summary": "Botengang und Familienauftrag laufen; Rückkehr ist am 7. Februar fällig.",
       "known": [
-        "Nella und Tamsin sind beauftragt, Nellas Familie fortzubringen und Hakon zu erreichen.",
-        "Rückkehr spätestens am 7. Februar.",
-        "Nella hat die graue Mietstute; Tamsin ein Vell-Reitpferd."
+        "Nella führt den befristeten Auftrag, Tamsin schützt sie.",
+        "Nella hat die graue Mietstute; Tamsin ein Vell-Reitpferd.",
+        "Der genaue Ort und der Ausgang des Familienauftrags sind in Aldencross unbekannt."
       ],
-      "next": "Rückkehr oder Nachricht abwarten. Ihr genauer Aufenthaltsort ist hier nicht bekannt.",
+      "next": "Rückkehr und Bericht abwarten. Danach über Tamsins Rehabilitation und Angriffsnacht-Aufgabe entscheiden.",
       "links": [
         "nella",
         "tamsin",
-        "hakon"
+        "hakon",
+        "nella-hakon-plan"
       ]
     },
     {
       "id": "mirelle",
-      "title": "Mirelles Maßarbeit",
+      "title": "Mirelle · Arbeit & Abholung",
       "status": "scheduled",
       "updated": "4712-02-06",
-      "summary": "Anprobe nach Ladenschluss am 6. Februar.",
+      "summary": "Mirelle ist gebunden, packt unauffällig und erwartet letzte Anproben sowie Hakons Abholung.",
       "known": [
-        "Stykes Unterwäsche und Valerias Rüstungsunterkleidung sind bestellt.",
-        "Eine mögliche Aufnahme Mirelles ist eine Absicht, kein bereits vereinbarter Pakt."
+        "Stykes Unterwäsche soll am 7. Februar abends fertig sein.",
+        "Valerias Rüstungsunterzeug braucht noch eine kurze Plattenanprobe.",
+        "Hakon soll Mirelle am 8. Februar vor Mitternacht abholen; sonst geht sie zum Dalliance."
       ],
-      "next": "Termin wahrnehmen.",
+      "next": "Am 7. Februar anproben und Hakon Auftrag plus Erkennungszeichen übergeben. Zielort nach Abholung festlegen.",
       "links": [
         "mirelle",
-        "valeria"
+        "mirelles-auftraege",
+        "hakon",
+        "dalliance"
       ]
     },
     {
@@ -94,16 +101,19 @@
       "title": "Tacitus & Jacobian",
       "status": "scheduled",
       "updated": "4712-02-06",
-      "summary": "Das gemeinsame Abendessen ist zugesagt.",
+      "summary": "Das Abendessen am 8. Februar ist zugesagt; die Behandlung Jacobians bleibt offen.",
       "known": [
-        "8. Februar, ungefähr 20:00 Uhr im Lord’s Dalliance.",
-        "Tacitus hat mit Jacobian als Begleitung zugesagt; auch er hat zugestimmt."
+        "Tacitus kommt nur mit Jacobian; auch er hat zugesagt.",
+        "Der Knoten will Tacitus aus dem Kampf nehmen und erst nach Balentynes Fall ein echtes Angebot machen.",
+        "Verse und Zorn sind spätere wissenschaftliche Belege, nicht der erste Gesprächszug."
       ],
-      "next": "Vorbereitung und Termin. Eine spätere Rekrutierung ist nicht vereinbart.",
+      "next": "Neutralisierung, Komponenten, Bewachung, Transport und Jacobians Behandlung konkretisieren.",
       "links": [
         "tacitus",
         "jacobian",
-        "dalliance"
+        "verse",
+        "zorn",
+        "tacitus-plan"
       ]
     },
     {
@@ -111,15 +121,16 @@
       "title": "Balentyne vorbereiten",
       "status": "scheduled",
       "updated": "4712-02-06",
-      "summary": "Der gewählte Haupttermin bleibt die Nacht vom 8. auf den 9. Februar.",
+      "summary": "Der Haupttermin bleibt die Nacht vom 8. auf den 9. Februar; der Vorlauf beginnt am 7.",
       "known": [
-        "Die Gelegenheit beim wöchentlichen Eintopf am 8. Februar ist weiterhin geplant.",
-        "Sechs Giftpakete sind vorhanden; Zusammensetzung, Dosis, Regelwirkung und Zugang sind offen.",
-        "Der verborgene Gang ist intakt. Zwei gewöhnliche Wandketten sind im Tunnel angebracht."
+        "Sechs Giftpakete liegen bereit; Dosis, Wirkung und Zugang zum Eintopf bleiben offen.",
+        "Der verborgene Gang ist intakt; zwei gewöhnliche Wandketten sind montiert.",
+        "Hakons Männer sollen in der Nacht des 7. Februar paarweise nach Aldencross kommen."
       ],
-      "next": "Offene Vorbereitung klären. Die Befehle an Hakon bleiben Rückhalt, Sicherung und Evakuierung.",
+      "next": "Hakon am 7. Februar instruieren, Unterkunft klären und die offenen Durchführungsdetails schließen.",
       "links": [
         "balentyne",
+        "angriffsplan",
         "hakon",
         "grumblejack",
         "dalliance"
@@ -130,58 +141,87 @@
       "title": "Kaitlyn tritt dem Knoten bei",
       "status": "completed",
       "updated": "4712-02-05",
-      "summary": "Kaitlyns Bindung wurde am späten 5. Februar vollzogen.",
+      "summary": "Kaitlyns Compact und Carnal Seal sind geschlossen.",
       "known": [
-        "Der Pakt ist geschlossen.",
-        "Für die unmittelbare Zerstörung Aldencross’ ist ihr Verbergen und Abwarten zugesagt.",
-        "Sie ist kein Mitglied des Collective."
+        "Die Weigerung, eigenhändig zu töten, ist allein kein Vertragsbruch.",
+        "Während der unmittelbaren Zerstörung Aldencross’ soll sie sich verbergen und abwarten.",
+        "Kaitlyn ist kein Mitglied des Collective."
       ],
-      "next": "Ihre unauffällige Unterbringung und eine mögliche Haarfärbung sind noch zu klären.",
+      "next": "Ihre soziale Fachrolle langsam ausbilden; keine Einbrecher- oder Feldspionkompetenz erfinden.",
       "links": [
         "kaitlyn",
+        "compact-bound",
         "vesper"
       ]
     },
     {
-      "id": "rental",
-      "title": "Mietpferde geregelt",
+      "id": "mirelle-bound",
+      "title": "Mirelle tritt dem Knoten bei",
       "status": "completed",
-      "updated": "4712-02-05",
-      "summary": "Die Rückgabe der zwei Pferde in Aldencross wurde am 5. Februar geregelt.",
+      "updated": "4712-02-06",
+      "summary": "Mirelles Compact enthält eine genaue Handwerksklausel; der Carnal Seal ist geschlossen.",
       "known": [
-        "Die graue Stute bleibt bei Nella.",
-        "Fehl- bzw. Verspätungskosten für die Stute werden vorerst aus der bestehenden Kaution bestritten."
+        "Mirelle entscheidet innerhalb zugewiesener Fertigung über Schnitt, Konstruktion, Verarbeitung und Materialeignung.",
+        "Styke und Vesper bestimmen Auftrag, Priorität, verfügbare Mittel und Termin.",
+        "Vesper bewahrt den geschlossenen Vertrag und ist Keeper des Siegels."
       ],
-      "next": "Die Stute bei Rückkehr zurückbringen; genauer Kautionsrest offen.",
+      "next": "Werkstatt, Material und Zuständigkeit nach Aldencross praktisch aufbauen.",
       "links": [
-        "nella",
-        "tamsin"
+        "mirelle",
+        "compact-bound",
+        "befehlsstruktur"
       ]
     }
   ],
   "appointments": [
     {
+      "id": "return",
+      "date": "4712-02-07",
+      "label": "7. Feb.",
+      "time": "Im Tagesverlauf",
+      "title": "Nella & Tamsin zurück",
+      "note": "Bericht, Rehabilitation und Hakon-Kontakt",
+      "links": [
+        "nella",
+        "tamsin",
+        "hakon"
+      ]
+    },
+    {
       "id": "fitting",
-      "date": "4712-02-06",
-      "label": "6. Feb.",
-      "time": "Nach Ladenschluss",
-      "title": "Anprobe bei Mirelle",
-      "note": "Unterwäsche / Rüstungsunterkleidung",
+      "date": "4712-02-07",
+      "label": "7. Feb.",
+      "time": "Am Abend",
+      "title": "Mirelles Endanproben",
+      "note": "Styke fertig · Valeria kurz unter Platte",
       "links": [
         "mirelle",
+        "mirelles-auftraege",
         "valeria"
       ]
     },
     {
-      "id": "return",
+      "id": "infiltration",
       "date": "4712-02-07",
-      "label": "7. Feb.",
-      "time": "Spätestens",
-      "title": "Nella & Tamsin zurück",
-      "note": "Rückkehrfrist, kein bestätigter Ankunftszeitpunkt",
+      "label": "Nacht 7. Feb.",
+      "time": "Gestaffelt",
+      "title": "Hakons Männer nach Aldencross",
+      "note": "Geplant; Auftrag muss Hakon erst erreichen",
       "links": [
-        "nella",
-        "tamsin"
+        "hakon",
+        "angriffsplan"
+      ]
+    },
+    {
+      "id": "kaitlyn",
+      "date": "4712-02-08",
+      "label": "8. Feb.",
+      "time": "Vereinbart",
+      "title": "Kaitlyns Rückkehr",
+      "note": "Früher möglich, wenn sie das Mott-Haus verlassen muss",
+      "links": [
+        "kaitlyn",
+        "mott-plan"
       ]
     },
     {
@@ -190,10 +230,11 @@
       "label": "8. Feb.",
       "time": "Uhrzeit offen",
       "title": "Giuseppes Eintopf",
-      "note": "Geplante Gelegenheit; Durchführung offen",
+      "note": "Sechs Giftpakete · Durchführung offen",
       "links": [
         "giuseppe",
-        "balentyne"
+        "balentyne",
+        "angriffsplan"
       ]
     },
     {
@@ -210,16 +251,30 @@
       ]
     },
     {
+      "id": "pickup",
+      "date": "4712-02-08",
+      "label": "8. Feb.",
+      "time": "Vor Mitternacht",
+      "title": "Mirelles Abholung",
+      "note": "Hakon mit Erkennungszeichen; sonst Dalliance",
+      "links": [
+        "mirelle",
+        "hakon",
+        "dalliance"
+      ]
+    },
+    {
       "id": "assault",
       "date": "4712-02-08",
       "label": "8. → 9. Feb.",
       "time": "In der Nacht",
       "title": "Balentyne-Hauptaktion",
-      "note": "Gewählter Plantermin",
+      "note": "Gewählter Standardtermin",
       "links": [
         "balentyne",
         "hakon",
-        "grumblejack"
+        "grumblejack",
+        "angriffsplan"
       ]
     }
   ],
@@ -227,8 +282,8 @@
     {
       "id": "treasury",
       "label": "Knotenkasse",
-      "value": "7.531 gp",
-      "note": "Liquide Mittel; keine persönliche Geldbörse."
+      "value": "7.356 gp",
+      "note": "Liquide Mittel nach Silence und Remove Fear; keine persönliche Geldbörse."
     },
     {
       "id": "poison",
@@ -237,22 +292,34 @@
       "note": "Zusammensetzung, Dosis und PF-Wirkung noch offen."
     },
     {
-      "id": "laxative",
-      "label": "Altes Abführmittel",
-      "value": "Aufgebraucht",
-      "note": "Kein Restbestand aus Januar."
+      "id": "silence",
+      "label": "Silence",
+      "value": "1 Schriftrolle",
+      "note": "Klerikale Schriftrolle; für Vesper gedacht, noch unbenutzt."
+    },
+    {
+      "id": "remove-fear",
+      "label": "Remove Fear",
+      "value": "1 Schriftrolle",
+      "note": "Klerikale Schriftrolle, noch unbenutzt."
+    },
+    {
+      "id": "books-dye",
+      "label": "Bücher & Haarfarbe",
+      "value": "9 Bücher · 2 Töpfe",
+      "note": "Dunkle Haarfarbe unbenutzt; Kaitlyn behielt ihr rotes Haar."
     },
     {
       "id": "hakon",
-      "label": "Hakon & sechs Nordmänner",
-      "value": "Bereitschaft befohlen",
-      "note": "Letzter bekannter Auftrag: Rückhalt, Sicherung, Evakuierung."
+      "label": "Hakons Sechsergruppe",
+      "value": "Hakon + 5 Männer",
+      "note": "Neue Stadt- und Mirelle-Befehle müssen am 7. Februar erst zugestellt werden."
     },
     {
       "id": "grumblejack",
       "label": "Grumblejack",
-      "value": "Ablenkung vorgesehen",
-      "note": "Außen bleiben, einmal ablenken, dann zurückziehen."
+      "value": "Außen vorgesehen",
+      "note": "Freier Verbündeter; Ablenkung und Rückzug, kein Soldat in der Kette."
     },
     {
       "id": "trace",
@@ -269,7 +336,10 @@
     "jacobian",
     "mirelle",
     "nella",
-    "tamsin"
+    "tamsin",
+    "hakon",
+    "bellam",
+    "alicia"
   ],
   "party": [
     {
@@ -282,8 +352,8 @@
       },
       "conditions": [],
       "state": "Schläft",
-      "resourceNote": "Letzter bestätigter Kampfstand; kein späterer HP- oder PP-Verbrauch festgehalten.",
-      "gearNote": "Eiserner Stirnreif im Besitz, derzeit inaktiv. Rüstung im Schlaf nicht als angelegt bestätigt.",
+      "resourceNote": "34/34 HP, 11/11 PP und Fokus am späten 6. Februar bestätigt; die laufende Rast hat noch nichts erneuert.",
+      "gearNote": "Silence, Remove Fear, zwei Töpfe Haarfarbe, neun Bücher sowie Kaitlyns und Mirelles persönliche Erkennungszeichen im Besitz.",
       "pp": {
         "current": 11,
         "max": 11
@@ -300,8 +370,8 @@
       },
       "conditions": [],
       "state": "Schläft",
-      "resourceNote": "Verbleibende Zauberplätze sind nicht bestätigt. 7 / 5 sind Tageskapazitäten; Schlaf setzt sie nicht automatisch zurück.",
-      "gearNote": "Mithralkettenhemd und Mithralschild im Besitz. Kampfprofil gilt mit angelegter Ausrüstung.",
+      "resourceNote": "28/28 HP. Verbleibende Zauberplätze bleiben unbekannt; Hedonistic für den 6. Februar ist erfüllt.",
+      "gearNote": "Mithralkettenhemd und Mithralschild im Besitz. Verse und Mirelles geschlossener Compact sind bei ihr bzw. im Zimmer.",
       "verse": {
         "present": true,
         "hpCurrent": null,
@@ -334,8 +404,8 @@
       },
       "conditions": [],
       "state": "Schläft",
-      "resourceNote": "Keine Verletzung oder regeltechnische Zustandsbeeinträchtigung bestätigt.",
-      "gearNote": "Plattenrüstung, Meisterarbeits-Großschwert und Cloak of Resistance +1 im Besitz. Rüstung beim Schlafen nicht angelegt."
+      "resourceNote": "42/42 HP, keine formale Verletzung oder Zustandsbeeinträchtigung. Rast noch nicht abgeschlossen.",
+      "gearNote": "Plattenrüstung, meisterliches Großschwert und Cloak of Resistance +1 im Besitz; beim Schlafen nicht angelegt."
     }
   ]
 }
