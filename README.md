@@ -3,10 +3,10 @@
 Spielerbezogenes Kampagnenwiki für *Way of the Wicked*.
 
 - Live: https://danceofruin.github.io/wotwwiki/
-- Live-Play-Stand: siehe `data/live.json` (6. Februar 4712 AR, später Abend vor Mitternacht)
-- Artikelarchiv: vollständig bis zum späten 6. Februar 4712 AR
-- Technischer Stand: 19. September 2026
-- Version: 3.1.0
+- Live-Play-Stand: siehe `data/live.json` (7. Februar 4712 AR, späte Nacht vor Mitternacht)
+- Artikelarchiv: vollständig bis zur späten Nacht des 7. Februar 4712 AR
+- Technischer Stand: 20. September 2026
+- Version: 3.2.0
 
 ## Live Play
 
