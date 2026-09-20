@@ -6,7 +6,7 @@ Spielerbezogenes Kampagnenwiki für *Way of the Wicked*.
 - Live-Play-Stand: siehe `data/live.json` (7. Februar 4712 AR, späte Nacht vor Mitternacht)
 - Artikelarchiv: vollständig bis zur späten Nacht des 7. Februar 4712 AR
 - Technischer Stand: 20. September 2026
-- Version: 3.2.0
+- Version: 3.3.0
 
 ## Live Play
 

@@ -15,7 +15,7 @@ function refreshVisibleData(){
 refreshVisibleData();
 
 const ARTWORKS={
-  __home:['war-council','styke','vesper','valeria','thorn','tiadora','balentyne','grumblejack','sakkarot','tamsin','nella','mirelle','kaitlyn','tacitus','elise','mara','ellyn'],
+  __home:['war-council','zwischen-den-seiten','styke','vesper','valeria','thorn','tiadora','balentyne','grumblejack','sakkarot','tamsin','nella','mirelle','kaitlyn','tacitus','elise','mara','ellyn'],
   'war-council':[{src:'assets/war-council-v2.webp',alt:'Styke, Vesper und Valeria über Karten und Plänen beim Kriegsrat im Kerzenschein.',title:'Kriegsrat in Aldencross',caption:'Stimmungsbild für die Gruppe: kaltes Licht draußen, Feuer und Karten drinnen, der Angriff immer als Gedanke zwischen euch.'}],
   styke:[{src:'assets/styke-battlefield.png',alt:'Styke als dunkler Krieger auf einem zerstörten Schlachtfeld, mit eisblauen Augen, schwarzem Haar und Schwert.',title:'Styke',caption:'Konzeptillustration des Aasimars: schlank, schwarz gerüstet, eisblaue Augen, eher unheilvoller Feldherr als glänzender Held.'}],
   vesper:[
@@ -71,7 +71,8 @@ const ARTWORKS={
   'feldgruppe':[{src:'assets/grumblejack-camp.webp',alt:'Grumblejack im winterlichen Feldlager.',title:'Draußen vor Aldencross',caption:'Grumblejack und Hakons Männer halten sich jenseits des Gasthauses bereit. Das Lager bleibt beweglich, kalt und gefährlich.'}],
   'angriffsplan':[{src:'assets/balentyne-winter.webp',alt:'Die Festung Balentyne über Aldencross im Winter.',title:'Das Ziel',caption:'Jeder offene Faden führt am Ende hierher. Das Bild ist Atmosphäre und Übersicht, kein neuer Aufklärungsgewinn.'}],
   'anatomie-kaitlyn':[{src:'assets/kaitlyn-private-v1.webp',alt:'Kaitlyn im weinroten Morgenmantel vor ihrem Spiegel.',title:'Kaitlyn – visuelle Referenz',caption:'Private Ansicht im Mott-Haus.'}],
-  'anatomie-tacitus':[{src:'assets/tacitus-normal-v1.webp',alt:'Tacitus von Morimun an ihrem arkanen Arbeitstisch.',title:'Tacitus – visuelle Referenz',caption:'Goldbrille, rotbraunes Haar und tintenbefleckte Hände.'}]
+  'anatomie-tacitus':[{src:'assets/tacitus-normal-v1.webp',alt:'Tacitus von Morimun an ihrem arkanen Arbeitstisch.',title:'Tacitus – visuelle Referenz',caption:'Goldbrille, rotbraunes Haar und tintenbefleckte Hände.'}],
+  'zwischen-den-seiten':[{src:'assets/red-book-awakening-v1.webp',alt:'Ein aufgeschlagenes rotes Lederbuch auf einem schwarzen Holztisch; eine frische dunkle Tintenlinie entsteht ohne sichtbare Feder.',title:'Das rote Buch erwacht',caption:'Kerzenlicht, Wintermond und eine neue Zeile, die niemand geschrieben hat.'}]
 };
 function renderArtworkFigure(x,extra=''){
   return `<figure class="wiki-art ${extra}"><img loading="lazy" src="${esc(x.src)}" alt="${esc(x.alt||x.title||'Illustration')}"><figcaption><strong>${esc(x.title||'Illustration')}</strong>${x.caption?`<span>${esc(x.caption)}</span>`:''}</figcaption></figure>`;
