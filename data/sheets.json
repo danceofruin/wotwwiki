@@ -4,9 +4,9 @@
     "authority": "GENERATED VIEW. DO NOT USE AS CAMPAIGN AUTHORITY.",
     "generated": true,
     "playerSafe": true,
-    "generatedAt": "2026-09-18T14:44:38+00:00",
-    "sourceRevision": "ffc7eb12d523a9d0a758eda59dbcc4d2f2162279f97f283b0f7dc59694b7a906",
-    "reviewedAt": "2026-09-18"
+    "generatedAt": "2026-09-20T11:22:20.774Z",
+    "sourceRevision": "d89af8ad09543fb0e95b34d67c807459d02bfaf0cd95e8f6c3f5e8b7725960b6",
+    "reviewedAt": "2026-09-20"
   },
   "characters": [
     {
@@ -102,7 +102,7 @@
           "sections": [
             {
               "title": "Psion 1, Egoist",
-              "markdown": "**Manifester Level:** 1  \n**Maximaler Power-Grad:** 1  \n**Powers Known:** 3\n\n### Power Points\n\n**11 PP / Tag gesamt**\n\n- 8 PP aus dem bisherigen Zelot-Pool nach Wegfall von Unlocked Talent.\n- +2 Basis-PP aus Psion 1.\n- +1 Bonus-PP aus INT 14 für Psion 1.\n\n### Powers Known\n\n- **Minor Metamorphosis**\n- **Defensive Precognition**\n- **Offensive Precognition**\n\n*Minor Metamorphosis bleibt damit trotz Retraining von Unlocked Talent regulär verfügbar.*\n\n### Psionische Talente (Grad 0)\n\nDiese Talente sind **separat von den drei Powers Known** oben.\n\n- **Empathy**: im akzeptierten Spiel etabliert. Wenn manifestiert und die Konzentration gehalten wird, liefert es nur aktuelle Oberflaechenemotionen, keine Gedanken, Erinnerungen, Motive oder Fakten.\n- **Conceal Thoughts**: im akzeptierten Spiel etabliert. Bei aktuellem Manifester Level **1 Stunde** Dauer; **+10 Circumstance auf Bluff gegen Sense Motive**, wenn damit Stykes wahre Absichten erkannt werden sollen. Im normalen sozialen Alltag als aktiv behandeln, sofern keine etablierte Unterbrechung die routinemaessige Erneuerung verhindert. Der Bonus gilt nicht fuer Diplomacy oder andere Bluff-Anwendungen.\n- **Drittes Talent**: noch offen, bis frueherer Kanon oder Thomas es festlegt."
+              "markdown": "**Manifester Level:** 1  \n**Maximaler Power-Grad:** 1  \n**Powers Known:** 3\n\n### Power Points\n\n**11 PP / Tag gesamt**\n\n- 8 PP aus dem bisherigen Zelot-Pool nach Wegfall von Unlocked Talent.\n- +2 Basis-PP aus Psion 1.\n- +1 Bonus-PP aus INT 14 für Psion 1.\n\n### Powers Known\n\n- **Minor Metamorphosis**\n- **Defensive Precognition**\n- **Offensive Precognition**\n\n*Minor Metamorphosis bleibt damit trotz Retraining von Unlocked Talent regulär verfügbar.*\n\n### Psionische Talente (Grad 0)\n\nDiese Talente sind **separat von den drei Powers Known** oben.\n\n- **Detect Psionics**: etabliertes freies Grad-0-Talent; kostet keine PP. Unter der Kampagnen-Transparenz zwischen Magie und Psionik dient es Styke als psionisches Gegenstück zur Untersuchung magischer/psionischer Auren. Es identifiziert dadurch nicht automatisch Eigenschaften, Befehlswörter, Flüche oder verborgene Herkunft.\n- **Empathy**: im akzeptierten Spiel etabliert. Wenn manifestiert und die Konzentration gehalten wird, liefert es nur aktuelle Oberflaechenemotionen, keine Gedanken, Erinnerungen, Motive oder Fakten.\n- **Conceal Thoughts**: im akzeptierten Spiel etabliert. Bei aktuellem Manifester Level **1 Stunde** Dauer; **+10 Circumstance auf Bluff gegen Sense Motive**, wenn damit Stykes wahre Absichten erkannt werden sollen. Im normalen sozialen Alltag als aktiv behandeln, sofern keine etablierte Unterbrechung die routinemaessige Erneuerung verhindert. Der Bonus gilt nicht fuer Diplomacy oder andere Bluff-Anwendungen."
             },
             {
               "title": "Personality Fragment: Psicrystal",
