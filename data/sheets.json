@@ -4,9 +4,9 @@
     "authority": "GENERATED VIEW. DO NOT USE AS CAMPAIGN AUTHORITY.",
     "generated": true,
     "playerSafe": true,
-    "generatedAt": "2026-09-20T11:22:20.774Z",
-    "sourceRevision": "d89af8ad09543fb0e95b34d67c807459d02bfaf0cd95e8f6c3f5e8b7725960b6",
-    "reviewedAt": "2026-09-20"
+    "generatedAt": "2026-09-23T12:00:00Z",
+    "sourceRevision": "0d4741a80003f26d9ccb333b41eb09326f1781c5289f89127cb154963c09fac6",
+    "reviewedAt": "2026-09-23"
   },
   "characters": [
     {
@@ -153,11 +153,11 @@
       "level": 5,
       "ancestry": "Tiefling · Asura-Spawn",
       "source": "mechanics/combat/vesper-level-5.md",
-      "profile": "Mithralkettenhemd + Mithral Heavy Shield; Initiative mit Verse",
+      "profile": "Mithralkettenhemd + Mithral Heavy Shield + Headband of Alluring Charisma +2",
       "hpMax": 28,
       "stats": {
-        "ac": "20",
-        "touch": "14",
+        "ac": "21",
+        "touch": "15",
         "flatFooted": "16",
         "initiative": "+12",
         "speed": "30 ft",
@@ -165,13 +165,13 @@
         "cmb": "+3",
         "cmd": "15",
         "fort": "+2",
-        "ref": "+7",
+        "ref": "+8",
         "will": "+9"
       },
       "attack": {
         "name": "Sun’s Gleam",
         "hit": "+5",
-        "damage": "1d6+4 Force",
+        "damage": "1d6+5 Force",
         "note": "Ranged Touch · 40 ft"
       },
       "attributes": [
@@ -197,7 +197,7 @@
         },
         {
           "name": "CHA",
-          "value": "18"
+          "value": "20*"
         }
       ],
       "tabs": [
@@ -207,7 +207,7 @@
           "sections": [
             {
               "title": "Kampfwerte",
-              "markdown": "| Wert | Total | Notiz |\n|---|---:|---|\n| **HP** | **28 / 28** | 23 auf Stufe 4 +5 Oracle 5 |\n| **AC** | **14 / 20** | Ohne Ausrüstung / Mithralkettenhemd + Mithral Heavy Shield |\n| **Touch AC** | **14** | Sidestep Secret, CHA statt DEX |\n| **Flat-Footed** | **10 / 16** | Ohne / mit Rüstung und Schild |\n| **Initiative** | **+8 / +12** | +2 DEX, +2 Reactionary, +4 Improved Initiative; +4 zusätzlich durch Verse |\n| **Speed** | 30 ft | |\n| **BAB** | **+3** | |\n| **CMB** | **+3** | |\n| **CMD** | **15** | |\n| **Melee** | **+3** | Dolch 1d4, 19-20/x2 |\n| **Spell Save DC** | **14 / 15 / 16** | Orisons / Grad 1 / Grad 2 |\n| **Concentration** | **+9** | Oracle 5 + CHA 4 |\n\n### Rettungswürfe\n\n| Save | Total | Basis | Modifikator / Misc |\n|---|---:|---:|---|\n| **Fortitude** | **+2** | +1 | CON +0, Resistance +1 |\n| **Reflex** | **+7** | +1 | CHA +4, High Theft +1, Resistance +1 |\n| **Will** | **+9** | +4 | WIS +4, Resistance +1 |"
+              "markdown": "| Wert | Total | Notiz |\n|---|---:|---|\n| **HP** | **28 / 28** | 23 auf Stufe 4 +5 Oracle 5 |\n| **AC** | **15 / 21** | Ohne Ausrüstung / Mithralkettenhemd + Mithral Heavy Shield |\n| **Touch AC** | **15** | Sidestep Secret, CHA statt DEX |\n| **Flat-Footed** | **10 / 16** | Ohne / mit Rüstung und Schild |\n| **Initiative** | **+8 / +12** | +2 DEX, +2 Reactionary, +4 Improved Initiative; +4 zusätzlich durch Verse |\n| **Speed** | 30 ft | |\n| **BAB** | **+3** | |\n| **CMB** | **+3** | |\n| **CMD** | **15** | |\n| **Melee** | **+3** | Dolch 1d4, 19-20/x2 |\n| **Spell Save DC** | **15 / 16 / 17** | Orisons / Grad 1 / Grad 2 |\n| **Concentration** | **+10** | Oracle 5 + CHA 5 |\n\n### Rettungswürfe\n\n| Save | Total | Basis | Modifikator / Misc |\n|---|---:|---:|---|\n| **Fortitude** | **+2** | +1 | CON +0, Resistance +1 |\n| **Reflex** | **+8** | +1 | CHA +5, High Theft +1, Resistance +1 |\n| **Will** | **+9** | +4 | WIS +4, Resistance +1 |"
             },
             {
               "title": "Standard-Kampferöffnung",
@@ -225,7 +225,7 @@
           "sections": [
             {
               "title": "Spellcasting",
-              "markdown": "**Casting Ability:** CHA +4  \n**Zauberplätze Grad 1:** **7 / Tag**  \n**Zauberplätze Grad 2:** **5 / Tag**  \n**Orisons:** beliebig oft\n\n### Orisons\n\n- Detect Magic\n- Create Water\n- Purify Food and Drink\n- Read Magic\n- Guidance\n- Enhanced Diplomacy\n\n### Zauber des 1. Grades\n\n| Zauber | Herkunft | Kurzfunktion |\n|---|---|---|\n| **Obscuring Mist** | regulär | Sicht- und Raumkontrolle |\n| **Protection from Evil** | regulär | Schutz gegen böse Kreaturen und bestimmte mentale Kontrolle |\n| **Air Bubble** | regulär | Atemluft |\n| **Remove Sickness** | **neu Stufe 5** | unterdrückt die Auswirkungen von Krankheit, Übelkeit und sickened nach Zaubertext |\n| **Cure Light Wounds** | Oracle Cure Spell | **1d8+5** Heilung |\n| **Unnatural Lust** | Curse Bonus | erzwungener körperlicher Annäherungsdrang |\n| **Identify** | Lore Spirit / Mystery | magische Gegenstände identifizieren |\n\n### Zauber des 2. Grades\n\n| Zauber | Herkunft | Kurzfunktion |\n|---|---|---|\n| **Delay Poison** | regulär | unterdrückt Giftwirkung |\n| **Lesser Restoration** | **neu Stufe 5** | behebt passende Ability-Damage-/Zustandseffekte nach Zaubertext |\n| **Cure Moderate Wounds** | Oracle Cure Spell | **2d8+5** Heilung |\n| **Tongues** | Lore Spirit | Sprachen verstehen und sprechen |\n\n### Arcane Enlightenment, aktuelle Standardauswahl\n\n- Dancing Darkness\n- Silent Image\n- Euphoric Cloud\n- Ashen Path\n\n*Diese vier Zauber sind temporäre Oracle Spells Known und können bei der täglichen Auffrischung neu gewählt werden.*"
+              "markdown": "**Casting Ability:** CHA +5  \n**Zauberplätze Grad 1:** **7 / Tag**  \n**Zauberplätze Grad 2:** **5 / Tag**  \n**Orisons:** beliebig oft\n\n### Orisons\n\n- Detect Magic\n- Create Water\n- Purify Food and Drink\n- Read Magic\n- Guidance\n- Enhanced Diplomacy\n\n### Zauber des 1. Grades\n\n| Zauber | Herkunft | Kurzfunktion |\n|---|---|---|\n| **Obscuring Mist** | regulär | Sicht- und Raumkontrolle |\n| **Protection from Evil** | regulär | Schutz gegen böse Kreaturen und bestimmte mentale Kontrolle |\n| **Air Bubble** | regulär | Atemluft |\n| **Remove Sickness** | **neu Stufe 5** | unterdrückt die Auswirkungen von Krankheit, Übelkeit und sickened nach Zaubertext |\n| **Cure Light Wounds** | Oracle Cure Spell | **1d8+5** Heilung |\n| **Unnatural Lust** | Curse Bonus | erzwungener körperlicher Annäherungsdrang |\n| **Identify** | Lore Spirit / Mystery | magische Gegenstände identifizieren |\n\n### Zauber des 2. Grades\n\n| Zauber | Herkunft | Kurzfunktion |\n|---|---|---|\n| **Delay Poison** | regulär | unterdrückt Giftwirkung |\n| **Lesser Restoration** | **neu Stufe 5** | behebt passende Ability-Damage-/Zustandseffekte nach Zaubertext |\n| **Cure Moderate Wounds** | Oracle Cure Spell | **2d8+5** Heilung |\n| **Tongues** | Lore Spirit | Sprachen verstehen und sprechen |\n\n### Arcane Enlightenment, aktuelle Standardauswahl\n\n- Dancing Darkness\n- Silent Image\n- Euphoric Cloud\n- Ashen Path\n\n*Diese vier Zauber sind temporäre Oracle Spells Known und können bei der täglichen Auffrischung neu gewählt werden.*"
             }
           ]
         },
@@ -235,7 +235,7 @@
           "sections": [
             {
               "title": "Path of War, Martial Training II, Radiant Dawn",
-              "markdown": "**Initiator Level:** **6**  \n**Initiation Modifier:** **CHA +4**  \n**Recovery:** Full-Round Action  \n**Essence Pool:** **2**  \n**Essence Capacity:** **1** pro Receptacle  \n**Close Range:** **40 ft**\n\n### Sun's Gleam\n\n- **Angriff:** +5 Ranged Touch.\n- **Schaden:** 1d6+4 Force.\n- **Reichweite:** 40 ft.\n- Kann in geeigneten Radiant-Dawn-Strikes als Fernkampfangriff verwendet werden.\n\n### Bekannte Manöver\n\n| Manöver | Typ | Standard vorbereitet? | Effekt / Rolle |\n|---|---|---:|---|\n| **Bolster** | Counter | Nein | Verbündeter erhält DR 4/- für 1 Runde; mit 1 Essence DR 5/- |\n| **Staunching Strike** | Strike | Nein | Treffer + Heilung; Reserveoption, falls Spoils/Cure nicht reichen |\n| **Witness to Glory** | Counter | **Ja** | nach Initiativeermittlung bevorzugt auf Styke; **+4 Initiative und 6 Temp HP**, mit 1 Essence **+5 Initiative und 8 Temp HP** |\n| **Decree of Torment** | Strike | **Ja** | markiert einen starken Gegner mit Torment-Brands; Styke kann die Marken über seine vielen Treffer für Combat Maneuvers wie Trip, Disarm oder Dirty Trick nutzen |\n\n**Standard Readied:** **Witness to Glory, Decree of Torment**.\n\n*Bei Bedarf können zwischen Begegnungen Bolster oder Staunching Strike neu vorbereitet werden, sofern Zeit für die normale Martial-Training-Vorbereitung/Recovery besteht.*\n\n### Stance: Spoils of War\n\n**Standardstance:** **Spoils of War** mit **1 Essence investiert**.\n\n- Ohne Essence heilt der erste passende Treffer eines Verbündeten pro Runde bei IL 6 um **7 HP**.\n- Mit 1 Essence steigt dies auf **9 HP**.\n- Der zweite Essence-Punkt bleibt standardmäßig für **Witness to Glory** verfügbar."
+              "markdown": "**Initiator Level:** **6**  \n**Initiation Modifier:** **CHA +5**  \n**Recovery:** Full-Round Action  \n**Essence Pool:** **2**  \n**Essence Capacity:** **1** pro Receptacle  \n**Close Range:** **40 ft**\n\n### Sun's Gleam\n\n- **Angriff:** +5 Ranged Touch.\n- **Schaden:** 1d6+5 Force.\n- **Reichweite:** 40 ft.\n- Kann in geeigneten Radiant-Dawn-Strikes als Fernkampfangriff verwendet werden.\n\n### Bekannte Manöver\n\n| Manöver | Typ | Standard vorbereitet? | Effekt / Rolle |\n|---|---|---:|---|\n| **Bolster** | Counter | Nein | Verbündeter erhält DR 5/- für 1 Runde; mit 1 Essence DR 6/- |\n| **Staunching Strike** | Strike | Nein | Treffer + Heilung; Reserveoption, falls Spoils/Cure nicht reichen |\n| **Witness to Glory** | Counter | **Ja** | nach Initiativeermittlung bevorzugt auf Styke; **+5 Initiative und 7 Temp HP**, mit 1 Essence **+6 Initiative und 9 Temp HP** |\n| **Decree of Torment** | Strike | **Ja** | markiert einen starken Gegner mit Torment-Brands; Styke kann die Marken über seine vielen Treffer für Combat Maneuvers wie Trip, Disarm oder Dirty Trick nutzen |\n\n**Standard Readied:** **Witness to Glory, Decree of Torment**.\n\n*Bei Bedarf können zwischen Begegnungen Bolster oder Staunching Strike neu vorbereitet werden, sofern Zeit für die normale Martial-Training-Vorbereitung/Recovery besteht.*\n\n### Stance: Spoils of War\n\n**Standardstance:** **Spoils of War** mit **1 Essence investiert**.\n\n- Ohne Essence heilt der erste passende Treffer eines Verbündeten pro Runde bei IL 6 / IM +5 um **8 HP**.\n- Mit 1 Essence steigt dies auf **10 HP**.\n- Der zweite Essence-Punkt bleibt standardmäßig für **Witness to Glory** verfügbar."
             }
           ]
         },
@@ -245,7 +245,7 @@
           "sections": [
             {
               "title": "Animus- und Martial-Glyph-Paket, virtueller Rang 1",
-              "markdown": "**Virtueller Animus-Rang:** 1  \n**Animus zu Beginn des ersten eigenen Zuges:** **5**  \n**Weitere Züge:** +1 Animus zu Beginn jedes eigenen Zuges.  \n**Zusätzlich:** +1 Animus am Rundenende, wenn Vesper in dieser Runde mindestens ein Manöver initiiert hat.  \n**Glyph-Kosten:** 1 Animus.  \n**Glyph-Reichweite:** **40 ft**.  \n**Glyph-Dauer:** **5 Runden**.  \n**Glyph-DC:** **17**.\n\nEin Glyph kann als Swift Action gewirkt werden oder höchstens einmal pro Runde als Free Action nach einem Treffer mit einem Martial Strike. Mehrfache Anwendungen desselben Glyphs stapeln sich nicht und verlängern die Dauer nicht.\n\n### Bekannte Basic Glyphs\n\n1. **Elemental Shield**: Energy Resistance **6** gegen Vespers aktives Element.\n2. **Ghost Eating Blade**: Waffen des Verbündeten erhalten *ghost touch*.\n3. **Ghost Armor**: Rüstung und Schild des Verbündeten erhalten *ghost touch*.\n4. **Deflective Armor**: Natural Armor steigt bei IL 6 um **+3**.\n5. **Shadowmeld**: **20% Concealment / Miss Chance** gegen Gegner."
+              "markdown": "**Virtueller Animus-Rang:** 1  \n**Animus zu Beginn des ersten eigenen Zuges:** **5**  \n**Weitere Züge:** +1 Animus zu Beginn jedes eigenen Zuges.  \n**Zusätzlich:** +1 Animus am Rundenende, wenn Vesper in dieser Runde mindestens ein Manöver initiiert hat.  \n**Glyph-Kosten:** 1 Animus.  \n**Glyph-Reichweite:** **40 ft**.  \n**Glyph-Dauer:** **5 Runden**.  \n**Glyph-DC:** **18**.\n\nEin Glyph kann als Swift Action gewirkt werden oder höchstens einmal pro Runde als Free Action nach einem Treffer mit einem Martial Strike. Mehrfache Anwendungen desselben Glyphs stapeln sich nicht und verlängern die Dauer nicht.\n\n### Bekannte Basic Glyphs\n\n1. **Elemental Shield**: Energy Resistance **6** gegen Vespers aktives Element.\n2. **Ghost Eating Blade**: Waffen des Verbündeten erhalten *ghost touch*.\n3. **Ghost Armor**: Rüstung und Schild des Verbündeten erhalten *ghost touch*.\n4. **Deflective Armor**: Natural Armor steigt bei IL 6 um **+3**.\n5. **Shadowmeld**: **20% Concealment / Miss Chance** gegen Gegner."
             }
           ]
         },
@@ -265,7 +265,7 @@
           "sections": [
             {
               "title": "Fertigkeiten",
-              "markdown": "**Skill Ranks pro Level:** 4 Oracle +2 INT +1 FCB = 7.  \n**Gesamtränge auf Stufe 5:** 35.\n\nDie sieben neuen Ränge gehen in Disable Device, Diplomacy, Knowledge (All), Perception, Spellcraft, Stealth und **Bluff**. Sense Motive bleibt bewusst auf 2 Ranks.\n\n| Skill | Ability | Ranks | Total | Notiz |\n|---|---:|---:|---:|---|\n| **Bluff** | CHA | **1** | **+5** | neuer Rang auf Stufe 5 |\n| **Disable Device** | CHA | **5** | **+12** | Mithral Heavy Shield ACP 0; Trapfinding |\n| **Diplomacy** | CHA | **5** | **+12** | mit Enhanced Diplomacy situativ +14 |\n| **Heal** | WIS | 1 | **+8** | Klassenfertigkeit |\n| **Knowledge (All)** | CHA | **5** | **+12** | Lore Keeper; erfüllt auch Knowledge (martial) |\n| **Perception** | WIS | **5** | **+9** | keine Klassenfertigkeit |\n| **Sense Motive** | WIS | **2** | **+9** | Klassenfertigkeit |\n| **Spellcraft** | INT | **5** | **+10** | Klassenfertigkeit |\n| **Stealth** | CHA | **5** | **+12** | Mithral Heavy Shield ACP 0 |\n| **Survival** | WIS | 1 | **+5** | |"
+              "markdown": "**Skill Ranks pro Level:** 4 Oracle +2 INT +1 FCB = 7.  \n**Gesamtränge auf Stufe 5:** 35.\n\nDie sieben neuen Ränge gehen in Disable Device, Diplomacy, Knowledge (All), Perception, Spellcraft, Stealth und **Bluff**. Sense Motive bleibt bewusst auf 2 Ranks.\n\n| Skill | Ability | Ranks | Total | Notiz |\n|---|---:|---:|---:|---|\n| **Bluff** | CHA | **1** | **+6** | neuer Rang auf Stufe 5 |\n| **Disable Device** | CHA | **5** | **+13** | Mithral Heavy Shield ACP 0; Trapfinding |\n| **Diplomacy** | CHA | **5** | **+13** | mit Enhanced Diplomacy situativ +15 |\n| **Heal** | WIS | 1 | **+8** | Klassenfertigkeit |\n| **Knowledge (All)** | CHA | **5** | **+13** | Lore Keeper; erfüllt auch Knowledge (martial) |\n| **Perception** | WIS | **5** | **+9** | keine Klassenfertigkeit |\n| **Sense Motive** | WIS | **2** | **+9** | Klassenfertigkeit |\n| **Spellcraft** | INT | **5** | **+10** | Klassenfertigkeit |\n| **Stealth** | CHA | **5** | **+13** | Mithral Heavy Shield ACP 0 |\n| **Survival** | WIS | 1 | **+5** | |"
             }
           ]
         },
@@ -275,7 +275,7 @@
           "sections": [
             {
               "title": "Ausrüstung",
-              "markdown": "- Dolch.\n- Maßgefertigtes Mithralkettenhemd, Armor +4, Max DEX +6, ACP 0.\n- Mithral Heavy Shield, Shield +2, ACP 0.\n- Thieves' Tools.\n- Thorns eiserner Stirnreif, getragen.\n- Verse, aktiv.\n- **Cloak of Resistance +1:** getragen; der Resistance-Bonus ist in Vespers Saves eingerechnet."
+              "markdown": "- Dolch.\n- Maßgefertigtes Mithralkettenhemd, Armor +4, Max DEX +6, ACP 0.\n- Mithral Heavy Shield, Shield +2, ACP 0.\n- Thieves' Tools.\n- **Havelyns Headband of Alluring Charisma +2**, getragen; effektive CHA 20. Noch keine 24 Stunden getragen, daher in der aktuellen Nacht keine zusätzlichen Bonus-Zauberplätze.\n- Verse, aktiv.\n- **Cloak of Resistance +1:** getragen; der Resistance-Bonus ist in Vespers Saves eingerechnet."
             }
           ]
         },
@@ -285,7 +285,7 @@
           "sections": [
             {
               "title": "Attribute",
-              "markdown": "| Attribut | Wert | Mod | Notiz |\n|---|---:|---:|---|\n| STR | 11 | +0 | |\n| DEX | 14 | +2 | Initiative und CMD |\n| CON | 10 | +0 | |\n| INT | 14 | +2 | Arcane Enlightenment bis Zaubergrad 4 vorbereitet |\n| WIS | 18 | +4 | Perception, Heal, Sense Motive |\n| CHA | 18 | +4 | Zauber, AC, Reflex, Knowledge, Stealth, Disable Device, Initiation |"
+              "markdown": "| Attribut | Wert | Mod | Notiz |\n|---|---:|---:|---|\n| STR | 11 | +0 | |\n| DEX | 14 | +2 | Initiative und CMD |\n| CON | 10 | +0 | |\n| INT | 14 | +2 | Arcane Enlightenment bis Zaubergrad 4 vorbereitet |\n| WIS | 18 | +4 | Perception, Heal, Sense Motive |\n| CHA | 18 / **20** | +4 / **+5** | +2 durch Havelyns Stirnreif; Zauber, AC, Reflex, Knowledge, Stealth, Disable Device, Initiation |"
             },
             {
               "title": "Talente",
@@ -306,12 +306,12 @@
       "level": 5,
       "ancestry": "Mensch · Karfeld",
       "source": "mechanics/valeria.md",
-      "profile": "Plattenrüstung · Großschwert · kein Schild",
+      "profile": "+1 Dastard Full Plate · Großschwert · kein Schild",
       "hpMax": 42,
       "stats": {
-        "ac": "20",
+        "ac": "21",
         "touch": "11",
-        "flatFooted": "19",
+        "flatFooted": "20",
         "initiative": "+1",
         "speed": "20 ft in Plattenrüstung",
         "bab": "+5",
@@ -360,7 +360,7 @@
           "sections": [
             {
               "title": "Kampfwerte",
-              "markdown": "| Wert | Aktuell |\n|---|---:|\n| HP | **42 / 42** |\n| Initiative | **+1** |\n| Speed | **20 ft** in Plattenrüstung |\n| BAB | **+5** |\n| CMB | **+9** |\n| CMD | **20** |\n| AC | **20** |\n| Touch | **11** |\n| Flat-Footed | **19** |\n| Fortitude | **+8** |\n| Reflex | **+3** |\n| Will | **+6** |\n\nBravery +1 gives another +1 against fear effects."
+              "markdown": "| Wert | Aktuell |\n|---|---:|\n| HP | **42 / 42** |\n| Initiative | **+1** |\n| Speed | **20 ft** in Plattenrüstung |\n| BAB | **+5** |\n| CMB | **+9** |\n| CMD | **20** |\n| AC | **21** |\n| Touch | **11** |\n| Flat-Footed | **20** |\n| Fortitude | **+8** |\n| Reflex | **+3** |\n| Will | **+6** |\n\nBravery +1 gives another +1 against fear effects."
             },
             {
               "title": "Current weapon",
@@ -388,7 +388,7 @@
           "sections": [
             {
               "title": "Current equipment",
-              "markdown": "- Plate armor. Exact masterwork/purchase detail of the plate remains open; its full-plate armor bonus is established.\n- **Masterwork greatsword.**\n- Cloak of Resistance +1, worn and included in saves.\n- The silver-sapphire Knights of the Alerion symbol is with Styke, not Valeria.\n- Old source gear does not automatically return unless later accepted play establishes it."
+              "markdown": "- **+1 Dastard Full Plate**, aktuell getragen; der zusätzliche +2-Profanbonus der Dastard-Eigenschaft ist ohne Challenge/Smite Good inaktiv.\n- **Meisterarbeits-Großschwert.**\n- Cloak of Resistance +1, getragen und in den Rettungswürfen eingerechnet.\n- Die frühere **Meisterarbeits-Plattenrüstung** wurde aus Balentyne zurückgeholt und wird als nicht getragener Vermögenswert mitgeführt.\n- Das silberne Saphir-Symbol der Ritter des Alerion ist bei Styke."
             }
           ]
         },

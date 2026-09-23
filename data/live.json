@@ -4,127 +4,99 @@
     "authority": "GENERATED VIEW. DO NOT USE AS CAMPAIGN AUTHORITY.",
     "generated": true,
     "playerSafe": true,
-    "generatedAt": "2026-09-21T20:15:30Z",
-    "sourceRevision": "24188493091962f1239e033caeb21625cb82c6fb15f48680548a59a0a71607bd",
-    "reviewedAt": "2026-09-21",
-    "sheetRevision": "d89af8ad09543fb0e95b34d67c807459d02bfaf0cd95e8f6c3f5e8b7725960b6"
+    "generatedAt": "2026-09-23T12:00:00Z",
+    "sourceRevision": "b5f7ab4d44a76127e41750af566bac9438a180ff4bc068e8548f665eb0f54da9",
+    "reviewedAt": "2026-09-23",
+    "sheetRevision": "0d4741a80003f26d9ccb333b41eb09326f1781c5289f89127cb154963c09fac6"
   },
   "scene": {
-    "date": "4712-02-08",
-    "dateLabel": "8. Februar 4712 AR",
-    "time": "Etwa 20:00",
-    "location": "Lord’s Dalliance",
-    "locationId": "dalliance",
-    "detail": "Rückwärtiges großes Zimmer im Obergeschoss · Aldencross",
-    "summary": "Tacitus und Jacobian sind gerade oben angekommen. Styke hat die Tür geöffnet; Vesper und Verse warten im vorbereiteten Zimmer. Das eigentliche Dinner hat noch nicht begonnen.",
-    "rest": "Die Nacht vom 7. auf den 8. Februar wurde vollständig geschlafen; tägliche Ressourcen sind aufgefrischt."
+    "date": "4712-02-09",
+    "dateLabel": "9. Februar 4712 AR",
+    "time": "Vor Morgengrauen · ca. 03:00–04:30",
+    "location": "Geheimgang",
+    "locationId": "tunnel",
+    "detail": "Auf dem Rückweg von Balentyne zum Lord’s Dalliance",
+    "summary": "Styke, Vesper und Valeria tragen die zweite geborgene Ausrüstung zurück. Die Geheimtür hinter ihnen ist geschlossen; Balentynes Fall ist sichtbar im Gang, aber noch nicht formal bestätigt.",
+    "rest": "Seit dem Aufbruch zum Angriff gab es keine neue Nachtruhe."
   },
   "quests": [
     {
-      "id": "mott",
-      "title": "Mott · Kaitlyn · Eddarly",
+      "id": "balentyne",
+      "title": "Balentyne · Angriffsnacht",
       "status": "active",
-      "updated": "4712-02-08",
-      "summary": "Kaitlyn ist freiwillig ins Lord’s Dalliance zurückgekehrt. Zack ist tot; Franz war zuletzt nach dem Duell unter Balentyne-Gewahrsam, spätere Entscheidungen sind Styke nicht bekannt.",
+      "updated": "4712-02-09",
+      "summary": "Donnagin und Havelyn sind tot; Torhaus, Fallgitter und Zugbrücke wurden sabotiert. Das Signal ist gegeben und Fire-Axe wurde im Inneren im Vorteil gesehen.",
       "known": [
-        "Valeria hat Kaitlyn tagsüber am Mott-Haus lebend, unverletzt und allein angetroffen.",
-        "Kaitlyn kam später selbst mit einer kleinen Reisetasche ins Dalliance.",
-        "Sie beginnt heute mit einer ersten Beobachtungsaufgabe im Schankraum statt mit erfundener Profi-Spionage."
+        "Zwei Ballisten und zwei Steinwerfer sind sabotiert; der heiße Sand wurde unbrauchbar gemacht.",
+        "Fallgitter und Zugbrücke stehen offen, ihre Mechanismen sind zerstört.",
+        "Weitere 22 Wachen und Soldaten fielen. Der formale Fall der Festung ist noch nicht bestätigt."
       ],
-      "next": "Kaitlyn beobachtet den Schankraum und meldet Relevantes an Tamsin. Weitere Franz-Folgen nur über einen echten Träger.",
+      "next": "Zum Dalliance zurückkehren, Beute und Gefangene sichern und auf einen glaubwürdigen Abschlussbericht warten.",
       "links": [
-        "kaitlyn",
-        "franz",
-        "zack"
+        "balentyne",
+        "torhaus",
+        "sakkarot",
+        "donnagin",
+        "havelyn"
       ]
     },
     {
-      "id": "worker",
-      "title": "Vespers Balentyne-Tarnung",
+      "id": "dalliance",
+      "title": "Lord’s Dalliance · Abriegelung",
       "status": "active",
-      "updated": "4712-02-08",
-      "summary": "Vesper kam mit Sunny/Hazel wieder hinein, brachte alle sechs Rattengift-Pakete in Giuseppes großen Eintopf und sah, wie die Ausgabe begann.",
+      "updated": "4712-02-09",
+      "summary": "Tamsin hält das Haus geschlossen. Hakon und seine sechs Männer, Nella, Kaitlyn, Mirelle, Bellam und Alicia sind im Haus; Barnabus und zehn Zwerge bleiben uninformierte Gäste.",
       "known": [
-        "Der Arbeiterzugang hielt auch am 8. Februar.",
-        "Vesper bemerkte beim Einbringen des Gifts keinen Zeugen.",
-        "Sie ging, bevor eine Wirkung sichtbar war; Styke kennt das Ergebnis noch nicht."
+        "Tamsin führt Schutz und Hausordnung während der Angriffsnacht.",
+        "Grumblejack wartet mit sieben Pferden außerhalb.",
+        "Die Rückkehr der Kerngruppe steht unmittelbar bevor."
       ],
-      "next": "Keine Wirkung vorwegnehmen. Folgen nur durch Beobachtung, Nachricht oder andere glaubwürdige Träger übernehmen.",
+      "next": "Leise eintreffen, Lage abgleichen und Beute sowie Gefangene unter Kontrolle halten.",
       "links": [
-        "vesper",
-        "balentyne"
-      ]
-    },
-    {
-      "id": "nella-tamsin",
-      "title": "Dalliance-Schutz & Evakuierung",
-      "status": "active",
-      "updated": "4712-02-08",
-      "summary": "Tamsin führt Schutz/Evakuierung im Dalliance; Nella unterstützt mit praktischer Haus- und Versorgungslogistik.",
-      "known": [
-        "Tamsin kennt jetzt den Kellerzugang zum Tunnel und die ersten Biegungen.",
-        "Bellam und Alicia werden nicht vorab alarmiert, sollen aber im Ernstfall geschützt werden.",
-        "Das Haus soll nicht direkt nach dem Dinnerzugriff verriegelt werden, sondern erst später bei ausgedünntem Schankraum."
-      ],
-      "next": "Haus normal laufen lassen, bis ein sichtbarer Grund zum Abriegeln entsteht.",
-      "links": [
-        "nella",
+        "dalliance",
         "tamsin",
-        "dalliance"
-      ]
-    },
-    {
-      "id": "mirelle",
-      "title": "Mirelle · Abholung",
-      "status": "waiting",
-      "updated": "4712-02-08",
-      "summary": "Styke hat Hakon Mirelles Erkennungstoken übergeben und die Abholung bestätigt.",
-      "known": [
-        "Hakon hat den Token und weiß, dass Mirelle direkt ins Lord’s Dalliance soll.",
-        "Kaitlyn muss nicht mehr abgeholt werden, weil sie selbst erschienen ist.",
-        "Styke hat vor dem Dinner noch keinen direkten Bericht über Mirelles Abholung erhalten."
-      ],
-      "next": "Abholergebnis erst übernehmen, wenn Styke einen glaubwürdigen Träger dafür erhält.",
-      "links": [
+        "nella",
+        "kaitlyn",
         "mirelle",
         "hakon",
-        "dalliance"
+        "grumblejack"
       ]
     },
     {
       "id": "tacitus",
       "title": "Tacitus & Jacobian",
-      "status": "active",
-      "updated": "4712-02-08",
-      "summary": "Tacitus und Jacobian sind gerade im Lord’s Dalliance angekommen; das eigentliche Abendessen und Gespräch haben noch nicht begonnen.",
+      "status": "waiting",
+      "updated": "4712-02-09",
+      "summary": "Beide leben, sind getrennt, entwaffnet, gefesselt und an zwei Kettenpunkten im Tunnel gesichert.",
       "known": [
-        "Verse möchte Tacitus erneut sprechen; das wissenschaftliche Gespräch ist ein echter Teil der Einladung.",
-        "Der Knot-Plan sieht weiterhin die spätere lebende Neutralisierung beider Gäste und getrennte Sicherung vor.",
-        "Die Silence-Rolle liegt bereits bei Valeria im Nebenraum; das vereinbarte Signal wurde noch nicht gegeben."
+        "Tacitus versprach ebenso wie Jacobian, weder zu rufen noch Magie zu wirken.",
+        "Tacitus bestand darauf, dass Jacobian nicht als Druckmittel benutzt wird.",
+        "Ein mögliches Angebot an Tacitus folgt erst nach glaubwürdig bestätigtem Fall Balentynes."
       ],
-      "next": "Dinner ab der Ankunft neu ausspielen; nichts aus dem verworfenen späteren Branch übernehmen.",
+      "next": "Nach der Rückkehr bewachen; Gespräch erst nach bestätigtem Festungsfall.",
       "links": [
         "tacitus",
         "jacobian",
-        "dalliance"
+        "ketten-beschlaege",
+        "tunnel"
       ]
     },
     {
-      "id": "balentyne",
-      "title": "Balentyne vorbereiten",
-      "status": "scheduled",
-      "updated": "4712-02-08",
-      "summary": "Die Hauptaktion bleibt für die Nacht vom 8. auf den 9. Februar vorgesehen.",
+      "id": "mott",
+      "title": "Mott · Kaitlyn · Eddarly",
+      "status": "active",
+      "updated": "4712-02-09",
+      "summary": "Kaitlyn ist im Dalliance. Zack ist tot; was nach dem bekannten Duell mit Franz geschah, ist der Gruppe weiterhin nicht durch einen belastbaren Träger bekannt.",
       "known": [
-        "Hakon hat Styke und Valeria persönlich bestätigt, dass alle sechs Nordmänner in Aldencross sind und stillhalten.",
-        "Alle sechs Rattengift-Pakete wurden im Eintopf verbraucht; ihre tatsächliche Wirkung ist Styke noch unbekannt.",
-        "Der Tunnel ist intakt; Tamsin kennt den Dalliance-Zugang und die ersten Biegungen."
+        "Kaitlyn kam selbst mit einer Reisetasche ins Dalliance.",
+        "Sie erhielt Bücher und eine erste Beobachtungsaufgabe.",
+        "Franz’ weiterer Weg bleibt für die Gruppe offen."
       ],
-      "next": "Dinner-/Gefangenenphase und anschließend den Nachtplan aus der tatsächlichen Lage weiterführen.",
+      "next": "Kaitlyns Beobachtungen auswerten; Franz nur über neue Belege fortschreiben.",
       "links": [
-        "balentyne",
-        "hakon",
-        "grumblejack",
+        "kaitlyn",
+        "franz",
+        "zack",
         "dalliance"
       ]
     },
@@ -132,59 +104,78 @@
       "id": "red-book",
       "title": "Das rote Buch",
       "status": "active",
-      "updated": "4712-02-08",
-      "summary": "Vesper hat den aktuellen Seitenstand wortgetreu gesichert. Valeria liest das Buch jetzt allein im Nebenraum.",
+      "updated": "4712-02-09",
+      "summary": "Valerias Solo-Lektüre erzeugte keine sichtbare Änderung. Tacitus verglich den Band mit Vespers Abschriften und schlug eine langfristige Seitenkontrolle vor.",
       "known": [
-        "Mindestens vier sichtbare Textänderungen/Erweiterungen sind beobachtet.",
-        "Die bekannte Aura liegt stark über dem ganzen Buch; Divination und Illusion plus eine tiefere unbekannte Komponente wurden festgestellt.",
-        "Valerias Vergleich ist noch nicht abgeschlossen oder berichtet."
+        "Mindestens vier sichtbare Textänderungen oder Erweiterungen sind beobachtet.",
+        "Die Aura umfasst Divination, Illusion und eine tiefere unbekannte Komponente.",
+        "Herkunft, Bewusstsein und vollständige Kräfte sind nicht geklärt."
       ],
-      "next": "Valerias tatsächlichen Bericht abwarten; keinen Unterschied vorwegnehmen.",
+      "next": "Identische Seitenstände datieren und vergleichen; keine Herkunft als bewiesen behandeln.",
+      "links": [
+        "rotes-buch",
+        "zwischen-den-seiten",
+        "tacitus",
+        "vesper"
+      ]
+    },
+    {
+      "id": "worker",
+      "title": "Rattengift im Eintopf",
+      "status": "completed",
+      "updated": "4712-02-08",
+      "summary": "Vesper brachte alle sechs Pakete in Giuseppes großen Eintopf und sah den Beginn der Ausgabe. Eine Wirkung wurde von ihr nicht beobachtet.",
+      "known": [
+        "Alle sechs Pakete sind verbraucht.",
+        "Vesper bemerkte beim Einbringen keinen Zeugen.",
+        "Die tatsächliche Wirkung bleibt unbekannt."
+      ],
+      "next": "Nur neue Beobachtungen oder Berichte ergänzen.",
       "links": [
         "vesper",
-        "valeria",
-        "styke"
+        "giuseppe",
+        "rattenpoison",
+        "kueche"
       ]
     }
   ],
   "appointments": [
     {
-      "id": "mirelle-pickup",
-      "date": "4712-02-08",
-      "label": "8. Feb.",
-      "time": "Vor der Angriffsnacht",
-      "title": "Mirelle abholen",
-      "note": "Hakon hat den Erkennungstoken; Ergebnis für Styke noch nicht bestätigt.",
+      "id": "return",
+      "date": "4712-02-09",
+      "label": "Jetzt",
+      "time": "Vor Morgengrauen",
+      "title": "Rückkehr ins Dalliance",
+      "note": "Zweite Bergung, Gefangene und Hauslage zusammenführen.",
       "links": [
-        "mirelle",
-        "hakon",
-        "dalliance"
+        "dalliance",
+        "tunnel",
+        "balentyne-beute"
       ]
     },
     {
-      "id": "dinner",
-      "date": "4712-02-08",
-      "label": "8. Feb.",
-      "time": "Etwa 20:00",
+      "id": "fall-check",
+      "date": "4712-02-09",
+      "label": "Nach Bestätigung",
+      "time": "Nach dem Festungsfall",
       "title": "Tacitus & Jacobian",
-      "note": "Gäste sind angekommen · Gespräch noch nicht begonnen",
+      "note": "Erst dann über Zukunft, Angebot oder Freilassung entscheiden.",
       "links": [
         "tacitus",
         "jacobian",
-        "dalliance"
+        "balentyne"
       ]
     },
     {
-      "id": "assault",
-      "date": "4712-02-08",
-      "label": "8. → 9. Feb.",
-      "time": "In der Nacht",
-      "title": "Balentyne-Hauptaktion",
-      "note": "Gewählter Plantermin",
+      "id": "aldencross",
+      "date": "4712-02-09",
+      "label": "Danach",
+      "time": "Nach Lagebild",
+      "title": "Aldencross und Abreise",
+      "note": "Die Ortschaft räumt sich sichtbar; sie gilt noch nicht als leer.",
       "links": [
-        "balentyne",
-        "hakon",
-        "grumblejack"
+        "aldencross",
+        "dalliance"
       ]
     }
   ],
@@ -192,56 +183,58 @@
     {
       "id": "treasury",
       "label": "Knotenkasse",
-      "value": "7.356 gp",
-      "note": "Liquide Mittel; keine persönliche Geldbörse."
+      "value": "12.226 gp",
+      "note": "Liquide gemeinsame Reserve nach Auszahlung von 700 gp."
+    },
+    {
+      "id": "signal",
+      "label": "Rotes Signal",
+      "value": "Verbraucht",
+      "note": "Das Angriffssignal wurde gegeben."
     },
     {
       "id": "poison",
       "label": "Rattengift",
       "value": "0 Pakete",
-      "note": "Alle sechs Pakete wurden in Giuseppes Eintopf verbraucht; tatsächliche Wirkung noch unbekannt."
-    },
-    {
-      "id": "laxative",
-      "label": "Altes Abführmittel",
-      "value": "Aufgebraucht",
-      "note": "Kein Restbestand aus Januar."
+      "note": "Alle sechs Pakete im Eintopf verbraucht; Wirkung unbekannt."
     },
     {
       "id": "hakon",
       "label": "Hakon & sechs Nordmänner",
-      "value": "Alle sechs in Aldencross",
-      "note": "Von Hakon persönlich bestätigt; Männer sind verteilt und halten die Füße still."
+      "value": "Im Dalliance",
+      "note": "300 gp Bonus an Hakons Sechs ausgezahlt."
     },
     {
       "id": "grumblejack",
       "label": "Grumblejack",
-      "value": "Außerhalb vorgesehen",
-      "note": "Bleibt mit den sieben erbeuteten Pferden außerhalb; spätere Ablenkung bleibt geplant."
+      "value": "Außerhalb · 7 Pferde",
+      "note": "Wartet außerhalb des Hauses."
     },
     {
-      "id": "room",
-      "label": "Zusatzraum Dalliance",
-      "value": "Bis 9. Feb.",
-      "note": "Kleines Zweibettzimmer; aktuell nutzt Valeria es für den Solo-Test des roten Buchs."
+      "id": "loot",
+      "label": "Zweite Bergung",
+      "value": "Im Transit",
+      "note": "Donnagins +1-Brustplatte, Valerias alte Meisterarbeits-Platte, Ballingers Meisterarbeits-Langschwert und Havelyns Meisterarbeits-Schild."
     },
     {
-      "id": "cache",
-      "label": "Wassermühlen-Versteck",
-      "value": "Zurückgeholt",
-      "note": "Valeria hat den bekannten Operationsbestand zurückgeholt; das Gift ist inzwischen verbraucht."
+      "id": "captives",
+      "label": "Gefangene",
+      "value": "2 gesichert",
+      "note": "Tacitus und Jacobian getrennt an den Tunnelketten."
     }
   ],
   "people": [
-    "kaitlyn",
-    "franz",
-    "zack",
     "tacitus",
     "jacobian",
-    "mirelle",
-    "nella",
     "tamsin",
-    "hakon"
+    "nella",
+    "mirelle",
+    "kaitlyn",
+    "hakon",
+    "grumblejack",
+    "sakkarot",
+    "donnagin",
+    "havelyn"
   ],
   "party": [
     {
@@ -253,11 +246,11 @@
         "max": 34
       },
       "conditions": [],
-      "state": "An der Tür zum Dinner",
-      "resourceNote": "34/34 HP, 11/11 PP und psionischer Fokus verfügbar.",
-      "gearNote": "Eiserner Stirnreif inaktiv. Remove-Fear-Rolle bei Styke; die Silence-Rolle ist bereits bei Valeria.",
+      "state": "Im Tunnel auf dem Rückweg",
+      "resourceNote": "34/34 HP, 10/11 PP und psionischer Fokus verfügbar.",
+      "gearNote": "Rittertarnung aktiv; Zorn ist bei ihm. Die zweite Bergung wird zurückgetragen.",
       "pp": {
-        "current": 11,
+        "current": 10,
         "max": 11
       },
       "focus": true
@@ -271,9 +264,9 @@
         "max": 28
       },
       "conditions": [],
-      "state": "Im vorbereiteten Dinnerzimmer",
-      "resourceNote": "28/28 HP. Zauberplätze nach Nachtruhe vollständig: Grad 1 7/7, Grad 2 5/5. Hedonistic für den 8. Februar ist erfüllt.",
-      "gearNote": "Mithralkettenhemd und Mithralschild im Besitz. Verse ist bei ihr; das rote Buch ist vorübergehend bei Valeria im Nebenraum.",
+      "state": "Im Tunnel auf dem Rückweg",
+      "resourceNote": "28/28 HP. Zauberplätze: Grad 1 5/7, Grad 2 3/5. Hedonistic für den 9. Februar noch nicht erfüllt.",
+      "gearNote": "Havelyns Headband of Alluring Charisma +2 getragen; effektive CHA 20. Verse ist bei ihr.",
       "verse": {
         "present": true,
         "hpCurrent": null,
@@ -282,12 +275,12 @@
       "slots": [
         {
           "level": 1,
-          "current": 7,
+          "current": 5,
           "max": 7
         },
         {
           "level": 2,
-          "current": 5,
+          "current": 3,
           "max": 5
         }
       ],
@@ -305,9 +298,9 @@
         "max": 42
       },
       "conditions": [],
-      "state": "Im Nebenraum",
+      "state": "Im Tunnel auf dem Rückweg",
       "resourceNote": "42/42 HP; keine formale Zustandsbeeinträchtigung.",
-      "gearNote": "Plattenrüstung, Meisterarbeits-Großschwert und Cloak of Resistance +1 im Besitz. Sie hat die unbenutzte Silence-Rolle und liest Vespers rotes Buch allein."
+      "gearNote": "+1 Dastard Full Plate getragen (AC 21). Die frühere Meisterarbeits-Platte wurde geborgen und wird mitgeführt."
     }
   ]
 }

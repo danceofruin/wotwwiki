@@ -3,10 +3,10 @@
 Spielerbezogenes Kampagnenwiki für *Way of the Wicked*.
 
 - Live: https://danceofruin.github.io/wotwwiki/
-- Live-Play-Stand: siehe `data/live.json` (7. Februar 4712 AR, späte Nacht vor Mitternacht)
-- Artikelarchiv: vollständig bis zur späten Nacht des 7. Februar 4712 AR
-- Technischer Stand: 20. September 2026
-- Version: 3.3.0
+- Live-Play-Stand: siehe `data/live.json` (9. Februar 4712 AR, vor Morgengrauen; Rückweg durch den Geheimgang)
+- Artikelarchiv: vollständig bis zum Rückzug aus Balentyne am 9. Februar 4712 AR
+- Technischer Stand: 23. September 2026
+- Version: 3.4.0
 
 ## Live Play
 
@@ -48,7 +48,7 @@ Es gibt keine nachträglich injizierten Hotfix-Skripte, keine Base64-Bildteile u
 
 ## Bilder
 
-Illustrationen werden als normale PNG- oder WebP-Dateien eingecheckt. Unvollständige Dateien werden von der Integritätsprüfung abgewiesen. Die Charaktergalerien verwenden nach Möglichkeit ein normales und ein privates Motiv. Neue Bilder werden aus den Originaldateien in hoher Qualität erzeugt und erst nach Prüfung von Abmessungen, Dateivollständigkeit und sichtbarer Qualität eingebunden.
+Illustrationen werden als normale PNG- oder WebP-Dateien eingecheckt. Unvollständige Dateien werden von der Integritätsprüfung abgewiesen. Die Charaktergalerien verwenden nach Möglichkeit ein normales und ein privates Motiv. Neue Bilder werden aus den Originaldateien in hoher Qualität erzeugt und erst nach Prüfung von Abmessungen, Dateivollständigkeit und sichtbarer Qualität eingebunden. Das aktuelle Motiv des roten Buches liegt als 1448 × 1086 WebP in unveränderter Auflösung vor.
 
 ## Notizen
 
