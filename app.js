@@ -43,7 +43,10 @@ const ARTWORKS={
     {src:'assets/kaitlyn-candlelight.png',alt:'Kaitlyn Mott als rothaarige Frau mit grünen Augen im Kerzenschein, weich und zugleich nachdenklich dargestellt.',title:'Kaitlyn Mott',caption:'Rote Haare, grüne Augen und die gespannte Ruhe im Haus ihres Mannes.'},
     {src:'assets/kaitlyn-private-v1.webp',alt:'Kaitlyn sitzt in einem weinroten Morgenmantel vor dem Spiegel ihres Schlafgemachs.',title:'Kaitlyn – privat',caption:'Weinrote Seide, ein ungemachtes Bett und keine höfische Maske mehr.'}
   ],
-  tacitus:[{src:'assets/tacitus-normal-v1.webp',alt:'Magisterin Tacitus von Morimun arbeitet mit Goldbrille und rotbraunem Haar an einem arkanen Apparat.',title:'Magisterin Tacitus von Morimun',caption:'Tinte an den Fingern, Glut in der Apparatur und die ungeteilte Aufmerksamkeit einer Gelehrten.'}],
+  tacitus:[
+    {src:'assets/tacitus-study-v1.webp',alt:'Magisterin Tacitus von Morimun sitzt mit Goldbrille und rotbraunem Haar an ihrem Schreibtisch in einer winterlichen Bibliothek.',title:'Magisterin Tacitus von Morimun',caption:'Pergamente, Bücher und kaltes Winterlicht hinter dem Fenster; eine Gelehrte in ihrem eigentlichen Element.'},
+    {src:'assets/tacitus-private-v1.webp',alt:'Tacitus liegt in schwarzroter Spitze zwischen dunkelroten Kissen und einem aufgeschlagenen Buch.',title:'Tacitus – privat',caption:'Das Buch bleibt geöffnet, doch Robe, Kerzenlicht und Haltung gehören nicht mehr zum Arbeitszimmer.'}
+  ],
   thorn:[{src:'assets/thorn-study.webp',alt:'Kardinal Adrastus Thorn als elegant gekleideter, dunkelhaariger Mann in seinem kerzenbeleuchteten Arbeitszimmer.',title:'Kardinal Adrastus Thorn',caption:'Thorn, wie der Knoten ihn kennt: kultiviert, beinahe freundlich und vollkommen Herr des Raumes – Macht ohne sichtbare Anstrengung.'}],
   tiadora:[{src:'assets/tiadora-normal-v1.webp',alt:'Tiadora steht in einem schwarzroten Kleid auf der Treppe von Thorns Anwesen und hält einen versiegelten Brief.',title:'Tiadora',caption:'Thorns Botin mit einem Brief in der Hand: vollkommen beherrscht und niemals bloß schmückendes Beiwerk.'}],
   elise:[
@@ -71,7 +74,7 @@ const ARTWORKS={
   'feldgruppe':[{src:'assets/grumblejack-camp.webp',alt:'Grumblejack im winterlichen Feldlager.',title:'Draußen vor Aldencross',caption:'Grumblejack und Hakons Männer halten sich jenseits des Gasthauses bereit. Das Lager bleibt beweglich, kalt und gefährlich.'}],
   'angriffsplan':[{src:'assets/balentyne-winter.webp',alt:'Die Festung Balentyne über Aldencross im Winter.',title:'Das Ziel',caption:'Jeder offene Faden führt am Ende hierher. Das Bild ist Atmosphäre und Übersicht, kein neuer Aufklärungsgewinn.'}],
   'anatomie-kaitlyn':[{src:'assets/kaitlyn-private-v1.webp',alt:'Kaitlyn im weinroten Morgenmantel vor ihrem Spiegel.',title:'Kaitlyn – visuelle Referenz',caption:'Private Ansicht im Mott-Haus.'}],
-  'anatomie-tacitus':[{src:'assets/tacitus-normal-v1.webp',alt:'Tacitus von Morimun an ihrem arkanen Arbeitstisch.',title:'Tacitus – visuelle Referenz',caption:'Goldbrille, rotbraunes Haar und tintenbefleckte Hände.'}],
+  'anatomie-tacitus':[{src:'assets/tacitus-private-v1.webp',alt:'Tacitus in schwarzroter Spitze zwischen dunkelroten Kissen und einem aufgeschlagenen Buch.',title:'Tacitus – private Referenz',caption:'Goldbrille, rotbraunes Haar, schwarze Spitze und das Buch in Reichweite.'}],
   'rotes-buch':[{src:'assets/red-book-calistria-v2.webp',alt:'Aufgeschlagenes, rot gebundenes Calistria-Buch mit goldenen Ornamenten, Rosen, Bienenmotiven und erotischen Illustrationen im Kerzenlicht.',title:'Vespers rotes Buch',caption:'Leder, Gold, Rosen und Calistrias Lehre: schön genug, um wie Andacht zu wirken, praktisch genug, um benutzt zu werden.'}],
   'zwischen-den-seiten':[{src:'assets/red-book-calistria-v2.webp',alt:'Aufgeschlagenes rotes Buch mit goldenen Ornamenten, Rosen, Kerzenlicht und illustrierten Seiten.',title:'Zwischen meinen Seiten',caption:'Der Band, wie Vesper ihn kennt: prachtvoll, sinnlich und inzwischen schwerer zu erklären als zu lesen.'}]
 };
