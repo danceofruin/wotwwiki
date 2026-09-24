@@ -6,7 +6,7 @@ Spielerbezogenes Kampagnenwiki für *Way of the Wicked*.
 - Live-Play-Stand: siehe `data/live.json` (9. Februar 4712 AR, vor Morgengrauen; Rückweg durch den Geheimgang)
 - Artikelarchiv: vollständig bis zum Rückzug aus Balentyne am 9. Februar 4712 AR
 - Technischer Stand: 23. September 2026
-- Version: 3.4.0
+- Version: 3.5.0
 
 ## Live Play
 
@@ -70,3 +70,13 @@ Die gleiche Prüfung läuft bei Pushes und Pull Requests automatisch über GitHu
 ## Rechte
 
 *Way of the Wicked*: Gary McBride / Fire Mountain Games. Pathfinder und die genannten Zusatzsysteme bleiben den jeweiligen Rechteinhabern zugeordnet. Dieses Repository ist eine private Kampagnenhilfe, keine offizielle Publikation und kein Ersatz für die Originalregelbücher.
+
+
+## Stand 3.5.0 · 24. September 2026
+
+- beide Spieltagsexporte gegen den neuen Handoff geprüft
+- Balentyne als gefallen und Buch Eins als abgeschlossen markiert
+- Styke, Vesper und Valeria auf die aktiven Stufe-6-Bögen gehoben
+- Tacitus als gebundene Magierin und Gelehrte eingetragen; Jacobian als freigelassen
+- Dalliance, Grumblejack, sechs Pferde, Zwergencrew und aktuelle Hausrollen nachgezogen
+- Spielerwissen-Firewall erhalten: der noch nicht ausgespielte Fensterblick enthält keine vorweggenommenen Straßendetails

@@ -42,7 +42,7 @@ export function validate(live, sheets) {
     resource(p.hp); texts(p.conditions); [p.name,p.class,p.state,p.resourceNote,p.gearNote].forEach(str);
     if (p.id === 'styke') { resource(p.pp); assert([true,false,null].includes(p.focus)); }
     if (p.id === 'vesper') {
-      list(p.slots); assert.equal(p.slots.length, 2);
+      list(p.slots); assert.equal(p.slots.length, 3);
       for (const [i,s] of p.slots.entries()) { obj(s, 'level current max', 'slot'); assert.equal(s.level, i+1); resource({current:s.current,max:s.max}, true); }
       obj(p.essence, 'total standard', 'essence'); assert(Number.isInteger(p.essence.total) && p.essence.total >= 0); str(p.essence.standard);
       obj(p.verse, 'present hpCurrent hpMax', 'verse'); assert.equal(typeof p.verse.present, 'boolean'); resource({current:p.verse.hpCurrent,max:p.verse.hpMax}, true);
@@ -60,8 +60,8 @@ export function validate(live, sheets) {
   list(sheets.characters); assert.deepEqual(sheets.characters.map(c=>c.id), ids);
   for (const c of sheets.characters) {
     obj(c, 'id name class level ancestry source profile hpMax stats attack attributes tabs', 'sheet');
-    assert.equal(c.level,5); assert.equal(c.hpMax,live.party.find(p=>p.id===c.id).hp.max);
-    assert.equal(c.source, c.id==='valeria'?'mechanics/valeria.md':`mechanics/combat/${c.id}-level-5.md`);
+    assert.equal(c.level,6); assert.equal(c.hpMax,live.party.find(p=>p.id===c.id).hp.max);
+    assert.equal(c.source, c.id==='valeria'?'mechanics/combat/valeria-level-6.md':'mechanics/combat/core-party-level-6.md');
     [c.name,c.class,c.ancestry,c.profile].forEach(str);
     obj(c.stats, 'ac touch flatFooted initiative speed bab cmb cmd fort ref will', 'stats'); Object.values(c.stats).forEach(str);
     obj(c.attack, 'name hit damage note', 'attack'); Object.values(c.attack).forEach(str);

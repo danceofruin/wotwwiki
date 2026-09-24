@@ -4,38 +4,38 @@
     "authority": "GENERATED VIEW. DO NOT USE AS CAMPAIGN AUTHORITY.",
     "generated": true,
     "playerSafe": true,
-    "generatedAt": "2026-09-23T12:00:00Z",
-    "sourceRevision": "0d4741a80003f26d9ccb333b41eb09326f1781c5289f89127cb154963c09fac6",
-    "reviewedAt": "2026-09-23"
+    "generatedAt": "2026-09-24T15:00:00Z",
+    "sourceRevision": "394cfb98f0f2cc7c476d1e268d57441d0a7b1dd3394cfb98f0f2cc7c476d1e26",
+    "reviewedAt": "2026-09-24"
   },
   "characters": [
     {
       "id": "styke",
       "name": "Styke",
-      "class": "Zelot 4 / Psion (Egoist) 1",
-      "level": 5,
+      "class": "Zelot 4 / Psion 1 / Awakened Blade 1",
+      "level": 6,
       "ancestry": "Aasimar · Angel-Blooded",
-      "source": "mechanics/combat/styke-level-5.md",
-      "profile": "Mithralkettenhemd + The Caged Sun (1 Essence)",
-      "hpMax": 34,
+      "source": "mechanics/combat/core-party-level-6.md",
+      "profile": "Mithralkettenhemd + The Caged Sun (2 Essence)",
+      "hpMax": 42,
       "stats": {
-        "ac": "19",
-        "touch": "15",
-        "flatFooted": "15",
-        "initiative": "+6",
+        "ac": "20",
+        "touch": "16",
+        "flatFooted": "16",
+        "initiative": "+7",
         "speed": "30 ft",
-        "bab": "+4",
-        "cmb": "+7",
-        "cmd": "21",
-        "fort": "+6",
-        "ref": "+7",
-        "will": "+8"
+        "bab": "+5",
+        "cmb": "+9",
+        "cmd": "23",
+        "fort": "+7",
+        "ref": "+8",
+        "will": "+10"
       },
       "attack": {
         "name": "+1 Großschwert",
-        "hit": "+8",
+        "hit": "+10",
         "damage": "2d6+13",
-        "note": "Power Attack · The Caged Sun"
+        "note": "Power Attack · The Caged Sun 2 Essence"
       },
       "attributes": [
         {
@@ -69,20 +69,12 @@
           "label": "Combat",
           "sections": [
             {
-              "title": "Angriffe",
-              "markdown": "| Angriff | Treffer | Schaden | Kritisch | Reichweite |\n|---|---:|---:|---:|---:|\n| **+1 Großschwert** | **+10** | **2d6+7** | 19-20/x2 | Nahkampf |\n| **+1 Großschwert, Power Attack** | **+8** | **2d6+13** | 19-20/x2 | Nahkampf |\n| **Sun's Gleam** | **+9 Ranged Touch** | **1d6+3 Force** | - | 30 ft |\n| **Waffenlos** | **+9** | 1d3+2 nonlethal | x2 | Nahkampf |\n\n*Angriffswerte enthalten The Caged Sun. Ohne die Haltung jeweils -1. Das +1-Großschwert liefert +1 Angriff und +1 Schaden. Bei BAB +4 gibt Power Attack -2 Angriff und mit einer zweihändig geführten Waffe +6 Schaden. Deadly Agility funktioniert per Hausregel mit dem Großschwert und verwendet den zweihändigen Schadensmultiplikator, hier +6 DEX-Schaden.*"
+              "title": "Kampfwerte",
+              "markdown": "**HP 42/42 · AC 20 · Touch 16 · Flat-Footed 16 · Initiative +7**\n\n+1-Großschwert: +12, 2d6+7. Power Attack: +10, 2d6+13. Rapid Strike: zwei Angriffe +10. Minute Hand mit PA: +8."
             },
             {
-              "title": "Rettungswürfe",
-              "markdown": "| Save | Total mit The Caged Sun | Ohne The Caged Sun | Basis |\n|---|---:|---:|---:|\n| **Fortitude** | **+6** | +5 | +4 |\n| **Reflex** | **+7** | +6 | +1 |\n| **Will** | **+8** | +7 | +6 |\n\n*Cloak of Resistance +1 ist eingerechnet. Immortal Spark gibt zusätzlich +2 gegen Todeseffekte. Carnal Frailty gibt -2 gegen sexuelle Ablenkung, Verführung und vergleichbare Effekte.*"
-            },
-            {
-              "title": "Standard-Kampfmotor",
-              "markdown": "- **Power Attack:** standardmäßig an.\n- **Ich mache AID:** Move Action Compartmentalized Aid auf Styke selbst. Durch Helpful **+4 Angriff** gegen das gewählte Ziel bis zum Beginn von Stykes nächstem Zug; stellt bis zu 3 geeignete verbrauchte Manöver wieder her und aktiviert Zeal.\n- **Zorn / Psicrystal:** verwendet seine eigene Standard Action für Aid Another Defense gegen Stykes aktuellen Gegner; INT -1 gegen DC 10; bei Erfolg +2 AC gegen diesen Gegner über Harrying Partners.\n- **Living Bastion:** solange Fokus gehalten wird +5 ft Reach.\n- **Combat Reflexes:** bis zu 4 zusätzliche AoOs pro Runde."
-            },
-            {
-              "title": "Zelot 4",
-              "markdown": "- **Zeal +1:** Ein getroffener Strike gibt den Collective-Mitgliedern 1 Runde +1 Moralbonus auf Angriffe.\n- **Collective:** bis zu 4 willige Kreaturen, 140 ft; Styke zählt nicht gegen das Limit.\n- **Telepathy:** Kommunikation innerhalb des Collective.\n- **Compartmentalized Aid:** Aid Another auf sich selbst als Move Action; aktiviert Zeal und stellt bis zu 3 geeignete verbrauchte Manöver wieder her.\n- **Commitment:** Aid Another auf Collective-Mitglieder innerhalb der Collective-Reichweite.\n- **Burning Contemplation:** CHA statt WIS für Voraussetzungen psionischer Talente.\n- **Martyrdom:** bis zu 20 Schaden von einem willigen Collective-Mitglied übernehmen; bis zu 4 PP zur Reduktion um 3 Schaden pro PP, mindestens 1 Schaden bleibt.\n- **Echoes of Steel:** bei einem Manöver mindestens 1 Grad unter dem höchsten verfügbaren Grad kann Styke PP in Höhe des Manövergrades ausgeben und einem Collective-Mitglied eine Nutzung innerhalb 1 Minute verleihen. Bei IL 5 und Grad-3-Zugang sind damit Manöver bis Grad 2 übertragbar. Nur ein Echo gleichzeitig.\n- **Mission, Protection:** Living Bastion.\n- **Living Bastion:** solange psionisch fokussiert +5 ft Reach. Fokus kann aufgegeben werden, um Schaden eines Verbündeten innerhalb Reach nach DR/Resistance zu halbieren; pro Kreatur einmal pro Runde."
+              "title": "Standardmotor",
+              "markdown": "- The Caged Sun: 2 Essence.\n- Compartmentalized Aid: Move Action, +4 Angriff gegen das gewählte Ziel, bis zu 3 geeignete Manöver zurück.\n- Living Bastion: +5 ft Reach bei Fokus.\n- Zorn kann Aid Defense gegen den aktuellen Gegner versuchen."
             }
           ]
         },
@@ -91,8 +83,8 @@
           "label": "Maneuvers",
           "sections": [
             {
-              "title": "Path of War",
-              "markdown": "**Initiator Level:** **5** nach der festgelegten Duett-/Build-Progression  \n**Initiating Attribute:** CHA +3  \n**Manöver bekannt:** **9**  \n**Manöver vorbereitet:** **5**  \n**Haltungen bekannt:** 2\n\n### Standardvorbereitung\n\n1. **Rapid Strike**\n2. **Minute Hand**\n3. **Obsidian Sidestep**\n4. **Reflective Blade Style**\n5. **Chains of Doubt**\n\n### Bekannte Manöver\n\n| Manöver | Standard vorbereitet? | Typ / Notiz |\n|---|---:|---|\n| **Rapid Strike** | Ja | Strike; zwei Nahkampfangriffe gegen dasselbe Ziel |\n| **Minute Hand** | Ja | Boost; zusätzlicher Nahkampfangriff mit -2 |\n| **Obsidian Sidestep** | Ja | Counter; ersetzt einen Save durch Craft (Weapons) |\n| **Reflective Blade Style** | Ja | Grad-3-Manöver aus Advanced Study |\n| **Chains of Doubt** | Ja | Grad-3-Manöver aus Advanced Study |\n| **Strength of Hell** | Nein | Boost; 1 Runde +2 Angriff, +1d6 Schaden auf alle Angriffe, -2 AC |\n| **Ravaging Blow** | Nein | Strike; +1d6 profane damage, Ziel shaken |\n| **Staunching Strike** | Nein | Radiant-Dawn-Strike; Heiloption |\n| **Flash of Insight** | Nein | Sleeping-Goddess-Boost; erlaubt Verbündeten erneuten Save gegen laufenden Effekt |\n\n### Haltungen\n\n- **The Caged Sun:** 1 investierte Essence; +1 Angriff, AC, Saves, CMB und CMD. Erhaltene Heilung wird zuerst um +2 erhöht und danach mit x1,5 multipliziert.\n- **Black Seraph's Glare:** Gegner in 30 ft, die Styke sehen können, gelten entsprechend der Haltung als shaken."
+              "title": "IL 6",
+              "markdown": "**Bekannt 9 · vorbereitet 5 · Haltungen 2**\n\nStandard: Rapid Strike, Minute Hand, Obsidian Sidestep, Reflective Blade Style, Chains of Doubt.\n\nNeu: Lifeburst Strike ersetzt Staunching Strike. Stances: The Caged Sun und Black Seraph's Glare."
             }
           ]
         },
@@ -101,12 +93,8 @@
           "label": "Psionics",
           "sections": [
             {
-              "title": "Psion 1, Egoist",
-              "markdown": "**Manifester Level:** 1  \n**Maximaler Power-Grad:** 1  \n**Powers Known:** 3\n\n### Power Points\n\n**11 PP / Tag gesamt**\n\n- 8 PP aus dem bisherigen Zelot-Pool nach Wegfall von Unlocked Talent.\n- +2 Basis-PP aus Psion 1.\n- +1 Bonus-PP aus INT 14 für Psion 1.\n\n### Powers Known\n\n- **Minor Metamorphosis**\n- **Defensive Precognition**\n- **Offensive Precognition**\n\n*Minor Metamorphosis bleibt damit trotz Retraining von Unlocked Talent regulär verfügbar.*\n\n### Psionische Talente (Grad 0)\n\nDiese Talente sind **separat von den drei Powers Known** oben.\n\n- **Detect Psionics**: etabliertes freies Grad-0-Talent; kostet keine PP. Unter der Kampagnen-Transparenz zwischen Magie und Psionik dient es Styke als psionisches Gegenstück zur Untersuchung magischer/psionischer Auren. Es identifiziert dadurch nicht automatisch Eigenschaften, Befehlswörter, Flüche oder verborgene Herkunft.\n- **Empathy**: im akzeptierten Spiel etabliert. Wenn manifestiert und die Konzentration gehalten wird, liefert es nur aktuelle Oberflaechenemotionen, keine Gedanken, Erinnerungen, Motive oder Fakten.\n- **Conceal Thoughts**: im akzeptierten Spiel etabliert. Bei aktuellem Manifester Level **1 Stunde** Dauer; **+10 Circumstance auf Bluff gegen Sense Motive**, wenn damit Stykes wahre Absichten erkannt werden sollen. Im normalen sozialen Alltag als aktiv behandeln, sofern keine etablierte Unterbrechung die routinemaessige Erneuerung verhindert. Der Bonus gilt nicht fuer Diplomacy oder andere Bluff-Anwendungen."
-            },
-            {
-              "title": "Personality Fragment: Psicrystal",
-              "markdown": "| Wert | Stufe 5 |\n|---|---:|\n| Typ | Diminutive Construct |\n| Psionische Klassenstufe des Meisters | **5** |\n| BAB | **+5** |\n| HP | **17** |\n| STR / DEX / INT | 1 / 15 / 9 |\n| AC | 16 |\n| Touch / Flat-Footed | 16 / 14 |\n| Saves | **Fort +4 / Ref +5 / Will +6** |\n| Tactical Assistance | INT -1 gegen DC 10 |\n| Aid-Bonus | +2 |\n| Knowledge-Unterstützung | +2 pauschal |"
+              "title": "Psion und Awakened Blade",
+              "markdown": "**PP 11/Tag · aktuell 10/11.** Powers: Minor Metamorphosis, Defensive Precognition, Offensive Precognition. Talente: Detect Psionics, Empathy, Conceal Thoughts.\n\nDeep Focus gibt einen zweiten, separat zu führenden Fokus. Situational Awareness liefert +1 Initiative."
             }
           ]
         },
@@ -116,7 +104,7 @@
           "sections": [
             {
               "title": "Fertigkeiten",
-              "markdown": "**Neue Ränge durch Psion 1:** 4.  \n**Gesamtränge:** 28.  \nFür den Awakened-Blade-Einstieg wurde ein zuvor gesetzter Stealth-Rang nach Autohypnosis verschoben; die vier neuen Ränge gehen in Acrobatics +2 und Autohypnosis +2.\n\n| Skill | Ranks | Total | Notiz |\n|---|---:|---:|---|\n| **Acrobatics** | **5** | **+9** | Voraussetzung Awakened Blade erfüllt |\n| **Autohypnosis** | **4** | **+7** | Klassenfertigkeit; Voraussetzung erfüllt |\n| **Craft (Weapons)** | 4 | **+9** | Klassenfertigkeit |\n| **Diplomacy** | 1 | **+7** | Klassenfertigkeit |\n| **Intimidate** | 3 | **+11** | inkl. Trait |\n| **Knowledge (All)** | 4 | **+9** | Duett-Hausregel; deckt Knowledge (martial/psionics) |\n| **Perception** | 4 | **+7** | |\n| **Stealth** | **3** | **+10** | Mithralkettenhemd ACP 0 |\n\n*Informant-Psicrystal unterstützt passende Knowledge-(All)-Checks pauschal mit +2.*"
+              "markdown": "Acrobatics +12 · Autohypnosis +7 · Craft (Weapons) +9 · Diplomacy +7 · Intimidate +11 · Knowledge (All) +11 · Perception +8 · Stealth +11 · Spellcraft +6 · Bluff +7"
             }
           ]
         },
@@ -126,21 +114,7 @@
           "sections": [
             {
               "title": "Ausrüstung",
-              "markdown": "- **+1 Großschwert**.\n- **Maßgefertigtes Mithralkettenhemd**: Armor +4, Max DEX +6, ACP 0.\n- **Thorns eiserner Stirnreif**: im Besitz. Aktuelle Verwendung siehe Ressourcen / Besitz.\n- **Cloak of Resistance +1**: getragen und in den Saves eingerechnet.\n- **Silber-Saphir-Symbol der Ritter des Alerion**: gesichert.\n- **Nessian-Kontaktsiegel**: gemeinsamer Missionsbesitz."
-            }
-          ]
-        },
-        {
-          "id": "details",
-          "label": "Details",
-          "sections": [
-            {
-              "title": "Attribute",
-              "markdown": "| Attribut | Wert | Mod | Notiz |\n|---|---:|---:|---|\n| STR | 14 | +2 | |\n| DEX | 19 | +4 | Primäres Kampf-Attribut |\n| CON | 10 | +0 | |\n| INT | 14 | +2 | Psionisches Attribut für Psion-Kräfte |\n| WIS | 10 | +0 | |\n| CHA | 17 | +3 | Zelot-Initiationsattribut |"
-            },
-            {
-              "title": "Talente",
-              "markdown": "### Reguläre und zusätzliche Talente\n\n- **Extra Conviction**: Personality Fragment.\n- **Power Attack**.\n- **Deadly Agility**: Hausregel erlaubt Großschwert.\n- **Advanced Study**: lernt **Chains of Doubt** und **Reflective Blade Style**.\n- **Extra Readied Maneuver**: durch Retraining des alten Stufe-1-Talents **Unlocked Talent**; +1 vorbereitetes Manöver.\n\n### Bonus- und gewonnene Talente\n\n- **Psionic Body**: Psion-1-Bonusfeat. Aktuell zwei psionische Talente, daher insgesamt **+4 HP**.\n- **Combat Reflexes**: über Combat Conviction.\n- **Psionic Meditation**: über Psionic Conviction.\n- **Harrying Partners**: Teamwork-Talent über Targeting Array, von Styke und Psicrystal geteilt."
+              "markdown": "+1-Großschwert · maßgefertigtes Mithralkettenhemd · Cloak of Resistance +1 · eiserner Stirnreif · Zorn.\n\nBelt of Incredible Dexterity +2: **noch nicht gekauft**."
             }
           ]
         }
@@ -149,30 +123,30 @@
     {
       "id": "vesper",
       "name": "Vesper",
-      "class": "Oracle (Spirit Guide) 5",
-      "level": 5,
+      "class": "Oracle (Spirit Guide) 6",
+      "level": 6,
       "ancestry": "Tiefling · Asura-Spawn",
-      "source": "mechanics/combat/vesper-level-5.md",
-      "profile": "Mithralkettenhemd + Mithral Heavy Shield + Headband of Alluring Charisma +2",
-      "hpMax": 28,
+      "source": "mechanics/combat/core-party-level-6.md",
+      "profile": "Mithralkettenhemd + Mithralschild + CHA-Stirnreif",
+      "hpMax": 33,
       "stats": {
         "ac": "21",
         "touch": "15",
         "flatFooted": "16",
-        "initiative": "+12",
+        "initiative": "+12 mit Verse",
         "speed": "30 ft",
-        "bab": "+3",
-        "cmb": "+3",
-        "cmd": "15",
-        "fort": "+2",
-        "ref": "+8",
-        "will": "+9"
+        "bab": "+4",
+        "cmb": "+4",
+        "cmd": "16",
+        "fort": "+3",
+        "ref": "+9",
+        "will": "+10"
       },
       "attack": {
-        "name": "Sun’s Gleam",
-        "hit": "+5",
+        "name": "Sun's Gleam",
+        "hit": "+6",
         "damage": "1d6+5 Force",
-        "note": "Ranged Touch · 40 ft"
+        "note": "Ranged Touch · 45 ft"
       },
       "attributes": [
         {
@@ -197,7 +171,7 @@
         },
         {
           "name": "CHA",
-          "value": "20*"
+          "value": "20 getragen"
         }
       ],
       "tabs": [
@@ -207,15 +181,7 @@
           "sections": [
             {
               "title": "Kampfwerte",
-              "markdown": "| Wert | Total | Notiz |\n|---|---:|---|\n| **HP** | **28 / 28** | 23 auf Stufe 4 +5 Oracle 5 |\n| **AC** | **15 / 21** | Ohne Ausrüstung / Mithralkettenhemd + Mithral Heavy Shield |\n| **Touch AC** | **15** | Sidestep Secret, CHA statt DEX |\n| **Flat-Footed** | **10 / 16** | Ohne / mit Rüstung und Schild |\n| **Initiative** | **+8 / +12** | +2 DEX, +2 Reactionary, +4 Improved Initiative; +4 zusätzlich durch Verse |\n| **Speed** | 30 ft | |\n| **BAB** | **+3** | |\n| **CMB** | **+3** | |\n| **CMD** | **15** | |\n| **Melee** | **+3** | Dolch 1d4, 19-20/x2 |\n| **Spell Save DC** | **15 / 16 / 17** | Orisons / Grad 1 / Grad 2 |\n| **Concentration** | **+10** | Oracle 5 + CHA 5 |\n\n### Rettungswürfe\n\n| Save | Total | Basis | Modifikator / Misc |\n|---|---:|---:|---|\n| **Fortitude** | **+2** | +1 | CON +0, Resistance +1 |\n| **Reflex** | **+8** | +1 | CHA +5, High Theft +1, Resistance +1 |\n| **Will** | **+9** | +4 | WIS +4, Resistance +1 |"
-            },
-            {
-              "title": "Standard-Kampferöffnung",
-              "markdown": "- Vesper würfelt normalerweise **Initiative +12**, solange Verse aktiv ist.\n- **Witness to Glory** ist vorbereitet und mit dem freien Essence-Punkt bevorzugt für Styke vorgesehen.\n- **Spoils of War** läuft als Standardstance mit 1 Essence.\n- Je nach Lage kann Vesper vor Stykes Zug Zauber, Glyphs oder Decree of Torment zur Vorbereitung des Schlachtfelds einsetzen.\n- Standard Readied bleiben **Witness to Glory + Decree of Torment**; Heilung läuft primär über Spoils of War und Cure-Spells."
-            },
-            {
-              "title": "Oracle 5, Spirit Guide / Lore",
-              "markdown": "- **Oracle Spellcasting** über CHA.\n- **Curse, Uncontainable Allure**: -4 Intimidate; *Unnatural Lust* als Bonuszauber gemäß vorhandenem Kampagnenbogen.\n- **Lore Mystery**: Knowledge-Skills als Klassenfertigkeiten.\n- **Sidestep Secret**: CHA statt DEX auf AC und Reflex.\n- **Lore Keeper**: CHA statt INT auf Knowledge.\n- **Bonded/Wandering Spirit**: tägliche Spirit-Wahl.\n- **Lore Spirit + Arcane Enlightenment**: vier täglich neu wählbare Sorcerer/Wizard-Zauber als temporäre Oracle Spells Known, derzeit bis Grad 2 wirkbar.\n- **Spirit Magic**: aktiv."
+              "markdown": "**HP 33/33 · AC 21 · Initiative +12 mit Verse / +8 ohne · Zauber-SG 15/16/17/18 · Konzentration +11.**"
             }
           ]
         },
@@ -224,8 +190,12 @@
           "label": "Spells",
           "sections": [
             {
-              "title": "Spellcasting",
-              "markdown": "**Casting Ability:** CHA +5  \n**Zauberplätze Grad 1:** **7 / Tag**  \n**Zauberplätze Grad 2:** **5 / Tag**  \n**Orisons:** beliebig oft\n\n### Orisons\n\n- Detect Magic\n- Create Water\n- Purify Food and Drink\n- Read Magic\n- Guidance\n- Enhanced Diplomacy\n\n### Zauber des 1. Grades\n\n| Zauber | Herkunft | Kurzfunktion |\n|---|---|---|\n| **Obscuring Mist** | regulär | Sicht- und Raumkontrolle |\n| **Protection from Evil** | regulär | Schutz gegen böse Kreaturen und bestimmte mentale Kontrolle |\n| **Air Bubble** | regulär | Atemluft |\n| **Remove Sickness** | **neu Stufe 5** | unterdrückt die Auswirkungen von Krankheit, Übelkeit und sickened nach Zaubertext |\n| **Cure Light Wounds** | Oracle Cure Spell | **1d8+5** Heilung |\n| **Unnatural Lust** | Curse Bonus | erzwungener körperlicher Annäherungsdrang |\n| **Identify** | Lore Spirit / Mystery | magische Gegenstände identifizieren |\n\n### Zauber des 2. Grades\n\n| Zauber | Herkunft | Kurzfunktion |\n|---|---|---|\n| **Delay Poison** | regulär | unterdrückt Giftwirkung |\n| **Lesser Restoration** | **neu Stufe 5** | behebt passende Ability-Damage-/Zustandseffekte nach Zaubertext |\n| **Cure Moderate Wounds** | Oracle Cure Spell | **2d8+5** Heilung |\n| **Tongues** | Lore Spirit | Sprachen verstehen und sprechen |\n\n### Arcane Enlightenment, aktuelle Standardauswahl\n\n- Dancing Darkness\n- Silent Image\n- Euphoric Cloud\n- Ashen Path\n\n*Diese vier Zauber sind temporäre Oracle Spells Known und können bei der täglichen Auffrischung neu gewählt werden.*"
+              "title": "Aktuelle Plätze",
+              "markdown": "Grad 1: **5/7** · Grad 2: **4/6** · Grad 3: **4/4**. Der CHA-Stirnreif wurde noch keine 24 Stunden getragen."
+            },
+            {
+              "title": "Auswahl",
+              "markdown": "Neu: Detect Poison, Silence, Delay Poison, Communal. Zusätzlich Cure Serious Wounds und Locate Object. Arcane Enlightenment: Dancing Darkness, Silent Image, Euphoric Cloud, Ashen Path, Stinking Cloud."
             }
           ]
         },
@@ -234,8 +204,8 @@
           "label": "Maneuvers",
           "sections": [
             {
-              "title": "Path of War, Martial Training II, Radiant Dawn",
-              "markdown": "**Initiator Level:** **6**  \n**Initiation Modifier:** **CHA +5**  \n**Recovery:** Full-Round Action  \n**Essence Pool:** **2**  \n**Essence Capacity:** **1** pro Receptacle  \n**Close Range:** **40 ft**\n\n### Sun's Gleam\n\n- **Angriff:** +5 Ranged Touch.\n- **Schaden:** 1d6+5 Force.\n- **Reichweite:** 40 ft.\n- Kann in geeigneten Radiant-Dawn-Strikes als Fernkampfangriff verwendet werden.\n\n### Bekannte Manöver\n\n| Manöver | Typ | Standard vorbereitet? | Effekt / Rolle |\n|---|---|---:|---|\n| **Bolster** | Counter | Nein | Verbündeter erhält DR 5/- für 1 Runde; mit 1 Essence DR 6/- |\n| **Staunching Strike** | Strike | Nein | Treffer + Heilung; Reserveoption, falls Spoils/Cure nicht reichen |\n| **Witness to Glory** | Counter | **Ja** | nach Initiativeermittlung bevorzugt auf Styke; **+5 Initiative und 7 Temp HP**, mit 1 Essence **+6 Initiative und 9 Temp HP** |\n| **Decree of Torment** | Strike | **Ja** | markiert einen starken Gegner mit Torment-Brands; Styke kann die Marken über seine vielen Treffer für Combat Maneuvers wie Trip, Disarm oder Dirty Trick nutzen |\n\n**Standard Readied:** **Witness to Glory, Decree of Torment**.\n\n*Bei Bedarf können zwischen Begegnungen Bolster oder Staunching Strike neu vorbereitet werden, sofern Zeit für die normale Martial-Training-Vorbereitung/Recovery besteht.*\n\n### Stance: Spoils of War\n\n**Standardstance:** **Spoils of War** mit **1 Essence investiert**.\n\n- Ohne Essence heilt der erste passende Treffer eines Verbündeten pro Runde bei IL 6 / IM +5 um **8 HP**.\n- Mit 1 Essence steigt dies auf **10 HP**.\n- Der zweite Essence-Punkt bleibt standardmäßig für **Witness to Glory** verfügbar."
+              "title": "Radiant Dawn",
+              "markdown": "IL 8 · Essence 2 · Kapazität 2 · 45 ft. Standard: 1 Essence Spoils of War, 1 Essence Witness to Glory. Witness liefert +6 Initiative und 10 temporäre HP."
             }
           ]
         },
@@ -244,18 +214,107 @@
           "label": "Glyphs",
           "sections": [
             {
-              "title": "Animus- und Martial-Glyph-Paket, virtueller Rang 1",
-              "markdown": "**Virtueller Animus-Rang:** 1  \n**Animus zu Beginn des ersten eigenen Zuges:** **5**  \n**Weitere Züge:** +1 Animus zu Beginn jedes eigenen Zuges.  \n**Zusätzlich:** +1 Animus am Rundenende, wenn Vesper in dieser Runde mindestens ein Manöver initiiert hat.  \n**Glyph-Kosten:** 1 Animus.  \n**Glyph-Reichweite:** **40 ft**.  \n**Glyph-Dauer:** **5 Runden**.  \n**Glyph-DC:** **18**.\n\nEin Glyph kann als Swift Action gewirkt werden oder höchstens einmal pro Runde als Free Action nach einem Treffer mit einem Martial Strike. Mehrfache Anwendungen desselben Glyphs stapeln sich nicht und verlängern die Dauer nicht.\n\n### Bekannte Basic Glyphs\n\n1. **Elemental Shield**: Energy Resistance **6** gegen Vespers aktives Element.\n2. **Ghost Eating Blade**: Waffen des Verbündeten erhalten *ghost touch*.\n3. **Ghost Armor**: Rüstung und Schild des Verbündeten erhalten *ghost touch*.\n4. **Deflective Armor**: Natural Armor steigt bei IL 6 um **+3**.\n5. **Shadowmeld**: **20% Concealment / Miss Chance** gegen Gegner."
+              "title": "Virtual Animus Adept 2",
+              "markdown": "Startanimus 6 · Glyphen 45 ft · 6 Runden · SG 19. Neu: Elemental Weapon, Evasive Armor und Blinding Blade."
             }
           ]
         },
         {
-          "id": "verse",
-          "label": "Verse",
+          "id": "skills",
+          "label": "Skills & Gear",
           "sections": [
             {
-              "title": "Familiar: Verse",
-              "markdown": "| Wert | Stufe 5 |\n|---|---:|\n| HP | **14** |\n| Intelligence | **8** |\n| Natural Armor Adjustment | **+3** |\n| Initiativebonus für Vesper | **+4** |\n\nVerse verwendet weiterhin den Protector Archetype mit Bodyguard und Combat Reflexes entsprechend den etablierten Kampagnenregeln."
+              "title": "Fertigkeiten",
+              "markdown": "Bluff +7 · Disable Device +14 · Diplomacy +14 · Heal +8 · Knowledge (All) +14 · Perception +10 · Sense Motive +9 · Spellcraft +11 · Stealth +14."
+            },
+            {
+              "title": "Ausrüstung",
+              "markdown": "Mithralkettenhemd · Mithral Heavy Shield · Cloak of Resistance +1 · Headband of Alluring Charisma +2 · Thieves’ Tools · Verse. Extend-Rod: **noch nicht gekauft**."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "valeria",
+      "name": "Valeria",
+      "class": "Antipaladin 6 · Tyrant / Lord of Darkness",
+      "level": 6,
+      "ancestry": "Mensch · Karfeld",
+      "source": "mechanics/combat/valeria-level-6.md",
+      "profile": "+1 Dastard Full Plate · Meisterarbeits-Großschwert",
+      "hpMax": 40,
+      "stats": {
+        "ac": "21",
+        "touch": "11",
+        "flatFooted": "20",
+        "initiative": "+5",
+        "speed": "20 ft",
+        "bab": "+6/+1",
+        "cmb": "+9",
+        "cmd": "20",
+        "fort": "+11",
+        "ref": "+9",
+        "will": "+11"
+      },
+      "attack": {
+        "name": "Meisterarbeits-Großschwert",
+        "hit": "+8/+3",
+        "damage": "2d6+10",
+        "note": "Power Attack"
+      },
+      "attributes": [
+        {
+          "name": "STR",
+          "value": "16"
+        },
+        {
+          "name": "DEX",
+          "value": "12"
+        },
+        {
+          "name": "CON",
+          "value": "10"
+        },
+        {
+          "name": "INT",
+          "value": "10"
+        },
+        {
+          "name": "WIS",
+          "value": "10"
+        },
+        {
+          "name": "CHA",
+          "value": "20"
+        }
+      ],
+      "tabs": [
+        {
+          "id": "combat",
+          "label": "Combat",
+          "sections": [
+            {
+              "title": "Kampfwerte",
+              "markdown": "**HP 40/40 · AC 21 · Initiative +5 · BAB +6/+1.** Normal +10/+5, 2d6+4; Power Attack +8/+3, 2d6+10."
+            },
+            {
+              "title": "Kampfmotor",
+              "markdown": "Power Attack → Cornugon Smash → Demoralisieren → Hurtful, solange die Swift Action frei ist. Intimidate +18 gegen lebende Gegner innerhalb 10 ft."
+            }
+          ]
+        },
+        {
+          "id": "antipaladin",
+          "label": "Antipaladin",
+          "sections": [
+            {
+              "title": "Ressourcen",
+              "markdown": "Smite Good 2/Tag · Touch of Corruption 8/Tag (3d6) · Cruelties Fatigued/Staggered · Channel Negative Energy · Aura of Obedience · Fiendish Boon 1/Tag · VMC Challenge 1/Tag."
+            },
+            {
+              "title": "Zauber",
+              "markdown": "Drei Zauberplätze Grad 1 pro Tag. Aktuell ist noch keine Vorbereitung etabliert."
             }
           ]
         },
@@ -265,7 +324,7 @@
           "sections": [
             {
               "title": "Fertigkeiten",
-              "markdown": "**Skill Ranks pro Level:** 4 Oracle +2 INT +1 FCB = 7.  \n**Gesamtränge auf Stufe 5:** 35.\n\nDie sieben neuen Ränge gehen in Disable Device, Diplomacy, Knowledge (All), Perception, Spellcraft, Stealth und **Bluff**. Sense Motive bleibt bewusst auf 2 Ranks.\n\n| Skill | Ability | Ranks | Total | Notiz |\n|---|---:|---:|---:|---|\n| **Bluff** | CHA | **1** | **+6** | neuer Rang auf Stufe 5 |\n| **Disable Device** | CHA | **5** | **+13** | Mithral Heavy Shield ACP 0; Trapfinding |\n| **Diplomacy** | CHA | **5** | **+13** | mit Enhanced Diplomacy situativ +15 |\n| **Heal** | WIS | 1 | **+8** | Klassenfertigkeit |\n| **Knowledge (All)** | CHA | **5** | **+13** | Lore Keeper; erfüllt auch Knowledge (martial) |\n| **Perception** | WIS | **5** | **+9** | keine Klassenfertigkeit |\n| **Sense Motive** | WIS | **2** | **+9** | Klassenfertigkeit |\n| **Spellcraft** | INT | **5** | **+10** | Klassenfertigkeit |\n| **Stealth** | CHA | **5** | **+13** | Mithral Heavy Shield ACP 0 |\n| **Survival** | WIS | 1 | **+5** | |"
+              "markdown": "Intimidate +14 (+18 mit Aura) · Diplomacy +14 · Sense Motive +9 · Stealth +5 in Platte / +10 ohne Platte."
             }
           ]
         },
@@ -275,138 +334,7 @@
           "sections": [
             {
               "title": "Ausrüstung",
-              "markdown": "- Dolch.\n- Maßgefertigtes Mithralkettenhemd, Armor +4, Max DEX +6, ACP 0.\n- Mithral Heavy Shield, Shield +2, ACP 0.\n- Thieves' Tools.\n- **Havelyns Headband of Alluring Charisma +2**, getragen; effektive CHA 20. Noch keine 24 Stunden getragen, daher in der aktuellen Nacht keine zusätzlichen Bonus-Zauberplätze.\n- Verse, aktiv.\n- **Cloak of Resistance +1:** getragen; der Resistance-Bonus ist in Vespers Saves eingerechnet."
-            }
-          ]
-        },
-        {
-          "id": "details",
-          "label": "Details",
-          "sections": [
-            {
-              "title": "Attribute",
-              "markdown": "| Attribut | Wert | Mod | Notiz |\n|---|---:|---:|---|\n| STR | 11 | +0 | |\n| DEX | 14 | +2 | Initiative und CMD |\n| CON | 10 | +0 | |\n| INT | 14 | +2 | Arcane Enlightenment bis Zaubergrad 4 vorbereitet |\n| WIS | 18 | +4 | Perception, Heal, Sense Motive |\n| CHA | 18 / **20** | +4 / **+5** | +2 durch Havelyns Stirnreif; Zauber, AC, Reflex, Knowledge, Stealth, Disable Device, Initiation |"
-            },
-            {
-              "title": "Talente",
-              "markdown": "- **Extra Revelation**.\n- **Verse Familiar**: mechanisch Wasp Familiar, Protector Archetype; +4 Initiative für Vesper, solange die Familiar-Bedingungen erfüllt sind.\n- **Martial Training I → II, Radiant Dawn**: automatische Progression über **Stykes Lehre**; Stufe 5 schaltet den zweiten Martial-Training-Schritt ohne neuen Feat-Slot frei.\n- **Improved Initiative**: reguläres Stufe-5-Talent; +4 Initiative."
-            },
-            {
-              "title": "Traits & Drawback",
-              "markdown": "- **High Theft:** +1 Trait-Bonus auf Reflex.\n- **Schattenwebers Intuition:** Trapfinding; CHA statt DEX für Disable Device und Stealth; beide Klassenfertigkeiten.\n- **Reactionary:** +2 Initiative.\n- **Stykes Lehre:** automatische Radiant-Dawn-Martial-Training-Progression ohne weitere Feat-Steuer.\n- **Hedonistic:** bei Nichterfüllung der etablierten täglichen Bedingung Fortitude DC 20; Fehlschlag verursacht 4 Stunden fatigued."
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "valeria",
-      "name": "Valeria",
-      "class": "Fighter 5",
-      "level": 5,
-      "ancestry": "Mensch · Karfeld",
-      "source": "mechanics/valeria.md",
-      "profile": "+1 Dastard Full Plate · Großschwert · kein Schild",
-      "hpMax": 42,
-      "stats": {
-        "ac": "21",
-        "touch": "11",
-        "flatFooted": "20",
-        "initiative": "+1",
-        "speed": "20 ft in Plattenrüstung",
-        "bab": "+5",
-        "cmb": "+9",
-        "cmd": "20",
-        "fort": "+8",
-        "ref": "+3",
-        "will": "+6"
-      },
-      "attack": {
-        "name": "Meisterarbeits-Großschwert",
-        "hit": "+9",
-        "damage": "2d6+13",
-        "note": "Power Attack"
-      },
-      "attributes": [
-        {
-          "name": "STR",
-          "value": "18"
-        },
-        {
-          "name": "DEX",
-          "value": "12"
-        },
-        {
-          "name": "CON",
-          "value": "16"
-        },
-        {
-          "name": "INT",
-          "value": "10"
-        },
-        {
-          "name": "WIS",
-          "value": "14"
-        },
-        {
-          "name": "CHA",
-          "value": "10"
-        }
-      ],
-      "tabs": [
-        {
-          "id": "combat",
-          "label": "Combat",
-          "sections": [
-            {
-              "title": "Kampfwerte",
-              "markdown": "| Wert | Aktuell |\n|---|---:|\n| HP | **42 / 42** |\n| Initiative | **+1** |\n| Speed | **20 ft** in Plattenrüstung |\n| BAB | **+5** |\n| CMB | **+9** |\n| CMD | **20** |\n| AC | **21** |\n| Touch | **11** |\n| Flat-Footed | **20** |\n| Fortitude | **+8** |\n| Reflex | **+3** |\n| Will | **+6** |\n\nBravery +1 gives another +1 against fear effects."
-            },
-            {
-              "title": "Current weapon",
-              "markdown": "Later accepted campaign correction fixes Valeria's two-handed weapon as a **masterwork greatsword**.\n\n- Greatsword is a Heavy Blade, so Weapon Training (Heavy Blades) applies.\n- Attack: **+11** = BAB +5, STR +4, Weapon Training +1, masterwork +1.\n- Damage: **2d6+7** = 1.5×STR (+6) plus Weapon Training +1.\n- With Power Attack at BAB +5: **+9 attack, 2d6+13 damage**.\n- Weapon Focus (longsword) and Weapon Specialization (longsword) do not apply to the greatsword."
-            },
-            {
-              "title": "Fighter 5",
-              "markdown": "- Bravery +1.\n- Armor Training 1.\n- Weapon Training (Heavy Blades) +1."
-            }
-          ]
-        },
-        {
-          "id": "skills",
-          "label": "Skills",
-          "sections": [
-            {
-              "title": "Skills",
-              "markdown": "| Skill | Total | Note |\n|---|---:|---|\n| Intimidate | +5 | source build |\n| Knowledge (nobility) | +1 | Child of the Temple included |\n| Knowledge (religion) | +8 | Child of the Temple; class skill |\n| Ride | +7* | armor-check-sensitive; reconcile if exact plate ACP matters |\n| Survival | +7 | source build |\n| Perception | +2 | WIS-based source baseline |"
-            }
-          ]
-        },
-        {
-          "id": "gear",
-          "label": "Gear",
-          "sections": [
-            {
-              "title": "Current equipment",
-              "markdown": "- **+1 Dastard Full Plate**, aktuell getragen; der zusätzliche +2-Profanbonus der Dastard-Eigenschaft ist ohne Challenge/Smite Good inaktiv.\n- **Meisterarbeits-Großschwert.**\n- Cloak of Resistance +1, getragen und in den Rettungswürfen eingerechnet.\n- Die frühere **Meisterarbeits-Plattenrüstung** wurde aus Balentyne zurückgeholt und wird als nicht getragener Vermögenswert mitgeführt.\n- Das silberne Saphir-Symbol der Ritter des Alerion ist bei Styke."
-            }
-          ]
-        },
-        {
-          "id": "details",
-          "label": "Details",
-          "sections": [
-            {
-              "title": "Attribute",
-              "markdown": "| Attribut | Wert | Mod |\n|---|---:|---:|\n| STR | 18 | +4 |\n| DEX | 12 | +1 |\n| CON | 16 | +3 |\n| INT | 10 | +0 |\n| WIS | 14 | +2 |\n| CHA | 10 | +0 |"
-            },
-            {
-              "title": "Feats",
-              "markdown": "- Cleave.\n- Iron Will.\n- Power Attack.\n- Step Up.\n- Weapon Focus (longsword).\n- Weapon Specialization (longsword).\n\nThe two longsword feats remain part of the inherited Fighter build but are inactive while she uses the greatsword."
-            },
-            {
-              "title": "Trait",
-              "markdown": "**Child of the Temple:** +1 trait bonus on Knowledge (nobility) and Knowledge (religion); Knowledge (religion) is a class skill."
+              "markdown": "+1 Dastard Full Plate · Meisterarbeits-Großschwert · Cloak of Resistance +1 · Mirelles Rüstungsunterkleidung.\n\nPermanente +1-Waffenaufwertung: **noch nicht gekauft**."
             }
           ]
         }
