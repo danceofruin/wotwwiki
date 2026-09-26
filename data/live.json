@@ -4,20 +4,20 @@
     "authority": "GENERATED VIEW. DO NOT USE AS CAMPAIGN AUTHORITY.",
     "generated": true,
     "playerSafe": true,
-    "generatedAt": "2026-09-24T15:00:00Z",
-    "sourceRevision": "e4f7a83fa368527ffea44bcfcd2cfa901846b5bee4f7a83fa368527ffea44bcf",
-    "reviewedAt": "2026-09-24",
+    "generatedAt": "2026-09-26T15:45:00Z",
+    "sourceRevision": "ea2f22a426cbe4d115a3c391b2bc3a843b7824a289e9b2c61bf1265af874ec6a",
+    "reviewedAt": "2026-09-26",
     "sheetRevision": "394cfb98f0f2cc7c476d1e268d57441d0a7b1dd3394cfb98f0f2cc7c476d1e26"
   },
   "scene": {
-    "date": "4712-02-09",
-    "dateLabel": "9. Februar 4712 AR",
-    "time": "Früher Morgen · ca. 07:00–08:30",
-    "location": "Oberes Zimmer im Lord’s Dalliance",
-    "locationId": "zimmer",
-    "detail": "Styke und Vesper gehen zum Fenster; Kaitlyn ist wach am Bett",
-    "summary": "Balentyne ist gefallen, Jacobian freigelassen und Tacitus gebunden. Der unmittelbare Blick auf Aldencross ist der nächste ausgespielte Moment.",
-    "rest": "Seit dem Aufbruch zum Angriff gab es keine vollständige Nachtruhe."
+    "date": "4712-02-12",
+    "dateLabel": "12. Februar 4712 AR",
+    "time": "Später Nachmittag",
+    "location": "Halstyn’s Folly",
+    "locationId": "halstyns-folly",
+    "detail": "Styke und Nella sitzen mit Blechbechern an der offenen Seite des überdachten Decks",
+    "summary": "Die Barke fährt weiter nach Süden. Nella spricht erstmals aus, dass ihr die wachsende Verantwortung für Vorräte, Geld und den kleinen Haushalt gefällt.",
+    "rest": "Die Reise erlaubt reguläre Nachtruhe; es bestehen keine aktuellen Erschöpfungszustände."
   },
   "quests": [
     {
@@ -25,286 +25,173 @@
       "title": "Balentyne · erster Auftrag",
       "status": "completed",
       "updated": "4712-02-09",
-      "summary": "Donnagin und Havelyn sind tot; Torhaus und Bedienwerke wurden sabotiert. Fire-Axes Heer nahm die Festung.",
+      "summary": "Balentyne ist gefallen, Thorns Auftrag erfüllt und die Erfolgszahlung überbracht.",
       "known": [
-        "Balentyne ist gefallen.",
-        "Das Kerntrio hat Stufe 6 erreicht.",
-        "Thorns Tonsiegel wurde gebrochen; Tiadora und die Erfolgszahlung sind noch nicht eingetroffen."
+        "Donnagin und Havelyn sind tot; das Torhaus wurde sabotiert.",
+        "Fire-Axes Heer nahm die Festung.",
+        "Das Kerntrio erreichte Stufe 6."
       ],
-      "next": "Antwort des Auftraggebers abwarten und die Abreise vorbereiten.",
-      "links": [
-        "balentyne",
-        "angriffsplan",
-        "nessian-siegel",
-        "tiadora"
-      ]
+      "next": "Als abgeschlossene Geschichte im Archiv behalten.",
+      "links": ["balentyne", "angriffsplan", "balentyne-beute"]
     },
     {
-      "id": "dalliance",
-      "title": "Lord’s Dalliance · Hauslage",
+      "id": "voyage",
+      "title": "Halstyn’s Folly · Fahrt nach Farholde",
       "status": "active",
-      "updated": "4712-02-09",
-      "summary": "Das Haus ist intakt und verteidigt. Grumblejack steht draußen; sechs Pferde bleiben am Haus.",
+      "updated": "4712-02-12",
+      "summary": "Der vergrößerte Haushalt reist mit sechs Pferden auf der Flussbarke nach Süden.",
       "known": [
-        "Tamsin führt den Schutz; Hakon und seine fünf Männer sind im Haus.",
-        "Bellam, Alicia, Nella, Mirelle und Kaitlyn leben.",
-        "Barnabus und zehn Arbeiter liegen tot oben; ihr Besitz wurde nicht angetastet."
+        "Tiadora nutzt die einzige Kabine; alle übrigen leben auf dem überdachten offenen Deck.",
+        "Tamsin führt Sicherheit, Nella Logistik, Kaitlyn den sozialen Alltag und Mirelle die tragbare Handwerksarbeit.",
+        "Zwei weitere Requisitionsnächte haben Vorräte und einen laufenden Betriebsfonds eingebracht."
       ],
-      "next": "Fensterlage prüfen und Abreise, Gefolge sowie Transport entscheiden.",
-      "links": [
-        "dalliance",
-        "tamsin",
-        "hakon",
-        "grumblejack",
-        "eisenbauch-crew"
-      ]
+      "next": "Tagesreise, Haushaltsarbeit und die jeweils anstehende persönliche Szene ausspielen.",
+      "links": ["halstyns-folly", "requisitionsfahrten", "nella", "tamsin"]
     },
     {
-      "id": "tacitus",
-      "title": "Tacitus & Jacobian",
-      "status": "completed",
-      "updated": "4712-02-09",
-      "summary": "Jacobian wurde freigelassen. Tacitus nahm den Compact an und ist nun gebundene Magierin und Gelehrte.",
+      "id": "familiar",
+      "title": "Tacitus · neues arkanes Band",
+      "status": "active",
+      "updated": "4712-02-12",
+      "summary": "Tacitus arbeitet mit Zorn an der Umstellung ihres gebundenen Gegenstands auf einen Familiar.",
       "known": [
-        "The Heart of All Flame wurde Tacitus zurückgegeben.",
-        "Der Feuerballstab bleibt als ihr arkanes Bindungsobjekt unverkauft beim Knoten.",
-        "Tacitus übernimmt Plankritik, Forschung und Arbeit an magischer Ausrüstung."
+        "Zehn qualifizierende Arbeitstage und insgesamt 350 gp Material sind vorgesehen.",
+        "Der 12. Februar ist der dritte volle Arbeitstag; er läuft noch.",
+        "An einem qualifizierenden Projekttag fertigt Tacitus keine magischen Gegenstände."
       ],
-      "next": "Tacitus essen, schlafen und die Nacht verarbeiten lassen.",
-      "links": [
-        "tacitus",
-        "jacobian",
-        "heart-all-flame",
-        "compact-bound"
-      ]
+      "next": "Arbeitstage und tatsächliche Materialausgaben erst nach ihrem Eintritt verbuchen.",
+      "links": ["tacitus", "tacitus-familiarprojekt", "zorn"]
+    },
+    {
+      "id": "household",
+      "title": "Der reisende Haushalt",
+      "status": "active",
+      "updated": "4712-02-12",
+      "summary": "Gefolge, Passagiere, sechs Pferde und Ausrüstung sind auf der Barke untergebracht und werden als gemeinsamer Haushalt versorgt.",
+      "known": [
+        "Die liquide Knotenkasse beträgt 17.271 gp.",
+        "Gewöhnliche Requisitionserlöse decken Nahrung, Lohn, Futter und Ersatz statt die Abenteurerkasse aufzublähen.",
+        "Bellam und Alicia sollen beim Ausschiffen zusammen 1.500 gp erhalten."
+      ],
+      "next": "Langfristige Rollen, Bezahlung und Reiseziele erst in den vorgesehenen Gesprächen festlegen.",
+      "links": ["nella", "hakon", "bellam", "alicia"]
     },
     {
       "id": "mott",
-      "title": "Mott · Kaitlyn · Eddarly",
-      "status": "active",
-      "updated": "4712-02-09",
-      "summary": "Kaitlyn ist im Dalliance. Zack ist tot; Franz’ weiterer Weg ist ihr und dem Kerntrio unbekannt.",
+      "title": "Kaitlyn · Franz Mott",
+      "status": "waiting",
+      "updated": "4712-02-12",
+      "summary": "Kaitlyn ist an Bord. Über Franz’ weiteren Weg besitzt sie weiterhin keinen belastbaren Bericht.",
       "known": [
-        "Kaitlyn blieb während des Falls im geschützten Haus.",
-        "Styke versprach ihr direkten Bescheid über Franz.",
-        "Am aktuellen Rand ist Kaitlyn wach im oberen Zimmer."
+        "Zack ist tot.",
+        "Kaitlyn unterstützt auf der Reise Menschen und persönlichen Besitz statt die Frachtbuchhaltung.",
+        "Styke versprach ihr direkten Bescheid, sobald er etwas Verlässliches über Franz erfährt."
       ],
-      "next": "Franz nur über einen neuen belastbaren Träger fortschreiben.",
-      "links": [
-        "kaitlyn",
-        "franz",
-        "zack",
-        "zimmer"
-      ]
+      "next": "Nur über einen echten neuen Träger fortschreiben.",
+      "links": ["kaitlyn", "franz", "zack"]
     },
     {
       "id": "red-book",
       "title": "Das rote Buch",
       "status": "active",
-      "updated": "4712-02-09",
-      "summary": "Vier sichtbare Veränderungen sind dokumentiert. Tacitus soll die langfristige Seitenkontrolle und Forschung mit Vesper fortsetzen.",
+      "updated": "4712-02-12",
+      "summary": "Vier sichtbare Veränderungen sind dokumentiert; Herkunft und vollständige Kräfte bleiben ungeklärt.",
       "known": [
         "Die Aura umfasst Divination, Illusion und eine tiefere unbekannte Komponente.",
-        "Herkunft, Bewusstsein und vollständige Kräfte bleiben ungeklärt.",
-        "Der Titel und bekannte Text sind belegt; eine ursprüngliche Autorschaft ist es nicht."
+        "Tacitus und Vesper können die langfristige Seitenkontrolle gemeinsam fortsetzen.",
+        "Eine ursprüngliche Autorschaft ist nicht belegt."
       ],
-      "next": "Seitenstände datieren, vergleichen und neue Veränderungen an konkrete Ereignisse binden.",
-      "links": [
-        "rotes-buch",
-        "zwischen-den-seiten",
-        "tacitus",
-        "vesper"
-      ]
-    },
-    {
-      "id": "transition",
-      "title": "Übergang zum nächsten Auftrag",
-      "status": "waiting",
-      "updated": "4712-02-09",
-      "summary": "Der Sieg ist erreicht; Antwort, Erfolgszahlung und Abreisebefehl fehlen noch.",
-      "known": [
-        "Sechs Pferde stehen zur Verfügung.",
-        "Gefolge und Beute sind noch nicht auf eine Reise verteilt.",
-        "Die Knotenkasse enthält 12.226 gp; 5.000 gp Belohnung sind noch nicht eingegangen."
-      ],
-      "next": "Tiadora beziehungsweise Thorns Nachricht abwarten.",
-      "links": [
-        "tiadora",
-        "offene-spuren",
-        "balentyne-beute",
-        "nessian-siegel"
-      ]
+      "next": "Neue Seitenstände datieren und an tatsächlich erlebte Ereignisse binden.",
+      "links": ["rotes-buch", "zwischen-den-seiten", "tacitus", "vesper"]
     }
   ],
   "appointments": [
     {
-      "id": "window",
-      "date": "4712-02-09",
+      "id": "nella",
+      "date": "4712-02-12",
       "label": "Jetzt",
-      "time": "Ca. 07:00–08:30",
-      "title": "Blick aus dem Fenster",
-      "note": "Styke und Vesper prüfen die unmittelbare Lage vor dem Dalliance.",
-      "links": [
-        "zimmer",
-        "aldencross",
-        "dalliance"
-      ]
+      "time": "Später Nachmittag",
+      "title": "Schlechtes Bier am Fluss",
+      "note": "Nella bleibt neben Styke sitzen, nachdem sie ihre Freude an der neuen Verantwortung ausgesprochen hat.",
+      "links": ["nella", "halstyns-folly"]
     },
     {
-      "id": "tiadora",
-      "date": "4712-02-09",
+      "id": "tacitus-work",
+      "date": "4712-02-12",
+      "label": "Laufend",
+      "time": "Dritter voller Arbeitstag",
+      "title": "Tacitus und Zorn",
+      "note": "Papier, Tinte und kleine Versuchsanordnungen; der Tag zählt erst nach vollständiger Arbeit.",
+      "links": ["tacitus-familiarprojekt", "tacitus", "zorn"]
+    },
+    {
+      "id": "hakon-talk",
+      "date": "4712-02-12",
+      "label": "Gegen Reiseende",
+      "time": "Noch offen",
+      "title": "Hakon und die Sechs",
+      "note": "Styke will mit Hakon über Wünsche, Bezahlung und die Zeit nach der Flussfahrt sprechen.",
+      "links": ["hakon", "feldgruppe"]
+    },
+    {
+      "id": "next-order",
+      "date": "4712-02-12",
       "label": "Ausstehend",
-      "time": "Nach der Bestätigung",
-      "title": "Antwort auf Balentyne",
-      "note": "Tiadoras Ankunft hat noch nicht stattgefunden; kein genauer Zeitpunkt ist bekannt.",
-      "links": [
-        "tiadora",
-        "nessian-siegel",
-        "balentyne"
-      ]
-    },
-    {
-      "id": "departure",
-      "date": "4712-02-09",
-      "label": "Danach",
-      "time": "Nach neuem Auftrag",
-      "title": "Abreise und Gefolge",
-      "note": "Transport, sechs Pferde, Beute und mitreisende Personen festlegen.",
-      "links": [
-        "offene-spuren",
-        "dalliance",
-        "balentyne-beute"
-      ]
+      "time": "Noch unbekannt",
+      "title": "Thorns nächster Auftrag",
+      "note": "Die Erfolgszahlung ist erfolgt; ein neuer Missionsauftrag wurde noch nicht erteilt.",
+      "links": ["thorn", "tiadora", "halstyns-folly"]
     }
   ],
   "missions": [
-    {
-      "id": "treasury",
-      "label": "Knotenkasse",
-      "value": "12.226 gp",
-      "note": "Liquide gemeinsame Reserve; die 5.000-gp-Erfolgszahlung ist noch nicht eingegangen."
-    },
-    {
-      "id": "level",
-      "label": "Kerntrio",
-      "value": "Stufe 6",
-      "note": "Styke Awakened Blade, Vesper Oracle 6, Valeria Antipaladin 6."
-    },
-    {
-      "id": "horses",
-      "label": "Varning-Pferde",
-      "value": "6 am Haus",
-      "note": "Jacobian erhielt eines von sieben Pferden."
-    },
-    {
-      "id": "grumblejack",
-      "label": "Grumblejack",
-      "value": "Vor dem Dalliance",
-      "note": "Freiwillige Abschreckung; künftige Plattenrüstung versprochen."
-    },
-    {
-      "id": "dwarves",
-      "label": "Zwergencrew",
-      "value": "11 tot",
-      "note": "Körper und Besitz oben; noch nicht durchsucht oder liquidiert."
-    },
-    {
-      "id": "tacitus",
-      "label": "Tacitus",
-      "value": "Gebunden",
-      "note": "Zauberbuch zurück; Feuerballstab bleibt unverkauft beim Knoten."
-    },
-    {
-      "id": "reward",
-      "label": "Erfolgszahlung",
-      "value": "Noch 0 gp",
-      "note": "Tiadora hat die vorgesehene Belohnung noch nicht überbracht."
-    }
+    {"id":"treasury","label":"Knotenkasse","value":"17.271 gp","note":"Liquide Reserve nach Thorns 5.000-gp-Erfolgszahlung und dem geborgenen Zwergengeld."},
+    {"id":"operating-fund","label":"Betriebsfonds","value":"Nicht einzeln bepreist","note":"Requisitionsgeld und gewöhnliche Beute tragen Versorgung, Lohn, Pferde und Ersatzmaterial."},
+    {"id":"level","label":"Kerntrio","value":"Stufe 6","note":"Styke Awakened Blade, Vesper Oracle 6, Valeria Antipaladin 6."},
+    {"id":"horses","label":"Varning-Pferde","value":"6 an Bord","note":"Varlet gehört Grumblejack; Jacobian erhielt das siebte Pferd."},
+    {"id":"familiar-days","label":"Tacitus-Projekt","value":"Tag 3 von 10 läuft","note":"350 gp Gesamtbedarf; noch keine feste Teilausgabe verbucht."},
+    {"id":"bellam-payout","label":"Bellam und Alicia","value":"1.500 gp vorgemerkt","note":"Auszahlung beim Ausschiffen; noch nicht von der Knotenkasse abgezogen."},
+    {"id":"grumblejack","label":"Grumblejack-Rüstung","value":"Vermessen","note":"Mirelle hat zweimal Maß genommen; Schmied und Plattengeometrie bleiben offen."}
   ],
-  "people": [
-    "tacitus",
-    "jacobian",
-    "tamsin",
-    "nella",
-    "mirelle",
-    "kaitlyn",
-    "hakon",
-    "grumblejack",
-    "tiadora",
-    "barnabus",
-    "bellam",
-    "alicia"
-  ],
+  "people": ["tacitus", "tamsin", "nella", "mirelle", "kaitlyn", "hakon", "grumblejack", "bellam", "alicia", "tiadora"],
   "party": [
     {
       "id": "styke",
       "name": "Styke",
       "class": "Zelot 4 / Psion 1 / Awakened Blade 1",
-      "hp": {
-        "current": 42,
-        "max": 42
-      },
+      "hp": {"current": 42, "max": 42},
       "conditions": [],
-      "state": "Mit Vesper am Fenster",
-      "resourceNote": "42/42 HP, 10/11 PP. Normaler Fokus verfügbar; Deep Focus nicht automatisch gefüllt.",
-      "gearNote": "+1-Großschwert, Mithralkettenhemd, Cloak +1; keine aktive Rittertarnung. Zorn ist bei ihm.",
-      "pp": {
-        "current": 10,
-        "max": 11
-      },
+      "state": "Mit Nella an der offenen Deckseite",
+      "resourceNote": "42/42 HP, 11/11 PP. Ein psionischer Fokus verfügbar; Deep Focus nicht automatisch gefüllt.",
+      "gearNote": "+1-Großschwert und Reiseausrüstung griffbereit; Zorn arbeitet bei Tacitus.",
+      "pp": {"current": 11, "max": 11},
       "focus": true
     },
     {
       "id": "vesper",
       "name": "Vesper",
       "class": "Oracle (Spirit Guide) 6",
-      "hp": {
-        "current": 33,
-        "max": 33
-      },
+      "hp": {"current": 33, "max": 33},
       "conditions": [],
-      "state": "Mit Styke am Fenster",
-      "resourceNote": "33/33 HP. Plätze: Grad 1 5/7, Grad 2 4/6, Grad 3 4/4. Hedonistic heute offen.",
-      "gearNote": "CHA-Stirnreif getragen, aber noch unter 24 Stunden. Verse ist bei ihr.",
-      "verse": {
-        "present": true,
-        "hpCurrent": 16,
-        "hpMax": 16
-      },
+      "state": "Mit Verse und einem Buch an Bord",
+      "resourceNote": "33/33 HP. Plätze: Grad 1 8/8, Grad 2 6/6, Grad 3 4/4. Hedonistic für den 12. Februar noch offen.",
+      "gearNote": "Headband of Alluring Charisma +2 aktiv; eigenes Iron Circlet und Verse bei ihr.",
+      "verse": {"present": true, "hpCurrent": 16, "hpMax": 16},
       "slots": [
-        {
-          "level": 1,
-          "current": 5,
-          "max": 7
-        },
-        {
-          "level": 2,
-          "current": 4,
-          "max": 6
-        },
-        {
-          "level": 3,
-          "current": 4,
-          "max": 4
-        }
+        {"level": 1, "current": 8, "max": 8},
+        {"level": 2, "current": 6, "max": 6},
+        {"level": 3, "current": 4, "max": 4}
       ],
-      "essence": {
-        "total": 2,
-        "standard": "1 Spoils of War · 1 Witness to Glory"
-      }
+      "essence": {"total": 2, "standard": "1 Spoils of War · 1 Witness to Glory"}
     },
     {
       "id": "valeria",
       "name": "Valeria",
       "class": "Antipaladin 6 · Tyrant / Lord of Darkness",
-      "hp": {
-        "current": 40,
-        "max": 40
-      },
+      "hp": {"current": 40, "max": 40},
       "conditions": [],
-      "state": "Unten im Dalliance",
-      "resourceNote": "40/40 HP. Neue Klassenressourcen verfügbar; noch keine Zauber vorbereitet.",
-      "gearNote": "+1 Dastard Full Plate, Meisterarbeits-Großschwert, Cloak of Resistance +1."
+      "state": "An Deck; Großschwert gepflegt",
+      "resourceNote": "40/40 HP. Keine formale Zustandsbeeinträchtigung; vorbereitete Antipaladin-Zauber weiterhin nicht festgelegt.",
+      "gearNote": "+1 Dastard Full Plate und Meisterarbeits-Großschwert; die alte Mitra-Platte reist als Besitz mit."
     }
   ]
 }

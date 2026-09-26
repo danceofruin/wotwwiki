@@ -3,10 +3,10 @@
 Spielerbezogenes Kampagnenwiki für *Way of the Wicked*.
 
 - Live: https://danceofruin.github.io/wotwwiki/
-- Live-Play-Stand: siehe `data/live.json` (9. Februar 4712 AR, vor Morgengrauen; Rückweg durch den Geheimgang)
-- Artikelarchiv: vollständig bis zum Rückzug aus Balentyne am 9. Februar 4712 AR
-- Technischer Stand: 23. September 2026
-- Version: 3.5.0
+- Live-Play-Stand: siehe `data/live.json` (12. Februar 4712 AR, später Nachmittag; Halstyn’s Folly)
+- Artikelarchiv: redaktionell nachgezogen bis zur laufenden Flussfahrt am 12. Februar 4712 AR
+- Technischer Stand: 26. September 2026
+- Version: 3.6.0
 
 ## Live Play
 
@@ -80,3 +80,13 @@ Die gleiche Prüfung läuft bei Pushes und Pull Requests automatisch über GitHu
 - Tacitus als gebundene Magierin und Gelehrte eingetragen; Jacobian als freigelassen
 - Dalliance, Grumblejack, sechs Pferde, Zwergencrew und aktuelle Hausrollen nachgezogen
 - Spielerwissen-Firewall erhalten: der noch nicht ausgespielte Fensterblick enthält keine vorweggenommenen Straßendetails
+
+## Stand 3.6.0 · 26. September 2026
+
+- Tiadoras Ankunft, Erfolgszahlung und die gemeinsame Abreise aus Aldencross ergänzt
+- Halstyn’s Folly als neuer Reiseort samt Passagieren, sechs Pferden und Schlaf-/Arbeitsbereichen angelegt
+- erste und zweite Requisitionsnacht als spielerbekannte Chronik aufgenommen
+- Tacitus’ Familiar-Projekt bis zum laufenden dritten vollen Arbeitstag nachgezogen
+- Knotenkasse auf 17.271 gp aktualisiert; gewöhnliche Requisitionserlöse als separater Betriebsfonds geführt
+- Tamsins Sicherheitsbereich, Kaitlyns Menschen-Lane, Mirelles Rüstungsarbeit und Hakons offene Zukunft aktualisiert
+- Nellas Logistikrolle und ihr Gespräch am 12. Februar ergänzt; vorhandene Nella-Bilder unverändert gelassen
