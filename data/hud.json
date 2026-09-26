@@ -1,0 +1,545 @@
+{
+  "meta": {
+    "schemaVersion": 1,
+    "kind": "wotw-hud-party",
+    "generatedView": true,
+    "playerSafe": true,
+    "source": "danceofruin/wotwGPT mechanics/combat/core-party-level-6.md + current/LIVE_STATE.md",
+    "updated": "2026-09-27"
+  },
+  "ui": {
+    "defaultCharacterOpen": "",
+    "rememberOpenState": true,
+    "showSectionCounts": true
+  },
+  "characters": [
+    {
+      "id": "styke",
+      "label": "STYKE",
+      "sections": [
+        {
+          "id": "readied",
+          "label": "Readied Maneuvers",
+          "type": "maneuvers",
+          "subtitle": "5 vorbereitet · Klick auf ein Manöver toggelt READY / EXPENDED",
+          "items": [
+            {
+              "id": "rapid-strike",
+              "name": "Rapid Strike",
+              "tag": "Strike",
+              "detail": "Zwei Nahkampfangriffe gegen dasselbe Ziel."
+            },
+            {
+              "id": "minute-hand",
+              "name": "Minute Hand",
+              "tag": "Boost",
+              "detail": "Zusätzlicher Nahkampfangriff; mit Power Attack aktuell +8, 2d6+13."
+            },
+            {
+              "id": "obsidian-sidestep",
+              "name": "Obsidian Sidestep",
+              "tag": "Counter",
+              "detail": "Ersetzt einen passenden Save durch Craft (Weapons)."
+            },
+            {
+              "id": "reflective-blade-style",
+              "name": "Reflective Blade Style",
+              "tag": "Grad 3",
+              "detail": "Vorbereitetes Advanced-Study-Manöver."
+            },
+            {
+              "id": "chains-of-doubt",
+              "name": "Chains of Doubt",
+              "tag": "Grad 3",
+              "detail": "Vorbereitetes Advanced-Study-Manöver."
+            }
+          ]
+        },
+        {
+          "id": "all-maneuvers",
+          "label": "Alle Maneuvers",
+          "type": "list",
+          "items": [
+            {
+              "name": "Rapid Strike",
+              "detail": "Readied · Strike"
+            },
+            {
+              "name": "Minute Hand",
+              "detail": "Readied · Boost"
+            },
+            {
+              "name": "Obsidian Sidestep",
+              "detail": "Readied · Counter"
+            },
+            {
+              "name": "Reflective Blade Style",
+              "detail": "Readied · Grad 3"
+            },
+            {
+              "name": "Chains of Doubt",
+              "detail": "Readied · Grad 3"
+            },
+            {
+              "name": "Strength of Hell",
+              "detail": "Boost · nicht standardmäßig vorbereitet"
+            },
+            {
+              "name": "Ravaging Blow",
+              "detail": "Strike · nicht standardmäßig vorbereitet"
+            },
+            {
+              "name": "Lifeburst Strike",
+              "detail": "Radiant Dawn · ersetzt Staunching Strike"
+            },
+            {
+              "name": "Flash of Insight",
+              "detail": "Boost · nicht standardmäßig vorbereitet"
+            }
+          ]
+        },
+        {
+          "id": "psionics",
+          "label": "Psionics",
+          "type": "mixed",
+          "rows": [
+            {
+              "label": "PP",
+              "resource": {
+                "character": "styke",
+                "key": "pp"
+              }
+            },
+            {
+              "label": "Psionic Focus",
+              "resource": {
+                "character": "styke",
+                "key": "focus"
+              }
+            },
+            {
+              "label": "Deep Focus",
+              "resource": {
+                "character": "styke",
+                "key": "deepFocus"
+              }
+            }
+          ],
+          "items": [
+            {
+              "name": "Minor Metamorphosis",
+              "detail": "Power known"
+            },
+            {
+              "name": "Defensive Precognition",
+              "detail": "Power known"
+            },
+            {
+              "name": "Offensive Precognition",
+              "detail": "Power known"
+            },
+            {
+              "name": "Detect Psionics",
+              "detail": "Talent"
+            },
+            {
+              "name": "Empathy",
+              "detail": "Talent"
+            },
+            {
+              "name": "Conceal Thoughts",
+              "detail": "Talent · außerhalb Kampf routinemäßig aktiv"
+            }
+          ]
+        },
+        {
+          "id": "specials",
+          "label": "Zealot / Awakened Blade Specials",
+          "type": "list",
+          "items": [
+            {
+              "name": "Compartmentalized Aid",
+              "detail": "Move Action · +4 Angriff gegen gewähltes Ziel · bis zu 3 geeignete Manöver recovern · aktiviert Zeal."
+            },
+            {
+              "name": "Living Bastion",
+              "detail": "Mit psionischem Fokus +5 ft Reach; Fokus kann für Schadenshalbierung eines Verbündeten aufgegeben werden."
+            },
+            {
+              "name": "Martyrdom",
+              "detail": "Bis zu 20 Schaden übernehmen; bis zu 4 PP für 3 Schadensreduktion pro PP, mindestens 1 bleibt."
+            },
+            {
+              "name": "Echoes of Steel",
+              "detail": "Manöver bis Grad 2 an ein Collective-Mitglied übertragen; nur ein Echo gleichzeitig."
+            },
+            {
+              "name": "Zeal +1",
+              "detail": "Getroffener Martial Strike gibt Collective-Mitgliedern 1 Runde +1 Moral auf Angriffe."
+            },
+            {
+              "name": "Deep Focus",
+              "detail": "Zweiter separat geführter psionischer Fokus."
+            },
+            {
+              "name": "Situational Awareness",
+              "detail": "+1 Insight auf Initiative."
+            }
+          ]
+        },
+        {
+          "id": "stances",
+          "label": "Stances & Essence",
+          "type": "list",
+          "items": [
+            {
+              "name": "The Caged Sun",
+              "detail": "Standard · 2 Essence · +2 Angriff/AC/Saves/CMB/CMD; empfangene Heilung: (Heilung +4) ×1,5."
+            },
+            {
+              "name": "Black Seraph's Glare",
+              "detail": "Alternative Haltung; Gegner im Wirkbereich gelten entsprechend der Haltung als shaken."
+            }
+          ]
+        },
+        {
+          "id": "combat-shortcuts",
+          "label": "Kampf-Kurzwerte",
+          "type": "list",
+          "items": [
+            {
+              "name": "Power Attack",
+              "detail": "+10, 2d6+13 mit +1 Großschwert und The Caged Sun."
+            },
+            {
+              "name": "Rapid Strike + PA",
+              "detail": "Zwei Angriffe jeweils +10, 2d6+13 vor temporären Modifikatoren."
+            },
+            {
+              "name": "Minute Hand + PA",
+              "detail": "Zusatzangriff +8, 2d6+13."
+            },
+            {
+              "name": "Sun's Gleam",
+              "detail": "+11 ranged touch, 1d6+3 Force, 40 ft innerhalb eines passenden Radiant-Dawn-Strikes."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "vesper",
+      "label": "VESPER",
+      "sections": [
+        {
+          "id": "spells",
+          "label": "Verfügbare Spells",
+          "type": "spell-groups",
+          "groups": [
+            {
+              "label": "Grad 1",
+              "resource": {
+                "character": "vesper",
+                "key": "slot",
+                "level": "1"
+              },
+              "items": [
+                "Obscuring Mist",
+                "Protection from Evil",
+                "Air Bubble",
+                "Remove Sickness",
+                "Cure Light Wounds",
+                "Unnatural Lust",
+                "Identify"
+              ]
+            },
+            {
+              "label": "Grad 2",
+              "resource": {
+                "character": "vesper",
+                "key": "slot",
+                "level": "2"
+              },
+              "items": [
+                "Silence",
+                "Lesser Restoration",
+                "Cure Moderate Wounds",
+                "Tongues"
+              ]
+            },
+            {
+              "label": "Grad 3",
+              "resource": {
+                "character": "vesper",
+                "key": "slot",
+                "level": "3"
+              },
+              "items": [
+                "Delay Poison, Communal",
+                "Cure Serious Wounds",
+                "Locate Object"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "arcane-enlightenment",
+          "label": "Arcane Enlightenment",
+          "type": "list",
+          "subtitle": "Täglich flexibel · aktuell fünf Sorcerer/Wizard-Auswahlen",
+          "items": [
+            {
+              "name": "Dancing Darkness"
+            },
+            {
+              "name": "Silent Image"
+            },
+            {
+              "name": "Euphoric Cloud"
+            },
+            {
+              "name": "Ashen Path"
+            },
+            {
+              "name": "Stinking Cloud"
+            }
+          ]
+        },
+        {
+          "id": "radiant-dawn",
+          "label": "Radiant Dawn",
+          "type": "list",
+          "items": [
+            {
+              "name": "Witness to Glory",
+              "detail": "Standard readied · 1 Essence standard · +6 Initiative und 10 Temp HP auf Styke."
+            },
+            {
+              "name": "Decree of Torment",
+              "detail": "Standard readied."
+            },
+            {
+              "name": "Bolster",
+              "detail": "Bekannt · situative Schutzoption."
+            },
+            {
+              "name": "Staunching Strike",
+              "detail": "Bekannt · Heiloption."
+            },
+            {
+              "name": "Spoils of War",
+              "detail": "Standardstance · 1 Essence · bei IL 8 aktuell 10 HP Heilung pro gültigem Trigger; 1× pro Runde je Verbündetem."
+            }
+          ]
+        },
+        {
+          "id": "glyphs",
+          "label": "Glyphs",
+          "type": "list",
+          "subtitle": "Kosten 1 Animus · Reichweite 45 ft · Dauer 6 Runden · DC 19",
+          "items": [
+            {
+              "name": "Elemental Shield",
+              "detail": "Energy Resistance 8 gegen gewähltes Element."
+            },
+            {
+              "name": "Ghost Eating Blade",
+              "detail": "Waffen erhalten ghost touch."
+            },
+            {
+              "name": "Ghost Armor",
+              "detail": "Rüstung/Schild erhalten ghost touch."
+            },
+            {
+              "name": "Deflective Armor",
+              "detail": "+3 Natural Armor."
+            },
+            {
+              "name": "Shadowmeld",
+              "detail": "20% Concealment / Miss Chance."
+            },
+            {
+              "name": "Elemental Weapon",
+              "detail": "Angriffe +1d6 Schaden des gewählten Elements."
+            },
+            {
+              "name": "Evasive Armor",
+              "detail": "Nächster erfolgreicher Reflex-Save gegen partial-on-success wird zu keinem Effekt; danach endet Glyph."
+            },
+            {
+              "name": "Blinding Blade",
+              "detail": "Nächster qualifizierender Treffer: Reflex DC 19 oder 1 Runde blind; danach endet Glyph."
+            }
+          ]
+        },
+        {
+          "id": "animus",
+          "label": "Animus",
+          "type": "list",
+          "items": [
+            {
+              "name": "Startpool",
+              "detail": "6 zu Beginn des ersten eigenen Zuges."
+            },
+            {
+              "name": "Weitere Züge",
+              "detail": "+1 Animus zu Beginn jedes späteren eigenen Zuges."
+            },
+            {
+              "name": "Martial Trigger",
+              "detail": "+1 Animus am Rundenende, wenn Vesper in der Runde mindestens ein Manöver initiiert hat."
+            },
+            {
+              "name": "Glyph-Kosten",
+              "detail": "1 Animus."
+            }
+          ]
+        },
+        {
+          "id": "verse",
+          "label": "Verse",
+          "type": "list",
+          "items": [
+            {
+              "name": "HP",
+              "detail": "16/16 Basiswert auf Stufe 6."
+            },
+            {
+              "name": "Initiative",
+              "detail": "+4 für Vesper, solange die Familiar-Bedingungen erfüllt sind."
+            },
+            {
+              "name": "Rolle",
+              "detail": "Protector Familiar; Bodyguard / Combat Reflexes gemäß Kampagnenregeln."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "valeria",
+      "label": "VALERIA",
+      "sections": [
+        {
+          "id": "prepared-spells",
+          "label": "Vorbereitete Spells",
+          "type": "note",
+          "title": "3 Grad-1-Slots / Tag",
+          "text": "Die exakte tägliche Vorbereitung ist aktuell noch nicht kanonisch festgelegt. Litany of Sloth ist als starke aktuelle Option vermerkt, aber nicht automatisch vorbereitet."
+        },
+        {
+          "id": "daily-resources",
+          "label": "Smite / Challenge / Corruption",
+          "type": "resources",
+          "items": [
+            {
+              "label": "Smite Good",
+              "resource": {
+                "character": "valeria",
+                "key": "smite"
+              },
+              "detail": "Gegen Good: +5 Angriff, +6 Schaden je Treffer, +5 Deflection AC gegen das Ziel."
+            },
+            {
+              "label": "Touch of Corruption",
+              "resource": {
+                "character": "valeria",
+                "key": "corruption"
+              },
+              "detail": "Melee Touch · 3d6 · Fort DC 18 · Cruelty: Fatigued oder Staggered 3 Runden."
+            },
+            {
+              "label": "Challenge",
+              "resource": {
+                "character": "valeria",
+                "key": "challenge"
+              },
+              "detail": "Swift · +4 Melee Damage; -2 AC gegen andere Gegner; Order of Vengeance situativ +2 Angriff."
+            },
+            {
+              "label": "Fiendish Boon",
+              "resource": {
+                "character": "valeria",
+                "key": "boon"
+              },
+              "detail": "1/Tag · Standard Action · 6 Minuten · +1 effektives Waffenbonus-Budget."
+            }
+          ]
+        },
+        {
+          "id": "aura",
+          "label": "Aura of Obedience",
+          "type": "list",
+          "items": [
+            {
+              "name": "Intimidate",
+              "detail": "+4 Morale gegen lebende Kreaturen innerhalb 10 ft; aktuell +18 insgesamt."
+            },
+            {
+              "name": "Command Rider",
+              "detail": "Wenn Demoralize den DC um 10+ schlägt: Command, Will DC 18 negiert; gleiche Kreatur höchstens 1×/Tag."
+            }
+          ]
+        },
+        {
+          "id": "fiendish-boon",
+          "label": "Fiendish Boon",
+          "type": "list",
+          "items": [
+            {
+              "name": "+2 Enhancement",
+              "detail": "Universelle Zuverlässigkeit."
+            },
+            {
+              "name": "Flaming",
+              "detail": "Rohschaden, wenn sinnvoll."
+            },
+            {
+              "name": "Keen",
+              "detail": "Für längeren Kampf gegen crit-anfällige Ziele."
+            },
+            {
+              "name": "Vicious",
+              "detail": "Nur wenn der Selbstschaden vertretbar ist."
+            }
+          ]
+        },
+        {
+          "id": "combat-engine",
+          "label": "Combat Engine",
+          "type": "flow",
+          "steps": [
+            "Power Attack trifft",
+            "Cornugon Smash",
+            "Demoralize",
+            "Aura of Obedience",
+            "Hurtful → Extra Attack"
+          ]
+        },
+        {
+          "id": "other-antipaladin",
+          "label": "Weitere Antipaladin-Fähigkeiten",
+          "type": "list",
+          "items": [
+            {
+              "name": "Channel Negative Energy",
+              "detail": "Kostet 2 Touch-of-Corruption-Nutzungen · 30-ft Burst · 3d6 · Will DC 18 halbiert · keine Selective Channeling."
+            },
+            {
+              "name": "Cruelty: Fatigued",
+              "detail": "Eine mögliche Cruelty pro Touch."
+            },
+            {
+              "name": "Cruelty: Staggered",
+              "detail": "3 Runden · eine mögliche Cruelty pro Touch."
+            },
+            {
+              "name": "Emerging Antipaladin State",
+              "detail": "Neue übernatürliche Fähigkeiten werden in der Fiktion erst durch echte Manifestation vertraut; kein sofortiges Veteranenwissen."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
