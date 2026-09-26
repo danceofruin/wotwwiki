@@ -225,6 +225,24 @@
             }
           ]
         }
+      ],
+      "summaryResources": [
+        {
+          "label": "HP",
+          "key": "hp"
+        },
+        {
+          "label": "PP",
+          "key": "pp"
+        },
+        {
+          "label": "Fokus",
+          "key": "focus"
+        },
+        {
+          "label": "Deep Focus",
+          "key": "deepFocus"
+        }
       ]
     },
     {
@@ -414,6 +432,27 @@
             }
           ]
         }
+      ],
+      "summaryResources": [
+        {
+          "label": "HP",
+          "key": "hp"
+        },
+        {
+          "label": "Grad 1",
+          "key": "slot",
+          "level": "1"
+        },
+        {
+          "label": "Grad 2",
+          "key": "slot",
+          "level": "2"
+        },
+        {
+          "label": "Grad 3",
+          "key": "slot",
+          "level": "3"
+        }
       ]
     },
     {
@@ -538,6 +577,20 @@
               "detail": "Neue übernatürliche Fähigkeiten werden in der Fiktion erst durch echte Manifestation vertraut; kein sofortiges Veteranenwissen."
             }
           ]
+        }
+      ],
+      "summaryResources": [
+        {
+          "label": "HP",
+          "key": "hp"
+        },
+        {
+          "label": "Smite",
+          "key": "smite"
+        },
+        {
+          "label": "Corruption",
+          "key": "corruption"
         }
       ]
     }
