@@ -541,5 +541,61 @@
         }
       ]
     }
-  ]
+  ],
+  "resourceDefaults": {
+    "styke": {
+      "hp": {
+        "current": 42,
+        "max": 42
+      },
+      "pp": {
+        "current": 11,
+        "max": 11
+      },
+      "focus": true,
+      "deepFocus": false
+    },
+    "vesper": {
+      "hp": {
+        "current": 33,
+        "max": 33
+      },
+      "slots": {
+        "1": {
+          "current": 8,
+          "max": 8
+        },
+        "2": {
+          "current": 6,
+          "max": 6
+        },
+        "3": {
+          "current": 4,
+          "max": 4
+        }
+      }
+    },
+    "valeria": {
+      "hp": {
+        "current": 40,
+        "max": 40
+      },
+      "smite": {
+        "current": 2,
+        "max": 2
+      },
+      "corruption": {
+        "current": 8,
+        "max": 8
+      },
+      "challenge": {
+        "current": 1,
+        "max": 1
+      },
+      "boon": {
+        "current": 1,
+        "max": 1
+      }
+    }
+  }
 }
