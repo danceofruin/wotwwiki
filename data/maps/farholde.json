@@ -1,0 +1,288 @@
+{
+  "meta": {
+    "schemaVersion": 1,
+    "id": "farholde",
+    "title": "Farholde",
+    "kind": "city-schematic",
+    "playerSafe": true,
+    "spoilerFree": true,
+    "schematic": true,
+    "note": "Player-facing schematic. Exact published geometry remains authoritative in the source handout; this file intentionally contains only public/learned anchors."
+  },
+  "canvas": {
+    "width": 1000,
+    "height": 700
+  },
+  "palette": {
+    "water": "water",
+    "land": "land",
+    "road": "road",
+    "district": "district"
+  },
+  "labels": [
+    {
+      "id": "north",
+      "text": "N",
+      "x": 930,
+      "y": 55,
+      "kind": "compass"
+    },
+    {
+      "id": "lake",
+      "text": "Lake Scardynn / Delta",
+      "x": 500,
+      "y": 665,
+      "kind": "water"
+    }
+  ],
+  "shapes": [
+    {
+      "id": "water-south",
+      "type": "polygon",
+      "kind": "water",
+      "points": [
+        [
+          0,
+          585
+        ],
+        [
+          1000,
+          585
+        ],
+        [
+          1000,
+          700
+        ],
+        [
+          0,
+          700
+        ]
+      ]
+    },
+    {
+      "id": "river-mouth",
+      "type": "path",
+      "kind": "water",
+      "points": [
+        [
+          500,
+          585
+        ],
+        [
+          520,
+          500
+        ],
+        [
+          505,
+          420
+        ],
+        [
+          540,
+          340
+        ],
+        [
+          525,
+          250
+        ]
+      ]
+    },
+    {
+      "id": "main-road",
+      "type": "polyline",
+      "kind": "road",
+      "points": [
+        [
+          500,
+          585
+        ],
+        [
+          500,
+          500
+        ],
+        [
+          490,
+          420
+        ],
+        [
+          500,
+          340
+        ],
+        [
+          520,
+          260
+        ],
+        [
+          530,
+          170
+        ]
+      ]
+    },
+    {
+      "id": "west-road",
+      "type": "polyline",
+      "kind": "road",
+      "points": [
+        [
+          490,
+          450
+        ],
+        [
+          360,
+          420
+        ],
+        [
+          260,
+          390
+        ],
+        [
+          150,
+          360
+        ]
+      ]
+    },
+    {
+      "id": "east-road",
+      "type": "polyline",
+      "kind": "road",
+      "points": [
+        [
+          500,
+          420
+        ],
+        [
+          630,
+          400
+        ],
+        [
+          760,
+          370
+        ],
+        [
+          860,
+          330
+        ]
+      ]
+    }
+  ],
+  "districts": [
+    {
+      "id": "hamarhall",
+      "label": "Hamarhall",
+      "x": 520,
+      "y": 110,
+      "rx": 95,
+      "ry": 55,
+      "visibility": "public",
+      "note": "Royal fortress on the northern heights."
+    },
+    {
+      "id": "calliver-green",
+      "label": "Calliver Green",
+      "x": 300,
+      "y": 190,
+      "rx": 120,
+      "ry": 70,
+      "visibility": "public",
+      "note": "Gated high-status hill and major estates."
+    },
+    {
+      "id": "newchurch",
+      "label": "Newchurch",
+      "x": 720,
+      "y": 205,
+      "rx": 115,
+      "ry": 70,
+      "visibility": "public",
+      "note": "Hill and neighborhood around the Hall of the Sun Victorious."
+    },
+    {
+      "id": "auld-irey",
+      "label": "Auld'Irey",
+      "x": 480,
+      "y": 330,
+      "rx": 150,
+      "ry": 95,
+      "visibility": "public",
+      "note": "Old dense walled district; shops, taverns, inns and watch headquarters."
+    },
+    {
+      "id": "drownington",
+      "label": "Drownington",
+      "x": 230,
+      "y": 445,
+      "rx": 135,
+      "ry": 80,
+      "visibility": "public",
+      "note": "Low, weakly policed transient quarter."
+    },
+    {
+      "id": "templeton-rise",
+      "label": "Templeton Rise",
+      "x": 735,
+      "y": 410,
+      "rx": 125,
+      "ry": 80,
+      "visibility": "public",
+      "note": "Main mercantile hall and bulk-trade center."
+    },
+    {
+      "id": "westell",
+      "label": "Westell",
+      "x": 330,
+      "y": 540,
+      "rx": 135,
+      "ry": 55,
+      "visibility": "public",
+      "note": "Southern farming hill and farmland toward Caer Bryr."
+    },
+    {
+      "id": "corgans-landing",
+      "label": "Corgan's Landing",
+      "x": 650,
+      "y": 535,
+      "rx": 145,
+      "ry": 50,
+      "visibility": "public",
+      "note": "Harbor warehouses, offices and Harbormaster."
+    }
+  ],
+  "publicMarkers": [
+    {
+      "id": "southern-quays",
+      "label": "Southern Stone Quays",
+      "districtId": "corgans-landing",
+      "type": "harbor",
+      "note": "Stone quays on the southern waterfront."
+    },
+    {
+      "id": "hall-sun-victorious",
+      "label": "Hall of the Sun Victorious",
+      "districtId": "newchurch",
+      "type": "temple",
+      "note": "Public Mitran landmark."
+    },
+    {
+      "id": "lord-drowningtons-manor",
+      "label": "Lord Drownington's Manor",
+      "districtId": "drownington",
+      "type": "venue",
+      "note": "Known Drownington establishment."
+    },
+    {
+      "id": "bryrwatch",
+      "label": "Bryrwatch / The Trident",
+      "districtId": "westell",
+      "type": "watch",
+      "note": "Small watchtower south of town overlooking forest and lake.",
+      "placement": "south-edge"
+    },
+    {
+      "id": "caer-bryr",
+      "label": "Caer Bryr",
+      "x": 500,
+      "y": 690,
+      "type": "region",
+      "note": "Forest south of Farholde."
+    }
+  ]
+}
