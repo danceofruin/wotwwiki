@@ -1,0 +1,15 @@
+{
+  "meta": {
+    "schemaVersion": 1,
+    "playerSafe": true
+  },
+  "maps": [
+    {
+      "id": "farholde",
+      "title": "Farholde",
+      "kind": "city-schematic",
+      "url": "data/maps/farholde.json",
+      "default": true
+    }
+  ]
+}
