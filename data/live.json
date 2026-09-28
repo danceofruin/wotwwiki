@@ -4,34 +4,34 @@
     "authority": "GENERATED VIEW. DO NOT USE AS CAMPAIGN AUTHORITY.",
     "generated": true,
     "playerSafe": true,
-    "generatedAt": "2026-09-28T12:00:00Z",
-    "sourceRevision": "400503a77f502f4e58af1248e85ff15590af68365f08e175410e7ac1d2611d69",
+    "generatedAt": "2026-09-28T17:08:00Z",
+    "sourceRevision": "d0a3c06b85e0df9d55f759bdcf84732b290b647b455e7655a977bf5182f6e48d",
     "reviewedAt": "2026-09-28",
-    "sheetRevision": "b8fe30088151ed5379727e9e447d6dec34e0f1247e14323564eae2cde14cd239"
+    "sheetRevision": "2d6107d38bb5057f790f4736e5adf4cb1154ec5f0bec662e72378080085840f8"
   },
   "scene": {
-    "date": "4712-02-21",
-    "dateLabel": "21. Februar 4712 AR",
-    "time": "Späte Nacht",
+    "date": "4712-02-22",
+    "dateLabel": "22. Februar 4712 AR",
+    "time": "Späte Nacht / Tagesende",
     "location": "Goldener Reiher, Farholde",
     "locationId": "goldener-reiher",
-    "detail": "Styke, Vesper, Valeria und Nella im breiten Eckzimmer",
-    "summary": "Der erste Farholde-Tag ist abgeschlossen. Kaels Karte ist gesichert, Valerias Erkundung liegt vor und der Haushalt bereitet Vandermir, Gürtelarbeit und Horn-Aufklärung vor.",
-    "rest": "Keine mechanische Erschöpfung. Valerias Ringkampfspuren sind sichtbar, aber kein formaler Zustand."
+    "detail": "Styke, Vesper und Valeria im Eckzimmer; Kaitlyn und Tamsin separat untergebracht",
+    "summary": "Vandermirs Dinner ist abgeschlossen und eine begrenzte Zusammenarbeit steht. Der Siebte Knoten kommt am 23. Februar; die erste Horn-Erkundung ist derzeit für den 24. Februar vorgesehen.",
+    "rest": "Der Abend ist beendet, aber nach der letzten Szene ist noch keine abgeschlossene Nachtruhe etabliert."
   },
   "quests": [
     {
       "id": "horn",
       "title": "Horn von Abaddon · zweiter Auftrag",
       "status": "active",
-      "updated": "4712-02-21",
-      "summary": "Im Caer Bryr sollen Markadians Siegel gebrochen, Vetra-Kali gebunden und die Tears of Achlys gewonnen werden.",
+      "updated": "4712-02-22",
+      "summary": "Kaels Karte weist zum Horn. Die nächste tiefe Erkundung ist nach dem Treffen mit dem Siebten Knoten und der Ausrüstungsabholung vorgesehen.",
       "known": [
-        "Kaels physische Karte ist im Besitz des Kerntrios.",
-        "Thorn kennt weder sicheren Siegelbruch noch Bindungsritual.",
-        "Der erste tiefe Erkundungsgang ist für den 23. Februar beabsichtigt."
+        "Kaels physische Karte bleibt im Besitz des Kerntrios.",
+        "Vandermir besitzt weder eine eigene Hornkarte noch eine Lösung für Siegel oder Bindung.",
+        "Die erste Erkundung ist derzeit für den Morgen des 24. Februar mit Styke, Vesper und Valeria beabsichtigt."
       ],
-      "next": "Vandermir treffen und neue Erkenntnisse vor dem Gang in den Bryr auswerten.",
+      "next": "Am 23. Februar den Siebten Knoten treffen, die Ausrüstung abholen und die Feldlast abschließen.",
       "links": [
         "horn-abaddon",
         "kaels-karte",
@@ -40,34 +40,53 @@
     },
     {
       "id": "vandermir",
-      "title": "Farholde · Vandermirs Einführung",
-      "status": "waiting",
-      "updated": "4712-02-21",
-      "summary": "Tiadora hat den ersten persönlichen Termin für den Abend des 22. Februar arrangiert.",
+      "title": "Farholde · Vandermir",
+      "status": "completed",
+      "updated": "4712-02-22",
+      "summary": "Das erste Dinner auf Vanderhall endet mit einer begrenzten geschäftlichen Zusammenarbeit.",
       "known": [
-        "Das Treffen findet auf Vanderhall statt.",
-        "Mirelle bereitet passende Kleidung vor.",
-        "Der Knoten hat Vandermir noch nicht persönlich gesprochen."
+        "Kaitlyn ist der vereinbarte Kommunikationsweg zwischen Vandermir und dem Knoten.",
+        "Vandermir bietet begrenzte Warnungen, Kontakte, diskrete Markt- und Gesellschaftshilfe.",
+        "Ein geheimer Tunnel verbindet Vanderhall mit einem unscheinbaren Haus am Fuß von Calliver Green."
       ],
-      "next": "Anprobe abschließen und zum vereinbarten Termin erscheinen.",
+      "next": "Kaitlyn als Verbindung nutzen und Vandermir nur innerhalb der vereinbarten Grenzen einbinden.",
       "links": [
         "baron-vandermir",
-        "mirelle",
+        "kaitlyn",
         "farholde"
       ]
     },
     {
-      "id": "crafting",
-      "title": "Stykes Geschicklichkeitsgürtel",
-      "status": "active",
-      "updated": "4712-02-21",
-      "summary": "Material ist bezahlt; noch kein achtstündiger Fertigungsblock wurde abgeschlossen.",
+      "id": "seventh",
+      "title": "Siebter Knoten · White Ravens",
+      "status": "scheduled",
+      "updated": "4712-02-22",
+      "summary": "Tiadora kündigt Elise Zadaria und die White Ravens für den 23. Februar auf der Lucky Lady an.",
       "known": [
-        "2.000 gp Material sind gebunden.",
-        "Die 150-gp-Cat’s-Grace-Schriftrolle ist vorhanden, aber unnötig und unverbraucht.",
-        "Tacitus und Knittel planen die Arbeit für den 22. Februar."
+        "Der Siebte Knoten soll Farholde und den Rücken der Horn-Operation absichern, nicht mit in den Wald ziehen.",
+        "Styke will das größere Retainer-Netz möglichst nicht offenlegen.",
+        "Kaitlyn soll alle vier Ravens beobachten und erst aus tatsächlichem Verhalten Schlüsse ziehen."
       ],
-      "next": "Acht Stunden ungestörte Fertigung abwarten, erst dann den Gürtel als Besitz führen.",
+      "next": "Ankunft abwarten, Rollen und Kommunikationsweg abstimmen.",
+      "links": [
+        "elise",
+        "trak",
+        "trik",
+        "dostan"
+      ]
+    },
+    {
+      "id": "crafting",
+      "title": "Magische Ausrüstung",
+      "status": "active",
+      "updated": "4712-02-22",
+      "summary": "Stykes Geschicklichkeitsgürtel ist fertig. Tacitus' weitere Materialien sind beschafft; vier externe Verzauberungen laufen.",
+      "known": [
+        "Styke trägt jetzt den Belt of Incredible Dexterity +2.",
+        "Vesper besitzt die Lesser Metamagic Rod of Extend.",
+        "Die vier Werkstattstücke sollen gemeinsam am Abend des 23. Februar abgeholt werden."
+      ],
+      "next": "Werkstattstücke am 23. Februar abholen und Tacitus' weitere Fertigungsreihenfolge fortsetzen.",
       "links": [
         "styke-dex-guertel",
         "tacitus",
@@ -75,35 +94,17 @@
       ]
     },
     {
-      "id": "reports",
-      "title": "Ausstehende Berichte",
-      "status": "waiting",
-      "updated": "4712-02-21",
-      "summary": "Tamsin und Tacitus besitzen Ergebnisse, die der Gruppe noch nicht vorgetragen wurden.",
-      "known": [
-        "Tamsin hat einen ersten Tag Unterwelt-Erkundung abgeschlossen.",
-        "Tacitus hat erste Forschungsnotizen.",
-        "Inhalte ohne überbrachten Träger sind nicht Gruppenwissen."
-      ],
-      "next": "Berichte in einer tatsächlichen Szene entgegennehmen.",
-      "links": [
-        "tamsin",
-        "tacitus",
-        "offene-spuren"
-      ]
-    },
-    {
       "id": "red-book",
       "title": "Das rote Buch",
       "status": "active",
-      "updated": "4712-02-21",
-      "summary": "Der Band bleibt im Zustand Stirring; am 21. Februar gab es keine neue sichtbare Textänderung.",
+      "updated": "4712-02-22",
+      "summary": "Der Band bleibt im Zustand Stirring; auch am 22. Februar gab es keine neue sichtbare Textänderung.",
       "known": [
-        "Die starke Aura umfasst Divination, Illusion und eine tiefere unbekannte Komponente.",
-        "Frühere Änderungen sind datiert und abgeschrieben.",
+        "Die bekannte Aura umfasst Divination, Illusion und eine tiefere unbekannte Komponente.",
+        "Die Gute-Nacht-Lektüre nutzte einen bereits bekannten Abschnitt.",
         "Herkunft und vollständige Kräfte bleiben ungeklärt."
       ],
-      "next": "Neue Seitenstände nur nach sichtbarer Veränderung ergänzen.",
+      "next": "Nur tatsächlich sichtbare neue Veränderungen ergänzen.",
       "links": [
         "rotes-buch",
         "zwischen-den-seiten",
@@ -113,49 +114,39 @@
   ],
   "appointments": [
     {
-      "id": "fitting",
-      "date": "4712-02-22",
-      "label": "22. Februar",
-      "time": "Tagsüber",
-      "title": "Mirelles Anprobe",
-      "note": "Kleidung für den Abend bei Vandermir fertig prüfen.",
-      "links": [
-        "mirelle",
-        "baron-vandermir"
-      ]
-    },
-    {
-      "id": "belt",
-      "date": "4712-02-22",
-      "label": "22. Februar",
-      "time": "Acht Stunden vorgesehen",
-      "title": "Tacitus und Knittel fertigen",
-      "note": "Der Geschicklichkeitsgürtel ist bis zum Abschluss des Arbeitstags noch nicht vorhanden.",
-      "links": [
-        "styke-dex-guertel",
-        "tacitus",
-        "knittel"
-      ]
-    },
-    {
-      "id": "vandermir",
-      "date": "4712-02-22",
-      "label": "22. Februar",
-      "time": "Abends",
-      "title": "Einführung bei Vandermir",
-      "note": "Fester Termin auf Vanderhall; erstes persönliches Treffen.",
-      "links": [
-        "baron-vandermir",
-        "farholde"
-      ]
-    },
-    {
-      "id": "horn",
+      "id": "seventh-arrival",
       "date": "4712-02-23",
       "label": "23. Februar",
-      "time": "Beabsichtigt",
+      "time": "Im Tagesverlauf · genaue Zeit unbekannt",
+      "title": "Lucky Lady · Siebter Knoten",
+      "note": "Elise Zadaria und die White Ravens erreichen Farholde.",
+      "links": [
+        "elise",
+        "trak",
+        "trik",
+        "dostan"
+      ]
+    },
+    {
+      "id": "gear-pickup",
+      "date": "4712-02-23",
+      "label": "23. Februar",
+      "time": "Abends",
+      "title": "Verzauberte Ausrüstung abholen",
+      "note": "Styke-/Vesper-Rüstung, Vespers Schild und Valerias Großschwert gemeinsam abholen.",
+      "links": [
+        "styke",
+        "vesper",
+        "valeria"
+      ]
+    },
+    {
+      "id": "horn-recon",
+      "date": "4712-02-24",
+      "label": "24. Februar",
+      "time": "Morgens · beabsichtigt",
       "title": "Erste Horn-Erkundung",
-      "note": "Kerntrio mit Kaels Karte; nicht erzwungen, wenn neue Erkenntnisse den Plan ändern.",
+      "note": "Kerntrio mit Kaels Karte und leichter Feldlast; nicht erzwungen, falls neue Informationen den Plan ändern.",
       "links": [
         "horn-abaddon",
         "kaels-karte",
@@ -167,8 +158,8 @@
     {
       "id": "treasury",
       "label": "Knotenkasse",
-      "value": "13.378 gp",
-      "note": "Nach Auszahlung, Kael-Zimmer, Fundgeld, Gürtelmaterial und Schriftrolle."
+      "value": "2.027 gp 5 sp",
+      "note": "Nach Verkauf, Tacitus-Materialien, Extend-Rod und bezahlten externen Verzauberungen."
     },
     {
       "id": "level",
@@ -189,22 +180,22 @@
       "note": "Freie bezahlte Männer; Hakon führt seine fünf, keine feste Beutequote."
     },
     {
-      "id": "knittel",
-      "label": "Tacitus-Projekt",
-      "value": "Abgeschlossen",
-      "note": "Knittel ist aktiv; 350 gp verbraucht; Zorn wieder bei Styke."
-    },
-    {
       "id": "belt",
-      "label": "DEX-Gürtel",
-      "value": "Material bezahlt",
-      "note": "2.000 gp gebunden; Gegenstand noch nicht gefertigt."
+      "label": "Stykes DEX-Gürtel",
+      "value": "Fertig · getragen",
+      "note": "Belt of Incredible Dexterity +2; DEX 21 solange getragen."
     },
     {
-      "id": "payout",
-      "label": "Bellam und Alicia",
-      "value": "1.500 gp ausgezahlt",
-      "note": "Beide haben die aktive Operation verlassen."
+      "id": "enchanting",
+      "label": "Werkstattauftrag",
+      "value": "Abholung 23. Feb. abends",
+      "note": "Vier bezahlte +1-Aufwertungen; Gegenstände bis zur Abholung nicht beim Kerntrio."
+    },
+    {
+      "id": "tamsin",
+      "label": "Haushaltssicherheit",
+      "value": "Tamsin",
+      "note": "Sie hält während der Bryr-Abwesenheit die verstreuten Unterkünfte und Leute im Blick."
     }
   ],
   "people": [
@@ -218,7 +209,11 @@
     "grumblejack",
     "tiadora",
     "rubal-thraam",
-    "baron-vandermir"
+    "baron-vandermir",
+    "elise",
+    "trak",
+    "trik",
+    "dostan"
   ],
   "party": [
     {
@@ -230,9 +225,9 @@
         "max": 42
       },
       "conditions": [],
-      "state": "Im Eckzimmer des Goldenen Reihers",
+      "state": "Im Eckzimmer des Goldenen Reihers; Tag endet",
       "resourceNote": "42/42 HP, 11/11 PP. Ein psionischer Fokus verfügbar; Deep Focus nicht automatisch gefüllt.",
-      "gearNote": "+1-Großschwert, Zorn und Thorns Tonsiegel bei ihm. DEX-Gürtel noch nicht gefertigt.",
+      "gearNote": "+1-Großschwert, Belt of Incredible Dexterity +2, Zorn und Thorns Tonsiegel bei ihm. Mithralkettenhemd in der Werkstatt.",
       "pp": {
         "current": 11,
         "max": 11
@@ -248,9 +243,9 @@
         "max": 33
       },
       "conditions": [],
-      "state": "Im Eckzimmer; Verse und rotes Buch bei ihr",
-      "resourceNote": "33/33 HP. Plätze: Grad 1 8/8, Grad 2 6/6, Grad 3 4/4. Hedonistic für den 21. Februar erfüllt.",
-      "gearNote": "CHA-Stirnreif +2, eigenes Iron Circlet, Meisterarbeits-Diebeswerkzeug und Kaels Karte.",
+      "state": "Im Eckzimmer; rotes Buch geschlossen, Verse bei ihr",
+      "resourceNote": "33/33 HP. Plätze: Grad 1 8/8, Grad 2 6/6, Grad 3 4/4. Am 22. Februar wurden keine Zauberplätze ausgegeben.",
+      "gearNote": "CHA-Stirnreif +2, eigenes Iron Circlet, Lesser Extend Rod und Meisterarbeits-Diebeswerkzeug. Mithralkettenhemd und Mithralschild in der Werkstatt.",
       "verse": {
         "present": true,
         "hpCurrent": 16,
@@ -289,7 +284,7 @@
       "conditions": [],
       "state": "Im Eckzimmer; sichtbare Spuren des Ringkampfs",
       "resourceNote": "40/40 HP. Gespaltene Lippe, Wangenkratzer, aufgeriebene Knöchel und Muskelkater; kein formaler Zustand.",
-      "gearNote": "+1 Dastard Full Plate und Meisterarbeits-Großschwert; +1-Waffenaufwertung noch nicht gekauft."
+      "gearNote": "+1 Dastard Full Plate im Besitz. Meisterarbeits-Großschwert liegt für die bezahlte +1-Aufwertung in der Werkstatt."
     }
   ]
 }
