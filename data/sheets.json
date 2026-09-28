@@ -4,8 +4,8 @@
     "authority": "GENERATED VIEW. DO NOT USE AS CAMPAIGN AUTHORITY.",
     "generated": true,
     "playerSafe": true,
-    "generatedAt": "2026-09-28T12:00:00Z",
-    "sourceRevision": "b8fe30088151ed5379727e9e447d6dec34e0f1247e14323564eae2cde14cd239",
+    "generatedAt": "2026-09-28T17:08:00Z",
+    "sourceRevision": "2d6107d38bb5057f790f4736e5adf4cb1154ec5f0bec662e72378080085840f8",
     "reviewedAt": "2026-09-28"
   },
   "characters": [
@@ -19,22 +19,22 @@
       "profile": "Mithralkettenhemd + The Caged Sun (2 Essence)",
       "hpMax": 42,
       "stats": {
-        "ac": "20",
-        "touch": "16",
+        "ac": "21",
+        "touch": "17",
         "flatFooted": "16",
-        "initiative": "+7",
+        "initiative": "+8",
         "speed": "30 ft",
         "bab": "+5",
         "cmb": "+9",
-        "cmd": "23",
+        "cmd": "24",
         "fort": "+7",
-        "ref": "+8",
+        "ref": "+9",
         "will": "+10"
       },
       "attack": {
         "name": "+1 Großschwert",
-        "hit": "+10",
-        "damage": "2d6+13",
+        "hit": "+11",
+        "damage": "2d6+14",
         "note": "Power Attack · The Caged Sun 2 Essence"
       },
       "attributes": [
@@ -44,7 +44,7 @@
         },
         {
           "name": "DEX",
-          "value": "19"
+          "value": "21"
         },
         {
           "name": "CON",
@@ -70,7 +70,7 @@
           "sections": [
             {
               "title": "Kampfwerte",
-              "markdown": "**HP 42/42 · AC 20 · Touch 16 · Flat-Footed 16 · Initiative +7**\n\n+1-Großschwert: +12, 2d6+7. Power Attack: +10, 2d6+13. Rapid Strike: zwei Angriffe +10. Minute Hand mit PA: +8."
+              "markdown": "**HP 42/42 · AC 21 · Touch 17 · Flat-Footed 16 · Initiative +8**\n\n+1-Großschwert: +13, 2d6+8. Power Attack: +11, 2d6+14. Rapid Strike: zwei Angriffe +11. Minute Hand mit PA: +9."
             },
             {
               "title": "Standardmotor",
@@ -94,7 +94,7 @@
           "sections": [
             {
               "title": "Psion und Awakened Blade",
-              "markdown": "**PP 11/Tag · aktuell 10/11.** Powers: Minor Metamorphosis, Defensive Precognition, Offensive Precognition. Talente: Detect Psionics, Empathy, Conceal Thoughts.\n\nDeep Focus gibt einen zweiten, separat zu führenden Fokus. Situational Awareness liefert +1 Initiative."
+              "markdown": "**PP 11/Tag · aktuell 11/11.** Powers: Minor Metamorphosis, Defensive Precognition, Offensive Precognition. Talente: Detect Psionics, Empathy, Conceal Thoughts.\n\nDeep Focus gibt einen zweiten, separat zu führenden Fokus. Situational Awareness liefert +1 Initiative."
             }
           ]
         },
@@ -104,7 +104,7 @@
           "sections": [
             {
               "title": "Fertigkeiten",
-              "markdown": "Acrobatics +12 · Autohypnosis +7 · Craft (Weapons) +9 · Diplomacy +7 · Intimidate +11 · Knowledge (All) +11 · Perception +8 · Stealth +11 · Spellcraft +6 · Bluff +7"
+              "markdown": "Acrobatics +13 · Autohypnosis +7 · Craft (Weapons) +9 · Diplomacy +7 · Intimidate +11 · Knowledge (All) +11 · Perception +8 · Stealth +12 · Spellcraft +6 · Bluff +7"
             }
           ]
         },
@@ -114,7 +114,7 @@
           "sections": [
             {
               "title": "Ausrüstung",
-              "markdown": "+1-Großschwert · maßgefertigtes Mithralkettenhemd · Cloak of Resistance +1 · eiserner Stirnreif · Zorn · Thorns Tonsiegel.\n\nBelt of Incredible Dexterity +2: **Material bezahlt, noch nicht gefertigt**."
+              "markdown": "+1-Großschwert · maßgefertigtes Mithralkettenhemd (aktuell in der Werkstatt) · Cloak of Resistance +1 · eiserner Stirnreif · Belt of Incredible Dexterity +2 · Zorn · Thorns Tonsiegel."
             }
           ]
         }
@@ -191,7 +191,7 @@
           "sections": [
             {
               "title": "Aktuelle Plätze",
-              "markdown": "Grad 1: **5/7** · Grad 2: **4/6** · Grad 3: **4/4**. Der CHA-Stirnreif wurde noch keine 24 Stunden getragen."
+              "markdown": "Grad 1: **8/8** · Grad 2: **6/6** · Grad 3: **4/4**. Der CHA-Stirnreif ist voll wirksam."
             },
             {
               "title": "Auswahl",
@@ -229,7 +229,7 @@
             },
             {
               "title": "Ausrüstung",
-              "markdown": "Mithralkettenhemd · Mithral Heavy Shield · Cloak of Resistance +1 · Headband of Alluring Charisma +2 · eigenes Iron Circlet · Meisterarbeits-Diebeswerkzeug · Verse · Aiden Kaels Karte. Extend-Rod: **noch nicht gekauft**."
+              "markdown": "Mithralkettenhemd und Mithral Heavy Shield (aktuell in der Werkstatt) · Cloak of Resistance +1 · Headband of Alluring Charisma +2 · eigenes Iron Circlet · Meisterarbeits-Diebeswerkzeug · Lesser Metamagic Rod of Extend · Verse · Aiden Kaels Karte."
             }
           ]
         }
@@ -334,7 +334,7 @@
           "sections": [
             {
               "title": "Ausrüstung",
-              "markdown": "+1 Dastard Full Plate · Meisterarbeits-Großschwert · Cloak of Resistance +1 · Mirelles Rüstungsunterkleidung.\n\nPermanente +1-Waffenaufwertung: **noch nicht gekauft**."
+              "markdown": "+1 Dastard Full Plate · Meisterarbeits-Großschwert (aktuell in der Werkstatt; +1-Aufwertung bezahlt und in Arbeit) · Cloak of Resistance +1 · Mirelles Rüstungsunterkleidung."
             }
           ]
         }
