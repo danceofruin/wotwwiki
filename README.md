@@ -3,10 +3,10 @@
 Spielerbezogenes Kampagnenwiki für *Way of the Wicked*.
 
 - Live: https://danceofruin.github.io/wotwwiki/
-- Live-Play-Stand: siehe `data/live.json` (12. Februar 4712 AR, später Nachmittag; Halstyn’s Folly)
-- Artikelarchiv: redaktionell nachgezogen bis zur laufenden Flussfahrt am 12. Februar 4712 AR
-- Technischer Stand: 26. September 2026
-- Version: 3.6.0
+- Live-Play-Stand: siehe `data/live.json` (21. Februar 4712 AR, späte Nacht; Goldener Reiher, Farholde)
+- Artikelarchiv: redaktionell nachgezogen bis zum Beginn von Buch Zwei am 21. Februar 4712 AR
+- Technischer Stand: 28. September 2026
+- Version 4.0.0
 
 ## Live Play
 
@@ -90,3 +90,11 @@ Die gleiche Prüfung läuft bei Pushes und Pull Requests automatisch über GitHu
 - Knotenkasse auf 17.271 gp aktualisiert; gewöhnliche Requisitionserlöse als separater Betriebsfonds geführt
 - Tamsins Sicherheitsbereich, Kaitlyns Menschen-Lane, Mirelles Rüstungsarbeit und Hakons offene Zukunft aktualisiert
 - Nellas Logistikrolle und ihr Gespräch am 12. Februar ergänzt; vorhandene Nella-Bilder unverändert gelassen
+
+## 4.0.0 · Farholde und Buch Zwei
+
+- Handoff bis 21. Februar vollständig übernommen; Session-Capture war vor dem Sync leer/abgeschlossen
+- Horn-Auftrag, Farholde, Kaels Karte, Vandermir, Rubal Thraam, Knittel und aktueller Crafting-/Kassenstand ergänzt
+- Reise, Requisitionsphase und Familiar-Projekt als abgeschlossen markiert
+- Live-Dashboard, Chronik, Beziehungen, Dossiers und Quellenregister nachgezogen
+- alle bestehenden Bilddateien und Bildzuweisungen unverändert gelassen, einschließlich Nella

@@ -4,9 +4,9 @@
     "authority": "GENERATED VIEW. DO NOT USE AS CAMPAIGN AUTHORITY.",
     "generated": true,
     "playerSafe": true,
-    "generatedAt": "2026-09-24T15:00:00Z",
-    "sourceRevision": "394cfb98f0f2cc7c476d1e268d57441d0a7b1dd3394cfb98f0f2cc7c476d1e26",
-    "reviewedAt": "2026-09-24"
+    "generatedAt": "2026-09-28T12:00:00Z",
+    "sourceRevision": "b8fe30088151ed5379727e9e447d6dec34e0f1247e14323564eae2cde14cd239",
+    "reviewedAt": "2026-09-28"
   },
   "characters": [
     {
@@ -114,7 +114,7 @@
           "sections": [
             {
               "title": "Ausrüstung",
-              "markdown": "+1-Großschwert · maßgefertigtes Mithralkettenhemd · Cloak of Resistance +1 · eiserner Stirnreif · Zorn.\n\nBelt of Incredible Dexterity +2: **noch nicht gekauft**."
+              "markdown": "+1-Großschwert · maßgefertigtes Mithralkettenhemd · Cloak of Resistance +1 · eiserner Stirnreif · Zorn · Thorns Tonsiegel.\n\nBelt of Incredible Dexterity +2: **Material bezahlt, noch nicht gefertigt**."
             }
           ]
         }
@@ -229,7 +229,7 @@
             },
             {
               "title": "Ausrüstung",
-              "markdown": "Mithralkettenhemd · Mithral Heavy Shield · Cloak of Resistance +1 · Headband of Alluring Charisma +2 · Thieves’ Tools · Verse. Extend-Rod: **noch nicht gekauft**."
+              "markdown": "Mithralkettenhemd · Mithral Heavy Shield · Cloak of Resistance +1 · Headband of Alluring Charisma +2 · eigenes Iron Circlet · Meisterarbeits-Diebeswerkzeug · Verse · Aiden Kaels Karte. Extend-Rod: **noch nicht gekauft**."
             }
           ]
         }
