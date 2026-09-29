@@ -3,10 +3,10 @@
 Spielerbezogenes Kampagnenwiki für *Way of the Wicked*.
 
 - Live: https://danceofruin.github.io/wotwwiki/
-- Live-Play-Stand: siehe `data/live.json` (21. Februar 4712 AR, späte Nacht; Goldener Reiher, Farholde)
-- Artikelarchiv: redaktionell nachgezogen bis zum Beginn von Buch Zwei am 21. Februar 4712 AR
-- Technischer Stand: 28. September 2026
-- Version 4.0.0
+- Live-Play-Stand: siehe `data/live.json` (24. Februar 4712 AR, später Vormittag; Horn von Abaddon, untere Höhlen)
+- Artikelarchiv: redaktionell nachgezogen bis zum ersten Vorstoß ins Horn am 24. Februar 4712 AR
+- Technischer Stand: 29. September 2026
+- Version 4.1.0
 
 ## Live Play
 
@@ -98,3 +98,12 @@ Die gleiche Prüfung läuft bei Pushes und Pull Requests automatisch über GitHu
 - Reise, Requisitionsphase und Familiar-Projekt als abgeschlossen markiert
 - Live-Dashboard, Chronik, Beziehungen, Dossiers und Quellenregister nachgezogen
 - alle bestehenden Bilddateien und Bildzuweisungen unverändert gelassen, einschließlich Nella
+
+## 4.1.0 · Siebter Knoten und Hornvorstoß
+
+- abgeschlossenen Handoff bis 24. Februar geprüft; Session-Capture war leer
+- Ankunft der White Ravens, Graue Möwe und Kaitlyns Verbindungslane ergänzt
+- externe +1-Aufwertungen, beide Gürtel und aktuelle Tacitus-Fertigung nachgezogen
+- Caer-Bryr-Route, Jurak und die aktuelle untere Höhlenlage spielersicher eingetragen
+- Live-Dashboard, Bögen, Chronik, Dossiers und Quellenregister aktualisiert
+- sämtliche bestehenden Bilder und Bildzuweisungen unverändert gelassen

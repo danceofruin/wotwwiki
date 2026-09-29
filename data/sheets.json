@@ -4,9 +4,9 @@
     "authority": "GENERATED VIEW. DO NOT USE AS CAMPAIGN AUTHORITY.",
     "generated": true,
     "playerSafe": true,
-    "generatedAt": "2026-09-28T17:08:00Z",
-    "sourceRevision": "2d6107d38bb5057f790f4736e5adf4cb1154ec5f0bec662e72378080085840f8",
-    "reviewedAt": "2026-09-28"
+    "generatedAt": "2026-09-29T12:45:00Z",
+    "sourceRevision": "b11b86832549233fa692b65e5e6efe87a62570167419e17fd20090b95ae63da6",
+    "reviewedAt": "2026-09-29"
   },
   "characters": [
     {
@@ -19,9 +19,9 @@
       "profile": "Mithralkettenhemd + The Caged Sun (2 Essence)",
       "hpMax": 42,
       "stats": {
-        "ac": "21",
+        "ac": "22",
         "touch": "17",
-        "flatFooted": "16",
+        "flatFooted": "17",
         "initiative": "+8",
         "speed": "30 ft",
         "bab": "+5",
@@ -70,7 +70,7 @@
           "sections": [
             {
               "title": "Kampfwerte",
-              "markdown": "**HP 42/42 · AC 21 · Touch 17 · Flat-Footed 16 · Initiative +8**\n\n+1-Großschwert: +13, 2d6+8. Power Attack: +11, 2d6+14. Rapid Strike: zwei Angriffe +11. Minute Hand mit PA: +9."
+              "markdown": "**HP 42/42 · AC 22 · Touch 17 · Flat-Footed 17 · Initiative +8**\n\n+1-Großschwert: +13, 2d6+8. Power Attack: +11, 2d6+14. Rapid Strike: zwei Angriffe +11. Minute Hand mit PA: +9."
             },
             {
               "title": "Standardmotor",
@@ -114,7 +114,7 @@
           "sections": [
             {
               "title": "Ausrüstung",
-              "markdown": "+1-Großschwert · maßgefertigtes Mithralkettenhemd (aktuell in der Werkstatt) · Cloak of Resistance +1 · eiserner Stirnreif · Belt of Incredible Dexterity +2 · Zorn · Thorns Tonsiegel."
+              "markdown": "+1-Großschwert · +1 maßgefertigtes Mithralkettenhemd · Cloak of Resistance +1 · eiserner Stirnreif · Belt of Incredible Dexterity +2 · Zorn · Thorns Tonsiegel · Aiden Kaels Karte."
             }
           ]
         }
@@ -130,9 +130,9 @@
       "profile": "Mithralkettenhemd + Mithralschild + CHA-Stirnreif",
       "hpMax": 33,
       "stats": {
-        "ac": "21",
+        "ac": "23",
         "touch": "15",
-        "flatFooted": "16",
+        "flatFooted": "18",
         "initiative": "+12 mit Verse",
         "speed": "30 ft",
         "bab": "+4",
@@ -181,7 +181,7 @@
           "sections": [
             {
               "title": "Kampfwerte",
-              "markdown": "**HP 33/33 · AC 21 · Initiative +12 mit Verse / +8 ohne · Zauber-SG 15/16/17/18 · Konzentration +11.**"
+              "markdown": "**HP 33/33 · AC 23 · Touch 15 · Flat-Footed 18 · Initiative +12 mit Verse / +8 ohne · Zauber-SG 15/16/17/18 · Konzentration +11.**"
             }
           ]
         },
@@ -229,7 +229,7 @@
             },
             {
               "title": "Ausrüstung",
-              "markdown": "Mithralkettenhemd und Mithral Heavy Shield (aktuell in der Werkstatt) · Cloak of Resistance +1 · Headband of Alluring Charisma +2 · eigenes Iron Circlet · Meisterarbeits-Diebeswerkzeug · Lesser Metamagic Rod of Extend · Verse · Aiden Kaels Karte."
+              "markdown": "+1-Mithralkettenhemd · +1 Mithral Heavy Shield · Cloak of Resistance +1 · Headband of Alluring Charisma +2 · eigenes Iron Circlet · Meisterarbeits-Diebeswerkzeug · Lesser Metamagic Rod of Extend · Verse · Aiden Kaels Karte."
             }
           ]
         }
@@ -242,7 +242,7 @@
       "level": 6,
       "ancestry": "Mensch · Karfeld",
       "source": "mechanics/combat/valeria-level-6.md",
-      "profile": "+1 Dastard Full Plate · Meisterarbeits-Großschwert",
+      "profile": "+1 Dastard Full Plate · +1-Großschwert · STR-Gürtel",
       "hpMax": 40,
       "stats": {
         "ac": "21",
@@ -251,22 +251,22 @@
         "initiative": "+5",
         "speed": "20 ft",
         "bab": "+6/+1",
-        "cmb": "+9",
-        "cmd": "20",
+        "cmb": "+10",
+        "cmd": "21",
         "fort": "+11",
         "ref": "+9",
         "will": "+11"
       },
       "attack": {
-        "name": "Meisterarbeits-Großschwert",
-        "hit": "+8/+3",
-        "damage": "2d6+10",
+        "name": "+1-Großschwert",
+        "hit": "+9/+4",
+        "damage": "2d6+13",
         "note": "Power Attack"
       },
       "attributes": [
         {
           "name": "STR",
-          "value": "16"
+          "value": "18 getragen"
         },
         {
           "name": "DEX",
@@ -296,7 +296,7 @@
           "sections": [
             {
               "title": "Kampfwerte",
-              "markdown": "**HP 40/40 · AC 21 · Initiative +5 · BAB +6/+1.** Normal +10/+5, 2d6+4; Power Attack +8/+3, 2d6+10."
+              "markdown": "**HP 40/40 · AC 21 · Initiative +5 · BAB +6/+1.** Normal +11/+6, 2d6+7; Power Attack +9/+4, 2d6+13."
             },
             {
               "title": "Kampfmotor",
@@ -334,7 +334,7 @@
           "sections": [
             {
               "title": "Ausrüstung",
-              "markdown": "+1 Dastard Full Plate · Meisterarbeits-Großschwert (aktuell in der Werkstatt; +1-Aufwertung bezahlt und in Arbeit) · Cloak of Resistance +1 · Mirelles Rüstungsunterkleidung."
+              "markdown": "+1 Dastard Full Plate · +1-Großschwert · Belt of Giant Strength +2 · Cloak of Resistance +1 · Mirelles Rüstungsunterkleidung."
             }
           ]
         }

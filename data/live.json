@@ -4,38 +4,39 @@
     "authority": "GENERATED VIEW. DO NOT USE AS CAMPAIGN AUTHORITY.",
     "generated": true,
     "playerSafe": true,
-    "generatedAt": "2026-09-28T17:08:00Z",
-    "sourceRevision": "d0a3c06b85e0df9d55f759bdcf84732b290b647b455e7655a977bf5182f6e48d",
-    "reviewedAt": "2026-09-28",
-    "sheetRevision": "2d6107d38bb5057f790f4736e5adf4cb1154ec5f0bec662e72378080085840f8"
+    "generatedAt": "2026-09-29T12:45:00Z",
+    "sourceRevision": "045fd6fbd6155bc18713cb9af30f4c135570cf1e4c6acfa48333d4e853b6bdfe",
+    "reviewedAt": "2026-09-29",
+    "sheetRevision": "b11b86832549233fa692b65e5e6efe87a62570167419e17fd20090b95ae63da6"
   },
   "scene": {
-    "date": "4712-02-22",
-    "dateLabel": "22. Februar 4712 AR",
-    "time": "Späte Nacht / Tagesende",
-    "location": "Goldener Reiher, Farholde",
-    "locationId": "goldener-reiher",
-    "detail": "Styke, Vesper und Valeria im Eckzimmer; Kaitlyn und Tamsin separat untergebracht",
-    "summary": "Vandermirs Dinner ist abgeschlossen und eine begrenzte Zusammenarbeit steht. Der Siebte Knoten kommt am 23. Februar; die erste Horn-Erkundung ist derzeit für den 24. Februar vorgesehen.",
-    "rest": "Der Abend ist beendet, aber nach der letzten Szene ist noch keine abgeschlossene Nachtruhe etabliert."
+    "date": "4712-02-24",
+    "dateLabel": "24. Februar 4712 AR",
+    "time": "Später Vormittag",
+    "location": "Horn von Abaddon · untere Höhlen",
+    "locationId": "horn-abaddon",
+    "detail": "Styke und Vesper verborgen auf zwei Flanken; Valeria wartet noch hinter der Mitte",
+    "summary": "Das Kerntrio hat das Horn erreicht, Jurak besiegt und in den unteren Höhlen einen vorbereiteten Hinterhalt erkannt. Noch ist keine Initiative eröffnet.",
+    "rest": "Nach Juraks Tod gab es eine kurze Pause mit Essen, Wasser und Erholung. Das Trio steht bei vollen HP; gewöhnliche Manöver wurden zurückgewonnen."
   },
   "quests": [
     {
       "id": "horn",
-      "title": "Horn von Abaddon · zweiter Auftrag",
+      "title": "Horn von Abaddon · erster Vorstoß",
       "status": "active",
-      "updated": "4712-02-22",
-      "summary": "Kaels Karte weist zum Horn. Die nächste tiefe Erkundung ist nach dem Treffen mit dem Siebten Knoten und der Ausrüstungsabholung vorgesehen.",
+      "updated": "4712-02-24",
+      "summary": "Kaels Karte führte zum richtigen Horn. Jurak ist gefallen; das Kerntrio steht in den unteren Höhlen vor fünf verborgenen amphibischen Kämpfern.",
       "known": [
-        "Kaels physische Karte bleibt im Besitz des Kerntrios.",
-        "Vandermir besitzt weder eine eigene Hornkarte noch eine Lösung für Siegel oder Bindung.",
-        "Die erste Erkundung ist derzeit für den Morgen des 24. Februar mit Styke, Vesper und Valeria beabsichtigt."
+        "Vespers Route über höheres, festeres Gelände ist länger, aber mit den Pferden wiederholbar.",
+        "Jurak erklärte ihren vom Victor erteilten Schutzauftrag und lehnte Stykes Angebot ab; sie starb im folgenden Kampf.",
+        "Zwei bewaffnete amphibische Wachen zogen sich vom Eingang zurück. In der nächsten großen Höhle warten fünf weitere Kämpfer im Hinterhalt."
       ],
-      "next": "Am 23. Februar den Siebten Knoten treffen, die Ausrüstung abholen und die Feldlast abschließen.",
+      "next": "Valeria als sichtbaren Mittelpunkt vortreten lassen, während Styke und Vesper verborgen auf den Flanken bleiben.",
       "links": [
         "horn-abaddon",
         "kaels-karte",
-        "caer-bryr"
+        "caer-bryr",
+        "jurak"
       ]
     },
     {
@@ -43,11 +44,11 @@
       "title": "Farholde · Vandermir",
       "status": "completed",
       "updated": "4712-02-22",
-      "summary": "Das erste Dinner auf Vanderhall endet mit einer begrenzten geschäftlichen Zusammenarbeit.",
+      "summary": "Die begrenzte Zusammenarbeit mit Baron Vandermir steht; Kaitlyn ist der vereinbarte Kommunikationsweg.",
       "known": [
-        "Kaitlyn ist der vereinbarte Kommunikationsweg zwischen Vandermir und dem Knoten.",
-        "Vandermir bietet begrenzte Warnungen, Kontakte, diskrete Markt- und Gesellschaftshilfe.",
-        "Ein geheimer Tunnel verbindet Vanderhall mit einem unscheinbaren Haus am Fuß von Calliver Green."
+        "Vandermir bietet begrenzte Warnungen, Kontakte sowie diskrete Markt-, Gesellschafts- und Rechtshilfe.",
+        "Ein geheimer Tunnel verbindet Vanderhall mit einem unscheinbaren Haus am Fuß von Calliver Green.",
+        "Er erhält das erste Angebot auf verkäufliche Hornfunde zu gewöhnlichem Marktwert, wo einer besteht."
       ],
       "next": "Kaitlyn als Verbindung nutzen und Vandermir nur innerhalb der vereinbarten Grenzen einbinden.",
       "links": [
@@ -59,50 +60,54 @@
     {
       "id": "seventh",
       "title": "Siebter Knoten · White Ravens",
-      "status": "scheduled",
-      "updated": "4712-02-22",
-      "summary": "Tiadora kündigt Elise Zadaria und die White Ravens für den 23. Februar auf der Lucky Lady an.",
+      "status": "active",
+      "updated": "4712-02-23",
+      "summary": "Elise Zadaria und die White Ravens sind in Farholde eingetroffen und sammeln von der Grauen Möwe aus ein unabhängiges Lagebild.",
       "known": [
-        "Der Siebte Knoten soll Farholde und den Rücken der Horn-Operation absichern, nicht mit in den Wald ziehen.",
-        "Styke will das größere Retainer-Netz möglichst nicht offenlegen.",
-        "Kaitlyn soll alle vier Ravens beobachten und erst aus tatsächlichem Verhalten Schlüsse ziehen."
+        "Kaitlyn ist der vereinbarte Kontakt zwischen den Knoten.",
+        "Der Siebte Knoten soll zunächst beobachten und den Farholde-Rücken der Horn-Operation sichern.",
+        "Trak beobachtete Kaitlyn auffällig; Kaitlyn wertet das nur als Öffnung, nicht als Beweis für Absicht oder Verrat."
       ],
-      "next": "Ankunft abwarten, Rollen und Kommunikationsweg abstimmen.",
+      "next": "Nach Rückkehr des Kerntrios beide unabhängig gewonnenen Lagebilder vergleichen.",
       "links": [
+        "white-ravens",
         "elise",
         "trak",
         "trik",
-        "dostan"
+        "dostan",
+        "graue-moewe",
+        "kaitlyn"
       ]
     },
     {
       "id": "crafting",
       "title": "Magische Ausrüstung",
       "status": "active",
-      "updated": "4712-02-22",
-      "summary": "Stykes Geschicklichkeitsgürtel ist fertig. Tacitus' weitere Materialien sind beschafft; vier externe Verzauberungen laufen.",
+      "updated": "4712-02-24",
+      "summary": "Alle vier externen +1-Aufwertungen und Valerias Stärke-Gürtel sind fertig. Tacitus und Knittel arbeiten nun am Charisma-Stirnreif für Valeria.",
       "known": [
-        "Styke trägt jetzt den Belt of Incredible Dexterity +2.",
-        "Vesper besitzt die Lesser Metamagic Rod of Extend.",
-        "Die vier Werkstattstücke sollen gemeinsam am Abend des 23. Februar abgeholt werden."
+        "Styke und Vesper tragen ihre +1-Mithralkettenhemden; Vesper zusätzlich den +1-Mithralschild.",
+        "Valeria führt ihr +1-Großschwert und trägt den Belt of Giant Strength +2.",
+        "Die bereits bezahlte Fertigungsreserve enthält nach dem Stärke-Gürtel noch Material im Wert von 9.500 gp."
       ],
-      "next": "Werkstattstücke am 23. Februar abholen und Tacitus' weitere Fertigungsreihenfolge fortsetzen.",
+      "next": "Valerias Headband of Alluring Charisma +2 abschließen; danach folgen drei Umhang- und drei Amulettprojekte.",
       "links": [
-        "styke-dex-guertel",
         "tacitus",
-        "knittel"
+        "knittel",
+        "styke-dex-guertel",
+        "valeria"
       ]
     },
     {
       "id": "red-book",
       "title": "Das rote Buch",
       "status": "active",
-      "updated": "4712-02-22",
-      "summary": "Der Band bleibt im Zustand Stirring; auch am 22. Februar gab es keine neue sichtbare Textänderung.",
+      "updated": "4712-02-24",
+      "summary": "Der Band bleibt im Zustand Stirring; auch am 23. und 24. Februar ist keine neue sichtbare Umschreibung belegt.",
       "known": [
         "Die bekannte Aura umfasst Divination, Illusion und eine tiefere unbekannte Komponente.",
-        "Die Gute-Nacht-Lektüre nutzte einen bereits bekannten Abschnitt.",
-        "Herkunft und vollständige Kräfte bleiben ungeklärt."
+        "Herkunft und vollständige Kräfte bleiben ungeklärt.",
+        "Neue Einträge werden erst nach einer tatsächlich sichtbaren Veränderung ergänzt."
       ],
       "next": "Nur tatsächlich sichtbare neue Veränderungen ergänzen.",
       "links": [
@@ -112,54 +117,13 @@
       ]
     }
   ],
-  "appointments": [
-    {
-      "id": "seventh-arrival",
-      "date": "4712-02-23",
-      "label": "23. Februar",
-      "time": "Im Tagesverlauf · genaue Zeit unbekannt",
-      "title": "Lucky Lady · Siebter Knoten",
-      "note": "Elise Zadaria und die White Ravens erreichen Farholde.",
-      "links": [
-        "elise",
-        "trak",
-        "trik",
-        "dostan"
-      ]
-    },
-    {
-      "id": "gear-pickup",
-      "date": "4712-02-23",
-      "label": "23. Februar",
-      "time": "Abends",
-      "title": "Verzauberte Ausrüstung abholen",
-      "note": "Styke-/Vesper-Rüstung, Vespers Schild und Valerias Großschwert gemeinsam abholen.",
-      "links": [
-        "styke",
-        "vesper",
-        "valeria"
-      ]
-    },
-    {
-      "id": "horn-recon",
-      "date": "4712-02-24",
-      "label": "24. Februar",
-      "time": "Morgens · beabsichtigt",
-      "title": "Erste Horn-Erkundung",
-      "note": "Kerntrio mit Kaels Karte und leichter Feldlast; nicht erzwungen, falls neue Informationen den Plan ändern.",
-      "links": [
-        "horn-abaddon",
-        "kaels-karte",
-        "caer-bryr"
-      ]
-    }
-  ],
+  "appointments": [],
   "missions": [
     {
       "id": "treasury",
       "label": "Knotenkasse",
       "value": "2.027 gp 5 sp",
-      "note": "Nach Verkauf, Tacitus-Materialien, Extend-Rod und bezahlten externen Verzauberungen."
+      "note": "Signifikante liquide Reserve; gewöhnliche Verpflegung und Unterkunft bleiben Betriebsrauschen."
     },
     {
       "id": "level",
@@ -170,32 +134,38 @@
     {
       "id": "horses",
       "label": "Pferde",
-      "value": "5 im Stall",
-      "note": "Varlet ist mit Grumblejack außerhalb Farholdes."
+      "value": "3 am Horn · 2 in Farholde",
+      "note": "Die drei Expeditionspferde sind außerhalb des unteren Höhleneingangs verborgen."
     },
     {
       "id": "hakon",
       "label": "Hakon und fünf Männer",
       "value": "1 gp/Tag je Mann",
-      "note": "Freie bezahlte Männer; Hakon führt seine fünf, keine feste Beutequote."
+      "note": "Freie bezahlte Männer; Hakon führt seine fünf und hält die Folly-/Ladungssicherung."
+    },
+    {
+      "id": "gear",
+      "label": "Vier +1-Aufwertungen",
+      "value": "Abgeholt",
+      "note": "Beide Mithralhemden, Vespers Schild und Valerias Großschwert sind fertig."
     },
     {
       "id": "belt",
-      "label": "Stykes DEX-Gürtel",
+      "label": "Valerias STR-Gürtel",
       "value": "Fertig · getragen",
-      "note": "Belt of Incredible Dexterity +2; DEX 21 solange getragen."
+      "note": "Belt of Giant Strength +2; aktuelle Stärke 18."
     },
     {
-      "id": "enchanting",
-      "label": "Werkstattauftrag",
-      "value": "Abholung 23. Feb. abends",
-      "note": "Vier bezahlte +1-Aufwertungen; Gegenstände bis zur Abholung nicht beim Kerntrio."
+      "id": "crafting",
+      "label": "Tacitus’ Werkbank",
+      "value": "CHA-Stirnreif in Arbeit",
+      "note": "Der volle Arbeitstag des 24. Februar ist am aktuellen Rand noch nicht abgeschlossen."
     },
     {
       "id": "tamsin",
       "label": "Haushaltssicherheit",
       "value": "Tamsin",
-      "note": "Sie hält während der Bryr-Abwesenheit die verstreuten Unterkünfte und Leute im Blick."
+      "note": "Sie schützt während der Bryr-Abwesenheit die verstreuten Unterkünfte und Leute."
     }
   ],
   "people": [
@@ -208,12 +178,12 @@
     "hakon",
     "grumblejack",
     "tiadora",
-    "rubal-thraam",
     "baron-vandermir",
     "elise",
     "trak",
     "trik",
-    "dostan"
+    "dostan",
+    "jurak"
   ],
   "party": [
     {
@@ -225,9 +195,9 @@
         "max": 42
       },
       "conditions": [],
-      "state": "Im Eckzimmer des Goldenen Reihers; Tag endet",
-      "resourceNote": "42/42 HP, 11/11 PP. Ein psionischer Fokus verfügbar; Deep Focus nicht automatisch gefüllt.",
-      "gearNote": "+1-Großschwert, Belt of Incredible Dexterity +2, Zorn und Thorns Tonsiegel bei ihm. Mithralkettenhemd in der Werkstatt.",
+      "state": "Verborgen hinter einem Steinpunkt auf der gegenüberliegenden Flanke; wartet reglos auf Valerias Köderbewegung",
+      "resourceNote": "42/42 HP, 11/11 PP. Normaler psionischer Fokus verfügbar; Deep Focus nicht automatisch gefüllt.",
+      "gearNote": "+1-Großschwert, +1-Mithralkettenhemd, Belt of Incredible Dexterity +2, Cloak +1, Zorn, Kaels Karte und Thorns Tonsiegel.",
       "pp": {
         "current": 11,
         "max": 11
@@ -243,9 +213,9 @@
         "max": 33
       },
       "conditions": [],
-      "state": "Im Eckzimmer; rotes Buch geschlossen, Verse bei ihr",
-      "resourceNote": "33/33 HP. Plätze: Grad 1 8/8, Grad 2 6/6, Grad 3 4/4. Am 22. Februar wurden keine Zauberplätze ausgegeben.",
-      "gearNote": "CHA-Stirnreif +2, eigenes Iron Circlet, Lesser Extend Rod und Meisterarbeits-Diebeswerkzeug. Mithralkettenhemd und Mithralschild in der Werkstatt.",
+      "state": "Verborgen auf der anderen Flanke, etwa 15 Fuß vom nächsten erkannten Kämpfer; Verse bei ihr",
+      "resourceNote": "33/33 HP. Plätze: Grad 1 8/8, Grad 2 6/6, Grad 3 4/4. Keine bestätigte Zauberplatzausgabe am 24. Februar.",
+      "gearNote": "+1-Mithralkettenhemd, +1-Mithralschild, CHA-Stirnreif +2, Cloak +1, Lesser Extend Rod, Meisterarbeits-Diebeswerkzeug, Jurak-Proben und Verse.",
       "verse": {
         "present": true,
         "hpCurrent": 16,
@@ -282,9 +252,9 @@
         "max": 40
       },
       "conditions": [],
-      "state": "Im Eckzimmer; sichtbare Spuren des Ringkampfs",
-      "resourceNote": "40/40 HP. Gespaltene Lippe, Wangenkratzer, aufgeriebene Knöchel und Muskelkater; kein formaler Zustand.",
-      "gearNote": "+1 Dastard Full Plate im Besitz. Meisterarbeits-Großschwert liegt für die bezahlte +1-Aufwertung in der Werkstatt."
+      "state": "Hinter der Mitte; noch nicht als Köder hervorgetreten und noch nicht entdeckt",
+      "resourceNote": "40/40 HP. Keine aktive Verletzung oder formale Bedingung.",
+      "gearNote": "+1 Dastard Full Plate, +1-Großschwert, Belt of Giant Strength +2 und Cloak of Resistance +1."
     }
   ]
 }
