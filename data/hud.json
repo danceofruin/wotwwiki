@@ -568,6 +568,41 @@
               "detail": "Protector Familiar; Bodyguard / Combat Reflexes gemäß Kampagnenregeln."
             }
           ]
+        },
+        {
+          "id": "combat-shortcuts",
+          "label": "Kampf-Kurzwerte",
+          "type": "list",
+          "items": [
+            {
+              "name": "Defensive Werte",
+              "detail": "AC 23 · Touch 15 · Flat-footed 18 · Initiative +12 mit Verse / +8 ohne Verse."
+            },
+            {
+              "name": "Sun's Gleam",
+              "detail": "+6 ranged touch · 45 ft · 1d6+5 Force."
+            },
+            {
+              "name": "Spell-DCs",
+              "detail": "Grad 1 DC 16 · Grad 2 DC 17 · Grad 3 DC 18 · CL 6 · Konzentration +11."
+            },
+            {
+              "name": "Witness to Glory",
+              "detail": "Mit 1 Essence: +6 Initiative und 10 Temp HP."
+            },
+            {
+              "name": "Spoils of War",
+              "detail": "Mit 1 Essence: 10 HP Heilung beim ersten qualifizierenden Treffer je Verbündetem pro Runde, 45 ft."
+            },
+            {
+              "name": "Stinking Cloud",
+              "detail": "160 ft · 20-ft-Radius · 6 Runden · Fort DC 18."
+            },
+            {
+              "name": "Glyph Engine",
+              "detail": "1 Animus · 45 ft · 6 Runden · DC 19."
+            }
+          ]
         }
       ],
       "summaryResources": [
@@ -757,6 +792,41 @@
             {
               "name": "Emerging Antipaladin State",
               "detail": "Neue übernatürliche Fähigkeiten werden in der Fiktion erst durch echte Manifestation vertraut; kein sofortiges Veteranenwissen."
+            }
+          ]
+        },
+        {
+          "id": "combat-shortcuts",
+          "label": "Kampf-Kurzwerte",
+          "type": "list",
+          "items": [
+            {
+              "name": "Defensive Werte",
+              "detail": "AC 21 · Touch 11 · Flat-footed 20 · Initiative +5 · CMB +10 · CMD 21."
+            },
+            {
+              "name": "Power Attack",
+              "detail": "+9/+4 · 2d6+13."
+            },
+            {
+              "name": "Power Attack + Smite Good",
+              "detail": "+14/+9 · 2d6+19; erster qualifizierender Treffer 2d6+25. AC 28 gegen das Smite-Ziel."
+            },
+            {
+              "name": "Power Attack + Challenge",
+              "detail": "+9/+4 · 2d6+17; mit Order-Bonus +11/+6 · 2d6+17."
+            },
+            {
+              "name": "Smite + Challenge",
+              "detail": "Wenn beide aktiv sind und der Order-Bonus greift: +16/+11 · 2d6+23; erster qualifizierender Treffer 2d6+29."
+            },
+            {
+              "name": "Cornugon Smash → Hurtful",
+              "detail": "Power-Attack-Treffer → Demoralize; bei Erfolg kann Hurtful den Swift für einen Zusatzangriff nutzen."
+            },
+            {
+              "name": "Touch of Corruption",
+              "detail": "Melee touch · 3d6 · Fort DC 18."
             }
           ]
         }
