@@ -4,8 +4,8 @@
     "kind": "wotw-hud-party",
     "generatedView": true,
     "playerSafe": true,
-    "source": "danceofruin/wotwGPT mechanics/combat/core-party-level-6.md + current/LIVE_STATE.md",
-    "updated": "2026-09-27"
+    "source": "danceofruin/wotwGPT mechanics/combat/{styke,vesper,valeria}-level-6.md + current/LIVE_STATE.md",
+    "updated": "2026-10-02"
   },
   "ui": {
     "defaultCharacterOpen": "",
@@ -17,6 +17,74 @@
       "id": "styke",
       "label": "STYKE",
       "sections": [
+        {
+          "id": "saves",
+          "label": "Saves",
+          "type": "list",
+          "subtitle": "Aktuelle Werte mit The Caged Sun (2 Essence) und Cloak of Resistance +1.",
+          "items": [
+            {
+              "name": "Fortitude",
+              "tag": "+7"
+            },
+            {
+              "name": "Reflex",
+              "tag": "+9"
+            },
+            {
+              "name": "Will",
+              "tag": "+10"
+            }
+          ]
+        },
+        {
+          "id": "skills",
+          "label": "Skills",
+          "type": "list",
+          "subtitle": "Knowledge (All) ist die Kampagnen-Konsolidierung. Zorn gibt bei passenden Knowledge-Checks separat +2 Hilfe.",
+          "items": [
+            {
+              "name": "Acrobatics",
+              "tag": "+13"
+            },
+            {
+              "name": "Autohypnosis",
+              "tag": "+7"
+            },
+            {
+              "name": "Craft (Weapons)",
+              "tag": "+9"
+            },
+            {
+              "name": "Diplomacy",
+              "tag": "+7"
+            },
+            {
+              "name": "Intimidate",
+              "tag": "+11"
+            },
+            {
+              "name": "Knowledge (All)",
+              "tag": "+11"
+            },
+            {
+              "name": "Perception",
+              "tag": "+8"
+            },
+            {
+              "name": "Stealth",
+              "tag": "+12"
+            },
+            {
+              "name": "Spellcraft",
+              "tag": "+6"
+            },
+            {
+              "name": "Bluff",
+              "tag": "+7"
+            }
+          ]
+        },
         {
           "id": "readied",
           "label": "Readied Maneuvers",
@@ -250,6 +318,75 @@
       "label": "VESPER",
       "sections": [
         {
+          "id": "saves",
+          "label": "Saves",
+          "type": "list",
+          "subtitle": "Sidestep Secret nutzt CHA statt DEX für Reflex; Cloak of Resistance +1 ist enthalten.",
+          "items": [
+            {
+              "name": "Fortitude",
+              "tag": "+3"
+            },
+            {
+              "name": "Reflex",
+              "tag": "+9"
+            },
+            {
+              "name": "Will",
+              "tag": "+10"
+            }
+          ]
+        },
+        {
+          "id": "skills",
+          "label": "Skills",
+          "type": "list",
+          "subtitle": "Enhanced Diplomacy macht Diplomacy situativ +16.",
+          "items": [
+            {
+              "name": "Bluff",
+              "tag": "+7"
+            },
+            {
+              "name": "Disable Device",
+              "tag": "+14"
+            },
+            {
+              "name": "Diplomacy",
+              "tag": "+14",
+              "detail": "Enhanced Diplomacy situativ +16."
+            },
+            {
+              "name": "Heal",
+              "tag": "+8"
+            },
+            {
+              "name": "Knowledge (All)",
+              "tag": "+14"
+            },
+            {
+              "name": "Perception",
+              "tag": "+10"
+            },
+            {
+              "name": "Sense Motive",
+              "tag": "+9"
+            },
+            {
+              "name": "Spellcraft",
+              "tag": "+11"
+            },
+            {
+              "name": "Stealth",
+              "tag": "+14"
+            },
+            {
+              "name": "Survival",
+              "tag": "+5"
+            }
+          ]
+        },
+        {
           "id": "spells",
           "label": "Verfügbare Spells",
           "type": "spell-groups",
@@ -459,6 +596,51 @@
       "id": "valeria",
       "label": "VALERIA",
       "sections": [
+        {
+          "id": "saves",
+          "label": "Saves",
+          "type": "list",
+          "subtitle": "Unholy Resilience +5 und Cloak of Resistance +1 sind bereits eingerechnet.",
+          "items": [
+            {
+              "name": "Fortitude",
+              "tag": "+11"
+            },
+            {
+              "name": "Reflex",
+              "tag": "+9"
+            },
+            {
+              "name": "Will",
+              "tag": "+11"
+            }
+          ]
+        },
+        {
+          "id": "skills",
+          "label": "Skills",
+          "type": "list",
+          "items": [
+            {
+              "name": "Intimidate",
+              "tag": "+14",
+              "detail": "+18 gegen lebende Kreaturen innerhalb 10 ft durch Aura of Obedience."
+            },
+            {
+              "name": "Diplomacy",
+              "tag": "+14"
+            },
+            {
+              "name": "Sense Motive",
+              "tag": "+9"
+            },
+            {
+              "name": "Stealth",
+              "tag": "+5",
+              "detail": "+5 in Rüstung / +10 ohne Rüstung."
+            }
+          ]
+        },
         {
           "id": "prepared-spells",
           "label": "Vorbereitete Spells",
