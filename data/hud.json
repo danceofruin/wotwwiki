@@ -4,8 +4,8 @@
     "kind": "wotw-hud-party",
     "generatedView": true,
     "playerSafe": true,
-    "source": "danceofruin/wotwGPT mechanics/combat/{styke,vesper,valeria}-level-6.md + current/LIVE_STATE.md",
-    "updated": "2026-10-02"
+    "source": "danceofruin/wotwGPT mechanics/combat/{styke,vesper,valeria}-level-7.md + current/LIVE_STATE.md",
+    "updated": "2026-10-03"
   },
   "ui": {
     "defaultCharacterOpen": "",
@@ -21,15 +21,15 @@
           "id": "saves",
           "label": "Saves",
           "type": "list",
-          "subtitle": "Aktuelle Werte mit The Caged Sun (2 Essence) und Cloak of Resistance +1.",
+          "subtitle": "Aktuelle Stufe-7-Werte mit Stance of the Inner Eye und Cloak of Resistance +1.",
           "items": [
             {
               "name": "Fortitude",
-              "tag": "+7"
+              "tag": "+8"
             },
             {
               "name": "Reflex",
-              "tag": "+9"
+              "tag": "+10"
             },
             {
               "name": "Will",
@@ -65,15 +65,15 @@
             },
             {
               "name": "Knowledge (All)",
-              "tag": "+11"
+              "tag": "+12"
             },
             {
               "name": "Perception",
-              "tag": "+8"
+              "tag": "+10"
             },
             {
               "name": "Stealth",
-              "tag": "+12"
+              "tag": "+15"
             },
             {
               "name": "Spellcraft",
@@ -92,34 +92,34 @@
           "subtitle": "5 vorbereitet · Klick auf ein Manöver toggelt READY / EXPENDED",
           "items": [
             {
-              "id": "rapid-strike",
-              "name": "Rapid Strike",
-              "tag": "Strike",
-              "detail": "Zwei Nahkampfangriffe gegen dasselbe Ziel."
+              "id": "temporal-body-adjustment",
+              "name": "Temporal Body Adjustment",
+              "tag": "Grad 4 Counter",
+              "detail": "Immediate: einen qualifizierenden negativen Zustand ignorieren oder beenden; verhindert keinen Tod."
+            },
+            {
+              "id": "reflective-blade-style",
+              "name": "Reflected Blade Style",
+              "tag": "Grad 3 Boost",
+              "detail": "Nächster geeigneter Standard-Strike trifft einen zweiten Gegner innerhalb 40 ft mit demselben Wurf."
             },
             {
               "id": "minute-hand",
               "name": "Minute Hand",
               "tag": "Boost",
-              "detail": "Zusätzlicher Nahkampfangriff; mit Power Attack aktuell +8, 2d6+13."
+              "detail": "Zusatzangriff; mit Power Attack und Inner Eye aktuell +10, 2d6+16 +1d6 Präzision."
             },
             {
-              "id": "obsidian-sidestep",
-              "name": "Obsidian Sidestep",
-              "tag": "Counter",
-              "detail": "Ersetzt einen passenden Save durch Craft (Weapons)."
+              "id": "circle-of-razor-feathers",
+              "name": "Circle of Razor Feathers",
+              "tag": "Grad 4 Strike",
+              "detail": "30-ft-Burst; 8d6 profan, Reflex DC 17 partial; sickened."
             },
             {
-              "id": "reflective-blade-style",
-              "name": "Reflective Blade Style",
-              "tag": "Grad 3",
-              "detail": "Vorbereitetes Advanced-Study-Manöver."
-            },
-            {
-              "id": "chains-of-doubt",
-              "name": "Chains of Doubt",
-              "tag": "Grad 3",
-              "detail": "Vorbereitetes Advanced-Study-Manöver."
+              "id": "fetchs-wrath",
+              "name": "Fetch's Wrath",
+              "tag": "Grad 4 Strike",
+              "detail": "Angriff vor/nach Teleport bis 170 ft; +4d6 Schaden."
             }
           ]
         },
@@ -129,40 +129,52 @@
           "type": "list",
           "items": [
             {
-              "name": "Rapid Strike",
-              "detail": "Readied · Strike"
+              "name": "Temporal Body Adjustment",
+              "detail": "Readied · Grad 4 Counter"
+            },
+            {
+              "name": "Reflected Blade Style",
+              "detail": "Readied · Grad 3 Boost"
             },
             {
               "name": "Minute Hand",
               "detail": "Readied · Boost"
             },
             {
-              "name": "Obsidian Sidestep",
-              "detail": "Readied · Counter"
+              "name": "Circle of Razor Feathers",
+              "detail": "Readied · Grad 4 Strike"
             },
             {
-              "name": "Reflective Blade Style",
-              "detail": "Readied · Grad 3"
+              "name": "Fetch's Wrath",
+              "detail": "Readied · Grad 4 Strike"
+            },
+            {
+              "name": "Rapid Strike",
+              "detail": "Bekannt"
+            },
+            {
+              "name": "Obsidian Sidestep",
+              "detail": "Bekannt"
             },
             {
               "name": "Chains of Doubt",
-              "detail": "Readied · Grad 3"
+              "detail": "Bekannt"
             },
             {
               "name": "Strength of Hell",
-              "detail": "Boost · nicht standardmäßig vorbereitet"
+              "detail": "Bekannt"
             },
             {
               "name": "Ravaging Blow",
-              "detail": "Strike · nicht standardmäßig vorbereitet"
+              "detail": "Bekannt"
             },
             {
               "name": "Lifeburst Strike",
-              "detail": "Radiant Dawn · ersetzt Staunching Strike"
+              "detail": "Bekannt"
             },
             {
               "name": "Flash of Insight",
-              "detail": "Boost · nicht standardmäßig vorbereitet"
+              "detail": "Bekannt"
             }
           ]
         },
@@ -207,6 +219,14 @@
               "detail": "Power known"
             },
             {
+              "name": "Force Screen",
+              "detail": "Neu · +4 Shield AC für 2 Minuten"
+            },
+            {
+              "name": "Call to Mind",
+              "detail": "Neu · Knowledge-Wiederholung mit +4"
+            },
+            {
               "name": "Detect Psionics",
               "detail": "Talent"
             },
@@ -216,7 +236,7 @@
             },
             {
               "name": "Conceal Thoughts",
-              "detail": "Talent · außerhalb Kampf routinemäßig aktiv"
+              "detail": "Talent"
             }
           ]
         },
@@ -239,7 +259,7 @@
             },
             {
               "name": "Echoes of Steel",
-              "detail": "Manöver bis Grad 2 an ein Collective-Mitglied übertragen; nur ein Echo gleichzeitig."
+              "detail": "Manöver bis Grad 3 an ein Collective-Mitglied übertragen; nur ein Echo gleichzeitig."
             },
             {
               "name": "Zeal +1",
@@ -261,8 +281,12 @@
           "type": "list",
           "items": [
             {
+              "name": "Stance of the Inner Eye",
+              "detail": "Standard · +2 Insight auf AC/Angriff/Schaden/CMB/Saves und +1d6 Präzision; entfällt ohne DEX-Bonus auf AC."
+            },
+            {
               "name": "The Caged Sun",
-              "detail": "Standard · 2 Essence · +2 Angriff/AC/Saves/CMB/CMD; empfangene Heilung: (Heilung +4) ×1,5."
+              "detail": "Notfallheilhaltung; bei 24 HP oder weniger freier Eintritt gemäß Fähigkeit. Mit 2 Essence starke Heilverstärkung."
             },
             {
               "name": "Black Seraph's Glare",
@@ -276,20 +300,20 @@
           "type": "list",
           "items": [
             {
-              "name": "Power Attack",
-              "detail": "+10, 2d6+13 mit +1 Großschwert und The Caged Sun."
-            },
-            {
-              "name": "Rapid Strike + PA",
-              "detail": "Zwei Angriffe jeweils +10, 2d6+13 vor temporären Modifikatoren."
+              "name": "Inner Eye + Power Attack",
+              "detail": "+12/+7, 2d6+16 +1d6 Präzision."
             },
             {
               "name": "Minute Hand + PA",
-              "detail": "Zusatzangriff +8, 2d6+13."
+              "detail": "+10, 2d6+16 +1d6 Präzision."
             },
             {
-              "name": "Sun's Gleam",
-              "detail": "+11 ranged touch, 1d6+3 Force, 40 ft innerhalb eines passenden Radiant-Dawn-Strikes."
+              "name": "Fetch's Wrath + PA",
+              "detail": "+12, 2d6+16 +4d6 +1d6 Präzision; Teleport bis 170 ft."
+            },
+            {
+              "name": "Circle of Razor Feathers",
+              "detail": "8d6 profan, Reflex DC 17 partial, 30-ft-Burst."
             }
           ]
         }
@@ -345,11 +369,11 @@
           "items": [
             {
               "name": "Bluff",
-              "tag": "+7"
+              "tag": "+9"
             },
             {
               "name": "Disable Device",
-              "tag": "+14"
+              "tag": "+15"
             },
             {
               "name": "Diplomacy",
@@ -362,11 +386,11 @@
             },
             {
               "name": "Knowledge (All)",
-              "tag": "+14"
+              "tag": "+15"
             },
             {
               "name": "Perception",
-              "tag": "+10"
+              "tag": "+11"
             },
             {
               "name": "Sense Motive",
@@ -374,11 +398,11 @@
             },
             {
               "name": "Spellcraft",
-              "tag": "+11"
+              "tag": "+12"
             },
             {
               "name": "Stealth",
-              "tag": "+14"
+              "tag": "+15"
             },
             {
               "name": "Survival",
@@ -405,7 +429,8 @@
                 "Remove Sickness",
                 "Cure Light Wounds",
                 "Unnatural Lust",
-                "Identify"
+                "Identify",
+                "Endure Elements"
               ]
             },
             {
@@ -419,7 +444,8 @@
                 "Silence",
                 "Lesser Restoration",
                 "Cure Moderate Wounds",
-                "Tongues"
+                "Tongues",
+                "Undetectable Alignment"
               ]
             },
             {
@@ -432,7 +458,8 @@
               "items": [
                 "Delay Poison, Communal",
                 "Cure Serious Wounds",
-                "Locate Object"
+                "Locate Object",
+                "Dispel Magic"
               ]
             }
           ]
@@ -447,7 +474,7 @@
               "name": "Dancing Darkness"
             },
             {
-              "name": "Silent Image"
+              "name": "Darkvision"
             },
             {
               "name": "Euphoric Cloud"
@@ -467,23 +494,23 @@
           "items": [
             {
               "name": "Witness to Glory",
-              "detail": "Standard readied · 1 Essence standard · +6 Initiative und 10 Temp HP auf Styke."
+              "detail": "Standard readied · 2 Essence · +7 Initiative und 12 Temp HP auf Styke."
+            },
+            {
+              "name": "Disrupt Essence",
+              "detail": "Standard readied · 2 Essence · unterdrückt zwei bekannte Fähigkeiten für 7 Runden; mit Sun's Gleam Will DC 23."
             },
             {
               "name": "Decree of Torment",
               "detail": "Standard readied."
             },
             {
-              "name": "Bolster",
-              "detail": "Bekannt · situative Schutzoption."
-            },
-            {
-              "name": "Staunching Strike",
-              "detail": "Bekannt · Heiloption."
+              "name": "Armaments of the Empire",
+              "detail": "Standardstance · Styke Vicious, Valeria Conductive."
             },
             {
               "name": "Spoils of War",
-              "detail": "Standardstance · 1 Essence · bei IL 8 aktuell 10 HP Heilung pro gültigem Trigger; 1× pro Runde je Verbündetem."
+              "detail": "Heilwechselhaltung · bis 12 HP je gültigem Trigger bei 2 Essence."
             }
           ]
         },
@@ -557,7 +584,7 @@
           "items": [
             {
               "name": "HP",
-              "detail": "16/16 Basiswert auf Stufe 6."
+              "detail": "19/19 Basiswert auf Stufe 7."
             },
             {
               "name": "Initiative",
@@ -580,23 +607,19 @@
             },
             {
               "name": "Sun's Gleam",
-              "detail": "+6 ranged touch · 45 ft · 1d6+5 Force."
+              "detail": "+7 ranged touch · 45 ft · 1d6+5 Force."
             },
             {
               "name": "Spell-DCs",
-              "detail": "Grad 1 DC 16 · Grad 2 DC 17 · Grad 3 DC 18 · CL 6 · Konzentration +11."
+              "detail": "Grad 1 DC 16 · Grad 2 DC 17 · Grad 3 DC 18 · CL 7 · Konzentration +12."
             },
             {
               "name": "Witness to Glory",
-              "detail": "Mit 1 Essence: +6 Initiative und 10 Temp HP."
+              "detail": "Mit 2 Essence: +7 Initiative und 12 Temp HP."
             },
             {
-              "name": "Spoils of War",
-              "detail": "Mit 1 Essence: 10 HP Heilung beim ersten qualifizierenden Treffer je Verbündetem pro Runde, 45 ft."
-            },
-            {
-              "name": "Stinking Cloud",
-              "detail": "160 ft · 20-ft-Radius · 6 Runden · Fort DC 18."
+              "name": "Essence",
+              "detail": "Pool 4 · Kapazität 2 · Standard 2 Witness / 2 Disrupt."
             },
             {
               "name": "Glyph Engine",
@@ -658,21 +681,21 @@
           "items": [
             {
               "name": "Intimidate",
-              "tag": "+14",
-              "detail": "+18 gegen lebende Kreaturen innerhalb 10 ft durch Aura of Obedience."
+              "tag": "+15",
+              "detail": "Demoralize +18; gegen lebende Kreaturen innerhalb 10 ft +22."
             },
             {
               "name": "Diplomacy",
-              "tag": "+14"
+              "tag": "+15"
             },
             {
               "name": "Sense Motive",
-              "tag": "+9"
+              "tag": "+10"
             },
             {
               "name": "Stealth",
-              "tag": "+5",
-              "detail": "+5 in Rüstung / +10 ohne Rüstung."
+              "tag": "+6",
+              "detail": "+6 in Rüstung / +11 ohne Rüstung."
             }
           ]
         },
@@ -680,8 +703,8 @@
           "id": "prepared-spells",
           "label": "Vorbereitete Spells",
           "type": "note",
-          "title": "3 Grad-1-Slots / Tag",
-          "text": "Die exakte tägliche Vorbereitung ist aktuell noch nicht kanonisch festgelegt. Litany of Sloth ist als starke aktuelle Option vermerkt, aber nicht automatisch vorbereitet."
+          "title": "3 Grad-1-Slots + 1 Grad-2-Slot / Tag",
+          "text": "Grad 2 Default: Darkvision; bei erwartetem harten Nahkampf Blade Tutor's Spirit. Aktuelle Vorbereitung vor der ersten Stufe-7-Ruhe ist noch nicht gefüllt."
         },
         {
           "id": "daily-resources",
@@ -694,7 +717,7 @@
                 "character": "valeria",
                 "key": "smite"
               },
-              "detail": "Gegen Good: +5 Angriff, +6 Schaden je Treffer, +5 Deflection AC gegen das Ziel."
+              "detail": "3/Tag · gegen Good +5 Angriff, +7 Schaden je Treffer, +5 Deflection AC."
             },
             {
               "label": "Touch of Corruption",
@@ -710,7 +733,7 @@
                 "character": "valeria",
                 "key": "challenge"
               },
-              "detail": "Swift · +4 Melee Damage; -2 AC gegen andere Gegner; Order of Vengeance situativ +2 Angriff."
+              "detail": "1/Tag · +5 Melee Damage; -2 AC gegen andere Gegner; Order situativ +2 Angriff."
             },
             {
               "label": "Fiendish Boon",
@@ -718,7 +741,7 @@
                 "character": "valeria",
                 "key": "boon"
               },
-              "detail": "1/Tag · Standard Action · 6 Minuten · +1 effektives Waffenbonus-Budget."
+              "detail": "1/Tag · Standard Action · 7 Minuten · +1 Waffenbonus-Budget."
             }
           ]
         },
@@ -729,7 +752,7 @@
           "items": [
             {
               "name": "Intimidate",
-              "detail": "+4 Morale gegen lebende Kreaturen innerhalb 10 ft; aktuell +18 insgesamt."
+              "detail": "+4 Morale gegen lebende Kreaturen innerhalb 10 ft; Demoralize insgesamt +22 mit Air Grievances."
             },
             {
               "name": "Command Rider",
@@ -802,27 +825,27 @@
           "items": [
             {
               "name": "Defensive Werte",
-              "detail": "AC 21 · Touch 11 · Flat-footed 20 · Initiative +5 · CMB +10 · CMD 21."
+              "detail": "AC 21 · Touch 11 · Flat-footed 20 · Initiative +5 · CMB +11 · CMD 22."
             },
             {
               "name": "Power Attack",
-              "detail": "+9/+4 · 2d6+13."
+              "detail": "+10/+5 · 2d6+13."
             },
             {
               "name": "Power Attack + Smite Good",
-              "detail": "+14/+9 · 2d6+19; erster qualifizierender Treffer 2d6+25. AC 28 gegen das Smite-Ziel."
+              "detail": "+15/+10 · 2d6+20; erster Spezialtreffer 2d6+27."
             },
             {
               "name": "Power Attack + Challenge",
-              "detail": "+9/+4 · 2d6+17; mit Order-Bonus +11/+6 · 2d6+17."
+              "detail": "+10/+5 · 2d6+18; mit Order-Bonus +12/+7."
             },
             {
               "name": "Smite + Challenge",
-              "detail": "Wenn beide aktiv sind und der Order-Bonus greift: +16/+11 · 2d6+23; erster qualifizierender Treffer 2d6+29."
+              "detail": "Mit Order-Bonus +17/+12 · 2d6+25."
             },
             {
-              "name": "Cornugon Smash → Hurtful",
-              "detail": "Power-Attack-Treffer → Demoralize; bei Erfolg kann Hurtful den Swift für einen Zusatzangriff nutzen."
+              "name": "Demoralize",
+              "detail": "+18 mit Air Grievances; +22 gegen lebende Ziele in Aura."
             },
             {
               "name": "Touch of Corruption",
@@ -850,51 +873,51 @@
   "resourceDefaults": {
     "styke": {
       "hp": {
-        "current": 42,
-        "max": 42
+        "current": 48,
+        "max": 48
       },
       "pp": {
-        "current": 11,
-        "max": 11
+        "current": 7,
+        "max": 16
       },
       "focus": true,
       "deepFocus": false
     },
     "vesper": {
       "hp": {
-        "current": 33,
-        "max": 33
+        "current": 38,
+        "max": 38
       },
       "slots": {
         "1": {
-          "current": 8,
+          "current": 7,
           "max": 8
         },
         "2": {
-          "current": 6,
-          "max": 6
+          "current": 3,
+          "max": 7
         },
         "3": {
           "current": 4,
-          "max": 4
+          "max": 5
         }
       }
     },
     "valeria": {
       "hp": {
-        "current": 40,
-        "max": 40
+        "current": 46,
+        "max": 46
       },
       "smite": {
         "current": 2,
-        "max": 2
+        "max": 3
       },
       "corruption": {
-        "current": 8,
+        "current": 6,
         "max": 8
       },
       "challenge": {
-        "current": 1,
+        "current": 0,
         "max": 1
       },
       "boon": {

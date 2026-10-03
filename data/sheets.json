@@ -4,38 +4,38 @@
     "authority": "GENERATED VIEW. DO NOT USE AS CAMPAIGN AUTHORITY.",
     "generated": true,
     "playerSafe": true,
-    "generatedAt": "2026-09-29T12:45:00Z",
-    "sourceRevision": "b11b86832549233fa692b65e5e6efe87a62570167419e17fd20090b95ae63da6",
-    "reviewedAt": "2026-09-29"
+    "generatedAt": "2026-10-03T08:42:33+00:00",
+    "reviewedAt": "2026-10-03",
+    "sourceRevision": "94fb723c7e947e19d13ac1d6479225b466e413ecb021e7ac56b64fc13b0daa7e"
   },
   "characters": [
     {
       "id": "styke",
       "name": "Styke",
-      "class": "Zelot 4 / Psion 1 / Awakened Blade 1",
-      "level": 6,
+      "class": "Zealot 4 / Psion 1 / Awakened Blade 2",
+      "level": 7,
       "ancestry": "Aasimar · Angel-Blooded",
-      "source": "mechanics/combat/core-party-level-6.md",
-      "profile": "Mithralkettenhemd + The Caged Sun (2 Essence)",
-      "hpMax": 42,
+      "source": "mechanics/combat/styke-level-7.md",
+      "profile": "Mithralkettenhemd + Stance of the Inner Eye",
+      "hpMax": 48,
       "stats": {
         "ac": "22",
         "touch": "17",
-        "flatFooted": "17",
+        "flatFooted": "15",
         "initiative": "+8",
         "speed": "30 ft",
-        "bab": "+5",
-        "cmb": "+9",
-        "cmd": "24",
-        "fort": "+7",
-        "ref": "+9",
+        "bab": "+6/+1",
+        "cmb": "+10",
+        "cmd": "23",
+        "fort": "+8",
+        "ref": "+10",
         "will": "+10"
       },
       "attack": {
         "name": "+1 Großschwert",
-        "hit": "+11",
-        "damage": "2d6+14",
-        "note": "Power Attack · The Caged Sun 2 Essence"
+        "hit": "+12/+7",
+        "damage": "2d6+16 +1d6 Präzision",
+        "note": "Power Attack · Stance of the Inner Eye"
       },
       "attributes": [
         {
@@ -44,7 +44,7 @@
         },
         {
           "name": "DEX",
-          "value": "21"
+          "value": "21 getragen"
         },
         {
           "name": "CON",
@@ -70,11 +70,11 @@
           "sections": [
             {
               "title": "Kampfwerte",
-              "markdown": "**HP 42/42 · AC 22 · Touch 17 · Flat-Footed 17 · Initiative +8**\n\n+1-Großschwert: +13, 2d6+8. Power Attack: +11, 2d6+14. Rapid Strike: zwei Angriffe +11. Minute Hand mit PA: +9."
+              "markdown": "**HP 48/48 · AC 22 · Touch 17 · Flat-Footed 15 · Initiative +8.**\n\nInner Eye: normal +14/+9, 2d6+10 +1d6 Präzision; Power Attack +12/+7, 2d6+16 +1d6 Präzision. Elektrizitätsresistenz 5."
             },
             {
               "title": "Standardmotor",
-              "markdown": "- The Caged Sun: 2 Essence.\n- Compartmentalized Aid: Move Action, +4 Angriff gegen das gewählte Ziel, bis zu 3 geeignete Manöver zurück.\n- Living Bastion: +5 ft Reach bei Fokus.\n- Zorn kann Aid Defense gegen den aktuellen Gegner versuchen."
+              "markdown": "Compartmentalized Aid: Move Action, +4 Angriff gegen das gewählte Ziel, bis zu 3 geeignete Manöver zurück. Living Bastion: +5 ft Reach bei Fokus. The Caged Sun ist jetzt die Notfall-Heilhaltung."
             }
           ]
         },
@@ -83,8 +83,8 @@
           "label": "Maneuvers",
           "sections": [
             {
-              "title": "IL 6",
-              "markdown": "**Bekannt 9 · vorbereitet 5 · Haltungen 2**\n\nStandard: Rapid Strike, Minute Hand, Obsidian Sidestep, Reflective Blade Style, Chains of Doubt.\n\nNeu: Lifeburst Strike ersetzt Staunching Strike. Stances: The Caged Sun und Black Seraph's Glare."
+              "title": "IL 7",
+              "markdown": "**Bekannt 12 · vorbereitet 5.** Standard: Temporal Body Adjustment, Reflected Blade Style, Minute Hand, Circle of Razor Feathers, Fetch's Wrath. Inner Eye ist die Standardhaltung."
             }
           ]
         },
@@ -94,7 +94,7 @@
           "sections": [
             {
               "title": "Psion und Awakened Blade",
-              "markdown": "**PP 11/Tag · aktuell 11/11.** Powers: Minor Metamorphosis, Defensive Precognition, Offensive Precognition. Talente: Detect Psionics, Empathy, Conceal Thoughts.\n\nDeep Focus gibt einen zweiten, separat zu führenden Fokus. Situational Awareness liefert +1 Initiative."
+              "markdown": "**PP 16/Tag · aktuell 7/16 vor Ruhe.** Powers: Minor Metamorphosis, Defensive Precognition, Offensive Precognition, Force Screen, Call to Mind. Talente: Detect Psionics, Empathy, Conceal Thoughts."
             }
           ]
         },
@@ -104,7 +104,7 @@
           "sections": [
             {
               "title": "Fertigkeiten",
-              "markdown": "Acrobatics +13 · Autohypnosis +7 · Craft (Weapons) +9 · Diplomacy +7 · Intimidate +11 · Knowledge (All) +11 · Perception +8 · Stealth +12 · Spellcraft +6 · Bluff +7"
+              "markdown": "Acrobatics +13 · Autohypnosis +7 · Craft (Weapons) +9 · Diplomacy +7 · Intimidate +11 · Knowledge (All) +12 · Perception +10 · Stealth +15 · Spellcraft +6 · Bluff +7"
             }
           ]
         },
@@ -114,7 +114,7 @@
           "sections": [
             {
               "title": "Ausrüstung",
-              "markdown": "+1-Großschwert · +1 maßgefertigtes Mithralkettenhemd · Cloak of Resistance +1 · eiserner Stirnreif · Belt of Incredible Dexterity +2 · Zorn · Thorns Tonsiegel · Aiden Kaels Karte."
+              "markdown": "+1-Großschwert · +1 maßgefertigtes Mithralkettenhemd · Cloak of Resistance +1 · eiserner Stirnreif · Belt of Incredible Dexterity +2 · Zorn · Vexorandian · Auge des Hasses · unbekannter schwarzer Stab."
             }
           ]
         }
@@ -123,28 +123,28 @@
     {
       "id": "vesper",
       "name": "Vesper",
-      "class": "Oracle (Spirit Guide) 6",
-      "level": 6,
+      "class": "Oracle (Spirit Guide) 7",
+      "level": 7,
       "ancestry": "Tiefling · Asura-Spawn",
-      "source": "mechanics/combat/core-party-level-6.md",
+      "source": "mechanics/combat/vesper-level-7.md",
       "profile": "Mithralkettenhemd + Mithralschild + CHA-Stirnreif",
-      "hpMax": 33,
+      "hpMax": 38,
       "stats": {
         "ac": "23",
         "touch": "15",
         "flatFooted": "18",
         "initiative": "+12 mit Verse",
         "speed": "30 ft",
-        "bab": "+4",
-        "cmb": "+4",
-        "cmd": "16",
+        "bab": "+5",
+        "cmb": "+5",
+        "cmd": "17",
         "fort": "+3",
         "ref": "+9",
         "will": "+10"
       },
       "attack": {
         "name": "Sun's Gleam",
-        "hit": "+6",
+        "hit": "+7",
         "damage": "1d6+5 Force",
         "note": "Ranged Touch · 45 ft"
       },
@@ -163,7 +163,7 @@
         },
         {
           "name": "INT",
-          "value": "14"
+          "value": "15"
         },
         {
           "name": "WIS",
@@ -181,7 +181,7 @@
           "sections": [
             {
               "title": "Kampfwerte",
-              "markdown": "**HP 33/33 · AC 23 · Touch 15 · Flat-Footed 18 · Initiative +12 mit Verse / +8 ohne · Zauber-SG 15/16/17/18 · Konzentration +11.**"
+              "markdown": "**HP 38/38 · AC 23 · Touch 15 · Flat-Footed 18 · Initiative +12 mit Verse / +8 ohne · Zauber-SG 15/16/17/18 · Konzentration +12.**"
             }
           ]
         },
@@ -191,11 +191,11 @@
           "sections": [
             {
               "title": "Aktuelle Plätze",
-              "markdown": "Grad 1: **8/8** · Grad 2: **6/6** · Grad 3: **4/4**. Der CHA-Stirnreif ist voll wirksam."
+              "markdown": "Grad 1: **7/8** · Grad 2: **3/7** · Grad 3: **4/5**. Keine Ruheauffüllung."
             },
             {
-              "title": "Auswahl",
-              "markdown": "Neu: Detect Poison, Silence, Delay Poison, Communal. Zusätzlich Cure Serious Wounds und Locate Object. Arcane Enlightenment: Dancing Darkness, Silent Image, Euphoric Cloud, Ashen Path, Stinking Cloud."
+              "title": "Neue Auswahl",
+              "markdown": "Regulär neu: Endure Elements, Undetectable Alignment, Dispel Magic. Aktuelle Arcane-Enlightenment-Auswahl enthält Darkvision statt Silent Image sowie Euphoric Cloud, Ashen Path und Stinking Cloud."
             }
           ]
         },
@@ -205,7 +205,7 @@
           "sections": [
             {
               "title": "Radiant Dawn",
-              "markdown": "IL 8 · Essence 2 · Kapazität 2 · 45 ft. Standard: 1 Essence Spoils of War, 1 Essence Witness to Glory. Witness liefert +6 Initiative und 10 temporäre HP."
+              "markdown": "IL 8 · Essence 4 · Kapazität 2. Standard: 2 Witness to Glory, 2 Disrupt Essence; Armaments of the Empire als Haltung. Witness liefert +7 Initiative und 12 temporäre HP."
             }
           ]
         },
@@ -214,8 +214,8 @@
           "label": "Glyphs",
           "sections": [
             {
-              "title": "Virtual Animus Adept 2",
-              "markdown": "Startanimus 6 · Glyphen 45 ft · 6 Runden · SG 19. Neu: Elemental Weapon, Evasive Armor und Blinding Blade."
+              "title": "Virtual Animus Adept",
+              "markdown": "Glyphen 45 ft · 6 Runden · SG 19. Elemental Weapon, Evasive Armor, Blinding Blade und die etablierten Schutzglyphen bleiben verfügbar."
             }
           ]
         },
@@ -225,11 +225,11 @@
           "sections": [
             {
               "title": "Fertigkeiten",
-              "markdown": "Bluff +7 · Disable Device +14 · Diplomacy +14 · Heal +8 · Knowledge (All) +14 · Perception +10 · Sense Motive +9 · Spellcraft +11 · Stealth +14."
+              "markdown": "Bluff +9 · Disable Device +15/+17 mit Werkzeug · Diplomacy +14 · Heal +8 · Knowledge (All) +15 · Perception +11 · Sense Motive +9 · Spellcraft +12 · Stealth +15."
             },
             {
               "title": "Ausrüstung",
-              "markdown": "+1-Mithralkettenhemd · +1 Mithral Heavy Shield · Cloak of Resistance +1 · Headband of Alluring Charisma +2 · eigenes Iron Circlet · Meisterarbeits-Diebeswerkzeug · Lesser Metamagic Rod of Extend · Verse · Aiden Kaels Karte."
+              "markdown": "+1-Mithralkettenhemd · +1 Mithral Heavy Shield · Cloak +1 · CHA-Stirnreif +2 · Extend Rod · Verse · Hexoraticus · Ring of Mind Shielding · unbekannte Glaslinse."
             }
           ]
         }
@@ -238,28 +238,28 @@
     {
       "id": "valeria",
       "name": "Valeria",
-      "class": "Antipaladin 6 · Tyrant / Lord of Darkness",
-      "level": 6,
+      "class": "Antipaladin 7 · Tyrant / Lord of Darkness",
+      "level": 7,
       "ancestry": "Mensch · Karfeld",
-      "source": "mechanics/combat/valeria-level-6.md",
+      "source": "mechanics/combat/valeria-level-7.md",
       "profile": "+1 Dastard Full Plate · +1-Großschwert · STR-Gürtel",
-      "hpMax": 40,
+      "hpMax": 46,
       "stats": {
         "ac": "21",
         "touch": "11",
         "flatFooted": "20",
         "initiative": "+5",
         "speed": "20 ft",
-        "bab": "+6/+1",
-        "cmb": "+10",
-        "cmd": "21",
+        "bab": "+7/+2",
+        "cmb": "+11",
+        "cmd": "22",
         "fort": "+11",
         "ref": "+9",
         "will": "+11"
       },
       "attack": {
         "name": "+1-Großschwert",
-        "hit": "+9/+4",
+        "hit": "+10/+5",
         "damage": "2d6+13",
         "note": "Power Attack"
       },
@@ -296,11 +296,11 @@
           "sections": [
             {
               "title": "Kampfwerte",
-              "markdown": "**HP 40/40 · AC 21 · Initiative +5 · BAB +6/+1.** Normal +11/+6, 2d6+7; Power Attack +9/+4, 2d6+13."
+              "markdown": "**HP 46/46 · AC 21 · Initiative +5 · BAB +7/+2.** Normal +12/+7, 2d6+7; Power Attack +10/+5, 2d6+13."
             },
             {
               "title": "Kampfmotor",
-              "markdown": "Power Attack → Cornugon Smash → Demoralisieren → Hurtful, solange die Swift Action frei ist. Intimidate +18 gegen lebende Gegner innerhalb 10 ft."
+              "markdown": "Power Attack → Cornugon Smash → Demoralisieren → Hurtful. Air Grievances erhöht Demoralisieren auf +18; gegen lebende Ziele innerhalb 10 ft mit Aura auf +22."
             }
           ]
         },
@@ -310,11 +310,11 @@
           "sections": [
             {
               "title": "Ressourcen",
-              "markdown": "Smite Good 2/Tag · Touch of Corruption 8/Tag (3d6) · Cruelties Fatigued/Staggered · Channel Negative Energy · Aura of Obedience · Fiendish Boon 1/Tag · VMC Challenge 1/Tag."
+              "markdown": "Smite Good 3/Tag, aktuell 2/3 · Touch of Corruption 8/Tag, aktuell 6/8 · Challenge 0/1 · Fiendish Boon 1/1 · Channel Negative Energy 4d6."
             },
             {
               "title": "Zauber",
-              "markdown": "Drei Zauberplätze Grad 1 pro Tag. Aktuell ist noch keine Vorbereitung etabliert."
+              "markdown": "Drei Plätze Grad 1 und ein Platz Grad 2 pro Tag. Nächster Tagesdefault Grad 2: Darkvision; bei erwartetem harten Nahkampf stattdessen Blade Tutor's Spirit."
             }
           ]
         },
@@ -324,7 +324,7 @@
           "sections": [
             {
               "title": "Fertigkeiten",
-              "markdown": "Intimidate +14 (+18 mit Aura) · Diplomacy +14 · Sense Motive +9 · Stealth +5 in Platte / +10 ohne Platte."
+              "markdown": "Intimidate +15 (+18 Demoralize, +22 gegen lebende Ziele in Aura) · Diplomacy +15 · Sense Motive +10 · Stealth +6 in Platte / +11 ohne Platte."
             }
           ]
         },
@@ -334,7 +334,7 @@
           "sections": [
             {
               "title": "Ausrüstung",
-              "markdown": "+1 Dastard Full Plate · +1-Großschwert · Belt of Giant Strength +2 · Cloak of Resistance +1 · Mirelles Rüstungsunterkleidung."
+              "markdown": "+1 Dastard Full Plate · +1-Großschwert · Belt of Giant Strength +2 · Cloak of Resistance +1 · Mirelles Rüstungsunterkleidung · Ersatz-STR-Gürtel nicht ausgerüstet."
             }
           ]
         }

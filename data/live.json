@@ -4,39 +4,44 @@
     "authority": "GENERATED VIEW. DO NOT USE AS CAMPAIGN AUTHORITY.",
     "generated": true,
     "playerSafe": true,
-    "generatedAt": "2026-09-29T12:45:00Z",
-    "sourceRevision": "045fd6fbd6155bc18713cb9af30f4c135570cf1e4c6acfa48333d4e853b6bdfe",
-    "reviewedAt": "2026-09-29",
-    "sheetRevision": "b11b86832549233fa692b65e5e6efe87a62570167419e17fd20090b95ae63da6"
+    "generatedAt": "2026-10-03T08:42:33+00:00",
+    "reviewedAt": "2026-10-03",
+    "sourceRevision": "4171c54f8eeb92532feff1c5de788c067d7513134f96ea82670be7df4f73a5c1",
+    "sheetRevision": "94fb723c7e947e19d13ac1d6479225b466e413ecb021e7ac56b64fc13b0daa7e"
   },
   "scene": {
     "date": "4712-02-24",
     "dateLabel": "24. Februar 4712 AR",
-    "time": "Später Vormittag",
-    "location": "Horn von Abaddon · untere Höhlen",
-    "locationId": "horn-abaddon",
-    "detail": "Styke und Vesper verborgen auf zwei Flanken; Valeria wartet noch hinter der Mitte",
-    "summary": "Das Kerntrio hat das Horn erreicht, Jurak besiegt und in den unteren Höhlen einen vorbereiteten Hinterhalt erkannt. Noch ist keine Initiative eröffnet.",
-    "rest": "Nach Juraks Tod gab es eine kurze Pause mit Essen, Wasser und Erholung. Das Trio steht bei vollen HP; gewöhnliche Manöver wurden zurückgewonnen."
+    "time": "Nacht · vor abgeschlossener Ruhe",
+    "location": "Horn von Abaddon · Death's Head Tavern",
+    "locationId": "deaths-head-tavern",
+    "detail": "Styke schläft gerade neben Vesper und Valeria; Verse und Zorn sind beim Kerntrio, Ausrüstung und Rüstungen liegen am Lager.",
+    "summary": "Die Ebenen Zwei und Drei wurden erkundet, Ezra und drei Wraiths vorläufig geduldet, Hexoraticus und Vexorandian gebunden und das Sanctum erreicht. Das Siegel blieb unberührt; der erste Lagerabend im Horn endet.",
+    "rest": "Noch keine achtstündige Ruhe: verbrauchte PP, Zauberplätze, Challenge und Touch-Nutzungen bleiben ausgegeben. Der Stufenaufstieg auf 7 erhöht Maxima, füllt Tagesressourcen aber nicht automatisch."
   },
   "quests": [
     {
       "id": "horn",
-      "title": "Horn von Abaddon · erster Vorstoß",
+      "title": "Horn von Abaddon · erster Lagerabend",
       "status": "active",
       "updated": "4712-02-24",
-      "summary": "Kaels Karte führte zum richtigen Horn. Jurak ist gefallen; das Kerntrio steht in den unteren Höhlen vor fünf verborgenen amphibischen Kämpfern.",
+      "summary": "Das Kerntrio hat die erreichbaren Bereiche der Ebenen Zwei und Drei erkundet, das Sanctum erreicht, zwei Wächterdämonen gebunden und sein erstes Lager in der Death's Head Tavern eingerichtet.",
       "known": [
-        "Vespers Route über höheres, festeres Gelände ist länger, aber mit den Pferden wiederholbar.",
-        "Jurak erklärte ihren vom Victor erteilten Schutzauftrag und lehnte Stykes Angebot ab; sie starb im folgenden Kampf.",
-        "Zwei bewaffnete amphibische Wachen zogen sich vom Eingang zurück. In der nächsten großen Höhle warten fünf weitere Kämpfer im Hinterhalt."
+        "Die Pflanzenkammer auf Ebene Zwei bleibt verriegelt; dahinter leben zwei gefährliche grüne Schleime. Der kopflose Versteinerte, sein Beutel und die drei beschriebenen Ritualwege blieben unangetastet.",
+        "Ezra Thrice-Damned und drei Wraiths kooperieren vorläufig. Seine Angaben führten zum Tresor, zum verdeckten Treppenweg, zum Sanctum und zu einem bekannten Ablauf des 222-Tage-Rituals; begonnen wurde es nicht.",
+        "Styke trägt das Auge des Hasses. Die drei Augen, ihre bekannten Funktionen und die Gebetsfolge sind erklärt; kein Auge ist im Sanctum eingesetzt.",
+        "Hexoraticus und Vexorandian wurden mit ihren vollständigen Namen und Amuletten gebunden. Beide bewachen unter nichttödlichen Festsetzungsregeln die beiden unteren Zugänge.",
+        "Der Blitz-Elementar im Sanctum ist tot. Silbersiegel, Ketten und drei leere Augenfassungen blieben unberührt.",
+        "Zwölf Heiltränke, vier tragbare magische Funde, Artephius-Schematics und drei Portionen Steinsalbe wurden mitgenommen; der große Tresorbestand blieb ungezählt an Ort und Stelle."
       ],
-      "next": "Valeria als sichtbaren Mittelpunkt vortreten lassen, während Styke und Vesper verborgen auf den Flanken bleiben.",
+      "next": "Nach der Ruhe Ezra und die drei Wraiths klären; außerdem steht die Untersuchung des noch unzugänglichen Bereichs C13 weiter aus. Die Reihenfolge ist nicht festgelegt.",
       "links": [
         "horn-abaddon",
-        "kaels-karte",
-        "caer-bryr",
-        "jurak"
+        "deaths-head-tavern",
+        "ezra-thrice-damned",
+        "vexorandian",
+        "hexoraticus",
+        "eye-of-hatred"
       ]
     },
     {
@@ -62,11 +67,11 @@
       "title": "Siebter Knoten · White Ravens",
       "status": "active",
       "updated": "4712-02-23",
-      "summary": "Elise Zadaria und die White Ravens sind in Farholde eingetroffen und sammeln von der Grauen Möwe aus ein unabhängiges Lagebild.",
+      "summary": "Elise Zadaria und die White Ravens sammeln von der Grauen Möwe aus ein unabhängiges Lagebild. Sie kennen die neuen Hornfunde noch nicht.",
       "known": [
         "Kaitlyn ist der vereinbarte Kontakt zwischen den Knoten.",
         "Der Siebte Knoten soll zunächst beobachten und den Farholde-Rücken der Horn-Operation sichern.",
-        "Trak beobachtete Kaitlyn auffällig; Kaitlyn wertet das nur als Öffnung, nicht als Beweis für Absicht oder Verrat."
+        "Das Kerntrio hat seit dem Aufbruch keinen neuen Bericht aus Farholde erhalten."
       ],
       "next": "Nach Rückkehr des Kerntrios beide unabhängig gewonnenen Lagebilder vergleichen.",
       "links": [
@@ -84,13 +89,13 @@
       "title": "Magische Ausrüstung",
       "status": "active",
       "updated": "4712-02-24",
-      "summary": "Alle vier externen +1-Aufwertungen und Valerias Stärke-Gürtel sind fertig. Tacitus und Knittel arbeiten nun am Charisma-Stirnreif für Valeria.",
+      "summary": "Alle vier externen +1-Aufwertungen und Valerias Stärke-Gürtel sind fertig. Seit dem Aufbruch hat das Feldtrio keinen neuen Werkstattbericht erhalten.",
       "known": [
-        "Styke und Vesper tragen ihre +1-Mithralkettenhemden; Vesper zusätzlich den +1-Mithralschild.",
+        "Styke und Vesper besitzen ihre +1-Mithralkettenhemden; Vesper zusätzlich den +1-Mithralschild.",
         "Valeria führt ihr +1-Großschwert und trägt den Belt of Giant Strength +2.",
-        "Die bereits bezahlte Fertigungsreserve enthält nach dem Stärke-Gürtel noch Material im Wert von 9.500 gp."
+        "Tacitus und Knittel arbeiteten bei der Abreise am Charisma-Stirnreif für Valeria."
       ],
-      "next": "Valerias Headband of Alluring Charisma +2 abschließen; danach folgen drei Umhang- und drei Amulettprojekte.",
+      "next": "Werkstattstand nach Rückkehr oder durch einen echten Boten abgleichen.",
       "links": [
         "tacitus",
         "knittel",
@@ -103,13 +108,13 @@
       "title": "Das rote Buch",
       "status": "active",
       "updated": "4712-02-24",
-      "summary": "Der Band bleibt im Zustand Stirring; auch am 23. und 24. Februar ist keine neue sichtbare Umschreibung belegt.",
+      "summary": "Der Band bleibt im Zustand Stirring. Nach Stykes Einschlafen sind Seiten zu hören; Buchidentität, tatsächliche Lektüre und jede mögliche Veränderung bleiben unbelegt.",
       "known": [
         "Die bekannte Aura umfasst Divination, Illusion und eine tiefere unbekannte Komponente.",
         "Herkunft und vollständige Kräfte bleiben ungeklärt.",
-        "Neue Einträge werden erst nach einer tatsächlich sichtbaren Veränderung ergänzt."
+        "Ein Geräusch oder eine Vermutung gilt nicht als sichtbare neue Umschreibung."
       ],
-      "next": "Nur tatsächlich sichtbare neue Veränderungen ergänzen.",
+      "next": "Erst nach einer wahrgenommenen, überprüfbaren Veränderung ergänzen.",
       "links": [
         "rotes-buch",
         "zwischen-den-seiten",
@@ -122,50 +127,50 @@
     {
       "id": "treasury",
       "label": "Knotenkasse",
-      "value": "2.027 gp 5 sp",
-      "note": "Signifikante liquide Reserve; gewöhnliche Verpflegung und Unterkunft bleiben Betriebsrauschen."
+      "value": "2.080 gp 5 sp",
+      "note": "Gezählte liquide Reserve; der ungezählte Tresorbestand im Horn ist nicht eingerechnet."
     },
     {
       "id": "level",
       "label": "Kerntrio",
-      "value": "Stufe 6",
-      "note": "Styke Awakened Blade, Vesper Oracle 6, Valeria Antipaladin 6."
+      "value": "Stufe 7",
+      "note": "Styke Awakened Blade 2, Vesper Oracle 7, Valeria Antipaladin 7. Aktiv seit dieser Nacht."
+    },
+    {
+      "id": "guardians",
+      "label": "Gebundene Wächter",
+      "value": "Hexoraticus · Vexorandian",
+      "note": "Bewachen die beiden unteren Zugänge; Valeria besitzt delegierte Befehlsgewalt, aber kein Amulett."
+    },
+    {
+      "id": "potions",
+      "label": "Heiltränke",
+      "value": "12 · je vier",
+      "note": "Beschriftete Cure-Moderate-Wounds-Tränke, noch unbenutzt."
+    },
+    {
+      "id": "vault",
+      "label": "Großer Tresorbestand",
+      "value": "Nicht gezählt",
+      "note": "Münztruhen und schwere Einrichtung blieben im Tresor und gehören nicht zur liquiden Kasse."
     },
     {
       "id": "horses",
-      "label": "Pferde",
-      "value": "3 am Horn · 2 in Farholde",
-      "note": "Die drei Expeditionspferde sind außerhalb des unteren Höhleneingangs verborgen."
+      "label": "Expeditionspferde",
+      "value": "3 am Horn",
+      "note": "Außerhalb des unteren Zugangs verborgen; keine Rückkehr nach Farholde ausgespielt."
     },
     {
       "id": "hakon",
       "label": "Hakon und fünf Männer",
       "value": "1 gp/Tag je Mann",
-      "note": "Freie bezahlte Männer; Hakon führt seine fünf und hält die Folly-/Ladungssicherung."
+      "note": "Freie bezahlte Männer; sichern weiterhin Folly und Ladung."
     },
     {
-      "id": "gear",
-      "label": "Vier +1-Aufwertungen",
-      "value": "Abgeholt",
-      "note": "Beide Mithralhemden, Vespers Schild und Valerias Großschwert sind fertig."
-    },
-    {
-      "id": "belt",
-      "label": "Valerias STR-Gürtel",
-      "value": "Fertig · getragen",
-      "note": "Belt of Giant Strength +2; aktuelle Stärke 18."
-    },
-    {
-      "id": "crafting",
-      "label": "Tacitus’ Werkbank",
-      "value": "CHA-Stirnreif in Arbeit",
-      "note": "Der volle Arbeitstag des 24. Februar ist am aktuellen Rand noch nicht abgeschlossen."
-    },
-    {
-      "id": "tamsin",
-      "label": "Haushaltssicherheit",
-      "value": "Tamsin",
-      "note": "Sie schützt während der Bryr-Abwesenheit die verstreuten Unterkünfte und Leute."
+      "id": "camp",
+      "label": "Hornlager",
+      "value": "Death's Head Tavern",
+      "note": "Kein Feuer bis zur Reinigung des Abzugs; Rüstungen sind für die Ruhe abgelegt."
     }
   ],
   "people": [
@@ -183,78 +188,81 @@
     "trak",
     "trik",
     "dostan",
-    "jurak"
+    "jurak",
+    "ezra-thrice-damned",
+    "vexorandian",
+    "hexoraticus"
   ],
   "party": [
     {
       "id": "styke",
       "name": "Styke",
-      "class": "Zelot 4 / Psion 1 / Awakened Blade 1",
+      "class": "Zealot 4 / Psion 1 / Awakened Blade 2",
       "hp": {
-        "current": 42,
-        "max": 42
+        "current": 48,
+        "max": 48
       },
       "conditions": [],
-      "state": "Verborgen hinter einem Steinpunkt auf der gegenüberliegenden Flanke; wartet reglos auf Valerias Köderbewegung",
-      "resourceNote": "42/42 HP, 11/11 PP. Normaler psionischer Fokus verfügbar; Deep Focus nicht automatisch gefüllt.",
-      "gearNote": "+1-Großschwert, +1-Mithralkettenhemd, Belt of Incredible Dexterity +2, Cloak +1, Zorn, Kaels Karte und Thorns Tonsiegel.",
+      "state": "Schläft gerade ohne Rüstung im Lager; Waffen und Ausrüstung liegen griffbereit bei der Bettstatt.",
+      "resourceNote": "48/48 HP, 7/16 PP. Gewöhnlicher Fokus verfügbar; Deep Focus nicht automatisch geladen. Noch keine Nachtruhe-Regeneration.",
+      "gearNote": "+1-Großschwert, +1-Mithralkettenhemd, DEX-Gürtel, Cloak +1, Zorn, Vexorandian und Auge des Hasses; schwarzer Stab unbekannter Funktion getragen.",
       "pp": {
-        "current": 11,
-        "max": 11
+        "current": 7,
+        "max": 16
       },
       "focus": true
     },
     {
       "id": "vesper",
       "name": "Vesper",
-      "class": "Oracle (Spirit Guide) 6",
+      "class": "Oracle (Spirit Guide) 7",
       "hp": {
-        "current": 33,
-        "max": 33
+        "current": 38,
+        "max": 38
       },
       "conditions": [],
-      "state": "Verborgen auf der anderen Flanke, etwa 15 Fuß vom nächsten erkannten Kämpfer; Verse bei ihr",
-      "resourceNote": "33/33 HP. Plätze: Grad 1 8/8, Grad 2 6/6, Grad 3 4/4. Keine bestätigte Zauberplatzausgabe am 24. Februar.",
-      "gearNote": "+1-Mithralkettenhemd, +1-Mithralschild, CHA-Stirnreif +2, Cloak +1, Lesser Extend Rod, Meisterarbeits-Diebeswerkzeug, Jurak-Proben und Verse.",
+      "state": "Im Lager bei Styke und Valeria; Rüstung abgelegt. Seiten sind zu hören, doch Gegenstand und Ergebnis sind noch nicht festgestellt.",
+      "resourceNote": "38/38 HP. Plätze vor Ruhe: Grad 1 7/8, Grad 2 3/7, Grad 3 4/5. Essence 4; keine automatische Nachtauffüllung.",
+      "gearNote": "+1-Mithralkettenhemd und -schild, CHA-Stirnreif +2, Cloak +1, Extend Rod 2/3, Hexoraticus, Ring of Mind Shielding und unbekannte Glaslinse; Verse anwesend.",
       "verse": {
         "present": true,
-        "hpCurrent": 16,
-        "hpMax": 16
+        "hpCurrent": 19,
+        "hpMax": 19
       },
       "slots": [
         {
           "level": 1,
-          "current": 8,
+          "current": 7,
           "max": 8
         },
         {
           "level": 2,
-          "current": 6,
-          "max": 6
+          "current": 3,
+          "max": 7
         },
         {
           "level": 3,
           "current": 4,
-          "max": 4
+          "max": 5
         }
       ],
       "essence": {
-        "total": 2,
-        "standard": "1 Spoils of War · 1 Witness to Glory"
+        "total": 4,
+        "standard": "2 Witness to Glory · 2 Disrupt Essence"
       }
     },
     {
       "id": "valeria",
       "name": "Valeria",
-      "class": "Antipaladin 6 · Tyrant / Lord of Darkness",
+      "class": "Antipaladin 7 · Tyrant / Lord of Darkness",
       "hp": {
-        "current": 40,
-        "max": 40
+        "current": 46,
+        "max": 46
       },
       "conditions": [],
-      "state": "Hinter der Mitte; noch nicht als Köder hervorgetreten und noch nicht entdeckt",
-      "resourceNote": "40/40 HP. Keine aktive Verletzung oder formale Bedingung.",
-      "gearNote": "+1 Dastard Full Plate, +1-Großschwert, Belt of Giant Strength +2 und Cloak of Resistance +1."
+      "state": "Schläft im gemeinsamen Lager; Rüstung abgelegt. Die scheuernde Achselschnalle soll später geprüft werden.",
+      "resourceNote": "46/46 HP. Smite 2/3, Challenge 0/1, Touch of Corruption 6/8, Fiendish Boon 1/1; noch keine Tageserholung.",
+      "gearNote": "+1 Dastard Full Plate, +1-Großschwert, STR-Gürtel +2, Cloak +1; Ersatz-STR-Gürtel getragen, aber nicht ausgerüstet."
     }
   ]
 }

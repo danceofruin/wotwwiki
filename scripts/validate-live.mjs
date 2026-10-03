@@ -60,8 +60,8 @@ export function validate(live, sheets) {
   list(sheets.characters); assert.deepEqual(sheets.characters.map(c=>c.id), ids);
   for (const c of sheets.characters) {
     obj(c, 'id name class level ancestry source profile hpMax stats attack attributes tabs', 'sheet');
-    assert.equal(c.level,6); assert.equal(c.hpMax,live.party.find(p=>p.id===c.id).hp.max);
-    assert.equal(c.source, c.id==='valeria'?'mechanics/combat/valeria-level-6.md':'mechanics/combat/core-party-level-6.md');
+    assert.equal(c.level,7); assert.equal(c.hpMax,live.party.find(p=>p.id===c.id).hp.max);
+    assert.equal(c.source, `mechanics/combat/${c.id}-level-7.md`);
     [c.name,c.class,c.ancestry,c.profile].forEach(str);
     obj(c.stats, 'ac touch flatFooted initiative speed bab cmb cmd fort ref will', 'stats'); Object.values(c.stats).forEach(str);
     obj(c.attack, 'name hit damage note', 'attack'); Object.values(c.attack).forEach(str);
