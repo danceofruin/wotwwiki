@@ -6,7 +6,7 @@
     "playerSafe": true,
     "source": "danceofruin/wotwGPT mechanics/combat/{styke,vesper,valeria}-level-7.md + current/LIVE_STATE.md",
     "updated": "2026-10-03",
-    "revision": "level-7-hud-detail-1"
+    "revision": "level-7-hud-detail-2-glyphs"
   },
   "ui": {
     "defaultCharacterOpen": "",
@@ -553,7 +553,7 @@
           "id": "glyphs",
           "label": "Glyphs",
           "type": "list",
-          "subtitle": "Kosten 1 Animus · Reichweite 45 ft · Dauer 6 Runden · DC 19",
+          "subtitle": "Virtual Animus Adept 3 · 11 Glyphen · IL 8 · Kosten 1 Animus · 45 ft · 6 Runden · DC 19. Anwendung: Swift oder 1×/Runde Free nach Treffer mit Martial Strike; gleiche Glyphe stapelt/erneuert sich nicht.",
           "items": [
             {
               "name": "Elemental Shield",
@@ -586,6 +586,21 @@
             {
               "name": "Blinding Blade",
               "detail": "Nächster qualifizierender Treffer: Reflex DC 19 oder 1 Runde blind; danach endet Glyph."
+            },
+            {
+              "name": "Spirit Stride",
+              "tag": "Advanced Glyph",
+              "detail": "Einmaliger 20-ft-Teleport als Free Action des Empfängers in einen sichtbaren, freien Bereich. Sichtlinie nötig, Line of Effect nicht. Endet nach Teleport oder 6 Runden; Anwendung der Glyphe nutzt normale Glyph-Aktion."
+            },
+            {
+              "name": "Illusionary State",
+              "tag": "Advanced Glyph",
+              "detail": "Mirror Image bei CL 8: 1d4+2 Bilder, für höchstens 6 Runden. Normale Bild-/Trefferregeln; Flächeneffekte und Effekte ohne Angriffswurf umgehen Bilder. Blind-Fight allein negiert sie nicht."
+            },
+            {
+              "name": "Wind Speed",
+              "tag": "Advanced Glyph",
+              "detail": "Haste für 6 Runden: ein Zusatzangriff mit höchstem BAB nur beim Full Attack; +1 Angriff, +1 Dodge AC, +1 Reflex; +30 ft Enhancement auf Bewegung, höchstens doppelte Grundgeschwindigkeit. Keine zusätzliche Strike-Attacke, kein Initiativebonus; keine Stapelung mit Haste/Speed-Zusatzangriff."
             }
           ]
         },
@@ -609,6 +624,10 @@
             {
               "name": "Glyph-Kosten",
               "detail": "1 Animus."
+            },
+            {
+              "name": "Mystical Prowess",
+              "detail": "+3 auf Knowledge (martial) und Spellcraft ausschließlich zum Identifizieren von Manövern, Powers, Spells oder Glyphen."
             }
           ]
         },
@@ -662,7 +681,7 @@
             },
             {
               "name": "Glyph Engine",
-              "detail": "1 Animus · 45 ft · 6 Runden · DC 19."
+              "detail": "Virtual Animus Adept 3 · 11 Glyphen · IL 8 · 1 Animus · 45 ft · 6 Runden · DC 19. Swift oder 1×/Runde Free nach Martial-Strike-Treffer."
             }
           ]
         },
