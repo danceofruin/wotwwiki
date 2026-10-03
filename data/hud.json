@@ -5,7 +5,8 @@
     "generatedView": true,
     "playerSafe": true,
     "source": "danceofruin/wotwGPT mechanics/combat/{styke,vesper,valeria}-level-7.md + current/LIVE_STATE.md",
-    "updated": "2026-10-03"
+    "updated": "2026-10-03",
+    "revision": "level-7-hud-detail-1"
   },
   "ui": {
     "defaultCharacterOpen": "",
@@ -113,7 +114,7 @@
               "id": "circle-of-razor-feathers",
               "name": "Circle of Razor Feathers",
               "tag": "Grad 4 Strike",
-              "detail": "30-ft-Burst; 8d6 profan, Reflex DC 17 partial; sickened."
+              "detail": "Standard · 30-ft-Burst nur Gegner · 8d6 profan · Reflex DC 17: halbiert + sickened 1 Runde; misslungen: voll + sickened 3 Runden."
             },
             {
               "id": "fetchs-wrath",
@@ -259,7 +260,7 @@
             },
             {
               "name": "Echoes of Steel",
-              "detail": "Manöver bis Grad 3 an ein Collective-Mitglied übertragen; nur ein Echo gleichzeitig."
+              "detail": "Manöver bis Grad 3 an ein Collective-Mitglied; PP-Kosten = Grad, einmal binnen 1 Minute; nur ein Echo gleichzeitig."
             },
             {
               "name": "Zeal +1",
@@ -272,6 +273,10 @@
             {
               "name": "Situational Awareness",
               "detail": "+1 Insight auf Initiative."
+            },
+            {
+              "name": "Zorn · Stufe 7",
+              "detail": "24 HP · INT 10 · AC 17 · Saves +5/+7/+7. Tactical Assistance INT +0 vs DC 10; bei Erfolg +2 Aid, Knowledge-Hilfe separat +2."
             }
           ]
         },
@@ -286,11 +291,11 @@
             },
             {
               "name": "The Caged Sun",
-              "detail": "Notfallheilhaltung; bei 24 HP oder weniger freier Eintritt gemäß Fähigkeit. Mit 2 Essence starke Heilverstärkung."
+              "detail": "Notfallhaltung · freier Eintritt bei ≤24 HP. Mit 2 Essence: Heilung floor((eingehend +4)×1,5), CMD 25, PA 2d6+14 ohne Inner-Eye-Präzision."
             },
             {
               "name": "Black Seraph's Glare",
-              "detail": "Alternative Haltung; Gegner im Wirkbereich gelten entsprechend der Haltung als shaken."
+              "detail": "Nach einem Schadenstreffer freie Demoralize-Probe mit +4 profan; kein automatischer Shaken-Zustand im Umkreis."
             }
           ]
         },
@@ -314,6 +319,10 @@
             {
               "name": "Circle of Razor Feathers",
               "detail": "8d6 profan, Reflex DC 17 partial, 30-ft-Burst."
+            },
+            {
+              "name": "Reflected Blade + Fetch's Wrath",
+              "detail": "Teleport nur einmal. Derselbe Angriffswurf gegen zwei Gegner (zweiter innerhalb 40 ft); je getroffenem Ziel voller Fetch-Schaden."
             }
           ]
         }
@@ -373,7 +382,8 @@
             },
             {
               "name": "Disable Device",
-              "tag": "+15"
+              "tag": "+15",
+              "detail": "+17 mit Meisterarbeits-Diebeswerkzeug."
             },
             {
               "name": "Diplomacy",
@@ -415,6 +425,18 @@
           "label": "Verfügbare Spells",
           "type": "spell-groups",
           "groups": [
+            {
+              "label": "Orisons · Grad 0",
+              "items": [
+                "Detect Magic",
+                "Create Water",
+                "Purify Food and Drink",
+                "Read Magic",
+                "Guidance",
+                "Enhanced Diplomacy",
+                "Detect Poison"
+              ]
+            },
             {
               "label": "Grad 1",
               "resource": {
@@ -502,17 +524,30 @@
             },
             {
               "name": "Decree of Torment",
-              "detail": "Standard readied."
+              "detail": "Standard readied · Standard-Angriff · Treffer setzt 5 Brands; jeder Angreifer höchstens 1/Runde für nichtprovozierendes Kampfmanöver (IL 8 / IM +5 statt BAB/STR, falls besser)."
             },
             {
               "name": "Armaments of the Empire",
-              "detail": "Standardstance · Styke Vicious, Valeria Conductive."
+              "detail": "Standardstance · bis 5 Waffen innerhalb 45 ft, je legale +1-Eigenschaft bei 0 Essence. Styke Vicious (+2d6 Ziel / 1d6 Selbstschaden je Treffer), Valeria Conductive (2 Touch-Nutzungen, 1×/Runde). Keine permanenten Verzauberungen."
             },
             {
               "name": "Spoils of War",
               "detail": "Heilwechselhaltung · bis 12 HP je gültigem Trigger bei 2 Essence."
+            },
+            {
+              "name": "Radiant Dawn Style",
+              "detail": "Swift zum Aktivieren · nur aktiv 1×/Runde bei Manöverinitiierung 7 + investierte Essence HP an sich/einen Verbündeten in 45 ft; Disrupt mit 2 Essence heilt 9 HP. Witness vor Zug 1 verbraucht dessen Swift."
+            },
+            {
+              "name": "Bolster",
+              "detail": "Bekannt, nicht Standard-readied · Immediate bei Treffer auf Verbündeten in 45 ft · DR 5/− +1 je Essence für 1 Runde, einschließlich auslösendem Treffer."
+            },
+            {
+              "name": "Staunching Strike",
+              "detail": "Bekannt, nicht Standard-readied · Standard-Angriff (Sun's Gleam erlaubt) · Treffer heilt insgesamt 5 HP +3 je Essence, verteilt innerhalb 45 ft."
             }
-          ]
+          ],
+          "subtitle": "Pool 4 · Kapazität 2 · 2 Witness / 2 Disrupt / 0 Armaments. Essence bleibt bei verbrauchtem Manöver bis Recovery gebunden; Recovery Full-Round."
         },
         {
           "id": "glyphs",
@@ -593,6 +628,10 @@
             {
               "name": "Rolle",
               "detail": "Protector Familiar; Bodyguard / Combat Reflexes gemäß Kampagnenregeln."
+            },
+            {
+              "name": "Progression",
+              "detail": "INT 9 · Familiar Natural Armor +4; etablierte Reliquiar-Identität bleibt erhalten."
             }
           ]
         },
@@ -624,6 +663,17 @@
             {
               "name": "Glyph Engine",
               "detail": "1 Animus · 45 ft · 6 Runden · DC 19."
+            }
+          ]
+        },
+        {
+          "id": "revelations",
+          "label": "Revelations · Stufe 7",
+          "type": "list",
+          "items": [
+            {
+              "name": "Mental Acuity",
+              "detail": "+1 inherent INT → 15; weitere +1 auf Oracle 10/13/16/19. Ersetzt die Spirit-Guide-Spirit-Ability auf Stufe 7, kommt nicht zusätzlich dazu."
             }
           ]
         }
@@ -704,7 +754,7 @@
           "label": "Vorbereitete Spells",
           "type": "note",
           "title": "3 Grad-1-Slots + 1 Grad-2-Slot / Tag",
-          "text": "Grad 2 Default: Darkvision; bei erwartetem harten Nahkampf Blade Tutor's Spirit. Aktuelle Vorbereitung vor der ersten Stufe-7-Ruhe ist noch nicht gefüllt."
+          "text": "Tageskapazität 3 Grad 1 / 1 Grad 2; aktuelle Vorbereitung ist nicht etabliert, neuer Grad-2-Slot vor Ruhe nicht gefüllt. Nächster Default Darkvision: Standard, Berührung, 60-ft-Dunkelsicht für 4 Stunden. Hard-fight-Alternative Blade Tutor's Spirit: Standard, persönlich, 4 Minuten, kombinierte freiwillige Angriffsabzüge um 1 reduziert (PA +11/+6, 2d6+13). CL 4, Konzentration +9, DC 16/17."
         },
         {
           "id": "daily-resources",
@@ -802,7 +852,7 @@
           "items": [
             {
               "name": "Channel Negative Energy",
-              "detail": "Kostet 2 Touch-of-Corruption-Nutzungen · 30-ft Burst · 3d6 · Will DC 18 halbiert · keine Selective Channeling."
+              "detail": "Kostet 2 Touch-of-Corruption-Nutzungen · 30-ft Burst · 4d6 gegen Lebende · Will DC 18 halbiert · keine Selective Channeling."
             },
             {
               "name": "Cruelty: Fatigued",
@@ -815,6 +865,14 @@
             {
               "name": "Emerging Antipaladin State",
               "detail": "Neue übernatürliche Fähigkeiten werden in der Fiktion erst durch echte Manifestation vertraut; kein sofortiges Veteranenwissen."
+            },
+            {
+              "name": "Air Grievances",
+              "detail": "Neu auf Stufe 7 · +3 bei jeder Demoralize-Probe: +18, mit Aura gegen Lebende in 10 ft +22. Stärkere Shaken-Abzüge erst ab effektivem Cavalier 8."
+            },
+            {
+              "name": "Conductive Touch",
+              "detail": "Nur mit aktiver Conductive-Waffe: nach erfolgreichem Nahkampftreffer 2 Touch-Nutzungen für 3d6 + eine Cruelty, höchstens 1×/Runde."
             }
           ]
         },
