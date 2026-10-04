@@ -4,9 +4,9 @@
     "authority": "GENERATED VIEW. DO NOT USE AS CAMPAIGN AUTHORITY.",
     "generated": true,
     "playerSafe": true,
-    "generatedAt": "2026-10-03T08:42:33+00:00",
-    "reviewedAt": "2026-10-03",
-    "sourceRevision": "94fb723c7e947e19d13ac1d6479225b466e413ecb021e7ac56b64fc13b0daa7e"
+    "generatedAt": "2026-10-04T18:26:16+00:00",
+    "reviewedAt": "2026-10-04",
+    "sourceRevision": "d1976abfb511eec610b9ec02cf2f55655cb5f6e73573a928c5a6748be960e744"
   },
   "characters": [
     {
@@ -16,7 +16,7 @@
       "level": 7,
       "ancestry": "Aasimar · Angel-Blooded",
       "source": "mechanics/combat/styke-level-7.md",
-      "profile": "Mithralkettenhemd + Stance of the Inner Eye",
+      "profile": "Mithralkettenhemd + Inner Eye · ohne abgegebenen Umhang",
       "hpMax": 48,
       "stats": {
         "ac": "22",
@@ -27,9 +27,9 @@
         "bab": "+6/+1",
         "cmb": "+10",
         "cmd": "23",
-        "fort": "+8",
-        "ref": "+10",
-        "will": "+10"
+        "fort": "+7",
+        "ref": "+9",
+        "will": "+9"
       },
       "attack": {
         "name": "+1 Großschwert",
@@ -70,7 +70,7 @@
           "sections": [
             {
               "title": "Kampfwerte",
-              "markdown": "**HP 48/48 · AC 22 · Touch 17 · Flat-Footed 15 · Initiative +8.**\n\nInner Eye: normal +14/+9, 2d6+10 +1d6 Präzision; Power Attack +12/+7, 2d6+16 +1d6 Präzision. Elektrizitätsresistenz 5."
+              "markdown": "**HP aktuell 44/48 · AC 22 · Touch 17 · Flat-Footed 15 · Initiative +8.**\n\nAngelegtes Kampfprofil, keine Behauptung über Rüstung/Haltung im Bett. Ohne Umhang Fort +7, Ref +9, Will +9; mit dem alten +1-Umhang wären es +8/+10/+10. Inner Eye: normal +14/+9, 2d6+10 +1d6 Präzision; Power Attack +12/+7, 2d6+16 +1d6 Präzision. Elektrizitätsresistenz 5."
             },
             {
               "title": "Standardmotor",
@@ -94,7 +94,7 @@
           "sections": [
             {
               "title": "Psion und Awakened Blade",
-              "markdown": "**PP 16/Tag · aktuell 7/16 vor Ruhe.** Powers: Minor Metamorphosis, Defensive Precognition, Offensive Precognition, Force Screen, Call to Mind. Talente: Detect Psionics, Empathy, Conceal Thoughts."
+              "markdown": "**PP 16/Tag · aktuell 16/16.** Hornruhe voll; Force Screen kostete 1 PP und ist abgelaufen. Die folgende qualifizierte psionische Ruhe stellt die PP auf 16/16, ohne zusätzliche natürliche HP-Heilung. Powers: Minor Metamorphosis, Defensive Precognition, Offensive Precognition, Force Screen, Call to Mind. Talente: Detect Psionics, Empathy, Conceal Thoughts."
             }
           ]
         },
@@ -114,7 +114,7 @@
           "sections": [
             {
               "title": "Ausrüstung",
-              "markdown": "+1-Großschwert · +1 maßgefertigtes Mithralkettenhemd · Cloak of Resistance +1 · eiserner Stirnreif · Belt of Incredible Dexterity +2 · Zorn · Vexorandian · Auge des Hasses · unbekannter schwarzer Stab."
+              "markdown": "+1-Großschwert · +1 maßgefertigtes Mithralkettenhemd · DEX-Gürtel +2 · eiserner Stirnreif · Zorn · Vexorandian · Hatred · unbekannter schwarzer Stab. Cloak of Resistance +1 bei Tacitus, nicht getragen; vier Portionen Vision Juice."
             }
           ]
         }
@@ -191,7 +191,7 @@
           "sections": [
             {
               "title": "Aktuelle Plätze",
-              "markdown": "Grad 1: **7/8** · Grad 2: **3/7** · Grad 3: **4/5**. Keine Ruheauffüllung."
+              "markdown": "Grad 1: **7/8** · Grad 2: **7/7** · Grad 3: **3/5**. Identify und zwei Gaseous Form verbucht; keine zweite Ruheauffüllung. Extend Rod **3/3**."
             },
             {
               "title": "Neue Auswahl",
@@ -215,7 +215,7 @@
           "sections": [
             {
               "title": "Virtual Animus Adept",
-              "markdown": "Glyphen 45 ft · 6 Runden · SG 19. Elemental Weapon, Evasive Armor, Blinding Blade und die etablierten Schutzglyphen bleiben verfügbar."
+              "markdown": "**Rang 3 · elf Glyphen · 45 ft · 6 Runden · SG 19.** Bestehende acht plus Spirit Stride, Illusionary State und Wind Speed; sämtliche bestehenden Glyphenkarten bleiben verfügbar."
             }
           ]
         },
@@ -229,7 +229,7 @@
             },
             {
               "title": "Ausrüstung",
-              "markdown": "+1-Mithralkettenhemd · +1 Mithral Heavy Shield · Cloak +1 · CHA-Stirnreif +2 · Extend Rod · Verse · Hexoraticus · Ring of Mind Shielding · unbekannte Glaslinse."
+              "markdown": "+1-Mithralkettenhemd · +1 Mithral Heavy Shield · Cloak +1 · CHA-Stirnreif +2 · Extend Rod 3/3 · Verse · Hexoraticus · Ring of Mind Shielding · Glaslinse · aktiviertes Vigilance, nicht eingesetzt."
             }
           ]
         }
@@ -242,20 +242,20 @@
       "level": 7,
       "ancestry": "Mensch · Karfeld",
       "source": "mechanics/combat/valeria-level-7.md",
-      "profile": "+1 Dastard Full Plate · +1-Großschwert · STR-Gürtel",
+      "profile": "+1 Dastard Full Plate · STR-Gürtel · CHA-Stirnreif +2",
       "hpMax": 46,
       "stats": {
         "ac": "21",
         "touch": "11",
         "flatFooted": "20",
-        "initiative": "+5",
+        "initiative": "+6",
         "speed": "20 ft",
         "bab": "+7/+2",
         "cmb": "+11",
         "cmd": "22",
-        "fort": "+11",
-        "ref": "+9",
-        "will": "+11"
+        "fort": "+12",
+        "ref": "+10",
+        "will": "+12"
       },
       "attack": {
         "name": "+1-Großschwert",
@@ -286,7 +286,7 @@
         },
         {
           "name": "CHA",
-          "value": "20"
+          "value": "22 getragen"
         }
       ],
       "tabs": [
@@ -296,11 +296,11 @@
           "sections": [
             {
               "title": "Kampfwerte",
-              "markdown": "**HP 46/46 · AC 21 · Initiative +5 · BAB +7/+2.** Normal +12/+7, 2d6+7; Power Attack +10/+5, 2d6+13."
+              "markdown": "**HP 46/46 · AC 21 · Initiative +6 · BAB +7/+2 · Saves +12/+10/+12.** Normal +12/+7, 2d6+7; PA +10/+5, 2d6+13. PA + Smite +16/+11, 2d6+20; mit Challenge und qualifiziertem Order-Bonus +18/+13, 2d6+25. Smite Deflection +6, mit Dastard AC 29 gegen das passende Ziel."
             },
             {
               "title": "Kampfmotor",
-              "markdown": "Power Attack → Cornugon Smash → Demoralisieren → Hurtful. Air Grievances erhöht Demoralisieren auf +18; gegen lebende Ziele innerhalb 10 ft mit Aura auf +22."
+              "markdown": "Power Attack → Cornugon Smash → Demoralisieren → Hurtful. Air Grievances erhöht Demoralisieren auf +19; gegen lebende Ziele innerhalb 10 ft mit Aura auf +23. Aura-Command Will-SG 19."
             }
           ]
         },
@@ -310,11 +310,11 @@
           "sections": [
             {
               "title": "Ressourcen",
-              "markdown": "Smite Good 3/Tag, aktuell 2/3 · Touch of Corruption 8/Tag, aktuell 6/8 · Challenge 0/1 · Fiendish Boon 1/1 · Channel Negative Energy 4d6."
+              "markdown": "Smite Good **3/3** · Touch of Corruption **9/9**, 3d6 und Fort-SG 19 · Challenge **1/1** · Fiendish Boon **1/1** · Channel Negative Energy 4d6, Will-SG 19, kostet zwei Touch-Nutzungen."
             },
             {
               "title": "Zauber",
-              "markdown": "Drei Plätze Grad 1 und ein Platz Grad 2 pro Tag. Nächster Tagesdefault Grad 2: Darkvision; bei erwartetem harten Nahkampf stattdessen Blade Tutor's Spirit."
+              "markdown": "Gegenwärtiger akzeptierter Tagesrahmen: drei Plätze Grad 1 und einer Grad 2; tatsächliche Vorbereitung nicht neu festgestellt. CHA 22 getragen, Konzentration +10, Zauber-SG 17/18. Default Grad 2 Darkvision; bei erwartetem hartem Nahkampf Blade Tutor’s Spirit. Keine zusätzliche erfolgte Vorbereitung durch Anlegen des Stirnreifs angenommen."
             }
           ]
         },
@@ -324,7 +324,7 @@
           "sections": [
             {
               "title": "Fertigkeiten",
-              "markdown": "Intimidate +15 (+18 Demoralize, +22 gegen lebende Ziele in Aura) · Diplomacy +15 · Sense Motive +10 · Stealth +6 in Platte / +11 ohne Platte."
+              "markdown": "Intimidate +16 (+19 Demoralize, +23 gegen lebende Ziele in Aura) · Diplomacy +16 · Sense Motive +10 · Stealth +6 in Platte / +11 ohne Platte."
             }
           ]
         },
@@ -334,7 +334,7 @@
           "sections": [
             {
               "title": "Ausrüstung",
-              "markdown": "+1 Dastard Full Plate · +1-Großschwert · Belt of Giant Strength +2 · Cloak of Resistance +1 · Mirelles Rüstungsunterkleidung · Ersatz-STR-Gürtel nicht ausgerüstet."
+              "markdown": "+1 Dastard Full Plate · +1-Großschwert · Belt of Giant Strength +2 · Cloak of Resistance +1 · Headband of Alluring Charisma +2, angelegt · Mirelles Rüstungsunterkleidung · Ersatz-STR-Gürtel nicht ausgerüstet. Achselschnalle repariert, kein Scheuern beim Sitztest."
             }
           ]
         }

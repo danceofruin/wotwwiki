@@ -3,10 +3,10 @@
 Spielerbezogenes Kampagnenwiki für *Way of the Wicked*.
 
 - Live: https://danceofruin.github.io/wotwwiki/
-- Live-Play-Stand: siehe `data/live.json` (24. Februar 4712 AR, Nacht; Horn von Abaddon, Death's Head Tavern)
-- Artikelarchiv: redaktionell nachgezogen bis zum ersten Lagerabend im Horn am 24. Februar 4712 AR
-- Technischer Stand: 3. Oktober 2026
-- Version 4.2.0
+- Live-Play-Stand: siehe `data/live.json` (26. Februar 4712 AR, später Vormittag; Farholde, unbenannte Schänke)
+- Artikelarchiv: redaktionell nachgezogen bis zu Stykes Erwachen bei Kaitlyn am 26. Februar 4712 AR
+- Technischer Stand: 4. Oktober 2026
+- Version 4.3.0
 
 ## Live Play
 

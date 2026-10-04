@@ -5,8 +5,8 @@
     "generatedView": true,
     "playerSafe": true,
     "source": "danceofruin/wotwGPT mechanics/combat/{styke,vesper,valeria}-level-7.md + current/LIVE_STATE.md",
-    "updated": "2026-10-03",
-    "revision": "level-7-hud-detail-2-glyphs"
+    "updated": "2026-10-04",
+    "revision": "level-7-handoff-0226-cha-headband"
   },
   "ui": {
     "defaultCharacterOpen": "",
@@ -22,19 +22,19 @@
           "id": "saves",
           "label": "Saves",
           "type": "list",
-          "subtitle": "Aktuelle Stufe-7-Werte mit Stance of the Inner Eye und Cloak of Resistance +1.",
+          "subtitle": "Inner-Eye-Kampfprofil ohne Stykes bei Tacitus abgegebenen +1-Umhang. Keine Rüstung/Haltung für die Bettszene angenommen.",
           "items": [
             {
               "name": "Fortitude",
-              "tag": "+8"
+              "tag": "+7"
             },
             {
               "name": "Reflex",
-              "tag": "+10"
+              "tag": "+9"
             },
             {
               "name": "Will",
-              "tag": "+10"
+              "tag": "+9"
             }
           ]
         },
@@ -727,19 +727,19 @@
           "id": "saves",
           "label": "Saves",
           "type": "list",
-          "subtitle": "Unholy Resilience +5 und Cloak of Resistance +1 sind bereits eingerechnet.",
+          "subtitle": "Getragener CHA-Stirnreif +2: Unholy Resilience +6 und Cloak +1 sind eingerechnet.",
           "items": [
             {
               "name": "Fortitude",
-              "tag": "+11"
+              "tag": "+12"
             },
             {
               "name": "Reflex",
-              "tag": "+9"
+              "tag": "+10"
             },
             {
               "name": "Will",
-              "tag": "+11"
+              "tag": "+12"
             }
           ]
         },
@@ -750,12 +750,12 @@
           "items": [
             {
               "name": "Intimidate",
-              "tag": "+15",
-              "detail": "Demoralize +18; gegen lebende Kreaturen innerhalb 10 ft +22."
+              "tag": "+16",
+              "detail": "Demoralize +19; gegen lebende Kreaturen innerhalb 10 ft +23."
             },
             {
               "name": "Diplomacy",
-              "tag": "+15"
+              "tag": "+16"
             },
             {
               "name": "Sense Motive",
@@ -773,7 +773,7 @@
           "label": "Vorbereitete Spells",
           "type": "note",
           "title": "3 Grad-1-Slots + 1 Grad-2-Slot / Tag",
-          "text": "Tageskapazität 3 Grad 1 / 1 Grad 2; aktuelle Vorbereitung ist nicht etabliert, neuer Grad-2-Slot vor Ruhe nicht gefüllt. Nächster Default Darkvision: Standard, Berührung, 60-ft-Dunkelsicht für 4 Stunden. Hard-fight-Alternative Blade Tutor's Spirit: Standard, persönlich, 4 Minuten, kombinierte freiwillige Angriffsabzüge um 1 reduziert (PA +11/+6, 2d6+13). CL 4, Konzentration +9, DC 16/17."
+          "text": "Gegenwärtiger akzeptierter Tagesrahmen 3 Grad 1 / 1 Grad 2; konkrete Vorbereitung nicht neu festgestellt. Stirnreif seit 25. Februar angelegt, keine zusätzliche erfolgte Vorbereitung angenommen. Default Darkvision: Standard, Berührung, 60-ft-Dunkelsicht für 4 Stunden. Alternative Blade Tutor’s Spirit: Standard, persönlich, 4 Minuten, freiwillige Angriffsabzüge zusammen um 1 reduziert (PA +11/+6, 2d6+13). CL 4, Konzentration +10, DC 17/18."
         },
         {
           "id": "daily-resources",
@@ -786,7 +786,7 @@
                 "character": "valeria",
                 "key": "smite"
               },
-              "detail": "3/Tag · gegen Good +5 Angriff, +7 Schaden je Treffer, +5 Deflection AC."
+              "detail": "3/Tag · gegen Good +6 Angriff, +7 Schaden je Treffer, +6 Deflection AC."
             },
             {
               "label": "Touch of Corruption",
@@ -794,7 +794,7 @@
                 "character": "valeria",
                 "key": "corruption"
               },
-              "detail": "Melee Touch · 3d6 · Fort DC 18 · Cruelty: Fatigued oder Staggered 3 Runden."
+              "detail": "Melee Touch · 3d6 · Fort DC 19 · Cruelty: Fatigued oder Staggered 3 Runden."
             },
             {
               "label": "Challenge",
@@ -821,11 +821,11 @@
           "items": [
             {
               "name": "Intimidate",
-              "detail": "+4 Morale gegen lebende Kreaturen innerhalb 10 ft; Demoralize insgesamt +22 mit Air Grievances."
+              "detail": "+4 Morale gegen lebende Kreaturen innerhalb 10 ft; Demoralize insgesamt +23 mit Air Grievances."
             },
             {
               "name": "Command Rider",
-              "detail": "Wenn Demoralize den DC um 10+ schlägt: Command, Will DC 18 negiert; gleiche Kreatur höchstens 1×/Tag."
+              "detail": "Wenn Demoralize den DC um 10+ schlägt: Command, Will DC 19 negiert; gleiche Kreatur höchstens 1×/Tag."
             }
           ]
         },
@@ -871,7 +871,7 @@
           "items": [
             {
               "name": "Channel Negative Energy",
-              "detail": "Kostet 2 Touch-of-Corruption-Nutzungen · 30-ft Burst · 4d6 gegen Lebende · Will DC 18 halbiert · keine Selective Channeling."
+              "detail": "Kostet 2 Touch-of-Corruption-Nutzungen · 30-ft Burst · 4d6 gegen Lebende · Will DC 19 halbiert · keine Selective Channeling."
             },
             {
               "name": "Cruelty: Fatigued",
@@ -887,7 +887,7 @@
             },
             {
               "name": "Air Grievances",
-              "detail": "Neu auf Stufe 7 · +3 bei jeder Demoralize-Probe: +18, mit Aura gegen Lebende in 10 ft +22. Stärkere Shaken-Abzüge erst ab effektivem Cavalier 8."
+              "detail": "Neu auf Stufe 7 · +3 bei jeder Demoralize-Probe: +19, mit Aura gegen Lebende in 10 ft +23. Stärkere Shaken-Abzüge erst ab effektivem Cavalier 8."
             },
             {
               "name": "Conductive Touch",
@@ -902,7 +902,7 @@
           "items": [
             {
               "name": "Defensive Werte",
-              "detail": "AC 21 · Touch 11 · Flat-footed 20 · Initiative +5 · CMB +11 · CMD 22."
+              "detail": "AC 21 · Touch 11 · Flat-footed 20 · Initiative +6 · CMB +11 · CMD 22."
             },
             {
               "name": "Power Attack",
@@ -910,23 +910,23 @@
             },
             {
               "name": "Power Attack + Smite Good",
-              "detail": "+15/+10 · 2d6+20; erster Spezialtreffer 2d6+27."
+              "detail": "+16/+11 · 2d6+20; erster Spezialtreffer 2d6+27."
             },
             {
               "name": "Power Attack + Challenge",
-              "detail": "+10/+5 · 2d6+18; mit Order-Bonus +12/+7."
+              "detail": "+10/+5 · 2d6+19; mit Order-Bonus +12/+7."
             },
             {
               "name": "Smite + Challenge",
-              "detail": "Mit Order-Bonus +17/+12 · 2d6+25."
+              "detail": "Mit Order-Bonus +19/+13 · 2d6+25."
             },
             {
               "name": "Demoralize",
-              "detail": "+18 mit Air Grievances; +22 gegen lebende Ziele in Aura."
+              "detail": "+19 mit Air Grievances; +23 gegen lebende Ziele in Aura."
             },
             {
               "name": "Touch of Corruption",
-              "detail": "Melee touch · 3d6 · Fort DC 18."
+              "detail": "Melee touch · 3d6 · Fort DC 19."
             }
           ]
         }
@@ -950,11 +950,11 @@
   "resourceDefaults": {
     "styke": {
       "hp": {
-        "current": 48,
+        "current": 44,
         "max": 48
       },
       "pp": {
-        "current": 7,
+        "current": 16,
         "max": 16
       },
       "focus": true,
@@ -971,11 +971,11 @@
           "max": 8
         },
         "2": {
-          "current": 3,
+          "current": 7,
           "max": 7
         },
         "3": {
-          "current": 4,
+          "current": 3,
           "max": 5
         }
       }
@@ -986,15 +986,15 @@
         "max": 46
       },
       "smite": {
-        "current": 2,
+        "current": 3,
         "max": 3
       },
       "corruption": {
-        "current": 6,
-        "max": 8
+        "current": 9,
+        "max": 9
       },
       "challenge": {
-        "current": 0,
+        "current": 1,
         "max": 1
       },
       "boon": {
