@@ -4,9 +4,9 @@
     "authority": "GENERATED VIEW. DO NOT USE AS CAMPAIGN AUTHORITY.",
     "generated": true,
     "playerSafe": true,
-    "generatedAt": "2026-10-05T16:14:34+00:00",
+    "generatedAt": "2026-10-05T16:31:39+00:00",
     "reviewedAt": "2026-10-05",
-    "sourceRevision": "280b9ae756833009d908ad42446e9142e8a244f148a46055d808f77bdfe4b15d"
+    "sourceRevision": "0975f5193d7557bb62e0ecff28d88e6d66db96dda606fa8b3a28fca13b0b5d51"
   },
   "characters": [
     {
@@ -70,7 +70,7 @@
           "sections": [
             {
               "title": "Kampfwerte",
-              "markdown": "**HP aktuell 44/48 · AC 22 · Touch 17 · Flat-Footed 15 · Initiative +8 · Fort +9 · Ref +11 · Will +11.**\n\nInner Eye: normal +14/+9, 2d6+10 +1d6 Präzision; Power Attack +12/+7, 2d6+16 +1d6 Präzision. Elektrizitätsresistenz 5."
+              "markdown": "**HP aktuell 48/48 · AC 22 · Touch 17 · Flat-Footed 15 · Initiative +8 · Fort +9 · Ref +11 · Will +11.**\n\nInner Eye: normal +14/+9, 2d6+10 +1d6 Präzision; Power Attack +12/+7, 2d6+16 +1d6 Präzision. Elektrizitätsresistenz 5."
             },
             {
               "title": "Standardmotor",
@@ -94,7 +94,7 @@
           "sections": [
             {
               "title": "Psion und Awakened Blade",
-              "markdown": "**PP 16/Tag · aktuell 15/16.** Eine Force-Screen-Demonstration kostete 1 PP und ist abgelaufen. Der kurze Schlaf vor dem Westell-Treffen ist keine neue Auffüllung. Powers: Minor Metamorphosis, Defensive Precognition, Offensive Precognition, Force Screen, Call to Mind. Talente: Detect Psionics, Empathy, Conceal Thoughts."
+              "markdown": "**PP 16/Tag · aktuell 16/16.** Normale Nachtruhe und tägliche Auffrischung abgeschlossen; die vorherige Force-Screen-Ausgabe ist aufgefüllt. Powers: Minor Metamorphosis, Defensive Precognition, Offensive Precognition, Force Screen, Call to Mind. Talente: Detect Psionics, Empathy, Conceal Thoughts."
             }
           ]
         },
@@ -191,7 +191,7 @@
           "sections": [
             {
               "title": "Aktuelle Plätze",
-              "markdown": "Grad 1: **7/8** · Grad 2: **7/7** · Grad 3: **3/5**. Identify und zwei Gaseous Form verbucht; keine zweite Ruheauffüllung. Extend Rod **3/3**."
+              "markdown": "Grad 1: **8/8** · Grad 2: **7/7** · Grad 3: **5/5**. Normale Nachtruhe und tägliche Auffrischung abgeschlossen. Extend Rod **3/3**."
             },
             {
               "title": "Neue Auswahl",
