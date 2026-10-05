@@ -6,7 +6,7 @@
     "playerSafe": true,
     "source": "danceofruin/wotwGPT mechanics/combat/{styke,vesper,valeria}-level-7.md + current/LIVE_STATE.md",
     "updated": "2026-10-05",
-    "revision": "level-7-handoff-0227-pre-dawn"
+    "revision": "level-7-handoff-0227-rest-complete"
   },
   "ui": {
     "defaultCharacterOpen": "",
@@ -950,11 +950,11 @@
   "resourceDefaults": {
     "styke": {
       "hp": {
-        "current": 44,
+        "current": 48,
         "max": 48
       },
       "pp": {
-        "current": 15,
+        "current": 16,
         "max": 16
       },
       "focus": true,
@@ -967,15 +967,15 @@
       },
       "slots": {
         "1": {
-          "current": null,
+          "current": 8,
           "max": 8
         },
         "2": {
-          "current": null,
+          "current": 7,
           "max": 7
         },
         "3": {
-          "current": null,
+          "current": 5,
           "max": 5
         }
       }
