@@ -4,20 +4,20 @@
     "authority": "GENERATED VIEW. DO NOT USE AS CAMPAIGN AUTHORITY.",
     "generated": true,
     "playerSafe": true,
-    "generatedAt": "2026-10-05T16:14:34+00:00",
+    "generatedAt": "2026-10-05T16:31:39+00:00",
     "reviewedAt": "2026-10-05",
-    "sourceRevision": "9006c5cbfd79ebe44609712ae569cd03b4cbfcfe67e15f71a3742a97aec9310f",
-    "sheetRevision": "280b9ae756833009d908ad42446e9142e8a244f148a46055d808f77bdfe4b15d"
+    "sourceRevision": "1008b51baef530cc57b1fbf63fde5c042c3f114b5c54e3769ccd95a42f4239b4",
+    "sheetRevision": "0975f5193d7557bb62e0ecff28d88e6d66db96dda606fa8b3a28fca13b0b5d51"
   },
   "scene": {
     "date": "4712-02-27",
     "dateLabel": "27. Februar 4712 AR",
-    "time": "Vor Morgengrauen · keine vollständige Ruhe",
+    "time": "Vor Morgengrauen · Nachtruhe abgeschlossen",
     "location": "Farholde · Goldener Reiher · großes Eckzimmer",
     "locationId": "goldener-reiher",
     "detail": "Styke beginnt neben Vesper aufzuwachen. Zorn ist bei Styke, Verse bei Vesper. Das vereinbarte Treffen südlich von Westell liegt noch vor ihnen.",
     "summary": "Der 26. Februar schloss die letzten Farholde-Vorbereitungen: Elise, Hakon und Grumblejack wurden eingeweiht, Mirelles Anprobe und Stykes Umhang wurden abgeschlossen, Tacitus trat dem Collective bei und übernahm zwei Forschungsfragen. Der Umzug ist noch nicht aufgebrochen.",
-    "rest": "Der späte Schlaf bis vor Morgengrauen erreicht keine acht Stunden. Styke bleibt bei 44/48 HP und 15/16 PP. Vespers tägliche Orakel-Auffrischung ist eine getrennte Regelfrage; ihre aktuellen Plätze bleiben bis zur Klärung unbekannt."
+    "rest": "Normale Nachtruhe und tägliche Auffrischung abgeschlossen: Styke 48/48 HP und 16/16 PP; Vesper 38/38 HP, Zauberplätze 8/8, 7/7 und 5/5. Keine Unterbrechung oder bewusst verkürzte Ruhe festgestellt."
   },
   "quests": [
     {
@@ -291,15 +291,15 @@
       "name": "Styke",
       "class": "Zealot 4 / Psion 1 / Awakened Blade 2",
       "hp": {
-        "current": 44,
+        "current": 48,
         "max": 48
       },
       "conditions": [],
       "state": "Beginnt vor Morgengrauen neben Vesper im großen Eckzimmer des Goldenen Reihers aufzuwachen.",
-      "resourceNote": "44/48 HP, 15/16 PP. Die Force-Screen-Demonstration kostete 1 PP; der kurze Schlaf vor dem Westell-Treffen gewährt Styke keine neue HP- oder PP-Auffüllung.",
+      "resourceNote": "48/48 HP, 16/16 PP nach abgeschlossener Nachtruhe und täglicher Auffrischung. Die vorherige Force-Screen-Ausgabe ist aufgefüllt.",
       "gearNote": "+1-Großschwert, +1-Mithralkettenhemd, DEX-Gürtel +2, Cloak of Resistance +2, Zorn, Vexorandian und Hatred; vier Portionen Vision Juice.",
       "pp": {
-        "current": 15,
+        "current": 16,
         "max": 16
       },
       "focus": true
@@ -314,7 +314,7 @@
       },
       "conditions": [],
       "state": "Liegt beim aktuellen Rand neben Styke im Eckzimmer; Verse ist bei ihr.",
-      "resourceNote": "38/38 HP. Letzter bestätigter Slotstand war 7/8, 7/7 und 3/5; die tägliche Orakel-Auffrischung ist noch nicht adjudiziert, daher aktuell ?/8, ?/7 und ?/5. Rod 3/3. 26.-Februar-Hedonistic erfüllt.",
+      "resourceNote": "38/38 HP; tägliche Auffrischung abgeschlossen: 8/8, 7/7 und 5/5 Zauberplätze. Rod 3/3. 26.-Februar-Hedonistic erfüllt.",
       "gearNote": "+1-Mithralkettenhemd und -schild, CHA-Stirnreif +2, Cloak +1, Extend Rod 3/3, Hexoraticus, Ring of Mind Shielding, Glaslinse und aktiviertes Vigilance.",
       "verse": {
         "present": true,
@@ -324,17 +324,17 @@
       "slots": [
         {
           "level": 1,
-          "current": null,
+          "current": 8,
           "max": 8
         },
         {
           "level": 2,
-          "current": null,
+          "current": 7,
           "max": 7
         },
         {
           "level": 3,
-          "current": null,
+          "current": 5,
           "max": 5
         }
       ],
