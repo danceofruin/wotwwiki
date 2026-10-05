@@ -5,8 +5,8 @@
     "generatedView": true,
     "playerSafe": true,
     "source": "danceofruin/wotwGPT mechanics/combat/{styke,vesper,valeria}-level-7.md + current/LIVE_STATE.md",
-    "updated": "2026-10-04",
-    "revision": "level-7-handoff-0226-cha-headband"
+    "updated": "2026-10-05",
+    "revision": "level-7-handoff-0227-pre-dawn"
   },
   "ui": {
     "defaultCharacterOpen": "",
@@ -22,19 +22,19 @@
           "id": "saves",
           "label": "Saves",
           "type": "list",
-          "subtitle": "Inner-Eye-Kampfprofil ohne Stykes bei Tacitus abgegebenen +1-Umhang. Keine Rüstung/Haltung für die Bettszene angenommen.",
+          "subtitle": "Inner-Eye-Kampfprofil mit Cloak of Resistance +2.",
           "items": [
             {
               "name": "Fortitude",
-              "tag": "+7"
+              "tag": "+9"
             },
             {
               "name": "Reflex",
-              "tag": "+9"
+              "tag": "+11"
             },
             {
               "name": "Will",
-              "tag": "+9"
+              "tag": "+11"
             }
           ]
         },
@@ -954,7 +954,7 @@
         "max": 48
       },
       "pp": {
-        "current": 16,
+        "current": 15,
         "max": 16
       },
       "focus": true,
@@ -967,15 +967,15 @@
       },
       "slots": {
         "1": {
-          "current": 7,
+          "current": null,
           "max": 8
         },
         "2": {
-          "current": 7,
+          "current": null,
           "max": 7
         },
         "3": {
-          "current": 3,
+          "current": null,
           "max": 5
         }
       }

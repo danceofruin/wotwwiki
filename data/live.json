@@ -4,37 +4,37 @@
     "authority": "GENERATED VIEW. DO NOT USE AS CAMPAIGN AUTHORITY.",
     "generated": true,
     "playerSafe": true,
-    "generatedAt": "2026-10-04T18:26:16+00:00",
-    "reviewedAt": "2026-10-04",
-    "sourceRevision": "381313527fd5f5c52ab34dabb0044da8e4595cf3453ffb075c4bdefa418e4e62",
-    "sheetRevision": "d1976abfb511eec610b9ec02cf2f55655cb5f6e73573a928c5a6748be960e744"
+    "generatedAt": "2026-10-05T16:14:34+00:00",
+    "reviewedAt": "2026-10-05",
+    "sourceRevision": "9006c5cbfd79ebe44609712ae569cd03b4cbfcfe67e15f71a3742a97aec9310f",
+    "sheetRevision": "280b9ae756833009d908ad42446e9142e8a244f148a46055d808f77bdfe4b15d"
   },
   "scene": {
-    "date": "4712-02-26",
-    "dateLabel": "26. Februar 4712 AR",
-    "time": "Später Vormittag · keine neue vollständige Ruhe",
-    "location": "Farholde · privates Zimmer einer unbenannten Schänke",
-    "locationId": "farholde",
-    "detail": "Styke ist im Bett erwacht. Kaitlyn ist schon wach und halb angekleidet; das weitere Morgengespräch hat noch nicht begonnen.",
-    "summary": "Horn bereinigt, Dirges und aktiviertes Vigilance geborgen, anschließend Rückkehr nach Farholde. Valerias Stirnreif ist angelegt, Stykes Umhang abgegeben. Der Haushalt plant den Umzug am 27. Februar.",
-    "rest": "Die Hornruhe 24/25 war vollständig. Keine zweite vollständige HP-Heilungsruhe: Styke bleibt bei 44/48 HP. Seine ruhige Nacht plus Schlaf qualifiziert hingegen für psionische Erholung auf 16/16 PP; Vespers Plätze bleiben ausgegeben."
+    "date": "4712-02-27",
+    "dateLabel": "27. Februar 4712 AR",
+    "time": "Vor Morgengrauen · keine vollständige Ruhe",
+    "location": "Farholde · Goldener Reiher · großes Eckzimmer",
+    "locationId": "goldener-reiher",
+    "detail": "Styke beginnt neben Vesper aufzuwachen. Zorn ist bei Styke, Verse bei Vesper. Das vereinbarte Treffen südlich von Westell liegt noch vor ihnen.",
+    "summary": "Der 26. Februar schloss die letzten Farholde-Vorbereitungen: Elise, Hakon und Grumblejack wurden eingeweiht, Mirelles Anprobe und Stykes Umhang wurden abgeschlossen, Tacitus trat dem Collective bei und übernahm zwei Forschungsfragen. Der Umzug ist noch nicht aufgebrochen.",
+    "rest": "Der späte Schlaf bis vor Morgengrauen erreicht keine acht Stunden. Styke bleibt bei 44/48 HP und 15/16 PP. Vespers tägliche Orakel-Auffrischung ist eine getrennte Regelfrage; ihre aktuellen Plätze bleiben bis zur Klärung unbekannt."
   },
   "quests": [
     {
       "id": "horn",
       "title": "Horn von Abaddon · Ritual und Aufbau",
       "status": "active",
-      "updated": "4712-02-26",
-      "summary": "Ezra, seine Wraiths, die Schleime und die restlichen Bane-wogs sind tot. Das Kerntrio hat die Ritualschrift, Hatred und aktiviertes Vigilance; Withering fehlt, das Ritual ist unbegonnen.",
+      "updated": "4712-02-27",
+      "summary": "Das Horn ist bereinigt, Ritualschrift und zwei Augen sind geborgen; das Ritual bleibt unbegonnen. Der erste Umzug ist für Sonnenaufgang vereinbart, aber noch nicht aufgebrochen.",
       "known": [
         "Silbersiegel und Ketten bleiben intakt; keine Gebets- oder Opferuhr läuft.",
-        "Die aus C13 geborgenen Dirges bestätigen 666 Gebete an 222 Tagen und die drei Opfer-/Bittenstationen.",
-        "Vigilance erlaubt einen gewählten Hornblick durch Wände, keine gleichzeitige Rundumüberwachung. Es ist bei Vesper; Hatred bei Styke. Beide sind nicht eingesetzt.",
-        "Die Wächter sollen abwechselnd ruhen und wachen, danach die getrennten Eingangsposten beziehen. Ihre Heilung ist noch nicht berichtet; Vexors drei Punkte Konstitutionsentzug bleiben ein magisches Heilungsproblem.",
-        "Thronbefehle müssen gesprochen werden; ein Flüstern reicht. Vesper testete Rah zwischen den gebauten Thronen.",
-        "Der kopflose Versteinerte und Artephius sind ungelöst; der große Tresorbestand bleibt ungezählt."
+        "Die Dirges bestätigen 666 Gebete an 222 Tagen und die drei Opfer-/Bittenstationen.",
+        "Vigilance ist bei Vesper, Hatred bei Styke; Withering fehlt. Keines der beiden geborgenen Augen ist installiert.",
+        "Thronbefehle müssen gesprochen werden; ein Flüstern reicht.",
+        "Nella erhielt den Auftrag für einen schweren Streitrosskauf und 3.000 gp Ritualmaterial. Ein Ergebnis hat Styke vor dem Schlaf noch nicht erhalten.",
+        "Der kopflose Versteinerte, Artephius und der große Tresortransport bleiben ungelöst."
       ],
-      "next": "Withering suchen, offene Hornprobleme untersuchen und vor Ritualbeginn tatsächlich entscheiden. Den Aufbau und Transport vorbereiten.",
+      "next": "Bei Sonnenaufgang südlich von Westell sammeln und erst dann den tatsächlichen Umzug spielen; Carnitheria Rex erfordert anschließend noch einen vollen Rekonstruktionstag.",
       "links": [
         "horn-abaddon",
         "dirges-apollyon",
@@ -67,14 +67,15 @@
       "id": "seventh",
       "title": "Siebter Knoten · White Ravens",
       "status": "active",
-      "updated": "4712-02-25",
-      "summary": "Kaitlyns letzter Bericht enthält keine Vandermir-Warnung, Nachfragen nach dem Knoten oder direkten Trak-Vorstoß. Die neue Hornlage soll an Elise übergeben werden.",
+      "updated": "4712-02-26",
+      "summary": "Elise weiß, dass das Horn gefunden wurde, der Einsatz 222 Tage dauert und der Umzug bei Sonnenaufgang südlich von Westell beginnt. Den eigentlichen Weg kennt sie noch nicht.",
       "known": [
-        "Elise und die White Ravens bleiben als unabhängige Farholde-Unterstützung eingesetzt.",
-        "Kaitlyn zieht nach einer ausreichenden Lage-/Ortsübergabe an Elise mit zum Horn und kehrt für Verbindungspflichten regelmäßig in die Stadt zurück.",
-        "Die vorgesehene Übergabe ist noch nicht als erfolgt berichtet."
+        "Elise will den ersten Zug begleiten, um den Weg für die rückwärtige Unterstützung kennenzulernen.",
+        "Die übrigen White Ravens bleiben in Farholde.",
+        "Der Siebte Knoten hat keinen ernsthaften zweiten Suchtrupp auf der Spur des Neunten gefunden.",
+        "Elises Botenfedern sind bislang nur ihr Vorschlag; Verfügbarkeit und Herstellung sind nicht geprüft."
       ],
-      "next": "Elise Ort und Lagebild geben; weiter beobachten, ohne einen Vorstoß zu erfinden.",
+      "next": "Elise den tatsächlichen Weg zeigen und die Fernkommunikation später mit Tacitus prüfen.",
       "links": [
         "white-ravens",
         "elise",
@@ -89,15 +90,15 @@
       "id": "crafting",
       "title": "Magische Ausrüstung",
       "status": "active",
-      "updated": "4712-02-25",
-      "summary": "Valerias Charisma-Stirnreif +2 ist übergeben und angelegt. Stykes +1-Umhang liegt bei Tacitus für die nächste Aufwertung.",
+      "updated": "4712-02-26",
+      "summary": "Stykes Cloak of Resistance +2 ist fertig, übergeben und angelegt. In der bezahlten Reihe verbleiben zwei Umhangaufwertungen und drei Amulette.",
       "known": [
-        "Die vier +1-Aufwertungen und beide Gürtel sind fertig.",
-        "Restreihe bei der Übergabe: drei Umhangaufwertungen, danach drei Amulette der Natürlichen Rüstung; sechs volle Arbeitstage ohne Unterbrechung.",
-        "Für Stykes Umhang ist der 26. Februar vorgesehen; kein fertiges Ergebnis wurde übermittelt.",
-        "Artephius-Pläne liegen bei Tacitus; die Untersuchung mit Vesper erfolgt erst vor Ort."
+        "Die vier früheren +1-Aufwertungen, beide Gürtel, Valerias Charisma-Stirnreif und Stykes +2-Umhang sind fertig.",
+        "Verbleibende Reihe: Vespers Umhang +1 auf +2, Valerias Umhang +1 auf +2, danach drei Amulette der Natürlichen Rüstung +1.",
+        "Am 26. Februar begann kein zweiter dauerhafter Gegenstand.",
+        "Artephius-Pläne liegen bei Tacitus; die Ortsuntersuchung bleibt offen."
       ],
-      "next": "Umhang nach tatsächlicher Fertigmeldung abholen; nach den sechs Arbeitstagen ist zehntägiges Selbststudium für den Handwerkswechsel vorgesehen.",
+      "next": "Die Werkstatt zum Horn verlegen und die bezahlte Reihe an echten Arbeitstagen fortsetzen.",
       "links": [
         "tacitus",
         "knittel",
@@ -109,12 +110,12 @@
       "id": "red-book",
       "title": "Das rote Buch",
       "status": "active",
-      "updated": "4712-02-25",
-      "summary": "Vesper verglich nach der Hornwache die Schrift mit Abschriften und berichtete keine neue Zeile oder Umschreibung; letzter beobachteter Zustand Stirring.",
+      "updated": "4712-02-26",
+      "summary": "Letzter beobachteter Zustand Stirring. Am 26. Februar wurde das Buch nicht erneut geprüft; es gibt keine bekannte neue Umschreibung.",
       "known": [
         "Aura und ungeklärte Herkunft bleiben wie bekannt.",
-        "Das Ergebnis des direkten Vergleichs war unverändert.",
-        "Vorgänge außerhalb von Vespers Anwesenheit und ohne Träger sind kein automatisches Buchwissen."
+        "Vesper erhielt Stykes Bericht über Mirelles Anprobe, war dort aber nicht anwesend.",
+        "Ohne Untersuchung des Buchs wird keine sichtbare Änderung angenommen."
       ],
       "next": "Erst eine tatsächlich wahrgenommene, überprüfte Änderung ergänzen.",
       "links": [
@@ -127,17 +128,17 @@
       "id": "relocation",
       "title": "Haushalt und Arbeiterschaft zum Horn",
       "status": "scheduled",
-      "updated": "4712-02-25",
-      "summary": "Umzug am 27. Februar vorbehaltlich Transport. Erste Kräfte: Schreiner, Schmied und Küche; ausschließlich erwachsene Bewohner.",
+      "updated": "4712-02-27",
+      "summary": "Treffen bei Sonnenaufgang südlich von Westell, hinter den letzten Höfen. Der Zug ist noch nicht versammelt oder aufgebrochen.",
       "known": [
-        "Nella besitzt breite gewöhnliche Beschaffungs- und Transportvollmacht; ein Einkaufsergebnis ist noch nicht berichtet.",
-        "Mirelle zieht mit, braucht eine trockene richtige Werkstatt und schneidet Bettwäsche erst nach realen Maßen zu.",
-        "Gewöhnlicher Lohn beginnt bei 5 gp pro Woche, Facharbeit darüber; Hakons Vertrag bleibt getrennt, keine Gewinnanteile zugesagt.",
-        "Arbeit, Wache und vereinbarte Bindungsdauer stehen Schutz, vereinbartem Lohn, Eigentum und Streitentscheidung gegenüber. Unerlaubte Abreise ist im Entwurf Desertion mit Todesstrafe.",
-        "Abhängige Kinder bleiben zunächst in Farholde; gute Unterkunft/Ausbildung soll auf freiwilliger Grundlage ermöglicht werden.",
-        "Kein Konvoi, keine neuen Bewohner und keine Bauarbeiten sind bereits im Horn angekommen."
+        "Nella koordiniert Vorräte, Wagen und Packkapazität; Styke hat vor dem Schlaf keinen Abschlussbericht erhalten.",
+        "Vesper meldete am Abend einige brauchbare Kandidaten, aber noch keine Person, der sie den Hornort anvertrauen wollte.",
+        "Hakon und seine fünf Männer kommen zum unveränderten Vertrag von 1 gp pro Tag und Mann.",
+        "Grumblejack zieht mit Varlet ein; Elise begleitet den ersten Weg, die übrigen White Ravens bleiben in Farholde.",
+        "Kaitlyn wollte Vandermir nach Stadtunterkunft und Ausbildung für Angehörige fragen; ihr Ergebnis ist Styke am aktuellen Rand noch nicht bekannt.",
+        "Kein Konvoi, neuer Arbeiter oder Angehöriger ist bereits im Horn angekommen."
       ],
-      "next": "Transport und erste geeignete Erwachsene vorbereiten, Angehörigenhilfe klären und Elise das Lagebild übergeben.",
+      "next": "Aufwachen, die tatsächlichen Berichte einholen und den Westell-Treffpunkt erreichen.",
       "links": [
         "horn-aufbau",
         "nella",
@@ -147,43 +148,58 @@
         "baron-vandermir",
         "elise"
       ]
+    },
+    {
+      "id": "tacitus-research",
+      "title": "Tacitus · Gegenforschung und Psionik",
+      "status": "active",
+      "updated": "4712-02-26",
+      "summary": "Tacitus übernahm Stykes geheime Tears-Gegenfrage und begann mit ihm eine quellengetrennte Untersuchung seiner Psionik. Es gibt noch kein Ergebnis.",
+      "known": [
+        "Tacitus soll prüfen, ob die Tears verändert oder begrenzt werden könnten, ohne Thorn eine unterschiedslose Seuche zu liefern.",
+        "Vesper kennt Auftrag, Pact-Frage und psionischen Kontext; Valeria erhielt den genauen Auftrag noch nicht.",
+        "Knittel ist nicht Teil des geheimen Tears-Kreises.",
+        "Tacitus sah eine Force-Screen-Manifestation ohne Wort, Geste oder Material.",
+        "Zorn soll flüchtige psionische Eindrücke nur nach bewusster Übermittlung dokumentieren; er liest nicht passiv Stykes Gedanken.",
+        "Kein Forschungstag, Durchbruch, Preis oder Lösungsweg ist bereits verdient."
+      ],
+      "next": "Beobachtungen sammeln, Quellen trennen und keine Lösung vorwegnehmen.",
+      "links": [
+        "tacitus",
+        "styke",
+        "vesper",
+        "thorn"
+      ]
     }
   ],
   "appointments": [
     {
-      "id": "cloak-day",
-      "date": "4712-02-26",
-      "label": "Heute",
-      "time": "Voller Arbeitstag vorgesehen",
-      "title": "Stykes Umhang bei Tacitus",
-      "note": "Aufwertung von +1 auf +2 geplant; Abschluss und Abholung noch nicht berichtet.",
-      "links": [
-        "tacitus",
-        "cloaks"
-      ]
-    },
-    {
-      "id": "mirelle-fitting",
-      "date": "4712-02-26",
-      "label": "Heute",
-      "time": "Keine genaue Uhrzeit vereinbart",
-      "title": "Anprobe bei Mirelle",
-      "note": "Eigene Maß-/Anprobesitzung vereinbart, noch nicht erfolgt; Entwurf und Preis offen.",
-      "links": [
-        "mirelle"
-      ]
-    },
-    {
       "id": "household-move",
       "date": "4712-02-27",
-      "label": "Zieltermin",
-      "time": "Vorbehaltlich Transportbereitschaft",
-      "title": "Umzug des Haushalts zum Horn",
-      "note": "Kein Konvoi ist bereits abgefahren oder angekommen.",
+      "label": "Heute",
+      "time": "Sonnenaufgang",
+      "title": "Treffen südlich von Westell",
+      "note": "Hinter den letzten Höfen. Der Zug ist noch nicht versammelt oder aufgebrochen.",
       "links": [
         "horn-aufbau",
         "horn-abaddon",
-        "nella"
+        "nella",
+        "hakon",
+        "grumblejack",
+        "elise"
+      ]
+    },
+    {
+      "id": "elise-evening",
+      "date": "4712-02-27",
+      "label": "Heute · vorbehaltlich des Umzugstags",
+      "time": "Abend",
+      "title": "Persönliche Zeit mit Elise",
+      "note": "Styke, Vesper und Elise wollen Zeit füreinander nehmen, sofern die reale Logistik des Tages es zulässt.",
+      "links": [
+        "elise",
+        "vesper",
+        "styke"
       ]
     }
   ],
@@ -191,8 +207,8 @@
     {
       "id": "treasury",
       "label": "Knotenkasse",
-      "value": "4.380 gp 5 sp",
-      "note": "Gezählte liquide Reserve einschließlich 2.300 gp aus Zikomos Cache. Schmuck/Türkise unbewertet; ungezählter Tresorbestand nicht eingerechnet."
+      "value": "4.380 gp 5 sp · zuletzt bestätigt",
+      "note": "Nella erhielt 3.300 gp Kaufauftrag gegen den geplanten Verkauf eines 1.200-gp-Pakets. Das tatsächliche Ergebnis ist Styke am aktuellen Rand noch nicht berichtet; die Wiki veröffentlicht daher nicht die verborgene Offscreen-Abrechnung."
     },
     {
       "id": "level",
@@ -204,7 +220,7 @@
       "id": "guardians",
       "label": "Gebundene Wächter",
       "value": "Hexoraticus · Vexorandian",
-      "note": "Abwechselnde Erholung/Wache, später alte Eingangsposten. Valeria bleibt delegiert; aktueller Heilungsstand unbekannt."
+      "note": "Abwechselnde Erholung und Wache sind angeordnet. Seit der Abreise liegt Styke kein neuer direkter Heilungsbericht vor."
     },
     {
       "id": "potions",
@@ -221,26 +237,32 @@
     {
       "id": "horses",
       "label": "Expeditionspferde",
-      "value": "5 verblieben",
-      "note": "Drei Expeditionspferde kehrten mit dem Kerntrio nach Farholde zurück; zwei waren in der Stadt geblieben."
+      "value": "5 bestätigt · weiterer Kauf beauftragt",
+      "note": "Fünf bestehende Pferde bleiben verfügbar. Der schwere Ritualhengst ist bestellt, aber noch nicht an Styke gemeldet."
     },
     {
       "id": "hakon",
       "label": "Hakon und fünf Männer",
-      "value": "1 gp/Tag je Mann",
-      "note": "Freie bezahlte Männer; sichern weiterhin Folly und Ladung."
+      "value": "1 gp/Tag je Mann · Treffen bei Sonnenaufgang",
+      "note": "Hakon und seine fünf Männer kommen südlich von Westell zusammen."
     },
     {
       "id": "camp",
       "label": "Geplanter Hornhaushalt",
-      "value": "Umzug am 27. Februar",
-      "note": "Die Death’s Head ist noch keine fertige neue Schänke. Zieltermin hängt vom Transport ab."
+      "value": "Abmarsch noch ausstehend",
+      "note": "Treffen bei Sonnenaufgang südlich von Westell; keine Ankunft oder Bauarbeit vorwegnehmen."
     },
     {
       "id": "zikomo-finds",
       "label": "Weitere Hornfunde",
-      "value": "4 Portionen Vision Juice · Schmuck/Türkise",
-      "note": "Vision Juice bei Styke. Schmuck/Türkise geborgen, aber kein im Spiel festgestellter Goldwert."
+      "value": "4 Portionen Vision Juice · Verkauf beauftragt",
+      "note": "Vision Juice ist bei Styke. Schmuck/Türkise sollten verkauft werden; das Ergebnis ist noch nicht berichtet."
+    },
+    {
+      "id": "collective",
+      "label": "Collective",
+      "value": "Vesper · Valeria · Kaitlyn · Tacitus",
+      "note": "Alle vier freiwilligen Plätze sind belegt. Die Verbindung überträgt nur bewusst gesendete Kommunikation, keine passiven Gedanken, Erinnerungen oder Gefühle."
     }
   ],
   "people": [
@@ -273,11 +295,11 @@
         "max": 48
       },
       "conditions": [],
-      "state": "Gerade im Bett neben Kaitlyn erwacht; keine Rüstung oder aktive Haltung für diese Bettszene angenommen.",
-      "resourceNote": "44/48 HP, 16/16 PP. Force Screen vom 25. Februar kostete 1 PP und ist abgelaufen. Die spätere qualifizierte psionische Ruhe erneuerte 16/16 PP; keine erneute natürliche HP-Heilung. Gewöhnlicher Fokus verfügbar; Deep Focus nicht automatisch geladen.",
-      "gearNote": "+1-Großschwert, +1-Mithralkettenhemd, DEX-Gürtel, Zorn, Vexorandian und Hatred; Cloak +1 bei Tacitus, nicht getragen. Vier Portionen Vision Juice.",
+      "state": "Beginnt vor Morgengrauen neben Vesper im großen Eckzimmer des Goldenen Reihers aufzuwachen.",
+      "resourceNote": "44/48 HP, 15/16 PP. Die Force-Screen-Demonstration kostete 1 PP; der kurze Schlaf vor dem Westell-Treffen gewährt Styke keine neue HP- oder PP-Auffüllung.",
+      "gearNote": "+1-Großschwert, +1-Mithralkettenhemd, DEX-Gürtel +2, Cloak of Resistance +2, Zorn, Vexorandian und Hatred; vier Portionen Vision Juice.",
       "pp": {
-        "current": 16,
+        "current": 15,
         "max": 16
       },
       "focus": true
@@ -291,9 +313,9 @@
         "max": 38
       },
       "conditions": [],
-      "state": "Zuletzt am Goldenen Reiher gezeigt, mit Verse; nicht in Stykes Zimmer. Vorgesehener Rekrutierungsgang noch ohne neuen Spielerbericht.",
-      "resourceNote": "38/38 HP. Grad 1 7/8, Grad 2 7/7, Grad 3 3/5. Zwei Gaseous Form und Identify verbucht, Rod 3/3. Essence 4, Manöver nach dem Kampf wieder bereit.",
-      "gearNote": "+1-Mithralkettenhemd und -schild, CHA-Stirnreif +2, Cloak +1, Extend Rod 3/3, Hexoraticus, Ring of Mind Shielding, Glaslinse. Aktiviertes Vigilance bei ihr, nicht eingesetzt.",
+      "state": "Liegt beim aktuellen Rand neben Styke im Eckzimmer; Verse ist bei ihr.",
+      "resourceNote": "38/38 HP. Letzter bestätigter Slotstand war 7/8, 7/7 und 3/5; die tägliche Orakel-Auffrischung ist noch nicht adjudiziert, daher aktuell ?/8, ?/7 und ?/5. Rod 3/3. 26.-Februar-Hedonistic erfüllt.",
+      "gearNote": "+1-Mithralkettenhemd und -schild, CHA-Stirnreif +2, Cloak +1, Extend Rod 3/3, Hexoraticus, Ring of Mind Shielding, Glaslinse und aktiviertes Vigilance.",
       "verse": {
         "present": true,
         "hpCurrent": 19,
@@ -302,17 +324,17 @@
       "slots": [
         {
           "level": 1,
-          "current": 7,
+          "current": null,
           "max": 8
         },
         {
           "level": 2,
-          "current": 7,
+          "current": null,
           "max": 7
         },
         {
           "level": 3,
-          "current": 3,
+          "current": null,
           "max": 5
         }
       ],
@@ -330,9 +352,9 @@
         "max": 46
       },
       "conditions": [],
-      "state": "Zuletzt auf dem Rückweg zum Goldenen Reiher gezeigt. Die reparierte Achselschnalle rieb beim Sitztest nicht mehr; neuer Rekrutierungsbericht fehlt.",
-      "resourceNote": "46/46 HP. Smite 3/3, Challenge 1/1, Touch of Corruption 9/9 (SG 19), Fiendish Boon 1/1. Getragener Stirnreif: CHA 22; Initiative +6, Saves +12/+10/+12.",
-      "gearNote": "+1 Dastard Full Plate, +1-Großschwert, STR-Gürtel +2, Cloak +1, jetzt Headband of Alluring Charisma +2. Ersatz-STR-Gürtel nicht ausgerüstet."
+      "state": "War beim Rekrutierungsgang; am aktuellen Spieler-Rand liegt Styke kein neuer direkter Bericht über ihren weiteren Abend vor.",
+      "resourceNote": "46/46 HP. Smite 3/3, Challenge 1/1, Touch of Corruption 9/9, Fiendish Boon 1/1.",
+      "gearNote": "+1 Dastard Full Plate, +1-Großschwert, STR-Gürtel +2, Cloak +1, CHA-Stirnreif +2."
     }
   ]
 }

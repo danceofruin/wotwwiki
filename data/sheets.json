@@ -4,9 +4,9 @@
     "authority": "GENERATED VIEW. DO NOT USE AS CAMPAIGN AUTHORITY.",
     "generated": true,
     "playerSafe": true,
-    "generatedAt": "2026-10-04T18:26:16+00:00",
-    "reviewedAt": "2026-10-04",
-    "sourceRevision": "d1976abfb511eec610b9ec02cf2f55655cb5f6e73573a928c5a6748be960e744"
+    "generatedAt": "2026-10-05T16:14:34+00:00",
+    "reviewedAt": "2026-10-05",
+    "sourceRevision": "280b9ae756833009d908ad42446e9142e8a244f148a46055d808f77bdfe4b15d"
   },
   "characters": [
     {
@@ -16,7 +16,7 @@
       "level": 7,
       "ancestry": "Aasimar · Angel-Blooded",
       "source": "mechanics/combat/styke-level-7.md",
-      "profile": "Mithralkettenhemd + Inner Eye · ohne abgegebenen Umhang",
+      "profile": "Mithralkettenhemd + Inner Eye · Cloak of Resistance +2",
       "hpMax": 48,
       "stats": {
         "ac": "22",
@@ -27,9 +27,9 @@
         "bab": "+6/+1",
         "cmb": "+10",
         "cmd": "23",
-        "fort": "+7",
-        "ref": "+9",
-        "will": "+9"
+        "fort": "+9",
+        "ref": "+11",
+        "will": "+11"
       },
       "attack": {
         "name": "+1 Großschwert",
@@ -70,7 +70,7 @@
           "sections": [
             {
               "title": "Kampfwerte",
-              "markdown": "**HP aktuell 44/48 · AC 22 · Touch 17 · Flat-Footed 15 · Initiative +8.**\n\nAngelegtes Kampfprofil, keine Behauptung über Rüstung/Haltung im Bett. Ohne Umhang Fort +7, Ref +9, Will +9; mit dem alten +1-Umhang wären es +8/+10/+10. Inner Eye: normal +14/+9, 2d6+10 +1d6 Präzision; Power Attack +12/+7, 2d6+16 +1d6 Präzision. Elektrizitätsresistenz 5."
+              "markdown": "**HP aktuell 44/48 · AC 22 · Touch 17 · Flat-Footed 15 · Initiative +8 · Fort +9 · Ref +11 · Will +11.**\n\nInner Eye: normal +14/+9, 2d6+10 +1d6 Präzision; Power Attack +12/+7, 2d6+16 +1d6 Präzision. Elektrizitätsresistenz 5."
             },
             {
               "title": "Standardmotor",
@@ -94,7 +94,7 @@
           "sections": [
             {
               "title": "Psion und Awakened Blade",
-              "markdown": "**PP 16/Tag · aktuell 16/16.** Hornruhe voll; Force Screen kostete 1 PP und ist abgelaufen. Die folgende qualifizierte psionische Ruhe stellt die PP auf 16/16, ohne zusätzliche natürliche HP-Heilung. Powers: Minor Metamorphosis, Defensive Precognition, Offensive Precognition, Force Screen, Call to Mind. Talente: Detect Psionics, Empathy, Conceal Thoughts."
+              "markdown": "**PP 16/Tag · aktuell 15/16.** Eine Force-Screen-Demonstration kostete 1 PP und ist abgelaufen. Der kurze Schlaf vor dem Westell-Treffen ist keine neue Auffüllung. Powers: Minor Metamorphosis, Defensive Precognition, Offensive Precognition, Force Screen, Call to Mind. Talente: Detect Psionics, Empathy, Conceal Thoughts."
             }
           ]
         },
@@ -114,7 +114,7 @@
           "sections": [
             {
               "title": "Ausrüstung",
-              "markdown": "+1-Großschwert · +1 maßgefertigtes Mithralkettenhemd · DEX-Gürtel +2 · eiserner Stirnreif · Zorn · Vexorandian · Hatred · unbekannter schwarzer Stab. Cloak of Resistance +1 bei Tacitus, nicht getragen; vier Portionen Vision Juice."
+              "markdown": "+1-Großschwert · +1 maßgefertigtes Mithralkettenhemd · DEX-Gürtel +2 · Cloak of Resistance +2 · eiserner Stirnreif · Zorn · Vexorandian · Hatred · unbekannter schwarzer Stab · vier Portionen Vision Juice."
             }
           ]
         }

@@ -3,10 +3,10 @@
 Spielerbezogenes Kampagnenwiki für *Way of the Wicked*.
 
 - Live: https://danceofruin.github.io/wotwwiki/
-- Live-Play-Stand: siehe `data/live.json` (26. Februar 4712 AR, später Vormittag; Farholde, unbenannte Schänke)
-- Artikelarchiv: redaktionell nachgezogen bis zu Stykes Erwachen bei Kaitlyn am 26. Februar 4712 AR
-- Technischer Stand: 4. Oktober 2026
-- Version 4.3.0
+- Live-Play-Stand: siehe `data/live.json` (27. Februar 4712 AR, vor Morgengrauen; Farholde, Goldener Reiher)
+- Artikelarchiv: redaktionell nachgezogen bis zu Stykes Erwachen neben Vesper am 27. Februar 4712 AR
+- Technischer Stand: 5. Oktober 2026
+- Version 4.4.0
 
 ## Live Play
 
@@ -116,3 +116,12 @@ Die gleiche Prüfung läuft bei Pushes und Pull Requests automatisch über GitHu
 - Knotenkasse, zwölf Heiltränke, vier tragbare Magiefunde und ungezählten Tresorbestand getrennt geführt
 - unbekannte Farholde-Ergebnisse und nur vermutete Rotbuch-Veränderungen bewusst ausgespart
 - sämtliche bestehenden Bilder und Bildzuweisungen unverändert gelassen
+
+
+## 4.4.0 · Vor dem ersten Hornumzug
+
+- abgeschlossenen Handoff bis 27. Februar vor Morgengrauen gegen alle 96 Capture-Punkte geprüft
+- Einweihungen, Treffpunkt, Mirelles Anprobe, Stykes +2-Umhang und Tacitus’ neue Bindungen/Forschungsfragen spielersicher nachgezogen
+- noch nicht übermittelte Offscreen-Ergebnisse von Beschaffung, Vandermir-Anfrage, Rekrutierung und Wächtererholung bewusst ausgespart
+- Live-Daten, Charakterbögen, HUD, Chronik, Beziehungen und Quellenregister aktualisiert
+- sämtliche bestehenden Bilddateien und Bildzuordnungen unverändert gelassen
