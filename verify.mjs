@@ -43,6 +43,11 @@ if (data) {
       check(known.has(target), `Fehlender Artikellink: ${article.id} -> ${target}`);
     }
   }
+  for (const article of data.articles) {
+    for (const source of article.sources || []) check(Boolean(data.sources[source]), `Unbekannte Quelle: ${article.id} -> ${source}`);
+    for (const match of (article.body || '').matchAll(/#\/artikel\/([a-z0-9-]+)/g)) check(known.has(match[1]), `Fehlender HTML-Link: ${article.id} -> ${match[1]}`);
+  }
+  for (const plan of data.plans || []) check(known.has(plan.id), `Fehlendes Vorhaben-Ziel: ${plan.id}`);
   for (const edge of data.edges || []) {
     check(known.has(edge.a), `Beziehungsachse verweist auf unbekannte Figur: ${edge.a}`);
     check(known.has(edge.b), `Beziehungsachse verweist auf unbekannte Figur: ${edge.b}`);
@@ -94,3 +99,4 @@ if (failures.length) {
 }
 
 console.log(`OK: ${data.articles.length} Artikel, ${data.edges.length} Beziehungsachsen, ${assetRefs.size} referenzierte Bilddateien.`);
+

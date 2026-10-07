@@ -4,9 +4,9 @@
     "authority": "GENERATED VIEW. DO NOT USE AS CAMPAIGN AUTHORITY.",
     "generated": true,
     "playerSafe": true,
-    "generatedAt": "2026-10-05T16:31:39+00:00",
-    "reviewedAt": "2026-10-05",
-    "sourceRevision": "0975f5193d7557bb62e0ecff28d88e6d66db96dda606fa8b3a28fca13b0b5d51"
+    "generatedAt": "2026-10-07T07:26:51+00:00",
+    "reviewedAt": "2026-10-07",
+    "sourceRevision": "ea44f586c0f42baddef709262eb22aad341ef948d369c815f84a872c01916067"
   },
   "characters": [
     {
@@ -163,7 +163,7 @@
         },
         {
           "name": "INT",
-          "value": "15"
+          "value": "14"
         },
         {
           "name": "WIS",
@@ -171,7 +171,7 @@
         },
         {
           "name": "CHA",
-          "value": "20 getragen"
+          "value": "21 getragen"
         }
       ],
       "tabs": [
@@ -229,7 +229,7 @@
             },
             {
               "title": "Ausrüstung",
-              "markdown": "+1-Mithralkettenhemd · +1 Mithral Heavy Shield · Cloak +1 · CHA-Stirnreif +2 · Extend Rod 3/3 · Verse · Hexoraticus · Ring of Mind Shielding · Glaslinse · aktiviertes Vigilance, nicht eingesetzt."
+              "markdown": "+1-Mithralkettenhemd · +1 Mithral Heavy Shield · Cloak +1 · CHA-Stirnreif +2 · Extend Rod 3/3 · Verse · Hexoraticus · Ring of Mind Shielding, nicht getragen · Glaslinse · Vigilance und Withering, nicht eingesetzt."
             }
           ]
         }

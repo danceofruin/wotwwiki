@@ -4,37 +4,37 @@
     "authority": "GENERATED VIEW. DO NOT USE AS CAMPAIGN AUTHORITY.",
     "generated": true,
     "playerSafe": true,
-    "generatedAt": "2026-10-05T16:31:39+00:00",
-    "reviewedAt": "2026-10-05",
-    "sourceRevision": "1008b51baef530cc57b1fbf63fde5c042c3f114b5c54e3769ccd95a42f4239b4",
-    "sheetRevision": "0975f5193d7557bb62e0ecff28d88e6d66db96dda606fa8b3a28fca13b0b5d51"
+    "generatedAt": "2026-10-07T07:26:51+00:00",
+    "reviewedAt": "2026-10-07",
+    "sourceRevision": "b5e2c6fdf2c97ebe5a688d4d901a5aacca16093b8a14ea021ad10102dc67deec",
+    "sheetRevision": "ea44f586c0f42baddef709262eb22aad341ef948d369c815f84a872c01916067"
   },
   "scene": {
-    "date": "4712-02-27",
-    "dateLabel": "27. Februar 4712 AR",
-    "time": "Vor Morgengrauen · Nachtruhe abgeschlossen",
-    "location": "Farholde · Goldener Reiher · großes Eckzimmer",
-    "locationId": "goldener-reiher",
-    "detail": "Styke beginnt neben Vesper aufzuwachen. Zorn ist bei Styke, Verse bei Vesper. Das vereinbarte Treffen südlich von Westell liegt noch vor ihnen.",
-    "summary": "Der 26. Februar schloss die letzten Farholde-Vorbereitungen: Elise, Hakon und Grumblejack wurden eingeweiht, Mirelles Anprobe und Stykes Umhang wurden abgeschlossen, Tacitus trat dem Collective bei und übernahm zwei Forschungsfragen. Der Umzug ist noch nicht aufgebrochen.",
-    "rest": "Normale Nachtruhe und tägliche Auffrischung abgeschlossen: Styke 48/48 HP und 16/16 PP; Vesper 38/38 HP, Zauberplätze 8/8, 7/7 und 5/5. Keine Unterbrechung oder bewusst verkürzte Ruhe festgestellt."
+    "date": "4712-02-28",
+    "dateLabel": "28. Februar 4712 AR",
+    "time": "Morgen · Nachtruhe abgeschlossen",
+    "location": "Horn von Abaddon · Lustkammer auf Ebene Drei",
+    "locationId": "horn-abaddon",
+    "detail": "Styke, Vesper und Elise sind am Morgen nach ihrem gemeinsamen Abend noch in der beschädigten Lustkammer. Valeria nutzt die bestehenden Quartiere auf Ebene Zwei.",
+    "summary": "Der erste Haushaltszug und die vier Fachkräfte sind eingezogen. Halthus wurde wiederhergestellt, Withering geborgen und die vollständige Gebetsrezitation abseits des Siegels geübt. Ausbau, praktische Ritualprobe und Rekonstruktionen bleiben offen.",
+    "rest": "Normale Nachtruhe und tägliche Auffrischung abgeschlossen: Styke 48/48 HP und 16/16 PP; Vesper 38/38 HP, Zauberplätze 8/8, 7/7, 5/5, Rod 3/3; Valeria 46/46 HP und volle Tagespools."
   },
   "quests": [
     {
       "id": "horn",
       "title": "Horn von Abaddon · Ritual und Aufbau",
       "status": "active",
-      "updated": "4712-02-27",
-      "summary": "Das Horn ist bereinigt, Ritualschrift und zwei Augen sind geborgen; das Ritual bleibt unbegonnen. Der erste Umzug ist für Sonnenaufgang vereinbart, aber noch nicht aufgebrochen.",
+      "updated": "4712-02-28",
+      "summary": "Der Haushalt ist im Horn. Alle drei Augen sind geborgen und nicht eingesetzt; das Ritual bleibt unbegonnen.",
       "known": [
-        "Silbersiegel und Ketten bleiben intakt; keine Gebets- oder Opferuhr läuft.",
-        "Die Dirges bestätigen 666 Gebete an 222 Tagen und die drei Opfer-/Bittenstationen.",
-        "Vigilance ist bei Vesper, Hatred bei Styke; Withering fehlt. Keines der beiden geborgenen Augen ist installiert.",
-        "Thronbefehle müssen gesprochen werden; ein Flüstern reicht.",
-        "Nella erhielt den Auftrag für einen schweren Streitrosskauf und 3.000 gp Ritualmaterial. Ein Ergebnis hat Styke vor dem Schlaf noch nicht erhalten.",
-        "Der kopflose Versteinerte, Artephius und der große Tresortransport bleiben ungelöst."
+        "Silbersiegel und Ketten sind intakt; keine Gebets- oder Opferuhr läuft.",
+        "Die Dirges bestätigen 666 Gebete an 222 Tagen sowie die drei Opfer-/Bittenstationen.",
+        "Hatred ist bei Styke, Vigilance und Withering bei Vesper; keines installiert.",
+        "Halthus lebt in der Stahlzelle auf Ebene Drei; Tamsin führt den Zugang.",
+        "Vesper übte mit beiden Wächtern die vollständige Rezitation abseits des Siegels; praktische Probe steht aus.",
+        "Ritualhengst und 3.000 gp Material sind beschafft und unbenutzt."
       ],
-      "next": "Bei Sonnenaufgang südlich von Westell sammeln und erst dann den tatsächlichen Umzug spielen; Carnitheria Rex erfordert anschließend noch einen vollen Rekonstruktionstag.",
+      "next": "Praktische Ritualprobe, Artephius-Reparatur und Carnitherias tatsächlichen Rekonstruktionstag nach Entscheidungen und echter Arbeit angehen.",
       "links": [
         "horn-abaddon",
         "dirges-apollyon",
@@ -67,15 +67,15 @@
       "id": "seventh",
       "title": "Siebter Knoten · White Ravens",
       "status": "active",
-      "updated": "4712-02-26",
-      "summary": "Elise weiß, dass das Horn gefunden wurde, der Einsatz 222 Tage dauert und der Umzug bei Sonnenaufgang südlich von Westell beginnt. Den eigentlichen Weg kennt sie noch nicht.",
+      "updated": "4712-02-28",
+      "summary": "Elise begleitete den Zug und kennt den Weg sowie gewöhnliche Besichtigungsbereiche. Die übrigen White Ravens bleiben in Farholde.",
       "known": [
-        "Elise will den ersten Zug begleiten, um den Weg für die rückwärtige Unterstützung kennenzulernen.",
+        "Elise ist im Horn; der gemeinsame Abend mit Styke und Vesper fand statt.",
+        "Keine automatische Offenlegung von Augen-, Sanctum- oder Forschungsgeheimnissen.",
         "Die übrigen White Ravens bleiben in Farholde.",
-        "Der Siebte Knoten hat keinen ernsthaften zweiten Suchtrupp auf der Spur des Neunten gefunden.",
-        "Elises Botenfedern sind bislang nur ihr Vorschlag; Verfügbarkeit und Herstellung sind nicht geprüft."
+        "Botenfedern sind weiterhin nur ein Vorschlag um etwa 300 gp; Verfügbarkeit und Herstellung nicht geprüft."
       ],
-      "next": "Elise den tatsächlichen Weg zeigen und die Fernkommunikation später mit Tacitus prüfen.",
+      "next": "Elises Aufenthalt und spätere Rückreise tatsächlich entscheiden; Flug erst bei wirklich gerufenem Rex.",
       "links": [
         "white-ravens",
         "elise",
@@ -90,15 +90,15 @@
       "id": "crafting",
       "title": "Magische Ausrüstung",
       "status": "active",
-      "updated": "4712-02-26",
+      "updated": "4712-02-28",
       "summary": "Stykes Cloak of Resistance +2 ist fertig, übergeben und angelegt. In der bezahlten Reihe verbleiben zwei Umhangaufwertungen und drei Amulette.",
       "known": [
         "Die vier früheren +1-Aufwertungen, beide Gürtel, Valerias Charisma-Stirnreif und Stykes +2-Umhang sind fertig.",
         "Verbleibende Reihe: Vespers Umhang +1 auf +2, Valerias Umhang +1 auf +2, danach drei Amulette der Natürlichen Rüstung +1.",
         "Am 26. Februar begann kein zweiter dauerhafter Gegenstand.",
-        "Artephius-Pläne liegen bei Tacitus; die Ortsuntersuchung bleibt offen."
+        "Tacitus und Vesper diagnostizierten Artephius im Horn. Zahnrad und totes Gehirn fehlen; das Ersatzreservoir ist vorhanden, nicht installiert."
       ],
-      "next": "Die Werkstatt zum Horn verlegen und die bezahlte Reihe an echten Arbeitstagen fortsetzen.",
+      "next": "Die bezahlte Reihe an tatsächlichen vollen Arbeitstagen im Horn fortsetzen.",
       "links": [
         "tacitus",
         "knittel",
@@ -110,14 +110,15 @@
       "id": "red-book",
       "title": "Das rote Buch",
       "status": "active",
-      "updated": "4712-02-26",
-      "summary": "Letzter beobachteter Zustand Stirring. Am 26. Februar wurde das Buch nicht erneut geprüft; es gibt keine bekannte neue Umschreibung.",
+      "updated": "4712-02-28",
+      "summary": "Am 27. Februar wurde eine reproduzierbare schriftliche Reaktion beobachtet. Herkunft und weitere ungelesene Änderungen bleiben offen.",
       "known": [
-        "Aura und ungeklärte Herkunft bleiben wie bekannt.",
-        "Vesper erhielt Stykes Bericht über Mirelles Anprobe, war dort aber nicht anwesend.",
-        "Ohne Untersuchung des Buchs wird keine sichtbare Änderung angenommen."
+        "Die Schrift reagierte wiederholbar auf Schreiben und Vesper-getragene Erfahrungen.",
+        "Das Buch konnte sich selbst nicht benennen; eine Streichung blieb bestehen.",
+        "Während Reise und Rast erschien ein neuer Text mit dem Motiv zweier Hände.",
+        "Seit dem Schlaf wurde noch kein weiterer Text gelesen."
       ],
-      "next": "Erst eine tatsächlich wahrgenommene, überprüfte Änderung ergänzen.",
+      "next": "Nur tatsächlich gelesene und überprüfte Änderungen ergänzen.",
       "links": [
         "rotes-buch",
         "zwischen-den-seiten",
@@ -127,18 +128,18 @@
     {
       "id": "relocation",
       "title": "Haushalt und Arbeiterschaft zum Horn",
-      "status": "scheduled",
+      "status": "completed",
       "updated": "4712-02-27",
-      "summary": "Treffen bei Sonnenaufgang südlich von Westell, hinter den letzten Höfen. Der Zug ist noch nicht versammelt oder aufgebrochen.",
+      "summary": "Der vollständige erste Haushaltszug erreichte das Horn am 27. Februar.",
       "known": [
-        "Nella koordiniert Vorräte, Wagen und Packkapazität; Styke hat vor dem Schlaf keinen Abschlussbericht erhalten.",
-        "Vesper meldete am Abend einige brauchbare Kandidaten, aber noch keine Person, der sie den Hornort anvertrauen wollte.",
-        "Hakon und seine fünf Männer kommen zum unveränderten Vertrag von 1 gp pro Tag und Mann.",
-        "Grumblejack zieht mit Varlet ein; Elise begleitet den ersten Weg, die übrigen White Ravens bleiben in Farholde.",
-        "Kaitlyn wollte Vandermir nach Stadtunterkunft und Ausbildung für Angehörige fragen; ihr Ergebnis ist Styke am aktuellen Rand noch nicht bekannt.",
-        "Kein Konvoi, neuer Arbeiter oder Angehöriger ist bereits im Horn angekommen."
+        "Branna Cole, Osric Fenlow, Edda Marr und Darric Holt wohnen und arbeiten in der Siedlungszone auf Ebene Eins.",
+        "Je 1 gp Tageslohn, Verpflegung und Unterkunft sind vereinbart.",
+        "Osrics Partnerperson und zwei Kinder sind durch die berichtete Vandermir-Zusage in Farholde abgesichert.",
+        "Hakon und seine fünf Männer nutzen die alten Wächterquartiere, Grumblejack die Death’s Head Tavern.",
+        "Erstes gemeinsames Abendessen und Bierausschank erfolgten.",
+        "Betten, Türen, Schmiede, Untersuchung und Tischraum sind begonnen, aber nicht fertig."
       ],
-      "next": "Aufwachen, die tatsächlichen Berichte einholen und den Westell-Treffpunkt erreichen.",
+      "next": "Den Ausbau über tatsächliche Arbeit und Berichte weiterführen.",
       "links": [
         "horn-aufbau",
         "nella",
@@ -172,43 +173,13 @@
       ]
     }
   ],
-  "appointments": [
-    {
-      "id": "household-move",
-      "date": "4712-02-27",
-      "label": "Heute",
-      "time": "Sonnenaufgang",
-      "title": "Treffen südlich von Westell",
-      "note": "Hinter den letzten Höfen. Der Zug ist noch nicht versammelt oder aufgebrochen.",
-      "links": [
-        "horn-aufbau",
-        "horn-abaddon",
-        "nella",
-        "hakon",
-        "grumblejack",
-        "elise"
-      ]
-    },
-    {
-      "id": "elise-evening",
-      "date": "4712-02-27",
-      "label": "Heute · vorbehaltlich des Umzugstags",
-      "time": "Abend",
-      "title": "Persönliche Zeit mit Elise",
-      "note": "Styke, Vesper und Elise wollen Zeit füreinander nehmen, sofern die reale Logistik des Tages es zulässt.",
-      "links": [
-        "elise",
-        "vesper",
-        "styke"
-      ]
-    }
-  ],
+  "appointments": [],
   "missions": [
     {
       "id": "treasury",
       "label": "Knotenkasse",
-      "value": "4.380 gp 5 sp · zuletzt bestätigt",
-      "note": "Nella erhielt 3.300 gp Kaufauftrag gegen den geplanten Verkauf eines 1.200-gp-Pakets. Das tatsächliche Ergebnis ist Styke am aktuellen Rand noch nicht berichtet; die Wiki veröffentlicht daher nicht die verborgene Offscreen-Abrechnung."
+      "value": "2.280 gp 5 sp",
+      "note": "Bestätigte liquide Kasse; weitere 6.000 gp Materialvorauszahlung getrennt."
     },
     {
       "id": "level",
@@ -220,7 +191,7 @@
       "id": "guardians",
       "label": "Gebundene Wächter",
       "value": "Hexoraticus · Vexorandian",
-      "note": "Abwechselnde Erholung und Wache sind angeordnet. Seit der Abreise liegt Styke kein neuer direkter Heilungsbericht vor."
+      "note": "Abwechselnde Wache und Erholung; beide nahmen an Vespers Rezitationsübung teil. Vexors permanenter Konstitutionsentzug bleibt bestehen."
     },
     {
       "id": "potions",
@@ -231,32 +202,32 @@
     {
       "id": "vault",
       "label": "Großer Tresorbestand",
-      "value": "Nicht gezählt",
-      "note": "Münztruhen und schwere Einrichtung blieben im Tresor und gehören nicht zur liquiden Kasse."
+      "value": "45.500 gp · nicht liquide",
+      "note": "Großer Tresorbestand bleibt untransportiert; separate 920-gp-Wertgegenstände nicht doppelt zählen."
     },
     {
       "id": "horses",
       "label": "Expeditionspferde",
-      "value": "5 bestätigt · weiterer Kauf beauftragt",
-      "note": "Fünf bestehende Pferde bleiben verfügbar. Der schwere Ritualhengst ist bestellt, aber noch nicht an Styke gemeldet."
+      "value": "Bestehende Pferde und Ritualhengst vorhanden",
+      "note": "Varlet bleibt bei Grumblejack; der separate schwere Ritualhengst ist beschafft und unbenutzt."
     },
     {
       "id": "hakon",
       "label": "Hakon und fünf Männer",
-      "value": "1 gp/Tag je Mann · Treffen bei Sonnenaufgang",
-      "note": "Hakon und seine fünf Männer kommen südlich von Westell zusammen."
+      "value": "Im Horn · sechs bezahlte Männer",
+      "note": "Hakon und seine fünf Männer: je 1 gp/Tag, Wachen in Paaren, Transport und Holzarbeiten."
     },
     {
       "id": "camp",
       "label": "Geplanter Hornhaushalt",
-      "value": "Abmarsch noch ausstehend",
-      "note": "Treffen bei Sonnenaufgang südlich von Westell; keine Ankunft oder Bauarbeit vorwegnehmen."
+      "value": "Haushalt eingezogen",
+      "note": "Seit dem 27. Februar; Ausbau und Werkstätten noch nicht fertig."
     },
     {
       "id": "zikomo-finds",
       "label": "Weitere Hornfunde",
-      "value": "4 Portionen Vision Juice · Verkauf beauftragt",
-      "note": "Vision Juice ist bei Styke. Schmuck/Türkise sollten verkauft werden; das Ergebnis ist noch nicht berichtet."
+      "value": "4 Portionen Vision Juice",
+      "note": "Bei Styke; das Schmuck-/Türkispaket wurde verkauft, die Beschaffung berichtet."
     },
     {
       "id": "collective",
@@ -283,7 +254,12 @@
     "jurak",
     "ezra-thrice-damned",
     "vexorandian",
-    "hexoraticus"
+    "hexoraticus",
+    "branna-cole",
+    "osric-fenlow",
+    "edda-marr",
+    "darric-holt",
+    "halthus"
   ],
   "party": [
     {
@@ -295,7 +271,7 @@
         "max": 48
       },
       "conditions": [],
-      "state": "Beginnt vor Morgengrauen neben Vesper im großen Eckzimmer des Goldenen Reihers aufzuwachen.",
+      "state": "Am Morgen mit Vesper und Elise in der beschädigten Lustkammer auf Ebene Drei.",
       "resourceNote": "48/48 HP, 16/16 PP nach abgeschlossener Nachtruhe und täglicher Auffrischung. Die vorherige Force-Screen-Ausgabe ist aufgefüllt.",
       "gearNote": "+1-Großschwert, +1-Mithralkettenhemd, DEX-Gürtel +2, Cloak of Resistance +2, Zorn, Vexorandian und Hatred; vier Portionen Vision Juice.",
       "pp": {
@@ -313,9 +289,9 @@
         "max": 38
       },
       "conditions": [],
-      "state": "Liegt beim aktuellen Rand neben Styke im Eckzimmer; Verse ist bei ihr.",
-      "resourceNote": "38/38 HP; tägliche Auffrischung abgeschlossen: 8/8, 7/7 und 5/5 Zauberplätze. Rod 3/3. 26.-Februar-Hedonistic erfüllt.",
-      "gearNote": "+1-Mithralkettenhemd und -schild, CHA-Stirnreif +2, Cloak +1, Extend Rod 3/3, Hexoraticus, Ring of Mind Shielding, Glaslinse und aktiviertes Vigilance.",
+      "state": "Bei Styke und Elise in der Lustkammer; Verse ist bei ihr.",
+      "resourceNote": "38/38 HP; Zauberplätze 8/8, 7/7, 5/5 und Rod 3/3 nach normaler Nachtruhe. 27.-Februar-Hedonistic erfüllt; kein Ergebnis für den 28. vorweggenommen.",
+      "gearNote": "+1-Mithralkettenhemd und -schild, CHA-Stirnreif +2, Cloak +1, Extend Rod, Hexoraticus, Vigilance und Withering nicht eingesetzt. Ring of Mind Shielding identifiziert, nicht getragen; Glaslinse unidentifiziert.",
       "verse": {
         "present": true,
         "hpCurrent": 19,
@@ -352,7 +328,7 @@
         "max": 46
       },
       "conditions": [],
-      "state": "War beim Rekrutierungsgang; am aktuellen Spieler-Rand liegt Styke kein neuer direkter Bericht über ihren weiteren Abend vor.",
+      "state": "Im Horn, in den bestehenden Quartieren auf Ebene Zwei.",
       "resourceNote": "46/46 HP. Smite 3/3, Challenge 1/1, Touch of Corruption 9/9, Fiendish Boon 1/1.",
       "gearNote": "+1 Dastard Full Plate, +1-Großschwert, STR-Gürtel +2, Cloak +1, CHA-Stirnreif +2."
     }

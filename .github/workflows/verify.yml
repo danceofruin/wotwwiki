@@ -19,3 +19,5 @@ jobs:
       - run: node verify.mjs
       - run: node scripts/test-live.mjs
       - run: node scripts/test-hud.mjs
+
+      - run: node scripts/test-calendar.mjs

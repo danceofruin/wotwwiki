@@ -5,8 +5,8 @@
     "generatedView": true,
     "playerSafe": true,
     "source": "danceofruin/wotwGPT mechanics/combat/{styke,vesper,valeria}-level-7.md + current/LIVE_STATE.md",
-    "updated": "2026-10-05",
-    "revision": "level-7-handoff-0227-rest-complete"
+    "updated": "2026-10-07",
+    "revision": "level-7-horn-0228-wiki-audit"
   },
   "ui": {
     "defaultCharacterOpen": "",
@@ -918,7 +918,7 @@
             },
             {
               "name": "Smite + Challenge",
-              "detail": "Mit Order-Bonus +19/+13 · 2d6+25."
+              "detail": "Mit Order-Bonus +18/+13 · 2d6+25."
             },
             {
               "name": "Demoralize",
