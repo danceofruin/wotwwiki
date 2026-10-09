@@ -4,9 +4,9 @@
     "authority": "GENERATED VIEW. DO NOT USE AS CAMPAIGN AUTHORITY.",
     "generated": true,
     "playerSafe": true,
-    "generatedAt": "2026-10-07T07:26:51+00:00",
-    "reviewedAt": "2026-10-07",
-    "sourceRevision": "ea44f586c0f42baddef709262eb22aad341ef948d369c815f84a872c01916067"
+    "generatedAt": "2026-10-09T13:17:32+00:00",
+    "reviewedAt": "2026-10-09",
+    "sourceRevision": "99c5973fed61b4c21d69f4e7e275555924526375e01518de6a6cb16cdf6078d2"
   },
   "characters": [
     {
@@ -16,12 +16,12 @@
       "level": 7,
       "ancestry": "Aasimar · Angel-Blooded",
       "source": "mechanics/combat/styke-level-7.md",
-      "profile": "Mithralkettenhemd + Inner Eye · Cloak of Resistance +2",
+      "profile": "Mithralkettenhemd + Inner Eye · Cloak +2 · Amulett +1",
       "hpMax": 48,
       "stats": {
-        "ac": "22",
+        "ac": "23",
         "touch": "17",
-        "flatFooted": "15",
+        "flatFooted": "16",
         "initiative": "+8",
         "speed": "30 ft",
         "bab": "+6/+1",
@@ -70,7 +70,7 @@
           "sections": [
             {
               "title": "Kampfwerte",
-              "markdown": "**HP aktuell 48/48 · AC 22 · Touch 17 · Flat-Footed 15 · Initiative +8 · Fort +9 · Ref +11 · Will +11.**\n\nInner Eye: normal +14/+9, 2d6+10 +1d6 Präzision; Power Attack +12/+7, 2d6+16 +1d6 Präzision. Elektrizitätsresistenz 5."
+              "markdown": "**HP aktuell 48/48 · AC 23 · Touch 17 · Flat-Footed 16 · Initiative +8 · Fort +9 · Ref +11 · Will +11.**\n\nInner Eye: normal +14/+9, 2d6+10 +1d6 Präzision; Power Attack +12/+7, 2d6+16 +1d6 Präzision. Elektrizitätsresistenz 5."
             },
             {
               "title": "Standardmotor",
@@ -94,7 +94,7 @@
           "sections": [
             {
               "title": "Psion und Awakened Blade",
-              "markdown": "**PP 16/Tag · aktuell 16/16.** Normale Nachtruhe und tägliche Auffrischung abgeschlossen; die vorherige Force-Screen-Ausgabe ist aufgefüllt. Powers: Minor Metamorphosis, Defensive Precognition, Offensive Precognition, Force Screen, Call to Mind. Talente: Detect Psionics, Empathy, Conceal Thoughts."
+              "markdown": "**PP 16/Tag · aktuell 16/16.** Letzte abgeschlossene Nachtruhe: 1./2. März; neuer Schlaf erst begonnen; die vorherige Force-Screen-Ausgabe ist aufgefüllt. Powers: Minor Metamorphosis, Defensive Precognition, Offensive Precognition, Force Screen, Call to Mind. Talente: Detect Psionics, Empathy, Conceal Thoughts."
             }
           ]
         },
@@ -114,7 +114,7 @@
           "sections": [
             {
               "title": "Ausrüstung",
-              "markdown": "+1-Großschwert · +1 maßgefertigtes Mithralkettenhemd · DEX-Gürtel +2 · Cloak of Resistance +2 · eiserner Stirnreif · Zorn · Vexorandian · Hatred · unbekannter schwarzer Stab · vier Portionen Vision Juice."
+              "markdown": "+1-Großschwert · +1 maßgefertigtes Mithralkettenhemd · DEX-Gürtel +2 · Cloak of Resistance +2 · Amulett der Natürlichen Rüstung +1 · eiserner Stirnreif · Zorn · Vexorandian · Hatred · vier Portionen Vision Juice."
             }
           ]
         }
@@ -127,20 +127,20 @@
       "level": 7,
       "ancestry": "Tiefling · Asura-Spawn",
       "source": "mechanics/combat/vesper-level-7.md",
-      "profile": "Mithralkettenhemd + Mithralschild + CHA-Stirnreif",
+      "profile": "Mithralkettenhemd und Schild · Cloak +2 · Amulett +1",
       "hpMax": 38,
       "stats": {
-        "ac": "23",
+        "ac": "24",
         "touch": "15",
-        "flatFooted": "18",
+        "flatFooted": "19",
         "initiative": "+12 mit Verse",
         "speed": "30 ft",
         "bab": "+5",
         "cmb": "+5",
         "cmd": "17",
-        "fort": "+3",
-        "ref": "+9",
-        "will": "+10"
+        "fort": "+4",
+        "ref": "+10",
+        "will": "+11"
       },
       "attack": {
         "name": "Sun's Gleam",
@@ -181,7 +181,7 @@
           "sections": [
             {
               "title": "Kampfwerte",
-              "markdown": "**HP 38/38 · AC 23 · Touch 15 · Flat-Footed 18 · Initiative +12 mit Verse / +8 ohne · Zauber-SG 15/16/17/18 · Konzentration +12.**"
+              "markdown": "**HP 38/38 · AC 24 · Touch 15 · Flat-Footed 19 · Initiative +12 mit Verse / +8 ohne · Zauber-SG 15/16/17/18 · Konzentration +12.**"
             }
           ]
         },
@@ -191,7 +191,7 @@
           "sections": [
             {
               "title": "Aktuelle Plätze",
-              "markdown": "Grad 1: **8/8** · Grad 2: **7/7** · Grad 3: **5/5**. Normale Nachtruhe und tägliche Auffrischung abgeschlossen. Extend Rod **3/3**."
+              "markdown": "Grad 1: **8/8** · Grad 2: **7/7** · Grad 3: **5/5**. Letzte abgeschlossene Nachtruhe: 1./2. März; neuer Schlaf erst begonnen. Extend Rod **3/3**."
             },
             {
               "title": "Neue Auswahl",
@@ -229,7 +229,7 @@
             },
             {
               "title": "Ausrüstung",
-              "markdown": "+1-Mithralkettenhemd · +1 Mithral Heavy Shield · Cloak +1 · CHA-Stirnreif +2 · Extend Rod 3/3 · Verse · Hexoraticus · Ring of Mind Shielding, nicht getragen · Glaslinse · Vigilance und Withering, nicht eingesetzt."
+              "markdown": "+1-Mithralkettenhemd · +1 Mithral Heavy Shield · Cloak +2 · CHA-Stirnreif +2 · Extend Rod 3/3 · Verse · Hexoraticus · Amulett +1 · Ring of Mind Shielding, getragen · Lens of Detection · Vigilance und Withering, nicht eingesetzt."
             }
           ]
         }
@@ -242,7 +242,7 @@
       "level": 7,
       "ancestry": "Mensch · Karfeld",
       "source": "mechanics/combat/valeria-level-7.md",
-      "profile": "+1 Dastard Full Plate · STR-Gürtel · CHA-Stirnreif +2",
+      "profile": "+1 Dastard Full Plate · STR-Gürtel · CHA-Stirnreif +2 · Cloak +2",
       "hpMax": 46,
       "stats": {
         "ac": "21",
@@ -253,9 +253,9 @@
         "bab": "+7/+2",
         "cmb": "+11",
         "cmd": "22",
-        "fort": "+12",
-        "ref": "+10",
-        "will": "+12"
+        "fort": "+13",
+        "ref": "+11",
+        "will": "+13"
       },
       "attack": {
         "name": "+1-Großschwert",
@@ -296,7 +296,7 @@
           "sections": [
             {
               "title": "Kampfwerte",
-              "markdown": "**HP 46/46 · AC 21 · Initiative +6 · BAB +7/+2 · Saves +12/+10/+12.** Normal +12/+7, 2d6+7; PA +10/+5, 2d6+13. PA + Smite +16/+11, 2d6+20; mit Challenge und qualifiziertem Order-Bonus +18/+13, 2d6+25. Smite Deflection +6, mit Dastard AC 29 gegen das passende Ziel."
+              "markdown": "**HP 46/46 · AC 21 · Initiative +6 · BAB +7/+2 · Saves +13/+11/+13.** Normal +12/+7, 2d6+7; PA +10/+5, 2d6+13. PA + Smite +16/+11, 2d6+20; mit Challenge und qualifiziertem Order-Bonus +18/+13, 2d6+25. Smite Deflection +6, mit Dastard AC 29 gegen das passende Ziel."
             },
             {
               "title": "Kampfmotor",
@@ -334,7 +334,7 @@
           "sections": [
             {
               "title": "Ausrüstung",
-              "markdown": "+1 Dastard Full Plate · +1-Großschwert · Belt of Giant Strength +2 · Cloak of Resistance +1 · Headband of Alluring Charisma +2, angelegt · Mirelles Rüstungsunterkleidung · Ersatz-STR-Gürtel nicht ausgerüstet. Achselschnalle repariert, kein Scheuern beim Sitztest."
+              "markdown": "+1 Dastard Full Plate · +1-Großschwert · Belt of Giant Strength +2 · Cloak of Resistance +2 · Headband of Alluring Charisma +2, angelegt · Mirelles Rüstungsunterkleidung. Achselschnalle repariert, kein Scheuern beim Sitztest."
             }
           ]
         }

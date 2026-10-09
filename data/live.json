@@ -4,37 +4,35 @@
     "authority": "GENERATED VIEW. DO NOT USE AS CAMPAIGN AUTHORITY.",
     "generated": true,
     "playerSafe": true,
-    "generatedAt": "2026-10-07T07:26:51+00:00",
-    "reviewedAt": "2026-10-07",
-    "sourceRevision": "b5e2c6fdf2c97ebe5a688d4d901a5aacca16093b8a14ea021ad10102dc67deec",
-    "sheetRevision": "ea44f586c0f42baddef709262eb22aad341ef948d369c815f84a872c01916067"
+    "generatedAt": "2026-10-09T13:17:32+00:00",
+    "reviewedAt": "2026-10-09",
+    "sourceRevision": "585e4e3f8dc0653fb3f52ef6e9b7ac1648867b5f7cfc07ff000febc5539ec5d2",
+    "sheetRevision": "99c5973fed61b4c21d69f4e7e275555924526375e01518de6a6cb16cdf6078d2"
   },
   "scene": {
-    "date": "4712-02-28",
-    "dateLabel": "28. Februar 4712 AR",
-    "time": "Morgen · Nachtruhe abgeschlossen",
-    "location": "Horn von Abaddon · Lustkammer auf Ebene Drei",
+    "date": "4712-03-03",
+    "dateLabel": "3. März 4712 AR",
+    "time": "Nach Mitternacht · vor dem ersten Sonnenaufgang",
+    "location": "Horn von Abaddon · altes Schlafzimmer 2-8",
     "locationId": "horn-abaddon",
-    "detail": "Styke, Vesper und Elise sind am Morgen nach ihrem gemeinsamen Abend noch in der beschädigten Lustkammer. Valeria nutzt die bestehenden Quartiere auf Ebene Zwei.",
-    "summary": "Der erste Haushaltszug und die vier Fachkräfte sind eingezogen. Halthus wurde wiederhergestellt, Withering geborgen und die vollständige Gebetsrezitation abseits des Siegels geübt. Ausbau, praktische Ritualprobe und Rekonstruktionen bleiben offen.",
-    "rest": "Normale Nachtruhe und tägliche Auffrischung abgeschlossen: Styke 48/48 HP und 16/16 PP; Vesper 38/38 HP, Zauberplätze 8/8, 7/7, 5/5, Rod 3/3; Valeria 46/46 HP und volle Tagespools."
+    "detail": "Styke schläft zwischen Vesper und Valeria. Nur das Kerntrio ist hier; das rote Buch liegt geschlossen mit Schreibzeug am Bett.",
+    "summary": "Erstes Mitternachtsgebet und Halthus’ Opfer vollzogen: 1/666 Gebete, 1/3 Opfer. Silbersiegel und Ketten intakt; erstes Morgengebet noch offen.",
+    "rest": "Styke 48/48 HP und 16/16 PP; Vesper 38/38 HP, Zauberplätze 8/8, 7/7, 5/5 und Extend Rod 3/3; Valeria 46/46 HP, Smite 3/3, Challenge 1/1, Touch 9/9, Boon 1/1. Die letzte abgeschlossene Nachtruhe war vom 1. auf den 2. März. Der Schlaf nach dem Ritual hat erst begonnen und zählt noch nicht als neue Auffrischung."
   },
   "quests": [
     {
       "id": "horn",
       "title": "Horn von Abaddon · Ritual und Aufbau",
       "status": "active",
-      "updated": "4712-02-28",
-      "summary": "Der Haushalt ist im Horn. Alle drei Augen sind geborgen und nicht eingesetzt; das Ritual bleibt unbegonnen.",
+      "updated": "4712-03-03",
+      "summary": "Das Ritual hat tatsächlich begonnen: 1/666 Gebete, 1/3 Opfer; vor dem ersten Morgengebet.",
       "known": [
-        "Silbersiegel und Ketten sind intakt; keine Gebets- oder Opferuhr läuft.",
-        "Die Dirges bestätigen 666 Gebete an 222 Tagen sowie die drei Opfer-/Bittenstationen.",
-        "Hatred ist bei Styke, Vigilance und Withering bei Vesper; keines installiert.",
-        "Halthus lebt in der Stahlzelle auf Ebene Drei; Tamsin führt den Zugang.",
-        "Vesper übte mit beiden Wächtern die vollständige Rezitation abseits des Siegels; praktische Probe steht aus.",
-        "Ritualhengst und 3.000 gp Material sind beschafft und unbenutzt."
+        "Das erste Mitternachtsgebet, Supplication to Darkness, ist abgeschlossen. Hexoraticus führte die Rezitation, Vexorandian unterstützte sie. Vesper wusch das Siegel mit unheiligem Wasser und vollzog Halthus’ Opfer; Valeria und Tamsin hielten ihn. Styke war anwesend. Stand: 1 von 666 Gebeten und 1 von 3 Opfern. Grünes Licht wurde sichtbar; Silbersiegel und Ketten blieben physisch intakt.",
+        "Alle drei Augen bleiben außerhalb der Fassungen.",
+        "Carnitheria Rex ist erschaffen und wurde bereits für Flüge eingesetzt.",
+        "Der innere Kreis kennt den besprochenen Ritualplan; die fünf Wachmänner sind keine Ritualzeugen."
       ],
-      "next": "Praktische Ritualprobe, Artephius-Reparatur und Carnitherias tatsächlichen Rekonstruktionstag nach Entscheidungen und echter Arbeit angehen.",
+      "next": "Als Nächstes steht das erste Morgengebet an, im Fenster bis eine Stunde nach Sonnenaufgang am 3. März. Es ist noch nicht vollzogen. Vesper will dabei sein, bevor sie weiter schläft.",
       "links": [
         "horn-abaddon",
         "dirges-apollyon",
@@ -90,15 +88,14 @@
       "id": "crafting",
       "title": "Magische Ausrüstung",
       "status": "active",
-      "updated": "4712-02-28",
-      "summary": "Stykes Cloak of Resistance +2 ist fertig, übergeben und angelegt. In der bezahlten Reihe verbleiben zwei Umhangaufwertungen und drei Amulette.",
+      "updated": "4712-03-03",
+      "summary": "Alle drei Kernfiguren tragen nun Cloak of Resistance +2. Stykes Amulett der Natürlichen Rüstung +1 wurde am 1. März, Vespers am 2. März fertiggestellt und angelegt. Valerias Amulett und der Handy Haversack bleiben in der bezahlten Arbeitsreihe.",
       "known": [
-        "Die vier früheren +1-Aufwertungen, beide Gürtel, Valerias Charisma-Stirnreif und Stykes +2-Umhang sind fertig.",
-        "Verbleibende Reihe: Vespers Umhang +1 auf +2, Valerias Umhang +1 auf +2, danach drei Amulette der Natürlichen Rüstung +1.",
-        "Am 26. Februar begann kein zweiter dauerhafter Gegenstand.",
-        "Tacitus und Vesper diagnostizierten Artephius im Horn. Zahnrad und totes Gehirn fehlen; das Ersatzreservoir ist vorhanden, nicht installiert."
+        "Alle drei Umhänge +2 fertig und getragen.",
+        "Stykes Amulett +1 am 1. März und Vespers am 2. März fertig und angelegt.",
+        "1.000 gp ursprüngliches Material für Valerias Amulett und getrennt 1.000 gp Haversack-Material verbleiben."
       ],
-      "next": "Die bezahlte Reihe an tatsächlichen vollen Arbeitstagen im Horn fortsetzen.",
+      "next": "Valerias Amulett im nächsten tatsächlichen vollen Arbeitsblock; Haversack frühestens danach. Keine parallelen Fertigungs- oder Forschungstage.",
       "links": [
         "tacitus",
         "knittel",
@@ -110,15 +107,14 @@
       "id": "red-book",
       "title": "Das rote Buch",
       "status": "active",
-      "updated": "4712-02-28",
-      "summary": "Am 27. Februar wurde eine reproduzierbare schriftliche Reaktion beobachtet. Herkunft und weitere ungelesene Änderungen bleiben offen.",
+      "updated": "4712-03-03",
+      "summary": "Styke ist seit dem 28. Februar direkt als Leser gebunden. Zwei autonome Randantworten wurden tatsächlich gelesen.",
       "known": [
-        "Die Schrift reagierte wiederholbar auf Schreiben und Vesper-getragene Erfahrungen.",
-        "Das Buch konnte sich selbst nicht benennen; eine Streichung blieb bestehen.",
-        "Während Reise und Rast erschien ein neuer Text mit dem Motiv zweier Hände.",
-        "Seit dem Schlaf wurde noch kein weiterer Text gelesen."
+        "Das Buch bejaht Vespers Frage nach hörbarer Sprache und will seine vergessene Stimme wiederfinden.",
+        "Keine neue hörbare Stimme oder geklärte Herkunft festgestellt.",
+        "Buch geschlossen am Bett, Vesper bleibt Verwahrerin."
       ],
-      "next": "Nur tatsächlich gelesene und überprüfte Änderungen ergänzen.",
+      "next": "Weitere Antworten tatsächlich lesen und untersuchen; Sprachwunsch ist keine verliehene Fähigkeit.",
       "links": [
         "rotes-buch",
         "zwischen-den-seiten",
@@ -129,17 +125,14 @@
       "id": "relocation",
       "title": "Haushalt und Arbeiterschaft zum Horn",
       "status": "completed",
-      "updated": "4712-02-27",
-      "summary": "Der vollständige erste Haushaltszug erreichte das Horn am 27. Februar.",
+      "updated": "4712-03-03",
+      "summary": "Der Haushalt ist eingezogen; Aufbau und laufende Versorgung bestehen.",
       "known": [
-        "Branna Cole, Osric Fenlow, Edda Marr und Darric Holt wohnen und arbeiten in der Siedlungszone auf Ebene Eins.",
-        "Je 1 gp Tageslohn, Verpflegung und Unterkunft sind vereinbart.",
-        "Osrics Partnerperson und zwei Kinder sind durch die berichtete Vandermir-Zusage in Farholde abgesichert.",
-        "Hakon und seine fünf Männer nutzen die alten Wächterquartiere, Grumblejack die Death’s Head Tavern.",
-        "Erstes gemeinsames Abendessen und Bierausschank erfolgten.",
-        "Betten, Türen, Schmiede, Untersuchung und Tischraum sind begonnen, aber nicht fertig."
+        "Vier Fachkräfte und sechs Männer Hakons werden mit je 1 gp/Tag bezahlt.",
+        "Pavillon am 2. März gekauft, Hauptnähte bearbeitet, Eingang und Abschirmung noch offen.",
+        "Grober Bibliotheksschutt geräumt; verzogener geheimer Türrahmen noch nicht restauriert."
       ],
-      "next": "Den Ausbau über tatsächliche Arbeit und Berichte weiterführen.",
+      "next": "Gemeldete Baufortschritte weiterführen; kein fertiges Bad oder neuer Durchgang vorweggenommen.",
       "links": [
         "horn-aufbau",
         "nella",
@@ -173,13 +166,26 @@
       ]
     }
   ],
-  "appointments": [],
+  "appointments": [
+    {
+      "date": "4712-03-03",
+      "label": "3. März · Sonnenaufgang",
+      "time": "Bis eine Stunde nach Sonnenaufgang",
+      "title": "Das erste Morgengebet",
+      "note": "Noch nicht vollzogen. Vesper will dabei sein, bevor sie weiter schläft.",
+      "links": [
+        "dirges-apollyon",
+        "horn-abaddon"
+      ],
+      "id": "first-dawn"
+    }
+  ],
   "missions": [
     {
       "id": "treasury",
       "label": "Knotenkasse",
-      "value": "2.280 gp 5 sp",
-      "note": "Bestätigte liquide Kasse; weitere 6.000 gp Materialvorauszahlung getrennt."
+      "value": "9.545 gp 5 sp",
+      "note": "4.600 gp vorgemerkt; 4.945 gp 5 sp frei. Tresormünzen und Verkäufe bereits enthalten; Pavillon 100 gp einmalig abgezogen."
     },
     {
       "id": "level",
@@ -191,25 +197,25 @@
       "id": "guardians",
       "label": "Gebundene Wächter",
       "value": "Hexoraticus · Vexorandian",
-      "note": "Abwechselnde Wache und Erholung; beide nahmen an Vespers Rezitationsübung teil. Vexors permanenter Konstitutionsentzug bleibt bestehen."
+      "note": "Hexoraticus 84/84 HP nach Heilung; Vexorandian 68/68 HP, drei permanente CON-Entzugspunkte. Erster Gebetsvollzug gemeinsam."
     },
     {
       "id": "potions",
       "label": "Heiltränke",
-      "value": "12 · je vier",
-      "note": "Beschriftete Cure-Moderate-Wounds-Tränke, noch unbenutzt."
+      "value": "CMW: 0 · alle zwölf verkauft",
+      "note": "Am 29. Februar verkauft, nicht verbraucht. Ältere CLW-Bestände haben keine bestätigte aktuelle Stückzahl."
     },
     {
       "id": "vault",
       "label": "Großer Tresorbestand",
-      "value": "45.500 gp · nicht liquide",
-      "note": "Großer Tresorbestand bleibt untransportiert; separate 920-gp-Wertgegenstände nicht doppelt zählen."
+      "value": "40.000 gp Gold/Silber · Sachwerte",
+      "note": "5.500 gp Tresormünzen bereits in der Kasse; 920 gp kleinere Wertgegenstände getrennt. Keine doppelte Anrechnung."
     },
     {
       "id": "horses",
       "label": "Expeditionspferde",
-      "value": "Bestehende Pferde und Ritualhengst vorhanden",
-      "note": "Varlet bleibt bei Grumblejack; der separate schwere Ritualhengst ist beschafft und unbenutzt."
+      "value": "Rex erschaffen · gewöhnliche Pferde erhalten",
+      "note": "Ritualhengst und 3.000 gp Material am 28. Februar verbraucht. Kein zusätzlicher unbenutzter Ritualhengst."
     },
     {
       "id": "hakon",
@@ -259,7 +265,8 @@
     "osric-fenlow",
     "edda-marr",
     "darric-holt",
-    "halthus"
+    "halthus",
+    "carnitheria-rex"
   ],
   "party": [
     {
@@ -271,9 +278,9 @@
         "max": 48
       },
       "conditions": [],
-      "state": "Am Morgen mit Vesper und Elise in der beschädigten Lustkammer auf Ebene Drei.",
-      "resourceNote": "48/48 HP, 16/16 PP nach abgeschlossener Nachtruhe und täglicher Auffrischung. Die vorherige Force-Screen-Ausgabe ist aufgefüllt.",
-      "gearNote": "+1-Großschwert, +1-Mithralkettenhemd, DEX-Gürtel +2, Cloak of Resistance +2, Zorn, Vexorandian und Hatred; vier Portionen Vision Juice.",
+      "state": "Schläft mit den beiden anderen Kernfiguren im alten Schlafzimmer 2-8; vor Sonnenaufgang.",
+      "resourceNote": "Styke 48/48 HP und 16/16 PP; Vesper 38/38 HP, Zauberplätze 8/8, 7/7, 5/5 und Extend Rod 3/3; Valeria 46/46 HP, Smite 3/3, Challenge 1/1, Touch 9/9, Boon 1/1. Die letzte abgeschlossene Nachtruhe war vom 1. auf den 2. März. Der Schlaf nach dem Ritual hat erst begonnen und zählt noch nicht als neue Auffrischung.",
+      "gearNote": "Styke schläft zwischen Vesper und Valeria im alten Schlafzimmer 2-8. 48/48 HP, 16/16 PP; normaler und tiefer Fokus sind verfügbar. Im ausgerüsteten Inner-Eye-Kampfprofil: AC 23, Touch 17, Flat-Footed 16; Fort +9, Ref +11, Will +11. Cloak +2 und Amulett +1 sind geliefert und getragen. Die neue Nachtruhe hat erst begonnen.",
       "pp": {
         "current": 16,
         "max": 16
@@ -289,9 +296,9 @@
         "max": 38
       },
       "conditions": [],
-      "state": "Bei Styke und Elise in der Lustkammer; Verse ist bei ihr.",
-      "resourceNote": "38/38 HP; Zauberplätze 8/8, 7/7, 5/5 und Rod 3/3 nach normaler Nachtruhe. 27.-Februar-Hedonistic erfüllt; kein Ergebnis für den 28. vorweggenommen.",
-      "gearNote": "+1-Mithralkettenhemd und -schild, CHA-Stirnreif +2, Cloak +1, Extend Rod, Hexoraticus, Vigilance und Withering nicht eingesetzt. Ring of Mind Shielding identifiziert, nicht getragen; Glaslinse unidentifiziert.",
+      "state": "Schläft mit den beiden anderen Kernfiguren im alten Schlafzimmer 2-8; vor Sonnenaufgang.",
+      "resourceNote": "Styke 48/48 HP und 16/16 PP; Vesper 38/38 HP, Zauberplätze 8/8, 7/7, 5/5 und Extend Rod 3/3; Valeria 46/46 HP, Smite 3/3, Challenge 1/1, Touch 9/9, Boon 1/1. Die letzte abgeschlossene Nachtruhe war vom 1. auf den 2. März. Der Schlaf nach dem Ritual hat erst begonnen und zählt noch nicht als neue Auffrischung.",
+      "gearNote": "Vesper ist mit Styke und Valeria im alten Schlafzimmer 2-8; Verse bleibt bei ihr. 38/38 HP, Plätze 8/8, 7/7, 5/5; Extend Rod 3/3. Ausgerüstetes Profil: AC 24, Touch 15, Flat-Footed 19; Fort +4, Ref +10, Will +11. Cloak +2 und Amulett +1 sind getragen; Ring of Mind Shielding angelegt, Lens of Detection identifiziert und ihr zugewiesen. Vigilance und Withering bleiben ungesetzt. Die neue Nachtruhe hat erst begonnen.",
       "verse": {
         "present": true,
         "hpCurrent": 19,
@@ -328,9 +335,9 @@
         "max": 46
       },
       "conditions": [],
-      "state": "Im Horn, in den bestehenden Quartieren auf Ebene Zwei.",
-      "resourceNote": "46/46 HP. Smite 3/3, Challenge 1/1, Touch of Corruption 9/9, Fiendish Boon 1/1.",
-      "gearNote": "+1 Dastard Full Plate, +1-Großschwert, STR-Gürtel +2, Cloak +1, CHA-Stirnreif +2."
+      "state": "Schläft mit den beiden anderen Kernfiguren im alten Schlafzimmer 2-8; vor Sonnenaufgang.",
+      "resourceNote": "Styke 48/48 HP und 16/16 PP; Vesper 38/38 HP, Zauberplätze 8/8, 7/7, 5/5 und Extend Rod 3/3; Valeria 46/46 HP, Smite 3/3, Challenge 1/1, Touch 9/9, Boon 1/1. Die letzte abgeschlossene Nachtruhe war vom 1. auf den 2. März. Der Schlaf nach dem Ritual hat erst begonnen und zählt noch nicht als neue Auffrischung.",
+      "gearNote": "Valeria schläft mit Styke und Vesper im alten Schlafzimmer 2-8. 46/46 HP; Smite 3/3, Touch 9/9, Challenge 1/1, Boon 1/1. Cloak +2 und CHA-Stirnreif +2 sind getragen: Fort +13, Ref +11, Will +13. AC 21, Touch 11, Flat-Footed 20. Ihr Amulett ist noch nicht gefertigt; der Ersatz-STR-Gürtel wurde verkauft. Die neue Nachtruhe hat erst begonnen."
     }
   ]
 }

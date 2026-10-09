@@ -18,11 +18,12 @@ assert.equal((nodes['timeline-list'].innerHTML.match(/<article /g)||[]).length,d
 assert(nodes['timeline-list'].innerHTML.indexOf('Der erste Morgen im bewohnten Horn')<nodes['timeline-list'].innerHTML.indexOf('Waffen für Fire-Axe'));
 assert(!/>zeit-[a-z0-9-]+<\/a>/.test(nodes['timeline-list'].innerHTML),'Technical IDs leaked as titles');
 for(const id of [...nodes['timeline-list'].innerHTML.matchAll(/href="#\/artikel\/([a-z0-9-]+)"/g)].map(m=>m[1]))assert(context.BYID[id],`Broken calendar link: ${id}`);
-nodes['month-filter'].value='4712-02';context.updateTimeline();
-assert.equal((nodes['timeline-list'].innerHTML.match(/<article /g)||[]).length,data.events.filter(e=>(e.date||'').startsWith('4712-02-')).length);
+nodes['month-filter'].value=data.meta.campaignDate.slice(0,7);context.updateTimeline();
+assert.equal((nodes['timeline-list'].innerHTML.match(/<article /g)||[]).length,data.events.filter(e=>(e.date||'').startsWith(data.meta.campaignDate.slice(0,7)+'-')).length);
 assert(nodes['timeline-list'].innerHTML.includes('Aktueller Tag'));
 nodes['phase-filter'].value='nonexistent';context.updateTimeline();assert(nodes['timeline-list'].innerHTML.includes('Keine Ereignisse'));
 nodes['phase-filter'].value='';nodes['month-filter'].value='';nodes['timeline-order'].value='oldest';context.updateTimeline();
 assert(nodes['timeline-list'].innerHTML.indexOf('Waffen für Fire-Axe')<nodes['timeline-list'].innerHTML.indexOf('Der erste Morgen im bewohnten Horn'));
 assert.equal(context.timelineTitle({id:'unknown',title:'A < B & C'}),'A < B & C');
 console.log('OK: readable calendar titles, dated/undated filtering, ordering, current day and valid links.');
+

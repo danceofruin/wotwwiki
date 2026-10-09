@@ -5,8 +5,8 @@
     "generatedView": true,
     "playerSafe": true,
     "source": "danceofruin/wotwGPT mechanics/combat/{styke,vesper,valeria}-level-7.md + current/LIVE_STATE.md",
-    "updated": "2026-10-07",
-    "revision": "level-7-horn-0228-wiki-audit"
+    "updated": "2026-10-09",
+    "revision": "level-7-horn-0303-first-midnight"
   },
   "ui": {
     "defaultCharacterOpen": "",
@@ -354,19 +354,19 @@
           "id": "saves",
           "label": "Saves",
           "type": "list",
-          "subtitle": "Sidestep Secret nutzt CHA statt DEX für Reflex; Cloak of Resistance +1 ist enthalten.",
+          "subtitle": "Sidestep Secret nutzt CHA statt DEX für Reflex; Cloak of Resistance +2 ist enthalten.",
           "items": [
             {
               "name": "Fortitude",
-              "tag": "+3"
+              "tag": "+4"
             },
             {
               "name": "Reflex",
-              "tag": "+9"
+              "tag": "+10"
             },
             {
               "name": "Will",
-              "tag": "+10"
+              "tag": "+11"
             }
           ]
         },
@@ -484,7 +484,8 @@
                 "Dispel Magic"
               ]
             }
-          ]
+          ],
+          "subtitle": ""
         },
         {
           "id": "arcane-enlightenment",
@@ -629,7 +630,8 @@
               "name": "Mystical Prowess",
               "detail": "+3 auf Knowledge (martial) und Spellcraft ausschließlich zum Identifizieren von Manövern, Powers, Spells oder Glyphen."
             }
-          ]
+          ],
+          "subtitle": ""
         },
         {
           "id": "verse",
@@ -652,7 +654,8 @@
               "name": "Progression",
               "detail": "INT 9 · Familiar Natural Armor +4; etablierte Reliquiar-Identität bleibt erhalten."
             }
-          ]
+          ],
+          "subtitle": ""
         },
         {
           "id": "combat-shortcuts",
@@ -661,7 +664,7 @@
           "items": [
             {
               "name": "Defensive Werte",
-              "detail": "AC 23 · Touch 15 · Flat-footed 18 · Initiative +12 mit Verse / +8 ohne Verse."
+              "detail": "AC 24 · Touch 15 · Flat-footed 19 · Initiative +12 mit Verse / +8 ohne Verse."
             },
             {
               "name": "Sun's Gleam",
@@ -683,7 +686,8 @@
               "name": "Glyph Engine",
               "detail": "Virtual Animus Adept 3 · 11 Glyphen · IL 8 · 1 Animus · 45 ft · 6 Runden · DC 19. Swift oder 1×/Runde Free nach Martial-Strike-Treffer."
             }
-          ]
+          ],
+          "subtitle": ""
         },
         {
           "id": "revelations",
@@ -694,7 +698,8 @@
               "name": "Mental Acuity",
               "detail": "+1 inherent INT → 15; weitere +1 auf Oracle 10/13/16/19. Ersetzt die Spirit-Guide-Spirit-Ability auf Stufe 7, kommt nicht zusätzlich dazu."
             }
-          ]
+          ],
+          "subtitle": ""
         }
       ],
       "summaryResources": [
@@ -727,19 +732,19 @@
           "id": "saves",
           "label": "Saves",
           "type": "list",
-          "subtitle": "Getragener CHA-Stirnreif +2: Unholy Resilience +6 und Cloak +1 sind eingerechnet.",
+          "subtitle": "Getragener CHA-Stirnreif +2: Unholy Resilience +6 und Cloak +2 sind eingerechnet.",
           "items": [
             {
               "name": "Fortitude",
-              "tag": "+12"
+              "tag": "+13"
             },
             {
               "name": "Reflex",
-              "tag": "+10"
+              "tag": "+11"
             },
             {
               "name": "Will",
-              "tag": "+12"
+              "tag": "+13"
             }
           ]
         },
@@ -766,14 +771,16 @@
               "tag": "+6",
               "detail": "+6 in Rüstung / +11 ohne Rüstung."
             }
-          ]
+          ],
+          "subtitle": ""
         },
         {
           "id": "prepared-spells",
           "label": "Vorbereitete Spells",
           "type": "note",
           "title": "3 Grad-1-Slots + 1 Grad-2-Slot / Tag",
-          "text": "Gegenwärtiger akzeptierter Tagesrahmen 3 Grad 1 / 1 Grad 2; konkrete Vorbereitung nicht neu festgestellt. Stirnreif seit 25. Februar angelegt, keine zusätzliche erfolgte Vorbereitung angenommen. Default Darkvision: Standard, Berührung, 60-ft-Dunkelsicht für 4 Stunden. Alternative Blade Tutor’s Spirit: Standard, persönlich, 4 Minuten, freiwillige Angriffsabzüge zusammen um 1 reduziert (PA +11/+6, 2d6+13). CL 4, Konzentration +10, DC 17/18."
+          "text": "Gegenwärtiger akzeptierter Tagesrahmen 3 Grad 1 / 1 Grad 2; konkrete Vorbereitung nicht neu festgestellt. Stirnreif seit 25. Februar angelegt, keine zusätzliche erfolgte Vorbereitung angenommen. Default Darkvision: Standard, Berührung, 60-ft-Dunkelsicht für 4 Stunden. Alternative Blade Tutor’s Spirit: Standard, persönlich, 4 Minuten, freiwillige Angriffsabzüge zusammen um 1 reduziert (PA +11/+6, 2d6+13). CL 4, Konzentration +10, DC 17/18.",
+          "subtitle": ""
         },
         {
           "id": "daily-resources",
@@ -812,7 +819,8 @@
               },
               "detail": "1/Tag · Standard Action · 7 Minuten · +1 Waffenbonus-Budget."
             }
-          ]
+          ],
+          "subtitle": ""
         },
         {
           "id": "aura",
@@ -827,7 +835,8 @@
               "name": "Command Rider",
               "detail": "Wenn Demoralize den DC um 10+ schlägt: Command, Will DC 19 negiert; gleiche Kreatur höchstens 1×/Tag."
             }
-          ]
+          ],
+          "subtitle": ""
         },
         {
           "id": "fiendish-boon",
@@ -850,7 +859,8 @@
               "name": "Vicious",
               "detail": "Nur wenn der Selbstschaden vertretbar ist."
             }
-          ]
+          ],
+          "subtitle": ""
         },
         {
           "id": "combat-engine",
@@ -862,7 +872,8 @@
             "Demoralize",
             "Aura of Obedience",
             "Hurtful → Extra Attack"
-          ]
+          ],
+          "subtitle": ""
         },
         {
           "id": "other-antipaladin",
@@ -893,7 +904,8 @@
               "name": "Conductive Touch",
               "detail": "Nur mit aktiver Conductive-Waffe: nach erfolgreichem Nahkampftreffer 2 Touch-Nutzungen für 3d6 + eine Cruelty, höchstens 1×/Runde."
             }
-          ]
+          ],
+          "subtitle": ""
         },
         {
           "id": "combat-shortcuts",
@@ -928,7 +940,8 @@
               "name": "Touch of Corruption",
               "detail": "Melee touch · 3d6 · Fort DC 19."
             }
-          ]
+          ],
+          "subtitle": ""
         }
       ],
       "summaryResources": [
