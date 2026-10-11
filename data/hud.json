@@ -5,8 +5,8 @@
     "generatedView": true,
     "playerSafe": true,
     "source": "danceofruin/wotwGPT mechanics/combat/{styke,vesper,valeria}-level-7.md + current/LIVE_STATE.md",
-    "updated": "2026-10-09",
-    "revision": "level-7-horn-0303-first-midnight"
+    "updated": "2026-10-11",
+    "revision": "level-7-horn-0305-eight-prayers"
   },
   "ui": {
     "defaultCharacterOpen": "",
@@ -914,7 +914,7 @@
           "items": [
             {
               "name": "Defensive Werte",
-              "detail": "AC 21 · Touch 11 · Flat-footed 20 · Initiative +6 · CMB +11 · CMD 22."
+              "detail": "AC 22 · Touch 11 · Flat-footed 21 · Initiative +6 · CMB +11 · CMD 22."
             },
             {
               "name": "Power Attack",

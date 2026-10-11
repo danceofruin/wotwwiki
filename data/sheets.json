@@ -4,9 +4,9 @@
     "authority": "GENERATED VIEW. DO NOT USE AS CAMPAIGN AUTHORITY.",
     "generated": true,
     "playerSafe": true,
-    "generatedAt": "2026-10-09T13:17:32+00:00",
-    "reviewedAt": "2026-10-09",
-    "sourceRevision": "99c5973fed61b4c21d69f4e7e275555924526375e01518de6a6cb16cdf6078d2"
+    "generatedAt": "2026-10-11T18:03:34+00:00",
+    "reviewedAt": "2026-10-11",
+    "sourceRevision": "ae1c29e534ed9d60e8831ed1988b4746de5ca3e73f2db0ba286f7c95325ded58"
   },
   "characters": [
     {
@@ -94,7 +94,7 @@
           "sections": [
             {
               "title": "Psion und Awakened Blade",
-              "markdown": "**PP 16/Tag · aktuell 16/16.** Letzte abgeschlossene Nachtruhe: 1./2. März; neuer Schlaf erst begonnen; die vorherige Force-Screen-Ausgabe ist aufgefüllt. Powers: Minor Metamorphosis, Defensive Precognition, Offensive Precognition, Force Screen, Call to Mind. Talente: Detect Psionics, Empathy, Conceal Thoughts."
+              "markdown": "**PP 16/Tag · aktuell 16/16.** Normale Nacht 4./5. März abgeschlossen; Tagesressourcen erholt; die vorherige Force-Screen-Ausgabe ist aufgefüllt. Powers: Minor Metamorphosis, Defensive Precognition, Offensive Precognition, Force Screen, Call to Mind. Talente: Detect Psionics, Empathy, Conceal Thoughts."
             }
           ]
         },
@@ -191,11 +191,11 @@
           "sections": [
             {
               "title": "Aktuelle Plätze",
-              "markdown": "Grad 1: **8/8** · Grad 2: **7/7** · Grad 3: **5/5**. Letzte abgeschlossene Nachtruhe: 1./2. März; neuer Schlaf erst begonnen. Extend Rod **3/3**."
+              "markdown": "Grad 1: **8/8** · Grad 2: **7/7** · Grad 3: **5/5**. Normale Nacht 4./5. März abgeschlossen; Tagesressourcen erholt. Extend Rod **3/3**."
             },
             {
               "title": "Neue Auswahl",
-              "markdown": "Regulär neu: Endure Elements, Undetectable Alignment, Dispel Magic. Aktuelle Arcane-Enlightenment-Auswahl enthält Darkvision statt Silent Image sowie Euphoric Cloud, Ashen Path und Stinking Cloud."
+              "markdown": "Regulär bekannt: Endure Elements, Undetectable Alignment, Dispel Magic. Lead Plating wurde am 3. März tatsächlich getestet; die Wirkung ist abgelaufen. Die neue tägliche Arcane-Enlightenment-Auswahl am 5. März ist noch nicht bestätigt."
             }
           ]
         },
@@ -242,12 +242,12 @@
       "level": 7,
       "ancestry": "Mensch · Karfeld",
       "source": "mechanics/combat/valeria-level-7.md",
-      "profile": "+1 Dastard Full Plate · STR-Gürtel · CHA-Stirnreif +2 · Cloak +2",
+      "profile": "+1 Dastard Full Plate · STR-Gürtel · CHA-Stirnreif +2 · Cloak +2 · Amulett +1",
       "hpMax": 46,
       "stats": {
-        "ac": "21",
+        "ac": "22",
         "touch": "11",
-        "flatFooted": "20",
+        "flatFooted": "21",
         "initiative": "+6",
         "speed": "20 ft",
         "bab": "+7/+2",
@@ -296,7 +296,7 @@
           "sections": [
             {
               "title": "Kampfwerte",
-              "markdown": "**HP 46/46 · AC 21 · Initiative +6 · BAB +7/+2 · Saves +13/+11/+13.** Normal +12/+7, 2d6+7; PA +10/+5, 2d6+13. PA + Smite +16/+11, 2d6+20; mit Challenge und qualifiziertem Order-Bonus +18/+13, 2d6+25. Smite Deflection +6, mit Dastard AC 29 gegen das passende Ziel."
+              "markdown": "**HP 46/46 · AC 22 · Initiative +6 · BAB +7/+2 · Saves +13/+11/+13.** Normal +12/+7, 2d6+7; PA +10/+5, 2d6+13. PA + Smite +16/+11, 2d6+20; mit Challenge und qualifiziertem Order-Bonus +18/+13, 2d6+25. Smite Deflection +6, mit Dastard AC 30 gegen das passende Ziel."
             },
             {
               "title": "Kampfmotor",
@@ -334,7 +334,7 @@
           "sections": [
             {
               "title": "Ausrüstung",
-              "markdown": "+1 Dastard Full Plate · +1-Großschwert · Belt of Giant Strength +2 · Cloak of Resistance +2 · Headband of Alluring Charisma +2, angelegt · Mirelles Rüstungsunterkleidung. Achselschnalle repariert, kein Scheuern beim Sitztest."
+              "markdown": "+1 Dastard Full Plate · +1-Großschwert · Belt of Giant Strength +2 · Cloak of Resistance +2 · Amulett der Natürlichen Rüstung +1 · Headband of Alluring Charisma +2, angelegt · Mirelles Rüstungsunterkleidung. Achselschnalle repariert, kein Scheuern beim Sitztest."
             }
           ]
         }
