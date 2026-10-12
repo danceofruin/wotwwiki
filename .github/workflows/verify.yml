@@ -21,3 +21,4 @@ jobs:
       - run: node scripts/test-hud.mjs
 
       - run: node scripts/test-calendar.mjs
+      - run: node scripts/test-horn.mjs

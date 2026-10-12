@@ -14,6 +14,7 @@ const app = text('app.js');
 const css = text('styles.css');
 try {
   new Function(text('live.js'));
+  new Function(text('horn.js'));
   validate(JSON.parse(text('data/live.json')), JSON.parse(text('data/sheets.json')));
 } catch (error) {
   failures.push(`Live-Play-Prüfung: ${error.message}`);

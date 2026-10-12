@@ -497,7 +497,7 @@
               "name": "Alarm"
             },
             {
-              "name": "Darkvision"
+              "name": "Silent Image"
             },
             {
               "name": "Euphoric Cloud"
@@ -926,7 +926,7 @@
             },
             {
               "name": "Power Attack + Challenge",
-              "detail": "+10/+5 · 2d6+19; mit Order-Bonus +12/+7."
+              "detail": "+10/+5 · 2d6+18; mit Order-Bonus +12/+7."
             },
             {
               "name": "Smite + Challenge",
