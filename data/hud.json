@@ -5,8 +5,8 @@
     "generatedView": true,
     "playerSafe": true,
     "source": "danceofruin/wotwGPT mechanics/combat/{styke,vesper,valeria}-level-7.md + current/LIVE_STATE.md",
-    "updated": "2026-10-11",
-    "revision": "level-7-horn-0305-eight-prayers"
+    "updated": "2026-10-12",
+    "revision": "level-7-horn-0307-fourteen-prayers"
   },
   "ui": {
     "defaultCharacterOpen": "",
@@ -491,10 +491,10 @@
           "id": "arcane-enlightenment",
           "label": "Arcane Enlightenment",
           "type": "list",
-          "subtitle": "Täglich flexibel · aktuell fünf Sorcerer/Wizard-Auswahlen",
+          "subtitle": "7. März: Alarm ersetzt Dancing Darkness · noch nicht gewirkt",
           "items": [
             {
-              "name": "Dancing Darkness"
+              "name": "Alarm"
             },
             {
               "name": "Darkvision"

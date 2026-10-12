@@ -4,9 +4,9 @@
     "authority": "GENERATED VIEW. DO NOT USE AS CAMPAIGN AUTHORITY.",
     "generated": true,
     "playerSafe": true,
-    "generatedAt": "2026-10-11T18:03:34+00:00",
-    "reviewedAt": "2026-10-11",
-    "sourceRevision": "ae1c29e534ed9d60e8831ed1988b4746de5ca3e73f2db0ba286f7c95325ded58"
+    "generatedAt": "2026-10-12T15:52:55+00:00",
+    "reviewedAt": "2026-10-12",
+    "sourceRevision": "c34de87f9b0fc5902cca6a5c2371218132164655a3c9ac077fd520bbae7a9c07"
   },
   "characters": [
     {
@@ -94,7 +94,7 @@
           "sections": [
             {
               "title": "Psion und Awakened Blade",
-              "markdown": "**PP 16/Tag · aktuell 16/16.** Normale Nacht 4./5. März abgeschlossen; Tagesressourcen erholt; die vorherige Force-Screen-Ausgabe ist aufgefüllt. Powers: Minor Metamorphosis, Defensive Precognition, Offensive Precognition, Force Screen, Call to Mind. Talente: Detect Psionics, Empathy, Conceal Thoughts."
+              "markdown": "**PP 16/Tag · aktuell 16/16.** Normale Nacht 6./7. März abgeschlossen; Tagesressourcen erholt; die vorherige Force-Screen-Ausgabe ist aufgefüllt. Powers: Minor Metamorphosis, Defensive Precognition, Offensive Precognition, Force Screen, Call to Mind. Talente: Detect Psionics, Empathy, Conceal Thoughts."
             }
           ]
         },
@@ -191,11 +191,11 @@
           "sections": [
             {
               "title": "Aktuelle Plätze",
-              "markdown": "Grad 1: **8/8** · Grad 2: **7/7** · Grad 3: **5/5**. Normale Nacht 4./5. März abgeschlossen; Tagesressourcen erholt. Extend Rod **3/3**."
+              "markdown": "Grad 1: **8/8** · Grad 2: **7/7** · Grad 3: **5/5**. Normale Nacht 6./7. März abgeschlossen; Tagesressourcen erholt. Extend Rod **3/3**."
             },
             {
               "title": "Neue Auswahl",
-              "markdown": "Regulär bekannt: Endure Elements, Undetectable Alignment, Dispel Magic. Lead Plating wurde am 3. März tatsächlich getestet; die Wirkung ist abgelaufen. Die neue tägliche Arcane-Enlightenment-Auswahl am 5. März ist noch nicht bestätigt."
+              "markdown": "Am 7. März Arcane Enlightenment: Alarm statt Dancing Darkness; Silent Image, Euphoric Cloud, Ashen Path, Stinking Cloud. Noch kein neuer Alarm-Zauber oder ausgegebener Platz. Regulär bekannte Zauber unverändert."
             }
           ]
         },
