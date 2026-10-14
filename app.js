@@ -15,7 +15,7 @@ function refreshVisibleData(){
 refreshVisibleData();
 
 const ARTWORKS={
-"calliaste":[{"src":"assets/calliaste-shanda-v2.webp","alt":"Calliaste Shanda, geflügelte Lillend-Azata mit Schlangenleib","title":"Calliaste Shanda","caption":"Vom Spieler gewähltes Porträt für Calliaste Shanda."}],
+"calliaste":[{"src":"assets/calliaste-shanda-v2.webp","alt":"Calliaste Shanda, geflügelte Lillend-Azata mit Schlangenleib","title":"Calliaste Shanda","caption":"Vom Spieler gewähltes Porträt für Calliaste Shanda."},{"src":"assets/calliaste-elfenform-balcony-v1.webp","alt":"Calliaste Shanda in Elfenform auf einer mondbeschienenen Terrasse","title":"Calliaste · Elfenform","caption":"Elfenform auf der Terrasse – vom Spieler gewählte Kampagnenillustration."},{"src":"assets/calliaste-elfenform-lute-v1.webp","alt":"Calliaste Shanda in Elfenform mit einer Laute","title":"Calliaste · Elfenform mit Laute","caption":"Elfenform mit Laute – vom Spieler gewählte Kampagnenillustration."}],
 "branna-cole":[{"src": "assets/branna-cole-v1.webp", "alt": "Branna Cole — Zimmerin und Tischlerin", "title": "Branna Cole", "caption": "Zimmerin und Tischlerin im Horn von Abaddon."}],
 "osric-fenlow":[{"src": "assets/osric-fenlow-v1.webp", "alt": "Osric Fenlow — Schmied", "title": "Osric Fenlow", "caption": "Schmied im Horn von Abaddon."}],
 "edda-marr":[{"src": "assets/edda-marr-v1.webp", "alt": "Edda Marr — Köchin und Brauerin", "title": "Edda Marr", "caption": "Köchin und Brauerin im Horn von Abaddon."}],
