@@ -4,9 +4,9 @@
     "authority": "GENERATED VIEW. DO NOT USE AS CAMPAIGN AUTHORITY.",
     "generated": true,
     "playerSafe": true,
-    "generatedAt": "2026-10-18T13:15:56+00:00",
+    "generatedAt": "2026-10-18T13:35:57+00:00",
     "reviewedAt": "2026-10-18",
-    "sourceRevision": "cb61dd7f666adb966d9c588e7a672effbfc2cb1e1a967b4c720fc7cc4a0689ec"
+    "sourceRevision": "f21662eccde71c08cc65c0abc62359324a0ae00874fca2be40e4037821833115"
   },
   "characters": [
     {
@@ -115,22 +115,6 @@
             {
               "title": "Talente · Grad 0",
               "markdown": "| Talent | Kosten / Aktion / Dauer | Wirkung |\n| --- | --- | --- |\n| Detect Psionics | 0 PP · Standard · Konzentration | 60-ft-Kegel; bis 2 Min. Psionische/magische Auren erkennen, keine automatische Gegenstandsidentifikation. |\n| Empathy | 0 PP · Standard · Konzentration | 30-ft-Ausbreitung, bis 2 Min.; oberflächliche Gefühle und Grundantriebe, keine Gedanken oder Erinnerungen. |\n| Conceal Thoughts | 0 PP · Standard · 2 Stunden | Williges Ziel; +10 Bluff nur gegen Sense Motive zur Absichtserkennung und Schutz gegen Gedankenlesen. |\n"
-            },
-            {
-              "title": "Psychic Reformation · vorhandener Einwegstein",
-              "markdown": "| Bestand | Stand |\n| --- | --- |\n| ML 7 | Ein Exemplar bei Styke, unbenutzt; nicht als eigene bekannte Kraft gelernt. |\n| Meistermatrix | Wiederverwendbare Vorlage bleibt bei Tacitus. |\n| Austausch | Erst tatsächliche Nutzung; ursprüngliches Erwerbsniveau und Voraussetzungen beachten. |\n"
-            },
-            {
-              "title": "Psychic Reformation · vorhandener Einwegstein",
-              "markdown": "| Bestand | Stand |\n| --- | --- |\n| ML 7 | Ein Exemplar bei Styke, unbenutzt; nicht als eigene bekannte Kraft gelernt. |\n| Meistermatrix | Wiederverwendbare Vorlage bleibt bei Tacitus. |\n| Austausch | Erst tatsächliche Nutzung; ursprüngliches Erwerbsniveau und Voraussetzungen beachten. |\n"
-            },
-            {
-              "title": "Psychic Reformation · vorhandener Einwegstein",
-              "markdown": "| Bestand | Stand |\n| --- | --- |\n| ML 7 | Ein Exemplar bei Styke, unbenutzt; nicht als eigene bekannte Kraft gelernt. |\n| Meistermatrix | Wiederverwendbare Vorlage bleibt bei Tacitus. |\n| Austausch | Erst tatsächliche Nutzung; ursprüngliches Erwerbsniveau und Voraussetzungen beachten. |\n"
-            },
-            {
-              "title": "Psychic Reformation · vorhandener Einwegstein",
-              "markdown": "| Bestand | Stand |\n| --- | --- |\n| ML 7 | Ein Exemplar bei Styke, unbenutzt; nicht als eigene bekannte Kraft gelernt. |\n| Meistermatrix | Wiederverwendbare Vorlage bleibt bei Tacitus. |\n| Austausch | Erst tatsächliche Nutzung; ursprüngliches Erwerbsniveau und Voraussetzungen beachten. |\n"
             },
             {
               "title": "Psychic Reformation · vorhandener Einwegstein",
@@ -377,7 +361,7 @@
         "name": "Großschwert bei Tacitus",
         "hit": "—",
         "damage": "—",
-        "note": "Kein aktuell verfügbarer Waffenangriff bestätigt. +1-Profil nur als bedingte Referenz nach tatsächlicher Rückgabe."
+        "note": "Großschwert +1 Cruel fertig, aber nicht zurückgegeben. Aktuell keine verfügbare Ersatzwaffe behauptet."
       },
       "attributes": [
         {
@@ -412,23 +396,7 @@
           "sections": [
             {
               "title": "Waffenverfügbarkeit",
-              "markdown": "**Großschwert seit 29. März in der Werkstatt, Cruel erst 2/6 Tage.** Alle nachstehenden Großschwert-, Power-Attack- und Conductive-Kombinationen sind bedingte Referenzwerte nach tatsächlicher Rückgabe. Keine erfundene Ersatzwaffe."
-            },
-            {
-              "title": "Waffenverfügbarkeit",
-              "markdown": "**Großschwert seit 29. März in der Werkstatt, Cruel erst 2/6 Tage.** Alle nachstehenden Großschwert-, Power-Attack- und Conductive-Kombinationen sind bedingte Referenzwerte nach tatsächlicher Rückgabe. Keine erfundene Ersatzwaffe."
-            },
-            {
-              "title": "Waffenverfügbarkeit",
-              "markdown": "**Großschwert seit 29. März in der Werkstatt, Cruel erst 2/6 Tage.** Alle nachstehenden Großschwert-, Power-Attack- und Conductive-Kombinationen sind bedingte Referenzwerte nach tatsächlicher Rückgabe. Keine erfundene Ersatzwaffe."
-            },
-            {
-              "title": "Waffenverfügbarkeit",
-              "markdown": "**Großschwert seit 29. März in der Werkstatt, Cruel erst 2/6 Tage.** Alle nachstehenden Großschwert-, Power-Attack- und Conductive-Kombinationen sind bedingte Referenzwerte nach tatsächlicher Rückgabe. Keine erfundene Ersatzwaffe."
-            },
-            {
-              "title": "Waffenverfügbarkeit",
-              "markdown": "**Großschwert seit 29. März in der Werkstatt, Cruel erst 2/6 Tage.** Alle nachstehenden Großschwert-, Power-Attack- und Conductive-Kombinationen sind bedingte Referenzwerte nach tatsächlicher Rückgabe. Keine erfundene Ersatzwaffe."
+              "markdown": "**Großschwert seit 29. März in der Werkstatt, Cruel fertig, 2/2 Tage.** Alle nachstehenden Großschwert-, Power-Attack- und Conductive-Kombinationen sind bedingte Referenzwerte nach tatsächlicher Rückgabe. Keine erfundene Ersatzwaffe."
             },
             {
               "title": "Angriffsprofile",
@@ -450,23 +418,7 @@
           "sections": [
             {
               "title": "Waffenverfügbarkeit",
-              "markdown": "**Großschwert seit 29. März in der Werkstatt, Cruel erst 2/6 Tage.** Alle nachstehenden Großschwert-, Power-Attack- und Conductive-Kombinationen sind bedingte Referenzwerte nach tatsächlicher Rückgabe. Keine erfundene Ersatzwaffe."
-            },
-            {
-              "title": "Waffenverfügbarkeit",
-              "markdown": "**Großschwert seit 29. März in der Werkstatt, Cruel erst 2/6 Tage.** Alle nachstehenden Großschwert-, Power-Attack- und Conductive-Kombinationen sind bedingte Referenzwerte nach tatsächlicher Rückgabe. Keine erfundene Ersatzwaffe."
-            },
-            {
-              "title": "Waffenverfügbarkeit",
-              "markdown": "**Großschwert seit 29. März in der Werkstatt, Cruel erst 2/6 Tage.** Alle nachstehenden Großschwert-, Power-Attack- und Conductive-Kombinationen sind bedingte Referenzwerte nach tatsächlicher Rückgabe. Keine erfundene Ersatzwaffe."
-            },
-            {
-              "title": "Waffenverfügbarkeit",
-              "markdown": "**Großschwert seit 29. März in der Werkstatt, Cruel erst 2/6 Tage.** Alle nachstehenden Großschwert-, Power-Attack- und Conductive-Kombinationen sind bedingte Referenzwerte nach tatsächlicher Rückgabe. Keine erfundene Ersatzwaffe."
-            },
-            {
-              "title": "Waffenverfügbarkeit",
-              "markdown": "**Großschwert seit 29. März in der Werkstatt, Cruel erst 2/6 Tage.** Alle nachstehenden Großschwert-, Power-Attack- und Conductive-Kombinationen sind bedingte Referenzwerte nach tatsächlicher Rückgabe. Keine erfundene Ersatzwaffe."
+              "markdown": "**Großschwert seit 29. März in der Werkstatt, Cruel fertig, 2/2 Tage.** Alle nachstehenden Großschwert-, Power-Attack- und Conductive-Kombinationen sind bedingte Referenzwerte nach tatsächlicher Rückgabe. Keine erfundene Ersatzwaffe."
             },
             {
               "title": "Tagesressourcen",
@@ -526,11 +478,15 @@
           "sections": [
             {
               "title": "Getragen, mitgeführt und verwahrt",
-              "markdown": "| Gegenstand | Aktueller Stand |\n| --- | --- |\n| Dastard-Vollplatte +1 | Ausgerüstetes Profil, AC 22 |\n| Großschwert +1 | Seit 29. März bei Tacitus; Cruel-Ausbau 2/6. Nicht verfügbar. |\n| STR-Gürtel +2 | Getragen; STR 18 |\n| CHA-Stirnreif +2 | Getragen; CHA 22 |\n| Cloak +2 / Amulett natürlicher Rüstung +1 | Getragen; Boni eingerechnet |\n| Cracked Dusty Rose Prism | Verstaut: Initiative +6. Nur orbitierend +1 Kompetenz ⇒ +7. |\n| Corset of Delicate Moves | Fertig, bei Tacitus; keine Übergabe/24h-Tragezeit, kein Effekt |\n| Unterzeug, formelle Kleidung, persönlicher Bestand | Erhalten |\n"
+              "markdown": "| Gegenstand | Aktueller Stand |\n| --- | --- |\n| Dastard-Vollplatte +1 | Ausgerüstetes Profil, AC 22 |\n| Großschwert +1 | Seit 29. März bei Tacitus; Cruel-Ausbau 2/2, fertig. Nicht verfügbar. |\n| STR-Gürtel +2 | Getragen; STR 18 |\n| CHA-Stirnreif +2 | Getragen; CHA 22 |\n| Cloak +2 / Amulett natürlicher Rüstung +1 | Getragen; Boni eingerechnet |\n| Cracked Dusty Rose Prism | Verstaut: Initiative +6. Nur orbitierend +1 Kompetenz ⇒ +7. |\n| Corset of Delicate Moves | Seit27Mar fertig, bei Tacitus; keine Übergabe/24h-Tragezeit, kein Effekt |\n| Unterzeug, formelle Kleidung, persönlicher Bestand | Erhalten |\n"
             },
             {
               "title": "Besitz und Aktivierung",
               "markdown": "Herstellung, Übergabe und Ausrüstung sind getrennte Schritte. Aktuelle Ressourcen stehen nur bei dieser Figur. Werte und Verwahrung: gemeinsames Inventar."
+            },
+            {
+              "title": "Cruel · erst mit tatsächlich zurückgegebener Waffe",
+              "markdown": "| Auslöser | Wirkung |\n| --- | --- |\n| Waffentreffer gegen shaken / frightened / panicked | Zusätzlich sickened für1Runde. |\n| Mit dieser Waffe bewusstlos schlagen oder töten | 5 temporäre HP für10Minuten. |\n| Gegenwärtige Verwahrung | Noch bei Tacitus, keine aktive Wirkung. |"
             }
           ]
         }

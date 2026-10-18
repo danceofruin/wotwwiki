@@ -6,7 +6,7 @@
     "playerSafe": true,
     "source": "danceofruin/wotwGPT mechanics/combat/{styke,vesper,valeria}-level-7.md + current/LIVE_STATE.md",
     "updated": "2026-10-18",
-    "revision": "level-7-horn-0330-eighty-four-prayers"
+    "revision": "level-7-horn-0330-valet-repair"
   },
   "ui": {
     "defaultCharacterOpen": "",
@@ -863,7 +863,7 @@
               "detail": "Nur wenn der Selbstschaden vertretbar ist."
             }
           ],
-          "subtitle": "Großschwert derzeit bei Tacitus: diese Waffenprofile sind nur bedingte Referenzwerte nach tatsächlicher Rückgabe. Cruel-Ausbau 2/6; kein Ersatzschwert."
+          "subtitle": "Großschwert +1 Cruel fertig, aber weiterhin bei Tacitus. Waffenprofile sind bedingte Referenzwerte erst nach tatsächlicher Rückgabe; kein Ersatzschwert."
         },
         {
           "id": "combat-engine",
@@ -876,7 +876,7 @@
             "Aura of Obedience",
             "Hurtful → Extra Attack"
           ],
-          "subtitle": "Großschwert derzeit bei Tacitus: diese Waffenprofile sind nur bedingte Referenzwerte nach tatsächlicher Rückgabe. Cruel-Ausbau 2/6; kein Ersatzschwert."
+          "subtitle": "Großschwert +1 Cruel fertig, aber weiterhin bei Tacitus. Waffenprofile sind bedingte Referenzwerte erst nach tatsächlicher Rückgabe; kein Ersatzschwert."
         },
         {
           "id": "other-antipaladin",
@@ -944,7 +944,7 @@
               "detail": "Melee touch · 3d6 · Fort DC 19."
             }
           ],
-          "subtitle": "Großschwert derzeit bei Tacitus: diese Waffenprofile sind nur bedingte Referenzwerte nach tatsächlicher Rückgabe. Cruel-Ausbau 2/6; kein Ersatzschwert."
+          "subtitle": "Großschwert +1 Cruel fertig, aber weiterhin bei Tacitus. Waffenprofile sind bedingte Referenzwerte erst nach tatsächlicher Rückgabe; kein Ersatzschwert."
         }
       ],
       "summaryResources": [

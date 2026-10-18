@@ -4,10 +4,10 @@
     "authority": "GENERATED VIEW. DO NOT USE AS CAMPAIGN AUTHORITY.",
     "generated": true,
     "playerSafe": true,
-    "generatedAt": "2026-10-18T13:15:56+00:00",
+    "generatedAt": "2026-10-18T13:35:57+00:00",
     "reviewedAt": "2026-10-18",
-    "sourceRevision": "374d39e8b7016b63d0d62aa417865ae4eba2c5c10d892cc882084587f9c1660d",
-    "sheetRevision": "cb61dd7f666adb966d9c588e7a672effbfc2cb1e1a967b4c720fc7cc4a0689ec"
+    "sourceRevision": "d957c1a0184203d8f3e4e7564ae1ae215bc1189883625c4ae441e93d73c3e15f",
+    "sheetRevision": "f21662eccde71c08cc65c0abc62359324a0ae00874fca2be40e4037821833115"
   },
   "scene": {
     "date": "4712-03-30",
@@ -39,14 +39,14 @@
     },
     {
       "id": "crafting",
-      "title": "Tacitus · laufende Fertigung",
+      "title": "Tacitus · Fertige Aufträge, Übergabe offen",
       "status": "active",
       "updated": "4712-03-30",
-      "summary": "Valerias Großschwert im Ausbau: 2/6 Tage; Korsett wartet auf Übergabe.",
+      "summary": "Valerias Schwert +1 Cruel und Korsett sind fertig, aber werkstattgehalten.",
       "known": [
-        "Tacitus beendete ihre zehntägige Umschulung am 17. März. Die wiederverwendbare psionische Matrix wurde am 25. März fertig; Styke besitzt seit dem 26. März einen noch unbenutzten ML-7-Psychic-Reformation-Stein. Valerias Korsett wurde am 28. März fertig, liegt aber noch in der Werkstatt. Ihr vorhandenes Großschwert +1 liegt seit dem 29. März für den Cruel-Ausbau dort: 2/6 Arbeitstage, noch kein Cruel und keine verfügbare Ersatzwaffe."
+        "Tacitus und Knittel fertigen bei sicherem Take 10 beschleunigt bis zu 4.000 gp zusätzlichen Grundwert pro vollem Arbeitstag. Valerias Korsett war am 27. März fertig. Ihr am 29. März übergebenes Schwert ist nach zwei Arbeitstagen am 30. März ein fertiges Großschwert +1 Cruel. Beide Stücke liegen noch in der Werkstatt; weder Rückgabe noch Korsett-Aktivierung sind geschehen."
       ],
-      "next": "Cruel-Ausbau fortsetzen; tatsächliche Übergabe und Aktivierung separat erfassen.",
+      "next": "Tatsächliche Rückgabe/Übergabe und Korsett-Tragezeit separat erfassen. Spätere Wunschliste bleibt Planung.",
       "links": [
         "tacitus",
         "valeria",
@@ -402,7 +402,7 @@
       "conditions": [],
       "state": "Im Horn; Großschwert vorübergehend in Tacitus’ Werkstatt.",
       "resourceNote": "46/46 HP · Smite 3/3 · Touch 9/9 · Challenge 1/1 · Boon 1/1.",
-      "gearNote": "Dastard-Platte +1, STR +2, CHA +2, Cloak +2, Amulett +1. Großschwert bei Tacitus (Cruel 2/6), Korsett werkstattgehalten und inaktiv. Prism verstaut, Initiative +6."
+      "gearNote": "Dastard-Platte +1, STR +2, CHA +2, Cloak +2, Amulett +1 getragen. Schwert +1 Cruel fertig, weiterhin bei Tacitus; Korsett fertig27Mar, nicht übernommen/24h getragen. Prism verstaut, Initiative +6."
     }
   ]
 }

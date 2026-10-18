@@ -15,3 +15,11 @@ Wesentliche Korrekturen:
 - Alte Gastfrist, erledigte Beschaffungspläne und überholte Tagesstände entfernt. Unbestätigte Zaubervorbereitung, Verwahrung und noch nicht berichtete Ergebnisse bleiben offen.
 
 Vorhandene Integritäts-, Link-, JavaScript-, Kalender-, HUD-, Asset- und Tracker-Prüfungen sowie die Prüfung der übergreifenden Standkonsistenz müssen vor Veröffentlichung bestehen. Alle vorhandenen Bilddateien und Bildzuordnungen bleiben unverändert. Es werden keine privaten Rohakten oder noch nicht übermittelten Ermittlungsergebnisse veröffentlicht.
+
+## Valet-Nachprüfung · 18. Oktober 2026
+
+Knittels bestehender Valet-Bonus war in der jüngsten März-Warteschlange nicht eingerechnet. Die ursprüngliche ganze Liste umfasst mit Knittel und sicherer Beschleunigung **26 produktive Fertigungstage**, davon nach den beiden abgeschlossenen Valeria-Aufträgen **23 zukünftige Plantage**. Kosten und Kasse bleiben gleich.
+
+Take 10 ergibt normalerweise 28. Bei Rezepten mit Tacitus' Oppositionsschulen Illusion/Nekromantie sinkt es auf 24. Die konservativen Cruel- und Shadow-Rezepte benötigen wegen je zweier fehlender Zauber SG 25; ein kurzes Guidance von Vesper unmittelbar vor dem einzigen Abschlusswurf hebt Take 10 auf 25. Guidance kostet keinen täglichen Oracle-Platz. Die übrigen Rezepte bestehen Take 10 ohne diese Zusatzhilfe.
+
+Rückwirkend: Korsett fertig am 27. März; Schwert tatsächlich am 29. März übergeben und als +1 Cruel am 30. März fertig. Beide Stücke bleiben werkstattgehalten, keine erfundene Rückgabe oder Korsett-Tragezeit. Der frei gewordene 28. März erzeugt kein zusätzliches ungeplantes Objekt oder Forschungsresultat. Forschung, Umschulung, der eigenständige Plattenauftrag, laufende Szene und Tagesressourcen bleiben unverändert. Wiederholte identische Abschnitte in generierten Bogenansichten wurden entfernt.
