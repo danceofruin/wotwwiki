@@ -22,3 +22,4 @@ jobs:
 
       - run: node scripts/test-calendar.mjs
       - run: node scripts/test-horn.mjs
+      - run: node scripts/test-reviewed-state.mjs

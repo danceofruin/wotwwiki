@@ -5,8 +5,8 @@
     "generatedView": true,
     "playerSafe": true,
     "source": "danceofruin/wotwGPT mechanics/combat/{styke,vesper,valeria}-level-7.md + current/LIVE_STATE.md",
-    "updated": "2026-10-12",
-    "revision": "level-7-horn-0307-fourteen-prayers"
+    "updated": "2026-10-18",
+    "revision": "level-7-horn-0330-eighty-four-prayers"
   },
   "ui": {
     "defaultCharacterOpen": "",
@@ -491,10 +491,10 @@
           "id": "arcane-enlightenment",
           "label": "Arcane Enlightenment",
           "type": "list",
-          "subtitle": "7. März: Alarm ersetzt Dancing Darkness · noch nicht gewirkt",
+          "subtitle": "Optionen, keine bestätigte heutige Fünferauswahl. Alarm stammt aus dem früheren Tagesstand 7. März.",
           "items": [
             {
-              "name": "Alarm"
+              "name": "Dancing Darkness"
             },
             {
               "name": "Silent Image"
@@ -507,6 +507,9 @@
             },
             {
               "name": "Stinking Cloud"
+            },
+            {
+              "name": "Alarm (frühere Alternative)"
             }
           ]
         },
@@ -776,10 +779,10 @@
         },
         {
           "id": "prepared-spells",
-          "label": "Vorbereitete Spells",
+          "label": "Zaubervorbereitungsoptionen",
           "type": "note",
           "title": "3 Grad-1-Slots + 1 Grad-2-Slot / Tag",
-          "text": "Gegenwärtiger akzeptierter Tagesrahmen 3 Grad 1 / 1 Grad 2; konkrete Vorbereitung nicht neu festgestellt. Stirnreif seit 25. Februar angelegt, keine zusätzliche erfolgte Vorbereitung angenommen. Default Darkvision: Standard, Berührung, 60-ft-Dunkelsicht für 4 Stunden. Alternative Blade Tutor’s Spirit: Standard, persönlich, 4 Minuten, freiwillige Angriffsabzüge zusammen um 1 reduziert (PA +11/+6, 2d6+13). CL 4, Konzentration +10, DC 17/18.",
+          "text": "Kapazität 3 Grad 1 / 1 Grad 2; tatsächliche heutige Vorbereitung nicht bestätigt. Darkvision als Standardoption, Blade Tutor’s Spirit als Kampf-Alternative. CL 4, Konzentration +10, SG 17/18. Großschwertwerte gelten nur nach echter Rückgabe.",
           "subtitle": ""
         },
         {
@@ -860,7 +863,7 @@
               "detail": "Nur wenn der Selbstschaden vertretbar ist."
             }
           ],
-          "subtitle": ""
+          "subtitle": "Großschwert derzeit bei Tacitus: diese Waffenprofile sind nur bedingte Referenzwerte nach tatsächlicher Rückgabe. Cruel-Ausbau 2/6; kein Ersatzschwert."
         },
         {
           "id": "combat-engine",
@@ -873,7 +876,7 @@
             "Aura of Obedience",
             "Hurtful → Extra Attack"
           ],
-          "subtitle": ""
+          "subtitle": "Großschwert derzeit bei Tacitus: diese Waffenprofile sind nur bedingte Referenzwerte nach tatsächlicher Rückgabe. Cruel-Ausbau 2/6; kein Ersatzschwert."
         },
         {
           "id": "other-antipaladin",
@@ -941,7 +944,7 @@
               "detail": "Melee touch · 3d6 · Fort DC 19."
             }
           ],
-          "subtitle": ""
+          "subtitle": "Großschwert derzeit bei Tacitus: diese Waffenprofile sind nur bedingte Referenzwerte nach tatsächlicher Rückgabe. Cruel-Ausbau 2/6; kein Ersatzschwert."
         }
       ],
       "summaryResources": [
