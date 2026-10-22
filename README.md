@@ -139,5 +139,7 @@ geöffneten Tabs und verschwindet nach Neuladen oder **Trennen**.
 Sitzungen werden automatisch angeboten, zuletzt benutzte zuerst. Alternativ
 eine Beleg-ID aus dem Chat einfügen, ohne die Sitzung kennen zu müssen. Die
 Ansicht zeigt die Einzelwürfel, Modifikatoren und Summen sowie auf Wunsch den
-Originalbeleg. Voraussetzung: Worker-Version 0.2.1 oder neuer. Bei getrennten
+gefilterten Spielerbeleg. Voraussetzung: Worker-Version 0.2.2 oder neuer. Bei getrennten
 Deployments können Wiki und Worker kurzzeitig unterschiedlich aktuell sein.
+
+Belege erscheinen neueste zuerst. Die Spieleransicht zeigt nur als public gekennzeichnete Würfe; GM-Würfe fehlen auch im JSON-Export.

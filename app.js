@@ -292,7 +292,7 @@ function newRoute(){if(!accepted()){showGate(location.hash||'#/live');syncAgeTog
 if(view==='wuerfel'){
   setMenu(false);const main=$('#main');main.innerHTML=pageHead('Live Play','Würfelprotokoll','Sitzungen automatisch auswählen oder einen Beleg direkt über seine ID öffnen.')+'<div id="dice-root"></div>';
   const root=$('#dice-root');root.textContent='Lade Protokollansicht …';
-  import('./dice.mjs?v=20261022-1').then(module=>{if(root.isConnected)module.mount(root);}).catch(()=>{if(root.isConnected)root.textContent='Protokollansicht nicht verfügbar. Bitte Seite neu laden.';});
+  import('./dice.mjs?v=20261022-2').then(module=>{if(root.isConnected)module.mount(root);}).catch(()=>{if(root.isConnected)root.textContent='Protokollansicht nicht verfügbar. Bitte Seite neu laden.';});
   document.title='Würfelprotokoll | Der Nessische Knoten';markActive('wuerfel');window.scrollTo({top:0,left:0,behavior:'instant'});return;
 }
 if(['horn','inventar'].includes(view)){setMenu(false);$('#main').innerHTML=WotwHorn.render(view);WotwHorn.bind();document.title=(view==='horn'?'Horn-Tracker':'Inventar')+' | Der Nessische Knoten';markActive(view);return;}
