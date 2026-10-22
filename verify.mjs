@@ -15,6 +15,7 @@ const css = text('styles.css');
 try {
   new Function(text('live.js'));
   new Function(text('horn.js'));
+  await import('./dice.mjs');
   validate(JSON.parse(text('data/live.json')), JSON.parse(text('data/sheets.json')));
 } catch (error) {
   failures.push(`Live-Play-Prüfung: ${error.message}`);
@@ -100,4 +101,5 @@ if (failures.length) {
 }
 
 console.log(`OK: ${data.articles.length} Artikel, ${data.edges.length} Beziehungsachsen, ${assetRefs.size} referenzierte Bilddateien.`);
+
 

@@ -125,3 +125,19 @@ Die gleiche Prüfung läuft bei Pushes und Pull Requests automatisch über GitHu
 - noch nicht übermittelte Offscreen-Ergebnisse von Beschaffung, Vandermir-Anfrage, Rekrutierung und Wächtererholung bewusst ausgespart
 - Live-Daten, Charakterbögen, HUD, Chronik, Beziehungen und Quellenregister aktualisiert
 - sämtliche bestehenden Bilddateien und Bildzuordnungen unverändert gelassen
+
+
+
+## Privates Würfelprotokoll
+
+Unter [Würfelprotokoll](https://danceofruin.github.io/wotwwiki/#/wuerfel) wird das
+Protokoll direkt vom WotW-Worker gelesen. Den bestehenden MCP_KEY nur in das
+Passwortfeld im Browser eingeben; Schlüssel und Würfeldaten werden nicht im
+öffentlichen Wiki gespeichert. Der Schlüssel bleibt im Arbeitsspeicher des
+geöffneten Tabs und verschwindet nach Neuladen oder **Trennen**.
+
+Sitzungen werden automatisch angeboten, zuletzt benutzte zuerst. Alternativ
+eine Beleg-ID aus dem Chat einfügen, ohne die Sitzung kennen zu müssen. Die
+Ansicht zeigt die Einzelwürfel, Modifikatoren und Summen sowie auf Wunsch den
+Originalbeleg. Voraussetzung: Worker-Version 0.2.1 oder neuer. Bei getrennten
+Deployments können Wiki und Worker kurzzeitig unterschiedlich aktuell sein.
