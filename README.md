@@ -3,10 +3,18 @@
 Spielerbezogenes Kampagnenwiki für *Way of the Wicked*.
 
 - Live: https://danceofruin.github.io/wotwwiki/
-- Live-Play-Stand: siehe `data/live.json` (27. Februar 4712 AR, vor Morgengrauen; Farholde, Goldener Reiher)
-- Artikelarchiv: redaktionell nachgezogen bis zu Stykes Erwachen neben Vesper am 27. Februar 4712 AR
-- Technischer Stand: 5. Oktober 2026
-- Version 4.4.0
+- Live-Play-Stand: siehe `data/live.json` (26. April 4712 AR, später Nachmittag; Farholder Versteck am Calliver Green)
+- Artikelarchiv: zuletzt einzeln redaktionell bis 30. März 4712 AR geprüft; ältere Artikel und Archivchronik sind historisch datiert, nicht der Live-Spielstand
+- Technischer Stand: 22. Oktober 2026
+- Version 4.5.0
+
+## 4.5.0 · 26. April 4712 AR
+
+- Spieleransichten von Live Play, Charakterbögen, Horn-Tracker und Inventar sind anhand des bestätigten 26-April-LIVE_STATE und der aktiven Stufe-7-Kampfbögen synchronisiert.
+- Styke: DEX +4, CHA +2, Cloak +3, 18 PP, neue Angriffs- und Rettungswerte. Vesper: CHA +4, Cloak +3, 8/8/5 Zauberslots, IL 9, sechs aktuelle Arcane-Enlightenment-Optionen. Valeria: Cloak +3, Shadow-Platte, seit 31. März zurückgegebenes +1-Cruel-Großschwert.
+- Ritual 164/666, drei Augen installiert, zwei Fallgitter und Befehlssteine, Grumblejack-Platte 1.424/3.150, Kasse 7.710/4.600/3.110 GM. Bereits eingerechnete Silber- und Wertstücke nicht erneut als verfügbares Vermögen zählen.
+- Sichtbare Questlage folgt dem unterschriebenen Schreiben aus Farholde; keine geheimen Aufenthaltsorte oder GM-Prozesse publiziert.
+- Das umfangreiche eingebettete Artikel- und Chronikarchiv bleibt ausdrücklich beim früheren überprüften 30-März-Stand, bis ein separater redaktioneller Artikelabgleich erfolgt. Der aktuelle Spielstand ist über Live Play und die genannten aktuellen Ansichten erreichbar.
 
 ## Live Play
 

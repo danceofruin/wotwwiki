@@ -4,52 +4,62 @@
     "authority": "GENERATED VIEW. DO NOT USE AS CAMPAIGN AUTHORITY.",
     "generated": true,
     "playerSafe": true,
-    "generatedAt": "2026-10-18T13:35:57+00:00",
-    "reviewedAt": "2026-10-18",
-    "sourceRevision": "d957c1a0184203d8f3e4e7564ae1ae215bc1189883625c4ae441e93d73c3e15f",
-    "sheetRevision": "f21662eccde71c08cc65c0abc62359324a0ae00874fca2be40e4037821833115"
+    "generatedAt": "2026-10-22T15:48:14.950Z",
+    "reviewedAt": "2026-10-22",
+    "sourceRevision": "a0d0992038201c9cdc12233d3c51b7b74de9dd6ffadad41df6655e158e5a07c4",
+    "sheetRevision": "bc34a420b1e8cd6c30397009d87cd203ac0eb4d14a311a46dba547c720cdc045"
   },
   "scene": {
-    "date": "4712-03-30",
-    "dateLabel": "30. März 4712 AR",
-    "time": "Abend · ungefähr 19–22 Uhr",
-    "location": "Horn von Abaddon · Calliastes privates Zimmer 2-15",
-    "locationId": "horn-abaddon",
-    "detail": "Styke und Calliaste allein bei den vier noch nicht überreichten Geschenken. Calliaste schlägt ein Naturfundstücke-Ratespiel vor; Stykes Antwort steht aus. Vesper und Valeria sind anderswo im Horn.",
-    "summary": "84/666 Gebete bis zum Abend des 30. März · Ritualtag 28 · 1/3 lebende Opfer. Silbersiegel und Ketten sind intakt; alle drei Augen bleiben ungesetzt. Bad benutzbar, 3-1 geschlossen; keine aktive Kampfszene.",
-    "rest": "Normale Nachtruhe 29./30. März abgeschlossen. Die individuellen bestätigten Ressourcen stehen bei der jeweiligen Figur; keine fortbestehenden Kampfboni."
+    "date": "4712-04-26",
+    "dateLabel": "26. April 4712 AR",
+    "time": "Später Nachmittag, etwa 17:00–18:30",
+    "location": "Farholde · verborgenes Haus am Fuß des Calliver Green",
+    "locationId": "farholde",
+    "detail": "Styke, Vesper und Valeria sind gerade durch den bekannten Yah-Thron eingetroffen. Sie wollen den Hinweisen aus Elise Zadarias unterschriebener Warnung nachgehen. Keines der vier genannten Gruppenmitglieder wurde bislang von ihnen persönlich gesehen.",
+    "summary": "Ritualtag 55 · nach dem Morgengebet 164/666 Gebete vollzogen · Abendgebet #165 steht noch aus. Alle drei Augen im Sanctum S-1 eingebaut; Silbersiegel und Ketten intakt. Im Horn hat Tamsin die Gesamtleitung der Verteidigung, Hakon führt seine eigenen fünf Männer.",
+    "rest": "Gewöhnliche Nachtruhe und Tagesauffrischung am 26. April abgeschlossen. Die Thronreise verursachte keinen bestätigten HP- oder Zauberverbrauch; temporäre Kampfboni sind nicht als aktiv gesetzt."
   },
   "quests": [
     {
       "id": "horn",
-      "title": "Horn · Ritual und Haushalt",
+      "title": "Horn · Ritual, Augen und Wachordnung",
       "status": "active",
-      "updated": "4712-03-30",
-      "summary": "84/666 Gebete bis zum Abend des 30. März · Ritualtag 28 · 1/3 lebende Opfer. Silbersiegel und Ketten sind intakt; alle drei Augen bleiben ungesetzt.",
+      "updated": "4712-04-26",
+      "summary": "Ritualtag 55 · 164/666 Gebete nach dem Morgendienst des 26. April; #165 bei Dämmerung noch offen. Ein von drei lebenden Opfern vollzogen, Silbersiegel intakt, drei Augen installiert.",
       "known": [
-        "2-12 und 2-1 sind geschlossen; der obere Außenzugang 3-1 ist seit dem 28. März ebenfalls zugemauert. Offen bleiben die bewachte Haupttreppe 1-1, C1/Maw und der Sanctumbalkon S-2. Am Balkon laufen erste Verstärkungen; eine vollständige Schließung besteht nicht.",
-        "Das Bad 2-14 ist seit dem 21. März benutzbar: ein neu beschaffter, magisch selbstheizender Cauldron of Brewing, Kaltwasser-Mischzulauf und Ablauf. Der frühere verkaufte Kessel ist kein zweites vorhandenes Exemplar. Brannas großer Jurak-Tisch steht bis zum 30. März fertig in der Großen Halle 1-27."
+        "Alle drei Augen seit 1. April in der Statue S-1; kein tragbares Ersatzauge. Der Yah-Thron steht im Farholder Versteck, Rah und Nen an ihren echten Orten.",
+        "1-1 ist der einzige offene obere Landzugang: zwei Fallgitter, eine etwa 30-ft-Falle, Alarm und tatsächlich installierte Mehlzugleinen. Die oberen Außenzugänge 2-1 und 3-1 sind verschlossen.",
+        "Die beiden CL-3-Befehlssteine Silence und Glitterdust (je 1/Tag) sind der Eingangswache anvertraut und beim bestätigten Sicherheitsdrill nicht verbraucht worden.",
+        "Tamsin entscheidet über die gesamte Hornverteidigung; Hakon führt die fünf freien Männer seiner eigenen Einheit. Die drei Höllenhunde ergänzen die lokalen Wachen.",
+        "Vier erwachsene Assassin Vines bleiben im C1-Bereich einzeln angekettet und feindlich. Die nördliche C11-Strecke bleibt unter bestätigter Sicherungsgeometrie passierbar."
       ],
-      "next": "Nächstes Gebet um Mitternacht zum 31. März; Balkonverstärkung und reale Sicherung weiterführen.",
+      "next": "Gebet #165 am 26. April bei Dämmerung; Sicherungen pflegen, bevor über weitere Baumaßnahmen entschieden wird.",
       "links": [
         "horn-abaddon",
         "horn-aufbau",
-        "dirges-apollyon"
+        "dirges-apollyon",
+        "hakon",
+        "tamsin"
       ]
     },
     {
       "id": "crafting",
-      "title": "Tacitus · Fertige Aufträge, Übergabe offen",
+      "title": "Tacitus · Handwerk und Aufträge",
       "status": "active",
-      "updated": "4712-03-30",
-      "summary": "Valerias Schwert +1 Cruel und Korsett sind fertig, aber werkstattgehalten.",
+      "updated": "4712-04-26",
+      "summary": "Magische Ausrüstung bis 22. April tatsächlich hergestellt und übergeben. Styke trägt DEX +4 und Cloak +3; Vesper CHA +4 und Cloak +3; Valeria Cloak +3, Shadow-Platte und ihr +1-Cruel-Großschwert.",
       "known": [
-        "Tacitus und Knittel fertigen bei sicherem Take 10 beschleunigt bis zu 4.000 gp zusätzlichen Grundwert pro vollem Arbeitstag. Valerias Korsett war am 27. März fertig. Ihr am 29. März übergebenes Schwert ist nach zwei Arbeitstagen am 30. März ein fertiges Großschwert +1 Cruel. Beide Stücke liegen noch in der Werkstatt; weder Rückgabe noch Korsett-Aktivierung sind geschehen."
+        "Beide Korsetts wurden am 31. März ausgehändigt; nach unterbrochenem Tragen ist keine unbewiesene 24-Stunden-Aktivierung anzunehmen.",
+        "Stykes und Valerias Boots of Striding and Springing wurden am 17. bzw. 20. April übergeben; das ununterbrochene Tragen ist nicht bestätigt.",
+        "Stykes DEX-Gürtel wurde vom 20. bis 22. April auf +4 verbessert und am 22. April zurückgegeben und angelegt; dafür wurden einmalig 6.000 GM Material verbucht.",
+        "Valerias CHA-Stirnreif +4 benötigt 6.000 GM Material und drei volle Herstellungstage; nach den bestätigten Ausgaben fehlen 2.890 GM. Noch nicht begonnen.",
+        "Grumblejacks große Meisterarbeits-Platte ist bei 1.424/3.150 Fortschritt und nicht tragbar. Tacitus und Knittel helfen bei magischen Gegenständen mit Valet-Regeln, nicht als zweite parallele volle Werkstatt."
       ],
-      "next": "Tatsächliche Rückgabe/Übergabe und Korsett-Tragezeit separat erfassen. Spätere Wunschliste bleibt Planung.",
+      "next": "Weitere magische Fertigung erst nach tatsächlicher Finanzierung; Grumblejacks Platte bei realen Arbeitsblöcken fortführen.",
       "links": [
         "tacitus",
-        "valeria",
+        "knittel",
+        "grumblejack",
         "buildplanung"
       ]
     },
@@ -57,12 +67,12 @@
       "id": "matrix",
       "title": "Psionische Matrix",
       "status": "completed",
-      "updated": "4712-03-30",
-      "summary": "Meistermatrix fertig; ein unbenutzter Stein bei Styke.",
+      "updated": "4712-04-26",
+      "summary": "Psychische Meistermatrix fertig; erster ML-7-Psychic-Reformation-Einwegstein bei Styke weiterhin unbenutzt.",
       "known": [
-        "Sieben Forschungstage bis 25. März; erster ML-7-Stein am 26. März fertig."
+        "Forschung über sieben volle Tage bis 25. März abgeschlossen; erste tatsächliche Herstellung am 26. März. Meistermatrix bleibt bei Tacitus."
       ],
-      "next": "Erst bei echter Nutzung und legalem Austausch ändert sich Stykes Bogen.",
+      "next": "Keine Anwendung oder neue Kraft ohne tatsächliche Benutzung.",
       "links": [
         "styke",
         "tacitus"
@@ -72,13 +82,14 @@
       "id": "captives",
       "title": "Fünf vorläufige Arbeitseide",
       "status": "active",
-      "updated": "4712-03-30",
-      "summary": "Halla Amon, Sister Marta Dian, Yorgun, James O’Toole und Bianca DeVallya wurden am 10. März lebend gefangen. Seit dem 12. März gelten fünf vorläufige, auf 220 Tage begrenzte Arbeitseide. Sie wohnen gemeinsam unter Bewachung; das ist weder freie Beschäftigung noch ein unterschriebener dauerhafter Compact. Keine verpflichtenden Kampf- oder Sexualdienste. Ablauf ungefähr am 18. Oktober 4712; ohne gemeinsam gewählten dauerhaften neuen Pakt ist die angekündigte menschliche Vollstreckung Teil der Drohung. Kein magischer automatischer Tod. Ein dauerhafter Anschluss bleibt eine gesonderte Entscheidung.",
+      "updated": "4712-04-26",
+      "summary": "Fünf lebende Bewohner unter den am 12. März unterschriebenen befristeten 220-Tage-Arbeitseiden. Bewacht und nicht freie Mitarbeit.",
       "known": [
-        "Nella koordiniert Aufgaben; Tamsin bewacht und begleitet.",
-        "Bianca berichtete Styke von der Kenntnis aller fünf über die fingierten Todesnachrichten."
+        "Halla, Marta, Yorgun, James und Bianca leben im Horn. Die fiktiven Todesmeldungen ändern das nicht.",
+        "Die vorläufigen Eide enden ungefähr am 18. Oktober; kein dauerhafter neuer Pakt gilt automatisch.",
+        "Marta kann im gewährten Rahmen beten und helfen; im Haushalt wird auch reale Erholung koordiniert."
       ],
-      "next": "Bestehende begrenzte Bedingungen und tatsächliche Betreuung einhalten.",
+      "next": "Tatsächliche Arbeits- und Betreuungsbedingungen weiter respektieren; keinen späteren Anschluss vorwegnehmen.",
       "links": [
         "halla-amon",
         "marta-dian",
@@ -91,28 +102,27 @@
       "id": "calliaste-guest",
       "title": "Calliaste · Gastentscheidung",
       "status": "completed",
-      "updated": "4712-03-30",
-      "summary": "Eigener endlicher Compact seit 12. März; Gastfrist erledigt.",
+      "updated": "4712-04-26",
+      "summary": "Calliaste bleibt unter ihrem eigenen befristeten Compact; ihre erste selbstgewählte Waldübernachtung 24./25. April fand tatsächlich statt.",
       "known": [
-        "Zimmer 2-15; Schwert und Schmuck zurückgegeben."
+        "Sie meldete ihre geplante Abwesenheit und kehrte am 25. April nach Sonnenaufgang zurück.",
+        "Die Übernachtung war keine neue Pflichtpatrouille oder ein geheim abgeschlossener Auftrag."
       ],
-      "next": "Eigene vereinbarte Grenzen respektieren; kein altes Ultimatum wiederholen.",
+      "next": "Weitere private Ausflüge nur nach ihren eigenen Entscheidungen und realer Meldung an die Wache.",
       "links": [
-        "calliaste",
-        "compact-bound"
+        "calliaste"
       ]
     },
     {
       "id": "abbey",
       "title": "Kaitlyn · Klosterauftrag",
       "status": "completed",
-      "updated": "4712-03-30",
-      "summary": "Informationsauftritt am 22. März gelungen; fünf Gefangene leben.",
+      "updated": "4712-04-26",
+      "summary": "Kaitlyns Abtei-Auftritt vom März abgeschlossen; die fünf Betroffenen leben im Horn, unabhängig von den fingierten Todesnachrichten.",
       "known": [
-        "500 gp persönliche Auszahlung: Kaitlyn 400, Vesper 100; kein Knotengeld.",
-        "Endgültige Verwahrung von Martas gezeigter Tracht ungeklärt."
+        "500 GM damalige Belohnung waren privat: 400 Kaitlyn, 100 Vesper, kein Eingang in die gemeinsame Kasse."
       ],
-      "next": "Keine amtlich bestätigten fünf Todesfälle oder Leichen daraus machen.",
+      "next": "Keine nachträglichen offiziellen Todesfeststellungen aus dieser Tarnung behaupten.",
       "links": [
         "kaitlyn",
         "marta-dian"
@@ -122,48 +132,51 @@
       "id": "social",
       "title": "Kaitlyn · soziale Beobachtung",
       "status": "active",
-      "updated": "4712-03-30",
-      "summary": "Mindestens wöchentlicher diskreter Bericht an Styke und Vesper.",
+      "updated": "4712-04-26",
+      "summary": "Kaitlyn übermittelt öffentliche und diskrete Beobachtungen an Styke und Vesper; ihr regulärer gemeinsamer Wochenbericht vom 21. April ist erfolgt.",
       "known": [
-        "Erster Bericht an Styke am aktuellen Rand noch ausstehend."
+        "Sie hat die persönliche Verbindung zum Ball in Vanderhall unterstützt, nicht als Verlobte, Spionageleiterin oder Besitzerin aller städtischen Kontakte.",
+        "Die Nachricht an Dame Valenne über einen gemeinsamen Ausritt wurde am 21. April öffentlich in Hamorhall abgegeben. Bis zur Abreise am 26. April kam keine Antwort."
       ],
-      "next": "Ein tatsächliches privates Gespräch abwarten; keine Berichtsinhalte erfinden.",
+      "next": "Nächster regulärer Wochenbericht ungefähr 28. April, sofern das Spiel keine Abweichung bestätigt; eine Antwort Valennes nur bei wirklichem Eingang.",
       "links": [
-        "kaitlyn"
+        "kaitlyn",
+        "farholde"
       ]
     },
     {
       "id": "seventh",
-      "title": "White Ravens · Farholde",
+      "title": "White Ravens · Warnung aus Farholde",
       "status": "active",
-      "updated": "4712-03-30",
-      "summary": "Breakers geschlagen; Elise am 24. März persönlich besucht.",
+      "updated": "4712-04-26",
+      "summary": "Elise hat Kaitlyn eine unterschriebene Warnung zu einer vierköpfigen Beutegruppe überbracht. Styke, Vesper und Valeria haben sie am 26. April erhalten.",
       "known": [
-        "Elise hat diskrete Nachforschung zur Horngeschichte angenommen.",
-        "Der Drownington-Mord ist unaufgeklärt; keine bewiesene Täterschaft."
+        "Das übermittelte Schreiben nennt Traya DeMarco, Hassan J’raaq, Tasker Twelve-Knives und Posca the Merchant.",
+        "Das Kerntrio weiß von dieser Warnung und reist zum bekannten Farholder Versteck, um selbst nachzugehen. Es gibt noch keinen persönlichen Sichtkontakt und keine bestätigte Fundstelle.",
+        "Die eigenen früheren Kontakte zu Elise und den White Ravens bleiben bestehen, ohne eine automatische neue Allianz mit der genannten Gruppe."
       ],
-      "next": "Tatsächlich übermittelte Ergebnisse abwarten.",
+      "next": "Eigene Ermittlungen in Farholde beginnen; keine Gegnerpositionen oder verborgenen Absichten vorwegnehmen.",
       "links": [
-        "white-ravens",
         "elise",
+        "white-ravens",
         "farholde"
       ]
     },
     {
       "id": "lake",
-      "title": "Ein Tag am See",
-      "status": "waiting",
-      "updated": "4712-03-30",
-      "summary": "Fünf Freunde, Getränke, Aktivitäten und geheime Geschenke; ohne Datum.",
+      "title": "Seeausflug und Geschenke",
+      "status": "completed",
+      "updated": "4712-04-26",
+      "summary": "Der geplante Ausflug und die gemeinsame Übergabe der gegenseitigen Geschenke fanden am 2. April statt.",
       "known": [
-        "Styke, Vesper, Valeria, Elise und Grumblejack haben zugesagt.",
-        "Stykes vier vorbereitete Geschenke sind noch nicht verteilt."
+        "Styke, Vesper, Valeria, Elise und Grumblejack gaben sich ihre vorbereiteten Geschenke tatsächlich; die vier besonderen Gaben Stykes sind bei den jeweiligen Empfängern.",
+        "Vesper und Valeria tragen ihre eigenen Verlobungsringe; ein gemeinsames späteres Fest bleibt Planung."
       ],
-      "next": "Calliastes Spielvorschlag beantworten; Ort, Tag und individuelle Wünsche offen lassen.",
+      "next": "Kein weiterer ursprünglicher Übergabetermin oder offenes Geheimversteck in Calliastes Zimmer.",
       "links": [
-        "calliaste",
-        "grumblejack",
         "elise",
+        "grumblejack",
+        "styke",
         "vesper",
         "valeria"
       ]
@@ -172,52 +185,127 @@
       "id": "red-book",
       "title": "Rotes Buch",
       "status": "waiting",
-      "updated": "4712-03-30",
-      "summary": "AWAKENED; letzte aktive Sitzung spät am 7. März.",
+      "updated": "4712-04-26",
+      "summary": "Das Rote Buch bleibt AWAKENED, nicht Unsealed; Teilnahme und tatsächliche private Leservorgänge werden nicht als neue allgemeine Kräfte umgedeutet.",
       "known": [
-        "Keine zusätzliche Sitzung oder neue Stufe durch Zeitablauf."
+        "Es gab am 31. März eine bestätigte neue gemeinsame Buchsitzung; aus dem Zeitablauf bis 26. April folgt keine weitere Stufe.",
+        "Die drei eingebauten Augen im Sanctum sind vom Zustand des Buches zu unterscheiden."
       ],
-      "next": "Nächste Nutzung nur nach freiwilligem Beginn.",
+      "next": "Neue Wirkungen und Schritte nur aus wirklich ausgespielter weiterer Nutzung.",
       "links": [
-        "rotes-buch"
+        "rotes-buch",
+        "vesper",
+        "valeria"
       ]
     },
     {
       "id": "tacitus-research",
-      "title": "Gegenforschung und Verse",
-      "status": "waiting",
-      "updated": "4712-03-30",
-      "summary": "Keine neue gesicherte Tears-Lösung oder Verse-Herkunft.",
+      "title": "Tacitus · eigenständige Forschung",
+      "status": "active",
+      "updated": "4712-04-26",
+      "summary": "Tacitus hat am 25. und 26. April je einen vollständigen methodischen Forschungstag absolviert. Noch kein gesicherter spezifischer Durchbruch.",
       "known": [
-        "Matrix und normale Fertigung zählen nicht zugleich als volle Tears-Forschung."
+        "Zwei tatsächliche volle Tage wurden mit 0 GM zusätzlicher Ausgabe festgehalten, getrennt von den magischen Crafting-Arbeitstagen.",
+        "Die beauftragte Gegenforschung und Verses offene Herkunft sind unterschiedliche Fragen; die Herkunft wurde nicht automatisch geklärt."
       ],
-      "next": "Reale Voraussetzungen und getrennte konzentrierte Arbeit.",
+      "next": "Methodische Arbeit fortführen, ohne Ergebnisse oder bezahlte Experimente zu erfinden.",
       "links": [
         "tacitus",
-        "verse",
-        "thorn"
+        "verse"
       ]
+    },
+    {
+      "updated": "4712-04-26",
+      "status": "active",
+      "known": [
+        "Mirelle darf über die technische Einrichtung und den Handwerksbetrieb beraten; der Knoten finanziert und behält die tatsächlichen Einnahmen.",
+        "Kein Lokal ist bereits gemietet, gekauft oder eingerichtet; Ausgaben benötigen vorab Freigabe."
+      ],
+      "links": [
+        "mirelle",
+        "farholde"
+      ],
+      "id": "atelier",
+      "title": "Mirelle · Farholder Schneiderei",
+      "summary": "Der Knoten hat am 22. April einer eigenen öffentlichen Schneiderei mit fachlicher Verantwortung Mirelles grundsätzlich zugestimmt.",
+      "next": "Erst tatsächliche Ladenfindung, Mietentscheidung und genehmigtes Budget schaffen einen Betriebsstart."
+    },
+    {
+      "updated": "4712-04-26",
+      "status": "waiting",
+      "known": [
+        "Vesper und Valeria möchten jeweils eine unabhängige kritische Abschrift, bevor gemeinsame Überarbeitung beginnt.",
+        "Diese zwei Abschriften sind noch nicht erstellt; spätere Diskussionen mit weiteren Personen sind keine bereits gefassten Beschlüsse."
+      ],
+      "links": [
+        "styke",
+        "vesper",
+        "valeria"
+      ],
+      "id": "constitution",
+      "title": "Die Ordnung von Talingarde · Entwurf",
+      "summary": "Styke hat Vesper und Valeria seinen handschriftlichen Regierungsentwurf gezeigt; ein verabschiedetes Gesetz oder verbindlicher Staatsplan existiert nicht.",
+      "next": "Zwei getrennte lesbare Kopien tatsächlich erstellen und individuelle Anmerkungen abwarten."
+    },
+    {
+      "updated": "4712-04-26",
+      "status": "waiting",
+      "known": [
+        "Kaitlyn übernahm die Zustellung unter ihrem eigenen Namen, ohne die Hornadresse zu nennen.",
+        "Bis zum bestätigten Reisebeginn am 26. April war keine Antwort eingetroffen."
+      ],
+      "links": [
+        "kaitlyn",
+        "farholde"
+      ],
+      "id": "valenne",
+      "title": "Einladung an Dame Valenne",
+      "summary": "Stykes Ausritteinladung ist am 21. April auf öffentlichem Weg in Hamorhall abgegeben worden.",
+      "next": "Auf eine echte Antwort oder direkte Begegnung warten; keine Zusage erfinden."
     }
   ],
   "appointments": [
     {
-      "id": "next-midnight",
-      "date": "4712-03-31",
-      "label": "31. März · Mitternacht",
-      "time": "Reguläres Gebetsfenster",
-      "title": "Supplication to Darkness",
-      "note": "Nächstes Gebet #85; noch nicht vollzogen.",
+      "id": "dusk-165",
+      "date": "4712-04-26",
+      "label": "26. April · Dämmerung",
+      "time": "Nächstes Gebetsfenster",
+      "title": "Supplication to Darkness #165",
+      "note": "Nach dem am Morgen vollzogenen Gebet #164; am aktuellen Spielrand noch Zukunft.",
       "links": [
         "dirges-apollyon"
+      ]
+    },
+    {
+      "id": "kaitlyn-report",
+      "date": "4712-04-28",
+      "label": "28. April · regulär",
+      "time": "Wöchentlicher Bericht",
+      "title": "Kaitlyns Bericht an Styke und Vesper",
+      "note": "Regelfall nach dem tatsächlich erfolgten Bericht vom 21. April. Ausnahmen nur bei akzeptierter Handlung.",
+      "links": [
+        "kaitlyn"
+      ]
+    },
+    {
+      "id": "venom-harvest",
+      "date": "4712-04-30",
+      "label": "30. April",
+      "time": "Nächstes vorgesehenes Erntefenster",
+      "title": "Assassin-Vine-Gift",
+      "note": "Vier zuvor gesicherte Dosen bei Nella; kommende Ernte noch nicht ausgeführt.",
+      "links": [
+        "nella",
+        "horn-abaddon"
       ]
     },
     {
       "id": "next-sacrifice",
       "date": "4712-06-21",
       "label": "21. Juni · Sonnenaufgang",
-      "time": "111. Morgengebet / Ritualtag 111",
+      "time": "Ritualtag 111, Morgengebet #332",
       "title": "Zweites lebendes Opfer",
-      "note": "Gesamtgebet 332, nicht das 111. Gebet insgesamt. Zukunft.",
+      "note": "Noch Zukunft; nicht Gebet Nr. 111 insgesamt.",
       "links": [
         "dirges-apollyon"
       ]
@@ -226,9 +314,9 @@
       "id": "temporary-oaths-end",
       "date": "4712-10-18",
       "label": "Ungefähr 18. Oktober",
-      "time": "220 Tage ab dem tatsächlichen Eid",
-      "title": "Befristete Arbeitseide",
-      "note": "Exakte Tageszeit nicht festgelegt; kein dauerhafter Anschluss vorweggenommen.",
+      "time": "220 Tage ab tatsächlichem Eid",
+      "title": "Fünf befristete Arbeitseide",
+      "note": "Ungefährer Endtag, ohne automatischen neuen Pakt.",
       "links": [
         "halla-amon"
       ]
@@ -238,50 +326,62 @@
     {
       "id": "treasury",
       "label": "Gemeinsame Mittel",
-      "value": "30.985 gp",
-      "note": "4.600 vorgemerkt · 26.385 frei. Vorhandenes Gold einmal enthalten."
+      "value": "7.710 GM",
+      "note": "4.600 GM vorgemerkt · 3.110 GM frei. Bereits mitbewertetes Silber und Wertstücke nicht ein zweites Mal addieren."
     },
     {
       "id": "level",
       "label": "Kerntrio",
       "value": "Stufe 7",
-      "note": "Stufe-8-Planung nicht aktiviert."
+      "note": "Styke Zealot 4/Psion 1/Awakened Blade 2; Vesper Oracle 7; Valeria Antipaladin 7. Stufe 8 noch nicht aktiv."
+    },
+    {
+      "id": "ritual",
+      "label": "Ritual",
+      "value": "164 / 666",
+      "note": "Ritualtag 55, Morgendienst abgeschlossen, Dämmerung #165 ausstehend. Drei Augen installiert."
     },
     {
       "id": "guardians",
-      "label": "Wächter",
-      "value": "Hexor Ebene 2 · Vexor Ebene 3",
-      "note": "84/84 und 68/68 HP; Vexor 3 CON permanenter Entzug."
+      "label": "Gebundene Wächter",
+      "value": "Hexor 84 HP · Vexor 68 HP",
+      "note": "Vexor mit dauerhaft 3 CON Entzug. Vexor als äußere Vorwache; Hexor kann Ritualdienst mit tatsächlicher Ablösung versehen."
     },
     {
       "id": "potions",
       "label": "Heiltränke",
-      "value": "5 bestätigte CLW · 0 CMW",
-      "note": "Fünf CLW aus Halla-Bergung unbenutzt; ältere getrennte CLW-Bestände unbestätigt."
+      "value": "5 bestätigte CLW",
+      "note": "Fünf zuvor geborgene und als unbenutzt bestätigte CLW; ältere weitere Bestände nur soweit tatsächlich nachgewiesen."
     },
     {
       "id": "vault",
-      "label": "Zusätzliche Sachwerte",
-      "value": "10.920 gp",
-      "note": "10.000 Silber + 920 kleinere Wertstücke; Gold nicht ein zweites Mal addieren."
+      "label": "Sachwerte",
+      "value": "10.920 GM bereits eingerechnet",
+      "note": "10.000 GM Silber und 920 GM kleinere Wertstücke sind seit der Neubewertung wirtschaftlich im Gesamtsaldo enthalten, kein zusätzliches Vermögen."
     },
     {
       "id": "hakon",
       "label": "Freie Wachen",
-      "value": "Hakon und fünf Männer",
-      "note": "Sechs bezahlte freie Männer; separate Fachkräfte und bewachte Gefangene."
+      "value": "Hakon + 5 Männer",
+      "note": "Tamsin leitet die Gesamtverteidigung. Hakon führt die fünf freien Nordmänner; die Delegation an ihn selbst ist noch nicht einzeln übermittelt."
     },
     {
       "id": "camp",
-      "label": "Hornhaushalt",
-      "value": "Bad und großer Tisch fertig",
-      "note": "3-1 geschlossen; Haupttreppe, Maw und Sanctumbalkon weiter offen."
+      "label": "Hornzugänge",
+      "value": "1-1 als oberer Landzugang",
+      "note": "Zwei Fallgitter, Alarm, Mehlzüge und 2 Befehlssteine. C1/Maw und Sanctumbalkon bleiben gesonderte Sicherheitsfragen."
     },
     {
       "id": "collective",
       "label": "Collective",
       "value": "Vesper · Valeria · Tacitus · Calliaste",
-      "note": "Bewusste Übermittlung innerhalb tatsächlicher 140 ft; kein passives Fremdwissen."
+      "note": "Bewusste Nachrichten innerhalb 140 ft, kein Gedankenlesen oder automatisches Wissen über Abwesende."
+    },
+    {
+      "id": "plate",
+      "label": "Grumblejacks Platte",
+      "value": "1.424 / 3.150",
+      "note": "Große Meisterarbeitsplatte unfertig, weiterhin nicht tragbar."
     }
   ],
   "people": [
@@ -315,22 +415,6 @@
     "marta-dian",
     "yorgun",
     "james-otoole",
-    "bianca-devallya",
-    "marta-dian",
-    "yorgun",
-    "james-otoole",
-    "bianca-devallya",
-    "marta-dian",
-    "yorgun",
-    "james-otoole",
-    "bianca-devallya",
-    "marta-dian",
-    "yorgun",
-    "james-otoole",
-    "bianca-devallya",
-    "marta-dian",
-    "yorgun",
-    "james-otoole",
     "bianca-devallya"
   ],
   "party": [
@@ -343,12 +427,12 @@
         "max": 48
       },
       "conditions": [],
-      "state": "Im privaten Gespräch mit Calliaste in Zimmer 2-15; Antwort noch offen.",
-      "resourceNote": "48/48 HP · 16/16 PP · normaler Fokus verfügbar · Manöver erholt.",
-      "gearNote": "Großschwert +1, Handy Haversack, Zorn und ein unbenutzter ML-7-Reformationsstein; Meistermatrix bei Tacitus.",
+      "state": "Mit Vesper und Valeria im Farholder Versteck eingetroffen; bislang kein Gegnerkontakt.",
+      "resourceNote": "48/48 HP · 18/18 PP · normaler Psion-Fokus vorhanden; kein neuer Verbrauch durch Thronreise.",
+      "gearNote": "Getragen: DEX-Gürtel +4 (DEX 23), CHA-Stirnreif +2 (CHA 19), Cloak +3, Amulett +1, +1 Großschwert. Boots + Haversack im Besitz; Boots-Tragen nicht bestätigt. Reformationsstein unbenutzt.",
       "pp": {
-        "current": 16,
-        "max": 16
+        "current": 18,
+        "max": 18
       },
       "focus": true
     },
@@ -361,9 +445,9 @@
         "max": 38
       },
       "conditions": [],
-      "state": "Im Horn, nicht in Calliastes privatem Zimmergespräch.",
-      "resourceNote": "38/38 HP · Plätze 8/8, 7/7, 5/5 · Extend Rod 3/3.",
-      "gearNote": "Mithralkettenhemd/Schild +1, CHA +2, Cloak +2, Amulett +1, Ring, Lens und Sleeves of Many Garments. Rotes Buch AWAKENED; Augen ungesetzt. Heutige Arcane-Enlightenment-Auswahl nicht neu bestätigt.",
+      "state": "Mit dem Kerntrio in Farholde; keine im Reisevorgang ausgelöste Zauberausgabe.",
+      "resourceNote": "38/38 HP · gewöhnliche Tageskapazität 8/8, 8/8, 5/5 · Extend Rod 3/3; keine zusätzliche Ausgabe durch Thronreise.",
+      "gearNote": "CHA +4, Cloak +3, Amulett +1, Mithralhemd/Schild, Ring of Mind Shielding, Verse und Rotes Buch (AWAKENED). Sechs aktuelle Arcane-Enlightenment-Optionen; keine imaginären aktiven Glyphen.",
       "verse": {
         "present": true,
         "hpCurrent": 19,
@@ -377,8 +461,8 @@
         },
         {
           "level": 2,
-          "current": 7,
-          "max": 7
+          "current": 8,
+          "max": 8
         },
         {
           "level": 3,
@@ -388,7 +472,7 @@
       ],
       "essence": {
         "total": 4,
-        "standard": "2 Witness to Glory · 2 Disrupt Essence"
+        "standard": "2 Witness to Glory · 2 Disrupt Essence · 0 Armaments"
       }
     },
     {
@@ -400,9 +484,9 @@
         "max": 46
       },
       "conditions": [],
-      "state": "Im Horn; Großschwert vorübergehend in Tacitus’ Werkstatt.",
-      "resourceNote": "46/46 HP · Smite 3/3 · Touch 9/9 · Challenge 1/1 · Boon 1/1.",
-      "gearNote": "Dastard-Platte +1, STR +2, CHA +2, Cloak +2, Amulett +1 getragen. Schwert +1 Cruel fertig, weiterhin bei Tacitus; Korsett fertig27Mar, nicht übernommen/24h getragen. Prism verstaut, Initiative +6."
+      "state": "Mit Styke und Vesper in Farholde; ursprüngliches Großschwert +1 Cruel tatsächlich zurückerhalten.",
+      "resourceNote": "46/46 HP · Smite 3/3 · Touch 9/9 · Challenge 1/1 · Boon 1/1 · vorbereitete Zauber ohne neuen Reiseverbrauch.",
+      "gearNote": "+1 Cruel-Großschwert, +1 Dastard/Shadow-Platte, STR +2, CHA +2, Cloak +3, Amulett +1. Eigene Boots seit 20. April im Besitz, Tragen unbestätigt; Prism verstaut."
     }
   ]
 }

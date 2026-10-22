@@ -4,9 +4,9 @@
     "authority": "GENERATED VIEW. DO NOT USE AS CAMPAIGN AUTHORITY.",
     "generated": true,
     "playerSafe": true,
-    "generatedAt": "2026-10-18T13:35:57+00:00",
-    "reviewedAt": "2026-10-18",
-    "sourceRevision": "f21662eccde71c08cc65c0abc62359324a0ae00874fca2be40e4037821833115"
+    "generatedAt": "2026-10-22T15:48:14.950Z",
+    "reviewedAt": "2026-10-22",
+    "sourceRevision": "bc34a420b1e8cd6c30397009d87cd203ac0eb4d14a311a46dba547c720cdc045"
   },
   "characters": [
     {
@@ -16,26 +16,26 @@
       "level": 7,
       "ancestry": "Aasimar · Angel-Blooded",
       "source": "mechanics/combat/styke-level-7.md",
-      "profile": "Mithralkettenhemd + Inner Eye · Cloak +2 · Amulett +1",
+      "profile": "+1 Mithralkettenhemd · DEX-Gürtel +4 · CHA-Stirnreif +2 · Cloak +3 · Amulett +1 · Stance of the Inner Eye",
       "hpMax": 48,
       "stats": {
-        "ac": "23",
-        "touch": "17",
+        "ac": "24",
+        "touch": "18",
         "flatFooted": "16",
-        "initiative": "+8",
-        "speed": "30 ft",
+        "initiative": "+9",
+        "speed": "30 ft (Boots-Tragen nicht bestätigt)",
         "bab": "+6/+1",
         "cmb": "+10",
-        "cmd": "23",
-        "fort": "+9",
-        "ref": "+11",
-        "will": "+11"
+        "cmd": "24",
+        "fort": "+10",
+        "ref": "+13",
+        "will": "+12"
       },
       "attack": {
         "name": "+1 Großschwert",
-        "hit": "+12/+7",
-        "damage": "2d6+16 +1d6 Präzision",
-        "note": "Power Attack · Stance of the Inner Eye"
+        "hit": "+13/+8",
+        "damage": "2d6+18 +1d6 Präzision",
+        "note": "Standard Power Attack aktiv · Stance of the Inner Eye; ohne zusätzliche temporäre Effekte."
       },
       "attributes": [
         {
@@ -44,7 +44,7 @@
         },
         {
           "name": "DEX",
-          "value": "21 getragen"
+          "value": "23 getragen (Gürtel +4)"
         },
         {
           "name": "CON",
@@ -60,7 +60,7 @@
         },
         {
           "name": "CHA",
-          "value": "17"
+          "value": "19 getragen (Stirnreif +2)"
         }
       ],
       "tabs": [
@@ -70,15 +70,15 @@
           "sections": [
             {
               "title": "Angriffsprofile",
-              "markdown": "| Profil | Angriff | Schaden / Bedingung |\n| --- | --- | --- |\n| Normal | +14/+9 | 2d6+10 +1d6 Präzision |\n| Power Attack | +12/+7 | 2d6+16 +1d6 Präzision |\n| Minute Hand + PA | +10 | 2d6+16 +1d6 Präzision |\n| Fetch’s Wrath + PA | +12 | 2d6+16 +4d6 +1d6 Präzision |\n"
+              "markdown": "| Profil | Angriff | Schaden / Bedingung |\n| --- | --- | --- |\n| Normal | +15/+10 | 2d6+12 +1d6 Präzision |\n| Power Attack | +13/+8 | 2d6+18 +1d6 Präzision |\n| Minute Hand + PA | +11 | 2d6+18 +1d6 Präzision · zusätzliche Swift-Attacke |\n| Fetch’s Wrath + PA | +13 | 2d6+18 +4d6 +1d6 Präzision · Teleport bis 170 ft vor oder nach Angriff |\n| Circle of Razor Feathers | Reflex SG 18 | 8d6 profan gegen Gegner im 30-ft-Radius · gescheitert sickened 4 Runden, bestanden sickened 1 Runde |\n| The Caged Sun + PA | +13/+8 | 2d6+16 · ohne Inner-Eye-Präzision; eigene Haltung, nicht gleichzeitig Inner Eye |"
             },
             {
               "title": "Rettungswürfe",
-              "markdown": "| Fähigkeit | Typ / Wert | Kurzbeschreibung |\n| --- | --- | --- |\n| Fortitude | +9 |  |\n| Reflex | +11 |  |\n| Will | +11 |  |\n"
+              "markdown": "| Rettungswurf | Bonus |\n| --- | --- |\n| Fortitude | +10 |\n| Reflex | +13 |\n| Will | +12 |"
             },
             {
               "title": "Zealot und Awakened Blade",
-              "markdown": "| Fähigkeit | Typ / Wert | Kurzbeschreibung |\n| --- | --- | --- |\n| Compartmentalized Aid |  | Move Action · +4 Angriff gegen gewähltes Ziel · bis zu 3 geeignete Manöver recovern · aktiviert Zeal. |\n| Living Bastion |  | Mit psionischem Fokus +5 ft Reach; Fokus kann für Schadenshalbierung eines Verbündeten aufgegeben werden. |\n| Martyrdom |  | Bis zu 20 Schaden übernehmen; bis zu 4 PP für 3 Schadensreduktion pro PP, mindestens 1 bleibt. |\n| Echoes of Steel |  | Manöver bis Grad 3 an ein Collective-Mitglied; PP-Kosten = Grad, einmal binnen 1 Minute; nur ein Echo gleichzeitig. |\n| Zeal +1 |  | Getroffener Martial Strike gibt Collective-Mitgliedern 1 Runde +1 Moral auf Angriffe. |\n| Deep Focus |  | Zweiter separat geführter psionischer Fokus. |\n| Situational Awareness |  | +1 Insight auf Initiative. |\n| Zorn · Stufe 7 |  | 24 HP · INT 10 · AC 17 · Saves +5/+7/+7. Tactical Assistance INT +0 vs DC 10; bei Erfolg +2 Aid, Knowledge-Hilfe separat +2. |\n"
+              "markdown": "| Fähigkeit | Kurzbeschreibung |\n| --- | --- |\n| Compartmentalized Aid | Move Action · Helpful +4 Angriff gegen gewähltes Ziel bis zum nächsten eigenen Zug · bis zu 4 geeignete verbrauchte vorbereitete Manöver recovern · aktiviert Zeal. |\n| Living Bastion | Mit psionischem Fokus +5 ft Reach; Fokus kann für Schadenshalbierung eines Verbündeten aufgegeben werden. |\n| Martyrdom | Bis zu 20 Schaden übernehmen; bis zu 4 PP für 3 Schadensreduktion pro PP, mindestens 1 bleibt. |\n| Echoes of Steel | Manöver bis Grad 3 an ein Collective-Mitglied; PP-Kosten = Grad, einmal binnen 1 Minute; nur ein Echo gleichzeitig. |\n| Zeal +1 | Getroffener Martial Strike gibt Collective-Mitgliedern 1 Runde +1 Moral auf Angriffe. |\n| Deep Focus | Zweiter separat geführter psionischer Fokus. |\n| Situational Awareness | +1 Insight auf Initiative. |\n| Zorn · Stufe 7 | 24 HP · INT 10 · AC 17 · Saves +5/+7/+7. Tactical Assistance INT +0 vs DC 10; bei Erfolg +2 Aid, Knowledge-Hilfe separat +2. |"
             }
           ]
         },
@@ -88,15 +88,15 @@
           "sections": [
             {
               "title": "Alle 12 bekannten Manöver",
-              "markdown": "| Manöver | Grad / Typ | Standard vorbereitet | Wirkung |\n| --- | --- | --- | --- |\n| Temporal Body Adjustment |  | Ja | Readied · Grad 4 Counter |\n| Reflected Blade Style |  | Ja | Readied · Grad 3 Boost |\n| Minute Hand |  | Ja | Readied · Boost |\n| Circle of Razor Feathers |  | Ja | Readied · Grad 4 Strike |\n| Fetch's Wrath |  | Ja | Readied · Grad 4 Strike |\n| Rapid Strike |  | — | Bekannt |\n| Obsidian Sidestep |  | — | Bekannt |\n| Chains of Doubt |  | — | Bekannt |\n| Strength of Hell |  | — | Bekannt |\n| Ravaging Blow |  | — | Bekannt |\n| Lifeburst Strike |  | — | Bekannt |\n| Flash of Insight |  | — | Bekannt |\n"
+              "markdown": "| Manöver | Vorbereitet | Grad/Typ | Wirkung |\n| --- | --- | --- | --- |\n| Temporal Body Adjustment | Ja | Grad 4 Counter | Immediate: einen qualifizierenden negativen Zustand ignorieren oder beenden; verhindert keinen Tod. |\n| Reflected Blade Style | Ja | Grad 3 Boost | Nächster geeigneter Standard-Strike trifft einen zweiten Gegner innerhalb 40 ft mit demselben Wurf. |\n| Minute Hand | Ja | Boost | Swift · ein zusätzlicher Nahkampfangriff mit -2; mit Power Attack/Inner Eye jetzt +11, 2d6+18 +1d6 Präzision. |\n| Circle of Razor Feathers | Ja | Grad 4 Strike | Standard · 30-ft-Radius, nur Gegner · 8d6 profan · Reflex DC 18: bei Erfolg halbiert und sickened 1 Runde, sonst voller Schaden und sickened 4 Runden. |\n| Fetch's Wrath | Ja | Grad 4 Strike | Standard · Angriff vor ODER nach einmaligem Teleport bis 170 ft; PA/Inner Eye +13, 2d6+18 +4d6 +1d6 Präzision. |\n| Rapid Strike | Nein | Bekannt | Standard: zwei getrennte Nahkampfangriffe gegen dasselbe Ziel |\n| Obsidian Sidestep | Nein | Bekannt | Immediate: Craft (Weapons) +9 statt gewähltem Rettungswurf |\n| Chains of Doubt | Nein | Bekannt | Strike, +3d6; Will DC 17 oder 1 Runde nauseated; zusätzliche PP/focus optional |\n| Strength of Hell | Nein | Bekannt | Swift: +2 profan Angriff und +1d6 Schaden, -2 AC für 1 Runde |\n| Ravaging Blow | Nein | Bekannt | Strike: +1d6 profan; Will DC 15 oder 1 Runde shaken |\n| Lifeburst Strike | Nein | Bekannt | Strike: +1d6 und danach 9 HP Heilung auf gültige Ziele im 40-ft-Radius, +5 je investierter Essence |\n| Flash of Insight | Nein | Bekannt | Swift nach Treffer: Verbündetem in 30 ft erneuten Save gegen laufenden Effekt ermöglichen |"
             },
             {
               "title": "Haltungen",
-              "markdown": "| Fähigkeit | Typ / Wert | Kurzbeschreibung |\n| --- | --- | --- |\n| Stance of the Inner Eye |  | Standard · +2 Insight auf AC/Angriff/Schaden/CMB/Saves und +1d6 Präzision; entfällt ohne DEX-Bonus auf AC. |\n| The Caged Sun |  | Notfallhaltung · freier Eintritt bei ≤24 HP. Mit 2 Essence: Heilung floor((eingehend +4)×1,5), CMD 25, PA 2d6+14 ohne Inner-Eye-Präzision. |\n| Black Seraph's Glare |  | Nach einem Schadenstreffer freie Demoralize-Probe mit +4 profan; kein automatischer Shaken-Zustand im Umkreis. |\n"
+              "markdown": "| Fähigkeit | Kurzbeschreibung |\n| --- | --- |\n| Stance of the Inner Eye | Standard · +2 Insight auf AC/Angriff/Schaden/CMB/Saves und +1d6 Präzision; entfällt ohne DEX-Bonus auf AC. |\n| The Caged Sun | Notfallhaltung · freier Eintritt bei ≤24 HP. Mit 2 Essence: +2 auf Angriff, AC, Saves, CMB und CMD, Heilung floor((eingehend +4)×1,5); AC 24 / CMD 26 / PA +13/+8, 2d6+16 ohne Inner-Eye-Präzision. |\n| Black Seraph's Glare | Nach einem Schadenstreffer freie Demoralize-Probe mit +4 profan; kein automatischer Shaken-Zustand im Umkreis. |"
             },
             {
               "title": "Vorbereitung und Recovery",
-              "markdown": "| Wert | Regel |\n| --- | --- |\n| IL | 7 |\n| Vorbereitet | 5 |\n| Recovery | Compartmentalized Aid als Move: bis 3 geeignete Manöver, +4 Angriff gegen gewähltes Ziel. |\n| Essence | Investierter Pool; keine täglichen Verbrauchspunkte. |\n"
+              "markdown": "| Wert | Regel |\n| --- | --- |\n| IL / IM | 7 / CHA +4 |\n| Bekannt / vorbereitet | 12 / 5; nicht jedes bekannte Manöver ist vorbereitet |\n| Recovery | Compartmentalized Aid: Move Action, bis zu 4 geeignete Manöver + Helpful +4 Angriff gegen ein bestimmtes Ziel |\n| Essence | Investierter Pool, kein täglicher Slotpool |\n| Standard | Stance of the Inner Eye; The Caged Sun ist alternative Notfallhaltung |"
             }
           ]
         },
@@ -106,11 +106,11 @@
           "sections": [
             {
               "title": "Manifestation",
-              "markdown": "| Wert | Aktuell |\n| --- | --- |\n| PP | 16/16 · 16 pro Tag |\n| Manifester Level | 2 |\n| Maximaler Grad | 1 |\n| Fokus | Normal verfügbar; Deep-Focus-Ladung nicht festgestellt. |\n"
+              "markdown": "| Wert | Aktuell |\n| --- | --- |\n| PP | 18/18 · 18 pro Tag bei normalem Tagesstand |\n| Manifester Level | 2 |\n| Maximaler Power-Grad | 1 |\n| Fokus | Normal vorhanden; separater Deep-Focus-Zustand nicht als aktiv bestätigt |\n| Bekannte Powers | 5; zusätzlich drei Grad-0-Talente |\n| Collective | Bis 5 andere, bestehende Mitglieder Vesper, Valeria, Tacitus, Calliaste; 140 ft |"
             },
             {
               "title": "Kräfte · Grad 1",
-              "markdown": "| Kraft | Kosten / Aktion / Dauer | Wirkung |\n| --- | --- | --- |\n| Minor Metamorphosis | 1 PP · Standard · persönlich · 2 Min. | Eine Grundoption: +2 STR/DEX/CON, Größenänderung, +10 ft Tempo, 5 temporäre HP, +1 natürliche Rüstung, natürlicher Angriff oder Resistenz 5. Kein höheres Augment bei ML 2. |\n| Defensive Precognition | 1 PP · Standard · 2 Min. | +1 Einsicht auf AC und Rettungswürfe. |\n| Offensive Precognition | 1 PP · Standard · 2 Min. | +1 Einsicht auf Angriffswürfe. |\n| Force Screen | 1 PP · Standard · 2 Min. | +4 Schild-AC, auch gegen incorporeal touch. Inner Eye: AC 27, Touch 17, Flat-Footed 20. |\n| Call to Mind | 1 PP · 1 Minute | Nach misslungenem Knowledge-Check sofort mit +4 Kompetenz erneut würfeln. |\n"
+              "markdown": "| Kraft | Kosten / Aktion / Dauer | Wirkung |\n| --- | --- | --- |\n| Minor Metamorphosis | 1 PP · Standard · persönlich · 2 Min. | Eine Grundoption: +2 STR/DEX/CON, Größenänderung, +10 ft Tempo, 5 temporäre HP, +1 natürliche Rüstung, natürlicher Angriff oder Resistenz 5. Kein höheres Augment bei ML 2. |\n| Defensive Precognition | 1 PP · Standard · 2 Min. | +1 Einsicht auf AC und Rettungswürfe. |\n| Offensive Precognition | 1 PP · Standard · 2 Min. | +1 Einsicht auf Angriffswürfe. |\n| Force Screen | 1 PP · Standard · 2 Min. | +4 Schild-AC, auch gegen incorporeal touch. Inner Eye: AC 28, Touch 18, Flat-Footed 20. |\n| Call to Mind | 1 PP · 1 Minute | Nach misslungenem Knowledge-Check sofort mit +4 Kompetenz erneut würfeln. |\n"
             },
             {
               "title": "Talente · Grad 0",
@@ -128,7 +128,7 @@
           "sections": [
             {
               "title": "Ränge und Gesamtboni",
-              "markdown": "| Fertigkeit | Ränge | Gesamtbonus |\n|---|---:|---:|\n| Acrobatics | 5 | +13 |\n| Autohypnosis | 4 | +7 |\n| Craft (Weapons) | 4 | +9 |\n| Diplomacy | 1 | +7 |\n| Intimidate | 3 | +11 |\n| Knowledge (All) | **7** | **+12** |\n| Perception | **7** | **+10** |\n| Stealth | **7** | **+15** |\n| Spellcraft | 1 | +6 |\n| Bluff | 1 | +7 |"
+              "markdown": "| Fertigkeit | Ränge | Gesamtbonus |\n|---|---:|---:|\n| Acrobatics | 5 | +14 |\n| Autohypnosis | 4 | +7 |\n| Craft (Weapons) | 4 | +9 |\n| Diplomacy | 1 | +8 |\n| Intimidate | 3 | +12 |\n| Knowledge (All) | **7** | **+12** |\n| Perception | **7** | **+10** |\n| Stealth | **7** | **+16** |\n| Spellcraft | 1 | +6 |\n| Bluff | 1 | +8 |"
             }
           ]
         },
@@ -148,11 +148,11 @@
           "sections": [
             {
               "title": "Getragen, mitgeführt und verwahrt",
-              "markdown": "| Gegenstand | Aktueller Stand |\n| --- | --- |\n| Großschwert +1 | Im eigenen Besitz |\n| Mithralkettenhemd +1 | Ausgerüstetes Kampfprofil |\n| DEX-Gürtel +2 | DEX 21, getragen |\n| Cloak of Resistance +2 | Getragen |\n| Amulett natürlicher Rüstung +1 | Getragen, AC bereits eingerechnet |\n| Handy Haversack | Bei Styke; 80 + 20 + 20 lb Fassungsvermögen |\n| Psychic Reformation ML 7 | Einwegstein, ein Exemplar, unbenutzt |\n| Iron Circlet / Verständnishelm | Alternative Kopfslot-Gegenstände, keine stillschweigende Doppelbelegung |\n| Eye of Hatred | Uninstalliert |\n| Vexor-Namensamulett | Befehlstoken, getrennt vom Rüstungsamulett |\n| Vision Juice | 4 Dosen |\n| IoG-Silberring | Persönlich, nichtmagisch |\n| Kampfunterwäsche / persönliche Papiere / Tonsiegel | Vorhanden; keine zusätzlichen Kräfte |\n"
+              "markdown": "| Gegenstand | Aktueller Stand |\n| --- | --- |\n| +1 Großschwert | Tatsächlich im Besitz, Angriffe wie oben |\n| +1 Mithralkettenhemd | Aktuelles Kampfprofil |\n| Belt of Incredible Dexterity +4 | Am 22. April wieder ausgehändigt/getragen; DEX 23 |\n| Headband of Alluring Charisma +2 | Von Vesper erhalten, seit 3. April getragen; CHA 19 |\n| Cloak of Resistance +3 | Fertig und seit 5. April ausgerüstet |\n| Amulet of Natural Armor +1 | Getragen, Rüstungsbonus enthalten |\n| Boots of Striding and Springing | 17. April übergeben; tatsächlich getragen nicht bestätigt, daher kein passiver +10-ft-Wert |\n| Handy Haversack | Im Besitz und bei der Farholder Reise mitgeführt |\n| Psychic Reformation ML 7 | Ein eigener unbenutzter Einwegstein; Meistermatrix bei Tacitus |\n| Iron Circlet / Verständnishelm | Kopfslot beachten; keine Doppelbelegung |\n| Eye of Hatred | Seit 1. April fest im Sanctum S-1 installiert, nicht tragbar |\n| Vexor-Namensamulett / persönliches Zeug | Weiterhin Besitz, keine fremden Auren oder ungeprüften Wirkungen |"
             },
             {
               "title": "Besitz und Aktivierung",
-              "markdown": "Herstellung, Übergabe und Ausrüstung sind getrennte Schritte. Aktuelle Ressourcen stehen nur bei dieser Figur. Werte und Verwahrung: gemeinsames Inventar."
+              "markdown": "Werte zeigen ein normal ausgerüstetes Kampfprofil. Der Gürtel +4 und Stirnreif +2 sind bestätigtes getragenes Eigentum; Stance/Buffs, Boots und Fokus bleiben getrennte Aktivierungsfragen. Inventar und Tagesressourcen sind keine automatische Aussage über aktuell laufende Magie."
             }
           ]
         }
@@ -165,26 +165,26 @@
       "level": 7,
       "ancestry": "Tiefling · Asura-Spawn",
       "source": "mechanics/combat/vesper-level-7.md",
-      "profile": "Mithralkettenhemd und Schild · Cloak +2 · Amulett +1",
+      "profile": "+1 Mithralkettenhemd/Schild · CHA-Stirnreif +4 · Cloak +3 · Amulett +1",
       "hpMax": 38,
       "stats": {
-        "ac": "24",
-        "touch": "15",
+        "ac": "25",
+        "touch": "16",
         "flatFooted": "19",
-        "initiative": "+12 mit Verse",
+        "initiative": "+12 mit Verse / +8 sonst",
         "speed": "30 ft",
         "bab": "+5",
         "cmb": "+5",
         "cmd": "17",
-        "fort": "+4",
-        "ref": "+10",
-        "will": "+11"
+        "fort": "+5",
+        "ref": "+12",
+        "will": "+12"
       },
       "attack": {
         "name": "Sun's Gleam",
-        "hit": "+7",
-        "damage": "1d6+5 Force",
-        "note": "Ranged Touch · 45 ft"
+        "hit": "+7 ranged touch",
+        "damage": "1d6+6 Force",
+        "note": "Nur bei geeignetem Radiant-Dawn-Strike, 45 ft"
       },
       "attributes": [
         {
@@ -201,7 +201,7 @@
         },
         {
           "name": "INT",
-          "value": "14"
+          "value": "14 (Mental Acuity enthalten)"
         },
         {
           "name": "WIS",
@@ -209,7 +209,7 @@
         },
         {
           "name": "CHA",
-          "value": "21 getragen"
+          "value": "23 getragen (Stirnreif +4)"
         }
       ],
       "tabs": [
@@ -219,11 +219,11 @@
           "sections": [
             {
               "title": "Angriffsprofile",
-              "markdown": "| Profil | Angriff | Schaden / Bedingung |\n| --- | --- | --- |\n| Dolch | +5 | 1d4 · 19–20/×2 |\n| Sun’s Gleam | +7 ranged touch | 1d6+5 Force · 45 ft |\n"
+              "markdown": "| Profil | Angriff | Schaden / Bedingung |\n| --- | --- | --- |\n| Dolch | +5 | 1d4 · 19–20/×2 |\n| Sun’s Gleam | +7 ranged touch | 1d6+6 Force · 45 ft · nur qualifizierender Radiant-Dawn-Strike |"
             },
             {
               "title": "Rettungswürfe",
-              "markdown": "| Fähigkeit | Typ / Wert | Kurzbeschreibung |\n| --- | --- | --- |\n| Fortitude | +4 |  |\n| Reflex | +10 |  |\n| Will | +11 |  |\n"
+              "markdown": "| Rettungswurf | Bonus |\n| --- | --- |\n| Fortitude | +5 |\n| Reflex | +12 |\n| Will | +12 |"
             }
           ]
         },
@@ -233,27 +233,27 @@
           "sections": [
             {
               "title": "Zauberwerte",
-              "markdown": "| Wert | Aktuell |\n| --- | --- |\n| CL | 7 |\n| Konzentration | +12 |\n| SG Grad 0 / 1 / 2 / 3 | 15 / 16 / 17 / 18 |\n| Plätze Grad 1 / 2 / 3 | 8/8 · 7/7 · 5/5 |\n| Extend Rod | 3/3 |\n"
+              "markdown": "| Wert | Aktuell |\n| --- | --- |\n| CL / Konzentration | 7 / +13 |\n| SG Grad 0 / 1 / 2 / 3 | 16 / 17 / 18 / 19 |\n| Slots Grad 1 / 2 / 3 | 8/8 · 8/8 · 5/5 (normaler 26-Apr-Tagesstand) |\n| Extend Rod | 3/3 |\n| Arcane Enlightenment | 6 temporäre tatsächlich bestätigte Tageszauber, keine zusätzlichen Slots |"
             },
             {
               "title": "Orisons · Grad 0",
-              "markdown": "| Zauber | Kurzbeschreibung |\n| --- | --- |\n| Detect Magic | Magische Auren untersuchen; keine automatische vollständige Identifikation. |\n| Create Water | Sauberes Wasser erzeugen. |\n| Purify Food and Drink | Verderbtes gewöhnliches Essen und Wasser reinigen. |\n| Read Magic | Magische Schrift entziffern. |\n| Guidance | +1 auf einen passenden einzelnen Wurf. |\n| Enhanced Diplomacy | Situativer Diplomatiebonus; Vesper Diplomacy +16 statt +14. |\n| Detect Poison | Gift erkennen. |\n"
+              "markdown": "| Zauber | Kurzbeschreibung |\n| --- | --- |\n| Detect Magic | Magische Auren untersuchen; keine automatische vollständige Identifikation. |\n| Create Water | Sauberes Wasser erzeugen. |\n| Purify Food and Drink | Verderbtes gewöhnliches Essen und Wasser reinigen. |\n| Read Magic | Magische Schrift entziffern. |\n| Guidance | +1 auf einen passenden einzelnen Wurf. |\n| Enhanced Diplomacy | Situativer Diplomatiebonus; Vesper Diplomacy situativ +17 statt +15. |\n| Detect Poison | Gift erkennen. |\n"
             },
             {
               "title": "Grad 1",
-              "markdown": "| Zauber | Kurzbeschreibung |\n| --- | --- |\n| Obscuring Mist | 20-ft-Nebel um Vesper; 7 Min. |\n| Protection from Evil | +2 Ablenkungs-AC / Widerstand gegen böse Gegner; Kontroll- und Beschwörungsschutz. Berührung, 7 Min. |\n| Air Bubble | Atemluft für das Ziel; Berührung, 7 Min. |\n| Remove Sickness | +4 Moral gegen Krankheit/Übelkeit/Kränkeln und Unterdrückung; 40 ft, 70 Min. |\n| Cure Light Wounds | Heilt 1d8+5. |\n| Unnatural Lust | Ein-Runden-Effekt; 40 ft, Will SG 16. |\n| Identify | Magieerkennung und +10 Spellcraft für untersuchte getragene Gegenstände; 60-ft-Kegel, 21 Runden. |\n| Endure Elements | Normale Umwelthitze/-kälte ertragen; Berührung, 24 Std.; keine Feuer-/Kälteresistenz. |\n"
+              "markdown": "| Zauber | Kurzbeschreibung |\n| --- | --- |\n| Obscuring Mist | 20-ft-Nebel um Vesper; 7 Min. |\n| Protection from Evil | +2 Ablenkungs-AC / Widerstand gegen böse Gegner; Kontroll- und Beschwörungsschutz. Berührung, 7 Min. |\n| Air Bubble | Atemluft für das Ziel; Berührung, 7 Min. |\n| Remove Sickness | +4 Moral gegen Krankheit/Übelkeit/Kränkeln und Unterdrückung; 40 ft, 70 Min. |\n| Cure Light Wounds | Heilt 1d8+5. |\n| Unnatural Lust | Ein-Runden-Effekt; 40 ft, Will SG 17. |\n| Identify | Magieerkennung und +10 Spellcraft für untersuchte getragene Gegenstände; 60-ft-Kegel, 21 Runden. |\n| Endure Elements | Normale Umwelthitze/-kälte ertragen; Berührung, 24 Std.; keine Feuer-/Kälteresistenz. |\n"
             },
             {
               "title": "Grad 2",
-              "markdown": "| Zauber | Kurzbeschreibung |\n| --- | --- |\n| Silence | 20-ft-Stille; 1 Runde Wirkzeit, 680 ft, 7 Runden; unwillige Kreatur Will SG 17. |\n| Lesser Restoration | Attributsschaden/Fatigue behandeln; 3 Runden Wirkzeit, Berührung; kein permanenter Attributsentzug. |\n| Cure Moderate Wounds | Heilt 2d8+7. |\n| Tongues | Sprachen verstehen und sprechen; Berührung, 70 Min. |\n| Undetectable Alignment | Gesinnung vor Divination verbergen; 40 ft, 24 Std. |\n"
+              "markdown": "| Zauber | Kurzbeschreibung |\n| --- | --- |\n| Silence | 20-ft-Stille; 1 Runde Wirkzeit, 680 ft, 7 Runden; unwillige Kreatur Will SG 18. |\n| Lesser Restoration | Attributsschaden/Fatigue behandeln; 3 Runden Wirkzeit, Berührung; kein permanenter Attributsentzug. |\n| Cure Moderate Wounds | Heilt 2d8+7. |\n| Tongues | Sprachen verstehen und sprechen; Berührung, 70 Min. |\n| Undetectable Alignment | Gesinnung vor Divination verbergen; 40 ft, 24 Std. |\n"
             },
             {
               "title": "Grad 3",
               "markdown": "| Zauber | Kurzbeschreibung |\n| --- | --- |\n| Delay Poison, Communal | Giftwirkung verzögern; 7 Stunden Dauerbudget normal aufteilen. |\n| Cure Serious Wounds | Heilt 3d8+7. |\n| Locate Object | Gegenstand suchen; 680 ft, 7 Min. |\n| Dispel Magic | Gezieltes Bannwürfeln 1d20+7 gegen 11 + gegnerische CL; 170 ft. Keine Greater-Dispel-Flächenwirkung. |\n"
             },
             {
-              "title": "Arcane Enlightenment · Optionen, keine bestätigte heutige Auswahl",
-              "markdown": "Die tatsächlichen fünf Wahlen am 30. März sind nicht neu bestätigt. Die frühere Alarm-Auswahl vom 7. März wird nicht als heutige Vorbereitung fortgeschrieben.\n\n| Grad | Standardoption | Kurzbeschreibung |\n| --- | --- | --- |\n| 1 | Dancing Darkness | Dunkelheit; 170 ft, 7 Min. |\n| 1 | Silent Image | Bildillusion, Konzentration; Will SG 16 bei Interaktion. |\n| 2 | Euphoric Cloud | Giftnebel, 7 Runden; Fort SG 17. |\n| 2 | Ashen Path | Sicht durch geeigneten Nebel/Rauch; 70 Min. Dauerbudget. |\n| 3 | Stinking Cloud | Übelkeitsnebel, 7 Runden; Fort SG 18. |\n| 1 | Alarm | Früher tatsächlich gewählt; kein heutiger aktiver Alarm bestätigt. |\n"
+              "title": "Arcane Enlightenment · sechs aktuelle Optionen",
+              "markdown": "Sechs aktuell bestätigte Optionen nach Vespers CHA-23-Progression; Glitterdust ersetzt seit 8. April die ältere Dancing-Darkness-Auswahl. Die Auswahl bleibt täglich flexibel, wirkt aber über reguläre Oracle-Slots.\n\n| Temporär bekannt | Aktueller Bezug |\n| --- | --- |\n| Alarm | CL 7 · 40 ft · 20-ft-Emanation · 14 Stunden. |\n| Glitterdust | 170 ft · 10-ft-Radius · 7 Runden · Will DC 18 gegen Blindheit, sichtbarmachender Staub unabhängig vom Save. |\n| Silent Image | 680 ft · Konzentration · Will DC 17 bei Interaktion. |\n| Euphoric Cloud | 170 ft · 20-ft-Fog · 7 Runden · Fort DC 18. |\n| Ashen Path | Touch · 70 Minuten geteilt · Sicht durch passenden magischen Rauch/Fog bis 60 ft. |\n| Stinking Cloud | 170 ft · 20-ft-Fog · 7 Runden · Fort DC 19. |"
             }
           ]
         },
@@ -262,12 +262,12 @@
           "label": "Manöver",
           "sections": [
             {
-              "title": "Radiant Dawn · IL 8",
-              "markdown": "| Fähigkeit | Typ / Wert | Kurzbeschreibung |\n| --- | --- | --- |\n| Witness to Glory |  | Standard readied · 2 Essence · +7 Initiative und 12 Temp HP auf Styke. |\n| Disrupt Essence |  | Standard readied · 2 Essence · unterdrückt zwei bekannte Fähigkeiten für 7 Runden; mit Sun's Gleam Will DC 23. |\n| Decree of Torment |  | Standard readied · Standard-Angriff · Treffer setzt 5 Brands; jeder Angreifer höchstens 1/Runde für nichtprovozierendes Kampfmanöver (IL 8 / IM +5 statt BAB/STR, falls besser). |\n| Armaments of the Empire |  | Standardstance · bis 5 Waffen innerhalb 45 ft, je legale +1-Eigenschaft bei 0 Essence. Styke Vicious (+2d6 Ziel / 1d6 Selbstschaden je Treffer), Valeria Conductive (2 Touch-Nutzungen, 1×/Runde). Keine permanenten Verzauberungen. |\n| Spoils of War |  | Heilwechselhaltung · bis 12 HP je gültigem Trigger bei 2 Essence. |\n| Radiant Dawn Style |  | Swift zum Aktivieren · nur aktiv 1×/Runde bei Manöverinitiierung 7 + investierte Essence HP an sich/einen Verbündeten in 45 ft; Disrupt mit 2 Essence heilt 9 HP. Witness vor Zug 1 verbraucht dessen Swift. |\n| Bolster |  | Bekannt, nicht Standard-readied · Immediate bei Treffer auf Verbündeten in 45 ft · DR 5/− +1 je Essence für 1 Runde, einschließlich auslösendem Treffer. |\n| Staunching Strike |  | Bekannt, nicht Standard-readied · Standard-Angriff (Sun's Gleam erlaubt) · Treffer heilt insgesamt 5 HP +3 je Essence, verteilt innerhalb 45 ft. |\n"
+              "title": "Radiant Dawn · IL 9 / IM +6",
+              "markdown": "| Fähigkeit | Kurzbeschreibung |\n| --- | --- |\n| Witness to Glory | Standard readied · 2 Essence · +8 Initiative und 13 temporäre HP auf Styke; Immediate nach Rohinitiative, bindet Essence bis Recovery. |\n| Disrupt Essence | Standard readied · 2 Essence · zwei bekannte zulässige Fähigkeiten für 8 Runden unterdrücken bei Fehlschlag; Will DC 22 normal, mit Sun's Gleam DC 24. |\n| Decree of Torment | Standard readied · Standard-Angriff · Treffer erzeugt 6 Brands; jeder Angreifer höchstens 1/Runde für nichtprovozierendes Kampfmanöver (IL 9 / IM +6 statt BAB/STR, falls besser). |\n| Armaments of the Empire | Standardstance · bis 6 Waffen innerhalb 45 ft, je zulässige +1-Eigenschaft ohne Essence-Investition. Styke standardmäßig Vicious (+2d6 Ziel / 1d6 selbst je Treffer), Valeria Conductive (2 Touch-Nutzungen, 1×/Runde). Nur solange aktiv, keine permanente Verzauberung. |\n| Spoils of War | Heilwechselhaltung · erster gültiger Treffer je Verbündetem/Runde: 9 HP (0 Essence), 11 HP (1), 13 HP (2). |\n| Radiant Dawn Style | Swift zum Aktivieren · nur aktiv 1×/Runde bei Manöverinitiierung 7 + investierte Essence HP an sich/einen Verbündeten in 45 ft; Disrupt mit 2 Essence heilt 9 HP. Witness vor Zug 1 verbraucht dessen Swift. |\n| Bolster | Bekannt, nicht Standard-readied · Immediate bei Treffer auf Verbündeten in 45 ft · DR 6/− +1 je Essence für 1 Runde, einschließlich auslösendem Treffer. |\n| Staunching Strike | Bekannt, nicht Standard-readied · Standard-Angriff (Sun's Gleam möglich) · Treffer heilt insgesamt 6 HP +3 je Essence, verteilt innerhalb 45 ft. |"
             },
             {
               "title": "Essence und Recovery",
-              "markdown": "| Wert | Stand |\n| --- | --- |\n| Pool / Kapazität | 4 / 2 |\n| Standard | 2 Witness to Glory · 2 Disrupt Essence · 0 Armaments |\n| Vorbereitet | Witness to Glory · Disrupt Essence · Decree of Torment |\n| Recovery | Full-round Action |\n"
+              "markdown": "| Wert | Stand |\n| --- | --- |\n| IL / IM | 9 / +6 |\n| Pool / Kapazität | 4 / 2 |\n| Standard-Investition | 2 Witness to Glory · 2 Disrupt Essence · 0 Armaments |\n| Vorbereitet | Witness to Glory · Disrupt Essence · Decree of Torment |\n| Recovery | Full-round Action; in verbrauchtem Manöver gebundene Essence bleibt bis Recovery investiert |\n| Martial Stance | Armaments of the Empire; Radiant Dawn Style extra Swift-Aktivierung |"
             }
           ]
         },
@@ -276,12 +276,12 @@
           "label": "Glyphen",
           "sections": [
             {
-              "title": "Alle 11 Glyphen",
-              "markdown": "| Fähigkeit | Typ / Wert | Kurzbeschreibung |\n| --- | --- | --- |\n| Elemental Shield |  | Energy Resistance 8 gegen gewähltes Element. |\n| Ghost Eating Blade |  | Waffen erhalten ghost touch. |\n| Ghost Armor |  | Rüstung/Schild erhalten ghost touch. |\n| Deflective Armor |  | +3 Natural Armor. |\n| Shadowmeld |  | 20% Concealment / Miss Chance. |\n| Elemental Weapon |  | Angriffe +1d6 Schaden des gewählten Elements. |\n| Evasive Armor |  | Nächster erfolgreicher Reflex-Save gegen partial-on-success wird zu keinem Effekt; danach endet Glyph. |\n| Blinding Blade |  | Nächster qualifizierender Treffer: Reflex DC 19 oder 1 Runde blind; danach endet Glyph. |\n| Spirit Stride | Advanced Glyph | Einmaliger 20-ft-Teleport als Free Action des Empfängers in einen sichtbaren, freien Bereich. Sichtlinie nötig, Line of Effect nicht. Endet nach Teleport oder 6 Runden; Anwendung der Glyphe nutzt normale Glyph-Aktion. |\n| Illusionary State | Advanced Glyph | Mirror Image bei CL 8: 1d4+2 Bilder, für höchstens 6 Runden. Normale Bild-/Trefferregeln; Flächeneffekte und Effekte ohne Angriffswurf umgehen Bilder. Blind-Fight allein negiert sie nicht. |\n| Wind Speed | Advanced Glyph | Haste für 6 Runden: ein Zusatzangriff mit höchstem BAB nur beim Full Attack; +1 Angriff, +1 Dodge AC, +1 Reflex; +30 ft Enhancement auf Bewegung, höchstens doppelte Grundgeschwindigkeit. Keine zusätzliche Strike-Attacke, kein Initiativebonus; keine Stapelung mit Haste/Speed-Zusatzangriff. |\n"
+              "title": "Alle 11 Glyphen · IL 9",
+              "markdown": "Virtual Animus Adept 3 · IL 9 / IM +6 · 11 bekannte Glyphen · 1 Animus · Reichweite 45 ft · Dauer 7 Runden · SG 20, soweit ein Rettungswurf vorgesehen ist.\n\n| Glyphe | Wirkung |\n| --- | --- |\n| Elemental Shield | Energy Resistance 9 gegen das gewählte Element. |\n| Ghost Eating Blade | Waffen erhalten ghost touch. |\n| Ghost Armor | Rüstung/Schild erhalten ghost touch. |\n| Deflective Armor | +3 Natural Armor. |\n| Shadowmeld | 20% Concealment / Miss Chance. |\n| Elemental Weapon | Angriffe +1d6 Schaden des gewählten Elements. |\n| Evasive Armor | Nächster erfolgreicher Reflex-Save gegen partial-on-success wird zu keinem Effekt; danach endet Glyph. |\n| Blinding Blade | Nächster qualifizierender Treffer: Reflex DC 20 oder 1 Runde blind; danach endet Glyph. |\n| Spirit Stride | Einmaliger 20-ft-Teleport als Free Action des Empfängers in sichtbaren freien Bereich; LoS nötig, LoE nicht. Endet nach Teleport oder 7 Runden. |\n| Illusionary State | Mirror Image bei CL 9: 1d4+3 Bilder, maximal 7 Runden. Flächeneffekte und Effekte ohne Angriffswurf umgehen Bilder; Blind-Fight allein negiert sie nicht. |\n| Wind Speed | Haste für 7 Runden: ein Zusatzangriff mit höchstem BAB nur beim Full Attack; +1 Angriff/Dodge AC/Reflex, +30 ft Enhancement-Speed bis höchstens doppelte Grundgeschwindigkeit. Kein Initiativebonus, keine zusätzliche Standard-Strike-Attacke. |"
             },
             {
               "title": "Animus",
-              "markdown": "| Fähigkeit | Typ / Wert | Kurzbeschreibung |\n| --- | --- | --- |\n| Startpool |  | 6 zu Beginn des ersten eigenen Zuges. |\n| Weitere Züge |  | +1 Animus zu Beginn jedes späteren eigenen Zuges. |\n| Martial Trigger |  | +1 Animus am Rundenende, wenn Vesper in der Runde mindestens ein Manöver initiiert hat. |\n| Glyph-Kosten |  | 1 Animus. |\n| Mystical Prowess |  | +3 auf Knowledge (martial) und Spellcraft ausschließlich zum Identifizieren von Manövern, Powers, Spells oder Glyphen. |\n"
+              "markdown": "| Fähigkeit | Kurzbeschreibung |\n| --- | --- |\n| Startpool | 7 Animus zu Beginn des ersten eigenen Zuges. |\n| Weitere Züge | +1 Animus zu Beginn jedes späteren eigenen Zuges. |\n| Martial Trigger | +1 Animus am Rundenende, wenn Vesper in der Runde mindestens ein Manöver initiiert hat. |\n| Glyph-Kosten | 1 Animus. |\n| Mystical Prowess | +3 auf Knowledge (martial) und Spellcraft ausschließlich zum Identifizieren von Manövern, Powers, Spells oder Glyphen. |"
             }
           ]
         },
@@ -291,11 +291,11 @@
           "sections": [
             {
               "title": "Mental Acuity",
-              "markdown": "| Fähigkeit | Typ / Wert | Kurzbeschreibung |\n| --- | --- | --- |\n| Mental Acuity |  | +1 inherent INT → 15; weitere +1 auf Oracle 10/13/16/19. Ersetzt die Spirit-Guide-Spirit-Ability auf Stufe 7, kommt nicht zusätzlich dazu. |\n"
+              "markdown": "| Fähigkeit | Kurzbeschreibung |\n| --- | --- |\n| Mental Acuity | +1 inherent INT → 14; weitere +1 auf Oracle 10/13/16/19. Ersetzt die Spirit-Guide-Spirit-Ability auf Stufe 7, kommt nicht zusätzlich dazu. |"
             },
             {
               "title": "Verse",
-              "markdown": "| Fähigkeit | Typ / Wert | Kurzbeschreibung |\n| --- | --- | --- |\n| HP |  | 19/19 Basiswert auf Stufe 7. |\n| Initiative |  | +4 für Vesper, solange die Familiar-Bedingungen erfüllt sind. |\n| Rolle |  | Protector Familiar; Bodyguard / Combat Reflexes gemäß Kampagnenregeln. |\n| Progression |  | INT 9 · Familiar Natural Armor +4; etablierte Reliquiar-Identität bleibt erhalten. |\n"
+              "markdown": "| Fähigkeit | Kurzbeschreibung |\n| --- | --- |\n| HP | 19/19 Basiswert auf Stufe 7. |\n| Initiative | +4 für Vesper, solange die Familiar-Bedingungen erfüllt sind. |\n| Rolle | Protector Familiar; Bodyguard / Combat Reflexes gemäß Kampagnenregeln. |\n| Progression | INT 9 · Familiar Natural Armor +4; etablierte Reliquiar-Identität bleibt erhalten. |"
             }
           ]
         },
@@ -305,7 +305,7 @@
           "sections": [
             {
               "title": "Ränge und Gesamtboni",
-              "markdown": "| Fertigkeit | Ränge | Gesamtbonus |\n|---|---:|---:|\n| Bluff | **4** | **+9** |\n| Disable Device | **7** | **+15** / **+17 with MW tools** |\n| Diplomacy | 6 | **+14** |\n| Heal | 1 | +8 |\n| Knowledge (All) | **7** | **+15** |\n| Perception | **7** | **+11** |\n| Sense Motive | 2 | +9 |\n| Spellcraft | **7** | **+12** |\n| Stealth | **7** | **+15** |\n| Survival | 1 | +5 |"
+              "markdown": "| Fertigkeit | Ränge | Gesamtbonus |\n|---|---:|---:|\n| Bluff | **4** | **+10** |\n| Disable Device | **7** | **+16** / **+18 mit MW-Werkzeug** |\n| Diplomacy | 6 | **+15** |\n| Heal | 1 | +8 |\n| Knowledge (All) | **7** | **+16** |\n| Perception | **7** | **+11** |\n| Sense Motive | 2 | +9 |\n| Spellcraft | **7** | **+12** |\n| Stealth | **7** | **+16** |\n| Survival | 1 | +5 |"
             }
           ]
         },
@@ -325,11 +325,11 @@
           "sections": [
             {
               "title": "Getragen, mitgeführt und verwahrt",
-              "markdown": "| Gegenstand | Aktueller Stand |\n| --- | --- |\n| Mithralkettenhemd +1 / schwerer Mithralschild +1 | Ausgerüstetes Profil |\n| CHA-Stirnreif +2 / Cloak +2 / Amulett +1 | Getragen; bekannte Boni enthalten |\n| Ring of Mind Shielding | Getragen; keine allgemeine Immunität gegen Geistesbeeinflussung |\n| Lens of Detection | Bewusste Detailuntersuchung bzw. Spurensuche; kein pauschales passives +5 |\n| Extend Rod | 3 Anwendungen/Tag, aktuell 3/3 |\n| Sleeves of Many Garments | Eigenes Paar, seit 10. März; nur Erscheinung der Kleidung |\n| Rotes Buch / gewöhnliche Abschrift | Original AWAKENED; letzte aktive Sitzung 7. März |\n| Vigilance / Withering | Je ein Auge, ungesetzt |\n| Steinsalbe | 2 Portionen |\n| Werkzeuge und Höllenhund-Ritualabschrift | Vorhanden; Material des vollzogenen Rituals verbraucht |\n| Hexor-Namensamulett / Iron Circlet | Befehlstoken bzw. Tarngegenstand, keine Doppelboni |\n| Kleider und persönliche Wäsche | Eigener Bestand |\n"
+              "markdown": "| Gegenstand | Aktueller Stand |\n| --- | --- |\n| +1 Mithralkettenhemd und +1 schwerer Mithralschild | Aktuelles ausgerüstetes Kampfprofil |\n| Headband of Alluring Charisma +4 | Seit 3. April getragen; alter +2-Stirnreif gehört Styke |\n| Cloak of Resistance +3 | Seit 7. April getragen |\n| Amulet of Natural Armor +1 | Getragen; AC 25 mit weiterer Standardausrüstung |\n| Ring of Mind Shielding | Getragen; kein universeller Schutz gegen alle Geistesbeeinflussung |\n| Lens of Detection | Nur bei bewusster Benutzung situativer Kompetenzbonus |\n| Lesser Extend Rod | 3/3 für reguläre Tageskapazität |\n| Sleeves of Many Garments | Persönliches Paar, nur sichtbare Bekleidung verändert |\n| Rotes Buch | AWAKENED, nicht Unsealed; keine aus dem Zeitablauf erfundene neue Macht |\n| Vigilance / Withering | Beide seit 1. April im Sanctum S-1 eingebaut, nicht mehr tragbar |\n| Corset of Delicate Moves | Seit 31. März im Besitz; kein bestätigter ununterbrochener 24h-Effekt |\n| Verse / MW-Diebeswerkzeug / Iron Circlet | Im Besitz, Effekte und Slots nur bei gültiger Nutzung |"
             },
             {
               "title": "Besitz und Aktivierung",
-              "markdown": "Herstellung, Übergabe und Ausrüstung sind getrennte Schritte. Aktuelle Ressourcen stehen nur bei dieser Figur. Werte und Verwahrung: gemeinsames Inventar."
+              "markdown": "Das ausgerüstete Kampfprofil enthält den CHA-Stirnreif +4, Cloak +3 und Amulett +1. Radiant-Dawn-Essence ist ein Investmentpool; Buffs, Glyphen, Rod-Verbrauch und Korsett sind keine passiven Dauerwirkungen aus bloßem Besitz."
             }
           ]
         }
@@ -342,26 +342,26 @@
       "level": 7,
       "ancestry": "Mensch · Karfeld",
       "source": "mechanics/combat/valeria-level-7.md",
-      "profile": "+1 Dastard Full Plate · STR-Gürtel · CHA-Stirnreif +2 · Cloak +2 · Amulett +1 · Großschwert derzeit NICHT verfügbar · Großschwert derzeit NICHT verfügbar · Großschwert derzeit NICHT verfügbar · Großschwert derzeit NICHT verfügbar · Großschwert derzeit NICHT verfügbar",
+      "profile": "+1 Dastard/Shadow-Vollplatte · +1 Cruel-Großschwert ausgerüstet · STR-Gürtel +2 · CHA-Stirnreif +2 · Cloak +3 · Amulett +1",
       "hpMax": 46,
       "stats": {
         "ac": "22",
         "touch": "11",
         "flatFooted": "21",
-        "initiative": "+6",
-        "speed": "20 ft",
+        "initiative": "+6 (Prism verstaut)",
+        "speed": "20 ft (Boots-Tragen nicht bestätigt)",
         "bab": "+7/+2",
         "cmb": "+11",
         "cmd": "22",
-        "fort": "+13",
-        "ref": "+11",
-        "will": "+13"
+        "fort": "+14",
+        "ref": "+12",
+        "will": "+14"
       },
       "attack": {
-        "name": "Großschwert bei Tacitus",
-        "hit": "—",
-        "damage": "—",
-        "note": "Großschwert +1 Cruel fertig, aber nicht zurückgegeben. Aktuell keine verfügbare Ersatzwaffe behauptet."
+        "name": "+1 Cruel-Großschwert",
+        "hit": "+10/+5",
+        "damage": "2d6+13",
+        "note": "Power Attack; Schwert seit 31. März zurückgegeben und tatsächlich verfügbar. Cruel nur bei gültigen Auslösern."
       },
       "attributes": [
         {
@@ -395,16 +395,12 @@
           "label": "Kampf",
           "sections": [
             {
-              "title": "Waffenverfügbarkeit",
-              "markdown": "**Großschwert seit 29. März in der Werkstatt, Cruel fertig, 2/2 Tage.** Alle nachstehenden Großschwert-, Power-Attack- und Conductive-Kombinationen sind bedingte Referenzwerte nach tatsächlicher Rückgabe. Keine erfundene Ersatzwaffe."
-            },
-            {
               "title": "Angriffsprofile",
               "markdown": "| Profil | Angriff | Schaden / Bedingung |\n| --- | --- | --- |\n| Normal | +12/+7 | 2d6+7 |\n| Power Attack | +10/+5 | 2d6+13 |\n| PA + Smite | +16/+11 | 2d6+20 · Spezialziel erster Treffer 2d6+27 |\n| PA + Challenge | +10/+5; Order +12/+7 | 2d6+18 |\n| PA + Smite + passende Challenge | +18/+13 | 2d6+25 |\n"
             },
             {
               "title": "Rettungswürfe",
-              "markdown": "| Fähigkeit | Typ / Wert | Kurzbeschreibung |\n| --- | --- | --- |\n| Fortitude | +13 |  |\n| Reflex | +11 |  |\n| Will | +13 |  |\n"
+              "markdown": "| Rettungswurf | Bonus |\n| --- | --- |\n| Fortitude | +14 |\n| Reflex | +12 |\n| Will | +14 |"
             },
             {
               "title": "Kampfabfolge",
@@ -416,10 +412,6 @@
           "id": "antipaladin",
           "label": "Antipaladin",
           "sections": [
-            {
-              "title": "Waffenverfügbarkeit",
-              "markdown": "**Großschwert seit 29. März in der Werkstatt, Cruel fertig, 2/2 Tage.** Alle nachstehenden Großschwert-, Power-Attack- und Conductive-Kombinationen sind bedingte Referenzwerte nach tatsächlicher Rückgabe. Keine erfundene Ersatzwaffe."
-            },
             {
               "title": "Tagesressourcen",
               "markdown": "| Fähigkeit | Verfügbar | Wirkung |\n| --- | --- | --- |\n| Smite Good | 3/3 | 3/Tag · gegen Good +6 Angriff, +7 Schaden je Treffer, +6 Deflection AC. |\n| Touch of Corruption | 9/9 | Melee Touch · 3d6 · Fort DC 19 · Cruelty: Fatigued oder Staggered 3 Runden. |\n| Challenge | 1/1 | 1/Tag · +5 Melee Damage; -2 AC gegen andere Gegner; Order situativ +2 Angriff. |\n| Fiendish Boon | 1/1 | 1/Tag · Standard Action · 7 Minuten · +1 Waffenbonus-Budget. |\n"
@@ -444,7 +436,7 @@
           "sections": [
             {
               "title": "Vorbereitung",
-              "markdown": "| Wert | Stand |\n| --- | --- |\n| Grad 1 | 3 Plätze; konkrete Vorbereitung nicht bestätigt. |\n| Grad 2 | 1 Platz; konkrete Vorbereitung nicht bestätigt. |\n| CL / Konzentration | 4 / +10 |\n| SG Grad 1 / 2 | 17 / 18 |\n"
+              "markdown": "| Wert | Stand |\n| --- | --- |\n| Grad 1 | 3 Slots/Tag; konkrete heutige Vorbereitung nicht bestätigt. |\n| Grad 2 | 1 Slot/Tag; konkrete heutige Vorbereitung nicht bestätigt. |\n| CL / Konzentration | 4 / +10 |\n| SG Grad 1 / 2 | 17 / 18 |\n"
             },
             {
               "title": "Bekannte Vorbereitungsoptionen",
@@ -458,7 +450,7 @@
           "sections": [
             {
               "title": "Ränge und Gesamtboni",
-              "markdown": "| Fertigkeit | Ränge | Gesamtbonus | Hinweis |\n|---|---:|---:|---|\n| Intimidate | **7** | **+16** | +19 demoralize with Air Grievances; +23 vs living within 10 ft with Aura |\n| Diplomacy | **7** | **+16** | Tyrant class skill |\n| Sense Motive | **7** | **+10** | |\n| Stealth | **7** | **+6 worn / +11 unarmored** | full-plate ACP -5 |"
+              "markdown": "| Fertigkeit | Ränge | Gesamtbonus | Hinweis |\n|---|---:|---:|---|\n| Intimidate | **7** | **+16** | +19 demoralize with Air Grievances; +23 vs living within 10 ft with Aura |\n| Diplomacy | **7** | **+16** | Tyrant class skill |\n| Sense Motive | **7** | **+10** | |\n| Stealth | **7** | **+11 mit Shadow-Platte / +11 ohne Rüstung** | Mit tatsächlich getragener Shadow-Platte +5 Kompetenz auf Stealth; ohne Rüstung ebenfalls +11 |"
             }
           ]
         },
@@ -478,15 +470,15 @@
           "sections": [
             {
               "title": "Getragen, mitgeführt und verwahrt",
-              "markdown": "| Gegenstand | Aktueller Stand |\n| --- | --- |\n| Dastard-Vollplatte +1 | Ausgerüstetes Profil, AC 22 |\n| Großschwert +1 | Seit 29. März bei Tacitus; Cruel-Ausbau 2/2, fertig. Nicht verfügbar. |\n| STR-Gürtel +2 | Getragen; STR 18 |\n| CHA-Stirnreif +2 | Getragen; CHA 22 |\n| Cloak +2 / Amulett natürlicher Rüstung +1 | Getragen; Boni eingerechnet |\n| Cracked Dusty Rose Prism | Verstaut: Initiative +6. Nur orbitierend +1 Kompetenz ⇒ +7. |\n| Corset of Delicate Moves | Seit27Mar fertig, bei Tacitus; keine Übergabe/24h-Tragezeit, kein Effekt |\n| Unterzeug, formelle Kleidung, persönlicher Bestand | Erhalten |\n"
+              "markdown": "| Gegenstand | Aktueller Stand |\n| --- | --- |\n| +1 Dastard Full Plate mit Shadow | Seit 15. April zurückgegeben, beim Tragen AC 22 und +5 Kompetenz auf Stealth |\n| +1 Cruel-Großschwert | Seit 31. März zurückgegeben und tatsächlich ausgerüstet; Kampfprofile oben gültig |\n| Belt of Giant Strength +2 | Getragen, STR 18 |\n| Headband of Alluring Charisma +2 | Getragen, CHA 22; geplantes Upgrade +4 noch unfinanziert |\n| Cloak of Resistance +3 | Seit 9. April getragen; +3 Saves eingerechnet |\n| Amulet of Natural Armor +1 | Getragen, AC enthalten |\n| Boots of Striding and Springing | 19. April fertig, 20. April übergeben; nicht stillschweigend als getragen gerechnet |\n| Cracked Dusty Rose Prism | Verstaut: Initiative +6. Orbitierend wären +7 |\n| Corset of Delicate Moves | Seit 31. März im Besitz; durch Unterbrechungen kein unbewiesener zusätzlicher Swift-Bonus |\n| Verlobungsring, Kleidung und privater Besitz | Vorhanden; keine frei erfundene magische Wirkung |"
             },
             {
               "title": "Besitz und Aktivierung",
-              "markdown": "Herstellung, Übergabe und Ausrüstung sind getrennte Schritte. Aktuelle Ressourcen stehen nur bei dieser Figur. Werte und Verwahrung: gemeinsames Inventar."
+              "markdown": "Sowohl +1 Cruel-Großschwert als auch +1 Dastard/Shadow-Rüstung sind tatsächlich bei Valeria. Ihr Privatgürtel und andere nicht für normale Mechanik zugelassene Gegenstände verleihen keinen Kampfvorteil. Boots- und Korsettbedingungen bleiben an tatsächliches Tragen gebunden."
             },
             {
-              "title": "Cruel · erst mit tatsächlich zurückgegebener Waffe",
-              "markdown": "| Auslöser | Wirkung |\n| --- | --- |\n| Waffentreffer gegen shaken / frightened / panicked | Zusätzlich sickened für1Runde. |\n| Mit dieser Waffe bewusstlos schlagen oder töten | 5 temporäre HP für10Minuten. |\n| Gegenwärtige Verwahrung | Noch bei Tacitus, keine aktive Wirkung. |"
+              "title": "Cruel · ausgerüstetes Großschwert",
+              "markdown": "| Auslöser | Wirkung |\n| --- | --- |\n| Waffentreffer gegen shaken, frightened oder panicked | Ziel zusätzlich 1 Runde sickened |\n| Waffenkill oder bewusstlos geschlagener Gegner | Wieler erhält 5 temporäre HP für 10 Minuten |\n| Aktueller Zustand | Die +1 Cruel-Waffe ist seit 31. März zurückgegeben und tatsächlich verfügbar. |"
             }
           ]
         }

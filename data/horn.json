@@ -3,12 +3,12 @@
     "schemaVersion": 1,
     "playerSafe": true,
     "authority": "GENERATED VIEW. DO NOT USE AS CAMPAIGN AUTHORITY.",
-    "reviewedAt": "2026-10-18",
-    "campaignDate": "4712-03-30",
-    "campaignLabel": "30. März 4712 AR · Abend · Horn von Abaddon",
-    "sourceCommit": "70d5ab1a1de891198437111c1b33109b4cbc14d3",
-    "sourceRevision": "d957c1a0184203d8f3e4e7564ae1ae215bc1189883625c4ae441e93d73c3e15f",
-    "generatedAt": "2026-10-18T13:35:57+00:00"
+    "reviewedAt": "2026-10-22",
+    "campaignDate": "4712-04-26",
+    "campaignLabel": "26. April 4712 AR · nachmittags · Horn-Stand während Kerntrio in Farholde",
+    "sourceCommit": "0e88fafdf511dfda1d4e391b9be3c80b92b8defa",
+    "sourceRevision": "a0d0992038201c9cdc12233d3c51b7b74de9dd6ffadad41df6655e158e5a07c4",
+    "generatedAt": "2026-10-22T15:48:14.950Z"
   },
   "levels": [
     {
@@ -47,9 +47,9 @@
       ],
       "level": "sanctum",
       "status": "active",
-      "progress": "84/666 Gebete bis zum Abend des 30. März · Ritualtag 28 · 1/3 lebende Opfer. Silbersiegel und Ketten sind intakt; alle drei Augen bleiben ungesetzt.",
-      "next": "31. März Mitternacht #85, anschließend Sonnenaufgang #86.",
-      "done": 84,
+      "progress": "Ritualtag 55, Gebete 164/666 nach dem 26-Apr-Morgendienst; Abend #165 noch offen. Drei Augen seit 1Apr installiert, ein lebendes Opfer von drei absolviert. Siegel/Ketten intakt.",
+      "next": "Gebet #165 am 26. April bei Dämmerung, später zweites Opfer am 21. Juni.",
+      "done": 164,
       "total": 666
     },
     {
@@ -102,9 +102,9 @@
         "Valeria"
       ],
       "level": "three",
-      "status": "handoff",
-      "progress": "Am27Mar in einem Valet-unterstützten beschleunigten8h-Block fertig; 1.000gp Material bereits bezahlt. Noch Werkstattbesitz.",
-      "next": "Echte Übergabe und 24h Tragezeit vor Aktivierung.",
+      "status": "completed",
+      "progress": "Fertig am 27. März und am 31. März an Valeria übergeben. Später mehrfach unterbrochenes Tragen: keine bestätigte 24-Stunden-Aktivierung.",
+      "next": "Nur tatsächliche ununterbrochene Tragezeit zählt, nicht bloß Besitz.",
       "done": 1,
       "total": 1
     },
@@ -116,9 +116,9 @@
         "Valeria"
       ],
       "level": "three",
-      "status": "handoff",
-      "progress": "Echte Übergabe29Mar; zwei Valet-unterstützte beschleunigte8h-Blöcke29–30Mar: fertig. Abschluss Take10=25 mit Guidance gegen SG25; 3.000gp bereits bezahlt.",
-      "next": "Fertiges Schwert tatsächlich zurückgeben und erst dann als verfügbar führen.",
+      "status": "completed",
+      "progress": "+1 Cruel fertig am 30. März, am 31. März Valeria tatsächlich zurückgegeben und wieder ausgerüstet. 3.000 GM Herstellmaterial einmal bezahlt.",
+      "next": "Aktive Cruel-Wirkung nur bei passendem Treffer, keine pauschalen Zustände.",
       "done": 2,
       "total": 2
     },
@@ -129,11 +129,11 @@
         "Tacitus"
       ],
       "level": "three",
-      "status": "planned",
-      "progress": "Geplant: 1.000 gp Material · 1 voller Tag mit Knittel und Beschleunigung. Take10 28 gegen SG20.",
-      "next": "Planung, noch nicht beauftragt/begonnen/bezahlt. Reale Voraussetzungen und Reihenfolge beachten.",
-      "done": null,
-      "total": null
+      "status": "completed",
+      "progress": "Tatsächlich fertig 28. März, an den Besitzer 31. März ausgehändigt; 1.000 GM Material einmal verbucht, 1 volle Valet-unterstützte Werkstatttage.",
+      "next": "Kein Effekt ohne echten 24-Stunden-Trageverlauf.",
+      "done": 1,
+      "total": 1
     },
     {
       "id": "queue-headband-vesper",
@@ -142,11 +142,11 @@
         "Tacitus"
       ],
       "level": "three",
-      "status": "planned",
-      "progress": "Geplant: 8.000 gp Material · 4 volle Tage mit Knittel und Beschleunigung. Take10 28 gegen SG23.",
-      "next": "Planung, noch nicht beauftragt/begonnen/bezahlt. Reale Voraussetzungen und Reihenfolge beachten.",
-      "done": null,
-      "total": null
+      "status": "completed",
+      "progress": "Tatsächlich fertig 3. April, an den Besitzer 3. April ausgehändigt; 8.000 GM Material einmal verbucht, 4 volle Valet-unterstützte Werkstatttage.",
+      "next": "Kein zweiter Fertigungsauftrag oder zweite Rechnung.",
+      "done": 4,
+      "total": 4
     },
     {
       "id": "queue-cloak-styke",
@@ -155,11 +155,11 @@
         "Tacitus"
       ],
       "level": "three",
-      "status": "planned",
-      "progress": "Geplant: 2.500 gp Material · 2 volle Tage mit Knittel und Beschleunigung. Take10 28 gegen SG20.",
-      "next": "Planung, noch nicht beauftragt/begonnen/bezahlt. Reale Voraussetzungen und Reihenfolge beachten.",
-      "done": null,
-      "total": null
+      "status": "completed",
+      "progress": "Tatsächlich fertig 5. April, an den Besitzer 5. April ausgehändigt; 2.500 GM Material einmal verbucht, 2 volle Valet-unterstützte Werkstatttage.",
+      "next": "Kein zweiter Fertigungsauftrag oder zweite Rechnung.",
+      "done": 2,
+      "total": 2
     },
     {
       "id": "queue-cloak-vesper",
@@ -168,11 +168,11 @@
         "Tacitus"
       ],
       "level": "three",
-      "status": "planned",
-      "progress": "Geplant: 2.500 gp Material · 2 volle Tage mit Knittel und Beschleunigung. Take10 28 gegen SG20.",
-      "next": "Planung, noch nicht beauftragt/begonnen/bezahlt. Reale Voraussetzungen und Reihenfolge beachten.",
-      "done": null,
-      "total": null
+      "status": "completed",
+      "progress": "Tatsächlich fertig 7. April, an den Besitzer 7. April ausgehändigt; 2.500 GM Material einmal verbucht, 2 volle Valet-unterstützte Werkstatttage.",
+      "next": "Kein zweiter Fertigungsauftrag oder zweite Rechnung.",
+      "done": 2,
+      "total": 2
     },
     {
       "id": "queue-cloak-valeria",
@@ -181,11 +181,11 @@
         "Tacitus"
       ],
       "level": "three",
-      "status": "planned",
-      "progress": "Geplant: 2.500 gp Material · 2 volle Tage mit Knittel und Beschleunigung. Take10 28 gegen SG20.",
-      "next": "Planung, noch nicht beauftragt/begonnen/bezahlt. Reale Voraussetzungen und Reihenfolge beachten.",
-      "done": null,
-      "total": null
+      "status": "completed",
+      "progress": "Tatsächlich fertig 9. April, an den Besitzer 9. April ausgehändigt; 2.500 GM Material einmal verbucht, 2 volle Valet-unterstützte Werkstatttage.",
+      "next": "Kein zweiter Fertigungsauftrag oder zweite Rechnung.",
+      "done": 2,
+      "total": 2
     },
     {
       "id": "queue-shadow",
@@ -194,11 +194,11 @@
         "Tacitus"
       ],
       "level": "three",
-      "status": "planned",
-      "progress": "Geplant: 1.875 gp Material · 1 voller Tag mit Knittel und Beschleunigung. Take10 25 gegen SG25.",
-      "next": "Planung, noch nicht beauftragt/begonnen/bezahlt. Guidance von Vesper direkt vor Abschluss nötig; sonst langsameres sicheres Rezept.",
-      "done": null,
-      "total": null
+      "status": "completed",
+      "progress": "Tatsächlich fertig 15. April, an den Besitzer 15. April ausgehändigt; 1.875 GM Material einmal verbucht, 1 volle Valet-unterstützte Werkstatttage.",
+      "next": "Kein zweiter Fertigungsauftrag oder zweite Rechnung.",
+      "done": 1,
+      "total": 1
     },
     {
       "id": "queue-boots-styke",
@@ -207,11 +207,11 @@
         "Tacitus"
       ],
       "level": "three",
-      "status": "planned",
-      "progress": "Geplant: 2.750 gp Material · 2 volle Tage mit Knittel und Beschleunigung. Take10 28 gegen SG23.",
-      "next": "Planung, noch nicht beauftragt/begonnen/bezahlt. Reale Voraussetzungen und Reihenfolge beachten.",
-      "done": null,
-      "total": null
+      "status": "completed",
+      "progress": "Tatsächlich fertig 17. April, an den Besitzer 17. April ausgehändigt; 2.750 GM Material einmal verbucht, 2 volle Valet-unterstützte Werkstatttage.",
+      "next": "Besitz bestätigt, tatsächliches Tragen getrennt nachweisen.",
+      "done": 2,
+      "total": 2
     },
     {
       "id": "queue-boots-valeria",
@@ -220,11 +220,11 @@
         "Tacitus"
       ],
       "level": "three",
-      "status": "planned",
-      "progress": "Geplant: 2.750 gp Material · 2 volle Tage mit Knittel und Beschleunigung. Take10 28 gegen SG23.",
-      "next": "Planung, noch nicht beauftragt/begonnen/bezahlt. Reale Voraussetzungen und Reihenfolge beachten.",
-      "done": null,
-      "total": null
+      "status": "completed",
+      "progress": "Tatsächlich fertig 19. April, an den Besitzer 20. April ausgehändigt; 2.750 GM Material einmal verbucht, 2 volle Valet-unterstützte Werkstatttage.",
+      "next": "Besitz bestätigt, tatsächliches Tragen getrennt nachweisen.",
+      "done": 2,
+      "total": 2
     },
     {
       "id": "queue-dex-styke",
@@ -233,11 +233,11 @@
         "Tacitus"
       ],
       "level": "three",
-      "status": "planned",
-      "progress": "Geplant: 6.000 gp Material · 3 volle Tage mit Knittel und Beschleunigung. Take10 28 gegen SG18.",
-      "next": "Planung, noch nicht beauftragt/begonnen/bezahlt. Reale Voraussetzungen und Reihenfolge beachten.",
-      "done": null,
-      "total": null
+      "status": "completed",
+      "progress": "Tatsächlich fertig 22. April, an den Besitzer 22. April ausgehändigt; 6.000 GM Material einmal verbucht, 3 volle Valet-unterstützte Werkstatttage.",
+      "next": "Kein zweiter Fertigungsauftrag oder zweite Rechnung.",
+      "done": 3,
+      "total": 3
     },
     {
       "id": "queue-cha-valeria",
@@ -246,9 +246,9 @@
         "Tacitus"
       ],
       "level": "three",
-      "status": "planned",
-      "progress": "Geplant: 6.000 gp Material · 3 volle Tage mit Knittel und Beschleunigung. Take10 28 gegen SG23.",
-      "next": "Planung, noch nicht beauftragt/begonnen/bezahlt. Reale Voraussetzungen und Reihenfolge beachten.",
+      "status": "blocked",
+      "progress": "Valerias eigener CHA-Stirnreif +2→+4 wurde noch nicht begonnen oder finanziert. Material 6.000 GM, drei volle Tage; aktuell nur 3.110 GM freie Kasse.",
+      "next": "Vor Beginn fehlen 2.890 GM tatsächlich verfügbare Mittel; keine automatische Nachbestellung.",
       "done": null,
       "total": null
     },
@@ -260,8 +260,8 @@
       ],
       "level": "three",
       "status": "planned",
-      "progress": "Geplant: 1.250 gp Material · 1 voller Tag mit Knittel und Beschleunigung. Take10 28 gegen SG18.",
-      "next": "Planung, noch nicht beauftragt/begonnen/bezahlt. Reale Voraussetzungen und Reihenfolge beachten.",
+      "progress": "Optionales Eyes-of-the-Eagle-Projekt für Styke: 1.250 GM Material und ein voller Tag. Noch nicht begonnen oder gekauft.",
+      "next": "Nach vorrangiger Finanzierung getrennt entscheiden; keine passive Wahrnehmungssteigerung.",
       "done": null,
       "total": null
     },
@@ -274,10 +274,10 @@
       ],
       "level": "one",
       "status": "active",
-      "progress": "Unfertig, nicht tragbar. Easily Worked Steel, Meisterwerkzeug und routinemäßiges Crafter’s Fortune.",
-      "next": "Arbeit fortsetzen; genauen neuen Fortschrittsbericht abwarten. Keine unberichtete interne Zahl veröffentlicht.",
-      "done": null,
-      "total": null
+      "progress": "Osric/Yorgun/Styke haben Grumblejacks große Meisterarbeitsplatte bis 26. April auf 1.424 von 3.150 Fortschritt gebracht. Easily Worked Steel; nicht fertig und nicht tragbar.",
+      "next": "Nur weitere tatsächliche Schmiedearbeit erhöht den Fortschritt.",
+      "done": 1424,
+      "total": 3150
     },
     {
       "id": "flight",
@@ -346,8 +346,8 @@
       ],
       "level": "sanctum",
       "status": "active",
-      "progress": "Erste Verstärkungsarbeit am 29./30. März; Zugang weiter offen.",
-      "next": "Reale Arbeit und Sicherung fortsetzen, nicht als versiegelt ausgeben.",
+      "progress": "Sanctumbalkon bleibt als eigener Zugang offen; frühere Verstärkungen sind keine fertige hermetische Abdichtung.",
+      "next": "Weitere Sicherung nur nach tatsächlich ausgeführter Arbeit.",
       "done": null,
       "total": null
     },
@@ -460,9 +460,83 @@
         "Valeria"
       ],
       "level": "three",
-      "status": "planned",
-      "progress": "Keine neue Probe oder gesicherte Gegenlösung; keine parallel erfundenen vollen Tage.",
-      "next": "Eigenen realen Fokusblock und Voraussetzungen prüfen.",
+      "status": "active",
+      "progress": "Tacitus arbeitete am 25. und 26. April je einen echten vollen Forschungstag an der Methodik; insgesamt zwei volle Tage, 0 GM neue Kosten, noch kein spezifischer Durchbruch.",
+      "next": "Weiterführende Methodik/Experimente erfordern echte Arbeitszeit und für teure Versuche Freigabe.",
+      "done": null,
+      "total": null
+    },
+    {
+      "id": "portcullises",
+      "title": "Zwei Fallgitter und Eingangsfalle",
+      "owners": [
+        "Tamsin",
+        "Hakon",
+        "Osric"
+      ],
+      "level": "one",
+      "status": "completed",
+      "progress": "Seit Anfang April zwei getestete Fallgitter als rund 30-ft-Zwischenbereich, dazu Alarm und tatsächlich funktionsfähige Mehlzugleinen.",
+      "next": "Regelmäßige Wach- und Mechanikprüfung im realen Dienst.",
+      "done": null,
+      "total": null
+    },
+    {
+      "id": "guard-stones",
+      "title": "Eingangssteine · Silence und Glitterdust",
+      "owners": [
+        "Tacitus",
+        "Knittel",
+        "Tamsin",
+        "Hakon"
+      ],
+      "level": "one",
+      "status": "completed",
+      "progress": "CL-3-Silence- und CL-3-Glitterdust-Befehlsstein (je 1 Nutzung/Tag) tatsächlich am 11./13. April fertig und an den Eingang übergeben, beim Drill nicht verbraucht.",
+      "next": "Nur echte gesprochene Aktivierung belastet die tägliche Verwendung. Ein Wurf allein löst keinen Stein aus.",
+      "done": 4,
+      "total": 4
+    },
+    {
+      "id": "arrival-cells",
+      "title": "Gesicherte Ankunftszellen",
+      "owners": [
+        "Tamsin",
+        "Darric"
+      ],
+      "level": "two",
+      "status": "completed",
+      "progress": "Zwei abgeschlossene sichere Ankunftszellen in 2-20A und 3-9 stehen seit April tatsächlich bereit.",
+      "next": "Reale Schlüssel-/Aufsichtsregeln beibehalten.",
+      "done": null,
+      "total": null
+    },
+    {
+      "id": "assassin-vines",
+      "title": "Vier gebundene Assassin Vines",
+      "owners": [
+        "Nella",
+        "Tamsin"
+      ],
+      "level": "caves",
+      "status": "active",
+      "progress": "Vier erwachsene hostile Assassin Vines sind in C1 einzeln angekettet; keine zahmen Hauswachen. Nella lagert vier tatsächlich gewonnene Giftdosen.",
+      "next": "Nächste vorgesehene Ernte 30. April; bis dahin keine neue Dosenzahl oder Zähmung.",
+      "done": null,
+      "total": null
+    },
+    {
+      "id": "defence-drill",
+      "title": "Wachdienst und Sicherheitsübung",
+      "owners": [
+        "Tamsin",
+        "Hakon",
+        "Sten"
+      ],
+      "level": "one",
+      "status": "completed",
+      "progress": "Gesamtdrill am 23. April mit Tamsins neuer Gesamtleitung und Hakons eigenen fünf Leuten tatsächlich abgeschlossen; keine Verwendung der beiden Befehlssteine.",
+      "next": "Hakon ist über die neue Oberstruktur noch nicht von Styke persönlich einzeln informiert; laufenden Dienst korrekt trennen.",
       "done": null,
       "total": null
     }
@@ -473,8 +547,8 @@
       "level": "one",
       "title": "Haupttreppe 1-1",
       "status": "open",
-      "owner": "Hakon und fünf Männer",
-      "detail": "Bewacht, nicht zugemauert; reale Wachenpaare und Ablösung."
+      "owner": "Tamsin · Hakon und fünf Männer",
+      "detail": "Einziger offener oberer Landzugang. Zwei funktionsfähige Fallgitter als etwa 30-ft-Falle, Alarm, echte Mehlzugleinen; reguläre Wachbesetzung."
     },
     {
       "id": "hexor",
@@ -482,15 +556,15 @@
       "title": "Wachdienst Ebene Zwei",
       "status": "operational",
       "owner": "Hexoraticus",
-      "detail": "Eigene Sinne; Mitteilung an Vexor, keine Fernsicht durch Mauern."
+      "detail": "Gebundener Wächter 84 HP; Ritualdienst nur bei echter Ablösung, kein allwissendes Fernüberwachungssystem."
     },
     {
       "id": "vexor",
       "level": "three",
-      "title": "Wachdienst Ebene Drei",
+      "title": "Äußere Vorwache",
       "status": "operational",
       "owner": "Vexorandian",
-      "detail": "3 CON dauerhafter Entzug bleibt; Gebetsdienst mit realer Ablösung."
+      "detail": "Gebundener Wächter 68 HP mit 3 dauerhaftem CON-Entzug; Standardposten außerhalb des vorgeschobenen Haupttores, soweit Wachlage unverändert."
     },
     {
       "id": "two",
@@ -530,7 +604,7 @@
       "title": "Untere Höhlen C1 / Maw",
       "status": "open",
       "owner": "Bestehende Wachen",
-      "detail": "Kein vollständiger Verschluss."
+      "detail": "C1/Maw bleibt als eigener Bereich relevant; vier erwachsene hostile Assassin Vines sind getrennt gekettet, nicht als sichere Verbündete verwendbar."
     },
     {
       "id": "c5",
@@ -571,6 +645,30 @@
       "status": "operational",
       "owner": "Vesper / Wachen",
       "detail": "Lokale Sinne und Geruchswarnungen, kein allumfassendes Überwachungsnetz."
+    },
+    {
+      "id": "gate-stones",
+      "level": "one",
+      "title": "Befehlssteine am Eingang",
+      "status": "operational",
+      "owner": "Tamsin / Hakon",
+      "detail": "1×/Tag Silence CL3 und 1×/Tag Glitterdust CL3, kommandogebunden. Beim realen 23-Apr-Drill nicht ausgelöst."
+    },
+    {
+      "id": "arrival-cells",
+      "level": "two",
+      "title": "Gesicherte Ankunftszellen",
+      "status": "installed",
+      "owner": "Tamsin",
+      "detail": "2-20A und 3-9 benutzbar, Türschlösser/Schlüssel real und nicht allgemein verteilt."
+    },
+    {
+      "id": "sanctum-eyes",
+      "level": "sanctum",
+      "title": "Drei Augen S-1",
+      "status": "installed",
+      "owner": "Ritualkern",
+      "detail": "Alle drei Augen seit 1. April in der Statue installiert; Silbersiegel und Riten nicht aufgehoben."
     }
   ],
   "inventory": [
@@ -580,8 +678,8 @@
       "owner": "Knoten",
       "group": "Geld",
       "amount": "30.985 gp",
-      "state": "Goldreserve bereits einmal eingeschlossen",
-      "value": 30985,
+      "state": "Wirtschaftlicher Brutto-Saldo 7.710 GM, darin 4.600 GM vorgemerkt; frei 3.110 GM. Historische Silber- und Wertstücke bereits eingerechnet.",
+      "value": 7710,
       "basis": "Verfügbarkeitsrechnung",
       "note": "Davon 4.600 vorgemerkt und 26.385 frei. Keine zusätzliche 30.000-gp-Goldzeile addieren."
     },
@@ -591,10 +689,10 @@
       "owner": "Horn",
       "group": "Sachwerte",
       "amount": "Gesamtbestand",
-      "state": "Separat, nicht automatisch verkauft",
+      "state": "Physisch bekannte 10.000 GM Silberobjekte. Seit 13./14. April bereits im wirtschaftlichen Gesamtsaldo enthalten; nicht zusätzlich addieren.",
       "value": 10000,
-      "basis": "Bekannter Metallwert",
-      "note": ""
+      "basis": "Bereits im Brutto-Saldo angerechnet",
+      "note": "Kein weiterer Verkaufserlös, kein zweiter Transfer."
     },
     {
       "id": "valuables",
@@ -602,10 +700,10 @@
       "owner": "Horn",
       "group": "Sachwerte",
       "amount": "1 Paket",
-      "state": "Getrennt von verfügbarer Kasse",
+      "state": "920 GM kleinere Wertstücke; ebenfalls bereits im Gesamtsaldo angerechnet.",
       "value": 920,
-      "basis": "Bekannter Paketwert",
-      "note": ""
+      "basis": "Bereits im Brutto-Saldo angerechnet",
+      "note": "Kein separates zusätzliches freies Vermögen."
     },
     {
       "id": "styke-0",
@@ -631,22 +729,22 @@
     },
     {
       "id": "styke-2",
-      "name": "DEX-Gürtel +2",
+      "name": "DEX-Gürtel +4",
       "owner": "Styke",
       "group": "Persönliche Ausrüstung",
       "amount": "siehe Stand",
-      "state": "DEX 21, getragen",
+      "state": "Upgrade +2→+4 fertig und 22. April zurückgegeben/getragen; DEX 23.",
       "value": null,
       "basis": "Nicht taxiert",
       "note": ""
     },
     {
       "id": "styke-3",
-      "name": "Cloak of Resistance +2",
+      "name": "Cloak of Resistance +3",
       "owner": "Styke",
       "group": "Persönliche Ausrüstung",
       "amount": "siehe Stand",
-      "state": "Getragen",
+      "state": "Seit 5. April zurückgegeben und getragen.",
       "value": null,
       "basis": "Nicht taxiert",
       "note": ""
@@ -698,10 +796,10 @@
     {
       "id": "styke-8",
       "name": "Eye of Hatred",
-      "owner": "Styke",
+      "owner": "Horn / S-1",
       "group": "Persönliche Ausrüstung",
       "amount": "siehe Stand",
-      "state": "Uninstalliert",
+      "state": "Seit 1. April in Statue S-1 fest installiert, nicht bei Styke",
       "value": null,
       "basis": "Nicht taxiert",
       "note": ""
@@ -763,11 +861,11 @@
     },
     {
       "id": "vesper-1",
-      "name": "CHA-Stirnreif +2 / Cloak +2 / Amulett +1",
+      "name": "CHA-Stirnreif +4 / Cloak +3 / Amulett +1",
       "owner": "Vesper",
       "group": "Persönliche Ausrüstung",
       "amount": "siehe Stand",
-      "state": "Getragen; bekannte Boni enthalten",
+      "state": "CHA +4 seit 3. April getragen; Cloak +3 seit 7. April getragen.",
       "value": null,
       "basis": "Nicht taxiert",
       "note": ""
@@ -822,7 +920,7 @@
       "owner": "Vesper",
       "group": "Persönliche Ausrüstung",
       "amount": "siehe Stand",
-      "state": "Original AWAKENED; letzte aktive Sitzung 7. März",
+      "state": "Rotes Buch Original AWAKENED, weiterhin nicht Unsealed. Tatsächliche Sitzung am 31. März; nicht durch Zeit allein weiterentwickelt.",
       "value": null,
       "basis": "Nicht taxiert",
       "note": ""
@@ -830,10 +928,10 @@
     {
       "id": "vesper-7",
       "name": "Vigilance / Withering",
-      "owner": "Vesper",
+      "owner": "Horn / S-1",
       "group": "Persönliche Ausrüstung",
       "amount": "siehe Stand",
-      "state": "Je ein Auge, ungesetzt",
+      "state": "Seit 1. April in Statue S-1 installiert; nicht als tragbare Augen verfügbar",
       "value": null,
       "basis": "Nicht taxiert",
       "note": ""
@@ -884,11 +982,11 @@
     },
     {
       "id": "valeria-0",
-      "name": "Dastard-Vollplatte +1",
+      "name": "+1 Dastard Full Plate mit Shadow",
       "owner": "Valeria",
       "group": "Persönliche Ausrüstung",
       "amount": "siehe Stand",
-      "state": "Ausgerüstetes Profil, AC 22",
+      "state": "Originalrüstung seit 15. April mit Shadow zurückgegeben und getragen; AC 22, +5 Kompetenz Stealth durch Shadow.",
       "value": null,
       "basis": "Nicht taxiert",
       "note": ""
@@ -896,10 +994,10 @@
     {
       "id": "valeria-sword",
       "name": "Großschwert +1 Cruel",
-      "owner": "Tacitus / Valeria",
+      "owner": "Valeria",
       "group": "Ausbau",
       "amount": "1",
-      "state": "Fertig30Mar; weiterhin bei Tacitus, nicht zurückgegeben. Nicht verfügbar.",
+      "state": "Am 31. März tatsächlich an Valeria zurückgegeben und ausgerüstet; Cruel nur bei wirklichem Treffer ausgelöst.",
       "value": 3000,
       "basis": "Bezahltes Ausbaumaterial",
       "note": "3.000gp bereits bezahltes Ausbaumaterial, keine zweite Abbuchung oder heutige Waffennutzung."
@@ -928,11 +1026,11 @@
     },
     {
       "id": "valeria-4",
-      "name": "Cloak +2 / Amulett natürlicher Rüstung +1",
+      "name": "Cloak +3 / Amulett natürlicher Rüstung +1",
       "owner": "Valeria",
       "group": "Persönliche Ausrüstung",
       "amount": "siehe Stand",
-      "state": "Getragen; Boni eingerechnet",
+      "state": "Cloak +3 seit 9. April getragen, Amulett +1 weiterhin.",
       "value": null,
       "basis": "Nicht taxiert",
       "note": ""
@@ -951,10 +1049,10 @@
     {
       "id": "valeria-corset",
       "name": "Corset of Delicate Moves",
-      "owner": "Tacitus / für Valeria",
+      "owner": "Valeria",
       "group": "Aufträge",
       "amount": "1",
-      "state": "Fertig27Mar, nicht übergeben oder24h getragen",
+      "state": "Fertig 27. März, übergeben 31. März. 24-Stunden-Wirkung wegen Trageunterbrechungen nicht bestätigt.",
       "value": 1000,
       "basis": "Bezahltes Material",
       "note": ""
@@ -976,7 +1074,7 @@
       "owner": "Osric / Yorgun",
       "group": "Material",
       "amount": "1 laufender Auftrag",
-      "state": "Noch nicht tragbar",
+      "state": "Easily Worked Steel, Fortschritt an der großen MW-Platte 1.424/3.150, nicht tragbar.",
       "value": 787.5,
       "basis": "Historisch bezahltes Material",
       "note": "Keine erneute Rechnung; kein Marktwert der fertigen Rüstung."
@@ -1127,10 +1225,10 @@
     {
       "id": "gift-grumble",
       "name": "Hammer-Haltegürtel mit zweiter Sicherung",
-      "owner": "Styke / Zimmer 2-15",
+      "owner": "Grumblejack",
       "group": "Noch geheime Geschenke",
       "amount": "1",
-      "state": "Bereit, nicht überreicht",
+      "state": "Am 2. April tatsächlich überreicht; beim Empfänger, keine ausstehende Geschenktruhe.",
       "value": null,
       "basis": "Preis nicht festgestellt",
       "note": "Für Grumblejack, noch nicht gegeben; gewöhnlich, nichtmagisch. Nur Styke und Calliaste kennen die ganze Zusammenstellung."
@@ -1138,10 +1236,10 @@
     {
       "id": "gift-elise",
       "name": "Gefütterte belüftete Frost-Tasche",
-      "owner": "Styke / Zimmer 2-15",
+      "owner": "Elise",
       "group": "Noch geheime Geschenke",
       "amount": "1",
-      "state": "Bereit, nicht überreicht",
+      "state": "Am 2. April tatsächlich überreicht; beim Empfänger, keine ausstehende Geschenktruhe.",
       "value": null,
       "basis": "Preis nicht festgestellt",
       "note": "Für Elise; mit Nusstaschen, noch nicht gegeben. Nur Styke und Calliaste kennen die ganze Zusammenstellung."
@@ -1149,10 +1247,10 @@
     {
       "id": "gift-valeria",
       "name": "Zweifarbiger Stein und Adamant-/Mithralring",
-      "owner": "Styke / Zimmer 2-15",
+      "owner": "Valeria",
       "group": "Noch geheime Geschenke",
       "amount": "1",
-      "state": "Bereit, nicht überreicht",
+      "state": "Am 2. April tatsächlich überreicht; beim Empfänger, keine ausstehende Geschenktruhe.",
       "value": null,
       "basis": "Preis nicht festgestellt",
       "note": "Für Valeria; Ring „Bei dir bin ich zu Hause“, noch kein Antrag. Nur Styke und Calliaste kennen die ganze Zusammenstellung."
@@ -1160,31 +1258,94 @@
     {
       "id": "gift-vesper",
       "name": "Journal mit verborgenem Platin-Schweifring",
-      "owner": "Styke / Zimmer 2-15",
+      "owner": "Vesper",
       "group": "Noch geheime Geschenke",
       "amount": "1",
-      "state": "Bereit, nicht überreicht",
+      "state": "Am 2. April tatsächlich überreicht; beim Empfänger, keine ausstehende Geschenktruhe.",
       "value": null,
       "basis": "Preis nicht festgestellt",
       "note": "Für Vesper; „Öffne mich, wenn du soweit bist.“ / „Für mein Lieblingslied“; nicht gegeben oder entdeckt. Nur Styke und Calliaste kennen die ganze Zusammenstellung."
+    },
+    {
+      "value": null,
+      "id": "vesper-corset",
+      "name": "Vespers eigenes Corset of Delicate Moves",
+      "amount": "1",
+      "owner": "Vesper",
+      "state": "28. März gefertigt, 31. März ausgehändigt; ununterbrochene 24h-Wirkung nicht bestätigt.",
+      "basis": "1.000 GM Material einmal verbucht"
+    },
+    {
+      "value": null,
+      "id": "boots-styke",
+      "name": "Boots of Striding and Springing",
+      "amount": "1 Paar",
+      "owner": "Styke",
+      "state": "17. April fertig/übergeben; aktuelles Anlegen nicht verifiziert, darum kein automatischer +10-ft-Speed-Wert.",
+      "basis": "2.750 GM Herstellmaterial bereits verbucht"
+    },
+    {
+      "value": null,
+      "id": "boots-valeria",
+      "name": "Boots of Striding and Springing",
+      "amount": "1 Paar",
+      "owner": "Valeria",
+      "state": "19. April fertig, 20. April ausgehändigt; tatsächliches Tragen nicht verifiziert.",
+      "basis": "2.750 GM Herstellmaterial bereits verbucht"
+    },
+    {
+      "value": null,
+      "id": "guard-silence",
+      "name": "CL-3-Silence-Befehlsstein",
+      "amount": "1",
+      "owner": "Tamsin / Hakon Eingang",
+      "state": "11. April gefertigt/übergeben, 1×/Tag, noch nicht durch den Sicherheitsdrill verbraucht.",
+      "basis": "2160 GM Material bereits verbucht"
+    },
+    {
+      "value": null,
+      "id": "guard-glitterdust",
+      "name": "CL-3-Glitterdust-Befehlsstein",
+      "amount": "1",
+      "owner": "Tamsin / Hakon Eingang",
+      "state": "13. April gefertigt/übergeben, 1×/Tag, noch nicht durch den Sicherheitsdrill verbraucht.",
+      "basis": "2160 GM Material bereits verbucht"
+    },
+    {
+      "value": null,
+      "id": "venom-nella",
+      "name": "Assassin-Vine-Gift",
+      "amount": "4 Dosen",
+      "owner": "Nella",
+      "state": "Vier gesicherte Dosen. Nächste vorgesehene Ernte 30. April.",
+      "basis": "Bestätigte gesicherte Dosen"
+    },
+    {
+      "value": null,
+      "id": "draft-order",
+      "name": "Die Ordnung von Talingarde",
+      "amount": "1 Entwurf",
+      "owner": "Styke",
+      "state": "Handschriftlicher Regierungsentwurf, keine verabschiedete Ordnung. Zwei unabhängige Prüfungskopien noch nicht angefertigt.",
+      "basis": "Persönliches Manuskript"
     }
   ],
   "treasury": {
-    "liquid": 30985,
+    "liquid": 7710,
     "earmarked": 4600,
-    "free": 26385,
+    "free": 3110,
     "gold": 0,
-    "silver": 10000,
-    "valuables": 920
+    "silver": 0,
+    "valuables": 0
   },
   "notes": [
-    "Der Ebenenplan ist schematisch, keine maßstabsgerechte Raumtopologie.",
-    "Die bisherige Goldreserve ist bereits einmal in den wirtschaftlich verfügbaren 30.985 gp enthalten. Zusätzliche Sachwerte hier nur Silber und das getrennte Wertpaket.",
-    "Kaufpreis, Materialausgabe und Marktwert sind verschiedene Größen. Arbeitsfortschritt und Planbudgets werden nicht als zusätzliche Vermögenssumme addiert.",
-    "Die offene spätere magische Wunschreihe hat 37.125 gp Materialbedarf bei 26.385 gp freien Mitteln; keine automatische Silberverwertung.",
-    "Ein fehlender berichteter Zwischenstand bleibt unbekannt. Ein fertiger Auftrag ist erst nach tatsächlicher Übergabe verfügbar.",
-    "Gefährten, Wachen, Gäste und bewachte Arbeiter sind Personen; sie erscheinen nicht als Inventargegenstände.",
-    "Noch geheime Geschenke sind Stykes Wissen. Empfängerinnen erhalten daraus keine automatische Kenntnis oder festgelegte Zustimmung.",
-    "Valet und Beschleunigung sind eingerechnet:4.000gp Grundwert/8h, mindestens ein Tag je separatem Gegenstand. Ganze Wunschliste26, verbleibende Planung23 produktive Tage. Cruel/Shadow brauchen im konservativen Rezept einen kurzen Guidance-Abschluss."
+    "Stand 26. April. Der Ebenenplan ist schematisch und zeigt keine maßstabsgerechte Raumtopologie.",
+    "Die gemeinsame wirtschaftliche Bruttosumme beträgt 7.710 GM: 4.600 GM zweckgebunden, 3.110 GM frei. Silberobjekte (10.000 GM) und kleine Wertstücke (920 GM) sind schon darin bewertet und dürfen nicht erneut hinzuaddiert werden.",
+    "Materialzahlungen werden einmal bei Beginn eines realen Auftrags gebucht; Werkstattfertigung, tatsächliche Übergabe und am Körper aktivierte Wirkung sind unterschiedliche Zustände.",
+    "Valet und Beschleunigung sind berücksichtigt: 4.000 GM zusätzliche Grundpreisbasis je vollem Acht-Stunden-Tag, mindestens ein Tag pro Gegenstand. Bei bestimmten Rezepten ist die tatsächliche abschließende Guidance relevant.",
+    "Valerias geplanter CHA-Stirnreif +4 ist wegen 2.890 GM Finanzierungslücke noch nicht in Arbeit; optionales Styke-Eyes-Projekt bleibt Plan.",
+    "Grumblejacks große Platte ist mit 1.424/3.150 Fortschritt unfertig. Sie ist kein ausgerüstetes Rüstungsteil, und ihre Arbeit erzeugt keine liquiden Einnahmen.",
+    "Fünf befristet verpflichtete Bewohner, die drei Höllenhunde, Hakon und seine fünf Leute sind keine verkäuflichen Gegenstände.",
+    "Der Empfang der Warnung zu Trayas Vierergruppe ist bekannt; Suchwege und unbestätigte Aufenthalte werden nicht durch ein öffentliches Lagerinventar vorweggenommen."
   ]
 }
