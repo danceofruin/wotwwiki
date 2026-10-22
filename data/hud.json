@@ -7,7 +7,8 @@
     "source": "danceofruin/wotwGPT mechanics/combat/core-party-current.md, {styke,vesper,valeria}-level-7.md + current/LIVE_STATE.md (26 Apr 4712 AR)",
     "updated": "2026-10-22",
     "revision": "level-7-26apr-hud-gear-resource-reconciliation",
-    "sourceCampaignEdge": "26. April 4712 AR (letzter bestätigter Repo-Live-Stand)"
+    "sourceCampaignEdge": "26. April 4712 AR (letzter bestätigter Repo-Live-Stand)",
+    "campaignDate": "4712-04-26"
   },
   "ui": {
     "defaultCharacterOpen": "",
