@@ -4,9 +4,10 @@
     "kind": "wotw-hud-party",
     "generatedView": true,
     "playerSafe": true,
-    "source": "danceofruin/wotwGPT mechanics/combat/{styke,vesper,valeria}-level-7.md + current/LIVE_STATE.md",
-    "updated": "2026-10-18",
-    "revision": "level-7-horn-0330-valet-repair"
+    "source": "danceofruin/wotwGPT mechanics/combat/core-party-current.md, {styke,vesper,valeria}-level-7.md + current/LIVE_STATE.md (26 Apr 4712 AR)",
+    "updated": "2026-10-22",
+    "revision": "level-7-26apr-hud-gear-resource-reconciliation",
+    "sourceCampaignEdge": "26. April 4712 AR (letzter bestätigter Repo-Live-Stand)"
   },
   "ui": {
     "defaultCharacterOpen": "",
@@ -22,19 +23,19 @@
           "id": "saves",
           "label": "Saves",
           "type": "list",
-          "subtitle": "Inner-Eye-Kampfprofil mit Cloak of Resistance +2.",
+          "subtitle": "Stance of the Inner Eye · Cloak of Resistance +3 und tatsächlich getragener DEX-Gürtel +4.",
           "items": [
             {
               "name": "Fortitude",
-              "tag": "+9"
+              "tag": "+10"
             },
             {
               "name": "Reflex",
-              "tag": "+11"
+              "tag": "+13"
             },
             {
               "name": "Will",
-              "tag": "+11"
+              "tag": "+12"
             }
           ]
         },
@@ -42,11 +43,11 @@
           "id": "skills",
           "label": "Skills",
           "type": "list",
-          "subtitle": "Knowledge (All) ist die Kampagnen-Konsolidierung. Zorn gibt bei passenden Knowledge-Checks separat +2 Hilfe.",
+          "subtitle": "Getragene DEX 23 und CHA 19 eingerechnet; Knowledge (All) nach Hausregel. Zorn hilft bei passenden Knowledge-Checks separat +2. Boots: Tragen nicht bestätigt, daher keine +5 Acrobatics.",
           "items": [
             {
               "name": "Acrobatics",
-              "tag": "+13"
+              "tag": "+14"
             },
             {
               "name": "Autohypnosis",
@@ -58,11 +59,11 @@
             },
             {
               "name": "Diplomacy",
-              "tag": "+7"
+              "tag": "+8"
             },
             {
               "name": "Intimidate",
-              "tag": "+11"
+              "tag": "+12"
             },
             {
               "name": "Knowledge (All)",
@@ -74,7 +75,7 @@
             },
             {
               "name": "Stealth",
-              "tag": "+15"
+              "tag": "+16"
             },
             {
               "name": "Spellcraft",
@@ -82,7 +83,7 @@
             },
             {
               "name": "Bluff",
-              "tag": "+7"
+              "tag": "+8"
             }
           ]
         },
@@ -108,19 +109,19 @@
               "id": "minute-hand",
               "name": "Minute Hand",
               "tag": "Boost",
-              "detail": "Zusatzangriff; mit Power Attack und Inner Eye aktuell +10, 2d6+16 +1d6 Präzision."
+              "detail": "Swift · ein zusätzlicher Nahkampfangriff mit -2; mit Power Attack/Inner Eye jetzt +11, 2d6+18 +1d6 Präzision."
             },
             {
               "id": "circle-of-razor-feathers",
               "name": "Circle of Razor Feathers",
               "tag": "Grad 4 Strike",
-              "detail": "Standard · 30-ft-Burst nur Gegner · 8d6 profan · Reflex DC 17: halbiert + sickened 1 Runde; misslungen: voll + sickened 3 Runden."
+              "detail": "Standard · 30-ft-Radius, nur Gegner · 8d6 profan · Reflex DC 18: bei Erfolg halbiert und sickened 1 Runde, sonst voller Schaden und sickened 4 Runden."
             },
             {
               "id": "fetchs-wrath",
               "name": "Fetch's Wrath",
               "tag": "Grad 4 Strike",
-              "detail": "Angriff vor/nach Teleport bis 170 ft; +4d6 Schaden."
+              "detail": "Standard · Angriff vor ODER nach einmaligem Teleport bis 170 ft; PA/Inner Eye +13, 2d6+18 +4d6 +1d6 Präzision."
             }
           ]
         },
@@ -209,23 +210,23 @@
           "items": [
             {
               "name": "Minor Metamorphosis",
-              "detail": "Power known"
+              "detail": "1 PP · ML 2 · 2 Minuten; eine zulässige einfache Metamorphose-Option."
             },
             {
               "name": "Defensive Precognition",
-              "detail": "Power known"
+              "detail": "1 PP · ML 2 · 2 Minuten · +1 Insight AC und Saves."
             },
             {
               "name": "Offensive Precognition",
-              "detail": "Power known"
+              "detail": "1 PP · ML 2 · 2 Minuten · +1 Insight Angriffe."
             },
             {
               "name": "Force Screen",
-              "detail": "Neu · +4 Shield AC für 2 Minuten"
+              "detail": "1 PP · 2 Minuten · +4 Shield AC; Inner Eye dann AC 28 / Touch 18 / Flat-footed 20."
             },
             {
               "name": "Call to Mind",
-              "detail": "Neu · Knowledge-Wiederholung mit +4"
+              "detail": "1 PP · 1 Minute · nach misslungenem Knowledge-Check erneuter Wurf mit +4 Kompetenz."
             },
             {
               "name": "Detect Psionics",
@@ -248,7 +249,7 @@
           "items": [
             {
               "name": "Compartmentalized Aid",
-              "detail": "Move Action · +4 Angriff gegen gewähltes Ziel · bis zu 3 geeignete Manöver recovern · aktiviert Zeal."
+              "detail": "Move Action · Helpful +4 Angriff gegen gewähltes Ziel bis zum nächsten eigenen Zug · bis zu 4 geeignete verbrauchte vorbereitete Manöver recovern · aktiviert Zeal."
             },
             {
               "name": "Living Bastion",
@@ -291,7 +292,7 @@
             },
             {
               "name": "The Caged Sun",
-              "detail": "Notfallhaltung · freier Eintritt bei ≤24 HP. Mit 2 Essence: Heilung floor((eingehend +4)×1,5), CMD 25, PA 2d6+14 ohne Inner-Eye-Präzision."
+              "detail": "Notfallhaltung · freier Eintritt bei ≤24 HP. Mit 2 Essence: +2 auf Angriff, AC, Saves, CMB und CMD, Heilung floor((eingehend +4)×1,5); AC 24 / CMD 26 / PA +13/+8, 2d6+16 ohne Inner-Eye-Präzision."
             },
             {
               "name": "Black Seraph's Glare",
@@ -305,26 +306,31 @@
           "type": "list",
           "items": [
             {
+              "name": "Defensive Werte",
+              "detail": "48 HP · AC 24 / Touch 18 / Flat-footed 16 · Initiative +9 · BAB +6/+1 · CMB +10 / CMD 24 · 30 ft ohne bestätigtes Tragen der Boots."
+            },
+            {
               "name": "Inner Eye + Power Attack",
-              "detail": "+12/+7, 2d6+16 +1d6 Präzision."
+              "detail": "+13/+8, 2d6+18 +1d6 Präzision; 19–20/×2."
             },
             {
               "name": "Minute Hand + PA",
-              "detail": "+10, 2d6+16 +1d6 Präzision."
+              "detail": "+11, 2d6+18 +1d6 Präzision."
             },
             {
               "name": "Fetch's Wrath + PA",
-              "detail": "+12, 2d6+16 +4d6 +1d6 Präzision; Teleport bis 170 ft."
+              "detail": "+13, 2d6+18 +4d6 +1d6 Präzision; einmaliger Teleport bis 170 ft."
             },
             {
               "name": "Circle of Razor Feathers",
-              "detail": "8d6 profan, Reflex DC 17 partial, 30-ft-Burst."
+              "detail": "8d6 profan · Reflex DC 18 partial · 30-ft-Radius; misslungen: sickened 4 Runden, erfolgreich: sickened 1 Runde."
             },
             {
               "name": "Reflected Blade + Fetch's Wrath",
               "detail": "Teleport nur einmal. Derselbe Angriffswurf gegen zwei Gegner (zweiter innerhalb 40 ft); je getroffenem Ziel voller Fetch-Schaden."
             }
-          ]
+          ],
+          "subtitle": "Standard: Stance of the Inner Eye, Power Attack aktiv; Gürtel DEX +4 und Cloak +3 eingerechnet. Temporäre Effekte sind nicht aktiv."
         }
       ],
       "summaryResources": [
@@ -354,19 +360,19 @@
           "id": "saves",
           "label": "Saves",
           "type": "list",
-          "subtitle": "Sidestep Secret nutzt CHA statt DEX für Reflex; Cloak of Resistance +2 ist enthalten.",
+          "subtitle": "Sidestep Secret ersetzt DEX durch CHA für Reflex. Worn CHA 23 und Cloak of Resistance +3 enthalten.",
           "items": [
             {
               "name": "Fortitude",
-              "tag": "+4"
+              "tag": "+5"
             },
             {
               "name": "Reflex",
-              "tag": "+10"
+              "tag": "+12"
             },
             {
               "name": "Will",
-              "tag": "+11"
+              "tag": "+12"
             }
           ]
         },
@@ -374,21 +380,21 @@
           "id": "skills",
           "label": "Skills",
           "type": "list",
-          "subtitle": "Enhanced Diplomacy macht Diplomacy situativ +16.",
+          "subtitle": "Enhanced Diplomacy situativ +17. Lens of Detection gibt +5 Perception nur beim tatsächlichen Untersuchen mit der Linse, nicht passiv.",
           "items": [
             {
               "name": "Bluff",
-              "tag": "+9"
+              "tag": "+10"
             },
             {
               "name": "Disable Device",
-              "tag": "+15",
-              "detail": "+17 mit Meisterarbeits-Diebeswerkzeug."
+              "tag": "+16",
+              "detail": "+18 mit Meisterarbeits-Diebeswerkzeug."
             },
             {
               "name": "Diplomacy",
-              "tag": "+14",
-              "detail": "Enhanced Diplomacy situativ +16."
+              "tag": "+15",
+              "detail": "Enhanced Diplomacy situativ +17."
             },
             {
               "name": "Heal",
@@ -396,7 +402,7 @@
             },
             {
               "name": "Knowledge (All)",
-              "tag": "+15"
+              "tag": "+16"
             },
             {
               "name": "Perception",
@@ -412,7 +418,7 @@
             },
             {
               "name": "Stealth",
-              "tag": "+15"
+              "tag": "+16"
             },
             {
               "name": "Survival",
@@ -491,25 +497,31 @@
           "id": "arcane-enlightenment",
           "label": "Arcane Enlightenment",
           "type": "list",
-          "subtitle": "Optionen, keine bestätigte heutige Fünferauswahl. Alarm stammt aus dem früheren Tagesstand 7. März.",
+          "subtitle": "Tatsächlich bestätigte sechs Tagesoptionen, einschließlich Glitterdust seit 8. April. Spontan über reguläre Oracle-Slots, keine zusätzlichen Slots.",
           "items": [
             {
-              "name": "Dancing Darkness"
+              "name": "Alarm",
+              "detail": "CL 7 · 40 ft · 20-ft-Emanation · 14 Stunden."
             },
             {
-              "name": "Silent Image"
+              "name": "Glitterdust",
+              "detail": "170 ft · 10-ft-Radius · 7 Runden · Will DC 18 gegen Blindheit, sichtbarmachender Staub unabhängig vom Save."
             },
             {
-              "name": "Euphoric Cloud"
+              "name": "Silent Image",
+              "detail": "680 ft · Konzentration · Will DC 17 bei Interaktion."
             },
             {
-              "name": "Ashen Path"
+              "name": "Euphoric Cloud",
+              "detail": "170 ft · 20-ft-Fog · 7 Runden · Fort DC 18."
             },
             {
-              "name": "Stinking Cloud"
+              "name": "Ashen Path",
+              "detail": "Touch · 70 Minuten geteilt · Sicht durch passenden magischen Rauch/Fog bis 60 ft."
             },
             {
-              "name": "Alarm (frühere Alternative)"
+              "name": "Stinking Cloud",
+              "detail": "170 ft · 20-ft-Fog · 7 Runden · Fort DC 19."
             }
           ]
         },
@@ -520,23 +532,23 @@
           "items": [
             {
               "name": "Witness to Glory",
-              "detail": "Standard readied · 2 Essence · +7 Initiative und 12 Temp HP auf Styke."
+              "detail": "Standard readied · 2 Essence · +8 Initiative und 13 temporäre HP auf Styke; Immediate nach Rohinitiative, bindet Essence bis Recovery."
             },
             {
               "name": "Disrupt Essence",
-              "detail": "Standard readied · 2 Essence · unterdrückt zwei bekannte Fähigkeiten für 7 Runden; mit Sun's Gleam Will DC 23."
+              "detail": "Standard readied · 2 Essence · zwei bekannte zulässige Fähigkeiten für 8 Runden unterdrücken bei Fehlschlag; Will DC 22 normal, mit Sun's Gleam DC 24."
             },
             {
               "name": "Decree of Torment",
-              "detail": "Standard readied · Standard-Angriff · Treffer setzt 5 Brands; jeder Angreifer höchstens 1/Runde für nichtprovozierendes Kampfmanöver (IL 8 / IM +5 statt BAB/STR, falls besser)."
+              "detail": "Standard readied · Standard-Angriff · Treffer erzeugt 6 Brands; jeder Angreifer höchstens 1/Runde für nichtprovozierendes Kampfmanöver (IL 9 / IM +6 statt BAB/STR, falls besser)."
             },
             {
               "name": "Armaments of the Empire",
-              "detail": "Standardstance · bis 5 Waffen innerhalb 45 ft, je legale +1-Eigenschaft bei 0 Essence. Styke Vicious (+2d6 Ziel / 1d6 Selbstschaden je Treffer), Valeria Conductive (2 Touch-Nutzungen, 1×/Runde). Keine permanenten Verzauberungen."
+              "detail": "Standardstance · bis 6 Waffen innerhalb 45 ft, je zulässige +1-Eigenschaft ohne Essence-Investition. Styke standardmäßig Vicious (+2d6 Ziel / 1d6 selbst je Treffer), Valeria Conductive (2 Touch-Nutzungen, 1×/Runde). Nur solange aktiv, keine permanente Verzauberung."
             },
             {
               "name": "Spoils of War",
-              "detail": "Heilwechselhaltung · bis 12 HP je gültigem Trigger bei 2 Essence."
+              "detail": "Heilwechselhaltung · erster gültiger Treffer je Verbündetem/Runde: 9 HP (0 Essence), 11 HP (1), 13 HP (2)."
             },
             {
               "name": "Radiant Dawn Style",
@@ -544,11 +556,11 @@
             },
             {
               "name": "Bolster",
-              "detail": "Bekannt, nicht Standard-readied · Immediate bei Treffer auf Verbündeten in 45 ft · DR 5/− +1 je Essence für 1 Runde, einschließlich auslösendem Treffer."
+              "detail": "Bekannt, nicht Standard-readied · Immediate bei Treffer auf Verbündeten in 45 ft · DR 6/− +1 je Essence für 1 Runde, einschließlich auslösendem Treffer."
             },
             {
               "name": "Staunching Strike",
-              "detail": "Bekannt, nicht Standard-readied · Standard-Angriff (Sun's Gleam erlaubt) · Treffer heilt insgesamt 5 HP +3 je Essence, verteilt innerhalb 45 ft."
+              "detail": "Bekannt, nicht Standard-readied · Standard-Angriff (Sun's Gleam möglich) · Treffer heilt insgesamt 6 HP +3 je Essence, verteilt innerhalb 45 ft."
             }
           ],
           "subtitle": "Pool 4 · Kapazität 2 · 2 Witness / 2 Disrupt / 0 Armaments. Essence bleibt bei verbrauchtem Manöver bis Recovery gebunden; Recovery Full-Round."
@@ -557,11 +569,11 @@
           "id": "glyphs",
           "label": "Glyphs",
           "type": "list",
-          "subtitle": "Virtual Animus Adept 3 · 11 Glyphen · IL 8 · Kosten 1 Animus · 45 ft · 6 Runden · DC 19. Anwendung: Swift oder 1×/Runde Free nach Treffer mit Martial Strike; gleiche Glyphe stapelt/erneuert sich nicht.",
+          "subtitle": "Virtual Animus Adept 3 · 11 Glyphen · IL 9 / IM +6 · Kosten 1 Animus · 45 ft · 7 Runden · DC 20. Swift oder 1×/Runde Free nach Treffer mit Martial Strike. Gleiche Glyphe stapelt/erneuert sich nicht.",
           "items": [
             {
               "name": "Elemental Shield",
-              "detail": "Energy Resistance 8 gegen gewähltes Element."
+              "detail": "Energy Resistance 9 gegen das gewählte Element."
             },
             {
               "name": "Ghost Eating Blade",
@@ -589,22 +601,22 @@
             },
             {
               "name": "Blinding Blade",
-              "detail": "Nächster qualifizierender Treffer: Reflex DC 19 oder 1 Runde blind; danach endet Glyph."
+              "detail": "Nächster qualifizierender Treffer: Reflex DC 20 oder 1 Runde blind; danach endet Glyph."
             },
             {
               "name": "Spirit Stride",
               "tag": "Advanced Glyph",
-              "detail": "Einmaliger 20-ft-Teleport als Free Action des Empfängers in einen sichtbaren, freien Bereich. Sichtlinie nötig, Line of Effect nicht. Endet nach Teleport oder 6 Runden; Anwendung der Glyphe nutzt normale Glyph-Aktion."
+              "detail": "Einmaliger 20-ft-Teleport als Free Action des Empfängers in sichtbaren freien Bereich; LoS nötig, LoE nicht. Endet nach Teleport oder 7 Runden."
             },
             {
               "name": "Illusionary State",
               "tag": "Advanced Glyph",
-              "detail": "Mirror Image bei CL 8: 1d4+2 Bilder, für höchstens 6 Runden. Normale Bild-/Trefferregeln; Flächeneffekte und Effekte ohne Angriffswurf umgehen Bilder. Blind-Fight allein negiert sie nicht."
+              "detail": "Mirror Image bei CL 9: 1d4+3 Bilder, maximal 7 Runden. Flächeneffekte und Effekte ohne Angriffswurf umgehen Bilder; Blind-Fight allein negiert sie nicht."
             },
             {
               "name": "Wind Speed",
               "tag": "Advanced Glyph",
-              "detail": "Haste für 6 Runden: ein Zusatzangriff mit höchstem BAB nur beim Full Attack; +1 Angriff, +1 Dodge AC, +1 Reflex; +30 ft Enhancement auf Bewegung, höchstens doppelte Grundgeschwindigkeit. Keine zusätzliche Strike-Attacke, kein Initiativebonus; keine Stapelung mit Haste/Speed-Zusatzangriff."
+              "detail": "Haste für 7 Runden: ein Zusatzangriff mit höchstem BAB nur beim Full Attack; +1 Angriff/Dodge AC/Reflex, +30 ft Enhancement-Speed bis höchstens doppelte Grundgeschwindigkeit. Kein Initiativebonus, keine zusätzliche Standard-Strike-Attacke."
             }
           ]
         },
@@ -615,7 +627,7 @@
           "items": [
             {
               "name": "Startpool",
-              "detail": "6 zu Beginn des ersten eigenen Zuges."
+              "detail": "7 Animus zu Beginn des ersten eigenen Zuges."
             },
             {
               "name": "Weitere Züge",
@@ -667,19 +679,19 @@
           "items": [
             {
               "name": "Defensive Werte",
-              "detail": "AC 24 · Touch 15 · Flat-footed 19 · Initiative +12 mit Verse / +8 ohne Verse."
+              "detail": "AC 25 · Touch 16 · Flat-footed 19 · Initiative +12 mit Verse / +8 ohne Verse · Fort +5 / Ref +12 / Will +12."
             },
             {
               "name": "Sun's Gleam",
-              "detail": "+7 ranged touch · 45 ft · 1d6+5 Force."
+              "detail": "+7 ranged touch · 45 ft · 1d6+6 Force."
             },
             {
               "name": "Spell-DCs",
-              "detail": "Grad 1 DC 16 · Grad 2 DC 17 · Grad 3 DC 18 · CL 7 · Konzentration +12."
+              "detail": "Grad 0 DC 16 · Grad 1 DC 17 · Grad 2 DC 18 · Grad 3 DC 19 · CL 7 · Konzentration +13."
             },
             {
               "name": "Witness to Glory",
-              "detail": "Mit 2 Essence: +7 Initiative und 12 Temp HP."
+              "detail": "Mit 2 Essence: +8 Initiative und 13 Temp HP auf Styke; verbraucht Vespers kommende Swift Action."
             },
             {
               "name": "Essence",
@@ -687,7 +699,7 @@
             },
             {
               "name": "Glyph Engine",
-              "detail": "Virtual Animus Adept 3 · 11 Glyphen · IL 8 · 1 Animus · 45 ft · 6 Runden · DC 19. Swift oder 1×/Runde Free nach Martial-Strike-Treffer."
+              "detail": "Virtual Animus Adept 3 · 11 Glyphen · IL 9 · 1 Animus · 45 ft · 7 Runden · DC 20. Swift oder 1×/Runde Free nach Martial-Strike-Treffer."
             }
           ],
           "subtitle": ""
@@ -699,7 +711,7 @@
           "items": [
             {
               "name": "Mental Acuity",
-              "detail": "+1 inherent INT → 15; weitere +1 auf Oracle 10/13/16/19. Ersetzt die Spirit-Guide-Spirit-Ability auf Stufe 7, kommt nicht zusätzlich dazu."
+              "detail": "+1 inherent INT → 14; weitere +1 auf Oracle 10/13/16/19. Ersetzt die Spirit-Guide-Spirit-Ability auf Stufe 7, kommt nicht zusätzlich dazu."
             }
           ],
           "subtitle": ""
@@ -735,19 +747,19 @@
           "id": "saves",
           "label": "Saves",
           "type": "list",
-          "subtitle": "Getragener CHA-Stirnreif +2: Unholy Resilience +6 und Cloak +2 sind eingerechnet.",
+          "subtitle": "Getragener CHA-Stirnreif +2 (Unholy Resilience +6) und Cloak of Resistance +3 sind enthalten.",
           "items": [
             {
               "name": "Fortitude",
-              "tag": "+13"
+              "tag": "+14"
             },
             {
               "name": "Reflex",
-              "tag": "+11"
+              "tag": "+12"
             },
             {
               "name": "Will",
-              "tag": "+13"
+              "tag": "+14"
             }
           ]
         },
@@ -771,8 +783,8 @@
             },
             {
               "name": "Stealth",
-              "tag": "+6",
-              "detail": "+6 in Rüstung / +11 ohne Rüstung."
+              "tag": "+11",
+              "detail": "+11 in tatsächlich getragener Shadow-Platte (+5 Kompetenz), ebenso +11 ungerüstet; ohne Shadow-Effekt in Platte +6."
             }
           ],
           "subtitle": ""
@@ -782,7 +794,7 @@
           "label": "Zaubervorbereitungsoptionen",
           "type": "note",
           "title": "3 Grad-1-Slots + 1 Grad-2-Slot / Tag",
-          "text": "Kapazität 3 Grad 1 / 1 Grad 2; tatsächliche heutige Vorbereitung nicht bestätigt. Darkvision als Standardoption, Blade Tutor’s Spirit als Kampf-Alternative. CL 4, Konzentration +10, SG 17/18. Großschwertwerte gelten nur nach echter Rückgabe.",
+          "text": "Kapazität 3× Grad 1 und 1× Grad 2 pro Tag; heutige Auswahl nicht bestätigt. Standard Grad 2: Darkvision; Kampf-Alternative: Blade Tutor’s Spirit. CL 4, Konzentration +10, DC 17/18. +1 Cruel-Großschwert seit 31. März zurückgegeben und ausgerüstet.",
           "subtitle": ""
         },
         {
@@ -863,7 +875,7 @@
               "detail": "Nur wenn der Selbstschaden vertretbar ist."
             }
           ],
-          "subtitle": "Großschwert +1 Cruel fertig, aber weiterhin bei Tacitus. Waffenprofile sind bedingte Referenzwerte erst nach tatsächlicher Rückgabe; kein Ersatzschwert."
+          "subtitle": "+1 Cruel-Großschwert seit 31. März tatsächlich zurückgegeben/getragen; die +1 Dastard Full Plate hat seit 15. April Shadow. Prism verstaut (Initiative +6)."
         },
         {
           "id": "combat-engine",
@@ -876,7 +888,7 @@
             "Aura of Obedience",
             "Hurtful → Extra Attack"
           ],
-          "subtitle": "Großschwert +1 Cruel fertig, aber weiterhin bei Tacitus. Waffenprofile sind bedingte Referenzwerte erst nach tatsächlicher Rückgabe; kein Ersatzschwert."
+          "subtitle": "+1 Cruel-Großschwert seit 31. März tatsächlich zurückgegeben/getragen; die +1 Dastard Full Plate hat seit 15. April Shadow. Prism verstaut (Initiative +6)."
         },
         {
           "id": "other-antipaladin",
@@ -942,9 +954,13 @@
             {
               "name": "Touch of Corruption",
               "detail": "Melee touch · 3d6 · Fort DC 19."
+            },
+            {
+              "name": "Rüstung und Bewegung",
+              "detail": "AC 22 · 20 ft in Platte ohne bestätigte Boots-Aktivierung. Boots of Striding and Springing am 20. April übergeben, Tragen nicht bestätigt; +10 ft nur wenn tatsächlich ausgerüstet. Shadow gewährt beim Tragen +5 Kompetenz Stealth."
             }
           ],
-          "subtitle": "Großschwert +1 Cruel fertig, aber weiterhin bei Tacitus. Waffenprofile sind bedingte Referenzwerte erst nach tatsächlicher Rückgabe; kein Ersatzschwert."
+          "subtitle": "+1 Cruel-Großschwert seit 31. März tatsächlich zurückgegeben/getragen; die +1 Dastard Full Plate hat seit 15. April Shadow. Prism verstaut (Initiative +6)."
         }
       ],
       "summaryResources": [
@@ -970,8 +986,8 @@
         "max": 48
       },
       "pp": {
-        "current": 16,
-        "max": 16
+        "current": 18,
+        "max": 18
       },
       "focus": true,
       "deepFocus": false
@@ -987,8 +1003,8 @@
           "max": 8
         },
         "2": {
-          "current": 7,
-          "max": 7
+          "current": 8,
+          "max": 8
         },
         "3": {
           "current": 5,
