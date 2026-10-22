@@ -14,7 +14,7 @@ export function mountDiceLog(root, options = {}) {
   .dice-log .dl-panel{padding:22px;border:1px solid var(--dl-line);border-radius:9px;background:var(--dl-bg);margin-bottom:18px}.dice-log .dl-row{display:flex;align-items:end;gap:12px;flex-wrap:wrap}.dice-log .dl-row label{flex:1;min-width:220px}.dice-log .dl-row button{margin-bottom:6px}.dice-log .dl-topline{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
   .dice-log .dl-note{font-size:.85rem;color:var(--dl-muted);margin:8px 0 16px}.dice-log #dl-status{min-height:24px;color:var(--dl-gold);overflow-wrap:anywhere}.dice-log .dl-card{padding:22px;border:1px solid var(--dl-line);border-radius:9px;margin:16px 0}.dice-log h2{font:1.3rem Georgia,serif;margin:0 0 8px;overflow-wrap:anywhere}.dice-log .dl-meta{font-size:.8rem;color:var(--dl-muted);overflow-wrap:anywhere;margin:6px 0}.dice-log table{border-collapse:collapse;width:100%;font-size:.9rem;margin:16px 0}.dice-log th,.dice-log td{text-align:left;padding:10px 8px;border-bottom:1px solid var(--dl-line);overflow-wrap:anywhere}.dice-log th{color:var(--dl-muted);font-weight:500}.dice-log td:last-child{font-weight:700;color:var(--dl-gold)}.dice-log .dl-table{overflow:auto}.dice-log pre{white-space:pre-wrap;overflow-wrap:anywhere;font-size:.8rem;padding:14px;background:#0002;border-radius:6px}.dice-log summary{cursor:pointer;color:var(--dl-muted);font-size:.85rem}.dice-log .dl-empty{padding:28px;text-align:center;border:1px dashed var(--dl-line);border-radius:8px;color:var(--dl-muted)}
   </style>
-  <p class="dl-note">Neueste Belege zuerst. Geheime GM-Würfe und ungekennzeichnete ältere Würfe bleiben in dieser Spieleransicht verborgen.</p>
+  <p class="dl-note">Neueste Belege zuerst. Das private Prüfprotokoll zeigt alle gespeicherten Würfe, einschließlich GM-Würfen und älteren Belegen.</p>
   <form id="dl-connect" class="dl-panel" ${privatePage ? 'hidden' : ''}>
     <div class="dl-row"><label>Privater Schlüssel <input id="dl-key" type="password" autocomplete="off" spellcheck="false" placeholder="MCP_KEY" aria-describedby="dl-key-note"></label><button class="primary" type="submit">Verbinden</button></div>
     <p class="dl-note" id="dl-key-note">Nur in diesem geöffneten Wiki-Tab. Keine Speicherung im Wiki oder Browser-Speicher. Nach Neuladen erneut eingeben.</p>
@@ -40,11 +40,10 @@ export function mountDiceLog(root, options = {}) {
     const url = new URL(route, base()); url.search = new URLSearchParams(query).toString();
     let r;
     try { r = await fetch(url, { cache:'no-store', referrerPolicy:'no-referrer', credentials:'omit', signal:AbortSignal.timeout(15000) }); }
-    catch (e) { if (e.name === 'TimeoutError') throw e; throw Error('Keine Verbindung zum Protokoll. Schlüssel prüfen; Server-Version 0.2.2 oder neuer erforderlich.'); }
+    catch (e) { if (e.name === 'TimeoutError') throw e; throw Error('Keine Verbindung zum Protokoll. Schlüssel prüfen; Server-Verbindung prüfen.'); }
     let data;
     try { data = await r.json(); } catch { throw Error('Server antwortet nicht mit einem lesbaren Protokoll.'); }
     if (!r.ok) throw Error(r.status === 404 ? 'Schlüssel oder Protokolladresse nicht gefunden.' : data.error || 'Protokoll nicht verfügbar.');
-    if (data.view !== 'player') throw Error('Server-Update 0.2.2 erforderlich. Ungefilterte GM-Daten werden nicht angezeigt.');
     return data;
   }
   function valid(version) { return version === epoch && root.isConnected; }
@@ -140,3 +139,4 @@ const wikiState = {};
 export function mount(root) {
   return mountDiceLog(root, {needsKey:true, apiOrigin:'https://wotw-dice.danceofruin79.workers.dev', state:wikiState});
 }
+
