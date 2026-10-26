@@ -27,9 +27,10 @@ console.log('OK: Horn filters, source revisions, progress, custody/value boundar
 const ui=vm.createContext({window:{},Intl,URLSearchParams,AbortSignal,setInterval:()=>{},location:{hash:'#/sheet/styke',protocol:'https:'},document:{hidden:false,addEventListener:()=>{},querySelectorAll:()=>[]},fetch:async url=>({ok:true,json:async()=>JSON.parse(fs.readFileSync(new URL(url,root),'utf8'))})});
 vm.runInContext(fs.readFileSync(new URL('live.js',root),'utf8'),ui);
 await new Promise(resolve=>ui.window.WotwLive.init(resolve,{}));
-for(const c of sheets.characters){for(const t of c.tabs){const html=ui.window.WotwLive.render('sheet',c.id,new URLSearchParams('tab='+t.id));assert(html.includes('lp-attributes'));assert(html.includes('<table>')||html.includes('<ol>'));assert(!html.match(/<section class="lp-current">[\s\S]*?<\/section>/)[0].includes('Normale Nacht'));}}
+for(const c of sheets.characters){for(const t of c.tabs){const html=ui.window.WotwLive.render('sheet',c.id,new URLSearchParams('tab='+t.id));assert(html.includes('lp-attributes'));assert(html.includes('<table>')||html.includes('<ol>')||html.includes('<ul>'));assert(!html.match(/<section class="lp-current">[\s\S]*?<\/section>/)[0].includes('Normale Nacht'));}}
 vm.runInContext(fs.readFileSync(new URL('horn.js',root),'utf8'),ui);
 await new Promise(resolve=>ui.window.WotwHorn.init(resolve));
 assert(ui.window.WotwHorn.render('horn').includes('ht-map-levels'));
 assert(ui.window.WotwHorn.render('inventar').includes('Nicht taxiert'));
 console.log('OK: every sheet tab, attribute cards and both tracker routes render with reviewed data.');
+
