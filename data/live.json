@@ -7,7 +7,7 @@
     "generatedAt": "2026-10-26T20:32:39+00:00",
     "reviewedAt": "2026-10-26",
     "sourceRevision": "a0d0992038201c9cdc12233d3c51b7b74de9dd6ffadad41df6655e158e5a07c4",
-    "sheetRevision": "cd8f905acfcb52ecf31ecfb3f18a312de457450a479dad59d8fec34de28b8281"
+    "sheetRevision": "fbdb15927799f33e0ba1865b9c1edc26320da13eab72af639ce92bfa340b40f1"
   },
   "scene": {
     "date": "4712-04-26",
@@ -429,7 +429,7 @@
       "conditions": [],
       "state": "Separates Level-8-Mechanikupdate am unveränderten gespeicherten Rand 14./15. Juni; archivierter Live-Play-Szenentext bleibt separat datiert.",
       "resourceNote": "HP-Zuwachs nur durch Levelanstieg. Kein neuer Rest und keine angenommene Tagesauffrischung. PP18/24; normaler/deep Fokus erhalten; Reformationsstein einmal verbraucht.",
-      "gearNote": "Level 8 · tatsächlich getragene, kompatible Ausrüstung eingerechnet; begrenzte Ressourcen und temporäre Buffs separat.",
+      "gearNote": "Level 8 · tatsächlich getragene, kompatible Ausrüstung eingerechnet; begrenzte Ressourcen und temporäre Buffs separat. CON11 durch +1 inhärenten Ritualbonus; Modifikator unverändert+0.",
       "pp": {
         "current": 18,
         "max": 24
@@ -447,7 +447,7 @@
       "conditions": [],
       "state": "Separates Level-8-Mechanikupdate am unveränderten gespeicherten Rand 14./15. Juni; archivierter Live-Play-Szenentext bleibt separat datiert.",
       "resourceNote": "HP-Zuwachs nur durch Levelanstieg. Kein neuer Rest und keine angenommene Tagesauffrischung. Slotmaxima8/8/7/4; genaue Restslots am jüngsten Nacht-Rand nicht dokumentiert.",
-      "gearNote": "Level 8 · tatsächlich getragene, kompatible Ausrüstung eingerechnet; begrenzte Ressourcen und temporäre Buffs separat.",
+      "gearNote": "Level 8 · tatsächlich getragene, kompatible Ausrüstung eingerechnet; begrenzte Ressourcen und temporäre Buffs separat. Standard-AE: Heroism statt Euphoric Cloud, sieben insgesamt; kein automatischer Cast.",
       "verse": {
         "present": true,
         "hpCurrent": null,

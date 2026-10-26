@@ -6,7 +6,7 @@
     "playerSafe": true,
     "source": "danceofruin/wotwGPT current core-party level8 packet; accepted player level8 activation",
     "updated": "2026-10-26",
-    "revision": "level-8-fixed-styke-plan-20261026",
+    "revision": "level8-readable-hud-2.2.0",
     "sourceCampaignEdge": "14./15. Juni 4712 AR · Level 8 ausdrücklich aktiviert; keine Zeitfortschreibung",
     "campaignDate": "4712-06-14"
   },
@@ -22,9 +22,8 @@
       "sections": [
         {
           "id": "saves",
-          "label": "Saves",
+          "label": "Rettungswürfe",
           "type": "list",
-          "subtitle": "Level 8 · Ausrüstung enthalten",
           "items": [
             {
               "name": "Fortitude",
@@ -42,276 +41,342 @@
         },
         {
           "id": "combat-shortcuts",
-          "label": "Kampf-Kurzwerte",
+          "label": "Kampfwerte",
           "type": "list",
           "items": [
             {
-              "name": "ac",
-              "tag": "24"
-            },
-            {
-              "name": "touch",
-              "tag": "18"
-            },
-            {
-              "name": "flatFooted",
-              "tag": "24 (Uncanny Dodge)"
-            },
-            {
-              "name": "initiative",
-              "tag": "+10"
-            },
-            {
-              "name": "speed",
-              "tag": "40 ft"
-            },
-            {
-              "name": "bab",
+              "name": "BAB",
               "tag": "+7/+2"
             },
             {
-              "name": "cmb",
-              "tag": "+12"
+              "name": "CMB / CMD",
+              "tag": "+12 / 26"
             },
             {
-              "name": "cmd",
-              "tag": "26"
-            },
-            {
-              "name": "fort",
-              "tag": "+10"
-            },
-            {
-              "name": "ref",
-              "tag": "+14"
-            },
-            {
-              "name": "will",
-              "tag": "+13"
-            },
-            {
-              "name": "Angriff",
-              "detail": "+15/+10 · 2d6+19 +1d6 Präzision"
+              "name": "Bewegung",
+              "tag": "40 ft"
             }
           ]
         },
         {
           "id": "readied",
-          "label": "6 vorbereitete Manöver",
+          "label": "Vorbereitete Manöver · 6",
           "type": "maneuvers",
-          "subtitle": "Bekannt10 · vorbereitet6 · kein LBS/Chains/Riposte auf8",
           "items": [
             {
               "name": "Temporal Body Adjustment",
-              "detail": "Riven Hourglass 4 counter.\n\n- Immediate action, personal, instantaneous.\n- Initiate when Styke would be affected by, or is currently affected by, a qualifying negative condition.\n- Ignore/end one such condition under the maneuver's text.\n- Cannot negate death.\n- Expends the maneuver and consumes normal immediate/swift economy."
+              "detail": "Einen passenden negativen Zustand abwehren oder beenden.",
+              "tag": "Immediate"
             },
             {
               "name": "Reflected Blade Style",
-              "detail": "Shattered Mirror 3 boost.\n\n- Swift action, personal, 1 round.\n- Next eligible standard-action strike targeting one creature also affects one additional opponent within 45 ft.\n- If the strike uses an attack roll, compare the same raw attack roll to both targets.\n- Target-specific modifiers/defenses remain separate."
+              "detail": "Nächster Einzelziel-Strike trifft ein zweites Ziel bis 45 ft; derselbe Wurf.",
+              "tag": "Swift"
             },
             {
               "name": "Minute Hand",
-              "detail": "Riven Hourglass 1 boost.\n\n- Swift action.\n- One extra melee attack at -2 from the otherwise-current attack profile.\n- Standard PA/Inner Eye result: +13, 2d6+19 +1d6 precision."
+              "detail": "Zusatzangriff: +13 · 2d6+19 +1d6 Präzision.",
+              "tag": "Swift"
             },
             {
               "name": "Circle of Razor Feathers",
-              "detail": "Black Seraph 4 [evil] strike.\n\n- Standard action.\n- 30-ft-radius burst centered on Styke; enemies in the area.\n- 8d6 profane damage.\n- Reflex DC 20 partial with the adapted greatsword (base DC18 +2 discipline-weapon competence bonus).\n- Failed save: full damage and sickened 4 rounds.\n- Successful save: half damage and sickened 1 round.\n- Weapon Group Adaptation makes the Heavy Blades greatsword associated with Black Seraph; the +2 competence save-DC bonus is included above."
+              "detail": "30 ft Radius · 8d6 profan · sickened 4 Runden; bei Erfolg halbiert/1 Runde.",
+              "tag": "Reflex SG 20"
             },
             {
-              "name": "Fetch's Wrath",
-              "detail": "Shattered Mirror 4 strike [teleportation].\n\n- Standard action; self and one creature.\n- Current medium teleport range at IL 8: 180 ft.\n- Either teleport then make one melee attack, or make one melee attack then teleport.\n- Hit deals normal weapon damage +4d6.\n- Standard PA/Inner Eye hit: +15, 2d6+19 +4d6 +1d6 precision.\n\nReflected Blade Style + Fetch's Wrath: perform Fetch's teleport once. Compare Reflected Blade Style's same raw attack roll against the secondary opponent within 45 ft. Each target actually hit takes the full Fetch attack damage; no second teleport is generated."
+              "name": "Fetch’s Wrath",
+              "detail": "Teleport bis 180 ft + Angriff: +15 · 2d6+19 +4d6 +1d6 Präzision.",
+              "tag": "Standard"
             },
             {
               "name": "Bilious Strike",
-              "detail": "Black Seraph 4 [evil] strike.\n\n- Standard action; one melee attack.\n- On hit: normal weapon damage +6d6 profane.\n- Target is nauseated for 3 rounds.\n- Fortitude DC 20 reduces the nausea to 1 round.\n- A successful save does not remove the +6d6 profane damage.\n- Weapon Group Adaptation: Heavy Blades supplies the included +2 competence save-DC bonus with the adapted greatsword."
+              "detail": "Angriff +6d6 profan; nauseated 3 Runden, bei Erfolg1 Runde.",
+              "tag": "Fort SG 20"
             }
           ]
         },
         {
-          "id": "source-combat",
-          "label": "Kampf",
+          "id": "reserve",
+          "label": "Weitere bekannte Manöver",
           "type": "list",
           "items": [
             {
-              "name": "Grundwerte",
-              "detail": "Class: Zealot 4 / Psion (Egoist) 1 / Awakened Blade 3  \nRace: Angel-Blooded Aasimar  \nAlignment: Lawful Evil  \nLevel: 8"
+              "name": "Rapid Strike",
+              "detail": "Zwei Angriffe gegen dasselbe Ziel.",
+              "tag": "Standard"
             },
             {
-              "name": "Attributes",
-              "detail": "| Ability | Score | Mod |\n|---|---:|---:|\n| STR | 14 | +2 |\n| DEX | 20 base / 24 worn | +7 |\n| CON | 10 | +0 |\n| INT | 14 | +2 |\n| WIS | 10 | +0 |\n| CHA | 17 base / 19 worn | +4 |\n\nLevel-8 ASI raises base DEX 19 → 20. The ACTUALLY equipped +4 DEX belt raises DEX to24/+7, CHA +2 headband raises CHA to19/+4, and the Cloak of Resistance is actually +3. Also assumes +1 custom mithral chain shirt, +1 greatsword and Amulet of Natural Armor +1. Mithral chain shirt Max DEX to AC is +6, so DEX+7 improves initiative/Reflex/attack/CMD/Dex skills but does not add another AC or touch-AC point while the shirt is worn. Default duty/travel footwear is the actually delivered Boots of Striding and Springing: speed40ft (+10ft enhancement), 30ft only if removed for bed/bathing/private reasons or clearly not worn; no repeated dressing check in normal combat."
+              "name": "Obsidian Sidestep",
+              "detail": "Craft (Weapons)+9 statt eines Rettungswurfs.",
+              "tag": "Immediate"
             },
             {
-              "name": "Defenses and movement - standard Inner Eye",
-              "detail": "| Value | Total |\n|---|---:|\n| HP | 54 / 54 |\n| AC | 24 |\n| Touch | 18 |\n| Flat-footed | 24 when Uncanny Dodge applies |\n| Initiative | +10 |\n| Speed | 40 ft with normal worn Boots of Striding and Springing; 30 ft if off |\n| BAB | +7/+2 |\n| CMB | +12 |\n| CMD | 26 |\n| Fortitude | +10 |\n| Reflex | +14 |\n| Will | +13 |\n\nStatic values assume Stance of the Inner Eye.\n\nStance of the Inner Eye at IL 8 gives +2 insight to AC, attack, weapon/maneuver damage where applicable, CMB, and all saves, plus +1d6 precision damage. It still does not add to CMD.\n\nUncanny Dodge: Styke is not caught flat-footed and retains his Dexterity bonus to AC against invisible attackers. This normally also prevents those two cases from switching off Inner Eye. It does not protect every effect that genuinely denies Dexterity, such as immobilization or a successful feint under the underlying rule.\n\nAngel-Blooded resistance: electricity resistance 5.\n\nHP progression: level-7 maximum 48 + fixed Awakened Blade d10 increment 6 = 54."
+              "name": "Strength of Hell",
+              "detail": "+2 profan Angriff, +1d6 Schaden; −2 AC für 1 Runde.",
+              "tag": "Swift"
             },
             {
-              "name": "Grundwerte",
-              "detail": "Current +1 greatsword, 19-20/x2.\n\n- normal full attack: +17/+12, 2d6+13 +1d6 precision;\n- Power Attack ON: +15/+10, 2d6+19 +1d6 precision;\n- Minute Hand with PA: +13, 2d6+19 +1d6 precision.\n\nThe +1d6 Inner Eye damage is precision damage and is not multiplied on a critical."
-            },
-            {
-              "name": "Emergency Caged Sun profile",
-              "detail": "With The Caged Sun and 2 Essence instead of Inner Eye:\n\n- AC 24, touch 18 (mithral shirt Max DEX +6);\n- CMB +12, CMD 28 under the accepted campaign Caged-Sun propagation;\n- Fort +10, Ref +14, Will +13;\n- normal +17/+12, 2d6+11;\n- PA +15/+10, 2d6+17;\n- received healing: floor((incoming + 4) x 1.5);\n- 50% HP threshold for free stance entry: 27 HP or fewer."
-            },
-            {
-              "name": "Regeln",
-              "detail": "- Zeal +1.\n- Collective: up to 5 willing creatures beyond Styke with CHA modifier +4 and the accepted campaign Zealot capacity rule; actual durable membership stays Vesper, Valeria, Calliaste, Tacitus (one unused capacity) absent later valid changes.\n- Collective range remains 140 ft under the Zealot-4 engine.\n- Compartmentalized Aid: move-action self Aid; established +4 attack against selected target through Helpful/Harrying Partners; recovers up to 4 eligible maneuvers and activates Zeal (as reconciled at live level7).\n- Martyrdom: up to 20 ally damage transferred; up to 4 PP spent to reduce transferred damage by 3/PP, minimum 1 remains.\n- Living Bastion: while psionically focused, +5 ft reach; focus may be spent to halve qualifying ally damage after DR/resistance. Never spend focus without player declaration/standing instruction.\n- Echoes of Steel: highest available maneuver grade remains 4, so eligible maneuvers of grade 3 or lower may be transferred; PP cost equals maneuver level; one recipient, one use within 1 minute, one Echo active at a time."
-            },
-            {
-              "name": "Regeln",
-              "detail": "- full BAB progression;\n- cumulative AB save progression is Fort +1 / Ref +1 / Will +2;\n- Situational Awareness remains +1 insight initiative at AB3;\n- gains Uncanny Dodge;\n- existing Psion manifesting advances by one level;\n- gains +1 maneuver readied;\n- no new maneuver known from AB3."
+              "name": "Flash of Insight",
+              "detail": "Nach Treffer: Verbündeter erhält passenden neuen Rettungswurf.",
+              "tag": "Swift"
             }
           ]
         },
         {
-          "id": "source-maneuvers",
-          "label": "Manöver",
+          "id": "powers",
+          "label": "Psionische Kräfte",
+          "type": "spell-groups",
+          "groups": [
+            {
+              "label": "Grad 1 · ML3",
+              "items": [
+                "Minor Metamorphosis",
+                "Defensive Precognition",
+                "Offensive Precognition",
+                "Force Screen",
+                "Call to Mind"
+              ]
+            },
+            {
+              "label": "Grad 2 · je 3 PP",
+              "items": [
+                "Chameleon",
+                "Energy Adaptation, Specified"
+              ]
+            },
+            {
+              "label": "Talente · ohne PP",
+              "items": [
+                "Detect Psionics",
+                "Empathy",
+                "Conceal Thoughts"
+              ]
+            }
+          ],
+          "subtitle": "PP18/24 im gespeicherten Stand; keine Auffrischung angenommen."
+        },
+        {
+          "id": "power-notes",
+          "label": "Kräfte · Kurzinfos",
           "type": "list",
           "items": [
             {
-              "name": "Grundwerte",
-              "detail": "Initiator Level: 8  \nInitiation modifier: CHA +4  \nKnown: 10  \nReadied: 6  \nOrdinary stances known: 2, plus Stance of the Inner Eye from Awakened Blade.\n\nA normal 10-minute maneuver-preparation period may change the readied selection among the known list."
+              "name": "Minor Metamorphosis",
+              "detail": "1 PP/3 min; bei 3 PP ist die erste Augmentation möglich."
             },
             {
-              "name": "Standard readied",
-              "detail": "1. Temporal Body Adjustment.\n2. Reflected Blade Style.\n3. Minute Hand.\n4. Circle of Razor Feathers.\n5. Fetch's Wrath.\n6. Bilious Strike."
+              "name": "Force Screen",
+              "detail": "1 PP/3 min · +4 Schildbonus, AC28."
             },
             {
-              "name": "Complete known list",
-              "detail": "- Rapid Strike.\n- Minute Hand.\n- Obsidian Sidestep.\n- Reflected Blade Style.\n- Strength of Hell.\n- Flash of Insight.\n- Temporal Body Adjustment.\n- Fetch's Wrath.\n- Circle of Razor Feathers.\n- Bilious Strike.\n\nLifeburst Strike, Chains of Doubt, Vengeful Riposte, Ravaging Blow and Staunching Strike are not known in this level-8 build."
+              "name": "Chameleon",
+              "detail": "3 PP/30 min · +10 Stealth → +28."
             },
             {
-              "name": "Temporal Body Adjustment",
-              "detail": "Riven Hourglass 4 counter.\n\n- Immediate action, personal, instantaneous.\n- Initiate when Styke would be affected by, or is currently affected by, a qualifying negative condition.\n- Ignore/end one such condition under the maneuver's text.\n- Cannot negate death.\n- Expends the maneuver and consumes normal immediate/swift economy."
+              "name": "Energy Adaptation, Specified",
+              "detail": "3 PP/30 min · Resistenz10 gegen den aktiven Energietyp."
             },
             {
-              "name": "Reflected Blade Style",
-              "detail": "Shattered Mirror 3 boost.\n\n- Swift action, personal, 1 round.\n- Next eligible standard-action strike targeting one creature also affects one additional opponent within 45 ft.\n- If the strike uses an attack roll, compare the same raw attack roll to both targets.\n- Target-specific modifiers/defenses remain separate."
-            },
+              "name": "Call to Mind",
+              "detail": "1 PP/1 min · Knowledge erneut mit +4 Kompetenz."
+            }
+          ]
+        },
+        {
+          "id": "stances",
+          "label": "Haltungen",
+          "type": "list",
+          "items": [
             {
-              "name": "Minute Hand",
-              "detail": "Riven Hourglass 1 boost.\n\n- Swift action.\n- One extra melee attack at -2 from the otherwise-current attack profile.\n- Standard PA/Inner Eye result: +13, 2d6+19 +1d6 precision."
-            },
-            {
-              "name": "Circle of Razor Feathers",
-              "detail": "Black Seraph 4 [evil] strike.\n\n- Standard action.\n- 30-ft-radius burst centered on Styke; enemies in the area.\n- 8d6 profane damage.\n- Reflex DC 20 partial with the adapted greatsword (base DC18 +2 discipline-weapon competence bonus).\n- Failed save: full damage and sickened 4 rounds.\n- Successful save: half damage and sickened 1 round.\n- Weapon Group Adaptation makes the Heavy Blades greatsword associated with Black Seraph; the +2 competence save-DC bonus is included above."
-            },
-            {
-              "name": "Fetch's Wrath",
-              "detail": "Shattered Mirror 4 strike [teleportation].\n\n- Standard action; self and one creature.\n- Current medium teleport range at IL 8: 180 ft.\n- Either teleport then make one melee attack, or make one melee attack then teleport.\n- Hit deals normal weapon damage +4d6.\n- Standard PA/Inner Eye hit: +15, 2d6+19 +4d6 +1d6 precision.\n\nReflected Blade Style + Fetch's Wrath: perform Fetch's teleport once. Compare Reflected Blade Style's same raw attack roll against the secondary opponent within 45 ft. Each target actually hit takes the full Fetch attack damage; no second teleport is generated."
-            },
-            {
-              "name": "Bilious Strike - new standard readied",
-              "detail": "Black Seraph 4 [evil] strike.\n\n- Standard action; one melee attack.\n- On hit: normal weapon damage +6d6 profane.\n- Target is nauseated for 3 rounds.\n- Fortitude DC 20 reduces the nausea to 1 round.\n- A successful save does not remove the +6d6 profane damage.\n- Weapon Group Adaptation: Heavy Blades supplies the included +2 competence save-DC bonus with the adapted greatsword."
-            },
-            {
-              "name": "Rapid Strike - known reserve",
-              "detail": "Riven Hourglass 2 strike.\n\n- Standard action.\n- Two separately rolled melee attacks against the same creature.\n- Each hit deals normal current weapon damage."
-            },
-            {
-              "name": "Obsidian Sidestep - known reserve",
-              "detail": "Shattered Mirror 2 counter.\n\n- Immediate action before the saving throw it replaces.\n- Replace that save with Craft (Weapons) +9 against the same DC under the accepted campaign conversion."
-            },
-            {
-              "name": "Strength of Hell - known reserve",
-              "detail": "Black Seraph 1 boost.\n\n- Swift action, 1 round.\n- +2 profane attack and +1d6 damage on Styke's attacks.\n- -2 AC for the same duration."
-            },
-            {
-              "name": "Flash of Insight - known reserve",
-              "detail": "Sleeping Goddess 1 augmented boost.\n\n- Swift action after Styke succeeds on an attack roll or combat-maneuver check.\n- One ally within 30 ft affected by a qualifying ongoing effect gets another save.\n- Optional PP adds +1 insight to that save per PP.\n- Optional focus augment may add a second ally.\n- Never spend PP/focus automatically."
+              "name": "Inner Eye",
+              "detail": "Standard: +2 Insight auf AC, Angriff, Schaden, CMB und Saves; +1d6 Präzision."
             },
             {
               "name": "The Caged Sun",
-              "detail": "Radiant Dawn 1 stance; emergency standard investment 2 Essence.\n\n- cannot heal other creatures through Styke's own healing effects;\n- +2 attack, AC, saves, CMB, and campaign-cached CMD;\n- received healing floor((incoming +4) x1.5);\n- excess self-generated healing becomes temp HP under stance rules, capped at current max HP 54;\n- enter as swift, or free action at 27 HP or fewer."
+              "detail": "2 Essenz: Heilung floor((eingehend+4)×1,5); freier Eintritt bei höchstens 27 HP."
             },
             {
-              "name": "Black Seraph's Glare",
-              "detail": "Black Seraph 1 stance.\n\n- when Styke damages a foe with an attack, he may make the stance's free-action demoralize attempt with +4 profane under the cached published rule."
+              "name": "Black Seraph’s Glare",
+              "detail": "Nach Schadenstreffer: freie Demoralize-Probe mit +4 profan."
             }
           ]
         },
         {
-          "id": "source-psionics",
-          "label": "Psionik",
+          "id": "specials",
+          "label": "Klassenfähigkeiten",
           "type": "list",
           "items": [
             {
-              "name": "Grundwerte",
-              "detail": "Effective Psion manifesting: level 3  \nManifester Level: 3  \nMaximum power level: 2  \nPowers known: 7  \nPP maximum: 24/day\n\nCampaign PP calculation:\n\n- retained Zealot-side pool 10, including the already accepted +2 PP from the CHA headband (current level7 Zealot side raised from8 to10);\n- Psion-3 base PP: 11;\n- INT 14 bonus PP at ML 3: 3;\n- total 24.\n\nLIVE_STATE owns remaining PP after activation."
+              "name": "Compartmentalized Aid",
+              "detail": "Move: Aid+4 Angriff; bis 4 Manöver recovern; Zeal aktivieren."
             },
             {
-              "name": "Active energy type",
-              "detail": "Styke has one active psionic energy type: cold, electricity, fire, or sonic. It is selected when gaining psionic focus under the normal psionic-energy convention and can be changed by regaining focus with a different selection. Energy Adaptation, Specified keys to this active type."
+              "name": "Zeal",
+              "detail": "Getroffener Strike: +1 Moral Angriff für das Collective,1 Runde."
             },
             {
-              "name": "Powers known",
-              "detail": "#### Minor Metamorphosis\n\n- 1 PP, standard, personal, 3 minutes at ML 3.\n- Choose one legal basic option from its current menu.\n- At ML 3 the +2 PP augment is now legal for a total 3 PP, granting its additional Enhancement Menu A and Ability Menu A choices in addition to the base selection.\n- Never assume a specific metamorphosis package without player declaration.\n\n#### Defensive Precognition\n\n- 1 PP, standard, personal, 3 minutes.\n- +1 insight AC and saves.\n- Does not stack with Inner Eye's insight bonuses; useful mainly when Inner Eye is unavailable.\n\n#### Offensive Precognition\n\n- 1 PP, standard, personal, 3 minutes.\n- +1 insight attack rolls.\n- Does not stack with Inner Eye's insight attack bonus.\n\n#### Force Screen\n\n- 1 PP, standard, personal, 3 minutes.\n- +4 shield bonus to AC; applies against incorporeal touch attacks as a force effect.\n- Standard Inner Eye profile with Force Screen: AC 28; ordinary touch remains18, constrained by mithral-shirt Max DEX +6.\n\n#### Call to Mind\n\n- 1 PP; manifestation time 1 minute.\n- After failing a Knowledge check, immediately retry that check with +4 competence.\n- Current Knowledge (All) retry is +17 before any legal Zorn assistance.\n- Usually an investigation/research tool rather than an initiative action.\n\n#### Chameleon - new\n\n- Egoist 2; 3 PP; standard; personal; 30 minutes.\n- +10 enhancement bonus on Stealth.\n- Current result: Stealth +28.\n- ML 3 cannot afford its +2 PP augment.\n\n#### Energy Adaptation, Specified - new\n\n- Psion/Wilder 2; 3 PP; standard; personal; 30 minutes.\n- Resistance 10 against Styke's current active energy type.\n- The resistance does not stack with other energy resistance; use the best applicable value.\n- For electricity, this therefore supersedes the racial electricity resistance 5 while active.\n- The +4 PP immediate-action augment is not legal at ML 3."
+              "name": "Living Bastion",
+              "detail": "Mit Fokus +5 ft Reichweite; Fokus für passende Schadenshalbierung ausgeben."
             },
             {
-              "name": "0-level talents",
-              "detail": "#### Detect Psionics\n\n- no PP; standard; 60-ft cone; concentration up to 3 minutes.\n- campaign magic/psionics transparency applies; does not automatically identify item properties, curses, command words, or hidden origin.\n\n#### Empathy\n\n- no PP; standard; 30-ft spread; concentration up to 3 minutes.\n- surface emotions/basic drives only, never thoughts, memories, plans, or facts.\n\n#### Conceal Thoughts\n\n- no PP; standard; close range; willing target; 3 hours.\n- +10 circumstance Bluff only against Sense Motive attempts to discern true intentions, plus its normal anti-mind-reading protection.\n- routine safe noncombat refresh remains the campaign convention."
+              "name": "Martyrdom",
+              "detail": "Bis20 Schaden übernehmen; bis 4 PP zur Reduktion um 3 jePP."
+            },
+            {
+              "name": "Echoes of Steel",
+              "detail": "Manöver bis Grad 3 teilen; Kosten=Grad; eine Nutzung binnen1 min."
+            },
+            {
+              "name": "Uncanny Dodge",
+              "detail": "Nicht flat-footed; DEX gegen unsichtbare Angreifer behalten."
+            },
+            {
+              "name": "Zorn",
+              "detail": "27 HP · AC17 · Knowledge-Hilfe+2; Flight erst ab9."
             }
           ]
         },
         {
-          "id": "source-skills",
-          "label": "Skills",
+          "id": "skills",
+          "label": "Fertigkeiten",
           "type": "list",
           "items": [
             {
-              "name": "Regeln",
-              "detail": "Six level-8 ranks are already allocated.\n\n| Skill | Ranks | Total |\n|---|---:|---:|\n| Acrobatics | 5 | +15 unbooted; +24 jumping when Boots worn |\n| Autohypnosis | 4 | +7 |\n| Craft (Weapons) | 4 | +9 |\n| Diplomacy | 1 | +8 |\n| Intimidate | 3 | +12 |\n| Knowledge (All) | 8 | +13 |\n| Perception | 8 | +11 |\n| Stealth | 8 | +18 |\n| Spellcraft | 4 | +9 |\n| Bluff | 1 | +8 |\n\nChameleon raises current Stealth to +28 while active.\n\nKnowledge (All) remains the campaign consolidation. Zorn's established +2 Knowledge-assistance convention remains separate."
+              "name": "Acrobatics",
+              "tag": "+15 unbooted; +24 jumping when Boots worn"
+            },
+            {
+              "name": "Autohypnosis",
+              "tag": "+7"
+            },
+            {
+              "name": "Craft (Weapons)",
+              "tag": "+9"
+            },
+            {
+              "name": "Diplomacy",
+              "tag": "+8"
+            },
+            {
+              "name": "Intimidate",
+              "tag": "+12"
+            },
+            {
+              "name": "Knowledge (All)",
+              "tag": "+13"
+            },
+            {
+              "name": "Perception",
+              "tag": "+11"
+            },
+            {
+              "name": "Stealth",
+              "tag": "+18"
+            },
+            {
+              "name": "Spellcraft",
+              "tag": "+9"
+            },
+            {
+              "name": "Bluff",
+              "tag": "+8"
             }
           ]
         },
         {
-          "id": "source-feats",
+          "id": "feats",
           "label": "Feats",
           "type": "list",
           "items": [
             {
-              "name": "Regeln",
-              "detail": "Retained:\n\n- Extra Conviction: Personality Fragment.\n- Power Attack.\n- Deadly Agility, campaign-ruled for two-handed greatsword and accepted 1.5x DEX damage.\n- Weapon Group Adaptation: Heavy Blades, replacing the earlier Advanced Study.\n- Extra Readied Maneuver.\n- Psionic Body.\n- Combat Reflexes through Combat Conviction.\n- Psionic Meditation through Psionic Conviction.\n- Harrying Partners via Targeting Array.\n- Deep Focus from Awakened Blade 1.\n- level-7 Advanced Study: Temporal Body Adjustment + Circle of Razor Feathers.\n\nTrack normal and deep psionic focus separately."
+              "name": "Weapon Group Adaptation",
+              "detail": "Heavy Blades: Großschwert ist Disziplinwaffe; Circle/Bilious SG 20."
             },
             {
-              "name": "Regeln",
-              "detail": "The Heavy Blades weapon group (including the greatsword) is associated with all disciplines Styke can access. Maneuvers performed with that adapted weapon gain the normal +2 competence save-DC bonus where applicable: Circle and Bilious DC20 at CHA+4. This grants no bonus to an unrelated power/spell or a maneuver not performed with the adapted weapon, and does not create a save for maneuvers without one."
+              "name": "Power Attack / Deadly Agility",
+              "detail": "−2 Angriff/+6 Schaden; Großschwert mit 1,5×DEX nach Hausregel."
+            },
+            {
+              "name": "Extra Readied Maneuver",
+              "detail": "Eine Kopie; sechs vorbereitet auf8."
+            },
+            {
+              "name": "Advanced Study",
+              "detail": "TBA + Circle; eine verbleibende Kopie."
+            },
+            {
+              "name": "Weitere Feats",
+              "detail": "Extra Conviction, Combat Reflexes, Psionic Meditation, Psionic Body, Deep Focus, Harrying Partners."
             }
           ]
         },
         {
-          "id": "source-gear",
+          "id": "attributes",
+          "label": "Attribute",
+          "type": "list",
+          "items": [
+            {
+              "name": "STR",
+              "tag": "14"
+            },
+            {
+              "name": "DEX",
+              "tag": "24 getragen (20 Basis +4 Gürtel)"
+            },
+            {
+              "name": "CON",
+              "tag": "11 (10 Basis +1 inhärent; Modifikator +0)"
+            },
+            {
+              "name": "INT",
+              "tag": "14"
+            },
+            {
+              "name": "WIS",
+              "tag": "10"
+            },
+            {
+              "name": "CHA",
+              "tag": "19 getragen"
+            }
+          ]
+        },
+        {
+          "id": "gear",
           "label": "Ausrüstung",
           "type": "list",
           "items": [
             {
-              "name": "Regeln",
-              "detail": "Static activation assumptions:\n\n- +1 greatsword.\n- +1 custom mithral chain shirt.\n- Cloak of Resistance +3, returned/worn5Apr.\n- Amulet of Natural Armor +1.\n- Belt of Incredible Dexterity +4, returned/worn22Apr; after lvl8 ASI effective DEX24/+7; mithral-shirt max Dex AC+6.\n- Headband of Alluring Charisma +2, Vesper's former headband physically transferred/worn3Apr; CHA19/+4.\n- Boots of Striding and Springing, delivered17Apr, worn by default for duty/travel/combat: speed 40ft, 30ft only when deliberately removed. Jumping Acrobatics +24 in boots, not all Acrobatics. Boot speed is enhancement and does not stack with a simultaneous haste/Wind Speed speed enhancement; use the better effect.\n- Thorn's iron circlet/current guise tool.\n\nThe single held ML7 Psychic Reformation power stone was consumed ONCE at this explicitly authorized Level-8 activation. Zero unused copies remain. No personal PP expenditure or daily refresh is inferred from the stone activation."
+              "name": "Großschwert+1 / Mithralhemd+1"
             },
             {
-              "name": "Regeln",
-              "detail": "Common, Celestial, Draconic, Sylvan, Infernal. Infernal is an explicit campaign grant; the comprehension helm does not teach speech."
+              "name": "DEX-Gürtel+4 / CHA-Stirnreif+2"
+            },
+            {
+              "name": "Cloak+3 / Amulett+1"
+            },
+            {
+              "name": "Boots of Striding and Springing",
+              "detail": "Im Normaldienst getragen;40 ft Bewegung."
+            },
+            {
+              "name": "Psychic Reformation",
+              "detail": "Einwegstein verbraucht."
             }
           ]
         },
         {
-          "id": "source-planning",
-          "label": "Fester Plan 9/10",
+          "id": "plan",
+          "label": "Fester Plan9/10",
           "type": "list",
           "items": [
             {
-              "name": "Regeln",
-              "detail": "Activated by explicit player instruction OOC 26 October 2026, at the retained campaign edge without advancing the calendar, ritual, quests or completing a rest. Consume the one held ML7 Psychic Reformation power stone ONCE now. This supersedes the former Lifeburst/Riposte proposal and its earlier consumption instructions.\n\n| Acquisition | Final choice |\n|---|---|\n| Earlier feat slot (previous Advanced Study, legal at level 5) | Weapon Group Adaptation: Heavy Blades |\n| Historical level-6 maneuver exchange | Staunching Strike → Reflected Blade Style |\n| Level-7 class maneuver | Fetch's Wrath |\n| Level-7 Advanced Study | Temporal Body Adjustment + Circle of Razor Feathers |\n| Level-8 maneuver exchange | Ravaging Blow → Bilious Strike |\n\nKnown maneuvers: 10. Readied: 6. Lifeburst Strike, Chains of Doubt, Vengeful Riposte, Staunching Strike and Ravaging Blow are NOT in the level-8 known list. Retain the existing ONE Extra Readied Maneuver feat. No seventh readied slot at level 8.\n\nFixed future plan, NOT yet granted:\n- Level 9 / Awakened Blade 4: regular feat Extra Readied Maneuver #2; AB combat bonus feat Combat Tenacity; regular maneuver Vengeful Riposte. Seven readied after that feat. The AB4 stance and new psionic selections are still separate future choices.\n- Level 10 / Awakened Blade 5: normal even-IL exchange Rapid Strike → Abyssal Lance (the ranged stun strike). Hour Hand is NOT selected; Minute Hand remains known/readied.\n- Next class-granted additional readied maneuver is AB6 / character level 11, not levels 9 or 10."
-            }
-          ]
-        },
-        {
-          "id": "source-details",
-          "label": "Weitere Fähigkeiten",
-          "type": "list",
-          "items": [
+              "name": "Level 9",
+              "detail": "Extra Readied#2, Combat Tenacity; Vengeful Riposte regulär lernen."
+            },
             {
-              "name": "Regeln",
-              "detail": "Campaign effective master level: 8 through Personality Fragment.\n\n- Diminutive Construct.\n- HP 27 (half Styke staged maximum).\n- STR 1 / DEX 15 / INT 10 under the accepted current campaign progression.\n- AC 17.\n- campaign save cache: Fort +5 / Ref +8 / Will +8.\n- Tactical Assistance uses INT +0 vs DC 10.\n- Aid bonus +2.\n- established Knowledge assistance remains +2 flat campaign convention.\n- same skill ranks as Styke where the psicrystal rules copy ranks; uses Zorn's own ability modifiers.\n- no new active special ability at effective master level 8.\n- Flight is the next special-ability breakpoint at effective master level 9."
+              "name": "Level 10",
+              "detail": "Rapid Strike → Abyssal Lance. Minute Hand bleibt."
             }
           ]
         }
@@ -341,9 +406,8 @@
       "sections": [
         {
           "id": "saves",
-          "label": "Saves",
+          "label": "Rettungswürfe",
           "type": "list",
-          "subtitle": "Level 8 · Ausrüstung enthalten",
           "items": [
             {
               "name": "Fortitude",
@@ -361,224 +425,392 @@
         },
         {
           "id": "combat-shortcuts",
-          "label": "Kampf-Kurzwerte",
+          "label": "Kampfwerte",
           "type": "list",
           "items": [
             {
-              "name": "ac",
-              "tag": "25"
-            },
-            {
-              "name": "touch",
-              "tag": "16"
-            },
-            {
-              "name": "flatFooted",
-              "tag": "19"
-            },
-            {
-              "name": "initiative",
-              "tag": "+12 mit Verse / +8 sonst"
-            },
-            {
-              "name": "speed",
-              "tag": "30 ft"
-            },
-            {
-              "name": "bab",
+              "name": "BAB",
               "tag": "+6/+1"
             },
             {
-              "name": "cmb",
-              "tag": "+6"
+              "name": "CMB / CMD",
+              "tag": "+6 / 18"
             },
             {
-              "name": "cmd",
-              "tag": "18"
-            },
-            {
-              "name": "fort",
-              "tag": "+5"
-            },
-            {
-              "name": "ref",
-              "tag": "+13"
-            },
-            {
-              "name": "will",
-              "tag": "+13"
-            },
-            {
-              "name": "Angriff",
-              "detail": "+8 ranged touch · 1d6+7 force"
+              "name": "Bewegung",
+              "tag": "30 ft"
             }
           ]
         },
         {
-          "id": "source-combat",
-          "label": "Kampf",
+          "id": "spells",
+          "label": "Zauber nach Grad",
+          "type": "spell-groups",
+          "groups": [
+            {
+              "label": "Grad 1 ·8 Plätze/Tag",
+              "items": [
+                "Obscuring Mist",
+                "Protection from Evil",
+                "Air Bubble",
+                "Remove Sickness",
+                "Endure Elements",
+                "Cure Light Wounds",
+                "Unnatural Lust",
+                "Identify"
+              ]
+            },
+            {
+              "label": "Grad 2 ·8 Plätze/Tag",
+              "items": [
+                "Silence",
+                "Lesser Restoration",
+                "Undetectable Alignment",
+                "Cure Moderate Wounds",
+                "Tongues"
+              ]
+            },
+            {
+              "label": "Grad 3 ·7 Plätze/Tag",
+              "items": [
+                "Delay Poison, Communal",
+                "Dispel Magic",
+                "Cure Serious Wounds",
+                "Locate Object"
+              ]
+            },
+            {
+              "label": "Grad 4 ·4 Plätze/Tag",
+              "items": [
+                "Freedom of Movement",
+                "Cure Critical Wounds",
+                "Legend Lore"
+              ]
+            }
+          ],
+          "subtitle": "CL8 · Konzentration+15 · Zauber-SG 18/19/20/21; Angaben sind Kapazitäten."
+        },
+        {
+          "id": "arcane-enlightenment",
+          "label": "Flexible Zauber · Standard7",
+          "type": "spell-groups",
+          "groups": [
+            {
+              "label": "Grad 1",
+              "items": [
+                "Alarm",
+                "Silent Image"
+              ]
+            },
+            {
+              "label": "Grad 2",
+              "items": [
+                "Glitterdust",
+                "Ashen Path"
+              ]
+            },
+            {
+              "label": "Grad 3",
+              "items": [
+                "Heroism",
+                "Stinking Cloud",
+                "Greater Magic Weapon"
+              ]
+            }
+          ],
+          "subtitle": "7 täglich flexibel gewählte Zauber · Standardauswahl"
+        },
+        {
+          "id": "spell-notes",
+          "label": "Zauber · häufige Kurzinfos",
           "type": "list",
           "items": [
             {
-              "name": "Grundwerte",
-              "detail": "Class: Oracle (Spirit Guide) 8  \nRace: Tiefling (Asura-Spawn)  \nMystery: Lore  \nCurse: Uncontainable Allure  \nFamiliar: Verse  \nLevel: 8"
+              "name": "Heroism",
+              "detail": "80 min · +2 Moral auf Angriff, Saves und Skills; nicht zusätzlich zu Zeal."
             },
             {
-              "name": "Attributes",
-              "detail": "| Ability | Score | Mod |\n|---|---:|---:|\n| STR | 11 | +0 |\n| DEX | 14 | +2 |\n| CON | 10 | +0 |\n| INT | 14 | +2 |\n| WIS | 18 | +4 |\n| CHA | 20 base / 24 worn | +7 |\n\nLevel-8 ASI raises base CHA 19 → 20, combined with the actually equipped NEW +4 headband delivered3Apr: CHA24/mod+7. The earlier +2 headband has actually been transferred to Styke, not destroyed in an upgrade.\n\nINT 14 remains base 13 + the first Mental Acuity inherent increase. The next Mental Acuity increase occurs at Oracle 10."
+              "name": "Greater Magic Weapon",
+              "detail": "8 h · +2 Waffenverbesserung; ersetzt vorhandenes+1."
             },
             {
-              "name": "Combat values",
-              "detail": "| Value | Total |\n|---|---:|\n| HP | 43 / 43 |\n| AC | 25 |\n| Touch | 16 |\n| Flat-footed | 19 |\n| Initiative | +12 with Verse / +8 otherwise |\n| Speed | 30 ft |\n| BAB | +6/+1 |\n| CMB | +6 |\n| CMD | 18 |\n| Fortitude | +5 |\n| Reflex | +13 |\n| Will | +13 |\n\nHP progression: level-7 maximum 38 + fixed Oracle d8 increment 5 = 43.\n\nSidestep Secret uses CHA instead of DEX for AC and Reflex. The mithral chain shirt caps its AC contribution at +6 (not the full CHA+7): AC25/touch16; Reflex still uses the full CHA+7. Actually worn +1 mithral chain shirt, +1 mithral heavy shield, Amulet of Natural Armor +1, Cloak of Resistance +3, Headband of Alluring Charisma +4 and High Theft are included where relevant. Flat-footed AC still removes the Sidestep-Secret ability contribution under the established campaign calculation."
+              "name": "Ashen Path",
+              "detail": "80 min Gesamtbudget; Sicht durch passenden Nebel/Rauch bis 60 ft."
+            },
+            {
+              "name": "Stinking Cloud",
+              "detail": "8 Runden ·20 ft Radius · Fort SG 20; Nebel/Concealment und Nauseated beachten."
+            },
+            {
+              "name": "Freedom of Movement",
+              "detail": "80 min; Schutz gegen die im Zauber genannten Bewegungshindernisse."
             }
           ]
         },
         {
-          "id": "source-spells",
-          "label": "Zauber",
-          "type": "list",
-          "items": [
+          "id": "orisons",
+          "label": "Orisons · Grad 0",
+          "type": "spell-groups",
+          "groups": [
             {
-              "name": "Grundwerte",
-              "detail": "Caster level: 8  \nCasting ability: CHA 24 (+7)  \nConcentration: +15\n\nStatic daily capacity after an ordinary completed refresh:\n\n- level 1: 8/day;\n- level 2: 8/day;\n- level 3: 7/day;\n- level 4: 4/day.\n\nSpell save DCs:\n\n- level 0: 17;\n- level 1: 18;\n- level 2: 19;\n- level 3: 20;\n- level 4: 21.\n\nLIVE_STATE owns remaining slots at activation. A level-up by itself does not retroactively refill expended resources; apply the campaign rest convention at the actual milestone edge."
-            },
-            {
-              "name": "Orisons",
-              "detail": "1. Detect Magic.\n2. Create Water.\n3. Purify Food and Drink.\n4. Read Magic.\n5. Guidance.\n6. Enhanced Diplomacy.\n7. Detect Poison.\n8. Mending - staged level-8 addition."
-            },
-            {
-              "name": "Level 1 regular known",
-              "detail": "- Obscuring Mist.\n- Protection from Evil.\n- Air Bubble.\n- Remove Sickness.\n- Endure Elements.\n\nAdditional established known:\n- Cure Light Wounds.\n- Unnatural Lust.\n- Identify through Lore mystery/spirit package as established."
-            },
-            {
-              "name": "Level 2 regular known",
-              "detail": "- Silence.\n- Lesser Restoration.\n- Undetectable Alignment.\n\nAdditional established known:\n- Cure Moderate Wounds.\n- Tongues through Lore mystery/spirit package as established."
-            },
-            {
-              "name": "Level 3 regular known",
-              "detail": "- Delay Poison, Communal.\n- Dispel Magic.\n\nAdditional established known:\n- Cure Serious Wounds.\n- Locate Object through Lore mystery/spirit package as established."
-            },
-            {
-              "name": "Level 4",
-              "detail": "New regular Oracle spell known:\n- Freedom of Movement.\n\nAdditional automatically/currently known:\n- Cure Critical Wounds from the chosen Cure line.\n- Legend Lore as the level-8 Lore mystery bonus spell."
-            },
-            {
-              "name": "Combat / recurring spell quick cards",
-              "detail": "- Obscuring Mist: standard; 20-ft radius around Vesper; 8 minutes.\n- Protection from Evil: standard; touch; 8 minutes; +2 deflection AC/+2 resistance saves vs evil plus normal control/summoned-creature protections.\n- Air Bubble: standard; touch; 8 minutes.\n- Remove Sickness: standard; close 45 ft; 80 minutes; +4 morale against disease/nausea/sickened saves and normal suppression effect.\n- Endure Elements: standard; touch; 24 hours; environmental heat/cold comfort only, not energy resistance.\n- Cure Light Wounds: 1d8+5 under its CL cap.\n- Unnatural Lust: close 45 ft; 1 round; Will DC 18.\n- Identify: 60-ft cone; 24 rounds; detect-magic function plus +10 enhancement Spellcraft for possessed magic items under normal limits.\n- Silence: 1-round casting; long 720 ft; 20-ft emanation; 8 rounds; unwilling creature Will DC 19.\n- Lesser Restoration: 3-round casting; touch; normal 1d4 ability-damage/fatigue functionality.\n- Undetectable Alignment: standard; close 45 ft; 24 hours.\n- Cure Moderate Wounds: 2d8+8.\n- Tongues: touch; 80 minutes.\n- Delay Poison, Communal: 8-hour duration budget divided normally.\n- Dispel Magic: standard; medium 180 ft; targeted dispel 1d20+8 vs DC 11 + effect CL; normal counterspell option.\n- Cure Serious Wounds: 3d8+8.\n- Locate Object: long 720 ft; 8 minutes.\n- Freedom of Movement: standard; personal or touch; 80 minutes; target moves/acts normally despite effects covered by the spell, including its normal grapple/paralysis/underwater protections.\n- Cure Critical Wounds: 4d8+8.\n- Legend Lore: noncombat divination; personal; casting time depends on how directly the legendary subject is available/known and uses its normal expensive material/focus components. It does not turn nonlegendary subjects into valid targets."
-            },
-            {
-              "name": "Grundwerte",
-              "detail": "Daily-flexible, not permanent Oracle spells known.\n\nWith current effective CHA 24 / modifier +7, the established campaign selection count is 7."
-            },
-            {
-              "name": "Staged default seven (preserving actual 8-April choices)",
-              "detail": "1. Alarm.\n2. Glitterdust.\n3. Silent Image.\n4. Euphoric Cloud.\n5. Ashen Path.\n6. Stinking Cloud.\n7. Greater Magic Weapon.\n\nAlarm and Glitterdust are the actual earlier level-7 picks; Dancing Darkness was superseded, not a secret eighth pick. Daily selection remains flexible at legal rest; the seventh GMW slot is a staged suggestion until actual choice.\n\nThe daily list may legally change. Other high-priority level-8 toolbox choices already planned include Dimension Door, Detect Scrying, Scrying when its focus is available, Locate Creature, and Stone Shape.\n\nCurrent values:\n\n- Alarm: close 45 ft; 20-ft-radius emanation; 16 hours at CL8, standard alarm modes and trigger limits.\n- Glitterdust: medium 180 ft; 10-ft-radius spread; 8 rounds; Will DC 19 against blindness (repeated saves as printed); reveals by the dust even when blindness is saved.\n- Silent Image: long 720 ft; concentration; Will DC 18 disbelief when interacted with.\n- Euphoric Cloud: medium 180 ft; 20-ft-radius fog; 8 rounds; Fort DC 19; poison/fascination under spell rules.\n- Ashen Path: touch; 80 minutes total; see through qualifying magical ash/smoke/fog to 60 ft and normal contaminant protections.\n- Stinking Cloud: medium 180 ft; 20-ft-radius fog; 8 rounds; Fort DC 20; nausea under spell rules.\n- Greater Magic Weapon: standard; close 45 ft; 8 hours; at CL 8 grants +2 enhancement to one weapon. On an existing +1 weapon this raises the enhancement to +2 rather than adding +2 on top. Intended long-duration targets are normally Styke and Valeria."
+              "label": "Ohne Slots",
+              "items": [
+                "Detect Magic",
+                "Create Water",
+                "Purify Food and Drink",
+                "Read Magic",
+                "Guidance",
+                "Enhanced Diplomacy",
+                "Detect Poison",
+                "Mending"
+              ]
             }
           ]
         },
         {
-          "id": "source-maneuvers",
+          "id": "radiant-dawn",
           "label": "Manöver",
           "type": "list",
           "items": [
             {
-              "name": "Grundwerte",
-              "detail": "Initiator Level: 11  \nInitiation modifier: CHA +7  \nEssence pool: 4  \nEssence capacity: 2  \nClose range: 50 ft  \nRecovery: full-round action\n\nKnown maneuvers remain:\n\n- Bolster.\n- Staunching Strike.\n- Witness to Glory.\n- Decree of Torment.\n- Disrupt Essence.\n\nStandard readied:\n\n1. Witness to Glory.\n2. Disrupt Essence.\n3. Decree of Torment.\n\nKnown stances:\n\n- Spoils of War.\n- Armaments of the Empire.\n\nStandard martial stance: Armaments of the Empire.\n\nStandard Essence before initiative:\n\n- 2 Witness to Glory;\n- 2 Disrupt Essence;\n- 0 Armaments of the Empire."
-            },
-            {
-              "name": "Sun's Gleam",
-              "detail": "For a qualifying Radiant Dawn strike:\n\n- ranged touch +8 (BAB6 + DEX2; not CHA);\n- range 50 ft;\n- damage 1d6+7 force.\n\nSun's Gleam is a Radiant Dawn associated weapon for the campaign's discipline-weapon save-DC interaction."
-            },
-            {
               "name": "Witness to Glory",
-              "detail": "Radiant Dawn 2 counter.\n\n- immediate on initiative after raw rolls, usable while flat-footed;\n- 0 Essence: +7 initiative, 11 temp HP;\n- 1 Essence: +8 initiative, 13 temp HP;\n- 2 Essence: +9 initiative, 15 temp HP;\n- standing target Styke whenever legal unless player overrides;\n- expends Witness and binds invested Essence until recovery;\n- consumes Vesper's upcoming swift action."
+              "detail": "2 Essenz: +9 Initiative und15 TempHP; bindet kommende Swift.",
+              "tag": "Immediate"
             },
             {
               "name": "Disrupt Essence",
-              "detail": "Radiant Dawn 3 strike.\n\n- standard; one melee/ranged attack; Sun's Gleam may supply the ranged attack;\n- on hit choose qualifying abilities Vesper legitimately knows about;\n- base save DC 22 before Essence/associated-weapon adjustments;\n- each invested Essence adds +1 DC and +1 round;\n- each full 2 Essence allows one additional qualifying ability to be suppressed.\n\nStandard 2-Essence Disrupt:\n\n- suppress two qualifying known abilities;\n- duration 9 rounds on failed save;\n- Will DC 24 with a non-associated weapon;\n- with Sun's Gleam, campaign associated-weapon +2 applies: Will DC 26."
+              "detail": "Sun’s Gleam +8 Touch; zwei bekannte Fähigkeiten bis 9 Runden unterdrücken.",
+              "tag": "Will 26"
             },
             {
               "name": "Decree of Torment",
-              "detail": "Radiant Dawn 2 strike.\n\n- standard; one melee/ranged attack; Sun's Gleam allowed;\n- hit places 7 brands at IM +7;\n- each attacking creature may consume at most one brand/round as part of an attack to attempt one combat maneuver against the branded target;\n- triggering attack need not hit;\n- maneuver does not provoke;\n- use Vesper IL 11 instead of BAB and IM +7 instead of STR if better."
+              "detail": "Treffer setzt7 Marken; je Angreifer eine Marke/Runde nutzen.",
+              "tag": "Standard"
             },
             {
               "name": "Bolster",
-              "detail": "Radiant Dawn 1 counter.\n\n- immediate when an ally within 50 ft is hit;\n- DR 7/- for 1 round, including the triggering hit;\n- +1 DR per invested Essence."
+              "detail": "DR7/− für 1 Runde; +1 jeEssenz.",
+              "tag": "Reserve"
             },
             {
               "name": "Staunching Strike",
-              "detail": "Radiant Dawn 1 strike.\n\n- standard melee/ranged attack; Sun's Gleam allowed;\n- hit: normal attack damage then total 7 HP healing divided among Vesper/allies within 50 ft;\n- +3 total healing per invested Essence."
-            },
-            {
-              "name": "Armaments of the Empire - IL 10 breakpoint (current IL 11)",
-              "detail": "Radiant Dawn 3 stance.\n\n- empower up to 6 qualifying weapons/natural weapons within 50 ft;\n- at IL 10 each empowered weapon receives exactly one weapon special ability costing up to +2 equivalent, never two separate +1 abilities;\n- different weapons may receive different legal single properties;\n- no Essence is required for the weapon property;\n- each Essence invested in the stance grants wielders of empowered weapons +1 CMD per point;\n- standard investment remains 0.\n\nNew level-8 defaults:\n\n- Styke greatsword → Collision (+2).\n- Valeria greatsword → Conductive (+1) as her default, including ordinary combat; do not switch away without a tactical reason/accepted choice.\n- Keen (+1) on Valeria comes from her own Fiendish Boon, never from a second Armaments property; her remaining +1 Boon budget may also grant Flaming (+1) when legal.\n- Once actually obtained, Valeria's permanent Cruel weapon property remains separate. Greater Magic Weapon +2 may provide the enhancement bonus when Vesper actually casts it.\n\nConductive allows one qualifying hit per round to spend 2 Touch uses and channel one Touch of Corruption plus its selected cruelty through the weapon without consuming a separate action. It does not automatically spend those uses on every trivial enemy. Fiendish Boon is a separate standard-action activation, ideally before initiative, not a passive always-on spell."
-            },
-            {
-              "name": "Spoils of War - healing switch stance",
-              "detail": "- close 50 ft;\n- first qualifying hit by each ally each round heals that ally;\n- 0 Essence 11 HP;\n- 1 Essence 13 HP;\n- 2 Essence 15 HP;\n- once per round per ally."
+              "detail": "Treffer +7 Heilung verteilt; +3 jeEssenz.",
+              "tag": "Reserve"
             }
           ]
         },
         {
-          "id": "source-glyphs",
-          "label": "Glyphen",
+          "id": "stances",
+          "label": "Haltungen / Essenz",
           "type": "list",
           "items": [
             {
-              "name": "Grundwerte",
-              "detail": "Campaign virtual rank 4. This conversion advances Vesper's established glyph engine/rank features; it does not independently grant the prestige class's separate maneuver/stance progression beyond her campaign Martial Training track.\n\nOperational values:\n\n- initial Animus on first own turn: 8;\n- +1 at start of each later own turn;\n- +1 at round end if Vesper initiated at least one maneuver that round;\n- glyph cost 1 Animus;\n- range 50 ft;\n- duration 8 rounds unless the glyph ends earlier;\n- glyph save DC 22 where relevant;\n- cast as swift, or once/round as free after Vesper hits with a martial strike;\n- same glyph does not stack or refresh itself."
+              "name": "Armaments of the Empire",
+              "detail": "Bis6 Waffen; genau eine Eigenschaft bis+2 jeWaffe;50 ft."
             },
             {
-              "name": "Mass Martial Glyphs - new rank-4 feature",
-              "detail": "- Full-round action.\n- Cast one known martial glyph on up to 7 allies within 30 ft (IM +7).\n- Normal glyph cost/application rules apply through this rank feature as established."
+              "name": "Standard",
+              "detail": "Styke Collision+5 Schaden; Valeria Conductive."
             },
             {
-              "name": "Known glyphs — 14",
-              "detail": "Retained basic glyphs:\n\n1. Elemental Shield: energy resistance 11 to Vesper's active element/energy.\n2. Ghost Eating Blade: target weapons gain ghost touch.\n3. Ghost Armor: target armor/shield gain ghost touch.\n4. Deflective Armor: +3 natural armor, normal nonstacking rules.\n5. Shadowmeld: 20% concealment.\n6. Elemental Weapon: attacks deal +1d6 chosen active elemental damage.\n7. Evasive Armor: next successful Reflex save against a partial-on-success effect instead gives no effect, then glyph ends.\n8. Blinding Blade: next qualifying hit forces Reflex DC 22 or blind 1 round; glyph ends after the attempt.\n\nRetained rank-3 advanced glyphs:\n\n9. Spirit Stride: recipient may teleport 25 ft as a free action to an unoccupied space it can see; line of sight required, line of effect not required; glyph ends after one teleport.\n10. Illusionary State: mirror image at effective CL 11, 1d4+3 images; duration up to 8 rounds and ends earlier when images are destroyed.\n11. Wind Speed: haste benefits for 8 rounds: one additional attack at highest BAB during a full attack, +1 attack, +1 dodge AC, +1 Reflex, +30-ft enhancement movement capped normally.\n\nNew rank-4 advanced glyphs:\n\n12. Death Shield: resistance 11 to negative energy (equal to current IL11) and +4 on saves against energy drain and negative-energy effects.\n13. Hardened Armor: DR 5/adamantine.\n14. Spiritual Anchor: target is affected as dimensional anchor for the glyph duration. If applied through the once/round post-strike free cast, Vesper must have hit that target with the strike; if cast separately, she must hit the target with a ranged touch attack. It blocks dimensional travel, not ordinary incorporeal movement through walls/floors."
+              "name": "Spoils of War",
+              "detail": "Erster Treffer je Verbündetem/Runde heilt11/13/15 HP bei 0/1/2 Essenz."
+            },
+            {
+              "name": "Essenz",
+              "detail": "Pool4, Kapazität2; üblich2 Witness +2 Disrupt."
             }
           ]
         },
         {
-          "id": "source-skills",
-          "label": "Skills",
+          "id": "glyphs",
+          "label": "Glyphen ·14",
           "type": "list",
           "items": [
             {
-              "name": "Regeln",
-              "detail": "Seven level-8 ranks are staged as: Disable Device +1, Diplomacy +2, Knowledge (All) +1, Perception +1, Spellcraft +1, Stealth +1.\n\n| Skill | Ranks | Total |\n|---|---:|---:|\n| Bluff | 4 | +11 |\n| Disable Device | 8 | +17 / +19 with MW tools |\n| Diplomacy | 8 | +18 |\n| Heal | 1 | +8 |\n| Knowledge (All) | 8 | +17 |\n| Perception | 8 | +12 |\n| Sense Motive | 2 | +9 |\n| Spellcraft | 8 | +13 |\n| Stealth | 8 | +17 |\n| Survival | 1 | +5 |\n\nEnhanced Diplomacy makes Diplomacy situationally +20.\n\nVirtual Animus Adept rank 4 Mystical Prowess adds +4 specifically when identifying maneuvers, powers, spells, or glyphs. Under Knowledge (All)'s martial consolidation this yields Knowledge (All) +21 on qualifying martial-identification checks and Spellcraft +17 on qualifying identification checks. It is not a blanket +4."
+              "name": "Elemental Shield",
+              "detail": "Resistenz11 gegen aktiven Energietyp."
+            },
+            {
+              "name": "Ghost Eating Blade",
+              "detail": "Waffe erhält Ghost Touch."
+            },
+            {
+              "name": "Ghost Armor",
+              "detail": "Rüstung/Schild erhält Ghost Touch."
+            },
+            {
+              "name": "Deflective Armor",
+              "detail": "+3 natürliche Rüstung; normale Bonusregeln."
+            },
+            {
+              "name": "Shadowmeld",
+              "detail": "20% Concealment."
+            },
+            {
+              "name": "Elemental Weapon",
+              "detail": "+1d6 Schaden des aktiven Energietyps."
+            },
+            {
+              "name": "Evasive Armor",
+              "detail": "Nächster erfolgreicher Reflexwurf: kein statt halber Wirkung; endet dann."
+            },
+            {
+              "name": "Blinding Blade",
+              "detail": "Nächster Treffer: Reflex 22 oder1 Runde blind; eine Anwendung."
+            },
+            {
+              "name": "Spirit Stride",
+              "detail": "Einmal25 ft Teleport als freie Aktion; Ziel muss sichtbar sein."
+            },
+            {
+              "name": "Illusionary State",
+              "detail": "1d4+3 Spiegelbilder; höchstens 8 Runden."
+            },
+            {
+              "name": "Wind Speed",
+              "detail": "Haste: Extraangriff bei Full Attack; +1 Angriff/AC/Reflex; +30 ft Bewegung."
+            },
+            {
+              "name": "Death Shield",
+              "detail": "Negative-Energie-Resistenz11; +4 gegen Energiedrain/negative Energie."
+            },
+            {
+              "name": "Hardened Armor",
+              "detail": "DR5/Adamantine."
+            },
+            {
+              "name": "Spiritual Anchor",
+              "detail": "Dimensional Anchor; gegnerische Anwendung braucht Treffer."
             }
-          ]
+          ],
+          "subtitle": "50 ft ·8 Runden ·1 Animus; SG 22 wenn anwendbar."
         },
         {
-          "id": "source-feats",
-          "label": "Feats",
+          "id": "animus",
+          "label": "Glyphen anwenden",
           "type": "list",
           "items": [
             {
-              "name": "Regeln",
-              "detail": "Retained normal feats include Extra Revelation, Improved Initiative, and Radiant Dawn Style.\n\nStykes Lehre remains at Martial Training III on character level 8; Martial Training IV is a planned level-9 progression, not granted early.\n\nRadiant Dawn Style:\n\n- +1 Essence remains a passive pool increase by campaign ruling;\n- style entry still costs a swift action;\n- once per round while the style is active, initiating a maneuver heals Vesper or one ally within close range for 8 + Essence invested in that maneuver;\n- common 2-Essence maneuver result: 10 HP."
+              "name": "Start",
+              "detail": "8 Animus; später+1 zu Zugbeginn, +1 am Rundenende nach Manöver."
+            },
+            {
+              "name": "Einzeln",
+              "detail": "Swift oder einmal/Runde frei nach getroffenem Strike."
+            },
+            {
+              "name": "Mass Martial Glyphs",
+              "detail": "Full-round: eine Glyphe auf bis 7 Verbündete innerhalb30 ft."
             }
           ]
         },
         {
-          "id": "source-features",
-          "label": "Begleiter",
+          "id": "verse",
+          "label": "Verse",
           "type": "list",
           "items": [
             {
-              "name": "Regeln",
-              "detail": "- Protector familiar remains active and a separate person in fiction.\n- HP 21 (half Vesper staged maximum).\n- Intelligence 9.\n- familiar natural-armor adjustment +4.\n- no new major familiar special-ability breakpoint at level 8.\n- familiar initiative bonus to Vesper remains +4 while its established conditions apply.\n- use current Protector / Bodyguard / Combat Reflexes campaign rules."
+              "name": "Werte",
+              "detail": "21 HP · INT9 · natürliche Rüstung+4."
+            },
+            {
+              "name": "Unterstützung",
+              "detail": "Bedingter Initiativebonus+4; Protector/Bodyguard nach laufender Situation."
             }
           ]
         },
         {
-          "id": "source-gear",
+          "id": "skills",
+          "label": "Fertigkeiten",
+          "type": "list",
+          "items": [
+            {
+              "name": "Bluff",
+              "tag": "+11"
+            },
+            {
+              "name": "Disable Device",
+              "tag": "+17 / +19 with MW tools"
+            },
+            {
+              "name": "Diplomacy",
+              "tag": "+18"
+            },
+            {
+              "name": "Heal",
+              "tag": "+8"
+            },
+            {
+              "name": "Knowledge (All)",
+              "tag": "+17"
+            },
+            {
+              "name": "Perception",
+              "tag": "+12"
+            },
+            {
+              "name": "Sense Motive",
+              "tag": "+9"
+            },
+            {
+              "name": "Spellcraft",
+              "tag": "+13"
+            },
+            {
+              "name": "Stealth",
+              "tag": "+17"
+            },
+            {
+              "name": "Survival",
+              "tag": "+5"
+            }
+          ]
+        },
+        {
+          "id": "feats",
+          "label": "Feats / Revelations",
+          "type": "list",
+          "items": [
+            {
+              "name": "Radiant Dawn Style",
+              "detail": "+1 Essenz passiv; aktive Style-Heilung einmal/Runde 8+investierte Essenz."
+            },
+            {
+              "name": "Sidestep Secret",
+              "detail": "CHA für AC/Reflex; Rüstung begrenzt AC-Beitrag auf+6."
+            },
+            {
+              "name": "Mental Acuity",
+              "detail": "INT14; nächste Steigerung aufOracle10."
+            },
+            {
+              "name": "Martial Training III / Extra Revelation / Improved Initiative"
+            }
+          ]
+        },
+        {
+          "id": "gear",
           "label": "Ausrüstung",
           "type": "list",
           "items": [
             {
-              "name": "Regeln",
-              "detail": "Static activation assumptions:\n\n- +1 mithral chain shirt.\n- +1 mithral heavy shield.\n- Cloak of Resistance +3 (returned/worn7Apr).\n- Amulet of Natural Armor +1.\n- Ring of Mind Shielding.\n- Lens of Detection.\n- NEW Headband of Alluring Charisma +4 (delivered/worn3Apr; old +2 actually transferred to Styke).\n- Sleeves of Many Garments.\n- Iron Circlet.\n- Masterwork Thieves' Tools.\n- Lesser Metamagic Rod of Extend.\n- Verse.\n\nCorset of Delicate Moves — ATTUNED/AVAILABLE (player-confirmed): Vesper's distinct item finished28Mar, delivered31Mar and worn routinely through the following months, satisfying its one-time 24-hour pre-use wear requirement. Once per day, while she wears it, a MOVE ACTION grants one additional SWIFT ACTION in that turn; it cannot be used to cast a spell or spell-like ability. Previous temporary removals for bathing/intimacy are not a perpetual fresh24h requirement: the item's description does not say re-attune after each removal. Deduct the once/day use only when actually activated; track if the daily use is already spent in accepted play. Move-action activation leaves no full-round action in that same turn. This does NOT automatically cancel Witness to Glory's genuine immediate-to-next-swift interaction or make a full-round strike free. Lesser Persistent Metamagic Rod remains an uncommissioned OOC idea. At actual level-up reconcile new accepted daily uses/slots after last verified14/15June edge, without inventing a refresh."
+              "name": "Mithralhemd+1 / Mithralschild+1 / Amulett+1"
+            },
+            {
+              "name": "CHA-Stirnreif+4 / Cloak+3"
+            },
+            {
+              "name": "Corset of Delicate Moves",
+              "detail": "1/Tag Move → zusätzliche Swift; kein Zauber/SLA damit."
+            },
+            {
+              "name": "Extend Rod",
+              "detail": "Lesser ·3 Nutzungen/Tag; tatsächlichen Rest beachten."
+            },
+            {
+              "name": "Weitere Gegenstände",
+              "detail": "Ring of Mind Shielding, Lens of Detection, Sleeves, Diebeswerkzeug."
             }
           ]
         }
@@ -611,9 +843,8 @@
       "sections": [
         {
           "id": "saves",
-          "label": "Saves",
+          "label": "Rettungswürfe",
           "type": "list",
-          "subtitle": "Level 8 · Ausrüstung enthalten",
           "items": [
             {
               "name": "Fortitude",
@@ -631,215 +862,238 @@
         },
         {
           "id": "combat-shortcuts",
-          "label": "Kampf-Kurzwerte",
+          "label": "Kampfwerte",
           "type": "list",
           "items": [
             {
-              "name": "ac",
-              "tag": "22"
-            },
-            {
-              "name": "touch",
-              "tag": "11"
-            },
-            {
-              "name": "flatFooted",
-              "tag": "21"
-            },
-            {
-              "name": "initiative",
-              "tag": "+8 (Prism orbiting)"
-            },
-            {
-              "name": "speed",
-              "tag": "30 ft in Rüstung"
-            },
-            {
-              "name": "bab",
+              "name": "BAB",
               "tag": "+8/+3"
             },
             {
-              "name": "cmb",
-              "tag": "+12"
+              "name": "CMB / CMD",
+              "tag": "+12 / 23"
             },
             {
-              "name": "cmd",
-              "tag": "23"
-            },
-            {
-              "name": "fort",
-              "tag": "+16"
-            },
-            {
-              "name": "ref",
-              "tag": "+13"
-            },
-            {
-              "name": "will",
-              "tag": "+16"
-            },
-            {
-              "name": "Angriff",
-              "detail": "+10/+5 · 2d6+16"
+              "name": "Bewegung",
+              "tag": "30 ft in Rüstung"
             }
           ]
         },
         {
-          "id": "source-combat",
-          "label": "Kampf",
+          "id": "prepared-spells",
+          "label": "Zaubervorbereitung · Standard",
+          "type": "spell-groups",
+          "groups": [
+            {
+              "label": "Grad 1 ·3 Plätze",
+              "items": [
+                "Litany of Sloth",
+                "Doom",
+                "Bane"
+              ]
+            },
+            {
+              "label": "Grad 2 ·3 Plätze",
+              "items": [
+                "Blade Tutor’s Spirit ×2",
+                "Darkvision"
+              ]
+            }
+          ],
+          "subtitle": "CL5 · Konzentration+12 · SG 18/19; keine automatisch aktiven Buffs."
+        },
+        {
+          "id": "daily-resources",
+          "label": "Tageskapazitäten",
           "type": "list",
           "items": [
             {
-              "name": "Grundwerte",
-              "detail": "Class: Antipaladin 8  \nArchetypes: Tyrant + Lord of Darkness  \nVMC: Cavalier, Order of Vengeance  \nRace: Human  \nAlignment: Lawful Evil  \nDeity: Asmodeus  \nControl: Autonomous GM-controlled melee DMPC in structured combat and fiction, using only legitimate IC knowledge."
+              "name": "Smite Good",
+              "tag": "3/Tag"
             },
             {
-              "name": "Ability scores",
-              "detail": "| Ability | Score | Mod |\n|---|---:|---:|\n| STR | 16 base / 18 worn | +4 |\n| DEX | 12 | +1 |\n| CON | 10 | +0 |\n| INT | 10 | +0 |\n| WIS | 10 | +0 |\n| CHA | 21 base / 25 worn | +7 |\n\nLevel-8 ASI goes to CHA: base20 →21. Her actually worn Headband of Alluring Charisma +4 (delivered30Apr) produces effective CHA 25 / modifier +7 at level8. The level7 worn CHA24 already has modifier+7; the ASI does not raise the modifier again at this level.\n\nStatic arithmetic uses the ACTUAL +1 Dastard Shadow Full Plate, +1 Cruel greatsword, Belt of Giant Strength +2, CHA headband +4, Cloak of Resistance +3 and Amulet of Natural Armor +1 as accepted through3May and retained at14/15June. Boots of Striding and Springing are owned and apply the speed bonus only when worn. Corset of Delicate Moves was delivered31Mar and has been regularly worn for months by explicit player correction; its one-time initial24h prerequisite is FULFILLED, not reset by removing it for baths/intimacy. Its once/day extra swift is usable with the proper move-action activation when worn and that day's use remains. Cracked Dusty Rose Prism usually orbits while on duty/travel, but may be stowed in private. The Rose von Farholde festival flower crown is a retained award, not an unstated magic ability bonus."
+              "name": "Touch of Corruption",
+              "tag": "11/Tag"
             },
             {
-              "name": "Combat values",
-              "detail": "| Value | Level-8 static |\n|---|---:|\n| HP | 52 / 52 maximum before encounter/resource changes |\n| BAB | +8/+3 |\n| Initiative | +8 orbiting (duty/default); +7 stowed |\n| Speed | 30 ft armored with Boots worn; 20 ft without |\n| AC | 22 |\n| Touch | 11 |\n| Flat-footed | 21 |\n| CMB | +12 |\n| CMD | 23 |\n| Fortitude | +16 |\n| Reflex | +13 |\n| Will | +16 |\n\nHP: level-7 maximum 46 + fixed d10 increment 6 = 52. Favored-class bonus goes to an extra skill rank, not +1 HP.\n\nInitiative uses CHA +7 via Noble Scion: Scion of War. Saves include Unholy Resilience CHA+7 and Cloak+3. Armor Boots provide their normal +10ft enhancement movement improvement while worn, reducing armored speed from base20ft to30ft, and +5 Acrobatics competence only for jumping.\n\nValeria owns a cracked Dusty Rose Prism granting +1 competence initiative only while actually orbiting. Accepted standing readiness now means the prism is normally orbiting during travel/duty/known danger, for initiative+8, and stowed when undressed/private, for initiative+7. Preserve specific actual scene location and accepted later changes; do not force a bonus when stowed."
+              "name": "Challenge",
+              "tag": "1/Tag"
             },
             {
-              "name": "Grundwerte",
-              "detail": "Actually wielded permanent weapon: +1 Cruel greatsword, slashing, 19–20/x2 before any temporary Keen. A successful hit against a creature already shaken also inflicts sickened for1round. This weapon was returned/equipped31Mar and is not still at Tacitus.\n\n- Normal full attack: +13/+8, 2d6+7.\n- Power Attack ON at BAB 8: +10/+5, 2d6+16 (PA -3 attack / +9 two-handed damage).\n- Power Attack + qualifying Smite Good: +17/+12, 2d6+24 on every hit.\n- Smite Good special first successful hit against the qualifying Good outsider / Good dragon / Good cleric / Good paladin: 2d6+32 instead of 2d6+24 for that first successful hit only.\n- Power Attack + Challenge: +10/+5, 2d6+22; qualifying Order attack adjustment raises these to +12/+7.\n- PA + Smite Good + Challenge when both have actually been activated and the Order's attack condition applies: +19/+14, 2d6+30, special qualifying first Smite hit 2d6+38.\n- All of these require the attack to hit. No silent Swift activations or resource expenditure.\n\nAt CL 5, a genuinely prepared and cast Blade Tutor's Spirit reduces the total qualifying voluntary melee attack penalty by 2. Power Attack's -3 becomes -1 during the spell, so plain PA profile changes to +12/+7, 2d6+16. It does not change weapon damage and does not eliminate unrelated penalties."
+              "name": "Fiendish Boon",
+              "tag": "1/Tag"
             },
             {
-              "name": "Fiendish Boon and Vesper's Armaments (not automatic)",
-              "detail": "Fiendish Boon, weapon form: once/day, standard action to activate, lasts 8 minutes, supplies +2-equivalent weapon enhancement/property budget at Antipaladin 8. Valeria chooses legal properties from what she could actually know. Prefer Keen (+1) and a second legal +1 property such as Flaming (+1) when useful; on her actually held +1 Cruel greatsword there is already the prerequisite +1 enhancement. Keen changes the greatsword's threat range to 17-20/x2, never doubles it again from another nonstacking expanded-critical source. Flaming adds +1d6 fire on successful hits (not multiplied on crits), when chosen.\n\nVesper's level-8 Armaments default: one special weapon ability per empowered weapon at IL 10, Conductive (+1) on Valeria's greatsword, Collision (+2) on Styke's greatsword. Armaments cannot stack separate Conductive and Keen as two properties from the same stance; Keen comes from Valeria's separate Fiendish Boon.\n\nAlready equipped Cruel property / conditional temporary buffs:\n- Cruel (+1 equivalent) is actually permanent on her equipped +1 greatsword; on a successful hit against an *already shaken* creature, inflict sickened 1 round.\n- Conductive from Vesper is a separate temporary property from Armaments and is not a swift action.\n- Greater Magic Weapon cast by Vesper at CL 8 gives +2 enhancement, replacing rather than stacking with the weapon's existing +1 enhancement.\n- Shadow is actually enchanted on her worn Dastard full plate (+5 competence Stealth). Corset is actually owned and 24h wear qualification fulfilled; once/day extra swift is READY when worn/not already used, though it still costs a real move action; Boots speed applies only while actually worn."
+              "name": "Corset",
+              "tag": "1/Tag"
+            }
+          ],
+          "subtitle": "Kapazitäten, nicht behauptete verbleibende Einsätze."
+        },
+        {
+          "id": "aura",
+          "label": "Auren und Einschüchtern",
+          "type": "list",
+          "items": [
+            {
+              "name": "Aura of Despair",
+              "detail": "Feinde innerhalb10 ft: −2 auf alle Saves."
             },
             {
-              "name": "Normal full-attack boss opener (no Corset)",
-              "detail": "- If Vesper's Spirit Stride glyph is actually present on Valeria, use its free-action teleport to reach a visible unoccupied adjacent square within its legal range.\n- Swift: Smite Good against a known/legitimately inferred Good major target.\n- Full-round: full attack (+17/+12 with PA and Smite using current unbuffed +1 Cruel weapon).\n- Successful PA attack → Cornugon Smash free-action demoralize at +26 vs suitable living foe within10ft (including Aura of Obedience), potentially worsened shaken -3 and the separate command option.\n- A later hit with the already equipped Cruel weapon can sicken the already-shaken target; Conductive can channel 4d6 + Staggered cruelty without extra action if resources/property are actually available.\n- No Hurtful on this turn because Smite already used its only normal swift action.\n- Smite +8 damage applies on every qualifying hit."
+              "name": "Demoralize",
+              "detail": "+22; gegen lebende Ziele innerhalb10 ft mit Obedience+26."
             },
             {
-              "name": "Once/day Corset boss opener — NOW ELIGIBLE after long-term wear",
-              "detail": "- Player-confirmed established: Valeria has worn her delivered31Mar Corset routinely for months, so its initial 24-hour wear prerequisite is fulfilled. Ordinary undressing or bathing does not erase a completed initial prerequisite. The once/day move-to-extra-swift is available while currently wearing the Corset, provided its daily use has not yet been spent; never require another24h after every change of clothes.\n- Free-action Spirit Stride teleport if legitimately in place.\n- Move action Corset activation creates one additional swift action this turn.\n- Swift: Smite Good.\n- Standard: Power Attack attack; hit → Cornugon Smash demoralize.\n- Other swift: Hurtful single attack at the current full attack bonus, no iterative -5.\n- Second hit may sicken via Cruel and apply Conductive Touch/Cruelty if the properties are actually active.\n- Because the move action was used on the Corset, this turn cannot also full attack.\n- The extra swift may not be used to cast spells or spell-like abilities as prohibited by the Corset."
+              "name": "Air Grievances",
+              "detail": "Shaken wird−3 statt−2."
             },
             {
-              "name": "Later round: active Smite already running",
-              "detail": "- Full-round: two normal iterative attacks.\n- Cornugon Smash successful demoralize → Swift Hurtful extra full-bonus attack.\n- Smite applies damage to every successful qualifying hit, thus up to three smite-enhanced hits with the ordinary two iterative swings plus Hurtful.\n- If Vesper's Wind Speed actually grants Haste, it adds one further highest-BAB attack during the full attack, for up to four total attacks; haste's speed bonus does not stack with Boots of Striding and Springing.\n\nNo tactical script overwrites Valeria's autonomy, knowledge, physical positioning, current resources or encounter facts."
+              "name": "Aura of Obedience",
+              "detail": "DC um 10 übertroffen: zusätzlich Command, Will 21; einmal/Ziel/Tag."
             }
           ]
         },
         {
-          "id": "source-antipaladin",
-          "label": "Antipaladin",
+          "id": "combat-engine",
+          "label": "Treffer und Kontrolle",
           "type": "list",
           "items": [
             {
-              "name": "Detect Good",
-              "detail": "At will, with normal detection limits and time/concentration. Not automatic identity/alignment certainty."
+              "name": "Power Attack",
+              "detail": "+10/+5 ·2d6+16."
             },
             {
-              "name": "Smite Good — 3/day",
-              "detail": "- Swift action, target visible; bad target selection spends a use.\n- Against a genuinely Good target: CHA +7 attack, +8 damage per successful hit, bypass DR, +7 deflection AC vs attacks by that target.\n- Against a Good outsider, Good dragon or Good cleric/paladin: first successful hit deals +16 Smite damage instead of +8; further successful hits deal +8.\n- Smite is not an excuse to know hidden alignments without a carrier.\n- Smite and Challenge each require a separate swift activation, absent a real extra-swift item effect."
+              "name": "Smite Good",
+              "detail": "Swift; gegen Good +7 Angriff, +8 Schaden jeTreffer; +7 Deflection gegen dieses Ziel."
             },
             {
-              "name": "Unholy Resilience",
-              "detail": "CHA +7 added to all three saving throws, already in the displayed static saves."
+              "name": "Cornugon Smash",
+              "detail": "PA verursacht Schaden → freie Demoralize-Probe."
             },
             {
-              "name": "Aura of Despair — NEW at level 8",
-              "detail": "- Always on while conscious.\n- All enemies within 10 ft take -2 penalty on ALL saving throws.\n- The aura does not independently lower AC, attacks, CMB, CMD or skill checks.\n- Its penalty helps Valeria's own cruelty/aura command and legitimate saves against allied abilities.\n- Apply exact enemy distance and any immunity or suppression, not a universal battlefield penalty."
+              "name": "Hurtful",
+              "detail": "Nach erfolgreicher Demoralize: Swift-Zusatzangriff."
             },
             {
-              "name": "Aura of Obedience — Lord of Darkness",
-              "detail": "- 10-ft radius, +4 morale Intimidate when demoralizing living creatures.\n- On successful demoralize of a living creature within 10 ft, if Valeria beats that target's demoralize DC by 10 or more, she may issue one command as the spell.\n- Command Will DC 21 = 10 + half Antipaladin level 4 + CHA 7.\n- Each creature may be subject to this aura's command only once/day.\n- Apply Aura of Despair -2 to the target's Will save only while the target is within the actual 10-ft despair radius."
+              "name": "Cruel",
+              "detail": "Treffer gegen schon shakenes Ziel → sickened 1 Runde."
             },
             {
-              "name": "Touch of Corruption — 11/day",
-              "detail": "- Standard melee touch, does not provoke; also delivered through Conductive on eligible melee weapon hits when the weapon is actually imbued.\n- Touch deals 4d6 damage to living targets or heals undead by that amount under its normal rules.\n- Cruelty Fort save DC 21 = 10 + half Antipaladin level 4 + CHA 7.\n- Current choices:\n  - Fatigued: ordinary lasting condition, removed normally.\n  - Staggered: lasts 4 rounds on a failed Fort save.\n- No new cruelty selection at level 8; next at level 9."
+              "name": "Conductive",
+              "detail": "Ein Treffer/Runde:2 Touch-Nutzungen für 4d6 +Cruelty; keine Extraaktion."
             },
             {
-              "name": "Conductive + Touch of Corruption — staged default interaction",
-              "detail": "- On an eligible successful greatsword attack while Conductive is actually present, Valeria may spend 2 of her 11 daily Touch uses to channel one full 4d6 Touch with Fatigued or Staggered cruelty.\n- No extra standard, swift, or free action cost beyond the hit and resource expenditure.\n- One activation per wielder per round; maximum five such activations plus one remaining direct Touch from an untouched full 11-use pool, if nothing else spends uses.\n- Prefer Staggered on meaningful living enemy targets when denying a full-round action matters; prefer Fatigued in longer pressure situations.\n- Never burn Touch resources automatically on irrelevant minions merely because Conductive exists.\n- Cruel (actually equipped) applies sickened -2 to a target that was already shaken when struck. Sequence for a typical multi-hit round: PA first damaging hit → Cornugon Smash shakes; next eligible successful hit → Cruel sickens; Conductive Touch + Staggered cruelty is then selected on a hit. Which hit receives Conductive is an actual tactical/resource choice by the GM-controlled Valeria.\n- For a living foe inside her Aura of Despair who is successfully demoralized via Air Grievances and later sickened by Cruel, the save penalty can become -3 shaken -2 sickened -2 despair = -7. This does not reduce target AC."
+              "name": "Staggered Cruelty",
+              "detail": "Fort 21; bei Fehlschlag4 Runden staggered."
             },
             {
-              "name": "Channel Negative Energy",
-              "detail": "- Standard action, 30-ft burst, costs 2 Touch uses.\n- At effective cleric level 8: 4d6 negative energy damage to living; Will DC 21 for half under the current campaign engine.\n- With no Selective Channeling, allies/friendly living creatures in the burst can be affected.\n- Alternative undead healing per the ability's normal text."
-            },
-            {
-              "name": "Plague Bringer",
-              "detail": "The accepted immunity to disease penalties/damage and ability to carry/transmit disease remains; do not turn it into immunity to unrelated poison or conditions."
-            },
-            {
-              "name": "Challenge — 1/day",
-              "detail": "- Swift; target within sight; effective Cavalier level character level -2 = 6.\n- +6 melee damage against challenged target.\n- -2 AC against creatures other than the challenged target.\n- Dastard armor's +2 profane AC vs challenge target remains.\n- Against a target whose kind Valeria actually encountered in the previous 24h under the Order condition: +2 morale attack vs challenged target.\n- Challenge and Smite are separate swift activations absent a specific real exception."
-            },
-            {
-              "name": "Air Grievances — level 8 breakpoint",
-              "detail": "- On demoralize, +half effective order level using accepted campaign VMC order convention; at character level 8 this is +4.\n- At effective order level 8, successful demoralize intensifies the shaken penalties normally suffered by the target by 1: usual shaken -2 becomes -3 on applicable attacks, saves, skill checks and ability checks.\n- Does not increase shaken penalties on AC or automatically defeat fear immunity."
+              "name": "Debuff-Kombination",
+              "detail": "Shaken−3 +sickened−2 +Despair−2 = bis−7 Saves; keine AC-Senkung."
             }
           ]
         },
         {
-          "id": "source-spells",
-          "label": "Zauber",
+          "id": "fiendish-boon",
+          "label": "Fiendish Boon",
           "type": "list",
           "items": [
             {
-              "name": "Grundwerte",
-              "detail": "Antipaladin caster level: 5 (class level -3)  \nSpellcasting CHA: 25 worn / +7  \nConcentration: +12  \nSave DCs: level 1 18, level 2 19\n\nPrepared divine spells; LIVE_STATE owns which spells were actually prepared and which slots remain."
+              "name": "Aktivierung",
+              "detail": "Standard ·8 min ·Budget+2."
             },
             {
-              "name": "Daily slot maximum at level 8 after a valid daily refresh",
-              "detail": "- Spell level 1: 3 (class base 1 + CHA25/+7 bonus 2).\n- Spell level 2: 3 (class base 1 + CHA25/+7 bonus 2).\n\nLevel-7 historical capacity is already corrected to3/2. Level8 maximum3/3 is capacity, not proof of a daily refresh."
+              "name": "Standardoption",
+              "detail": "Keen; zweites+1 bei Bedarf Flaming."
             },
             {
-              "name": "Standard",
-              "detail": ""
-            },
+              "name": "Keen",
+              "detail": "Großschwert17–20/×2; nicht doppelt stapeln."
+            }
+          ]
+        },
+        {
+          "id": "spells-short",
+          "label": "Zauber · Kurzinfos",
+          "type": "list",
+          "items": [
             {
-              "name": "Standing level-8 preparation after the next lawful daily preparation",
-              "detail": "- Level1: Litany of Sloth, Doom, Bane, one prepared copy each.\n- Level2: Blade Tutor's Spirit x2 as combat-day second-level choices.\n- Darkvision x1 as exploration/day-to-day second-level choice.\n- Alternative preparations may be selected on an actual rest/meditation day. Never automatically grant these as active buffs."
-            },
-            {
-              "name": "Blade Tutor's Spirit",
-              "detail": "- Antipaladin level-2 spell; standard action, personal, 5 minutes at CL 5.\n- Reduces total qualifying voluntary melee attack penalties by 2 at CL 5, minimum penalty 0 (Power Attack -3 → -1).\n- Does not reduce independent involuntary attack penalties and does not change damage.\n- With spell actually active, Power Attack plain profile +12/+7, 2d6+16."
+              "name": "Blade Tutor’s Spirit",
+              "detail": "5 min; PA−3 wird−1, solange aktiv."
             },
             {
               "name": "Darkvision",
-              "detail": "- Standard, touch, 5 hours at CL 5.\n- Grants 60-ft darkvision, does not grant see-invisibility or overcome total darkness and ordinary line-of-sight limitations beyond darkvision's normal capabilities."
+              "detail": "5 h ·60 ft Dunkelsicht."
             },
             {
               "name": "Litany of Sloth",
-              "detail": "- Level-1 tactical candidate when actually prepared; swift action, usual Will/specific target restrictions per spell, duration as printed.\n- Competes directly with Smite, Challenge, and Hurtful for the swift action."
-            },
-            {
-              "name": "Other spell preparation",
-              "detail": "- Valeria can prepare other eligible Antipaladin spells from her class list when she genuinely has a prepared slot and the normal prerequisites.\n- Eagle's Splendor is not the routine second-level default because its enhancement bonus doesn't stack with her worn +4 Charisma headband."
+              "detail": "Swift ·1 Runde; Will 18; Ziel kann keine AoOs machen/nicht defensiv zaubern."
             }
           ]
         },
         {
-          "id": "source-feats",
-          "label": "Feats",
+          "id": "other-antipaladin",
+          "label": "Weitere Fähigkeiten",
           "type": "list",
           "items": [
             {
-              "name": "Grundwerte",
-              "detail": "- Power Attack: campaign-granted, not a normal feat slot.\n- Noble Scion: Scion of War: initiative keyed to CHA.\n- Hurtful: swift-action extra melee attack after Valeria successfully demoralizes a melee-reachable foe; the shaken effect from that demoralization ends immediately if the Hurtful attack fails to damage it under the established campaign cache.\n- Cornugon Smash: free-action demoralize attempt when Power Attack deals damage.\n- Variant Multiclass Cavalier consumes normal feats at levels 3 and 7.\n- No new feat on level 8.\n- Next planned normal feat at level 9 remains Signature Skill (Intimidate) unless later revised."
+              "name": "Challenge",
+              "detail": "Swift: +6 Nahkampfschaden; −2 AC gegen andere Gegner."
             },
             {
-              "name": "Skills — four new ranks",
-              "detail": "Level 8 uses the favored-class bonus for one extra skill rank, and keeps all four core skills maxed:\n\n| Skill | Ranks | Total |\n|---|---:|---:|\n| Intimidate | 8 | +18 ordinary |\n| Diplomacy | 8 | +18 |\n| Sense Motive | 8 | +11 |\n| Stealth | 8 | +12 wearing actual Shadow full plate / +12 without ACP unarmored |\n\nStealth +12 with actual Shadow full plate is net of -5 Armor Check Penalty and +5 competence Shadow property. It matters for surprise/positioning. If the armor is removed, the Shadow competence bonus disappears while the armor's -5 ACP also disappears, yielding +12 unarmored. No skill rank was traded for +1 HP.\n\nDemoralize with VMC Air Grievances at level 8: ordinary Intimidate+18 +4 = +22; against living creatures within Valeria's Aura of Obedience 10-ft radius, the +4 morale rider makes this +26. Check actual targeting, immunity, proximity and stacking on the action.\n\nShadow Armor is completed and worn since15Apr. Its +5 competence Stealth bonus counters, but does not erase, the armor's -5 Armor Check Penalty. Both are already included in the level8 Stealth+12 profile."
+              "name": "Touch of Corruption",
+              "detail": "Standard-Touch:4d6; Fatigued oder Staggered als Cruelty."
+            },
+            {
+              "name": "Channel Negative Energy",
+              "detail": "Standard ·30 ft Burst ·4d6 ·Will 21 halbiert; kostet2 Touch, trifft auch lebende Verbündete."
+            },
+            {
+              "name": "Unholy Resilience",
+              "detail": "CHA+7 auf Saves bereits eingerechnet."
             }
           ]
         },
         {
-          "id": "source-gear",
+          "id": "skills",
+          "label": "Fertigkeiten",
+          "type": "list",
+          "items": [
+            {
+              "name": "Intimidate",
+              "tag": "+18 ordinary"
+            },
+            {
+              "name": "Diplomacy",
+              "tag": "+18"
+            },
+            {
+              "name": "Sense Motive",
+              "tag": "+11"
+            },
+            {
+              "name": "Stealth",
+              "tag": "+12 wearing actual Shadow full plate / +12 without ACP unarmored"
+            }
+          ]
+        },
+        {
+          "id": "gear",
           "label": "Ausrüstung",
           "type": "list",
           "items": [
             {
-              "name": "Regeln",
-              "detail": "Actually delivered and/or equipped before the verified 14/15June anchor:\n- +1 Cruel greatsword returned/equipped31Mar.\n- Valeria's Corset delivered31Mar and routinely worn across the following months: one-time24h prerequisite has been met by explicit player correction; eligible for its once/day move-action additional swift if currently worn and not spent today.\n- Cloak of Resistance +3 returned/worn9Apr.\n- +1 Dastard Full Plate enchanted with Shadow finished/returned/worn15Apr, giving +5 competence Stealth while worn.\n- Boots of Striding and Springing completed19Apr, delivered20Apr; booted speed30ft while worn, otherwise20ft armored.\n- Headband of Alluring Charisma +4 completed/worn30Apr, old +2 consumed in upgrade.\n- Cracked Dusty Rose Prism normally orbiting during duty/travel, stowed when undressed/private.\n\nConditional buffs vs ready gear: Greater Magic Weapon/Conductive/Keen/Flaming each require actual Vesper stance/cast or Valeria Boon activation. The Corset is ready to activate once/day after the normal move action when worn, not passively granting a second swift every turn. Future additional AC enhancements remain a separate, unfunded wishlist."
+              "name": "Großschwert+1 Cruel / Dastard Shadow Full Plate+1"
             },
             {
-              "name": "Regeln",
-              "detail": "- +1 Dastard Shadow Full Plate (AC includes worn Amulet of Natural Armor+1; Shadow gives +5 competence Stealth).\n- +1 Cruel greatsword, returned and equipped31Mar.\n- Belt of Giant Strength +2.\n- Headband of Alluring Charisma +4, actually worn30Apr.\n- Cloak of Resistance +3, actually worn9Apr.\n- Amulet of Natural Armor +1.\n- Boots of Striding and Springing, owned and worn when relevant.\n- Corset of Delicate Moves, actually delivered31Mar, initial24h wear completed, normally worn on duty; once/day move-action extra swift (not usable for spells/SLAs) is available when worn and the daily use remains.\n- Cracked Dusty Rose Prism normally orbiting when on duty, +1 initiative; may be stowed when private.\n- Rose-von-Farholde flower crown, nonmechanical prize retained.\n\nAt actual level-up, reconcile accepted gear acquisitions, meaningful state/resource deltas, and already-established spell preparations before activating this staged sheet."
+              "name": "STR-Gürtel+2 / CHA-Stirnreif+4 / Cloak+3 / Amulett+1"
+            },
+            {
+              "name": "Boots / Ioun Stone",
+              "detail": "Boots getragen:30 ft; Prism normal kreisend:+1 Initiative."
+            },
+            {
+              "name": "Corset",
+              "detail": "Move → Extra-Swift1/Tag; ermöglicht Smite +Standardangriff +Hurtful, keine Full Attack."
             }
           ]
         }

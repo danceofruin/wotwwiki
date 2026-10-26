@@ -16,8 +16,8 @@ for(const c of hud.characters){
 }
 const styke=hud.characters[0],ready=styke.sections.find(s=>s.id==='readied').items;
 assert.equal(ready.length,6);assert.equal(new Set(ready.map(x=>x.name)).size,6);
-assert(ready.some(x=>x.name==='Bilious Strike'&&x.detail.includes('DC 20')));
-assert(ready.some(x=>x.name==='Circle of Razor Feathers'&&x.detail.includes('DC 20')&&x.detail.includes('4 rounds')));
+assert(ready.some(x=>x.name==='Bilious Strike'&&x.tag.includes('SG 20')));
+assert(ready.some(x=>x.name==='Circle of Razor Feathers'&&x.tag.includes('SG 20')&&x.detail.includes('4 Runden')));
 assert(!ready.some(x=>/Riposte|Lifeburst|Chains/.test(x.name)));
 assert.equal(hud.resourceDefaults.styke.pp.max,24);assert.equal(hud.resourceDefaults.styke.pp.current,18);
 assert.deepEqual(Object.values(hud.resourceDefaults.vesper.slots).map(s=>s.max),[8,8,7,4]);
@@ -29,3 +29,11 @@ assert.equal(sheets.characters[0].stats.speed,'40 ft');
 assert.equal(sheets.characters[2].stats.initiative,'+8 (Prism orbiting)');
 assert(!JSON.stringify(hud).includes('Boots-Tragen nicht bestätigt'));
 console.log('OK: current level8 HUD/schema, known-vs-readied, weapon DCs, resource preservation and actual equipment.');
+
+
+// The HUD is a compact reference, with sources merged by spell level.
+for(const c of hud.characters)for(const s of c.sections)for(const i of s.items||[])assert((i.detail||'').length<=180);
+const vesper=hud.characters[1], fixed=vesper.sections.find(s=>s.id==='spells'),flex=vesper.sections.find(s=>s.id==='arcane-enlightenment');
+assert.equal(fixed.groups.length,4);assert.equal(flex.groups.flatMap(g=>g.items).length,7);
+assert(JSON.stringify(flex).includes('Heroism'));assert(!JSON.stringify(flex).includes('Euphoric Cloud'));
+assert(sheets.characters[0].attributes.find(a=>a.name==='CON').value.startsWith('11'));

@@ -6,7 +6,7 @@ const read = path => fs.readFileSync(new URL(path,root),'utf8');
 const code = read('userscripts/wotw-hud.user.js');
 const txt = read('userscripts/wotw-hud.txt');
 assert.equal(code,txt,'HUD .user.js and TXT must always match');
-assert(code.includes('@version      2.1.0'),'Userscript version not bumped');
+assert(code.includes('@version      2.2.0'),'Userscript version not bumped');
 new vm.Script(code,{filename:'wotw-hud.user.js'});
 assert(code.includes('id="export"') && code.includes('↓ Export'),'Missing visible Export button');
 assert(code.includes('$("#export").addEventListener("click", exportCurrentChat)'),'Export button has no handler');
@@ -125,3 +125,4 @@ const noTool=exportMarkdown({title:'Hidden',id:'abc123-test',pages:1,messages:[
  {...record(4),recipient:'python'},record(6)]},'2026-10-26T19:00:00.000Z');
 assert.equal(noTool.count,2,'Private/tool messages leaked into readable player export');
 console.log('OK: 2.1 Markdown export: 200-message pagination, metadata endpoint, legacy branch, completeness failures, media/attachments, role filtering.');
+
