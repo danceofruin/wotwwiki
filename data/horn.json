@@ -677,11 +677,11 @@
       "name": "Wirtschaftlich verfügbare gemeinsame Mittel",
       "owner": "Knoten",
       "group": "Geld",
-      "amount": "30.985 gp",
-      "state": "Wirtschaftlicher Brutto-Saldo 7.710 GM, darin 4.600 GM vorgemerkt; frei 3.110 GM. Historische Silber- und Wertstücke bereits eingerechnet.",
+      "amount": "7.710 GM",
+      "state": "Wirtschaftlicher Brutto-Saldo 7.710 GM, 4.600 GM davon vorgemerkt; frei 3.110 GM.",
       "value": 7710,
       "basis": "Verfügbarkeitsrechnung",
-      "note": "Davon 4.600 vorgemerkt und 26.385 frei. Keine zusätzliche 30.000-gp-Goldzeile addieren."
+      "note": "Silber und kleinere Wertstücke sind bereits im wirtschaftlichen Gesamtsaldo enthalten, keine zweite Gutschrift."
     },
     {
       "id": "silver",

@@ -1,5 +1,15 @@
 # Der Nessische Knoten
 
+## HUD 2 · direkt in ChatGPT
+
+- Installation: das bisherige Violentmonkey-HUD deaktivieren, damit nicht zwei Overlays gleichzeitig laufen.
+- Neuen [WotW HUD 2 Userscript-Installer](https://danceofruin.github.io/wotwwiki/userscripts/wotw-hud.user.js) öffnen und in Violentmonkey bestätigen. Alternativ [Quelltext als .txt](https://danceofruin.github.io/wotwwiki/userscripts/wotw-hud.txt) speichern und als neues Skript einfügen.
+- ChatGPT neu laden. Das HUD erscheint mit fünf Seiten: **Styke**, **Vesper**, **Valeria**, **Notes** und **Treasury**. Oben stehen aktuelle Kampfwerte und Saves; darunter die aus `data/hud.json` geladenen Regelreferenzen. Es gibt keinen manuellen HP/PP/Slot-Tracker und keinen DOM-Observer.
+- **Quellen:** `data/sheets.json` (aktive Kampfprofile), `data/live.json` (HP im geprüften Snapshot, Quests, Termine), `data/hud.json` (Manöver, Spells, Glyphen und Kurzwerte) und `data/horn.json` (Kasse, Inventar, Handwerksprojekte). Das Skript prüft die zusammengehörigen Snapshot-Revisionen.
+- Beim Öffnen und bei Rückkehr in den Tab nach fünf Minuten fragt es statische GitHub-Pages-Dateien ab; die Schaltfläche **↻** aktualisiert sofort. Es pollt keine ChatGPT-Antworten und schreibt keine Kampagnenwerte zurück. Persönliche Kurznotizen bleiben ausschließlich im lokalen Userscript-Speicher.
+- **Wichtig:** Der private Kampagnen-Kanon wird nicht automatisch aus dem Browser exportiert. Die hier angezeigten Daten aktualisieren sich, sobald die **spielerbereinigten Wiki-Snapshots** aus dem privaten Repository nachgeführt und veröffentlicht sind. Das Datum des überprüften Spielstandes steht sichtbar im HUD; ungeprüfte laufende Kampfressourcen werden nicht geraten.
+
+
 Spielerbezogenes Kampagnenwiki für *Way of the Wicked*.
 
 - Live: https://danceofruin.github.io/wotwwiki/
