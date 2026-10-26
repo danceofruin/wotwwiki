@@ -1,8 +1,8 @@
 // ==UserScript==
 // @name         Way of the Wicked HUD 2
 // @namespace    https://danceofruin.github.io/wotwwiki/
-// @version      2.0.0
-// @description  Read-only character combat sheets, player-known quests, activity and treasury from curated GitHub Pages snapshots.
+// @version      2.1.0
+// @description  Five-tab read-only WotW dashboard plus complete active-branch Markdown chat export for Session Capture.
 // @author       WotW Main
 // @match        https://chatgpt.com/*
 // @match        https://chat.openai.com/*
@@ -55,6 +55,249 @@
   function link(url, label) {
     return '<a target="_blank" rel="noopener noreferrer" href="' + esc(url) + '">' + esc(label) + '</a>';
   }
+
+  // BEGIN WOTW CHAT EXPORT CORE
+  // Pure helpers. Also exercised by scripts/test-hud-export.mjs.
+  // Unlike the rendered ChatGPT DOM, these server history structures include
+  // old turns that the scrolling UI may have virtualized away.
+  function exportConversationId(pathname) {
+    const match = /(?:^|\/)c\/([a-z0-9_-]{6,128})(?:\/|$)/i.exec(String(pathname || ""));
+    if (!match) throw new Error("Bitte einen gespeicherten Chat mit /c/... in der Adresse öffnen.");
+    return match[1];
+  }
+  function exportUnwrap(payload) {
+    const options = [payload, payload && payload.conversation, payload && payload.data && payload.data.conversation, payload && payload.data];
+    for (const value of options) {
+      if (value && typeof value === "object" && !Array.isArray(value) &&
+          (value.mapping || Array.isArray(value.messages) || Array.isArray(value.items))) return value;
+    }
+    return payload;
+  }
+  function exportCheckConversation(payload, expected) {
+    const id = payload && (payload.conversation_id || payload.conversationId || (payload.mapping && payload.id));
+    if (id && String(id) !== String(expected)) throw new Error("Der Server lieferte eine andere Unterhaltung. Kein Export.");
+  }
+  function exportLegacyMapping(payload) {
+    const mapping = payload && payload.mapping;
+    if (!mapping || Array.isArray(mapping) || typeof mapping !== "object") {
+      throw new Error("Unbekannter älterer Nachrichtenbaum. Kein Export.");
+    }
+    const end = payload.current_node;
+    if (!end || !Object.prototype.hasOwnProperty.call(mapping, end)) {
+      throw new Error("Der aktive Gesprächszweig ist nicht identifizierbar. Kein Export.");
+    }
+    const visited = new Set();
+    const list = [];
+    let current = end;
+    while (current !== null && current !== undefined) {
+      if (visited.has(current)) throw new Error("Zyklus im Gesprächsbaum. Kein Export.");
+      visited.add(current);
+      const node = mapping[current];
+      if (!node || typeof node !== "object") throw new Error("Unvollständige Elternkette. Kein Export.");
+      if (node.message) list.push(node.message);
+      if (node.parent === null) {
+        current = null;
+      } else if (typeof node.parent === "string" && Object.prototype.hasOwnProperty.call(mapping, node.parent)) {
+        current = node.parent;
+      } else {
+        throw new Error("Eine ältere Nachricht fehlt im Gesprächsbaum. Kein Export.");
+      }
+      if (visited.size > 300000) throw new Error("Unplausibel langer Gesprächsbaum. Kein Export.");
+    }
+    return list.reverse();
+  }
+  function exportFlatRecords(payload) {
+    const rows = payload && (payload.messages || payload.items);
+    if (!Array.isArray(rows)) throw new Error("Unbekanntes ChatGPT-Nachrichtenformat. Kein Export.");
+    return rows.map(function (row) {
+      const record = row && row.message ? row.message : row;
+      if (!record || typeof record !== "object" || !(record.id || (row && row.id))) {
+        throw new Error("Nachricht ohne ID im Serververlauf. Kein Export.");
+      }
+      if (!record.id && row.id) return Object.assign({}, record, { id: row.id });
+      return record;
+    });
+  }
+  function exportPageInfo(payload) {
+    const info = payload.page_info || payload.pagination || {};
+    const prev = info.has_previous_page !== undefined ? info.has_previous_page : payload.has_previous_page;
+    const next = info.has_next_page !== undefined ? info.has_next_page : payload.has_next_page;
+    if (typeof prev !== "boolean" || typeof next !== "boolean") {
+      throw new Error("ChatGPT bestätigt die Vollständigkeit der Seiten nicht. Kein Teil-Export.");
+    }
+    if (payload.partial === true || payload.truncated === true || payload.is_partial === true ||
+        payload.is_truncated === true || payload.is_complete === false || payload.has_more_messages === true) {
+      throw new Error("ChatGPT hat nur einen Teil der Unterhaltung geliefert. Kein Export.");
+    }
+    return {
+      previous: prev, next: next,
+      before: info.start_cursor || payload.start_cursor || info.previous_cursor,
+      after: info.end_cursor || payload.end_cursor || info.next_cursor
+    };
+  }
+  async function exportLoadHistory(id, getJson, progress) {
+    const baseUrl = "/backend-api/conversations/" + encodeURIComponent(id);
+    const options = "?include_has_versions=true&num_turns=100";
+    let base;
+    let endpoint = baseUrl;
+    let legacy = false;
+    try {
+      base = await getJson(baseUrl + options);
+    } catch (error) {
+      if (error && (error.httpStatus === 404 || error.httpStatus === 405)) {
+        endpoint = "/backend-api/conversation/" + encodeURIComponent(id);
+        base = await getJson(endpoint);
+        legacy = true;
+      } else {
+        throw error;
+      }
+    }
+    const unwrapped = exportUnwrap(base);
+    exportCheckConversation(unwrapped, id);
+    if (unwrapped && unwrapped.mapping) {
+      const messages = exportLegacyMapping(unwrapped);
+      return { title:unwrapped.title || base.title || "ChatGPT-Chat", id:id, messages:messages, pages:1, kind:"branch" };
+    }
+    let first = unwrapped;
+    let pagingUrl = endpoint;
+    if (!Array.isArray(first && first.messages) && !Array.isArray(first && first.items) && !legacy) {
+      pagingUrl = baseUrl + "/messages";
+      first = exportUnwrap(await getJson(pagingUrl + options));
+      exportCheckConversation(first, id);
+    }
+    if (!Array.isArray(first && first.messages) && !Array.isArray(first && first.items)) {
+      throw new Error("ChatGPT liefert weder einen Nachrichtenbaum noch Seiten mit Nachrichten. Kein Export.");
+    }
+    const older = [];
+    const newer = [];
+    const seenCursors = new Set();
+    let pageCount = 1;
+    for (const direction of ["before", "after"]) {
+      let page = first;
+      let info = exportPageInfo(page);
+      while (direction === "before" ? info.previous : info.next) {
+        const cursor = String(direction === "before" ? info.before || "" : info.after || "");
+        if (!cursor || seenCursors.has(direction + ":" + cursor)) {
+          throw new Error("Fehlender oder wiederholter Seitenzeiger. Kein Teil-Export.");
+        }
+        if (pageCount >= 2000) throw new Error("Mehr als 2000 Verlaufsseiten. Export vorsichtshalber abgebrochen.");
+        seenCursors.add(direction + ":" + cursor);
+        if (typeof progress === "function") progress("Export: Seite " + (pageCount + 1) + " wird geladen …");
+        const url = pagingUrl + options + "&" + direction + "=" + encodeURIComponent(cursor);
+        page = exportUnwrap(await getJson(url));
+        exportCheckConversation(page, id);
+        const records = exportFlatRecords(page);
+        if (!records.length) throw new Error("Eine angekündigte Verlaufsseite ist leer. Kein Teil-Export.");
+        (direction === "before" ? older : newer).push(records);
+        pageCount++;
+        info = exportPageInfo(page);
+      }
+    }
+    const pages = older.reverse().concat([exportFlatRecords(first)],newer);
+    const all = [];
+    const byId = new Map();
+    for (const records of pages) {
+      for (const message of records) {
+        const key = String(message.id);
+        if (byId.has(key)) {
+          // Overlapping cursors are allowed, conflicting copies are not.
+          const old = byId.get(key);
+          if (JSON.stringify(old.content) !== JSON.stringify(message.content) ||
+              JSON.stringify(old.author) !== JSON.stringify(message.author)) {
+            throw new Error("Widersprüchliche Nachrichten auf zwei Verlaufsseiten. Kein Export.");
+          }
+          continue;
+        }
+        byId.set(key, message);
+        all.push(message);
+      }
+    }
+    if (!all.length) throw new Error("Der Chat-Verlauf ist leer. Kein Export.");
+    return {title:unwrapped.title || base.title || first.title || "ChatGPT-Chat",id:id,messages:all,pages:pageCount,kind:"pages"};
+  }
+  function exportVisibleMessage(message) {
+    if (!message || typeof message !== "object") return false;
+    const role = message.author && message.author.role || message.role;
+    if (role !== "user" && role !== "assistant") return false;
+    if (message.metadata && message.metadata.is_visually_hidden_from_conversation === true) return false;
+    if (role === "assistant") {
+      const recipient = message.recipient;
+      if (recipient && recipient !== "all") return false;
+      const channel = message.channel || (message.metadata && message.metadata.channel);
+      if (channel && !["final","commentary"].includes(channel)) return false;
+      const type = message.content && message.content.content_type;
+      if (["reasoning_recap","thoughts","code","execution_output","tether_browsing_display"].includes(type)) return false;
+    }
+    return true;
+  }
+  function exportPartText(part) {
+    if (typeof part === "string") return part;
+    if (part === null || part === undefined) return "";
+    if (Array.isArray(part)) return part.map(exportPartText).filter(Boolean).join("\n");
+    if (typeof part !== "object") return String(part);
+    if (typeof part.text === "string") return part.text;
+    if (typeof part.markdown === "string") return part.markdown;
+    if (typeof part.content === "string") return part.content;
+    if (part.content && typeof part.content.text === "string") return part.content.text;
+    const type = String(part.content_type || part.type || "strukturierter Inhalt");
+    if (/image|asset_pointer|picture|photo/i.test(type)) return "[Bild: " + type + "]";
+    if (/audio|voice/i.test(type)) return "[Audio: " + type + "]";
+    if (/file|document|attachment/i.test(type)) return "[Datei: " + (part.name || type) + "]";
+    if (/video/i.test(type)) return "[Video: " + type + "]";
+    if (typeof part.name === "string") return "[Nichttext-Inhalt: " + part.name + "]";
+    return "[Nichttext-Inhalt: " + type + "]";
+  }
+  function exportMessageText(message) {
+    const content = message.content || {};
+    const parts = Array.isArray(content.parts) ? content.parts : null;
+    let body = parts ? parts.map(exportPartText).filter(Boolean).join("\n\n") :
+      typeof content.text === "string" ? content.text :
+      typeof content.content === "string" ? content.content : "";
+    if (!body && content.content_type && content.content_type !== "text") {
+      body = "[Nichttext-Nachricht: " + content.content_type + "]";
+    }
+    const attachments = message.metadata && Array.isArray(message.metadata.attachments) ? message.metadata.attachments : [];
+    const names = new Set();
+    for (const attachment of attachments) {
+      const name = attachment && (attachment.name || attachment.filename);
+      if (!name || names.has(name)) continue;
+      names.add(name);
+      if (!body.includes(String(name))) {
+        body += (body ? "\n\n" : "") + '[Anhang: ' + String(name) +
+          (attachment.mime_type ? " · " + String(attachment.mime_type) : "") + ']';
+      }
+    }
+    return body.trim() || "[Leere sichtbare Nachricht]";
+  }
+  function exportSafeFilename(title) {
+    let clean = String(title || "ChatGPT-Chat").replace(/[\\/:*?"<>|\x00-\x1f]/g,"_").replace(/\s+/g," ").trim();
+    clean = clean.replace(/[. ]+$/g,"").slice(0,120);
+    if (!clean) clean = "ChatGPT-Chat";
+    if (/^(?:con|prn|aux|nul|com[1-9]|lpt[1-9])$/i.test(clean)) clean = "Chat-" + clean;
+    return clean + ".md";
+  }
+  function exportMarkdown(history, exportedAt) {
+    const shown = history.messages.filter(exportVisibleMessage);
+    if (!shown.length) throw new Error("Keine sichtbaren User-/Assistant-Nachrichten. Kein Export.");
+    const title = String(history.title || "ChatGPT-Chat").replace(/[\r\n]+/g," ").trim();
+    const lines = [
+      "# " + title,
+      "",
+      "Exportiert: " + (exportedAt || new Date().toISOString()),
+      "Conversation: " + history.id,
+      "Quelle: https://chatgpt.com/c/" + encodeURIComponent(history.id),
+      "Nachrichten: " + shown.length,
+      "Verlauf: aktiver Gesprächszweig, vollständig über " + history.pages + " Server-Seite(n) geprüft",
+      ""
+    ];
+    for (const message of shown) {
+      const role = (message.author && message.author.role || message.role) === "user" ? "User" : "Assistant";
+      lines.push("## " + role, "", exportMessageText(message), "");
+    }
+    return { markdown:lines.join("\n").trimEnd() + "\n", count:shown.length, filename:exportSafeFilename(title), pages:history.pages };
+  }
+  // END WOTW CHAT EXPORT CORE
+
   function statusName(status) {
     return { active:"Aktiv", waiting:"Wartet", scheduled:"Terminiert", completed:"Erledigt",
       blocked:"Blockiert", planned:"Geplant", ready:"Bereit", handoff:"Übergabe" }[status] || String(status || "offen");
@@ -92,6 +335,7 @@
     ".tools{display:flex;gap:5px;flex:none}",
     ".tool{background:#22242a;border:1px solid #393d47;border-radius:6px;color:#ddd;min-width:31px;height:29px;padding:0 7px;cursor:pointer;font-size:14px}",
     ".tool:hover,.tool:focus-visible{background:#363942;outline:1px solid #7086ae}",
+    ".tool-export{font-size:12px;font-weight:700;white-space:nowrap;padding:0 8px}.tool:disabled{opacity:.6;cursor:wait}",
     ".tabs{flex:none;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));background:#111217;border-top:1px solid #2a2b30;border-bottom:1px solid #37393f}",
     ".tab{color:#b5b9c6;padding:13px 4px 11px;border:0;border-bottom:2px solid transparent;background:transparent;cursor:pointer;font-size:10px;font-weight:800;letter-spacing:.04em;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}",
     ".tab:hover{background:#25272d}.tab[aria-selected=true]{background:#25262d;color:#fff;border-bottom-color:#c4b48a}",
@@ -141,7 +385,7 @@
     ".resize{position:absolute;bottom:0;left:0;width:18px;height:18px;cursor:nesw-resize;touch-action:none;z-index:2}",
     ".resize:after{content:'◢';position:absolute;bottom:0;left:3px;transform:rotate(90deg);color:#6b6f7b;font-size:15px}",
     "a{color:#dfc993}a:focus-visible,button:focus-visible,summary:focus-visible,textarea:focus-visible{outline:2px solid #c4b48a;outline-offset:1px}",
-    "@media(max-width:600px){#panel{width:calc(100vw - 8px);right:4px;top:4px;max-height:calc(100dvh - 8px)}.stats-grid{gap:6px}.stat-box{padding:8px 7px}.brand{font-size:14px}.tab{font-size:9px;padding:12px 2px}.money-card strong{font-size:15px}}"
+    "@media(max-width:600px){#panel{width:calc(100vw - 8px);right:4px;top:4px;max-height:calc(100dvh - 8px)}.stats-grid{gap:6px}.stat-box{padding:8px 7px}.brand{font-size:12px;letter-spacing:.05em}.tab{font-size:9px;padding:12px 2px}.money-card strong{font-size:15px}.tool-export{font-size:11px;padding:0 4px}}"
   ].join("");
 
   shadow.innerHTML = '<style>' + css + '</style>' +
@@ -149,7 +393,7 @@
     '<section id="panel" role="complementary" aria-label="Way of the Wicked HUD">' +
       '<header><div class="heading"><div class="drag" id="drag" title="HUD verschieben">' +
         '<div class="brand">WAY OF THE WICKED</div><div class="status" id="status">Spieler-Snapshots laden …</div></div>' +
-        '<div class="tools"><button class="tool" id="refresh" title="GitHub-Pages-Daten aktualisieren" aria-label="Daten aktualisieren">↻</button>' +
+        '<div class="tools"><button class="tool" id="refresh" title="GitHub-Pages-Daten aktualisieren" aria-label="Daten aktualisieren">↻ Daten</button><button class="tool tool-export" id="export" title="Diesen vollständigen Chat als Markdown exportieren" aria-label="Gesamten Chat als Markdown exportieren">↓ Export</button>' +
         '<button class="tool" id="collapse" title="HUD einklappen" aria-label="HUD einklappen">−</button>' +
         '<button class="tool" id="close" title="HUD verbergen" aria-label="HUD verbergen">×</button></div></div></header>' +
       '<nav class="tabs" id="tabs" role="tablist" aria-label="WotW Bereiche"></nav>' +
@@ -276,6 +520,91 @@
       }
       render(true);
     }).finally(function () { state.loading = false; });
+  }
+
+
+  // Chat export deliberately runs only after a button click. Its only network
+  // traffic is to the currently open ChatGPT origin; it never sends the chat
+  // text, session token or attachments to the public GitHub Pages host.
+  let exportBusy = false;
+  async function exportChatGet(path, accessToken) {
+    const target = new URL(path, location.origin);
+    if (target.origin !== location.origin || !/^\/(?:api\/auth\/session|backend-api\/)/.test(target.pathname)) {
+      throw new Error("Unzulässige Exportadresse. Kein Abruf.");
+    }
+    const headers = { "Accept":"application/json" };
+    if (accessToken) headers.Authorization = "Bearer " + accessToken;
+    const controller = new AbortController();
+    const timeout = setTimeout(function () { controller.abort(); }, 45000);
+    try {
+      const response = await fetch(target.href, {
+        method:"GET", credentials:"include", cache:"no-store", headers:headers,
+        signal:controller.signal
+      });
+      if (!response.ok) {
+        const error = new Error("ChatGPT-Verlauf: HTTP " + response.status +
+          (response.status === 401 || response.status === 403 ? " (Anmeldung/Zugriff prüfen)" : ""));
+        error.httpStatus = response.status;
+        throw error;
+      }
+      const json = await response.json();
+      if (!json || typeof json !== "object") throw new Error("Ungültige Antwort vom ChatGPT-Server.");
+      return json;
+    } catch (error) {
+      if (error.name === "AbortError") throw new Error("Zeitüberschreitung beim Laden einer Verlaufsseite. Kein Teil-Export.");
+      throw error;
+    } finally {
+      clearTimeout(timeout);
+    }
+  }
+  function exportSaveFile(file) {
+    const blob = new Blob([file.markdown], {type:"text/markdown;charset=utf-8"});
+    const url = URL.createObjectURL(blob);
+    const anchor = document.createElement("a");
+    anchor.href = url;
+    anchor.download = file.filename;
+    anchor.style.display = "none";
+    document.body.appendChild(anchor);
+    try { anchor.click(); }
+    finally {
+      anchor.remove();
+      setTimeout(function () { URL.revokeObjectURL(url); }, 30000);
+    }
+  }
+  async function exportCurrentChat() {
+    if (exportBusy) return;
+    exportBusy = true;
+    const button = $("#export");
+    button.disabled = true;
+    button.textContent = "Lade …";
+    setStatus("Export: Serververlauf prüfen …", "neutral");
+    try {
+      const id = exportConversationId(location.pathname);
+      // Access token stays in a local variable, is never logged or persisted.
+      let accessToken = "";
+      try {
+        const session = await exportChatGet("/api/auth/session", "");
+        accessToken = session.accessToken || session.access_token || "";
+      } catch (_) {
+        // Some account types authenticate history directly via same-origin cookies.
+        // The subsequent history GET is authoritative; never bypass an error.
+      }
+      const history = await exportLoadHistory(id,function (path) {
+        return exportChatGet(path,accessToken);
+      },function (message) { setStatus(message,"neutral"); });
+      const file = exportMarkdown(history,new Date().toISOString());
+      exportSaveFile(file);
+      setStatus("Export: " + file.count + " Nachrichten · " + file.pages + " Seite(n) · " + file.filename,"ok");
+    } catch (error) {
+      const message = error && error.message ? error.message : "Unbekannter Exportfehler.";
+      setStatus("Export abgebrochen: " + message,"bad");
+      window.alert("WotW HUD: Kein Chat-Export erstellt.\n\n" + message +
+        "\n\nEs wird niemals stillschweigend nur ein Teil der Unterhaltung gespeichert.");
+    } finally {
+      exportBusy = false;
+      button.disabled = false;
+      button.textContent = "↓ Export";
+    }
   }
 
   function setStatus(message, kind) {
@@ -496,6 +825,7 @@
     render(false);
   });
   $("#refresh").addEventListener("click", function () { refresh(true); });
+  $("#export").addEventListener("click", exportCurrentChat);
   $("#close").addEventListener("click", function () { setVisible(false); });
   $("#collapse").addEventListener("click", function () { setVisible(false); });
   $("#launcher").addEventListener("click", function () { setVisible(true); if (!state.data) refresh(true); });
