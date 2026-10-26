@@ -311,7 +311,7 @@
   const state = {
     tab:TAB_IDS.includes(savedTab) ? savedTab : "styke",
     data:null, error:"", warning:"", checkedAt:0, loading:false,
-    openSections:new Set(), questFilter:"open", query:"",
+    openSections:new Set(["styke|readied", "vesper|spells", "vesper|arcane-enlightenment", "valeria|prepared-spells"]), questFilter:"open", query:"",
     collapsed:Boolean(getStored("collapsed", false)), scratch:String(getStored("scratch", ""))
   };
 
