@@ -100,7 +100,7 @@
       } else if (typeof node.parent === "string" && Object.prototype.hasOwnProperty.call(mapping, node.parent)) {
         current = node.parent;
       } else {
-        throw new Error("Eine ältere Nachricht fehlt im Gesprächsbaum. Kein Export.");
+        throw new Error("Unvollständige Elternkette im Gesprächsbaum. Kein Export.");
       }
       if (visited.size > 300000) throw new Error("Unplausibel langer Gesprächsbaum. Kein Export.");
     }
