@@ -4,10 +4,10 @@
     "authority": "GENERATED VIEW. DO NOT USE AS CAMPAIGN AUTHORITY.",
     "generated": true,
     "playerSafe": true,
-    "generatedAt": "2026-10-22T15:48:14.950Z",
-    "reviewedAt": "2026-10-22",
+    "generatedAt": "2026-10-26T20:32:39+00:00",
+    "reviewedAt": "2026-10-26",
     "sourceRevision": "a0d0992038201c9cdc12233d3c51b7b74de9dd6ffadad41df6655e158e5a07c4",
-    "sheetRevision": "bc34a420b1e8cd6c30397009d87cd203ac0eb4d14a311a46dba547c720cdc045"
+    "sheetRevision": "688d68d8cdd55892a71fce416671ad286d585bbd2373413b0ec71d6107a005ed"
   },
   "scene": {
     "date": "4712-04-26",
@@ -421,53 +421,58 @@
     {
       "id": "styke",
       "name": "Styke",
-      "class": "Zealot 4 / Psion 1 / Awakened Blade 2",
+      "class": "Zealot 4 / Psion 1 / Awakened Blade 3",
       "hp": {
-        "current": 48,
-        "max": 48
+        "current": 54,
+        "max": 54
       },
       "conditions": [],
-      "state": "Mit Vesper und Valeria im Farholder Versteck eingetroffen; bislang kein Gegnerkontakt.",
-      "resourceNote": "48/48 HP · 18/18 PP · normaler Psion-Fokus vorhanden; kein neuer Verbrauch durch Thronreise.",
-      "gearNote": "Getragen: DEX-Gürtel +4 (DEX 23), CHA-Stirnreif +2 (CHA 19), Cloak +3, Amulett +1, +1 Großschwert. Boots + Haversack im Besitz; Boots-Tragen nicht bestätigt. Reformationsstein unbenutzt.",
+      "state": "Separates Level-8-Mechanikupdate am unveränderten gespeicherten Rand 14./15. Juni; archivierter Live-Play-Szenentext bleibt separat datiert.",
+      "resourceNote": "HP-Zuwachs nur durch Levelanstieg. Kein neuer Rest und keine angenommene Tagesauffrischung. PP18/24; normaler/deep Fokus erhalten; Reformationsstein einmal verbraucht.",
+      "gearNote": "Level 8 · tatsächlich getragene, kompatible Ausrüstung eingerechnet; begrenzte Ressourcen und temporäre Buffs separat.",
       "pp": {
         "current": 18,
-        "max": 18
+        "max": 24
       },
       "focus": true
     },
     {
       "id": "vesper",
       "name": "Vesper",
-      "class": "Oracle (Spirit Guide) 7",
+      "class": "Oracle (Spirit Guide) 8",
       "hp": {
-        "current": 38,
-        "max": 38
+        "current": 43,
+        "max": 43
       },
       "conditions": [],
-      "state": "Mit dem Kerntrio in Farholde; keine im Reisevorgang ausgelöste Zauberausgabe.",
-      "resourceNote": "38/38 HP · gewöhnliche Tageskapazität 8/8, 8/8, 5/5 · Extend Rod 3/3; keine zusätzliche Ausgabe durch Thronreise.",
-      "gearNote": "CHA +4, Cloak +3, Amulett +1, Mithralhemd/Schild, Ring of Mind Shielding, Verse und Rotes Buch (AWAKENED). Sechs aktuelle Arcane-Enlightenment-Optionen; keine imaginären aktiven Glyphen.",
+      "state": "Separates Level-8-Mechanikupdate am unveränderten gespeicherten Rand 14./15. Juni; archivierter Live-Play-Szenentext bleibt separat datiert.",
+      "resourceNote": "HP-Zuwachs nur durch Levelanstieg. Kein neuer Rest und keine angenommene Tagesauffrischung. Slotmaxima8/8/7/4; genaue Restslots am jüngsten Nacht-Rand nicht dokumentiert.",
+      "gearNote": "Level 8 · tatsächlich getragene, kompatible Ausrüstung eingerechnet; begrenzte Ressourcen und temporäre Buffs separat.",
       "verse": {
         "present": true,
-        "hpCurrent": 19,
-        "hpMax": 19
+        "hpCurrent": null,
+        "hpMax": 21
       },
       "slots": [
         {
           "level": 1,
-          "current": 8,
+          "current": null,
           "max": 8
         },
         {
           "level": 2,
-          "current": 8,
+          "current": null,
           "max": 8
         },
         {
           "level": 3,
-          "current": 5,
-          "max": 5
+          "current": null,
+          "max": 7
+        },
+        {
+          "level": 4,
+          "current": null,
+          "max": 4
         }
       ],
       "essence": {
@@ -478,15 +483,15 @@
     {
       "id": "valeria",
       "name": "Valeria",
-      "class": "Antipaladin 7 · Tyrant / Lord of Darkness",
+      "class": "Antipaladin 8 · Tyrant / Lord of Darkness",
       "hp": {
-        "current": 46,
-        "max": 46
+        "current": 52,
+        "max": 52
       },
       "conditions": [],
-      "state": "Mit Styke und Vesper in Farholde; ursprüngliches Großschwert +1 Cruel tatsächlich zurückerhalten.",
-      "resourceNote": "46/46 HP · Smite 3/3 · Touch 9/9 · Challenge 1/1 · Boon 1/1 · vorbereitete Zauber ohne neuen Reiseverbrauch.",
-      "gearNote": "+1 Cruel-Großschwert, +1 Dastard/Shadow-Platte, STR +2, CHA +2, Cloak +3, Amulett +1. Eigene Boots seit 20. April im Besitz, Tragen unbestätigt; Prism verstaut."
+      "state": "Separates Level-8-Mechanikupdate am unveränderten gespeicherten Rand 14./15. Juni; archivierter Live-Play-Szenentext bleibt separat datiert.",
+      "resourceNote": "HP-Zuwachs nur durch Levelanstieg. Kein neuer Rest und keine angenommene Tagesauffrischung. Maxima: Touch11, Smite3, Challenge1, Boon1; verbleibende Einsätze nicht als voll behauptet.",
+      "gearNote": "Level 8 · tatsächlich getragene, kompatible Ausrüstung eingerechnet; begrenzte Ressourcen und temporäre Buffs separat."
     }
   ]
 }

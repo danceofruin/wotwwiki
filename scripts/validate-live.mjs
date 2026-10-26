@@ -42,7 +42,7 @@ export function validate(live, sheets) {
     resource(p.hp); texts(p.conditions); [p.name,p.class,p.state,p.resourceNote,p.gearNote].forEach(str);
     if (p.id === 'styke') { resource(p.pp); assert([true,false,null].includes(p.focus)); }
     if (p.id === 'vesper') {
-      list(p.slots); assert.equal(p.slots.length, 3);
+      list(p.slots); const oracle=sheets.characters.find(c=>c.id==='vesper'); assert.equal(p.slots.length, Math.min(9,Math.max(1,Math.floor(oracle.level/2))), 'Oracle slot-level count');
       for (const [i,s] of p.slots.entries()) { obj(s, 'level current max', 'slot'); assert.equal(s.level, i+1); resource({current:s.current,max:s.max}, true); }
       obj(p.essence, 'total standard', 'essence'); assert(Number.isInteger(p.essence.total) && p.essence.total >= 0); str(p.essence.standard);
       obj(p.verse, 'present hpCurrent hpMax', 'verse'); assert.equal(typeof p.verse.present, 'boolean'); resource({current:p.verse.hpCurrent,max:p.verse.hpMax}, true);
@@ -60,8 +60,8 @@ export function validate(live, sheets) {
   list(sheets.characters); assert.deepEqual(sheets.characters.map(c=>c.id), ids);
   for (const c of sheets.characters) {
     obj(c, 'id name class level ancestry source profile hpMax stats attack attributes tabs', 'sheet');
-    assert.equal(c.level,7); assert.equal(c.hpMax,live.party.find(p=>p.id===c.id).hp.max);
-    assert.equal(c.source, `mechanics/combat/${c.id}-level-7.md`);
+    assert(Number.isInteger(c.level) && c.level >= 1 && c.level <= 20); assert.equal(c.level,sheets.characters[0].level, 'Mixed party levels'); assert.equal(c.hpMax,live.party.find(p=>p.id===c.id).hp.max);
+    assert.equal(c.source, `mechanics/combat/${c.id}-level-${c.level}.md`);
     [c.name,c.class,c.ancestry,c.profile].forEach(str);
     obj(c.stats, 'ac touch flatFooted initiative speed bab cmb cmd fort ref will', 'stats'); Object.values(c.stats).forEach(str);
     obj(c.attack, 'name hit damage note', 'attack'); Object.values(c.attack).forEach(str);
@@ -84,3 +84,4 @@ if (process.argv[1] === fileURLToPath(import.meta.url)) {
   validate(data.live, data.sheets);
   console.log('OK: player-view schema, resource ranges, snapshot revisions and wiki links.');
 }
+
