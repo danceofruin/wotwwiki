@@ -34,9 +34,10 @@ assert(!read('app.js').includes('14/666'),'Old current ritual counter in homepag
 assert(read('app.js').includes('href="#/live"'),'Homepage must offer current Live Play instead of stale archive as current');
 assert.equal(live.scene.date,horn.meta.campaignDate,'Horn date differs from current live');
 assert.equal(live.scene.date,'4712-04-26','April player review date');
-assert.equal(live.party[0].pp.max,18,'Styke post-upgrade PP');
+assert.equal(live.party[0].pp.max,24,'Styke level8 PP capacity');
 assert.equal(live.party[1].slots[1].max,8,'Vesper post-upgrade slots');
 assert.equal(horn.treasury.free,3110,'Current Knot free resources');
 assert.equal(horn.treasury.silver+horn.treasury.valuables,0,'Previously counted values must not be added again');
 assert.equal(sheets.characters[2].attack.name,'+1 Cruel-Großschwert','Valeria equipped weapon');
 console.log('OK: independently dated archive, current April views, source consistency, gear and treasury safeguards.');
+
