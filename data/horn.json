@@ -3,12 +3,12 @@
     "schemaVersion": 1,
     "playerSafe": true,
     "authority": "GENERATED VIEW. DO NOT USE AS CAMPAIGN AUTHORITY.",
-    "reviewedAt": "2026-10-22",
-    "campaignDate": "4712-04-26",
-    "campaignLabel": "26. April 4712 AR · nachmittags · Horn-Stand während Kerntrio in Farholde",
-    "sourceCommit": "0e88fafdf511dfda1d4e391b9be3c80b92b8defa",
-    "sourceRevision": "a0d0992038201c9cdc12233d3c51b7b74de9dd6ffadad41df6655e158e5a07c4",
-    "generatedAt": "2026-10-22T15:48:14.950Z"
+    "reviewedAt": "2026-10-30",
+    "campaignDate": "4712-06-28",
+    "campaignLabel": "28. Juni 4712 AR · Abend / Nacht",
+    "sourceCommit": "dc4d5531baa852f42dfba040b3bf6abf17afd33a",
+    "sourceRevision": "de323f0463be5940bde5b03b6dddc9f308eac227a381180b643abce0a0d1ed70",
+    "generatedAt": "2026-10-30T10:38:35+00:00"
   },
   "levels": [
     {
@@ -47,9 +47,9 @@
       ],
       "level": "sanctum",
       "status": "active",
-      "progress": "Ritualtag 55, Gebete 164/666 nach dem 26-Apr-Morgendienst; Abend #165 noch offen. Drei Augen seit 1Apr installiert, ein lebendes Opfer von drei absolviert. Siegel/Ketten intakt.",
-      "next": "Gebet #165 am 26. April bei Dämmerung, später zweites Opfer am 21. Juni.",
-      "done": 164,
+      "progress": "354/666 Gebete; zwei von drei Opfern vollzogen. Siegel und drei Augen intakt.",
+      "next": "Mitternacht 28./29. Juni: #355.",
+      "done": 354,
       "total": 666
     },
     {
@@ -89,8 +89,8 @@
       ],
       "level": "three",
       "status": "completed",
-      "progress": "Am 26. März gefertigt, 350 gp Material; unbenutzt bei Styke.",
-      "next": "Aktivierung und legaler Austausch gesondert.",
+      "progress": "Am 21. Juni einmalig verbraucht; Nachwirkung am 22. Juni beendet.",
+      "next": "Kein zweiter Stein vorhanden.",
       "done": 1,
       "total": 1
     },
@@ -103,8 +103,8 @@
       ],
       "level": "three",
       "status": "completed",
-      "progress": "Fertig am 27. März und am 31. März an Valeria übergeben. Später mehrfach unterbrochenes Tragen: keine bestätigte 24-Stunden-Aktivierung.",
-      "next": "Nur tatsächliche ununterbrochene Tragezeit zählt, nicht bloß Besitz.",
+      "progress": "Seit 31. März übergeben und lange genug getragen; anfängliche 24-Stunden-Voraussetzung erfüllt.",
+      "next": "Bei tatsächlichem Tragen und verbleibender Tagesnutzung einsetzbar.",
       "done": 1,
       "total": 1
     },
@@ -130,8 +130,8 @@
       ],
       "level": "three",
       "status": "completed",
-      "progress": "Tatsächlich fertig 28. März, an den Besitzer 31. März ausgehändigt; 1.000 GM Material einmal verbucht, 1 volle Valet-unterstützte Werkstatttage.",
-      "next": "Kein Effekt ohne echten 24-Stunden-Trageverlauf.",
+      "progress": "Seit 31. März übergeben und lange genug getragen; anfängliche 24-Stunden-Voraussetzung erfüllt.",
+      "next": "Bei tatsächlichem Tragen und verbleibender Tagesnutzung einsetzbar.",
       "done": 1,
       "total": 1
     },
@@ -209,7 +209,7 @@
       "level": "three",
       "status": "completed",
       "progress": "Tatsächlich fertig 17. April, an den Besitzer 17. April ausgehändigt; 2.750 GM Material einmal verbucht, 2 volle Valet-unterstützte Werkstatttage.",
-      "next": "Besitz bestätigt, tatsächliches Tragen getrennt nachweisen.",
+      "next": "Im üblichen Dienst getragen; Geschwindigkeitsbonus im Kampfprofil berücksichtigt.",
       "done": 2,
       "total": 2
     },
@@ -222,7 +222,7 @@
       "level": "three",
       "status": "completed",
       "progress": "Tatsächlich fertig 19. April, an den Besitzer 20. April ausgehändigt; 2.750 GM Material einmal verbucht, 2 volle Valet-unterstützte Werkstatttage.",
-      "next": "Besitz bestätigt, tatsächliches Tragen getrennt nachweisen.",
+      "next": "Im üblichen Dienst getragen; Geschwindigkeitsbonus im Kampfprofil berücksichtigt.",
       "done": 2,
       "total": 2
     },
@@ -246,24 +246,24 @@
         "Tacitus"
       ],
       "level": "three",
-      "status": "blocked",
-      "progress": "Valerias eigener CHA-Stirnreif +2→+4 wurde noch nicht begonnen oder finanziert. Material 6.000 GM, drei volle Tage; aktuell nur 3.110 GM freie Kasse.",
-      "next": "Vor Beginn fehlen 2.890 GM tatsächlich verfügbare Mittel; keine automatische Nachbestellung.",
-      "done": null,
-      "total": null
+      "status": "completed",
+      "progress": "CHA-Stirnreif +4 seit 30. April übergeben und getragen.",
+      "next": "Keine Finanzierungslücke oder offene Nachbestellung mehr.",
+      "done": 3,
+      "total": 3
     },
     {
       "id": "queue-eagle",
-      "title": "Optional: Eyes of the Eagle für Styke",
+      "title": "Styke · Eyes of the Eagle",
       "owners": [
         "Tacitus"
       ],
       "level": "three",
-      "status": "planned",
-      "progress": "Optionales Eyes-of-the-Eagle-Projekt für Styke: 1.250 GM Material und ein voller Tag. Noch nicht begonnen oder gekauft.",
-      "next": "Nach vorrangiger Finanzierung getrennt entscheiden; keine passive Wahrnehmungssteigerung.",
-      "done": null,
-      "total": null
+      "status": "completed",
+      "progress": "Eyes of the Eagle fertig und Styke am 22. Juni übergeben; getragen.",
+      "next": "Auftrag abgeschlossen.",
+      "done": 1,
+      "total": 1
     },
     {
       "id": "plate",
@@ -273,10 +273,10 @@
         "Yorgun"
       ],
       "level": "one",
-      "status": "active",
-      "progress": "Osric/Yorgun/Styke haben Grumblejacks große Meisterarbeitsplatte bis 26. April auf 1.424 von 3.150 Fortschritt gebracht. Easily Worked Steel; nicht fertig und nicht tragbar.",
-      "next": "Nur weitere tatsächliche Schmiedearbeit erhöht den Fortschritt.",
-      "done": 1424,
+      "status": "completed",
+      "progress": "Große Meisterarbeits-Platte seit 9. Juni fertig, angepasst und getragen.",
+      "next": "Keine weitere Produktion für diesen Auftrag.",
+      "done": 3150,
       "total": 3150
     },
     {
@@ -461,8 +461,8 @@
       ],
       "level": "three",
       "status": "active",
-      "progress": "Tacitus arbeitete am 25. und 26. April je einen echten vollen Forschungstag an der Methodik; insgesamt zwei volle Tage, 0 GM neue Kosten, noch kein spezifischer Durchbruch.",
-      "next": "Weiterführende Methodik/Experimente erfordern echte Arbeitszeit und für teure Versuche Freigabe.",
+      "progress": "Sechs volle Forschungstage; keine Probe oder gesicherte Lösung.",
+      "next": "Nächsten sachlich möglichen Forschungsschritt bestimmen.",
       "done": null,
       "total": null
     },
@@ -539,6 +539,60 @@
       "next": "Hakon ist über die neue Oberstruktur noch nicht von Styke persönlich einzeln informiert; laufenden Dienst korrekt trennen.",
       "done": null,
       "total": null
+    },
+    {
+      "id": "headband-styke",
+      "title": "Styke · CHA-Stirnreif +4",
+      "owners": [
+        "Tacitus",
+        "Knittel"
+      ],
+      "level": "three",
+      "status": "completed",
+      "progress": "23.–25. Juni gefertigt, am 25. Juni zurückgegeben und getragen.",
+      "next": "Abgeschlossen; kein zweiter Materialabzug.",
+      "done": 3,
+      "total": 3
+    },
+    {
+      "id": "belt-valeria",
+      "title": "Valeria · STR-Gürtel +4",
+      "owners": [
+        "Tacitus",
+        "Knittel"
+      ],
+      "level": "three",
+      "status": "completed",
+      "progress": "26.–28. Juni gefertigt; derselbe Gürtel am 28. Juni zurückgegeben und angelegt.",
+      "next": "Abgeschlossen; kein zweiter Materialabzug.",
+      "done": 3,
+      "total": 3
+    },
+    {
+      "id": "legend-lore",
+      "title": "Vesper · Legend Lore",
+      "owners": [
+        "Vesper"
+      ],
+      "level": "three",
+      "status": "active",
+      "progress": "Seit 22. Juni morgens in fortlaufender Ausführung. Ergebnis steht aus.",
+      "next": "2. Juli morgens, sofern ununterbrochen.",
+      "done": null,
+      "total": null
+    },
+    {
+      "id": "atelier",
+      "title": "Mirelles öffentliches Atelier",
+      "owners": [
+        "Mirelle"
+      ],
+      "level": "one",
+      "status": "active",
+      "progress": "In Betrieb; monatlich 90 GM netto nach aktueller Kampagnenregel.",
+      "next": "Nächste Abrechnung 27. Juli; noch nicht gebucht.",
+      "done": null,
+      "total": null
     }
   ],
   "security": [
@@ -596,7 +650,7 @@
       "title": "Sanctumbalkon S-2",
       "status": "open",
       "owner": "Darric / Wachen",
-      "detail": "Verstärkung begonnen, Zugang nicht geschlossen; grüne Ritualerscheinung bleibt."
+      "detail": "Verstärkung begonnen; Zugang nicht hermetisch geschlossen. Das einmalige Ritualereignis vom 21. Juni begründet keinen dauerhaften grünen Lichtstrahl."
     },
     {
       "id": "maw",
@@ -677,9 +731,9 @@
       "name": "Wirtschaftlich verfügbare gemeinsame Mittel",
       "owner": "Knoten",
       "group": "Geld",
-      "amount": "7.710 GM",
-      "state": "Wirtschaftlicher Brutto-Saldo 7.710 GM, 4.600 GM davon vorgemerkt; frei 3.110 GM.",
-      "value": 7710,
+      "amount": "11.028 GM 7 SM 5 KM",
+      "state": "4.600 GM zweckgebunden; 6.428 GM 7 SM 5 KM frei.",
+      "value": 11028.75,
       "basis": "Verfügbarkeitsrechnung",
       "note": "Silber und kleinere Wertstücke sind bereits im wirtschaftlichen Gesamtsaldo enthalten, keine zweite Gutschrift."
     },
@@ -776,8 +830,8 @@
       "name": "Psychic Reformation ML 7",
       "owner": "Styke",
       "group": "Verbrauchsgüter",
-      "amount": "1",
-      "state": "Unbenutzt",
+      "amount": "0",
+      "state": "Einmaliger Stein am 21. Juni verbraucht; keiner mehr vorhanden.",
       "value": 350,
       "basis": "Bezahltes Material",
       "note": "Kein behaupteter Verkaufswert und keine zweite Abbuchung."
@@ -799,7 +853,7 @@
       "owner": "Horn / S-1",
       "group": "Persönliche Ausrüstung",
       "amount": "siehe Stand",
-      "state": "Seit 1. April in Statue S-1 fest installiert, nicht bei Styke",
+      "state": "Seit 1. April im Sanctum installiert; kein tragbares Auge.",
       "value": null,
       "basis": "Nicht taxiert",
       "note": ""
@@ -931,7 +985,7 @@
       "owner": "Horn / S-1",
       "group": "Persönliche Ausrüstung",
       "amount": "siehe Stand",
-      "state": "Seit 1. April in Statue S-1 installiert; nicht als tragbare Augen verfügbar",
+      "state": "Beide seit 1. April im Sanctum installiert; keine tragbaren Augen.",
       "value": null,
       "basis": "Nicht taxiert",
       "note": ""
@@ -1004,22 +1058,22 @@
     },
     {
       "id": "valeria-2",
-      "name": "STR-Gürtel +2",
+      "name": "STR-Gürtel +4",
       "owner": "Valeria",
       "group": "Persönliche Ausrüstung",
       "amount": "siehe Stand",
-      "state": "Getragen; STR 18",
+      "state": "Derselbe Gürtel am 28. Juni zurückgegeben und getragen; STR 20.",
       "value": null,
       "basis": "Nicht taxiert",
       "note": ""
     },
     {
       "id": "valeria-3",
-      "name": "CHA-Stirnreif +2",
+      "name": "CHA-Stirnreif +4",
       "owner": "Valeria",
       "group": "Persönliche Ausrüstung",
       "amount": "siehe Stand",
-      "state": "Getragen; CHA 22",
+      "state": "Seit 30. April getragen; CHA 25 auf Stufe 8.",
       "value": null,
       "basis": "Nicht taxiert",
       "note": ""
@@ -1041,7 +1095,7 @@
       "owner": "Valeria",
       "group": "Persönliche Ausrüstung",
       "amount": "siehe Stand",
-      "state": "Verstaut: Initiative +6. Nur orbitierend +1 Kompetenz ⇒ +7.",
+      "state": "Im Dienst normalerweise kreisend: Initiative +8; verstaut +7.",
       "value": null,
       "basis": "Nicht taxiert",
       "note": ""
@@ -1052,7 +1106,7 @@
       "owner": "Valeria",
       "group": "Aufträge",
       "amount": "1",
-      "state": "Fertig 27. März, übergeben 31. März. 24-Stunden-Wirkung wegen Trageunterbrechungen nicht bestätigt.",
+      "state": "Seit 31. März übergeben; üblicherweise getragen, anfängliche 24h-Voraussetzung erfüllt.",
       "value": 1000,
       "basis": "Bezahltes Material",
       "note": ""
@@ -1070,11 +1124,11 @@
     },
     {
       "id": "plate-stock",
-      "name": "Easily Worked Steel für Large-Meisterarbeits-Platte",
-      "owner": "Osric / Yorgun",
-      "group": "Material",
-      "amount": "1 laufender Auftrag",
-      "state": "Easily Worked Steel, Fortschritt an der großen MW-Platte 1.424/3.150, nicht tragbar.",
+      "name": "Grumblejacks große Meisterarbeits-Platte",
+      "owner": "Grumblejack",
+      "group": "Persönliche Ausrüstung",
+      "amount": "1",
+      "state": "Seit 9. Juni fertig, angepasst und getragen.",
       "value": 787.5,
       "basis": "Historisch bezahltes Material",
       "note": "Keine erneute Rechnung; kein Marktwert der fertigen Rüstung."
@@ -1226,45 +1280,45 @@
       "id": "gift-grumble",
       "name": "Hammer-Haltegürtel mit zweiter Sicherung",
       "owner": "Grumblejack",
-      "group": "Noch geheime Geschenke",
+      "group": "Übergebene persönliche Geschenke",
       "amount": "1",
       "state": "Am 2. April tatsächlich überreicht; beim Empfänger, keine ausstehende Geschenktruhe.",
       "value": null,
       "basis": "Preis nicht festgestellt",
-      "note": "Für Grumblejack, noch nicht gegeben; gewöhnlich, nichtmagisch. Nur Styke und Calliaste kennen die ganze Zusammenstellung."
+      "note": "Am 2. April tatsächlich übergeben; beim jeweiligen Empfänger."
     },
     {
       "id": "gift-elise",
       "name": "Gefütterte belüftete Frost-Tasche",
       "owner": "Elise",
-      "group": "Noch geheime Geschenke",
+      "group": "Übergebene persönliche Geschenke",
       "amount": "1",
       "state": "Am 2. April tatsächlich überreicht; beim Empfänger, keine ausstehende Geschenktruhe.",
       "value": null,
       "basis": "Preis nicht festgestellt",
-      "note": "Für Elise; mit Nusstaschen, noch nicht gegeben. Nur Styke und Calliaste kennen die ganze Zusammenstellung."
+      "note": "Am 2. April tatsächlich übergeben; beim jeweiligen Empfänger."
     },
     {
       "id": "gift-valeria",
       "name": "Zweifarbiger Stein und Adamant-/Mithralring",
       "owner": "Valeria",
-      "group": "Noch geheime Geschenke",
+      "group": "Übergebene persönliche Geschenke",
       "amount": "1",
       "state": "Am 2. April tatsächlich überreicht; beim Empfänger, keine ausstehende Geschenktruhe.",
       "value": null,
       "basis": "Preis nicht festgestellt",
-      "note": "Für Valeria; Ring „Bei dir bin ich zu Hause“, noch kein Antrag. Nur Styke und Calliaste kennen die ganze Zusammenstellung."
+      "note": "Am 2. April tatsächlich übergeben; beim jeweiligen Empfänger."
     },
     {
       "id": "gift-vesper",
       "name": "Journal mit verborgenem Platin-Schweifring",
       "owner": "Vesper",
-      "group": "Noch geheime Geschenke",
+      "group": "Übergebene persönliche Geschenke",
       "amount": "1",
       "state": "Am 2. April tatsächlich überreicht; beim Empfänger, keine ausstehende Geschenktruhe.",
       "value": null,
       "basis": "Preis nicht festgestellt",
-      "note": "Für Vesper; „Öffne mich, wenn du soweit bist.“ / „Für mein Lieblingslied“; nicht gegeben oder entdeckt. Nur Styke und Calliaste kennen die ganze Zusammenstellung."
+      "note": "Am 2. April tatsächlich übergeben; beim jeweiligen Empfänger."
     },
     {
       "value": null,
@@ -1272,7 +1326,7 @@
       "name": "Vespers eigenes Corset of Delicate Moves",
       "amount": "1",
       "owner": "Vesper",
-      "state": "28. März gefertigt, 31. März ausgehändigt; ununterbrochene 24h-Wirkung nicht bestätigt.",
+      "state": "Seit 31. März übergeben; üblicherweise getragen, anfängliche 24h-Voraussetzung erfüllt.",
       "basis": "1.000 GM Material einmal verbucht"
     },
     {
@@ -1281,7 +1335,7 @@
       "name": "Boots of Striding and Springing",
       "amount": "1 Paar",
       "owner": "Styke",
-      "state": "17. April fertig/übergeben; aktuelles Anlegen nicht verifiziert, darum kein automatischer +10-ft-Speed-Wert.",
+      "state": "Übergeben und im üblichen Dienst getragen; Bonus im Kampfprofil enthalten.",
       "basis": "2.750 GM Herstellmaterial bereits verbucht"
     },
     {
@@ -1290,7 +1344,7 @@
       "name": "Boots of Striding and Springing",
       "amount": "1 Paar",
       "owner": "Valeria",
-      "state": "19. April fertig, 20. April ausgehändigt; tatsächliches Tragen nicht verifiziert.",
+      "state": "Übergeben und im üblichen Dienst getragen; Bonus im Kampfprofil enthalten.",
       "basis": "2.750 GM Herstellmaterial bereits verbucht"
     },
     {
@@ -1317,7 +1371,7 @@
       "name": "Assassin-Vine-Gift",
       "amount": "4 Dosen",
       "owner": "Nella",
-      "state": "Vier gesicherte Dosen. Nächste vorgesehene Ernte 30. April.",
+      "state": "Vier zuletzt bestätigte gesicherte Dosen; spätere Ernten oder Verbrauch nicht beziffert.",
       "basis": "Bestätigte gesicherte Dosen"
     },
     {
@@ -1326,26 +1380,45 @@
       "name": "Die Ordnung von Talingarde",
       "amount": "1 Entwurf",
       "owner": "Styke",
-      "state": "Handschriftlicher Regierungsentwurf, keine verabschiedete Ordnung. Zwei unabhängige Prüfungskopien noch nicht angefertigt.",
+      "state": "Prüfungskopien bei Vesper, Valeria, Tacitus und Nella; individuelle Kritik, kein verabschiedetes Gesetz.",
       "basis": "Persönliches Manuskript"
+    },
+    {
+      "id": "styke-cha4",
+      "name": "CHA-Stirnreif +4",
+      "owner": "Styke",
+      "group": "Persönliche Ausrüstung",
+      "amount": "1",
+      "state": "Übergeben und im Dienst getragen.",
+      "value": null,
+      "basis": "Nicht neu taxiert",
+      "note": "Bereits bezahlt; keine zweite Abbuchung."
+    },
+    {
+      "id": "styke-eyes",
+      "name": "Eyes of the Eagle",
+      "owner": "Styke",
+      "group": "Persönliche Ausrüstung",
+      "amount": "1",
+      "state": "Übergeben und im Dienst getragen.",
+      "value": null,
+      "basis": "Nicht neu taxiert",
+      "note": "Bereits bezahlt; keine zweite Abbuchung."
     }
   ],
   "treasury": {
-    "liquid": 7710,
+    "liquid": 11028.75,
     "earmarked": 4600,
-    "free": 3110,
+    "free": 6428.75,
     "gold": 0,
     "silver": 0,
     "valuables": 0
   },
   "notes": [
-    "Stand 26. April. Der Ebenenplan ist schematisch und zeigt keine maßstabsgerechte Raumtopologie.",
-    "Die gemeinsame wirtschaftliche Bruttosumme beträgt 7.710 GM: 4.600 GM zweckgebunden, 3.110 GM frei. Silberobjekte (10.000 GM) und kleine Wertstücke (920 GM) sind schon darin bewertet und dürfen nicht erneut hinzuaddiert werden.",
-    "Materialzahlungen werden einmal bei Beginn eines realen Auftrags gebucht; Werkstattfertigung, tatsächliche Übergabe und am Körper aktivierte Wirkung sind unterschiedliche Zustände.",
-    "Valet und Beschleunigung sind berücksichtigt: 4.000 GM zusätzliche Grundpreisbasis je vollem Acht-Stunden-Tag, mindestens ein Tag pro Gegenstand. Bei bestimmten Rezepten ist die tatsächliche abschließende Guidance relevant.",
-    "Valerias geplanter CHA-Stirnreif +4 ist wegen 2.890 GM Finanzierungslücke noch nicht in Arbeit; optionales Styke-Eyes-Projekt bleibt Plan.",
-    "Grumblejacks große Platte ist mit 1.424/3.150 Fortschritt unfertig. Sie ist kein ausgerüstetes Rüstungsteil, und ihre Arbeit erzeugt keine liquiden Einnahmen.",
-    "Fünf befristet verpflichtete Bewohner, die drei Höllenhunde, Hakon und seine fünf Leute sind keine verkäuflichen Gegenstände.",
-    "Der Empfang der Warnung zu Trayas Vierergruppe ist bekannt; Suchwege und unbestätigte Aufenthalte werden nicht durch ein öffentliches Lagerinventar vorweggenommen."
+    "Stand 28. Juni abends; keine folgende Nacht oder Tagesauffrischung vorweggenommen.",
+    "Historisch eingerechnete Silberobjekte und Wertstücke sind kein zusätzliches Guthaben.",
+    "Fertigung, Übergabe und getragene Boni sind abgeglichen; alle drei Juni-Aufträge sind abgeschlossen.",
+    "Mirelles Atelier: monatlich 90 GM netto am 27.; nächstes ungebuchtes Datum 27. Juli. Keine zusätzliche Miete oder kleine Einzelrestforderung.",
+    "Unbekannte Restressourcen bleiben unbekannt. Private NPC-Gespräche und verborgene Ereignisse sind nicht Bestandteil dieser Ansicht."
   ]
 }

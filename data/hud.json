@@ -5,10 +5,10 @@
     "generatedView": true,
     "playerSafe": true,
     "source": "danceofruin/wotwGPT current core-party level8 packet; accepted player level8 activation",
-    "updated": "2026-10-26",
-    "revision": "level8-readable-hud-2.2.0",
-    "sourceCampaignEdge": "14./15. Juni 4712 AR · Level 8 ausdrücklich aktiviert; keine Zeitfortschreibung",
-    "campaignDate": "4712-06-14"
+    "updated": "2026-10-30",
+    "revision": "party-4712-06-28-evening",
+    "sourceCampaignEdge": "28. Juni 4712 AR · Abend / Nacht · nach Gebet #354",
+    "campaignDate": "4712-06-28"
   },
   "ui": {
     "defaultCharacterOpen": "",
@@ -81,7 +81,7 @@
             {
               "name": "Circle of Razor Feathers",
               "detail": "30 ft Radius · 8d6 profan · sickened 4 Runden; bei Erfolg halbiert/1 Runde.",
-              "tag": "Reflex SG 20"
+              "tag": "Reflex SG 21"
             },
             {
               "name": "Fetch’s Wrath",
@@ -91,7 +91,7 @@
             {
               "name": "Bilious Strike",
               "detail": "Angriff +6d6 profan; nauseated 3 Runden, bei Erfolg1 Runde.",
-              "tag": "Fort SG 20"
+              "tag": "Fort SG 21"
             }
           ]
         },
@@ -153,7 +153,7 @@
               ]
             }
           ],
-          "subtitle": "PP18/24 im gespeicherten Stand; keine Auffrischung angenommen."
+          "subtitle": "PP 26/26 im gespeicherten Stand; keine folgende Auffrischung angenommen."
         },
         {
           "id": "power-notes",
@@ -208,7 +208,7 @@
           "items": [
             {
               "name": "Compartmentalized Aid",
-              "detail": "Move: Aid+4 Angriff; bis 4 Manöver recovern; Zeal aktivieren."
+              "detail": "Move: Aid +4 Angriff oder AC gegen den gewählten Gegner; bis 5 Manöver recovern; Zeal aktivieren."
             },
             {
               "name": "Zeal",
@@ -255,11 +255,11 @@
             },
             {
               "name": "Diplomacy",
-              "tag": "+8"
+              "tag": "+9"
             },
             {
               "name": "Intimidate",
-              "tag": "+12"
+              "tag": "+13"
             },
             {
               "name": "Knowledge (All)",
@@ -267,7 +267,7 @@
             },
             {
               "name": "Perception",
-              "tag": "+11"
+              "tag": "+16 with worn Eyes of the Eagle"
             },
             {
               "name": "Stealth",
@@ -279,7 +279,7 @@
             },
             {
               "name": "Bluff",
-              "tag": "+8"
+              "tag": "+9"
             }
           ]
         },
@@ -290,7 +290,7 @@
           "items": [
             {
               "name": "Weapon Group Adaptation",
-              "detail": "Heavy Blades: Großschwert ist Disziplinwaffe; Circle/Bilious SG 20."
+              "detail": "Heavy Blades: Großschwert ist Disziplinwaffe; Circle/Bilious SG 21."
             },
             {
               "name": "Power Attack / Deadly Agility",
@@ -337,7 +337,7 @@
             },
             {
               "name": "CHA",
-              "tag": "19 getragen"
+              "tag": "21 getragen (17 Basis +4 Stirnreif)"
             }
           ]
         },
@@ -350,7 +350,7 @@
               "name": "Großschwert+1 / Mithralhemd+1"
             },
             {
-              "name": "DEX-Gürtel+4 / CHA-Stirnreif+2"
+              "name": "DEX-Gürtel +4 / CHA-Stirnreif +4 / Eyes of the Eagle"
             },
             {
               "name": "Cloak+3 / Amulett+1"
@@ -871,7 +871,7 @@
             },
             {
               "name": "CMB / CMD",
-              "tag": "+12 / 23"
+              "tag": "+13 / 24"
             },
             {
               "name": "Bewegung",
@@ -960,7 +960,7 @@
           "items": [
             {
               "name": "Power Attack",
-              "detail": "+10/+5 ·2d6+16."
+              "detail": "+11/+6 · 2d6+17."
             },
             {
               "name": "Smite Good",
@@ -1085,7 +1085,7 @@
               "name": "Großschwert+1 Cruel / Dastard Shadow Full Plate+1"
             },
             {
-              "name": "STR-Gürtel+2 / CHA-Stirnreif+4 / Cloak+3 / Amulett+1"
+              "name": "STR-Gürtel +4 / CHA-Stirnreif +4 / Cloak +3 / Amulett +1"
             },
             {
               "name": "Boots / Ioun Stone",
@@ -1121,11 +1121,11 @@
         "max": 54
       },
       "pp": {
-        "current": 18,
-        "max": 24
+        "current": 26,
+        "max": 26
       },
       "focus": true,
-      "deepFocus": true
+      "deepFocus": null
     },
     "vesper": {
       "hp": {

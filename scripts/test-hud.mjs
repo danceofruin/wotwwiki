@@ -16,10 +16,10 @@ for(const c of hud.characters){
 }
 const styke=hud.characters[0],ready=styke.sections.find(s=>s.id==='readied').items;
 assert.equal(ready.length,6);assert.equal(new Set(ready.map(x=>x.name)).size,6);
-assert(ready.some(x=>x.name==='Bilious Strike'&&x.tag.includes('SG 20')));
-assert(ready.some(x=>x.name==='Circle of Razor Feathers'&&x.tag.includes('SG 20')&&x.detail.includes('4 Runden')));
+assert(ready.some(x=>x.name==='Bilious Strike'&&x.tag.includes('SG 21')));
+assert(ready.some(x=>x.name==='Circle of Razor Feathers'&&x.tag.includes('SG 21')&&x.detail.includes('4 Runden')));
 assert(!ready.some(x=>/Riposte|Lifeburst|Chains/.test(x.name)));
-assert.equal(hud.resourceDefaults.styke.pp.max,24);assert.equal(hud.resourceDefaults.styke.pp.current,18);
+assert.equal(hud.resourceDefaults.styke.pp.max,26);assert.equal(hud.resourceDefaults.styke.pp.current,26);
 assert.deepEqual(Object.values(hud.resourceDefaults.vesper.slots).map(s=>s.max),[8,8,7,4]);
 assert(Object.values(hud.resourceDefaults.vesper.slots).every(s=>s.current===null));
 assert.equal(sheets.characters[1].stats.ac,'25');assert.equal(sheets.characters[1].stats.touch,'16');

@@ -32,7 +32,7 @@ assert.equal(live.meta.sheetRevision,sheets.meta.sourceRevision,'Mixed live/shee
 assert.equal(live.meta.sourceRevision,horn.meta.sourceRevision,'Mixed live/Horn revisions');
 assert.equal(live.scene.date,horn.meta.campaignDate,'Different campaign date');
 assert.equal(horn.treasury.liquid,horn.treasury.earmarked+horn.treasury.free,'Double-counted treasury');
-assert.equal(horn.inventory.find(x=>x.id==='cash').amount,'7.710 GM','Stale cash inventory caption');
+assert.equal(horn.inventory.find(x=>x.id==='cash').amount,'11.028 GM 7 SM 5 KM','Stale cash inventory caption');
 assert.deepEqual(sheets.characters.map(c=>c.id),['styke','vesper','valeria']);
 for(const id of ['styke','vesper','valeria']){
  const sheet=sheets.characters.find(c=>c.id===id);
