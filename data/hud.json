@@ -5,10 +5,10 @@
     "generatedView": true,
     "playerSafe": true,
     "source": "danceofruin/wotwGPT current core-party level8 packet; accepted player level8 activation",
-    "updated": "2026-10-30",
-    "revision": "party-4712-06-28-evening",
-    "sourceCampaignEdge": "28. Juni 4712 AR · Abend / Nacht · nach Gebet #354",
-    "campaignDate": "4712-06-28"
+    "updated": "2026-11-10",
+    "revision": "party-4712-07-29-afternoon",
+    "sourceCampaignEdge": "29. Juli 4712 AR · später Nachmittag; Ressourcen zuletzt 28. Juli bestätigt",
+    "campaignDate": "4712-07-29"
   },
   "ui": {
     "defaultCharacterOpen": "",
@@ -362,6 +362,10 @@
             {
               "name": "Psychic Reformation",
               "detail": "Einwegstein verbraucht."
+            },
+            {
+              "name": "Four-leaf Clover",
+              "detail": "3/Tag; frei vor Rettungs-, Fertigkeits- oder Attributswurf: +2 Glück. Kein Angriff. Aktuelle Restnutzungen unbekannt."
             }
           ]
         },
@@ -544,6 +548,10 @@
             {
               "name": "Freedom of Movement",
               "detail": "80 min; Schutz gegen die im Zauber genannten Bewegungshindernisse."
+            },
+            {
+              "name": "Berührungszauber · ursprüngliches Wirken",
+              "detail": "Bei geeignetem Mehrzielzauber bis 6 bereitwillige Ziele im Zaubervorgang berühren; normale Bewegung erlaubt. Nicht mit späterem Held Touch verwechseln."
             }
           ]
         },
@@ -811,6 +819,18 @@
             {
               "name": "Weitere Gegenstände",
               "detail": "Ring of Mind Shielding, Lens of Detection, Sleeves, Diebeswerkzeug."
+            },
+            {
+              "name": "Four-leaf Clover",
+              "detail": "3/Tag; frei vor Rettungs-, Fertigkeits- oder Attributswurf: +2 Glück. Kein Angriff. Aktuelle Restnutzungen unbekannt."
+            },
+            {
+              "name": "Boots of Elvenkind",
+              "detail": "Getragen: +5 Kompetenz auf Acrobatics, kein Stealth-Bonus."
+            },
+            {
+              "name": "Gloves of Reconnaissance",
+              "detail": "1/Tag 1 Minute, beide Hände: durch bis 5 ft sehen/hören. Anfängliche 24h-Tragefrist nicht bestätigt."
             }
           ]
         }
@@ -1094,6 +1114,10 @@
             {
               "name": "Corset",
               "detail": "Move → Extra-Swift1/Tag; ermöglicht Smite +Standardangriff +Hurtful, keine Full Attack."
+            },
+            {
+              "name": "Four-leaf Clover",
+              "detail": "3/Tag; frei vor Rettungs-, Fertigkeits- oder Attributswurf: +2 Glück. Kein Angriff. Aktuelle Restnutzungen unbekannt."
             }
           ]
         }

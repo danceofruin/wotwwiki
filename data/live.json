@@ -4,34 +4,32 @@
     "authority": "GENERATED VIEW. DO NOT USE AS CAMPAIGN AUTHORITY.",
     "generated": true,
     "playerSafe": true,
-    "generatedAt": "2026-10-30T10:38:35+00:00",
-    "reviewedAt": "2026-10-30",
-    "sourceRevision": "de323f0463be5940bde5b03b6dddc9f308eac227a381180b643abce0a0d1ed70",
-    "sheetRevision": "da2ad1b1686967e4cedd81b17acf8ca0f7aea0d6c8d8ac75daef82a468cb93a7"
+    "generatedAt": "2026-11-10T16:47:27+00:00",
+    "reviewedAt": "2026-11-10",
+    "sourceRevision": "85631e1491da2c674db202555a7a8da95bc106a00b09f7632fc680c3478b16f8",
+    "sheetRevision": "4f04935849278ee18b45ddb77c60a2e8f0ddf12f74245391b79ed9ca5ea51478"
   },
   "scene": {
-    "date": "4712-06-28",
-    "dateLabel": "28. Juni 4712 AR",
-    "time": "Abend / Nacht · nach dem Abendgebet, vor Mitternacht",
+    "date": "4712-07-29",
+    "dateLabel": "29. Juli 4712 AR",
+    "time": "Später Nachmittag · nach der Rückkehr von Valenne",
     "location": "Horn von Abaddon",
     "locationId": "horn-abaddon",
-    "detail": "Der erste Downtime-Tag ist abgeschlossen. Das Gespräch mit den Fünf und das kontrollierte Training sind beendet. Stykes genauer letzter Aufenthaltsort und seine Schlafenszeit sind nicht festgelegt.",
-    "summary": "354/666 Gebete · zwei von drei Opfern vollzogen. Ausrüstungsaufträge abgeschlossen. Vesper setzt Legend Lore fort.",
-    "rest": "Keine folgende Nacht oder Auffrischung am 29. Juni vorweggenommen. Das nichttödliche Trainingsleiden ist bis zum Abend vollständig abgeheilt."
+    "detail": "Styke ist mit Rex ans Horn zurückgekehrt, hat sie Linette übergeben und den kurzen Stallkontakt beendet.",
+    "summary": "Der Nachmittag mit Valenne ist gespielt. Nächster Termin: gemeinsame letzte Anpassungs-/Bewegungsprobe bei Mirelle heute Abend.",
+    "rest": "Teil-Checkpoint, kein vollständiger Tages-Handoff. Ressourcen zuletzt am 28. Juli bestätigt; keine zusätzliche Auffüllung angenommen."
   },
   "quests": [
     {
       "id": "horn",
       "title": "Horn · Ritual und Wachordnung",
       "status": "active",
-      "updated": "4712-06-28",
-      "summary": "354/666 Gebete und zwei von drei Opfern vollzogen; Siegel und drei Augen intakt.",
+      "updated": "4712-07-28",
+      "summary": "Zuletzt ausdrücklich bestätigt: #444/666 am 28. Juli bei Dämmerung; Opfer 2/3.",
       "known": [
-        "Das zweite Opfer wurde am 21. Juni bei Morgengrauen vollzogen. Harkon ist tot.",
-        "Die anschließende Kontrolle fand keine gefährlichen Gebäudeschäden.",
-        "Tamsin führt die Hornverteidigung; Hakon seine fünf freien Männer. Bestehende Wachen und Sicherungen bleiben."
+        "Tamsin führt die Hornverteidigung; Hakon seine fünf freien Männer."
       ],
-      "next": "Nächstes Gebet #355 zur Mitternacht 28./29. Juni.",
+      "next": "Gebetsfortschreibung für den 29. Juli im nächsten vollständigen Tagesabgleich prüfen.",
       "links": [
         "horn-abaddon",
         "dirges-apollyon",
@@ -43,15 +41,15 @@
       "id": "crafting",
       "title": "Tacitus und Knittel · Ausrüstung",
       "status": "completed",
-      "updated": "4712-06-28",
-      "summary": "Eyes of the Eagle sowie Stykes CHA- und Valerias STR-Aufwertung sind fertig und übergeben.",
+      "updated": "4712-07-28",
+      "summary": "Die fünf Juli-Gegenstände sind gefertigt und übergeben.",
       "known": [
-        "Eyes fertig 22. Juni; CHA-Stirnreif +4 zurück am 25. Juni.",
-        "Valerias derselbe STR-Gürtel ist seit dem 28. Juni abends +4 und wieder angelegt.",
-        "Grumblejacks große Meisterarbeits-Platte ist seit 9. Juni fertig und getragen.",
-        "Alle Materialien einmal bezahlt. Der Lesser Persistent Rod ist nur eine Idee, kein Auftrag."
+        "Eversmoking Bottle fertig 11. Juli; drei Four-leaf Clovers für Styke, Vesper und Valeria am 12.–14. Juli.",
+        "Vespers Gloves of Reconnaissance fertig 15. Juli; anfängliche 24 Stunden Tragezeit nicht bestätigt.",
+        "Vesper trägt Boots of Elvenkind; +5 Kompetenz auf Acrobatics, kein Stealth-Bonus.",
+        "9.325 GM Material für diese fünf Aufträge bereits einmal bezahlt."
       ],
-      "next": "Weitere Ausrüstung benötigt einen neuen tatsächlichen Auftrag.",
+      "next": "Kein offener Auftrag aus dieser Serie.",
       "links": [
         "tacitus",
         "knittel",
@@ -80,13 +78,13 @@
       "id": "captives",
       "title": "Die Fünf · befristete Eide",
       "status": "active",
-      "updated": "4712-06-28",
-      "summary": "Alle fünf lehnten am 28. Juni morgens den dauerhaften Compact ab.",
+      "updated": "4712-07-28",
+      "summary": "Halla, Marta und Bianca sind volle Mitglieder; Yorgun und James bleiben befristet gebunden.",
       "known": [
-        "Halla, Marta, Yorgun, James und Bianca bleiben unter ihren ursprünglichen 220-Tage-Arbeitseiden.",
-        "Keine Änderung von Bewachung, Waffenrechten oder Bewegungsfreiheit; kein dauerhafter Pakt."
+        "Der Knoten zählt 13 volle Mitglieder.",
+        "Für Yorgun und James bleiben die endlichen Sicherheitsbindungen bestehen."
       ],
-      "next": "Befristete Eide laufen ungefähr am 18. Oktober aus.",
+      "next": "Ende der beiden befristeten Bindungen ungefähr am 18. Oktober.",
       "links": [
         "halla-amon",
         "marta-dian",
@@ -134,13 +132,16 @@
       "id": "valenne",
       "title": "Dame Valenne · persönlicher Zugang",
       "status": "active",
-      "updated": "4712-06-28",
-      "summary": "Valenne erlaubt Styke, sich in Hamorhall unter seinem Namen zu melden.",
+      "updated": "4712-07-29",
+      "summary": "Der private Nachmittag am 29. Juli ist ausgespielt; gegenseitige Anziehung und Küsse.",
       "known": [
-        "Sie wird Zeit finden, soweit ihre Pflichten es erlauben.",
-        "Das ist kein zugesagter Ausritt, militärischer Zugang oder Zugriff auf Archive."
+        "Valenne hat Rex kennengelernt und ist selbst zeitweise geritten/geflogen.",
+        "Styke und Valenne gingen allein über die Wiese und hielten Händchen.",
+        "Styke erzählte ihr von Grumblejack, Branderscar und seiner damaligen Verurteilung wegen Mordes.",
+        "Ein späteres längeres Treffen an einer natürlichen heißen Quelle wurde besprochen. Valenne will selbst schreiben, sobald ihre Garnison gedeckt ist.",
+        "Kein konkretes Folgedatum, keine erfolgte Übernachtung, kein Bündnis oder neuer Beziehungsstatus."
       ],
-      "next": "Bei einem echten Besuch am Tor unter eigenem Namen melden.",
+      "next": "Valennes eigene Nachricht abwarten; kein neuer Termin festgelegt.",
       "links": [
         "farholde",
         "styke",
@@ -151,15 +152,14 @@
       "id": "atelier",
       "title": "Mirelle · öffentliches Atelier",
       "status": "active",
-      "updated": "4712-06-28",
-      "summary": "Das Farholder Atelier ist seit Ende Mai eingerichtet und in Betrieb.",
+      "updated": "4712-07-28",
+      "summary": "Das Atelier arbeitet; +90 GM Nettoergebnis am 27. Juli einmalig gebucht.",
       "known": [
-        "Mirelle hat eigenen Schlüssel, Namen an der Tür und fachliches Urteil über ihre Arbeit.",
-        "Erstes Kundenstück am 20. Juni ausgeliefert und bezahlt; zweites Stück am 28. Juni fertig.",
-        "Aktuelle Kampagnenregel: monatlich 90 GM netto an den Knoten. Gewöhnliche Kosten und kleine offene Kundenbeträge sind enthalten.",
-        "Die nächste neue Abrechnung ist am 27. Juli; keine separate künftige Miet- oder Restzahlungsrechnung."
+        "Die monatliche Pauschale enthält gewöhnliche Betriebskosten und kleine Kundenbeträge.",
+        "Die Knoten-Kollektion läuft seit dem 19. Juli; Styke, Vesper und Kaitlyn haben Priorität.",
+        "Zugeschnittene und teilweise zusammengesetzte Kleidungsstücke liegen vor."
       ],
-      "next": "Am 27. Juli einmalig 90 GM netto abrechnen, wenn der Betrieb weiterläuft.",
+      "next": "Letzte gemeinsame Anpassungs-/Bewegungsprobe am 29. Juli abends; nächste Monatsabrechnung am 27. August.",
       "links": [
         "mirelle",
         "farholde"
@@ -169,13 +169,13 @@
       "id": "tacitus-research",
       "title": "Ouroboros · Gegenforschung",
       "status": "active",
-      "updated": "4712-06-28",
-      "summary": "Sechs vollständige Forschungstage; keine Probe und keine gesicherte Lösung.",
+      "updated": "4712-07-28",
+      "summary": "Die frühere Vorprobenphase ist beendet; derzeit nur sichere Vorbereitung ohne Erregerprobe.",
       "known": [
-        "Kein zusätzlicher voller Forschungstag parallel zu den tatsächlichen Fertigungsblöcken.",
-        "Verses Herkunft und die Tränen-Gegenforschung sind getrennte Vorhaben."
+        "Styke hat Tacitus am 20. Juli die begrenzte Planung einer räumlichen Trennung erlaubt.",
+        "Keine Tears-Probe, keine nachgewiesene Heilung und kein betriebsbereites Infektionslabor."
       ],
-      "next": "Nächsten zulässigen Forschungsschritt aus verfügbaren Mitteln bestimmen.",
+      "next": "Konkrete Vorschläge mit Tacitus besprechen; bauliche Ausführung und gefährliche Tests sind nicht freigegeben.",
       "links": [
         "tacitus",
         "verse"
@@ -184,14 +184,13 @@
     {
       "id": "legend-lore",
       "title": "Vesper · Legend Lore",
-      "status": "active",
-      "updated": "4712-06-28",
-      "summary": "Die mehrtägige Divination über die Tränen läuft seit dem 22. Juni morgens.",
+      "status": "completed",
+      "updated": "4712-07-28",
+      "summary": "Vespers zehntägiges Legend Lore wurde abgeschlossen; das Ergebnis wurde am 2. Juli mitgeteilt.",
       "known": [
-        "Festgelegte Zauberzeit: zehn volle Tage; Ergebnis noch nicht erhalten.",
-        "Vesper bleibt durch den fortlaufenden Zauber in ihren Tätigkeiten eingeschränkt."
+        "Kein fortlaufender Zauberblock mehr. Die Divination ist kein Beweis einer fertigen Gegenmaßnahme."
       ],
-      "next": "Bei ununterbrochenem Verlauf Abschluss am 2. Juli morgens.",
+      "next": "Erkenntnisse bei der Gegenforschung berücksichtigen.",
       "links": [
         "vesper",
         "tacitus"
@@ -201,13 +200,14 @@
       "id": "constitution",
       "title": "Die Ordnung von Talingarde · Entwurf",
       "status": "active",
-      "updated": "4712-06-28",
-      "summary": "Vesper, Valeria, Tacitus und Nella besitzen eigene Prüfungskopien.",
+      "updated": "4712-07-28",
+      "summary": "Stykes privater Entwurf wurde überarbeitet; Tacitus hat die aktuelle Abschrift erhalten.",
       "known": [
-        "Die vier lesen und kommentieren getrennt; kein fertiger gemeinsamer Konsens.",
-        "Styke möchte die Einzelkritiken zuerst getrennt durchgehen. Keine Ordnung wurde als Gesetz verabschiedet."
+        "Die Fünf Säulen sind kein verabschiedetes Gesetz.",
+        "Rika und Hester fertigten die saubere Abschrift; am 22. Juli erhielt Tacitus sie, Styke seinen Originaltext zurück.",
+        "Tacitus übernimmt die gründliche Überarbeitung; Marta ist als eigenständige kritische Leserin eingeladen."
       ],
-      "next": "Individuelle Rückmeldungen besprechen, ohne einen Termin zu erfinden.",
+      "next": "Neue Rückmeldungen bei tatsächlicher Übergabe mit Styke besprechen.",
       "links": [
         "styke",
         "vesper",
@@ -271,34 +271,35 @@
   ],
   "appointments": [
     {
-      "id": "midnight-355",
-      "date": "4712-06-29",
-      "label": "Mitternacht 28./29. Juni",
-      "time": "Nächstes Gebetsfenster",
-      "title": "Supplication to Darkness #355",
-      "note": "Noch nicht vollzogen.",
+      "id": "collection-fitting",
+      "date": "4712-07-29",
+      "label": "29. Juli · abends",
+      "time": "29. Juli · abends",
+      "title": "Knoten-Kollektion · letzte Anpassung",
+      "note": "Styke, Vesper und Kaitlyn; nach Stykes Rückkehr, abhängig vom tatsächlichen Arbeitsstand.",
       "links": [
-        "dirges-apollyon"
+        "mirelle"
       ]
     },
     {
-      "id": "legend-lore-end",
-      "date": "4712-07-02",
-      "label": "2. Juli · morgens",
-      "time": "Bei ununterbrochenem Verlauf",
-      "title": "Legend Lore · Abschluss",
-      "note": "Zehn volle Tage ab 22. Juni morgens; kein vorweggenommenes Ergebnis.",
+      "id": "marsten-meeting",
+      "date": "4712-07-30",
+      "label": "30. Juli · später Nachmittag",
+      "time": "30. Juli · später Nachmittag",
+      "title": "Marstens Angebot anhören",
+      "note": "Styke, Vesper und Kaitlyn; neutraler privater Raum in Auld’Irey, von Kaitlyn ausgewählt. Inhalt noch unbekannt.",
       "links": [
-        "vesper"
+        "kaitlyn",
+        "farholde"
       ]
     },
     {
       "id": "atelier-settlement",
-      "date": "4712-07-27",
-      "label": "27. Juli",
-      "time": "Monatliche Abrechnung",
+      "date": "4712-08-27",
+      "label": "27. August",
+      "time": "27. August",
       "title": "Mirelles Atelier · 90 GM netto",
-      "note": "Kosten und kleine offene Beträge enthalten. Erst buchen, wenn der Tag tatsächlich erreicht wird.",
+      "note": "Nächste reguläre Monatsabrechnung; Juli bereits gebucht.",
       "links": [
         "mirelle"
       ]
@@ -307,11 +308,12 @@
       "id": "temporary-oaths-end",
       "date": "4712-10-18",
       "label": "Ungefähr 18. Oktober",
-      "time": "220 Tage ab tatsächlichem Eid",
-      "title": "Ende der fünf befristeten Eide",
+      "time": "Ungefähr 18. Oktober",
+      "title": "Yorgun und James · befristete Bindungen",
       "note": "Kein automatischer dauerhafter Anschluss.",
       "links": [
-        "halla-amon"
+        "yorgun",
+        "james-otoole"
       ]
     }
   ],
@@ -319,8 +321,8 @@
     {
       "id": "treasury",
       "label": "Gemeinsame Mittel",
-      "value": "11.028 GM 7 SM 5 KM",
-      "note": "4.600 GM zweckgebunden · 6.428 GM 7 SM 5 KM frei."
+      "value": "6.560 GM 7 SM 5 KM",
+      "note": "4.600 GM gebunden · 1.960 GM 7 SM 5 KM frei."
     },
     {
       "id": "level",
@@ -331,14 +333,14 @@
     {
       "id": "ritual",
       "label": "Ritual",
-      "value": "354 / 666",
-      "note": "Zwei von drei Opfern vollzogen. Nächste Mitternacht #355 noch Zukunft."
+      "value": "444 / 666 zuletzt belegt",
+      "note": "28. Juli bei Dämmerung bestätigt; 29. Juli ist noch kein vollständiger Tagesabgleich."
     },
     {
       "id": "crafting",
       "label": "Magische Fertigung",
-      "value": "Drei Aufträge abgeschlossen",
-      "note": "Eyes am 22., Stykes CHA am 25., Valerias STR am 28. Juni übergeben."
+      "value": "Juli-Serie abgeschlossen",
+      "note": "Bottle, drei Clovers und Gloves fertig und übergeben; Material einmal bezahlt."
     },
     {
       "id": "plate",
@@ -356,7 +358,7 @@
       "id": "atelier",
       "label": "Atelier",
       "value": "90 GM netto / Monat",
-      "note": "Nächste neue Abrechnung am 27. Juli, noch nicht gebucht."
+      "note": "Juli +90 GM gebucht; nächste Abrechnung 27. August."
     }
   ],
   "people": [
@@ -408,9 +410,9 @@
         "max": 54
       },
       "conditions": [],
-      "state": "28. Juni abends · Stufe 8 · kein bestätigter Schaden oder nichttödlicher Schaden mehr.",
-      "resourceNote": "PP 26/26; normaler Fokus vorhanden. Keine folgende Erholung vorweggenommen.",
-      "gearNote": "Stufe 8 · Stand 28. Juni abends · übliche kompatible Ausrüstung im Dienst. Temporäre Buffs und Restressourcen separat. CHA-Stirnreif +4 und Eyes of the Eagle getragen; KON 11 durch +1 inhärent.",
+      "state": "Zuletzt bestätigte Ressourcen: 28. Juli; der 29.-Juli-Teilcheckpoint enthält keine vollständige Ressourcenbilanz.",
+      "resourceNote": "PP 26/26; Standard-Foki vorhanden. Keine kommende Erholung vorweggenommen.",
+      "gearNote": "Stufe 8 · Stand 28. Juli nach Dämmerung · übliche kompatible Ausrüstung im Dienst. Temporäre Buffs und Restressourcen separat. CHA-Stirnreif +4 und Eyes of the Eagle getragen; KON 11 durch +1 inhärent. Eigener Four-leaf Clover vorhanden; Restnutzungen nicht beziffert.",
       "pp": {
         "current": 26,
         "max": 26
@@ -426,9 +428,9 @@
         "max": 43
       },
       "conditions": [],
-      "state": "28. Juni abends · Stufe 8 · kein bestätigter Schaden oder nichttödlicher Schaden mehr.",
-      "resourceNote": "Legend Lore läuft. Aktuelle Zauberplatz-Restzahlen sind nicht beziffert und bleiben unbekannt.",
-      "gearNote": "Stufe 8 · Stand 28. Juni abends · übliche kompatible Ausrüstung im Dienst. Temporäre Buffs und Restressourcen separat.",
+      "state": "Zuletzt bestätigte Ressourcen: 28. Juli; der 29.-Juli-Teilcheckpoint enthält keine vollständige Ressourcenbilanz.",
+      "resourceNote": "Legend Lore abgeschlossen. Verbleibende Zauberplätze nicht beziffert; unbekannt.",
+      "gearNote": "Stufe 8 · Stand 28. Juli nach Dämmerung · übliche kompatible Ausrüstung im Dienst. Temporäre Buffs und Restressourcen separat. Boots of Elvenkind getragen; Gloves vorhanden, anfängliche Tragefrist nicht bestätigt. Eigener Four-leaf Clover vorhanden; Restnutzungen nicht beziffert.",
       "verse": {
         "present": true,
         "hpCurrent": null,
@@ -470,9 +472,9 @@
         "max": 52
       },
       "conditions": [],
-      "state": "28. Juni abends · Stufe 8 · kein bestätigter Schaden oder nichttödlicher Schaden mehr.",
+      "state": "Zuletzt bestätigte Ressourcen: 28. Juli; der 29.-Juli-Teilcheckpoint enthält keine vollständige Ressourcenbilanz.",
       "resourceNote": "Begrenzte verbleibende Tageseinsätze nicht beziffert; keine Auffüllung angenommen.",
-      "gearNote": "Stufe 8 · Stand 28. Juni abends · übliche kompatible Ausrüstung im Dienst. Temporäre Buffs und Restressourcen separat. Originaler STR-Gürtel als +4 zurückgegeben und wieder angelegt; STR 20."
+      "gearNote": "Stufe 8 · Stand 28. Juli nach Dämmerung · übliche kompatible Ausrüstung im Dienst. Temporäre Buffs und Restressourcen separat. Originaler STR-Gürtel als +4 zurückgegeben und wieder angelegt; STR 20. Eigener Four-leaf Clover vorhanden; Restnutzungen nicht beziffert."
     }
   ]
 }

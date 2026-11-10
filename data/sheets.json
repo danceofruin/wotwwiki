@@ -4,9 +4,9 @@
     "authority": "GENERATED VIEW. DO NOT USE AS CAMPAIGN AUTHORITY.",
     "generated": true,
     "playerSafe": true,
-    "generatedAt": "2026-10-30T10:38:35+00:00",
-    "reviewedAt": "2026-10-30",
-    "sourceRevision": "da2ad1b1686967e4cedd81b17acf8ca0f7aea0d6c8d8ac75daef82a468cb93a7"
+    "generatedAt": "2026-11-10T16:47:27+00:00",
+    "reviewedAt": "2026-11-10",
+    "sourceRevision": "4f04935849278ee18b45ddb77c60a2e8f0ddf12f74245391b79ed9ca5ea51478"
   },
   "characters": [
     {
@@ -153,6 +153,10 @@
             {
               "title": "Languages",
               "markdown": "Common, Celestial, Draconic, Sylvan, Infernal. Infernal is an explicit campaign grant; the comprehension helm does not teach speech.\n"
+            },
+            {
+              "title": "Juli-Ausrüstung",
+              "markdown": "- **Eversmoking Bottle**: Fertig und übergeben 11. Juli; kein Einsatz vorweggenommen.\n- **Four-leaf Clover**: Fertig 12. Juli; 3/Tag Kapazität, aktuelle Restnutzung unbekannt.\n- Four-leaf Clover: freie Aktion vor Wurf, +2 Glück auf einen Rettungs-, Fertigkeits- oder Attributswurf; 3/Tag, kein Angriffswurf."
             }
           ]
         },
@@ -318,6 +322,10 @@
             {
               "title": "Equipment",
               "markdown": "Static activation assumptions:\n\n- +1 mithral chain shirt.\n- +1 mithral heavy shield.\n- **Cloak of Resistance +3** (returned/worn7Apr).\n- Amulet of Natural Armor +1.\n- Ring of Mind Shielding.\n- Lens of Detection.\n- **NEW Headband of Alluring Charisma +4** (delivered/worn3Apr; old +2 actually transferred to Styke).\n- Sleeves of Many Garments.\n- Iron Circlet.\n- Masterwork Thieves' Tools.\n- Lesser Metamagic Rod of Extend.\n- Verse.\n\n**Corset of Delicate Moves — ATTUNED/AVAILABLE (player-confirmed):** Vesper's distinct item finished28Mar, delivered31Mar and worn routinely through the following months, satisfying its one-time **24-hour pre-use wear requirement**. **Once per day, while she wears it, a MOVE ACTION grants one additional SWIFT ACTION in that turn**; it cannot be used to cast a spell or spell-like ability. Previous temporary removals for bathing/intimacy are not a perpetual fresh24h requirement: the item's description does **not** say re-attune after each removal. Deduct the once/day use only when actually activated; track if the daily use is already spent in accepted play. Move-action activation leaves no full-round action in that same turn. This does NOT automatically cancel Witness to Glory's genuine immediate-to-next-swift interaction or make a full-round strike free. Lesser Persistent Metamagic Rod remains an uncommissioned OOC idea. At actual level-up reconcile new accepted daily uses/slots after last verified14/15June edge, without inventing a refresh.\n"
+            },
+            {
+              "title": "Juli-Ausrüstung",
+              "markdown": "- **Eversmoking Bottle**: Fertig und übergeben 11. Juli; kein Einsatz vorweggenommen.\n- **Four-leaf Clover**: Fertig 13. Juli; 3/Tag Kapazität, aktuelle Restnutzung unbekannt.\n- **Gloves of Reconnaissance**: Fertig 15. Juli; anfängliche 24h-Tragefrist nicht bestätigt.\n- **Boots of Elvenkind**: Seit 11. Juli getragen; +5 Kompetenz Acrobatics.\n- Four-leaf Clover: freie Aktion vor Wurf, +2 Glück auf einen Rettungs-, Fertigkeits- oder Attributswurf; 3/Tag, kein Angriffswurf."
             }
           ]
         }
@@ -441,6 +449,10 @@
             {
               "title": "Equipment anchors",
               "markdown": "- +1 Dastard **Shadow** Full Plate (AC includes worn Amulet of Natural Armor+1; Shadow gives +5 competence Stealth).\n- **+1 Cruel greatsword**, returned and equipped31Mar.\n- Original Belt of Giant Strength **+4**, same +2 item upgraded and returned/worn28June; no spare belt.\n- **Headband of Alluring Charisma +4**, actually worn30Apr.\n- **Cloak of Resistance +3**, actually worn9Apr.\n- Amulet of Natural Armor +1.\n- **Boots of Striding and Springing**, owned and worn when relevant.\n- **Corset of Delicate Moves**, actually delivered31Mar, **initial24h wear completed**, normally worn on duty; once/day move-action extra swift (not usable for spells/SLAs) is available when worn and the daily use remains.\n- Cracked Dusty Rose Prism **normally orbiting when on duty**, +1 initiative; may be stowed when private.\n- Rose-von-Farholde flower crown, nonmechanical prize retained.\n\nAt actual level-up, reconcile accepted gear acquisitions, meaningful state/resource deltas, and already-established spell preparations **before** activating this staged sheet.\n\n\nMaintenance sources (checked29Oct2026):\n[Litany of Sloth](Regelreferenz),\n[Doom](Regelreferenz),\n[Bane](Regelreferenz),\n[Command](Regelreferenz),\n[Intimidate](Regelreferenz),\n[Blade Tutor's Spirit](Regelreferenz),\n[Dastard armor](Regelreferenz).\nExisting campaign class/weapon interactions remain unchanged; generic additions do not grant new spells, feats or daily uses.\n"
+            },
+            {
+              "title": "Juli-Ausrüstung",
+              "markdown": "- **Eversmoking Bottle**: Fertig und übergeben 11. Juli; kein Einsatz vorweggenommen.\n- **Four-leaf Clover**: Fertig 14. Juli; 3/Tag Kapazität, aktuelle Restnutzung unbekannt.\n- Four-leaf Clover: freie Aktion vor Wurf, +2 Glück auf einen Rettungs-, Fertigkeits- oder Attributswurf; 3/Tag, kein Angriffswurf."
             }
           ]
         },

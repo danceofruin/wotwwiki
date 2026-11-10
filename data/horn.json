@@ -3,12 +3,12 @@
     "schemaVersion": 1,
     "playerSafe": true,
     "authority": "GENERATED VIEW. DO NOT USE AS CAMPAIGN AUTHORITY.",
-    "reviewedAt": "2026-10-30",
-    "campaignDate": "4712-06-28",
-    "campaignLabel": "28. Juni 4712 AR · Abend / Nacht",
-    "sourceCommit": "dc4d5531baa852f42dfba040b3bf6abf17afd33a",
-    "sourceRevision": "de323f0463be5940bde5b03b6dddc9f308eac227a381180b643abce0a0d1ed70",
-    "generatedAt": "2026-10-30T10:38:35+00:00"
+    "reviewedAt": "2026-11-10",
+    "campaignDate": "4712-07-29",
+    "campaignLabel": "29. Juli 4712 AR · später Nachmittag",
+    "sourceCommit": "96ce7aee3f02689d250f965b9a28975e9a7951cb",
+    "sourceRevision": "85631e1491da2c674db202555a7a8da95bc106a00b09f7632fc680c3478b16f8",
+    "generatedAt": "2026-11-10T16:47:27+00:00"
   },
   "levels": [
     {
@@ -47,9 +47,9 @@
       ],
       "level": "sanctum",
       "status": "active",
-      "progress": "354/666 Gebete; zwei von drei Opfern vollzogen. Siegel und drei Augen intakt.",
-      "next": "Mitternacht 28./29. Juni: #355.",
-      "done": 354,
+      "progress": "444/666 zuletzt ausdrücklich belegt: 28. Juli Dämmerung; Opfer 2/3.",
+      "next": "29. Juli beim vollständigen Tagesabgleich prüfen; keine automatische zusätzliche Zählung.",
+      "done": 444,
       "total": 666
     },
     {
@@ -461,8 +461,8 @@
       ],
       "level": "three",
       "status": "active",
-      "progress": "Sechs volle Forschungstage; keine Probe oder gesicherte Lösung.",
-      "next": "Nächsten sachlich möglichen Forschungsschritt bestimmen.",
+      "progress": "Die frühere Vorprobenphase ist beendet; derzeit nur sichere Vorbereitung ohne Erregerprobe.",
+      "next": "Konkrete Vorschläge mit Tacitus besprechen; bauliche Ausführung und gefährliche Tests sind nicht freigegeben.",
       "done": null,
       "total": null
     },
@@ -575,11 +575,11 @@
         "Vesper"
       ],
       "level": "three",
-      "status": "active",
-      "progress": "Seit 22. Juni morgens in fortlaufender Ausführung. Ergebnis steht aus.",
-      "next": "2. Juli morgens, sofern ununterbrochen.",
-      "done": null,
-      "total": null
+      "status": "completed",
+      "progress": "Vespers zehntägiges Legend Lore wurde abgeschlossen; das Ergebnis wurde am 2. Juli mitgeteilt.",
+      "next": "Kein fortlaufender Casting-Block.",
+      "done": 10,
+      "total": 10
     },
     {
       "id": "atelier",
@@ -589,8 +589,8 @@
       ],
       "level": "one",
       "status": "active",
-      "progress": "In Betrieb; monatlich 90 GM netto nach aktueller Kampagnenregel.",
-      "next": "Nächste Abrechnung 27. Juli; noch nicht gebucht.",
+      "progress": "Das Atelier arbeitet; +90 GM Nettoergebnis am 27. Juli einmalig gebucht.",
+      "next": "Letzte gemeinsame Anpassungs-/Bewegungsprobe am 29. Juli abends; nächste Monatsabrechnung am 27. August.",
       "done": null,
       "total": null
     }
@@ -731,9 +731,9 @@
       "name": "Wirtschaftlich verfügbare gemeinsame Mittel",
       "owner": "Knoten",
       "group": "Geld",
-      "amount": "11.028 GM 7 SM 5 KM",
-      "state": "4.600 GM zweckgebunden; 6.428 GM 7 SM 5 KM frei.",
-      "value": 11028.75,
+      "amount": "6.560 GM 7 SM 5 KM",
+      "state": "6.560 GM 7 SM 5 KM brutto; 4.600 GM gebunden, 1.960 GM 7 SM 5 KM frei.",
+      "value": 6560.75,
       "basis": "Verfügbarkeitsrechnung",
       "note": "Silber und kleinere Wertstücke sind bereits im wirtschaftlichen Gesamtsaldo enthalten, keine zweite Gutschrift."
     },
@@ -787,7 +787,7 @@
       "owner": "Styke",
       "group": "Persönliche Ausrüstung",
       "amount": "siehe Stand",
-      "state": "Upgrade +2→+4 fertig und 22. April zurückgegeben/getragen; DEX 23.",
+      "state": "DEX-Gürtel +4 getragen; DEX 24 auf Stufe 8.",
       "value": null,
       "basis": "Nicht taxiert",
       "note": ""
@@ -952,7 +952,7 @@
       "owner": "Vesper",
       "group": "Persönliche Ausrüstung",
       "amount": "siehe Stand",
-      "state": "3 Anwendungen/Tag, aktuell 3/3",
+      "state": "3 Anwendungen/Tag Kapazität; aktuelle Restnutzungen nicht beziffert.",
       "value": null,
       "basis": "Nicht taxiert",
       "note": ""
@@ -974,7 +974,7 @@
       "owner": "Vesper",
       "group": "Persönliche Ausrüstung",
       "amount": "siehe Stand",
-      "state": "Rotes Buch Original AWAKENED, weiterhin nicht Unsealed. Tatsächliche Sitzung am 31. März; nicht durch Zeit allein weiterentwickelt.",
+      "state": "AWAKENED, nicht Unsealed; letzte bewusste Sitzung 21. Juni.",
       "value": null,
       "basis": "Nicht taxiert",
       "note": ""
@@ -1380,7 +1380,7 @@
       "name": "Die Ordnung von Talingarde",
       "amount": "1 Entwurf",
       "owner": "Styke",
-      "state": "Prüfungskopien bei Vesper, Valeria, Tacitus und Nella; individuelle Kritik, kein verabschiedetes Gesetz.",
+      "state": "Stykes privater Entwurf wurde überarbeitet; Tacitus hat die aktuelle Abschrift erhalten.",
       "basis": "Persönliches Manuskript"
     },
     {
@@ -1404,21 +1404,109 @@
       "value": null,
       "basis": "Nicht neu taxiert",
       "note": "Bereits bezahlt; keine zweite Abbuchung."
+    },
+    {
+      "id": "bottle",
+      "name": "Eversmoking Bottle",
+      "owner": "Horn",
+      "group": "Ausrüstung / Vorräte",
+      "amount": "1",
+      "state": "Fertig und übergeben 11. Juli; kein Einsatz vorweggenommen.",
+      "value": 2700,
+      "basis": "Bereits bezahltes Material / Fokus; kein zusätzlicher Kassensaldo",
+      "note": ""
+    },
+    {
+      "id": "clover-styke",
+      "name": "Four-leaf Clover",
+      "owner": "Styke",
+      "group": "Ausrüstung / Vorräte",
+      "amount": "1",
+      "state": "Fertig 12. Juli; 3/Tag Kapazität, aktuelle Restnutzung unbekannt.",
+      "value": 1875,
+      "basis": "Bereits bezahltes Material / Fokus; kein zusätzlicher Kassensaldo",
+      "note": ""
+    },
+    {
+      "id": "clover-vesper",
+      "name": "Four-leaf Clover",
+      "owner": "Vesper",
+      "group": "Ausrüstung / Vorräte",
+      "amount": "1",
+      "state": "Fertig 13. Juli; 3/Tag Kapazität, aktuelle Restnutzung unbekannt.",
+      "value": 1875,
+      "basis": "Bereits bezahltes Material / Fokus; kein zusätzlicher Kassensaldo",
+      "note": ""
+    },
+    {
+      "id": "clover-valeria",
+      "name": "Four-leaf Clover",
+      "owner": "Valeria",
+      "group": "Ausrüstung / Vorräte",
+      "amount": "1",
+      "state": "Fertig 14. Juli; 3/Tag Kapazität, aktuelle Restnutzung unbekannt.",
+      "value": 1875,
+      "basis": "Bereits bezahltes Material / Fokus; kein zusätzlicher Kassensaldo",
+      "note": ""
+    },
+    {
+      "id": "gloves-recon",
+      "name": "Gloves of Reconnaissance",
+      "owner": "Vesper",
+      "group": "Ausrüstung / Vorräte",
+      "amount": "1",
+      "state": "Fertig 15. Juli; anfängliche 24h-Tragefrist nicht bestätigt.",
+      "value": 1000,
+      "basis": "Bereits bezahltes Material / Fokus; kein zusätzlicher Kassensaldo",
+      "note": ""
+    },
+    {
+      "id": "boots-vesper",
+      "name": "Boots of Elvenkind",
+      "owner": "Vesper",
+      "group": "Ausrüstung / Vorräte",
+      "amount": "1",
+      "state": "Seit 11. Juli getragen; +5 Kompetenz Acrobatics.",
+      "value": null,
+      "basis": "Nicht taxiert",
+      "note": ""
+    },
+    {
+      "id": "scrying-mirror",
+      "name": "Scrying-Spiegel",
+      "owner": "Horn",
+      "group": "Ausrüstung / Vorräte",
+      "amount": "1",
+      "state": "Wiederverwendbarer Fokus, behalten.",
+      "value": 1000,
+      "basis": "Bereits bezahltes Material / Fokus; kein zusätzlicher Kassensaldo",
+      "note": ""
+    },
+    {
+      "id": "cmw-reserve",
+      "name": "Cure Moderate Wounds",
+      "owner": "Horn",
+      "group": "Ausrüstung / Vorräte",
+      "amount": "3",
+      "state": "Drei Tränke als Notreserve behalten.",
+      "value": null,
+      "basis": "Nicht taxiert",
+      "note": ""
     }
   ],
   "treasury": {
-    "liquid": 11028.75,
+    "liquid": 6560.75,
     "earmarked": 4600,
-    "free": 6428.75,
+    "free": 1960.75,
     "gold": 0,
     "silver": 0,
     "valuables": 0
   },
   "notes": [
-    "Stand 28. Juni abends; keine folgende Nacht oder Tagesauffrischung vorweggenommen.",
-    "Historisch eingerechnete Silberobjekte und Wertstücke sind kein zusätzliches Guthaben.",
-    "Fertigung, Übergabe und getragene Boni sind abgeglichen; alle drei Juni-Aufträge sind abgeschlossen.",
-    "Mirelles Atelier: monatlich 90 GM netto am 27.; nächstes ungebuchtes Datum 27. Juli. Keine zusätzliche Miete oder kleine Einzelrestforderung.",
-    "Unbekannte Restressourcen bleiben unbekannt. Private NPC-Gespräche und verborgene Ereignisse sind nicht Bestandteil dieser Ansicht."
+    "29. Juli 4712 AR · später Nachmittag; Teil-Checkpoint. Ritual und Ressourcen behalten ihren ausdrücklich belegten Zeitstempel.",
+    "Historisch eingerechnete Sachwerte werden nicht zusätzlich zum Kassensaldo addiert.",
+    "Juli-Ausrüstungsserie abgeschlossen; keine erneuten Materialabbuchungen.",
+    "Atelier +90 GM am 27. Juli gebucht; nächste Abrechnung 27. August.",
+    "Unbezifferte Restressourcen bleiben unbekannt; keine verborgenen Ereignisse oder privaten NPC-Berichte veröffentlicht."
   ]
 }

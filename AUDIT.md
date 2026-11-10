@@ -1,3 +1,7 @@
+## Aktualisierung 5.3.0 · 10. November 2026
+
+Geprüfter Spielerstand: 29. Juli 4712 AR später Nachmittag (Teil-Checkpoint). Ritual zuletzt #444/666 am 28. Juli belegt; Ressourcen nicht automatisch fortgeschrieben. Live Play, Horn, HUD, aktive Stufe-8-Referenzen, Termine und betroffene öffentliche Artikel aktualisiert. Ältere Artikelabschnitte bleiben datierte Geschichte. Keine verborgene Vorbereitung oder unzugestellten NPC-Ergebnisse veröffentlicht.
+
 # Wiki-Prüfung · 18. Oktober 2026
 
 Angenommener Kampagnenstand: **30. März 4712 AR, Abend**.
