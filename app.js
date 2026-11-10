@@ -15,82 +15,480 @@ function refreshVisibleData(){
 refreshVisibleData();
 
 const ARTWORKS={
-"marta-dian":[{"src": "assets/marta-normal-20261110.webp", "alt": "Marta mit Mitra-Zeichen und Buch.", "title": "Marta Dian", "caption": "Marta mit Mitra-Zeichen und Buch."}, {"src": "assets/marta-private-20261110.webp", "alt": "Marta in einer ruhigen privaten Stunde.", "title": "Marta · privat", "caption": "Marta in einer ruhigen privaten Stunde."}],
-"halla-amon":[{"src": "assets/halla-normal-20261110.webp", "alt": "Halla mit Schwert und Reiseausrüstung.", "title": "Halla Amon", "caption": "Halla mit Schwert und Reiseausrüstung."}, {"src": "assets/halla-private-20261110.webp", "alt": "Halla außerhalb des Dienstes.", "title": "Halla · privat", "caption": "Halla außerhalb des Dienstes."}],
-"bianca-devallya":[{"src": "assets/bianca-normal-20261110.webp", "alt": "Bianca mit ihrer Laute.", "title": "Bianca DeVallya", "caption": "Bianca mit ihrer Laute."}, {"src": "assets/bianca-private-20261110.webp", "alt": "Bianca in einer privaten Stunde, die Laute neben ihr.", "title": "Bianca · privat", "caption": "Bianca in einer privaten Stunde, die Laute neben ihr."}],
-"traya-demarco":[{"src": "assets/traya-normal-20261110.webp", "alt": "Traya im selbstgewählten Erscheinungsbild.", "title": "Traya DeMarco", "caption": "Traya im selbstgewählten Erscheinungsbild."}, {"src": "assets/traya-private-20261110.webp", "alt": "Traya am Feuer.", "title": "Traya · privat", "caption": "Traya am Feuer."}],
-"rika":[{"src": "assets/rika-work-20261110.webp", "alt": "Rika auf einem Arbeitsweg im Horn. Schlüssel im Bild begründen keinen tatsächlichen Schlüsselbesitz.", "title": "Rika", "caption": "Rika auf einem Arbeitsweg im Horn. Schlüssel im Bild begründen keinen tatsächlichen Schlüsselbesitz."}],
-"linnet":[{"src": "assets/linnet-work-20261110.webp", "alt": "Linnet bei den Pferden.", "title": "Linnet", "caption": "Linnet bei den Pferden."}],
-"tessa":[{"src": "assets/tessa-work-20261110.webp", "alt": "Tessa in der Küche.", "title": "Tessa", "caption": "Tessa in der Küche."}, {"src": "assets/tessa-private-20261110.webp", "alt": "Tessa nach der Arbeit.", "title": "Tessa · privat", "caption": "Tessa nach der Arbeit."}],
-"hester":[{"src": "assets/hester-work-20261110.webp", "alt": "Hester mit Feder und Aufzeichnungen.", "title": "Hester", "caption": "Hester mit Feder und Aufzeichnungen."}, {"src": "assets/hester-private-20261110.webp", "alt": "Hester liest bei Kerzenlicht.", "title": "Hester · privat", "caption": "Hester liest bei Kerzenlicht."}],
-"calliaste":[{"src":"assets/calliaste-shanda-v2.webp","alt":"Calliaste Shanda, geflügelte Lillend-Azata mit Schlangenleib","title":"Calliaste Shanda","caption":"Vom Spieler gewähltes Porträt für Calliaste Shanda."},{"src":"assets/calliaste-elfenform-balcony-v1.webp","alt":"Calliaste Shanda in Elfenform auf einer mondbeschienenen Terrasse","title":"Calliaste · Elfenform","caption":"Elfenform auf der Terrasse – vom Spieler gewählte Kampagnenillustration."},{"src":"assets/calliaste-elfenform-lute-v1.webp","alt":"Calliaste Shanda in Elfenform mit einer Laute","title":"Calliaste · Elfenform mit Laute","caption":"Elfenform mit Laute – vom Spieler gewählte Kampagnenillustration."}],
-"branna-cole":[{"src": "assets/branna-cole-v1.webp", "alt": "Branna Cole — Zimmerin und Tischlerin", "title": "Branna Cole", "caption": "Zimmerin und Tischlerin im Horn von Abaddon."}],
-"osric-fenlow":[{"src": "assets/osric-fenlow-v1.webp", "alt": "Osric Fenlow — Schmied", "title": "Osric Fenlow", "caption": "Schmied im Horn von Abaddon."}],
-"edda-marr":[{"src": "assets/edda-marr-v1.webp", "alt": "Edda Marr — Köchin und Brauerin", "title": "Edda Marr", "caption": "Köchin und Brauerin im Horn von Abaddon."}],
-"darric-holt":[{"src": "assets/darric-holt-v1.webp", "alt": "Darric Holt — Maurer und Steinhandwerker", "title": "Darric Holt", "caption": "Maurer und Steinhandwerker im Horn von Abaddon."}],
-"horn-abaddon":[{"src": "assets/horn-abaddon-v1.webp", "alt": "Das bewachsene Horn von Abaddon unter dunklem Himmel.", "title": "Das Horn von Abaddon", "caption": "Außenansicht des Horns — Kampagnenillustration."}],
-  __home:['war-council','zwischen-den-seiten','styke','vesper','valeria','thorn','tiadora','balentyne','grumblejack','sakkarot','tamsin','nella','mirelle','kaitlyn','tacitus','elise','mara','ellyn'],
-  'war-council':[{src:'assets/war-council-v2.webp',alt:'Styke, Vesper und Valeria über Karten und Plänen beim Kriegsrat im Kerzenschein.',title:'Kriegsrat in Aldencross',caption:'Stimmungsbild für die Gruppe: kaltes Licht draußen, Feuer und Karten drinnen, der Angriff immer als Gedanke zwischen euch.'}],
-  styke:[{src:'assets/styke-battlefield.png',alt:'Styke als dunkler Krieger auf einem zerstörten Schlachtfeld, mit eisblauen Augen, schwarzem Haar und Schwert.',title:'Styke',caption:'Konzeptillustration des Aasimars: schlank, schwarz gerüstet, eisblaue Augen, eher unheilvoller Feldherr als glänzender Held.'}],
-  vesper:[
-    {src:'assets/vesper-normal-v1.webp',alt:'Vesper sitzt mit ihrem roten Buch in einem gotischen Zimmer; ihr schlanker Greifschwanz liegt hinter dem Stuhl.',title:'Vesper',caption:'Das rote Buch, Kerzenlicht und der Blick, der beim Lesen schon den nächsten Ausgang sucht.'},
-    {src:'assets/vesper-private-v1.webp',alt:'Vesper steht im schwarzen Nachtgewand am Bett und blickt über die Schulter; ihr Greifschwanz liegt locker um ihre Beine.',title:'Vesper – privat',caption:'Schwarze Seide statt Reisezeug; der Schwanz bleibt Teil ihrer Haltung, nicht Mittelpunkt des Bildes.'}
+  "marta-dian": [
+    {
+      "src": "assets/marta-normal-20261110.webp",
+      "alt": "Marta mit Mitra-Zeichen und Buch.",
+      "title": "Marta Dian",
+      "caption": "Marta mit Mitra-Zeichen und Buch."
+    },
+    {
+      "src": "assets/marta-private-20261110.webp",
+      "alt": "Marta in einer ruhigen privaten Stunde.",
+      "title": "Marta · privat",
+      "caption": "Marta in einer ruhigen privaten Stunde."
+    }
   ],
-  valeria:[
-    {src:'assets/valeria-normal-v1.webp',alt:'Valeria kniet im verschneiten Festungshof und zieht den Riemen ihrer Beinschiene fest.',title:'Valeria',caption:'Platte, kalter Stein und der kurze Augenblick vor dem nächsten Marsch.'},
-    {src:'assets/valeria-private-v1.webp',alt:'Valeria steht in einem dunklen durchscheinenden Kleid in einem Schlafgemach; Schwert und Rüstung liegen griffbereit.',title:'Valeria – privat',caption:'Das Kleid ist weich, die Haltung bleibt ritterlich; Rüstung und Schwert sind nie weit fort.'}
+  "halla-amon": [
+    {
+      "src": "assets/halla-normal-20261110.webp",
+      "alt": "Halla mit Schwert und Reiseausrüstung.",
+      "title": "Halla Amon",
+      "caption": "Halla mit Schwert und Reiseausrüstung."
+    },
+    {
+      "src": "assets/halla-private-20261110.webp",
+      "alt": "Halla außerhalb des Dienstes.",
+      "title": "Halla · privat",
+      "caption": "Halla außerhalb des Dienstes."
+    }
   ],
-  tamsin:[
-    {src:'assets/tamsin-normal-v1.webp',alt:'Tamsin steht in dunkler Rüstung in einem verschneiten Stallhof.',title:'Tamsin Blackerly',caption:'Eine ehemalige Sergeantin, die auch ohne Rangabzeichen nach Wache und Stahl aussieht.'},
-    {src:'assets/tamsin-private-v1.webp',alt:'Tamsin sitzt in dunklem Nachtgewand auf einem Bett; eine Kette liegt neben ihr.',title:'Tamsin – privat',caption:'Abgelegte Rüstung, nicht abgelegte Wachsamkeit.'}
+  "bianca-devallya": [
+    {
+      "src": "assets/bianca-normal-20261110.webp",
+      "alt": "Bianca mit ihrer Laute.",
+      "title": "Bianca DeVallya",
+      "caption": "Bianca mit ihrer Laute."
+    },
+    {
+      "src": "assets/bianca-private-20261110.webp",
+      "alt": "Bianca in einer privaten Stunde, die Laute neben ihr.",
+      "title": "Bianca · privat",
+      "caption": "Bianca in einer privaten Stunde, die Laute neben ihr."
+    }
   ],
-  nella:[
-    {src:'assets/nella-normal-v1.webp',alt:'Nella steht mit einem Tablett in einer warmen Schankstube, das dunkle Haar zu einem schweren Zopf gebunden.',title:'Nella',caption:'Köchin, Wirtshaushand und seit dem 2. Februar ein gebundenes Mitglied des Knotens.'},
-    {src:'assets/nella-private-v1.webp',alt:'Nella sitzt mit gelöstem dunklem Haar im hellen Unterkleid auf einem Bett.',title:'Nella – privat',caption:'Der schwere Zopf ist gelöst; die Kerbe in der linken Braue bleibt unverkennbar.'}
+  "traya-demarco": [
+    {
+      "src": "assets/traya-normal-20261110.webp",
+      "alt": "Traya im selbstgewählten Erscheinungsbild.",
+      "title": "Traya DeMarco",
+      "caption": "Traya im selbstgewählten Erscheinungsbild."
+    },
+    {
+      "src": "assets/traya-private-20261110.webp",
+      "alt": "Traya am Feuer.",
+      "title": "Traya · privat",
+      "caption": "Traya am Feuer."
+    }
   ],
-
-  mirelle:[
-    {src:'assets/mirelle-normal-v1.webp',alt:'Mirelle steht mit Maßband und Stoffmustern in ihrem Schneiderladen.',title:'Mirelle',caption:'Schneiderin in Aldencross: sichere Hand, eigener Laden und ein Auge für Haltung und Bewegung.'},
-    {src:'assets/mirelle-private-v1.webp',alt:'Mirelle sitzt in schwarzer Spitze zwischen Stoffen und Kerzenlicht in ihrem Schneiderladen.',title:'Mirelle – privat',caption:'Nach Ladenschluss, zwischen Maßband, Spitze und jener Neugier, die sie ins Dalliance führte.'}
+  "rika": [
+    {
+      "src": "assets/rika-work-20261110.webp",
+      "alt": "Rika auf einem Arbeitsweg im Horn. Schlüssel im Bild begründen keinen tatsächlichen Schlüsselbesitz.",
+      "title": "Rika",
+      "caption": "Rika auf einem Arbeitsweg im Horn. Schlüssel im Bild begründen keinen tatsächlichen Schlüsselbesitz."
+    }
   ],
-  kaitlyn:[
-    {src:'assets/kaitlyn-candlelight.png',alt:'Kaitlyn Mott als rothaarige Frau mit grünen Augen im Kerzenschein, weich und zugleich nachdenklich dargestellt.',title:'Kaitlyn Mott',caption:'Rote Haare, grüne Augen und die gespannte Ruhe im Haus ihres Mannes.'},
-    {src:'assets/kaitlyn-private-v1.webp',alt:'Kaitlyn sitzt in einem weinroten Morgenmantel vor dem Spiegel ihres Schlafgemachs.',title:'Kaitlyn – privat',caption:'Weinrote Seide, ein ungemachtes Bett und keine höfische Maske mehr.'}
+  "linnet": [
+    {
+      "src": "assets/linnet-work-canon-v2.webp",
+      "alt": "Linnet mit kurzem braunem Haar und schlichter Arbeitskleidung bei der Pferdepflege.",
+      "title": "Linnet",
+      "caption": "Linnet bei der gewöhnlichen Pferdepflege. Das dargestellte Pferd ist kein Rex-Porträt."
+    }
   ],
-  tacitus:[
-    {src:'assets/tacitus-study-v1.webp',alt:'Magisterin Tacitus von Morimun sitzt mit Goldbrille und rotbraunem Haar an ihrem Schreibtisch in einer winterlichen Bibliothek.',title:'Magisterin Tacitus von Morimun',caption:'Pergamente, Bücher und kaltes Winterlicht hinter dem Fenster; eine Gelehrte in ihrem eigentlichen Element.'},
-    {src:'assets/tacitus-private-v1.webp',alt:'Tacitus liegt in schwarzroter Spitze zwischen dunkelroten Kissen und einem aufgeschlagenen Buch.',title:'Tacitus – privat',caption:'Das Buch bleibt geöffnet, doch Robe, Kerzenlicht und Haltung gehören nicht mehr zum Arbeitszimmer.'}
+  "tessa": [
+    {
+      "src": "assets/tessa-work-canon-v2.webp",
+      "alt": "Tessa mit dunkelbraunem Zopf und dunklen Augen in braunem Arbeitskleid und Schürze in der Küche.",
+      "title": "Tessa",
+      "caption": "Dunkles Haar, dunkle Augen und kräftige Arbeitsunterarme; Tessa bei der Küchenarbeit."
+    }
   ],
-  thorn:[{src:'assets/thorn-study.webp',alt:'Kardinal Adrastus Thorn als elegant gekleideter, dunkelhaariger Mann in seinem kerzenbeleuchteten Arbeitszimmer.',title:'Kardinal Adrastus Thorn',caption:'Thorn, wie der Knoten ihn kennt: kultiviert, beinahe freundlich und vollkommen Herr des Raumes – Macht ohne sichtbare Anstrengung.'}],
-  tiadora:[{src:'assets/tiadora-normal-v1.webp',alt:'Tiadora steht in einem schwarzroten Kleid auf der Treppe von Thorns Anwesen und hält einen versiegelten Brief.',title:'Tiadora',caption:'Thorns Botin mit einem Brief in der Hand: vollkommen beherrscht und niemals bloß schmückendes Beiwerk.'}],
-  elise:[
-    {src:'assets/elise-normal-v2.webp',alt:'Elise steht in einem schwarzen Kleid mit einem weißen Raben vor einem winterlichen Fenster.',title:'Elise Zadaria',caption:'Die Anführerin der White Ravens, in Schwarz vor Schnee und mit dem weißen Raben an ihrer Seite.'},
-    {src:'assets/elise-private-v1.webp',alt:'Elise sitzt in einem schwarzen Kleid am winterlichen Fenster, der weiße Rabe neben ihr und ein Bein entblößt.',title:'Elise – privat',caption:'Derselbe kalte Raum, nur ohne die förmliche Distanz der stehenden Anführerin.'}
+  "hester": [
+    {
+      "src": "assets/hester-work-20261110.webp",
+      "alt": "Hester mit Feder und Aufzeichnungen.",
+      "title": "Hester",
+      "caption": "Hester mit Feder und Aufzeichnungen."
+    },
+    {
+      "src": "assets/hester-private-20261110.webp",
+      "alt": "Hester liest bei Kerzenlicht.",
+      "title": "Hester · privat",
+      "caption": "Hester liest bei Kerzenlicht."
+    }
   ],
-  mara:[
-    {src:'assets/mara-normal-v1.webp',alt:'Mara trägt gefaltete Wäsche durch einen winterlichen Arbeitshof.',title:'Mara Fenner',caption:'Wäsche, kalter Hof und der unscheinbare Arbeitsweg bis in Balentyne.'},
-    {src:'assets/mara-private-v1.webp',alt:'Mara steht im Waschraum mit geöffneter Bluse zwischen Leinen, Bottich und Feuer.',title:'Mara – privat',caption:'Nach der Schicht im Waschraum; Leinenstaub, Feuerwärme und offene Schnürung.'}
+  "calliaste": [
+    {
+      "src": "assets/calliaste-shanda-v2.webp",
+      "alt": "Calliaste Shanda, geflügelte Lillend-Azata mit Schlangenleib",
+      "title": "Calliaste Shanda",
+      "caption": "Vom Spieler gewähltes Porträt für Calliaste Shanda."
+    },
+    {
+      "src": "assets/calliaste-elfenform-balcony-v1.webp",
+      "alt": "Calliaste Shanda in Elfenform auf einer mondbeschienenen Terrasse",
+      "title": "Calliaste · Elfenform",
+      "caption": "Elfenform auf der Terrasse – vom Spieler gewählte Kampagnenillustration."
+    },
+    {
+      "src": "assets/calliaste-elfenform-lute-v1.webp",
+      "alt": "Calliaste Shanda in Elfenform mit einer Laute",
+      "title": "Calliaste · Elfenform mit Laute",
+      "caption": "Elfenform mit Laute – vom Spieler gewählte Kampagnenillustration."
+    }
   ],
-  ellyn:[
-    {src:'assets/ellyn-normal-v1.webp',alt:'Ellyn sitzt mit einem Korb Wäsche in einem verschneiten Arbeitshof.',title:'Ellyn Reed',caption:'Ein stiller Wintermorgen zwischen Wäschekorb, Arbeit und den Mauern der Festung.'},
-    {src:'assets/ellyn-private-v1.webp',alt:'Ellyn sitzt im hellen Unterkleid auf einem Bett in einer einfachen Kammer.',title:'Ellyn – privat',caption:'Die Arbeitskleidung liegt fort; dieselbe Frau in einer seltenen stillen Stunde.'}
+  "branna-cole": [
+    {
+      "src": "assets/branna-cole-v1.webp",
+      "alt": "Branna Cole — Zimmerin und Tischlerin",
+      "title": "Branna Cole",
+      "caption": "Zimmerin und Tischlerin im Horn von Abaddon."
+    }
   ],
-  grumblejack:[{src:'assets/grumblejack-camp.webp',alt:'Der riesige Oger Grumblejack in zerschlissener Winterausrüstung vor einem Feldlager nahe Balentyne.',title:'Grumblejack',caption:'Nicht Gefolgsmann und nicht Haustier: ein freier Oger, Freund des Knotens, mit Ketten als Erinnerung und Varlet im Lager hinter sich.'}],
-  sakkarot:[{src:'assets/sakkarot-fire-axe.webp',alt:'Sakkarot Fire-Axe als schwarzfelliges Bugbear-Kriegshaupt mit brennender Großaxt vor seinem winterlichen Heer.',title:'Sakkarot Fire-Axe',caption:'Das schwarze Fell, die brennende Axt und dahinter ein Heer – doch seine gefährlichste Waffe bleibt der Verstand, den andere ihm nicht zutrauen.'}],
-  balentyne:[{src:'assets/balentyne-winter.webp',alt:'Balentyne als gewaltige winterliche Grenzfestung über Aldencross mit getrenntem Torhaus und steinernen Brücken.',title:'Balentyne im Winter',caption:'Spielerbekanntes Stimmungsbild der Watch Wall: Festung, Torhaus, Brücken und Aldencross darunter. Keine maßstabgetreue Karte.'}],
-  'story-so-far':[{src:'assets/war-council-v2.webp',alt:'Die drei Hauptfiguren beim Kriegsrat im winterlichen Kerzenschein.',title:'Die drei im Schatten',caption:'Ein Bild für den Ton der Kampagne: verschworen, privat, gefährlich und immer mit der Festung im Kopf.'}],
-  'spielstand':[{src:'assets/war-council-v2.webp',alt:'Die Gruppe am Tisch über Plänen gebeugt.',title:'Lagebild',caption:'Der aktuelle Spielstand ist weniger Triumph als gespannte Vorbereitung: Wege offen, Zeit knapp, Verbündete getrennt im Feld.'}],
-  'bogen-styke':[{src:'assets/styke-battlefield.png',alt:'Styke auf dem Schlachtfeld.',title:'Styke – Referenzbild',caption:'Visuelle Kurzreferenz zum Charakterbogen.'}],
-  'bogen-vesper':[{src:'assets/vesper-red-book-v3.webp',alt:'Vesper mit dem roten Buch am Fenster.',title:'Vesper – Referenzbild',caption:'Visuelle Kurzreferenz zum Charakterbogen.'}],
-  'bogen-valeria':[{src:'assets/valeria-armory-v2.webp',alt:'Valeria beim Anlegen der Rüstung im Schnee.',title:'Valeria – Referenzbild',caption:'Visuelle Kurzreferenz zum Charakterbogen.'}],
-  'dornpakt':[{src:'assets/thorn-study.webp',alt:'Kardinal Thorn in seinem Arbeitszimmer.',title:'Die Hand hinter dem Pakt',caption:'Der Pakt trägt Tinte und Siegel. Seine eigentliche Schwerkraft sitzt im ledernen Stuhl gegenüber.'}],
-  'nessian-siegel':[{src:'assets/tiadora-funeral-v3.webp',alt:'Tiadora in schwarzer Trauerkleidung auf Thorns Treppe.',title:'Wenn das Siegel bricht',caption:'Das Siegel ruft keine abstrakte Macht. Es ruft Tiadora – und mit ihr Thorns unmittelbare Aufmerksamkeit.'}],
-  'feldgruppe':[{src:'assets/grumblejack-camp.webp',alt:'Grumblejack im winterlichen Feldlager.',title:'Draußen vor Aldencross',caption:'Grumblejack und Hakons Männer halten sich jenseits des Gasthauses bereit. Das Lager bleibt beweglich, kalt und gefährlich.'}],
-  'angriffsplan':[{src:'assets/balentyne-winter.webp',alt:'Die Festung Balentyne über Aldencross im Winter.',title:'Das Ziel',caption:'Jeder offene Faden führt am Ende hierher. Das Bild ist Atmosphäre und Übersicht, kein neuer Aufklärungsgewinn.'}],
-  'anatomie-kaitlyn':[{src:'assets/kaitlyn-private-v1.webp',alt:'Kaitlyn im weinroten Morgenmantel vor ihrem Spiegel.',title:'Kaitlyn – visuelle Referenz',caption:'Private Ansicht im Mott-Haus.'}],
-  'anatomie-tacitus':[{src:'assets/tacitus-private-v1.webp',alt:'Tacitus in schwarzroter Spitze zwischen dunkelroten Kissen und einem aufgeschlagenen Buch.',title:'Tacitus – private Referenz',caption:'Goldbrille, rotbraunes Haar, schwarze Spitze und das Buch in Reichweite.'}],
-  'rotes-buch':[{src:'assets/red-book-calistria-v2.webp',alt:'Aufgeschlagenes, rot gebundenes Calistria-Buch mit goldenen Ornamenten, Rosen, Bienenmotiven und erotischen Illustrationen im Kerzenlicht.',title:'Vespers rotes Buch',caption:'Leder, Gold, Rosen und Calistrias Lehre: schön genug, um wie Andacht zu wirken, praktisch genug, um benutzt zu werden.'}],
-  'zwischen-den-seiten':[{src:'assets/red-book-calistria-v2.webp',alt:'Aufgeschlagenes rotes Buch mit goldenen Ornamenten, Rosen, Kerzenlicht und illustrierten Seiten.',title:'Zwischen meinen Seiten',caption:'Der Band, wie Vesper ihn kennt: prachtvoll, sinnlich und inzwischen schwerer zu erklären als zu lesen.'}]
+  "osric-fenlow": [
+    {
+      "src": "assets/osric-fenlow-v1.webp",
+      "alt": "Osric Fenlow — Schmied",
+      "title": "Osric Fenlow",
+      "caption": "Schmied im Horn von Abaddon."
+    }
+  ],
+  "edda-marr": [
+    {
+      "src": "assets/edda-marr-v1.webp",
+      "alt": "Edda Marr — Köchin und Brauerin",
+      "title": "Edda Marr",
+      "caption": "Köchin und Brauerin im Horn von Abaddon."
+    }
+  ],
+  "darric-holt": [
+    {
+      "src": "assets/darric-holt-v1.webp",
+      "alt": "Darric Holt — Maurer und Steinhandwerker",
+      "title": "Darric Holt",
+      "caption": "Maurer und Steinhandwerker im Horn von Abaddon."
+    }
+  ],
+  "horn-abaddon": [
+    {
+      "src": "assets/horn-abaddon-v1.webp",
+      "alt": "Das bewachsene Horn von Abaddon unter dunklem Himmel.",
+      "title": "Das Horn von Abaddon",
+      "caption": "Außenansicht des Horns — Kampagnenillustration."
+    }
+  ],
+  "__home": [
+    "war-council",
+    "zwischen-den-seiten",
+    "styke",
+    "vesper",
+    "valeria",
+    "thorn",
+    "tiadora",
+    "balentyne",
+    "grumblejack",
+    "sakkarot",
+    "tamsin",
+    "nella",
+    "mirelle",
+    "kaitlyn",
+    "tacitus",
+    "elise",
+    "mara",
+    "ellyn"
+  ],
+  "war-council": [
+    {
+      "src": "assets/war-council-v2.webp",
+      "alt": "Styke, Vesper und Valeria über Karten und Plänen beim Kriegsrat im Kerzenschein.",
+      "title": "Kriegsrat in Aldencross",
+      "caption": "Stimmungsbild für die Gruppe: kaltes Licht draußen, Feuer und Karten drinnen, der Angriff immer als Gedanke zwischen euch."
+    }
+  ],
+  "styke": [
+    {
+      "src": "assets/styke-battlefield.png",
+      "alt": "Styke als dunkler Krieger auf einem zerstörten Schlachtfeld, mit eisblauen Augen, schwarzem Haar und Schwert.",
+      "title": "Styke",
+      "caption": "Konzeptillustration des Aasimars: schlank, schwarz gerüstet, eisblaue Augen, eher unheilvoller Feldherr als glänzender Held."
+    }
+  ],
+  "vesper": [
+    {
+      "src": "assets/vesper-normal-v1.webp",
+      "alt": "Vesper sitzt mit ihrem roten Buch in einem gotischen Zimmer; ihr schlanker Greifschwanz liegt hinter dem Stuhl.",
+      "title": "Vesper",
+      "caption": "Das rote Buch, Kerzenlicht und der Blick, der beim Lesen schon den nächsten Ausgang sucht."
+    },
+    {
+      "src": "assets/vesper-private-v1.webp",
+      "alt": "Vesper steht im schwarzen Nachtgewand am Bett und blickt über die Schulter; ihr Greifschwanz liegt locker um ihre Beine.",
+      "title": "Vesper – privat",
+      "caption": "Schwarze Seide statt Reisezeug; der Schwanz bleibt Teil ihrer Haltung, nicht Mittelpunkt des Bildes."
+    }
+  ],
+  "valeria": [
+    {
+      "src": "assets/valeria-normal-v1.webp",
+      "alt": "Valeria kniet im verschneiten Festungshof und zieht den Riemen ihrer Beinschiene fest.",
+      "title": "Valeria",
+      "caption": "Platte, kalter Stein und der kurze Augenblick vor dem nächsten Marsch."
+    },
+    {
+      "src": "assets/valeria-private-v1.webp",
+      "alt": "Valeria steht in einem dunklen durchscheinenden Kleid in einem Schlafgemach; Schwert und Rüstung liegen griffbereit.",
+      "title": "Valeria – privat",
+      "caption": "Das Kleid ist weich, die Haltung bleibt ritterlich; Rüstung und Schwert sind nie weit fort."
+    }
+  ],
+  "tamsin": [
+    {
+      "src": "assets/tamsin-normal-v1.webp",
+      "alt": "Tamsin steht in dunkler Rüstung in einem verschneiten Stallhof.",
+      "title": "Tamsin Blackerly",
+      "caption": "Eine ehemalige Sergeantin, die auch ohne Rangabzeichen nach Wache und Stahl aussieht."
+    },
+    {
+      "src": "assets/tamsin-private-v1.webp",
+      "alt": "Tamsin sitzt in dunklem Nachtgewand auf einem Bett; eine Kette liegt neben ihr.",
+      "title": "Tamsin – privat",
+      "caption": "Abgelegte Rüstung, nicht abgelegte Wachsamkeit."
+    }
+  ],
+  "nella": [
+    {
+      "src": "assets/nella-normal-v1.webp",
+      "alt": "Nella steht mit einem Tablett in einer warmen Schankstube, das dunkle Haar zu einem schweren Zopf gebunden.",
+      "title": "Nella",
+      "caption": "Köchin, Wirtshaushand und seit dem 2. Februar ein gebundenes Mitglied des Knotens."
+    },
+    {
+      "src": "assets/nella-private-v1.webp",
+      "alt": "Nella sitzt mit gelöstem dunklem Haar im hellen Unterkleid auf einem Bett.",
+      "title": "Nella – privat",
+      "caption": "Der schwere Zopf ist gelöst; die Kerbe in der linken Braue bleibt unverkennbar."
+    }
+  ],
+  "mirelle": [
+    {
+      "src": "assets/mirelle-normal-v1.webp",
+      "alt": "Mirelle steht mit Maßband und Stoffmustern in ihrem Schneiderladen.",
+      "title": "Mirelle",
+      "caption": "Schneiderin in Aldencross: sichere Hand, eigener Laden und ein Auge für Haltung und Bewegung."
+    },
+    {
+      "src": "assets/mirelle-private-v1.webp",
+      "alt": "Mirelle sitzt in schwarzer Spitze zwischen Stoffen und Kerzenlicht in ihrem Schneiderladen.",
+      "title": "Mirelle – privat",
+      "caption": "Nach Ladenschluss, zwischen Maßband, Spitze und jener Neugier, die sie ins Dalliance führte."
+    }
+  ],
+  "kaitlyn": [
+    {
+      "src": "assets/kaitlyn-candlelight.png",
+      "alt": "Kaitlyn Mott als rothaarige Frau mit grünen Augen im Kerzenschein, weich und zugleich nachdenklich dargestellt.",
+      "title": "Kaitlyn Mott",
+      "caption": "Rote Haare, grüne Augen und die gespannte Ruhe im Haus ihres Mannes."
+    },
+    {
+      "src": "assets/kaitlyn-private-v1.webp",
+      "alt": "Kaitlyn sitzt in einem weinroten Morgenmantel vor dem Spiegel ihres Schlafgemachs.",
+      "title": "Kaitlyn – privat",
+      "caption": "Weinrote Seide, ein ungemachtes Bett und keine höfische Maske mehr."
+    }
+  ],
+  "tacitus": [
+    {
+      "src": "assets/tacitus-study-v1.webp",
+      "alt": "Magisterin Tacitus von Morimun sitzt mit Goldbrille und rotbraunem Haar an ihrem Schreibtisch in einer winterlichen Bibliothek.",
+      "title": "Magisterin Tacitus von Morimun",
+      "caption": "Pergamente, Bücher und kaltes Winterlicht hinter dem Fenster; eine Gelehrte in ihrem eigentlichen Element."
+    },
+    {
+      "src": "assets/tacitus-private-v1.webp",
+      "alt": "Tacitus liegt in schwarzroter Spitze zwischen dunkelroten Kissen und einem aufgeschlagenen Buch.",
+      "title": "Tacitus – privat",
+      "caption": "Das Buch bleibt geöffnet, doch Robe, Kerzenlicht und Haltung gehören nicht mehr zum Arbeitszimmer."
+    }
+  ],
+  "thorn": [
+    {
+      "src": "assets/thorn-study.webp",
+      "alt": "Kardinal Adrastus Thorn als elegant gekleideter, dunkelhaariger Mann in seinem kerzenbeleuchteten Arbeitszimmer.",
+      "title": "Kardinal Adrastus Thorn",
+      "caption": "Thorn, wie der Knoten ihn kennt: kultiviert, beinahe freundlich und vollkommen Herr des Raumes – Macht ohne sichtbare Anstrengung."
+    }
+  ],
+  "tiadora": [
+    {
+      "src": "assets/tiadora-normal-v1.webp",
+      "alt": "Tiadora steht in einem schwarzroten Kleid auf der Treppe von Thorns Anwesen und hält einen versiegelten Brief.",
+      "title": "Tiadora",
+      "caption": "Thorns Botin mit einem Brief in der Hand: vollkommen beherrscht und niemals bloß schmückendes Beiwerk."
+    }
+  ],
+  "elise": [
+    {
+      "src": "assets/elise-normal-v2.webp",
+      "alt": "Elise steht in einem schwarzen Kleid mit einem weißen Raben vor einem winterlichen Fenster.",
+      "title": "Elise Zadaria",
+      "caption": "Die Anführerin der White Ravens, in Schwarz vor Schnee und mit dem weißen Raben an ihrer Seite."
+    },
+    {
+      "src": "assets/elise-private-v1.webp",
+      "alt": "Elise sitzt in einem schwarzen Kleid am winterlichen Fenster, der weiße Rabe neben ihr und ein Bein entblößt.",
+      "title": "Elise – privat",
+      "caption": "Derselbe kalte Raum, nur ohne die förmliche Distanz der stehenden Anführerin."
+    }
+  ],
+  "mara": [
+    {
+      "src": "assets/mara-normal-v1.webp",
+      "alt": "Mara trägt gefaltete Wäsche durch einen winterlichen Arbeitshof.",
+      "title": "Mara Fenner",
+      "caption": "Wäsche, kalter Hof und der unscheinbare Arbeitsweg bis in Balentyne."
+    },
+    {
+      "src": "assets/mara-private-v1.webp",
+      "alt": "Mara steht im Waschraum mit geöffneter Bluse zwischen Leinen, Bottich und Feuer.",
+      "title": "Mara – privat",
+      "caption": "Nach der Schicht im Waschraum; Leinenstaub, Feuerwärme und offene Schnürung."
+    }
+  ],
+  "ellyn": [
+    {
+      "src": "assets/ellyn-normal-v1.webp",
+      "alt": "Ellyn sitzt mit einem Korb Wäsche in einem verschneiten Arbeitshof.",
+      "title": "Ellyn Reed",
+      "caption": "Ein stiller Wintermorgen zwischen Wäschekorb, Arbeit und den Mauern der Festung."
+    },
+    {
+      "src": "assets/ellyn-private-v1.webp",
+      "alt": "Ellyn sitzt im hellen Unterkleid auf einem Bett in einer einfachen Kammer.",
+      "title": "Ellyn – privat",
+      "caption": "Die Arbeitskleidung liegt fort; dieselbe Frau in einer seltenen stillen Stunde."
+    }
+  ],
+  "grumblejack": [
+    {
+      "src": "assets/grumblejack-camp.webp",
+      "alt": "Der riesige Oger Grumblejack in zerschlissener Winterausrüstung vor einem Feldlager nahe Balentyne.",
+      "title": "Grumblejack",
+      "caption": "Nicht Gefolgsmann und nicht Haustier: ein freier Oger, Freund des Knotens, mit Ketten als Erinnerung und Varlet im Lager hinter sich."
+    }
+  ],
+  "sakkarot": [
+    {
+      "src": "assets/sakkarot-fire-axe.webp",
+      "alt": "Sakkarot Fire-Axe als schwarzfelliges Bugbear-Kriegshaupt mit brennender Großaxt vor seinem winterlichen Heer.",
+      "title": "Sakkarot Fire-Axe",
+      "caption": "Das schwarze Fell, die brennende Axt und dahinter ein Heer – doch seine gefährlichste Waffe bleibt der Verstand, den andere ihm nicht zutrauen."
+    }
+  ],
+  "balentyne": [
+    {
+      "src": "assets/balentyne-winter.webp",
+      "alt": "Balentyne als gewaltige winterliche Grenzfestung über Aldencross mit getrenntem Torhaus und steinernen Brücken.",
+      "title": "Balentyne im Winter",
+      "caption": "Spielerbekanntes Stimmungsbild der Watch Wall: Festung, Torhaus, Brücken und Aldencross darunter. Keine maßstabgetreue Karte."
+    }
+  ],
+  "story-so-far": [
+    {
+      "src": "assets/war-council-v2.webp",
+      "alt": "Die drei Hauptfiguren beim Kriegsrat im winterlichen Kerzenschein.",
+      "title": "Die drei im Schatten",
+      "caption": "Ein Bild für den Ton der Kampagne: verschworen, privat, gefährlich und immer mit der Festung im Kopf."
+    }
+  ],
+  "spielstand": [
+    {
+      "src": "assets/war-council-v2.webp",
+      "alt": "Die Gruppe am Tisch über Plänen gebeugt.",
+      "title": "Lagebild",
+      "caption": "Der aktuelle Spielstand ist weniger Triumph als gespannte Vorbereitung: Wege offen, Zeit knapp, Verbündete getrennt im Feld."
+    }
+  ],
+  "bogen-styke": [
+    {
+      "src": "assets/styke-battlefield.png",
+      "alt": "Styke auf dem Schlachtfeld.",
+      "title": "Styke – Referenzbild",
+      "caption": "Visuelle Kurzreferenz zum Charakterbogen."
+    }
+  ],
+  "bogen-vesper": [
+    {
+      "src": "assets/vesper-red-book-v3.webp",
+      "alt": "Vesper mit dem roten Buch am Fenster.",
+      "title": "Vesper – Referenzbild",
+      "caption": "Visuelle Kurzreferenz zum Charakterbogen."
+    }
+  ],
+  "bogen-valeria": [
+    {
+      "src": "assets/valeria-armory-v2.webp",
+      "alt": "Valeria beim Anlegen der Rüstung im Schnee.",
+      "title": "Valeria – Referenzbild",
+      "caption": "Visuelle Kurzreferenz zum Charakterbogen."
+    }
+  ],
+  "dornpakt": [
+    {
+      "src": "assets/thorn-study.webp",
+      "alt": "Kardinal Thorn in seinem Arbeitszimmer.",
+      "title": "Die Hand hinter dem Pakt",
+      "caption": "Der Pakt trägt Tinte und Siegel. Seine eigentliche Schwerkraft sitzt im ledernen Stuhl gegenüber."
+    }
+  ],
+  "nessian-siegel": [
+    {
+      "src": "assets/tiadora-funeral-v3.webp",
+      "alt": "Tiadora in schwarzer Trauerkleidung auf Thorns Treppe.",
+      "title": "Wenn das Siegel bricht",
+      "caption": "Das Siegel ruft keine abstrakte Macht. Es ruft Tiadora – und mit ihr Thorns unmittelbare Aufmerksamkeit."
+    }
+  ],
+  "feldgruppe": [
+    {
+      "src": "assets/grumblejack-camp.webp",
+      "alt": "Grumblejack im winterlichen Feldlager.",
+      "title": "Draußen vor Aldencross",
+      "caption": "Grumblejack und Hakons Männer halten sich jenseits des Gasthauses bereit. Das Lager bleibt beweglich, kalt und gefährlich."
+    }
+  ],
+  "angriffsplan": [
+    {
+      "src": "assets/balentyne-winter.webp",
+      "alt": "Die Festung Balentyne über Aldencross im Winter.",
+      "title": "Das Ziel",
+      "caption": "Jeder offene Faden führt am Ende hierher. Das Bild ist Atmosphäre und Übersicht, kein neuer Aufklärungsgewinn."
+    }
+  ],
+  "anatomie-kaitlyn": [
+    {
+      "src": "assets/kaitlyn-private-v1.webp",
+      "alt": "Kaitlyn im weinroten Morgenmantel vor ihrem Spiegel.",
+      "title": "Kaitlyn – visuelle Referenz",
+      "caption": "Private Ansicht im Mott-Haus."
+    }
+  ],
+  "anatomie-tacitus": [
+    {
+      "src": "assets/tacitus-private-v1.webp",
+      "alt": "Tacitus in schwarzroter Spitze zwischen dunkelroten Kissen und einem aufgeschlagenen Buch.",
+      "title": "Tacitus – private Referenz",
+      "caption": "Goldbrille, rotbraunes Haar, schwarze Spitze und das Buch in Reichweite."
+    }
+  ],
+  "rotes-buch": [
+    {
+      "src": "assets/red-book-calistria-v2.webp",
+      "alt": "Aufgeschlagenes, rot gebundenes Calistria-Buch mit goldenen Ornamenten, Rosen, Bienenmotiven und erotischen Illustrationen im Kerzenlicht.",
+      "title": "Vespers rotes Buch",
+      "caption": "Leder, Gold, Rosen und Calistrias Lehre: schön genug, um wie Andacht zu wirken, praktisch genug, um benutzt zu werden."
+    }
+  ],
+  "zwischen-den-seiten": [
+    {
+      "src": "assets/red-book-calistria-v2.webp",
+      "alt": "Aufgeschlagenes rotes Buch mit goldenen Ornamenten, Rosen, Kerzenlicht und illustrierten Seiten.",
+      "title": "Zwischen meinen Seiten",
+      "caption": "Der Band, wie Vesper ihn kennt: prachtvoll, sinnlich und inzwischen schwerer zu erklären als zu lesen."
+    }
+  ]
 };
 function renderArtworkFigure(x,extra=''){
   return `<figure class="wiki-art ${extra}"><img loading="lazy" src="${esc(x.src)}" alt="${esc(x.alt||x.title||'Illustration')}"><figcaption><strong>${esc(x.title||'Illustration')}</strong>${x.caption?`<span>${esc(x.caption)}</span>`:''}</figcaption></figure>`;
