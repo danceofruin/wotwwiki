@@ -1,0 +1,1512 @@
+{
+  "meta": {
+    "schemaVersion": 1,
+    "playerSafe": true,
+    "authority": "GENERATED VIEW. DO NOT USE AS CAMPAIGN AUTHORITY.",
+    "reviewedAt": "2026-11-10",
+    "campaignDate": "4712-07-29",
+    "campaignLabel": "29. Juli 4712 AR · später Nachmittag",
+    "sourceCommit": "96ce7aee3f02689d250f965b9a28975e9a7951cb",
+    "sourceRevision": "85631e1491da2c674db202555a7a8da95bc106a00b09f7632fc680c3478b16f8",
+    "generatedAt": "2026-11-10T16:47:27+00:00"
+  },
+  "levels": [
+    {
+      "id": "sanctum",
+      "label": "Sanctum",
+      "subtitle": "Ritual · Siegel · Balkon"
+    },
+    {
+      "id": "three",
+      "label": "Ebene Drei",
+      "subtitle": "Labor · Bibliothek · Fluglandeplatz"
+    },
+    {
+      "id": "two",
+      "label": "Ebene Zwei",
+      "subtitle": "Kernquartiere · Gäste · Bad"
+    },
+    {
+      "id": "one",
+      "label": "Ebene Eins",
+      "subtitle": "Death’s Head · Schmiede · Bewohner"
+    },
+    {
+      "id": "caves",
+      "label": "Untere Höhlen",
+      "subtitle": "Maw · Zugänge"
+    }
+  ],
+  "projects": [
+    {
+      "id": "ritual",
+      "title": "Ritual im Sanctum",
+      "owners": [
+        "Hexoraticus",
+        "Vexorandian"
+      ],
+      "level": "sanctum",
+      "status": "active",
+      "progress": "444/666 zuletzt ausdrücklich belegt: 28. Juli Dämmerung; Opfer 2/3.",
+      "next": "29. Juli beim vollständigen Tagesabgleich prüfen; keine automatische zusätzliche Zählung.",
+      "done": 444,
+      "total": 666
+    },
+    {
+      "id": "retrain",
+      "title": "Craft Magic Arms and Armor",
+      "owners": [
+        "Tacitus"
+      ],
+      "level": "three",
+      "status": "completed",
+      "progress": "Am 17. März abgeschlossen; 350 gp einmalig bezahlt.",
+      "next": "Kein weiterer Umschulungstag erforderlich.",
+      "done": 10,
+      "total": 10
+    },
+    {
+      "id": "matrix",
+      "title": "Psionische Meistermatrix",
+      "owners": [
+        "Tacitus",
+        "Styke",
+        "Knittel"
+      ],
+      "level": "three",
+      "status": "completed",
+      "progress": "Sieben Forschungstage bis 25. März; 1.600 gp einmalig.",
+      "next": "Vorlage bleibt bei Tacitus.",
+      "done": 7,
+      "total": 7
+    },
+    {
+      "id": "stone",
+      "title": "Erster Psychic-Reformation-Stein",
+      "owners": [
+        "Tacitus",
+        "Styke"
+      ],
+      "level": "three",
+      "status": "completed",
+      "progress": "Am 21. Juni einmalig verbraucht; Nachwirkung am 22. Juni beendet.",
+      "next": "Kein zweiter Stein vorhanden.",
+      "done": 1,
+      "total": 1
+    },
+    {
+      "id": "corset-valeria",
+      "title": "Valerias Corset of Delicate Moves",
+      "owners": [
+        "Tacitus",
+        "Valeria"
+      ],
+      "level": "three",
+      "status": "completed",
+      "progress": "Seit 31. März übergeben und lange genug getragen; anfängliche 24-Stunden-Voraussetzung erfüllt.",
+      "next": "Bei tatsächlichem Tragen und verbleibender Tagesnutzung einsetzbar.",
+      "done": 1,
+      "total": 1
+    },
+    {
+      "id": "cruel",
+      "title": "Valerias Großschwert +1 Cruel",
+      "owners": [
+        "Tacitus",
+        "Valeria"
+      ],
+      "level": "three",
+      "status": "completed",
+      "progress": "+1 Cruel fertig am 30. März, am 31. März Valeria tatsächlich zurückgegeben und wieder ausgerüstet. 3.000 GM Herstellmaterial einmal bezahlt.",
+      "next": "Aktive Cruel-Wirkung nur bei passendem Treffer, keine pauschalen Zustände.",
+      "done": 2,
+      "total": 2
+    },
+    {
+      "id": "queue-corset-vesper",
+      "title": "Vespers Korsett",
+      "owners": [
+        "Tacitus"
+      ],
+      "level": "three",
+      "status": "completed",
+      "progress": "Seit 31. März übergeben und lange genug getragen; anfängliche 24-Stunden-Voraussetzung erfüllt.",
+      "next": "Bei tatsächlichem Tragen und verbleibender Tagesnutzung einsetzbar.",
+      "done": 1,
+      "total": 1
+    },
+    {
+      "id": "queue-headband-vesper",
+      "title": "Neuer CHA-Stirnreif +4 für Vesper",
+      "owners": [
+        "Tacitus"
+      ],
+      "level": "three",
+      "status": "completed",
+      "progress": "Tatsächlich fertig 3. April, an den Besitzer 3. April ausgehändigt; 8.000 GM Material einmal verbucht, 4 volle Valet-unterstützte Werkstatttage.",
+      "next": "Kein zweiter Fertigungsauftrag oder zweite Rechnung.",
+      "done": 4,
+      "total": 4
+    },
+    {
+      "id": "queue-cloak-styke",
+      "title": "Styke: Cloak +2 → +3",
+      "owners": [
+        "Tacitus"
+      ],
+      "level": "three",
+      "status": "completed",
+      "progress": "Tatsächlich fertig 5. April, an den Besitzer 5. April ausgehändigt; 2.500 GM Material einmal verbucht, 2 volle Valet-unterstützte Werkstatttage.",
+      "next": "Kein zweiter Fertigungsauftrag oder zweite Rechnung.",
+      "done": 2,
+      "total": 2
+    },
+    {
+      "id": "queue-cloak-vesper",
+      "title": "Vesper: Cloak +2 → +3",
+      "owners": [
+        "Tacitus"
+      ],
+      "level": "three",
+      "status": "completed",
+      "progress": "Tatsächlich fertig 7. April, an den Besitzer 7. April ausgehändigt; 2.500 GM Material einmal verbucht, 2 volle Valet-unterstützte Werkstatttage.",
+      "next": "Kein zweiter Fertigungsauftrag oder zweite Rechnung.",
+      "done": 2,
+      "total": 2
+    },
+    {
+      "id": "queue-cloak-valeria",
+      "title": "Valeria: Cloak +2 → +3",
+      "owners": [
+        "Tacitus"
+      ],
+      "level": "three",
+      "status": "completed",
+      "progress": "Tatsächlich fertig 9. April, an den Besitzer 9. April ausgehändigt; 2.500 GM Material einmal verbucht, 2 volle Valet-unterstützte Werkstatttage.",
+      "next": "Kein zweiter Fertigungsauftrag oder zweite Rechnung.",
+      "done": 2,
+      "total": 2
+    },
+    {
+      "id": "queue-shadow",
+      "title": "Shadow für Valerias Platte",
+      "owners": [
+        "Tacitus"
+      ],
+      "level": "three",
+      "status": "completed",
+      "progress": "Tatsächlich fertig 15. April, an den Besitzer 15. April ausgehändigt; 1.875 GM Material einmal verbucht, 1 volle Valet-unterstützte Werkstatttage.",
+      "next": "Kein zweiter Fertigungsauftrag oder zweite Rechnung.",
+      "done": 1,
+      "total": 1
+    },
+    {
+      "id": "queue-boots-styke",
+      "title": "Styke: Boots of Striding and Springing",
+      "owners": [
+        "Tacitus"
+      ],
+      "level": "three",
+      "status": "completed",
+      "progress": "Tatsächlich fertig 17. April, an den Besitzer 17. April ausgehändigt; 2.750 GM Material einmal verbucht, 2 volle Valet-unterstützte Werkstatttage.",
+      "next": "Im üblichen Dienst getragen; Geschwindigkeitsbonus im Kampfprofil berücksichtigt.",
+      "done": 2,
+      "total": 2
+    },
+    {
+      "id": "queue-boots-valeria",
+      "title": "Valeria: Boots of Striding and Springing",
+      "owners": [
+        "Tacitus"
+      ],
+      "level": "three",
+      "status": "completed",
+      "progress": "Tatsächlich fertig 19. April, an den Besitzer 20. April ausgehändigt; 2.750 GM Material einmal verbucht, 2 volle Valet-unterstützte Werkstatttage.",
+      "next": "Im üblichen Dienst getragen; Geschwindigkeitsbonus im Kampfprofil berücksichtigt.",
+      "done": 2,
+      "total": 2
+    },
+    {
+      "id": "queue-dex-styke",
+      "title": "Styke: DEX-Gürtel +2 → +4",
+      "owners": [
+        "Tacitus"
+      ],
+      "level": "three",
+      "status": "completed",
+      "progress": "Tatsächlich fertig 22. April, an den Besitzer 22. April ausgehändigt; 6.000 GM Material einmal verbucht, 3 volle Valet-unterstützte Werkstatttage.",
+      "next": "Kein zweiter Fertigungsauftrag oder zweite Rechnung.",
+      "done": 3,
+      "total": 3
+    },
+    {
+      "id": "queue-cha-valeria",
+      "title": "Valeria: CHA-Stirnreif +2 → +4",
+      "owners": [
+        "Tacitus"
+      ],
+      "level": "three",
+      "status": "completed",
+      "progress": "CHA-Stirnreif +4 seit 30. April übergeben und getragen.",
+      "next": "Keine Finanzierungslücke oder offene Nachbestellung mehr.",
+      "done": 3,
+      "total": 3
+    },
+    {
+      "id": "queue-eagle",
+      "title": "Styke · Eyes of the Eagle",
+      "owners": [
+        "Tacitus"
+      ],
+      "level": "three",
+      "status": "completed",
+      "progress": "Eyes of the Eagle fertig und Styke am 22. Juni übergeben; getragen.",
+      "next": "Auftrag abgeschlossen.",
+      "done": 1,
+      "total": 1
+    },
+    {
+      "id": "plate",
+      "title": "Grumblejacks Large-Meisterarbeits-Platte",
+      "owners": [
+        "Osric",
+        "Yorgun"
+      ],
+      "level": "one",
+      "status": "completed",
+      "progress": "Große Meisterarbeits-Platte seit 9. Juni fertig, angepasst und getragen.",
+      "next": "Keine weitere Produktion für diesen Auftrag.",
+      "done": 3150,
+      "total": 3150
+    },
+    {
+      "id": "flight",
+      "title": "Reitergeschirr für Grumblejack und Valeria",
+      "owners": [
+        "Mirelle",
+        "Grumblejack",
+        "Valeria"
+      ],
+      "level": "one",
+      "status": "completed",
+      "progress": "Belasteter Bodentest und Schnelllösung am 12. März bestanden.",
+      "next": "Keine daraus behauptete Flug-/Fallsicherheitsgarantie.",
+      "done": null,
+      "total": null
+    },
+    {
+      "id": "breach",
+      "title": "Außendurchbruch 2-12",
+      "owners": [
+        "Darric",
+        "Tacitus"
+      ],
+      "level": "two",
+      "status": "completed",
+      "progress": "Geschlossen und geprüft.",
+      "next": "Sicherung erhalten.",
+      "done": null,
+      "total": null
+    },
+    {
+      "id": "entrance-two",
+      "title": "Außenzugang 2-1",
+      "owners": [
+        "Darric",
+        "Tacitus"
+      ],
+      "level": "two",
+      "status": "completed",
+      "progress": "Seit 9. März geschlossen; alter Alarm beendet.",
+      "next": "Keine offene Treppe mehr voraussetzen.",
+      "done": null,
+      "total": null
+    },
+    {
+      "id": "entrance-three",
+      "title": "Oberer Außenzugang 3-1",
+      "owners": [
+        "Darric",
+        "Halla",
+        "Tacitus"
+      ],
+      "level": "three",
+      "status": "completed",
+      "progress": "Bis 28. März vollständig verschlossen.",
+      "next": "Alter Alarm ist nicht mehr aktiv.",
+      "done": null,
+      "total": null
+    },
+    {
+      "id": "balcony",
+      "title": "Sanctumbalkon S-2",
+      "owners": [
+        "Darric",
+        "Halla"
+      ],
+      "level": "sanctum",
+      "status": "active",
+      "progress": "Sanctumbalkon bleibt als eigener Zugang offen; frühere Verstärkungen sind keine fertige hermetische Abdichtung.",
+      "next": "Weitere Sicherung nur nach tatsächlich ausgeführter Arbeit.",
+      "done": null,
+      "total": null
+    },
+    {
+      "id": "bath",
+      "title": "Bad 2-14",
+      "owners": [
+        "Darric",
+        "Osric",
+        "Nella"
+      ],
+      "level": "two",
+      "status": "completed",
+      "progress": "Seit 21. März benutzbar: neuer selbstheizender Cauldron, Mischzulauf, Ablauf.",
+      "next": "Zugang und Reservierungen beachten; keine fertigen WC-/Dampfbadanbauten.",
+      "done": null,
+      "total": null
+    },
+    {
+      "id": "table",
+      "title": "Jurak-Treant-Großtisch",
+      "owners": [
+        "Branna"
+      ],
+      "level": "one",
+      "status": "completed",
+      "progress": "Bis 30. März fertig und in der Großen Halle 1-27 installiert.",
+      "next": "Gewöhnliches Möbel, kein magischer Bonus.",
+      "done": null,
+      "total": null
+    },
+    {
+      "id": "fallback",
+      "title": "Schwere Rückzugstür und Innenriegel",
+      "owners": [
+        "Branna",
+        "Osric"
+      ],
+      "level": "one",
+      "status": "completed",
+      "progress": "Fertig und installiert.",
+      "next": "Kein neuer Durchgang zu anderen Ebenen.",
+      "done": null,
+      "total": null
+    },
+    {
+      "id": "flue",
+      "title": "Kamingitter Death’s Head",
+      "owners": [
+        "Osric",
+        "Darric"
+      ],
+      "level": "one",
+      "status": "completed",
+      "progress": "Fluengitter installiert.",
+      "next": "Bestehende Sicherung prüfen und erhalten.",
+      "done": null,
+      "total": null
+    },
+    {
+      "id": "column",
+      "title": "Hohlstützen-Durchgang",
+      "owners": [
+        "Darric"
+      ],
+      "level": "two",
+      "status": "planned",
+      "progress": "Kein fertiger neuer Durchgang.",
+      "next": "Statik und konkrete Ausführung vor zusätzlichem Eingriff.",
+      "done": null,
+      "total": null
+    },
+    {
+      "id": "provisions",
+      "title": "Vorräte und alltägliche Versorgung",
+      "owners": [
+        "Nella",
+        "Edda"
+      ],
+      "level": "one",
+      "status": "active",
+      "progress": "Normalversorgung, nur Ausnahmeberichte; keine gemeldete Knappheit.",
+      "next": "Nach Bedarf tatsächlich nachbestellen.",
+      "done": null,
+      "total": null
+    },
+    {
+      "id": "kitchen",
+      "title": "Biancas Küchenlernen und Eddas freie Abende",
+      "owners": [
+        "Edda",
+        "Bianca",
+        "Nella",
+        "Tamsin"
+      ],
+      "level": "one",
+      "status": "active",
+      "progress": "Begrenzte beaufsichtigte Aufgaben schaffen zwei freie Abende für Edda.",
+      "next": "Edda behält Fachkontrolle, Tamsin organisiert echte Begleitung.",
+      "done": null,
+      "total": null
+    },
+    {
+      "id": "tears",
+      "title": "Tears-Gegenforschung",
+      "owners": [
+        "Tacitus",
+        "Styke",
+        "Vesper",
+        "Valeria"
+      ],
+      "level": "three",
+      "status": "active",
+      "progress": "Die frühere Vorprobenphase ist beendet; derzeit nur sichere Vorbereitung ohne Erregerprobe.",
+      "next": "Konkrete Vorschläge mit Tacitus besprechen; bauliche Ausführung und gefährliche Tests sind nicht freigegeben.",
+      "done": null,
+      "total": null
+    },
+    {
+      "id": "portcullises",
+      "title": "Zwei Fallgitter und Eingangsfalle",
+      "owners": [
+        "Tamsin",
+        "Hakon",
+        "Osric"
+      ],
+      "level": "one",
+      "status": "completed",
+      "progress": "Seit Anfang April zwei getestete Fallgitter als rund 30-ft-Zwischenbereich, dazu Alarm und tatsächlich funktionsfähige Mehlzugleinen.",
+      "next": "Regelmäßige Wach- und Mechanikprüfung im realen Dienst.",
+      "done": null,
+      "total": null
+    },
+    {
+      "id": "guard-stones",
+      "title": "Eingangssteine · Silence und Glitterdust",
+      "owners": [
+        "Tacitus",
+        "Knittel",
+        "Tamsin",
+        "Hakon"
+      ],
+      "level": "one",
+      "status": "completed",
+      "progress": "CL-3-Silence- und CL-3-Glitterdust-Befehlsstein (je 1 Nutzung/Tag) tatsächlich am 11./13. April fertig und an den Eingang übergeben, beim Drill nicht verbraucht.",
+      "next": "Nur echte gesprochene Aktivierung belastet die tägliche Verwendung. Ein Wurf allein löst keinen Stein aus.",
+      "done": 4,
+      "total": 4
+    },
+    {
+      "id": "arrival-cells",
+      "title": "Gesicherte Ankunftszellen",
+      "owners": [
+        "Tamsin",
+        "Darric"
+      ],
+      "level": "two",
+      "status": "completed",
+      "progress": "Zwei abgeschlossene sichere Ankunftszellen in 2-20A und 3-9 stehen seit April tatsächlich bereit.",
+      "next": "Reale Schlüssel-/Aufsichtsregeln beibehalten.",
+      "done": null,
+      "total": null
+    },
+    {
+      "id": "assassin-vines",
+      "title": "Vier gebundene Assassin Vines",
+      "owners": [
+        "Nella",
+        "Tamsin"
+      ],
+      "level": "caves",
+      "status": "active",
+      "progress": "Vier erwachsene hostile Assassin Vines sind in C1 einzeln angekettet; keine zahmen Hauswachen. Nella lagert vier tatsächlich gewonnene Giftdosen.",
+      "next": "Nächste vorgesehene Ernte 30. April; bis dahin keine neue Dosenzahl oder Zähmung.",
+      "done": null,
+      "total": null
+    },
+    {
+      "id": "defence-drill",
+      "title": "Wachdienst und Sicherheitsübung",
+      "owners": [
+        "Tamsin",
+        "Hakon",
+        "Sten"
+      ],
+      "level": "one",
+      "status": "completed",
+      "progress": "Gesamtdrill am 23. April mit Tamsins neuer Gesamtleitung und Hakons eigenen fünf Leuten tatsächlich abgeschlossen; keine Verwendung der beiden Befehlssteine.",
+      "next": "Hakon ist über die neue Oberstruktur noch nicht von Styke persönlich einzeln informiert; laufenden Dienst korrekt trennen.",
+      "done": null,
+      "total": null
+    },
+    {
+      "id": "headband-styke",
+      "title": "Styke · CHA-Stirnreif +4",
+      "owners": [
+        "Tacitus",
+        "Knittel"
+      ],
+      "level": "three",
+      "status": "completed",
+      "progress": "23.–25. Juni gefertigt, am 25. Juni zurückgegeben und getragen.",
+      "next": "Abgeschlossen; kein zweiter Materialabzug.",
+      "done": 3,
+      "total": 3
+    },
+    {
+      "id": "belt-valeria",
+      "title": "Valeria · STR-Gürtel +4",
+      "owners": [
+        "Tacitus",
+        "Knittel"
+      ],
+      "level": "three",
+      "status": "completed",
+      "progress": "26.–28. Juni gefertigt; derselbe Gürtel am 28. Juni zurückgegeben und angelegt.",
+      "next": "Abgeschlossen; kein zweiter Materialabzug.",
+      "done": 3,
+      "total": 3
+    },
+    {
+      "id": "legend-lore",
+      "title": "Vesper · Legend Lore",
+      "owners": [
+        "Vesper"
+      ],
+      "level": "three",
+      "status": "completed",
+      "progress": "Vespers zehntägiges Legend Lore wurde abgeschlossen; das Ergebnis wurde am 2. Juli mitgeteilt.",
+      "next": "Kein fortlaufender Casting-Block.",
+      "done": 10,
+      "total": 10
+    },
+    {
+      "id": "atelier",
+      "title": "Mirelles öffentliches Atelier",
+      "owners": [
+        "Mirelle"
+      ],
+      "level": "one",
+      "status": "active",
+      "progress": "Das Atelier arbeitet; +90 GM Nettoergebnis am 27. Juli einmalig gebucht.",
+      "next": "Letzte gemeinsame Anpassungs-/Bewegungsprobe am 29. Juli abends; nächste Monatsabrechnung am 27. August.",
+      "done": null,
+      "total": null
+    }
+  ],
+  "security": [
+    {
+      "id": "first",
+      "level": "one",
+      "title": "Haupttreppe 1-1",
+      "status": "open",
+      "owner": "Tamsin · Hakon und fünf Männer",
+      "detail": "Einziger offener oberer Landzugang. Zwei funktionsfähige Fallgitter als etwa 30-ft-Falle, Alarm, echte Mehlzugleinen; reguläre Wachbesetzung."
+    },
+    {
+      "id": "hexor",
+      "level": "two",
+      "title": "Wachdienst Ebene Zwei",
+      "status": "operational",
+      "owner": "Hexoraticus",
+      "detail": "Gebundener Wächter 84 HP; Ritualdienst nur bei echter Ablösung, kein allwissendes Fernüberwachungssystem."
+    },
+    {
+      "id": "vexor",
+      "level": "three",
+      "title": "Äußere Vorwache",
+      "status": "operational",
+      "owner": "Vexorandian",
+      "detail": "Gebundener Wächter 68 HP mit 3 dauerhaftem CON-Entzug; Standardposten außerhalb des vorgeschobenen Haupttores, soweit Wachlage unverändert."
+    },
+    {
+      "id": "two",
+      "level": "two",
+      "title": "Außenzugang 2-1",
+      "status": "installed",
+      "owner": "Darric / Tacitus",
+      "detail": "Seit 9. März geschlossen; früherer temporärer Alarm beendet."
+    },
+    {
+      "id": "breach",
+      "level": "two",
+      "title": "Durchbruch 2-12",
+      "status": "installed",
+      "owner": "Darric / Tacitus",
+      "detail": "Geschlossen und geprüft."
+    },
+    {
+      "id": "three",
+      "level": "three",
+      "title": "Außenzugang 3-1",
+      "status": "installed",
+      "owner": "Darric / Halla / Tacitus",
+      "detail": "Seit 28. März vollständig geschlossen; früherer Alarm beendet."
+    },
+    {
+      "id": "balcony",
+      "level": "sanctum",
+      "title": "Sanctumbalkon S-2",
+      "status": "open",
+      "owner": "Darric / Wachen",
+      "detail": "Verstärkung begonnen; Zugang nicht hermetisch geschlossen. Das einmalige Ritualereignis vom 21. Juni begründet keinen dauerhaften grünen Lichtstrahl."
+    },
+    {
+      "id": "maw",
+      "level": "caves",
+      "title": "Untere Höhlen C1 / Maw",
+      "status": "open",
+      "owner": "Bestehende Wachen",
+      "detail": "C1/Maw bleibt als eigener Bereich relevant; vier erwachsene hostile Assassin Vines sind getrennt gekettet, nicht als sichere Verbündete verwendbar."
+    },
+    {
+      "id": "c5",
+      "level": "caves",
+      "title": "Verborgener Weg C5–3-12",
+      "status": "open",
+      "owner": "Bestehende Sicherung",
+      "detail": "Eigener interner Zugang, keine neue gewöhnliche Tür."
+    },
+    {
+      "id": "fallback",
+      "level": "one",
+      "title": "Schwere Rückzugstür und Riegel",
+      "status": "installed",
+      "owner": "Branna / Osric",
+      "detail": "Fertig."
+    },
+    {
+      "id": "flue",
+      "level": "one",
+      "title": "Death’s-Head-Fluengitter",
+      "status": "installed",
+      "owner": "Osric / Darric",
+      "detail": "Installiert."
+    },
+    {
+      "id": "captives",
+      "level": null,
+      "title": "Gefangenenaufsicht",
+      "status": "operational",
+      "owner": "Tamsin",
+      "detail": "Fünf Personen in gemeinsamer bewachter Unterkunft; genaue Zimmer-/Ebenenzuordnung nicht gesichert. Keine unbeaufsichtigte Freizügigkeit."
+    },
+    {
+      "id": "hounds",
+      "level": "one",
+      "title": "Glut, Schlacke und Asche",
+      "status": "operational",
+      "owner": "Vesper / Wachen",
+      "detail": "Lokale Sinne und Geruchswarnungen, kein allumfassendes Überwachungsnetz."
+    },
+    {
+      "id": "gate-stones",
+      "level": "one",
+      "title": "Befehlssteine am Eingang",
+      "status": "operational",
+      "owner": "Tamsin / Hakon",
+      "detail": "1×/Tag Silence CL3 und 1×/Tag Glitterdust CL3, kommandogebunden. Beim realen 23-Apr-Drill nicht ausgelöst."
+    },
+    {
+      "id": "arrival-cells",
+      "level": "two",
+      "title": "Gesicherte Ankunftszellen",
+      "status": "installed",
+      "owner": "Tamsin",
+      "detail": "2-20A und 3-9 benutzbar, Türschlösser/Schlüssel real und nicht allgemein verteilt."
+    },
+    {
+      "id": "sanctum-eyes",
+      "level": "sanctum",
+      "title": "Drei Augen S-1",
+      "status": "installed",
+      "owner": "Ritualkern",
+      "detail": "Alle drei Augen seit 1. April in der Statue installiert; Silbersiegel und Riten nicht aufgehoben."
+    }
+  ],
+  "inventory": [
+    {
+      "id": "cash",
+      "name": "Wirtschaftlich verfügbare gemeinsame Mittel",
+      "owner": "Knoten",
+      "group": "Geld",
+      "amount": "6.560 GM 7 SM 5 KM",
+      "state": "6.560 GM 7 SM 5 KM brutto; 4.600 GM gebunden, 1.960 GM 7 SM 5 KM frei.",
+      "value": 6560.75,
+      "basis": "Verfügbarkeitsrechnung",
+      "note": "Silber und kleinere Wertstücke sind bereits im wirtschaftlichen Gesamtsaldo enthalten, keine zweite Gutschrift."
+    },
+    {
+      "id": "silver",
+      "name": "Silberobjekte / Metall",
+      "owner": "Horn",
+      "group": "Sachwerte",
+      "amount": "Gesamtbestand",
+      "state": "Physisch bekannte 10.000 GM Silberobjekte. Seit 13./14. April bereits im wirtschaftlichen Gesamtsaldo enthalten; nicht zusätzlich addieren.",
+      "value": 10000,
+      "basis": "Bereits im Brutto-Saldo angerechnet",
+      "note": "Kein weiterer Verkaufserlös, kein zweiter Transfer."
+    },
+    {
+      "id": "valuables",
+      "name": "Garnet, Amethyste und fossiles Elfenbein",
+      "owner": "Horn",
+      "group": "Sachwerte",
+      "amount": "1 Paket",
+      "state": "920 GM kleinere Wertstücke; ebenfalls bereits im Gesamtsaldo angerechnet.",
+      "value": 920,
+      "basis": "Bereits im Brutto-Saldo angerechnet",
+      "note": "Kein separates zusätzliches freies Vermögen."
+    },
+    {
+      "id": "styke-0",
+      "name": "Großschwert +1",
+      "owner": "Styke",
+      "group": "Persönliche Ausrüstung",
+      "amount": "siehe Stand",
+      "state": "Im eigenen Besitz",
+      "value": null,
+      "basis": "Nicht taxiert",
+      "note": ""
+    },
+    {
+      "id": "styke-1",
+      "name": "Mithralkettenhemd +1",
+      "owner": "Styke",
+      "group": "Persönliche Ausrüstung",
+      "amount": "siehe Stand",
+      "state": "Ausgerüstetes Kampfprofil",
+      "value": null,
+      "basis": "Nicht taxiert",
+      "note": ""
+    },
+    {
+      "id": "styke-2",
+      "name": "DEX-Gürtel +4",
+      "owner": "Styke",
+      "group": "Persönliche Ausrüstung",
+      "amount": "siehe Stand",
+      "state": "DEX-Gürtel +4 getragen; DEX 24 auf Stufe 8.",
+      "value": null,
+      "basis": "Nicht taxiert",
+      "note": ""
+    },
+    {
+      "id": "styke-3",
+      "name": "Cloak of Resistance +3",
+      "owner": "Styke",
+      "group": "Persönliche Ausrüstung",
+      "amount": "siehe Stand",
+      "state": "Seit 5. April zurückgegeben und getragen.",
+      "value": null,
+      "basis": "Nicht taxiert",
+      "note": ""
+    },
+    {
+      "id": "styke-4",
+      "name": "Amulett natürlicher Rüstung +1",
+      "owner": "Styke",
+      "group": "Persönliche Ausrüstung",
+      "amount": "siehe Stand",
+      "state": "Getragen, AC bereits eingerechnet",
+      "value": null,
+      "basis": "Nicht taxiert",
+      "note": ""
+    },
+    {
+      "id": "styke-5",
+      "name": "Handy Haversack",
+      "owner": "Styke",
+      "group": "Persönliche Ausrüstung",
+      "amount": "siehe Stand",
+      "state": "Bei Styke; 80 + 20 + 20 lb Fassungsvermögen",
+      "value": null,
+      "basis": "Nicht taxiert",
+      "note": ""
+    },
+    {
+      "id": "stone",
+      "name": "Psychic Reformation ML 7",
+      "owner": "Styke",
+      "group": "Verbrauchsgüter",
+      "amount": "0",
+      "state": "Einmaliger Stein am 21. Juni verbraucht; keiner mehr vorhanden.",
+      "value": 350,
+      "basis": "Bezahltes Material",
+      "note": "Kein behaupteter Verkaufswert und keine zweite Abbuchung."
+    },
+    {
+      "id": "styke-7",
+      "name": "Iron Circlet / Verständnishelm",
+      "owner": "Styke",
+      "group": "Persönliche Ausrüstung",
+      "amount": "siehe Stand",
+      "state": "Alternative Kopfslot-Gegenstände, keine stillschweigende Doppelbelegung",
+      "value": null,
+      "basis": "Nicht taxiert",
+      "note": ""
+    },
+    {
+      "id": "styke-8",
+      "name": "Eye of Hatred",
+      "owner": "Horn / S-1",
+      "group": "Persönliche Ausrüstung",
+      "amount": "siehe Stand",
+      "state": "Seit 1. April im Sanctum installiert; kein tragbares Auge.",
+      "value": null,
+      "basis": "Nicht taxiert",
+      "note": ""
+    },
+    {
+      "id": "styke-9",
+      "name": "Vexor-Namensamulett",
+      "owner": "Styke",
+      "group": "Persönliche Ausrüstung",
+      "amount": "siehe Stand",
+      "state": "Befehlstoken, getrennt vom Rüstungsamulett",
+      "value": null,
+      "basis": "Nicht taxiert",
+      "note": ""
+    },
+    {
+      "id": "styke-10",
+      "name": "Vision Juice",
+      "owner": "Styke",
+      "group": "Persönliche Ausrüstung",
+      "amount": "siehe Stand",
+      "state": "4 Dosen",
+      "value": null,
+      "basis": "Nicht taxiert",
+      "note": ""
+    },
+    {
+      "id": "styke-11",
+      "name": "IoG-Silberring",
+      "owner": "Styke",
+      "group": "Persönliche Ausrüstung",
+      "amount": "siehe Stand",
+      "state": "Persönlich, nichtmagisch",
+      "value": null,
+      "basis": "Nicht taxiert",
+      "note": ""
+    },
+    {
+      "id": "styke-12",
+      "name": "Kampfunterwäsche / persönliche Papiere / Tonsiegel",
+      "owner": "Styke",
+      "group": "Persönliche Ausrüstung",
+      "amount": "siehe Stand",
+      "state": "Vorhanden; keine zusätzlichen Kräfte",
+      "value": null,
+      "basis": "Nicht taxiert",
+      "note": ""
+    },
+    {
+      "id": "vesper-0",
+      "name": "Mithralkettenhemd +1 / schwerer Mithralschild +1",
+      "owner": "Vesper",
+      "group": "Persönliche Ausrüstung",
+      "amount": "siehe Stand",
+      "state": "Ausgerüstetes Profil",
+      "value": null,
+      "basis": "Nicht taxiert",
+      "note": ""
+    },
+    {
+      "id": "vesper-1",
+      "name": "CHA-Stirnreif +4 / Cloak +3 / Amulett +1",
+      "owner": "Vesper",
+      "group": "Persönliche Ausrüstung",
+      "amount": "siehe Stand",
+      "state": "CHA +4 seit 3. April getragen; Cloak +3 seit 7. April getragen.",
+      "value": null,
+      "basis": "Nicht taxiert",
+      "note": ""
+    },
+    {
+      "id": "vesper-2",
+      "name": "Ring of Mind Shielding",
+      "owner": "Vesper",
+      "group": "Persönliche Ausrüstung",
+      "amount": "siehe Stand",
+      "state": "Getragen; keine allgemeine Immunität gegen Geistesbeeinflussung",
+      "value": null,
+      "basis": "Nicht taxiert",
+      "note": ""
+    },
+    {
+      "id": "vesper-3",
+      "name": "Lens of Detection",
+      "owner": "Vesper",
+      "group": "Persönliche Ausrüstung",
+      "amount": "siehe Stand",
+      "state": "Bewusste Detailuntersuchung bzw. Spurensuche; kein pauschales passives +5",
+      "value": null,
+      "basis": "Nicht taxiert",
+      "note": ""
+    },
+    {
+      "id": "vesper-4",
+      "name": "Extend Rod",
+      "owner": "Vesper",
+      "group": "Persönliche Ausrüstung",
+      "amount": "siehe Stand",
+      "state": "3 Anwendungen/Tag Kapazität; aktuelle Restnutzungen nicht beziffert.",
+      "value": null,
+      "basis": "Nicht taxiert",
+      "note": ""
+    },
+    {
+      "id": "vesper-5",
+      "name": "Sleeves of Many Garments",
+      "owner": "Vesper",
+      "group": "Persönliche Ausrüstung",
+      "amount": "siehe Stand",
+      "state": "Eigenes Paar, seit 10. März; nur Erscheinung der Kleidung",
+      "value": null,
+      "basis": "Nicht taxiert",
+      "note": ""
+    },
+    {
+      "id": "vesper-6",
+      "name": "Rotes Buch / gewöhnliche Abschrift",
+      "owner": "Vesper",
+      "group": "Persönliche Ausrüstung",
+      "amount": "siehe Stand",
+      "state": "AWAKENED, nicht Unsealed; letzte bewusste Sitzung 21. Juni.",
+      "value": null,
+      "basis": "Nicht taxiert",
+      "note": ""
+    },
+    {
+      "id": "vesper-7",
+      "name": "Vigilance / Withering",
+      "owner": "Horn / S-1",
+      "group": "Persönliche Ausrüstung",
+      "amount": "siehe Stand",
+      "state": "Beide seit 1. April im Sanctum installiert; keine tragbaren Augen.",
+      "value": null,
+      "basis": "Nicht taxiert",
+      "note": ""
+    },
+    {
+      "id": "vesper-8",
+      "name": "Steinsalbe",
+      "owner": "Vesper",
+      "group": "Persönliche Ausrüstung",
+      "amount": "siehe Stand",
+      "state": "2 Portionen",
+      "value": null,
+      "basis": "Nicht taxiert",
+      "note": ""
+    },
+    {
+      "id": "vesper-9",
+      "name": "Werkzeuge und Höllenhund-Ritualabschrift",
+      "owner": "Vesper",
+      "group": "Persönliche Ausrüstung",
+      "amount": "siehe Stand",
+      "state": "Vorhanden; Material des vollzogenen Rituals verbraucht",
+      "value": null,
+      "basis": "Nicht taxiert",
+      "note": ""
+    },
+    {
+      "id": "vesper-10",
+      "name": "Hexor-Namensamulett / Iron Circlet",
+      "owner": "Vesper",
+      "group": "Persönliche Ausrüstung",
+      "amount": "siehe Stand",
+      "state": "Befehlstoken bzw. Tarngegenstand, keine Doppelboni",
+      "value": null,
+      "basis": "Nicht taxiert",
+      "note": ""
+    },
+    {
+      "id": "vesper-11",
+      "name": "Kleider und persönliche Wäsche",
+      "owner": "Vesper",
+      "group": "Persönliche Ausrüstung",
+      "amount": "siehe Stand",
+      "state": "Eigener Bestand",
+      "value": null,
+      "basis": "Nicht taxiert",
+      "note": ""
+    },
+    {
+      "id": "valeria-0",
+      "name": "+1 Dastard Full Plate mit Shadow",
+      "owner": "Valeria",
+      "group": "Persönliche Ausrüstung",
+      "amount": "siehe Stand",
+      "state": "Originalrüstung seit 15. April mit Shadow zurückgegeben und getragen; AC 22, +5 Kompetenz Stealth durch Shadow.",
+      "value": null,
+      "basis": "Nicht taxiert",
+      "note": ""
+    },
+    {
+      "id": "valeria-sword",
+      "name": "Großschwert +1 Cruel",
+      "owner": "Valeria",
+      "group": "Ausbau",
+      "amount": "1",
+      "state": "Am 31. März tatsächlich an Valeria zurückgegeben und ausgerüstet; Cruel nur bei wirklichem Treffer ausgelöst.",
+      "value": 3000,
+      "basis": "Bezahltes Ausbaumaterial",
+      "note": "3.000gp bereits bezahltes Ausbaumaterial, keine zweite Abbuchung oder heutige Waffennutzung."
+    },
+    {
+      "id": "valeria-2",
+      "name": "STR-Gürtel +4",
+      "owner": "Valeria",
+      "group": "Persönliche Ausrüstung",
+      "amount": "siehe Stand",
+      "state": "Derselbe Gürtel am 28. Juni zurückgegeben und getragen; STR 20.",
+      "value": null,
+      "basis": "Nicht taxiert",
+      "note": ""
+    },
+    {
+      "id": "valeria-3",
+      "name": "CHA-Stirnreif +4",
+      "owner": "Valeria",
+      "group": "Persönliche Ausrüstung",
+      "amount": "siehe Stand",
+      "state": "Seit 30. April getragen; CHA 25 auf Stufe 8.",
+      "value": null,
+      "basis": "Nicht taxiert",
+      "note": ""
+    },
+    {
+      "id": "valeria-4",
+      "name": "Cloak +3 / Amulett natürlicher Rüstung +1",
+      "owner": "Valeria",
+      "group": "Persönliche Ausrüstung",
+      "amount": "siehe Stand",
+      "state": "Cloak +3 seit 9. April getragen, Amulett +1 weiterhin.",
+      "value": null,
+      "basis": "Nicht taxiert",
+      "note": ""
+    },
+    {
+      "id": "valeria-5",
+      "name": "Cracked Dusty Rose Prism",
+      "owner": "Valeria",
+      "group": "Persönliche Ausrüstung",
+      "amount": "siehe Stand",
+      "state": "Im Dienst normalerweise kreisend: Initiative +8; verstaut +7.",
+      "value": null,
+      "basis": "Nicht taxiert",
+      "note": ""
+    },
+    {
+      "id": "valeria-corset",
+      "name": "Corset of Delicate Moves",
+      "owner": "Valeria",
+      "group": "Aufträge",
+      "amount": "1",
+      "state": "Seit 31. März übergeben; üblicherweise getragen, anfängliche 24h-Voraussetzung erfüllt.",
+      "value": 1000,
+      "basis": "Bezahltes Material",
+      "note": ""
+    },
+    {
+      "id": "valeria-7",
+      "name": "Unterzeug, formelle Kleidung, persönlicher Bestand",
+      "owner": "Valeria",
+      "group": "Persönliche Ausrüstung",
+      "amount": "siehe Stand",
+      "state": "Erhalten",
+      "value": null,
+      "basis": "Nicht taxiert",
+      "note": ""
+    },
+    {
+      "id": "plate-stock",
+      "name": "Grumblejacks große Meisterarbeits-Platte",
+      "owner": "Grumblejack",
+      "group": "Persönliche Ausrüstung",
+      "amount": "1",
+      "state": "Seit 9. Juni fertig, angepasst und getragen.",
+      "value": 787.5,
+      "basis": "Historisch bezahltes Material",
+      "note": "Keine erneute Rechnung; kein Marktwert der fertigen Rüstung."
+    },
+    {
+      "id": "tools",
+      "name": "Meisterarbeits-Rüstungsschmiedewerkzeug",
+      "owner": "Osric",
+      "group": "Werkzeug",
+      "amount": "1 Satz",
+      "state": "Vorhanden",
+      "value": 55,
+      "basis": "Kaufpreis",
+      "note": ""
+    },
+    {
+      "id": "cauldron",
+      "name": "Neu beschaffter Cauldron of Brewing",
+      "owner": "Horn / Bad 2-14",
+      "group": "Einrichtung",
+      "amount": "1",
+      "state": "Als Badheizer installiert",
+      "value": 1500,
+      "basis": "Kaufpreis",
+      "note": "Der frühere verkaufte Kessel ist nicht zusätzlich vorhanden."
+    },
+    {
+      "id": "table",
+      "name": "Großer Tisch aus Juraks Treantholz",
+      "owner": "Horn / Große Halle 1-27",
+      "group": "Einrichtung",
+      "amount": "1",
+      "state": "Fertig und installiert",
+      "value": null,
+      "basis": "Nicht taxiert",
+      "note": ""
+    },
+    {
+      "id": "lute-kaitlyn",
+      "name": "Meisterarbeitslaute",
+      "owner": "Kaitlyn",
+      "group": "Persönliches Eigentum",
+      "amount": "1",
+      "state": "Geschenkt und in ihrem Besitz",
+      "value": 100,
+      "basis": "Historischer Kaufpreis",
+      "note": ""
+    },
+    {
+      "id": "lute-bianca",
+      "name": "Eigene Meisterarbeitslaute",
+      "owner": "Bianca",
+      "group": "Persönliches Eigentum",
+      "amount": "1",
+      "state": "Am 13. März zurückgegeben",
+      "value": null,
+      "basis": "Nicht taxiert",
+      "note": ""
+    },
+    {
+      "id": "calliaste",
+      "name": "Eigenes Schwert und Schmuck",
+      "owner": "Calliaste",
+      "group": "Persönliches Eigentum",
+      "amount": "1 Schwert / Schmuck",
+      "state": "Am 13. März zurückgegeben",
+      "value": null,
+      "basis": "Keine neue gemeinsame Taxierung",
+      "note": ""
+    },
+    {
+      "id": "hammer",
+      "name": "Large-Großhammer +1",
+      "owner": "Grumblejack",
+      "group": "Persönliches Eigentum",
+      "amount": "1",
+      "state": "Am 10. März geschenkt; nicht an Yorgun zurückgegeben",
+      "value": null,
+      "basis": "Nicht taxiert",
+      "note": ""
+    },
+    {
+      "id": "clw",
+      "name": "Cure-Light-Wounds-Tränke aus Halla-Bergung",
+      "owner": "Horn",
+      "group": "Verbrauchsgüter",
+      "amount": "5",
+      "state": "Unbenutzt; genaue aktuelle Einzelverwahrung nicht festgelegt",
+      "value": null,
+      "basis": "Nicht taxiert",
+      "note": ""
+    },
+    {
+      "id": "old-clw",
+      "name": "Ältere separate CLW-Tränke / Dispel-Schriftrolle",
+      "owner": "Unbestätigt",
+      "group": "Ungeklärter Bestand",
+      "amount": "Unbestätigt",
+      "state": "Nicht mit den fünf neu bestätigten Tränken zusammenrechnen",
+      "value": null,
+      "basis": "Nicht taxiert",
+      "note": ""
+    },
+    {
+      "id": "salve",
+      "name": "Steinsalbe",
+      "owner": "Vesper",
+      "group": "Verbrauchsgüter",
+      "amount": "2 Portionen",
+      "state": "Vorhanden",
+      "value": null,
+      "basis": "Nicht taxiert",
+      "note": ""
+    },
+    {
+      "id": "pavilion",
+      "name": "Reisepavillon",
+      "owner": "Horn",
+      "group": "Einrichtung",
+      "amount": "1",
+      "state": "Genähter Eingang; frühere Lead-Plating-Wirkung abgelaufen",
+      "value": 100,
+      "basis": "Preis des Hauptpavillons",
+      "note": ""
+    },
+    {
+      "id": "matrix",
+      "name": "Wiederverwendbare Meistermatrix",
+      "owner": "Tacitus / Werkstatt",
+      "group": "Forschung",
+      "amount": "1",
+      "state": "Fertig, nicht an Styke übertragen",
+      "value": 1600,
+      "basis": "Verbrauchtes Forschungsmaterial",
+      "note": "Keine Bewertung des Gegenstands und kein neuer Abzug."
+    },
+    {
+      "id": "rider",
+      "name": "Reitergeschirr",
+      "owner": "Mirelle",
+      "group": "Werkstücke",
+      "amount": "1",
+      "state": "Bodentest mit Valeria und Grumblejack bestanden",
+      "value": null,
+      "basis": "Nicht taxiert",
+      "note": "Vom Hammer-Haltegürtel und privaten Präzisionsgeschirr getrennt."
+    },
+    {
+      "id": "gift-grumble",
+      "name": "Hammer-Haltegürtel mit zweiter Sicherung",
+      "owner": "Grumblejack",
+      "group": "Übergebene persönliche Geschenke",
+      "amount": "1",
+      "state": "Am 2. April tatsächlich überreicht; beim Empfänger, keine ausstehende Geschenktruhe.",
+      "value": null,
+      "basis": "Preis nicht festgestellt",
+      "note": "Am 2. April tatsächlich übergeben; beim jeweiligen Empfänger."
+    },
+    {
+      "id": "gift-elise",
+      "name": "Gefütterte belüftete Frost-Tasche",
+      "owner": "Elise",
+      "group": "Übergebene persönliche Geschenke",
+      "amount": "1",
+      "state": "Am 2. April tatsächlich überreicht; beim Empfänger, keine ausstehende Geschenktruhe.",
+      "value": null,
+      "basis": "Preis nicht festgestellt",
+      "note": "Am 2. April tatsächlich übergeben; beim jeweiligen Empfänger."
+    },
+    {
+      "id": "gift-valeria",
+      "name": "Zweifarbiger Stein und Adamant-/Mithralring",
+      "owner": "Valeria",
+      "group": "Übergebene persönliche Geschenke",
+      "amount": "1",
+      "state": "Am 2. April tatsächlich überreicht; beim Empfänger, keine ausstehende Geschenktruhe.",
+      "value": null,
+      "basis": "Preis nicht festgestellt",
+      "note": "Am 2. April tatsächlich übergeben; beim jeweiligen Empfänger."
+    },
+    {
+      "id": "gift-vesper",
+      "name": "Journal mit verborgenem Platin-Schweifring",
+      "owner": "Vesper",
+      "group": "Übergebene persönliche Geschenke",
+      "amount": "1",
+      "state": "Am 2. April tatsächlich überreicht; beim Empfänger, keine ausstehende Geschenktruhe.",
+      "value": null,
+      "basis": "Preis nicht festgestellt",
+      "note": "Am 2. April tatsächlich übergeben; beim jeweiligen Empfänger."
+    },
+    {
+      "value": null,
+      "id": "vesper-corset",
+      "name": "Vespers eigenes Corset of Delicate Moves",
+      "amount": "1",
+      "owner": "Vesper",
+      "state": "Seit 31. März übergeben; üblicherweise getragen, anfängliche 24h-Voraussetzung erfüllt.",
+      "basis": "1.000 GM Material einmal verbucht"
+    },
+    {
+      "value": null,
+      "id": "boots-styke",
+      "name": "Boots of Striding and Springing",
+      "amount": "1 Paar",
+      "owner": "Styke",
+      "state": "Übergeben und im üblichen Dienst getragen; Bonus im Kampfprofil enthalten.",
+      "basis": "2.750 GM Herstellmaterial bereits verbucht"
+    },
+    {
+      "value": null,
+      "id": "boots-valeria",
+      "name": "Boots of Striding and Springing",
+      "amount": "1 Paar",
+      "owner": "Valeria",
+      "state": "Übergeben und im üblichen Dienst getragen; Bonus im Kampfprofil enthalten.",
+      "basis": "2.750 GM Herstellmaterial bereits verbucht"
+    },
+    {
+      "value": null,
+      "id": "guard-silence",
+      "name": "CL-3-Silence-Befehlsstein",
+      "amount": "1",
+      "owner": "Tamsin / Hakon Eingang",
+      "state": "11. April gefertigt/übergeben, 1×/Tag, noch nicht durch den Sicherheitsdrill verbraucht.",
+      "basis": "2160 GM Material bereits verbucht"
+    },
+    {
+      "value": null,
+      "id": "guard-glitterdust",
+      "name": "CL-3-Glitterdust-Befehlsstein",
+      "amount": "1",
+      "owner": "Tamsin / Hakon Eingang",
+      "state": "13. April gefertigt/übergeben, 1×/Tag, noch nicht durch den Sicherheitsdrill verbraucht.",
+      "basis": "2160 GM Material bereits verbucht"
+    },
+    {
+      "value": null,
+      "id": "venom-nella",
+      "name": "Assassin-Vine-Gift",
+      "amount": "4 Dosen",
+      "owner": "Nella",
+      "state": "Vier zuletzt bestätigte gesicherte Dosen; spätere Ernten oder Verbrauch nicht beziffert.",
+      "basis": "Bestätigte gesicherte Dosen"
+    },
+    {
+      "value": null,
+      "id": "draft-order",
+      "name": "Die Ordnung von Talingarde",
+      "amount": "1 Entwurf",
+      "owner": "Styke",
+      "state": "Stykes privater Entwurf wurde überarbeitet; Tacitus hat die aktuelle Abschrift erhalten.",
+      "basis": "Persönliches Manuskript"
+    },
+    {
+      "id": "styke-cha4",
+      "name": "CHA-Stirnreif +4",
+      "owner": "Styke",
+      "group": "Persönliche Ausrüstung",
+      "amount": "1",
+      "state": "Übergeben und im Dienst getragen.",
+      "value": null,
+      "basis": "Nicht neu taxiert",
+      "note": "Bereits bezahlt; keine zweite Abbuchung."
+    },
+    {
+      "id": "styke-eyes",
+      "name": "Eyes of the Eagle",
+      "owner": "Styke",
+      "group": "Persönliche Ausrüstung",
+      "amount": "1",
+      "state": "Übergeben und im Dienst getragen.",
+      "value": null,
+      "basis": "Nicht neu taxiert",
+      "note": "Bereits bezahlt; keine zweite Abbuchung."
+    },
+    {
+      "id": "bottle",
+      "name": "Eversmoking Bottle",
+      "owner": "Horn",
+      "group": "Ausrüstung / Vorräte",
+      "amount": "1",
+      "state": "Fertig und übergeben 11. Juli; kein Einsatz vorweggenommen.",
+      "value": 2700,
+      "basis": "Bereits bezahltes Material / Fokus; kein zusätzlicher Kassensaldo",
+      "note": ""
+    },
+    {
+      "id": "clover-styke",
+      "name": "Four-leaf Clover",
+      "owner": "Styke",
+      "group": "Ausrüstung / Vorräte",
+      "amount": "1",
+      "state": "Fertig 12. Juli; 3/Tag Kapazität, aktuelle Restnutzung unbekannt.",
+      "value": 1875,
+      "basis": "Bereits bezahltes Material / Fokus; kein zusätzlicher Kassensaldo",
+      "note": ""
+    },
+    {
+      "id": "clover-vesper",
+      "name": "Four-leaf Clover",
+      "owner": "Vesper",
+      "group": "Ausrüstung / Vorräte",
+      "amount": "1",
+      "state": "Fertig 13. Juli; 3/Tag Kapazität, aktuelle Restnutzung unbekannt.",
+      "value": 1875,
+      "basis": "Bereits bezahltes Material / Fokus; kein zusätzlicher Kassensaldo",
+      "note": ""
+    },
+    {
+      "id": "clover-valeria",
+      "name": "Four-leaf Clover",
+      "owner": "Valeria",
+      "group": "Ausrüstung / Vorräte",
+      "amount": "1",
+      "state": "Fertig 14. Juli; 3/Tag Kapazität, aktuelle Restnutzung unbekannt.",
+      "value": 1875,
+      "basis": "Bereits bezahltes Material / Fokus; kein zusätzlicher Kassensaldo",
+      "note": ""
+    },
+    {
+      "id": "gloves-recon",
+      "name": "Gloves of Reconnaissance",
+      "owner": "Vesper",
+      "group": "Ausrüstung / Vorräte",
+      "amount": "1",
+      "state": "Fertig 15. Juli; anfängliche 24h-Tragefrist nicht bestätigt.",
+      "value": 1000,
+      "basis": "Bereits bezahltes Material / Fokus; kein zusätzlicher Kassensaldo",
+      "note": ""
+    },
+    {
+      "id": "boots-vesper",
+      "name": "Boots of Elvenkind",
+      "owner": "Vesper",
+      "group": "Ausrüstung / Vorräte",
+      "amount": "1",
+      "state": "Seit 11. Juli getragen; +5 Kompetenz Acrobatics.",
+      "value": null,
+      "basis": "Nicht taxiert",
+      "note": ""
+    },
+    {
+      "id": "scrying-mirror",
+      "name": "Scrying-Spiegel",
+      "owner": "Horn",
+      "group": "Ausrüstung / Vorräte",
+      "amount": "1",
+      "state": "Wiederverwendbarer Fokus, behalten.",
+      "value": 1000,
+      "basis": "Bereits bezahltes Material / Fokus; kein zusätzlicher Kassensaldo",
+      "note": ""
+    },
+    {
+      "id": "cmw-reserve",
+      "name": "Cure Moderate Wounds",
+      "owner": "Horn",
+      "group": "Ausrüstung / Vorräte",
+      "amount": "3",
+      "state": "Drei Tränke als Notreserve behalten.",
+      "value": null,
+      "basis": "Nicht taxiert",
+      "note": ""
+    }
+  ],
+  "treasury": {
+    "liquid": 6560.75,
+    "earmarked": 4600,
+    "free": 1960.75,
+    "gold": 0,
+    "silver": 0,
+    "valuables": 0
+  },
+  "notes": [
+    "29. Juli 4712 AR · später Nachmittag; Teil-Checkpoint. Ritual und Ressourcen behalten ihren ausdrücklich belegten Zeitstempel.",
+    "Historisch eingerechnete Sachwerte werden nicht zusätzlich zum Kassensaldo addiert.",
+    "Juli-Ausrüstungsserie abgeschlossen; keine erneuten Materialabbuchungen.",
+    "Atelier +90 GM am 27. Juli gebucht; nächste Abrechnung 27. August.",
+    "Unbezifferte Restressourcen bleiben unbekannt; keine verborgenen Ereignisse oder privaten NPC-Berichte veröffentlicht."
+  ]
+}

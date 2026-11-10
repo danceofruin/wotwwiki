@@ -1,0 +1,23 @@
+import fs from 'node:fs';
+import assert from 'node:assert/strict';
+import { validate } from './validate-live.mjs';
+const live = JSON.parse(fs.readFileSync(new URL('../data/live.json', import.meta.url)));
+const sheets = JSON.parse(fs.readFileSync(new URL('../data/sheets.json', import.meta.url)));
+validate(live, sheets);
+const rejected = (name, change) => {
+  const l=structuredClone(live),s=structuredClone(sheets);change(l,s);
+  assert.throws(()=>validate(l,s),name);
+  console.log('PASS:',name);
+};
+rejected('No raw GM payload fields',l=>l.hidden='A secret');
+rejected('No GM quest paths',l=>l.quests[0].summary='quests/secret.md');
+rejected('No HTML/script injection',l=>l.quests[0].summary='<script>alert(1)</script>');
+rejected('No external data URLs',l=>l.quests[0].summary='https://example.org/canon');
+rejected('No made-up Valeria resource pools',l=>l.party[2].pp={current:5,max:5});
+rejected('No resources above capacity',l=>l.party[0].hp.current=9999);
+rejected('No negative slots',l=>l.party[1].slots[0].current=-1);
+rejected('No mixed source revisions',(_,s)=>s.meta.sourceRevision='0'.repeat(64));
+rejected('No broken NPC links',l=>l.quests[0].links.push('unknown-character'));
+const unknown=structuredClone(live);unknown.party[1].slots.forEach(s=>s.current=null);
+assert(validate(unknown,sheets));
+console.log('PASS: unknown resources remain valid, never inferred as full');
