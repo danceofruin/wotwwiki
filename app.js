@@ -15,6 +15,14 @@ function refreshVisibleData(){
 refreshVisibleData();
 
 const ARTWORKS={
+"marta-dian":[{"src": "assets/marta-normal-20261110.webp", "alt": "Marta mit Mitra-Zeichen und Buch.", "title": "Marta Dian", "caption": "Marta mit Mitra-Zeichen und Buch."}, {"src": "assets/marta-private-20261110.webp", "alt": "Marta in einer ruhigen privaten Stunde.", "title": "Marta · privat", "caption": "Marta in einer ruhigen privaten Stunde."}],
+"halla-amon":[{"src": "assets/halla-normal-20261110.webp", "alt": "Halla mit Schwert und Reiseausrüstung.", "title": "Halla Amon", "caption": "Halla mit Schwert und Reiseausrüstung."}, {"src": "assets/halla-private-20261110.webp", "alt": "Halla außerhalb des Dienstes.", "title": "Halla · privat", "caption": "Halla außerhalb des Dienstes."}],
+"bianca-devallya":[{"src": "assets/bianca-normal-20261110.webp", "alt": "Bianca mit ihrer Laute.", "title": "Bianca DeVallya", "caption": "Bianca mit ihrer Laute."}, {"src": "assets/bianca-private-20261110.webp", "alt": "Bianca in einer privaten Stunde, die Laute neben ihr.", "title": "Bianca · privat", "caption": "Bianca in einer privaten Stunde, die Laute neben ihr."}],
+"traya-demarco":[{"src": "assets/traya-normal-20261110.webp", "alt": "Traya im selbstgewählten Erscheinungsbild.", "title": "Traya DeMarco", "caption": "Traya im selbstgewählten Erscheinungsbild."}, {"src": "assets/traya-private-20261110.webp", "alt": "Traya am Feuer.", "title": "Traya · privat", "caption": "Traya am Feuer."}],
+"rika":[{"src": "assets/rika-work-20261110.webp", "alt": "Rika auf einem Arbeitsweg im Horn. Schlüssel im Bild begründen keinen tatsächlichen Schlüsselbesitz.", "title": "Rika", "caption": "Rika auf einem Arbeitsweg im Horn. Schlüssel im Bild begründen keinen tatsächlichen Schlüsselbesitz."}],
+"linnet":[{"src": "assets/linnet-work-20261110.webp", "alt": "Linnet bei den Pferden.", "title": "Linnet", "caption": "Linnet bei den Pferden."}],
+"tessa":[{"src": "assets/tessa-work-20261110.webp", "alt": "Tessa in der Küche.", "title": "Tessa", "caption": "Tessa in der Küche."}, {"src": "assets/tessa-private-20261110.webp", "alt": "Tessa nach der Arbeit.", "title": "Tessa · privat", "caption": "Tessa nach der Arbeit."}],
+"hester":[{"src": "assets/hester-work-20261110.webp", "alt": "Hester mit Feder und Aufzeichnungen.", "title": "Hester", "caption": "Hester mit Feder und Aufzeichnungen."}, {"src": "assets/hester-private-20261110.webp", "alt": "Hester liest bei Kerzenlicht.", "title": "Hester · privat", "caption": "Hester liest bei Kerzenlicht."}],
 "calliaste":[{"src":"assets/calliaste-shanda-v2.webp","alt":"Calliaste Shanda, geflügelte Lillend-Azata mit Schlangenleib","title":"Calliaste Shanda","caption":"Vom Spieler gewähltes Porträt für Calliaste Shanda."},{"src":"assets/calliaste-elfenform-balcony-v1.webp","alt":"Calliaste Shanda in Elfenform auf einer mondbeschienenen Terrasse","title":"Calliaste · Elfenform","caption":"Elfenform auf der Terrasse – vom Spieler gewählte Kampagnenillustration."},{"src":"assets/calliaste-elfenform-lute-v1.webp","alt":"Calliaste Shanda in Elfenform mit einer Laute","title":"Calliaste · Elfenform mit Laute","caption":"Elfenform mit Laute – vom Spieler gewählte Kampagnenillustration."}],
 "branna-cole":[{"src": "assets/branna-cole-v1.webp", "alt": "Branna Cole — Zimmerin und Tischlerin", "title": "Branna Cole", "caption": "Zimmerin und Tischlerin im Horn von Abaddon."}],
 "osric-fenlow":[{"src": "assets/osric-fenlow-v1.webp", "alt": "Osric Fenlow — Schmied", "title": "Osric Fenlow", "caption": "Schmied im Horn von Abaddon."}],
@@ -258,32 +266,33 @@ function dossierArticle(a){const bins=collectDossier(a);let body=(['styke','vesp
 function patchedRefresh(){baseRefresh();const visibleArticles=DATA.articles.filter(a=>!HIDDEN.has(a.id)),seen=new Set(),mappedEdges=[];(DATA.edges||[]).forEach(e=>{const a=mapId(e.a),b=mapId(e.b);if(a===b||!RAW_BYID[a]||!RAW_BYID[b])return;const key=[a,b,e.type||'',e.label||''].join('|');if(seen.has(key))return;seen.add(key);mappedEdges.push({...e,a,b});});DATA={...DATA,articles:visibleArticles,edges:mappedEdges,categories:Object.fromEntries(Object.entries(DATA.categories).filter(([k])=>!['profile','boegen','intimitaet'].includes(k)))};ARTICLES=DATA.articles;BYID=Object.assign(Object.create(null),Object.fromEntries(ARTICLES.map(a=>[a.id,a])));CATS=DATA.categories;}
 function patchedNavigation(){
   let out='<div class="nav-label">Live Play</div>'+navItem('live','Am Spieltisch')+navItem('quests','Questlog')+navItem('horn','Horn-Tracker')+navItem('inventar','Inventar & Kasse')+navItem('wuerfel','Würfelprotokoll')+'<div class="nav-label">Aktive Party</div>'+navItem('sheet/styke','Styke')+navItem('sheet/vesper','Vesper')+navItem('sheet/valeria','Valeria')+'<div class="nav-label">Kampagnenarchiv</div>'+navItem('start','Archivübersicht')+navItem('artikel/story-so-far','Die Geschichte bisher')+navItem('chronik','Chronik & Kalender',DATA.events.length);
-  out+='<div class="nav-label">Figuren</div>'+navItem('dossiers','Alle Dossiers',ARTICLES.filter(isDossier).length)+navItem('beziehungen','Beziehungsatlas',DATA.edges.length);
+  out+='<div class="nav-label">Figuren</div>'+navItem('dossiers','Alle Dossiers',ARTICLES.filter(isDossier).length)+navItem('artikel/nessian-knot','Der Knoten · 13 Mitglieder')+navItem('beziehungen','Beziehungsatlas',DATA.edges.length);
   out+='<div class="nav-label">Welt</div>'+navItem('kategorie/horn','Das Horn',ARTICLES.filter(a=>a.category==='horn').length)+navItem('kategorie/orte','Orte & Wege',ARTICLES.filter(a=>a.category==='orte').length)+navItem('kategorie/gruppen','Gruppen & Institutionen',ARTICLES.filter(a=>a.category==='gruppen').length)+navItem('kategorie/gegenstaende','Gegenstände',ARTICLES.filter(a=>a.category==='gegenstaende').length)+navItem('kategorie/welt','Setting & Weltwissen',ARTICLES.filter(a=>a.category==='welt').length);
   out+='<div class="nav-label">Nachschlagen</div>'+navItem('kategorie/vorhaben','Pläne & offene Fäden',ARTICLES.filter(a=>a.category==='vorhaben').length)+navItem('kategorie/faehigkeiten','Zauber & Fähigkeiten',ARTICLES.filter(a=>a.category==='faehigkeiten').length)+navItem('kategorie/regeln','Regeln',ARTICLES.filter(a=>a.category==='regeln').length);
   out+='<div class="nav-label">Mein Archiv</div>'+navItem('favoriten','Lesezeichen')+navItem('notizen','Eigene Notizen')+navItem('quellen','Quellen & Stand');
   $('#navigation').innerHTML=out;
 }
-function dossierIndexCard(a){return '<article class="card"><span class="eyebrow">'+esc(CATS[a.category]?.title||'Dossier')+'</span><h3><a href="#/artikel/'+a.id+'">'+esc(a.title)+'</a></h3><p>'+esc(a.summary||'')+'</p><div class="card-bottom"><span>'+(a.aliases?.length?esc(a.aliases[0]):'Kampagnenakte')+'</span><a href="#/artikel/'+a.id+'">Akte öffnen →</a></div></article>';}
+function dossierIndexCard(a){const art=ARTWORKS[a.id]?.[0];return '<article class="card">'+(art?'<a class="dossier-card-art" href="#/artikel/'+a.id+'"><img loading="lazy" src="'+esc(art.src)+'" alt="'+esc(art.alt||a.title)+'"></a>':'')+'<span class="eyebrow">'+esc(CATS[a.category]?.title||'Dossier')+'</span><h3><a href="#/artikel/'+a.id+'">'+esc(a.title)+'</a></h3><p>'+esc(a.summary||'')+'</p><div class="card-bottom"><span>'+(a.aliases?.length?esc(a.aliases[0]):'Kampagnenakte')+'</span><a href="#/artikel/'+a.id+'">Akte öffnen →</a></div></article>';}
 function dossiersPage(){
   const core=['styke','vesper','valeria'].map(id=>BYID[id]).filter(Boolean);
   const allRest=ARTICLES.filter(a=>isDossier(a)&&!core.some(x=>x.id===a.id)).sort((a,b)=>a.title.localeCompare(b.title,'de'));
   const byId=Object.fromEntries(allRest.map(a=>[a.id,a]));
   const groups=[
-    {title:'Bewohner des Horns',desc:'Die vier angeworbenen Fachkräfte für Holz, Schmiede, Küche und Stein.',ids:['branna-cole','osric-fenlow','edda-marr','darric-holt']},
-    {title:'Der Knoten & engster Kreis',desc:'Gebundene Mitglieder, enge Vertraute und Grumblejack.',ids:['tamsin','nella','tacitus','kaitlyn','elise','grumblejack']},
-    {title:'Begleiter & Sonderfälle',desc:'Verse und Zorn, Timeon sowie Grumblejacks Pferd Varlet.',ids:['verse','zorn','timeon','varlet']},
-    {title:'Henchmen & Feldgruppe',desc:'Hakon und seine fünf Männer: Wachen und Aufbau im Horn.',ids:['hakon','arved','eirik','ketil','sten','torvald']},
-    {title:'Asmodeus-Anhänger & andere Knoten',desc:'Thorns unmittelbares Umfeld, die übrigen White Ravens und Sakkarot Fire-Axe.',ids:['thorn','tiadora','sakkarot','trik','trak','dostan','frost']},
+    {title:'Der Knoten · 13 Mitglieder',desc:'Das Kerntrio oben und diese zehn persönlich Gebundenen bilden den Knoten. Die vollständige Übersicht trennt Mitgliedschaft von Freundschaft und Dienst.',ids:['tamsin','tacitus','kaitlyn','mirelle','nella','calliaste','traya-demarco','marta-dian','halla-amon','bianca-devallya']},
+    {title:'Die vier aus dem Waisenhaus',desc:'Rika, Tessa, Hester und Linnet: bezahlte zivile Angestellte mit eigener Geschichte und verschiedenen Aufgaben, keine Knotenmitglieder.',ids:['rika','tessa','hester','linnet']},
+    {title:'Freunde und befristete Weggefährten',desc:'Grumblejack bleibt ein freier Freund. Yorgun und James sind endlich an Sicherheitsregeln gebunden; ihre Verträge sind keine volle Mitgliedschaft.',ids:['grumblejack','yorgun','james-otoole']},
+    {title:'Die vier Fachkräfte des Horns',desc:'Vertragsarbeiter für Holz, Schmiede, Küche und Stein.',ids:['branna-cole','osric-fenlow','edda-marr','darric-holt']},
+    {title:'Begleiter & Sonderfälle',desc:'Rex, Verse und Zorn, Knittel, Timeon und Varlet.',ids:['carnitheria-rex','verse','zorn','knittel','timeon','varlet']},
+    {title:'Henchmen & Feldgruppe',desc:'Hakon und seine fünf freien Männer: Wachen und Aufbau im Horn.',ids:['hakon','arved','eirik','ketil','sten','torvald']},
+    {title:'Asmodeus-Anhänger & andere Knoten',desc:'Thorns Umfeld, Elise und die White Ravens sowie Sakkarot Fire-Axe.',ids:['thorn','tiadora','elise','sakkarot','trik','trak','dostan','frost']},
     {title:'Balentyne & Aldencross',desc:'Offiziere, Klerus, Handwerker und Kontakte rund um die Festung.',ids:['havelyn','franz','zack','donnagin','barnabus','jacobian','giuseppe']},
-    {title:'Stykes Eskapaden',desc:'Mara, Ellyn und Mirelle: drei sehr verschiedene Verbindungen außerhalb des Knotens.',ids:['mara','ellyn','mirelle']},
+    {title:'Weitere persönliche Verbindungen',desc:'Mara und Ellyn gehören zur eigenen Geschichte außerhalb des Knotens.',ids:['mara','ellyn']},
     {title:'Nordfahrt & Frosthamar',desc:'Bekanntschaften, Gegner und Überlebende der Reise in den Norden.',ids:['white-tusk','joseph','odenkirk','sambryl','nerianus','kiliketz']},
     {title:'Vergangenheit & frühere Gegner',desc:'Personen, deren wichtigste Begegnung mit dem Knoten bereits hinter ihm liegt.',ids:['varning','matilda','darran-vell']}
-  ];
-  const used=new Set(groups.flatMap(g=>g.ids));
+  ];  const used=new Set(groups.flatMap(g=>g.ids));
   groups.push({title:'Minor NPCs & lose Spuren',desc:'Randbekanntschaften, Gerüchte und Personen mit bislang geringer Bedeutung.',ids:['bellam','alicia','copper-server','marel','sir-justin','arienne','marlowe','zarik',...allRest.filter(a=>!used.has(a.id)).map(a=>a.id)]});
   let out=pageHead('Figuren','Dossiers','Nach Stellung im Knoten, Zugehörigkeit und Bedeutung für die laufende Kampagne sortiert.');
-  out+=section('Kernfiguren')+'<div class="grid party-grid">'+PARTY.map(partyCard).join('')+'</div>';
+  out+=section('Kernfiguren')+'<div class="grid party-grid">'+PARTY.map(partyCard).join('')+'</div><p><a class="button small" href="#/artikel/nessian-knot">Der Knoten: Mitglieder und Zugehörigkeit →</a></p>';
   groups.forEach(g=>{const rows=[...new Set(g.ids)].map(id=>byId[id]).filter(Boolean);if(!rows.length)return;out+='<section class="dossier-group">'+section(g.title)+'<p class="muted dossier-group-copy">'+esc(g.desc)+'</p><div class="dossier-index">'+rows.map(dossierIndexCard).join('')+'</div></section>';});
   return out;
 }
@@ -324,6 +333,7 @@ WotwLive.init(()=>{
 
 
 WotwHorn.init(()=>{if(accepted()&&/^#\/(horn|inventar)(?:[/?]|$)/.test(location.hash))newRoute();});
+
 
 
 
