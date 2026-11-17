@@ -3,12 +3,12 @@
     "schemaVersion": 1,
     "playerSafe": true,
     "authority": "GENERATED VIEW. DO NOT USE AS CAMPAIGN AUTHORITY.",
-    "reviewedAt": "2026-11-10",
-    "campaignDate": "4712-07-29",
-    "campaignLabel": "29. Juli 4712 AR · später Nachmittag",
-    "sourceCommit": "96ce7aee3f02689d250f965b9a28975e9a7951cb",
-    "sourceRevision": "85631e1491da2c674db202555a7a8da95bc106a00b09f7632fc680c3478b16f8",
-    "generatedAt": "2026-11-10T16:47:27+00:00"
+    "reviewedAt": "2026-11-17",
+    "campaignDate": "4712-08-14",
+    "campaignLabel": "14. August 4712 AR · später Nachmittag",
+    "sourceCommit": "6727d735aad999e706b75275b00f9a4a43e0a0b2",
+    "sourceRevision": "29f757f17082dcb29bfa31ca0485f9e14ca0fe2f78b1af33ea2fc24e04a75791",
+    "generatedAt": "2026-11-17T14:14:02+00:00"
   },
   "levels": [
     {
@@ -47,9 +47,9 @@
       ],
       "level": "sanctum",
       "status": "active",
-      "progress": "444/666 zuletzt ausdrücklich belegt: 28. Juli Dämmerung; Opfer 2/3.",
-      "next": "29. Juli beim vollständigen Tagesabgleich prüfen; keine automatische zusätzliche Zählung.",
-      "done": 444,
+      "progress": "494/666 bis 14. August Morgengrauen; Opfer 2/3.",
+      "next": "Nächstes #495 bei Dämmerung; #666 voraussichtlich 10. Oktober bei ununterbrochener Fortführung.",
+      "done": 494,
       "total": 666
     },
     {
@@ -461,8 +461,8 @@
       ],
       "level": "three",
       "status": "active",
-      "progress": "Die frühere Vorprobenphase ist beendet; derzeit nur sichere Vorbereitung ohne Erregerprobe.",
-      "next": "Konkrete Vorschläge mit Tacitus besprechen; bauliche Ausführung und gefährliche Tests sind nicht freigegeben.",
+      "progress": "Trockene Horn-Isolationsprüfung am 12. August vorgelegt; keine sichere Infektionsstation und keine Erregerprobe.",
+      "next": "Keine gefährliche Forschung ohne eigene Freigabe; weitere sichere Planung bleibt offen.",
       "done": null,
       "total": null
     },
@@ -521,7 +521,7 @@
       "level": "caves",
       "status": "active",
       "progress": "Vier erwachsene hostile Assassin Vines sind in C1 einzeln angekettet; keine zahmen Hauswachen. Nella lagert vier tatsächlich gewonnene Giftdosen.",
-      "next": "Nächste vorgesehene Ernte 30. April; bis dahin keine neue Dosenzahl oder Zähmung.",
+      "next": "Spätere Ernten und Verbrauch nicht beziffert; vier zuletzt bestätigte Dosen nicht automatisch erhöhen.",
       "done": null,
       "total": null
     },
@@ -535,8 +535,8 @@
       ],
       "level": "one",
       "status": "completed",
-      "progress": "Gesamtdrill am 23. April mit Tamsins neuer Gesamtleitung und Hakons eigenen fünf Leuten tatsächlich abgeschlossen; keine Verwendung der beiden Befehlssteine.",
-      "next": "Hakon ist über die neue Oberstruktur noch nicht von Styke persönlich einzeln informiert; laufenden Dienst korrekt trennen.",
+      "progress": "Rotteam-Versuch 31. Juli an den äußeren menschlichen Wachschichten sicher beendet; keine Verletzten.",
+      "next": "Bestätigte Ablösung und aktuelle Wachübergabe beibehalten.",
       "done": null,
       "total": null
     },
@@ -589,8 +589,38 @@
       ],
       "level": "one",
       "status": "active",
-      "progress": "Das Atelier arbeitet; +90 GM Nettoergebnis am 27. Juli einmalig gebucht.",
-      "next": "Letzte gemeinsame Anpassungs-/Bewegungsprobe am 29. Juli abends; nächste Monatsabrechnung am 27. August.",
+      "progress": "Drei Stücke für Styke, Vesper und Kaitlyn fertig 29. Juli, getragen 30. Juli; übrige Kollektion in Arbeit.",
+      "next": "Nächste Monatsabrechnung +90 GM netto am 27. August.",
+      "done": null,
+      "total": null
+    },
+    {
+      "id": "grumble-circlet",
+      "title": "Grumblejacks menschliche Gestalt",
+      "owners": [
+        "Tacitus",
+        "Knittel",
+        "Grumblejack"
+      ],
+      "level": "three",
+      "status": "completed",
+      "progress": "6.000/6.000 GM; zwei volle Tage abgeschlossen. Reif am 14. August übergeben und getestet.",
+      "next": "Im Besitz Grumblejacks; feste Menschengestalt und Ausrüstungsanpassung tatsächlich erprobt.",
+      "done": 2,
+      "total": 2
+    },
+    {
+      "id": "fair-cover",
+      "title": "Wachübergabe für den 15. August",
+      "owners": [
+        "Traya",
+        "Tamsin",
+        "Hakon"
+      ],
+      "level": "one",
+      "status": "active",
+      "progress": "Traya, Marta, Halla und Bianca übernehmen die begrenzte Tagesvertretung; Einweisung läuft.",
+      "next": "Reale Übergabe, Schlüssel, Ablösung und freiwillige Ausflugsbesetzung sichern.",
       "done": null,
       "total": null
     }
@@ -606,19 +636,19 @@
     },
     {
       "id": "hexor",
-      "level": "two",
-      "title": "Wachdienst Ebene Zwei",
+      "level": "sanctum",
+      "title": "Augenbeobachtung S-1",
       "status": "operational",
-      "owner": "Hexoraticus",
-      "detail": "Gebundener Wächter 84 HP; Ritualdienst nur bei echter Ablösung, kein allwissendes Fernüberwachungssystem."
+      "owner": "Hexor/Vexor im Ablösedienst",
+      "detail": "Ein qualifizierter Wächter deckt die tatsächliche Augenbeobachtung; Ritualdienst nur mit realer Ablösung."
     },
     {
       "id": "vexor",
-      "level": "three",
-      "title": "Äußere Vorwache",
+      "level": "one",
+      "title": "Dämonische Eingangssicherung",
       "status": "operational",
-      "owner": "Vexorandian",
-      "detail": "Gebundener Wächter 68 HP mit 3 dauerhaftem CON-Entzug; Standardposten außerhalb des vorgeschobenen Haupttores, soweit Wachlage unverändert."
+      "owner": "Hexor/Vexor im Ablösedienst",
+      "detail": "Zweiter Wächter am einzigen offenen oberen Eingang 1-1 mit menschlicher Wache und Glut; keine Fernüberwachung."
     },
     {
       "id": "two",
@@ -686,11 +716,11 @@
     },
     {
       "id": "captives",
-      "level": null,
-      "title": "Gefangenenaufsicht",
+      "level": "one",
+      "title": "Sereth · Gefangenenaufsicht",
       "status": "operational",
       "owner": "Tamsin",
-      "detail": "Fünf Personen in gemeinsamer bewachter Unterkunft; genaue Zimmer-/Ebenenzuordnung nicht gesichert. Keine unbeaufsichtigte Freizügigkeit."
+      "detail": "Lebend in Zelle 1-26; Tamsin besitzt die Schlüssel. Verlegung nach Ebene Drei vor einem echten Valenne-Besuch erforderlich und noch offen."
     },
     {
       "id": "hounds",
@@ -731,8 +761,8 @@
       "name": "Wirtschaftlich verfügbare gemeinsame Mittel",
       "owner": "Knoten",
       "group": "Geld",
-      "amount": "6.560 GM 7 SM 5 KM",
-      "state": "6.560 GM 7 SM 5 KM brutto; 4.600 GM gebunden, 1.960 GM 7 SM 5 KM frei.",
+      "amount": "5.540 GM 7 SM 5 KM",
+      "state": "5.540 GM 7 SM 5 KM brutto; 5.100 GM gebunden, 440 GM 7 SM 5 KM frei.",
       "value": 6560.75,
       "basis": "Verfügbarkeitsrechnung",
       "note": "Silber und kleinere Wertstücke sind bereits im wirtschaftlichen Gesamtsaldo enthalten, keine zweite Gutschrift."
@@ -842,7 +872,7 @@
       "owner": "Styke",
       "group": "Persönliche Ausrüstung",
       "amount": "siehe Stand",
-      "state": "Alternative Kopfslot-Gegenstände, keine stillschweigende Doppelbelegung",
+      "state": "Stykes Iron Circlet (Head) ist an Valeria verliehen. CHA-Stirnreif (Headband) bleibt kompatibel; Verständnishelm ist ein eigener Head-Gegenstand.",
       "value": null,
       "basis": "Nicht taxiert",
       "note": ""
@@ -1380,7 +1410,7 @@
       "name": "Die Ordnung von Talingarde",
       "amount": "1 Entwurf",
       "owner": "Styke",
-      "state": "Stykes privater Entwurf wurde überarbeitet; Tacitus hat die aktuelle Abschrift erhalten.",
+      "state": "Eigenständige Kritiken von Tacitus und Marta am 12. August besprochen; weiterhin Entwurf.",
       "basis": "Persönliches Manuskript"
     },
     {
@@ -1492,21 +1522,164 @@
       "value": null,
       "basis": "Nicht taxiert",
       "note": ""
+    },
+    {
+      "id": "ring-feather",
+      "name": "Ring of Feather Falling",
+      "owner": "Valeria",
+      "group": "Ausrüstung / Vorräte",
+      "amount": "1",
+      "state": "Aus Argossarians Hort; behalten und getragen.",
+      "value": 2200,
+      "basis": "Marktwert; keine Liquidität",
+      "note": ""
+    },
+    {
+      "id": "winter-boots",
+      "name": "Boots of the Winterlands",
+      "owner": "Grumblejack",
+      "group": "Ausrüstung / Vorräte",
+      "amount": "1",
+      "state": "Aus dem Hort; behalten und getragen.",
+      "value": 2500,
+      "basis": "Marktwert; keine Liquidität",
+      "note": ""
+    },
+    {
+      "id": "pearl-ii",
+      "name": "Pearl of Power II",
+      "owner": "Tacitus",
+      "group": "Ausrüstung / Vorräte",
+      "amount": "1",
+      "state": "Aus dem Hort; persönlich übernommen.",
+      "value": 4000,
+      "basis": "Marktwert; keine Liquidität",
+      "note": ""
+    },
+    {
+      "id": "restoration-wand",
+      "name": "Wand of Lesser Restoration",
+      "owner": "Vesper",
+      "group": "Ausrüstung / Vorräte",
+      "amount": "1",
+      "state": "Behalten; 18/50 Ladungen zuletzt bestätigt.",
+      "value": 1620,
+      "basis": "Restladungs-Marktwert; keine Liquidität",
+      "note": ""
+    },
+    {
+      "id": "mithral-rika-intended",
+      "name": "Mithralkettenhemd +1 · vorgesehen für Rika",
+      "owner": "Styke",
+      "group": "Ausrüstung / Vorräte",
+      "amount": "1",
+      "state": "Geborgenes Beutestück im Besitz Stykes; Übergabe an Rika nicht bestätigt.",
+      "value": 2100,
+      "basis": "Marktwert; keine Liquidität",
+      "note": ""
+    },
+    {
+      "id": "antharia-package",
+      "name": "Antharias Medaillon, Schuppe und Briefe",
+      "owner": "Styke / Forschungsbestand",
+      "group": "Forschung / Schlüssel",
+      "amount": "1 Paket",
+      "state": "Medaillon und Schuppe in Stykes Haversack; Briefpaket und Kassette behalten. Nicht als Verkaufsware behandelt.",
+      "value": null,
+      "basis": "Nicht neu taxiert",
+      "note": ""
+    },
+    {
+      "id": "dragon-gems",
+      "name": "Edelsteine und Schmuck",
+      "owner": "Gemeinsamer Hortbestand",
+      "group": "Argossarian · unverkaufte Sachwerte",
+      "amount": "1 Paket",
+      "state": "Unverkauft; nicht im liquiden Kassensaldo.",
+      "value": 3250,
+      "basis": "Festgelegter Marktwert",
+      "note": "Waffen/Rüstungen regulär 50% Verkauf; übrige Pakete nach festgelegter Bewertung. Kein Verkauf vorweggenommen."
+    },
+    {
+      "id": "dragon-silverware",
+      "name": "Silbergeschirr",
+      "owner": "Gemeinsamer Hortbestand",
+      "group": "Argossarian · unverkaufte Sachwerte",
+      "amount": "1 Paket",
+      "state": "Unverkauft; nicht im liquiden Kassensaldo.",
+      "value": 1420,
+      "basis": "Festgelegter Marktwert",
+      "note": "Waffen/Rüstungen regulär 50% Verkauf; übrige Pakete nach festgelegter Bewertung. Kein Verkauf vorweggenommen."
+    },
+    {
+      "id": "dragon-textiles",
+      "name": "Textilien",
+      "owner": "Gemeinsamer Hortbestand",
+      "group": "Argossarian · unverkaufte Sachwerte",
+      "amount": "1 Paket",
+      "state": "Unverkauft; nicht im liquiden Kassensaldo.",
+      "value": 760,
+      "basis": "Festgelegter Marktwert",
+      "note": "Waffen/Rüstungen regulär 50% Verkauf; übrige Pakete nach festgelegter Bewertung. Kein Verkauf vorweggenommen."
+    },
+    {
+      "id": "dragon-mundane-arms",
+      "name": "Meisterarbeitswaffen und Rüstungen",
+      "owner": "Gemeinsamer Hortbestand",
+      "group": "Argossarian · unverkaufte Sachwerte",
+      "amount": "1 Paket",
+      "state": "Unverkauft; nicht im liquiden Kassensaldo.",
+      "value": 1910,
+      "basis": "Festgelegter Marktwert",
+      "note": "Waffen/Rüstungen regulär 50% Verkauf; übrige Pakete nach festgelegter Bewertung. Kein Verkauf vorweggenommen."
+    },
+    {
+      "id": "dragon-books-maps",
+      "name": "Bücher und Karten",
+      "owner": "Gemeinsamer Hortbestand",
+      "group": "Argossarian · unverkaufte Sachwerte",
+      "amount": "1 Paket",
+      "state": "Unverkauft; nicht im liquiden Kassensaldo.",
+      "value": 640,
+      "basis": "Festgelegter Marktwert",
+      "note": "Waffen/Rüstungen regulär 50% Verkauf; übrige Pakete nach festgelegter Bewertung. Kein Verkauf vorweggenommen."
+    },
+    {
+      "id": "dragon-trophies",
+      "name": "Trophäen",
+      "owner": "Gemeinsamer Hortbestand",
+      "group": "Argossarian · unverkaufte Sachwerte",
+      "amount": "1 Paket",
+      "state": "Unverkauft; nicht im liquiden Kassensaldo.",
+      "value": 605,
+      "basis": "Festgelegter Marktwert",
+      "note": "Waffen/Rüstungen regulär 50% Verkauf; übrige Pakete nach festgelegter Bewertung. Kein Verkauf vorweggenommen."
+    },
+    {
+      "id": "grumble-circlet",
+      "name": "Reif für Grumblejacks menschliche Gestalt",
+      "owner": "Grumblejack",
+      "group": "Persönliche Ausrüstung",
+      "amount": "1",
+      "state": "Fertig, übergeben und getestet am 14. August; feste erkennbare Menschengestalt. Eigener +1-Großhammer skaliert bei Nutzung mit.",
+      "value": 3000,
+      "basis": "Bezahltes Material; kein weiterer Abzug",
+      "note": ""
     }
   ],
   "treasury": {
-    "liquid": 6560.75,
-    "earmarked": 4600,
-    "free": 1960.75,
+    "liquid": 5540.75,
+    "earmarked": 5100,
+    "free": 440.75,
     "gold": 0,
     "silver": 0,
     "valuables": 0
   },
   "notes": [
-    "29. Juli 4712 AR · später Nachmittag; Teil-Checkpoint. Ritual und Ressourcen behalten ihren ausdrücklich belegten Zeitstempel.",
-    "Historisch eingerechnete Sachwerte werden nicht zusätzlich zum Kassensaldo addiert.",
-    "Juli-Ausrüstungsserie abgeschlossen; keine erneuten Materialabbuchungen.",
-    "Atelier +90 GM am 27. Juli gebucht; nächste Abrechnung 27. August.",
-    "Unbezifferte Restressourcen bleiben unbekannt; keine verborgenen Ereignisse oder privaten NPC-Berichte veröffentlicht."
+    "14. August 4712 AR · später Nachmittag; neuester akzeptierter Teil-Checkpoint.",
+    "Ritual #494 bis Morgengrauen abgeschlossen; #495 noch zukünftig.",
+    "Hort: 3.295 GM Münzen bereits enthalten; 8.585 GM unverkaufte Sachwerte und 12.420 GM zugewiesene Magie sind keine zusätzliche Liquidität.",
+    "Reif fertig und übergeben; 3.000 GM Material bereits einmal bezahlt. Rikas 500 GM reserviert, noch unverbraucht.",
+    "Atelier +90 GM netto nächste Abrechnung 27. August; alte Juli-Buchung nicht wiederholen."
   ]
 }

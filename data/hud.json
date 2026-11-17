@@ -5,10 +5,10 @@
     "generatedView": true,
     "playerSafe": true,
     "source": "danceofruin/wotwGPT current core-party level8 packet; accepted player level8 activation",
-    "updated": "2026-11-10",
-    "revision": "party-4712-07-29-afternoon",
-    "sourceCampaignEdge": "29. Juli 4712 AR · später Nachmittag; Ressourcen zuletzt 28. Juli bestätigt",
-    "campaignDate": "4712-07-29"
+    "updated": "2026-11-17",
+    "revision": "party-4712-08-14-late-afternoon",
+    "sourceCampaignEdge": "14. August 4712 AR · später Nachmittag",
+    "campaignDate": "4712-08-14"
   },
   "ui": {
     "defaultCharacterOpen": "",
@@ -366,6 +366,10 @@
             {
               "name": "Four-leaf Clover",
               "detail": "3/Tag; frei vor Rettungs-, Fertigkeits- oder Attributswurf: +2 Glück. Kein Angriff. Aktuelle Restnutzungen unbekannt."
+            },
+            {
+              "name": "Head / Headband",
+              "detail": "Iron Circlet (Head) und CHA-Stirnreif (Headband) sind kompatibel. Stykes Circlet ist an Valeria verliehen."
             }
           ]
         },
@@ -831,6 +835,14 @@
             {
               "name": "Gloves of Reconnaissance",
               "detail": "1/Tag 1 Minute, beide Hände: durch bis 5 ft sehen/hören. Anfängliche 24h-Tragefrist nicht bestätigt."
+            },
+            {
+              "name": "Head / Headband",
+              "detail": "Iron Circlet (Head) und CHA-Stirnreif (Headband) sind kompatibel. Stykes Circlet ist an Valeria verliehen."
+            },
+            {
+              "name": "Wand of Lesser Restoration",
+              "detail": "18/50 Ladungen zuletzt bestätigt; kein automatischer Wiederaufladevorgang."
             }
           ]
         }
@@ -1118,6 +1130,14 @@
             {
               "name": "Four-leaf Clover",
               "detail": "3/Tag; frei vor Rettungs-, Fertigkeits- oder Attributswurf: +2 Glück. Kein Angriff. Aktuelle Restnutzungen unbekannt."
+            },
+            {
+              "name": "Head / Headband",
+              "detail": "Iron Circlet (Head) und CHA-Stirnreif (Headband) sind kompatibel. Stykes Circlet ist an Valeria verliehen."
+            },
+            {
+              "name": "Ring of Feather Falling",
+              "detail": "Seit der Hortexpedition behalten und getragen."
             }
           ]
         }

@@ -33,13 +33,13 @@ assert.equal(horn.treasury.liquid,horn.treasury.free+horn.treasury.earmarked);
 assert(!read('app.js').includes('14/666'),'Old current ritual counter in homepage code');
 assert(read('app.js').includes('href="#/live"'),'Homepage must offer current Live Play instead of stale archive as current');
 assert.equal(live.scene.date,horn.meta.campaignDate,'Horn date differs from current live');
-assert.equal(live.scene.date,'4712-07-29','July player review date');
+assert.equal(live.scene.date,'4712-08-14','August player review date');
 assert.equal(live.party[0].pp.max,26,'Styke level8 PP capacity');
 assert.equal(live.party[1].slots[1].max,8,'Vesper post-upgrade slots');
-assert.equal(horn.treasury.free,1960.75,'Current Knot free resources');
+assert.equal(horn.treasury.free,440.75,'Current Knot free resources');
 assert.equal(horn.treasury.silver+horn.treasury.valuables,0,'Previously counted values must not be added again');
 assert.equal(sheets.characters[2].attack.name,'+1 Cruel-Großschwert','Valeria equipped weapon');
-console.log('OK: independently dated archive, current July views, source consistency, gear and treasury safeguards.');
+console.log('OK: independently dated archive, current August views, source consistency, gear and treasury safeguards.');
 
 
 const currentHud=JSON.stringify(hud);

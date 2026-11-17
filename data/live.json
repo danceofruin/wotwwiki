@@ -4,32 +4,33 @@
     "authority": "GENERATED VIEW. DO NOT USE AS CAMPAIGN AUTHORITY.",
     "generated": true,
     "playerSafe": true,
-    "generatedAt": "2026-11-10T16:47:27+00:00",
-    "reviewedAt": "2026-11-10",
-    "sourceRevision": "85631e1491da2c674db202555a7a8da95bc106a00b09f7632fc680c3478b16f8",
-    "sheetRevision": "4f04935849278ee18b45ddb77c60a2e8f0ddf12f74245391b79ed9ca5ea51478"
+    "generatedAt": "2026-11-17T14:14:02+00:00",
+    "reviewedAt": "2026-11-17",
+    "sourceRevision": "29f757f17082dcb29bfa31ca0485f9e14ca0fe2f78b1af33ea2fc24e04a75791",
+    "sheetRevision": "73c9db695ffb3412427c4fbb67f6ed8bd11aa34227860f1ce2d6c9f79902e396"
   },
   "scene": {
-    "date": "4712-07-29",
-    "dateLabel": "29. Juli 4712 AR",
-    "time": "Später Nachmittag · nach der Rückkehr von Valenne",
+    "date": "4712-08-14",
+    "dateLabel": "14. August 4712 AR",
+    "time": "Später Nachmittag · nach dem Sparring mit Grumblejack",
     "location": "Horn von Abaddon",
     "locationId": "horn-abaddon",
-    "detail": "Styke ist mit Rex ans Horn zurückgekehrt, hat sie Linette übergeben und den kurzen Stallkontakt beendet.",
-    "summary": "Der Nachmittag mit Valenne ist gespielt. Nächster Termin: gemeinsame letzte Anpassungs-/Bewegungsprobe bei Mirelle heute Abend.",
-    "rest": "Teil-Checkpoint, kein vollständiger Tages-Handoff. Ressourcen zuletzt am 28. Juli bestätigt; keine zusätzliche Auffüllung angenommen."
+    "detail": "Styke und Grumblejack haben den fertig übergebenen Gestaltreif ausprobiert und gemeinsam freiwillig trainiert.",
+    "summary": "Grumblejacks Reif ist fertig, übergeben und getestet; der Jahrmarkt am 15. August steht bevor. Valennes gelesenes Angebot gilt für den 16. August ab spätem Nachmittag in Hamorhall.",
+    "rest": "Letzte ausdrücklich dokumentierte volle gemeinsame Nacht: 12./13. August. Keine zusätzliche Erholung am 14. August aus dem Datum abgeleitet; einzelne spätere Restressourcen bleiben unbeziffert."
   },
   "quests": [
     {
       "id": "horn",
       "title": "Horn · Ritual und Wachordnung",
       "status": "active",
-      "updated": "4712-07-28",
-      "summary": "Zuletzt ausdrücklich bestätigt: #444/666 am 28. Juli bei Dämmerung; Opfer 2/3.",
+      "updated": "4712-08-14",
+      "summary": "494/666 Gebete bis 14. August bei Morgengrauen abgeschlossen; Opfer 2/3.",
       "known": [
-        "Tamsin führt die Hornverteidigung; Hakon seine fünf freien Männer."
+        "Hexor und Vexor decken den tatsächlichen Ritual- und Wachdienst mit Ablösung ab.",
+        "Die Beobachtung in S-1 und der einzige offene obere Landzugang 1-1 bleiben besetzt."
       ],
-      "next": "Gebetsfortschreibung für den 29. Juli im nächsten vollständigen Tagesabgleich prüfen.",
+      "next": "Nächstes Gebet: 14. August bei Dämmerung (#495). Abschluss bei ununterbrochener Fortführung voraussichtlich 10. Oktober bei Dämmerung.",
       "links": [
         "horn-abaddon",
         "dirges-apollyon",
@@ -39,22 +40,20 @@
     },
     {
       "id": "crafting",
-      "title": "Tacitus und Knittel · Ausrüstung",
+      "title": "Grumblejack · menschliche Gestalt",
       "status": "completed",
-      "updated": "4712-07-28",
-      "summary": "Die fünf Juli-Gegenstände sind gefertigt und übergeben.",
+      "updated": "4712-08-14",
+      "summary": "Grumblejacks Gestaltreif ist nach zwei vollen Arbeitstagen fertig, übergeben und getestet.",
       "known": [
-        "Eversmoking Bottle fertig 11. Juli; drei Four-leaf Clovers für Styke, Vesper und Valeria am 12.–14. Juli.",
-        "Vespers Gloves of Reconnaissance fertig 15. Juli; anfängliche 24 Stunden Tragezeit nicht bestätigt.",
-        "Vesper trägt Boots of Elvenkind; +5 Kompetenz auf Acrobatics, kein Stealth-Bonus.",
-        "9.325 GM Material für diese fünf Aufträge bereits einmal bezahlt."
+        "Eine feste, wiedererkennbare menschliche Gestalt statt einer bloßen Illusion; Grumblejack besitzt und nutzt den Reif.",
+        "Fortschritt 6.000/6.000 GM; 2/2 volle Tage. 3.000 GM Material bereits am 13. August bezahlt, kein zweiter Abzug.",
+        "Sein eigener +1-Großhammer passt sich in der Menschengestalt auf benutzbare Größe an.",
+        "Styke und Grumblejack haben gemeinsam freiwillig trainiert; kein neuer Zahlenbonus."
       ],
-      "next": "Kein offener Auftrag aus dieser Serie.",
+      "next": "Geplanter freiwilliger Jahrmarktbesuch am 15. August, mit tatsächlicher Wachübergabe.",
       "links": [
         "tacitus",
         "knittel",
-        "styke",
-        "valeria",
         "grumblejack"
       ]
     },
@@ -130,36 +129,34 @@
     },
     {
       "id": "valenne",
-      "title": "Dame Valenne · persönlicher Zugang",
+      "title": "Dame Valenne · nächstes privates Treffen",
       "status": "active",
-      "updated": "4712-07-29",
-      "summary": "Der private Nachmittag am 29. Juli ist ausgespielt; gegenseitige Anziehung und Küsse.",
+      "updated": "4712-08-14",
+      "summary": "Valennes Brief ist zugestellt und von Styke gelesen: 16. August, später Nachmittag in Hamorhall.",
       "known": [
-        "Valenne hat Rex kennengelernt und ist selbst zeitweise geritten/geflogen.",
-        "Styke und Valenne gingen allein über die Wiese und hielten Händchen.",
-        "Styke erzählte ihr von Grumblejack, Branderscar und seiner damaligen Verurteilung wegen Mordes.",
-        "Ein späteres längeres Treffen an einer natürlichen heißen Quelle wurde besprochen. Valenne will selbst schreiben, sobald ihre Garnison gedeckt ist.",
-        "Kein konkretes Folgedatum, keine erfolgte Übernachtung, kein Bündnis oder neuer Beziehungsstatus."
+        "Der Besuch am 8. August und die gemeinsame Nacht sind geschehen.",
+        "Mehrere private Stunden bis in den Abend sind angeboten; eine ganze Nacht ist weiterhin nicht verlässlich gedeckt.",
+        "Ihre Garnisonsverantwortung und die bedingte Festteilnahme bleiben bestehen."
       ],
-      "next": "Valennes eigene Nachricht abwarten; kein neuer Termin festgelegt.",
+      "next": "Stykes weitere Antwort und der tatsächliche Besuch bleiben offen.",
       "links": [
-        "farholde",
+        "valenne",
         "styke",
-        "valenne"
+        "farholde"
       ]
     },
     {
       "id": "atelier",
-      "title": "Mirelle · öffentliches Atelier",
+      "title": "Mirelle · öffentliches Atelier und Kollektion",
       "status": "active",
-      "updated": "4712-07-28",
-      "summary": "Das Atelier arbeitet; +90 GM Nettoergebnis am 27. Juli einmalig gebucht.",
+      "updated": "4712-08-14",
+      "summary": "Die ersten drei Kollektionsstücke für Styke, Vesper und Kaitlyn sind fertig und wurden getragen.",
       "known": [
-        "Die monatliche Pauschale enthält gewöhnliche Betriebskosten und kleine Kundenbeträge.",
-        "Die Knoten-Kollektion läuft seit dem 19. Juli; Styke, Vesper und Kaitlyn haben Priorität.",
-        "Zugeschnittene und teilweise zusammengesetzte Kleidungsstücke liegen vor."
+        "Letzte Passform- und Bewegungsprobe am 29. Juli; getragen am 30. Juli.",
+        "Die übrige individuelle Kollektion bleibt in Arbeit.",
+        "Juli-Ergebnis +90 GM netto einmal gebucht."
       ],
-      "next": "Letzte gemeinsame Anpassungs-/Bewegungsprobe am 29. Juli abends; nächste Monatsabrechnung am 27. August.",
+      "next": "Nächste reguläre Monatsabrechnung am 27. August; weitere Stücke nicht als fertig voraussetzen.",
       "links": [
         "mirelle",
         "farholde"
@@ -169,13 +166,13 @@
       "id": "tacitus-research",
       "title": "Ouroboros · Gegenforschung",
       "status": "active",
-      "updated": "4712-07-28",
-      "summary": "Die frühere Vorprobenphase ist beendet; derzeit nur sichere Vorbereitung ohne Erregerprobe.",
+      "updated": "4712-08-14",
+      "summary": "Tacitus hat ihre trockene Prüfung der Horn-Isolation vorgelegt; kein sicheres Infektionslabor.",
       "known": [
-        "Styke hat Tacitus am 20. Juli die begrenzte Planung einer räumlichen Trennung erlaubt.",
-        "Keine Tears-Probe, keine nachgewiesene Heilung und kein betriebsbereites Infektionslabor."
+        "Keine Tears-Probe, keine Heilung und keine freigegebenen Menschenversuche.",
+        "Weitere räumliche Trennung ist Gegenstand der Planung, keine fertig erprobte Einrichtung."
       ],
-      "next": "Konkrete Vorschläge mit Tacitus besprechen; bauliche Ausführung und gefährliche Tests sind nicht freigegeben.",
+      "next": "Konkrete sichere nächste Schritte mit Tacitus; gefährliche Tests brauchen eigene Entscheidung.",
       "links": [
         "tacitus",
         "verse"
@@ -200,19 +197,17 @@
       "id": "constitution",
       "title": "Die Ordnung von Talingarde · Entwurf",
       "status": "active",
-      "updated": "4712-07-28",
-      "summary": "Stykes privater Entwurf wurde überarbeitet; Tacitus hat die aktuelle Abschrift erhalten.",
+      "updated": "4712-08-14",
+      "summary": "Tacitus und Marta haben ihre eigenständigen Kritiken am 12. August mit Styke besprochen.",
       "known": [
-        "Die Fünf Säulen sind kein verabschiedetes Gesetz.",
-        "Rika und Hester fertigten die saubere Abschrift; am 22. Juli erhielt Tacitus sie, Styke seinen Originaltext zurück.",
-        "Tacitus übernimmt die gründliche Überarbeitung; Marta ist als eigenständige kritische Leserin eingeladen."
+        "Die Fünf Säulen sind weiterhin ein Entwurf, kein verabschiedetes Gesetz.",
+        "Nellas Bildungsfrage und die geprüfte Abschrift gehören zum bestehenden Arbeitsstand."
       ],
-      "next": "Neue Rückmeldungen bei tatsächlicher Übergabe mit Styke besprechen.",
+      "next": "Stykes Entscheidungen über Überarbeitung und mögliche Umsetzung stehen aus.",
       "links": [
         "styke",
-        "vesper",
-        "valeria",
         "tacitus",
+        "marta-dian",
         "nella"
       ]
     },
@@ -267,30 +262,134 @@
         "vesper",
         "valeria"
       ]
+    },
+    {
+      "id": "marsten",
+      "title": "Marsten · Rikas eigenständiger Auftrag",
+      "status": "active",
+      "updated": "4712-08-14",
+      "summary": "Rika koordiniert und entscheidet den reversiblen Ansatz; Kaitlyn soll bei Händlerkontakten beraten.",
+      "known": [
+        "Zwei unterschiedliche Arbeitsvorschläge liegen vor; Vanderville ist die erste verfolgte Handelsrichtung.",
+        "Styke autorisiert 500 GM operativen Rahmen; vollständig reserviert, noch 0 GM ausgegeben.",
+        "Kein Mordauftrag vollzogen, keine Prämie erhalten, kein Händlerergebnis vorweggenommen."
+      ],
+      "next": "Rika führt die Arbeit mit verfügbarer Sachkunde fort und soll das Ergebnis liefern.",
+      "links": [
+        "rika",
+        "kaitlyn",
+        "farholde"
+      ]
+    },
+    {
+      "id": "argossarian",
+      "title": "Argossarian · Untoter und Beute",
+      "status": "active",
+      "updated": "4712-08-14",
+      "summary": "Argossarian fiel am 5. August; seit 6. August kontrolliert Vesper seinen fliegenden Fast Zombie.",
+      "known": [
+        "Huge, 19 HD, mindlos; keine Persönlichkeit, Drachenzauber oder Atemwaffen des Lebenden.",
+        "Die nördliche Hortexpedition und der Flug nach Ghastenhall sind geschehen; derzeit in den unteren Hornhöhlen.",
+        "Hortgesamtwert 24.300 GM; 3.295 GM Münzen bereits einmal gebucht. Zugewiesene Magie und unverkaufte Sachwerte bleiben getrennt."
+      ],
+      "next": "Eine spätere intelligente, sicher kontrollierte Untotenform ist nicht gelöst.",
+      "links": [
+        "argossarian",
+        "vesper",
+        "grumblejack"
+      ]
+    },
+    {
+      "id": "sereth",
+      "title": "Sereth Veylan · lebender Gefangener",
+      "status": "active",
+      "updated": "4712-08-14",
+      "summary": "Sereth wurde in Ghastenhall lebend gefangen und am 12. August ins Horn gebracht.",
+      "known": [
+        "Er befindet sich unter Tamsins Schlüsselgewalt in Zelle 1-26 auf Ebene Eins.",
+        "Er ist als Nachkomme des Victor identifiziert; noch kein drittes Opfer und kein Eid.",
+        "Vor einem tatsächlichen Valenne-Besuch ist eine sichere Verlegung nach Ebene Drei erforderlich; sie ist noch nicht erfolgt."
+      ],
+      "next": "Lebende Verwahrung und weitere Spielerentscheidungen; kein Opfer vorwegnehmen.",
+      "links": [
+        "sereth-veylan",
+        "tamsin",
+        "horn-abaddon"
+      ]
+    },
+    {
+      "id": "feast",
+      "title": "Horn · Hausfest am 5. September",
+      "status": "active",
+      "updated": "4712-08-14",
+      "summary": "Das Hausfest ist terminiert; Musik und Küche werden vorbereitet.",
+      "known": [
+        "Bianca, Kaitlyn und Calliaste organisieren; Nella koordiniert Versorgung.",
+        "Elise und Frost haben bedingt zugesagt; weitere Raven-Zahl bleibt offen.",
+        "Valennes zusätzlicher Besuch steht unter Dienstvorbehalt und bleibt auf Ebene Eins/Zwei beschränkt."
+      ],
+      "next": "Raven-Rückmeldung bis 20. August; realistische Vorbereitung und Sicherheitsvoraussetzungen erhalten.",
+      "links": [
+        "bianca-devallya",
+        "calliaste",
+        "kaitlyn",
+        "nella",
+        "valenne"
+      ]
+    },
+    {
+      "id": "antharia",
+      "title": "Antharia Regina · historische Spuren",
+      "status": "active",
+      "updated": "4712-08-14",
+      "summary": "Brief, Schuppe und Medaillon wurden im Hort gefunden; Rikas begrenzter historischer Bericht liegt vor.",
+      "known": [
+        "Die Gegenstände werden als Forschungs- und Schlüsselbestand behalten.",
+        "Kein bestätigter gegenwärtiger Aufenthaltsort und kein erfolgter Kontakt."
+      ],
+      "next": "Nur tatsächlich gewonnene Hinweise weiterverfolgen.",
+      "links": [
+        "antharia-regina",
+        "rika",
+        "vesper"
+      ]
     }
   ],
   "appointments": [
     {
-      "id": "collection-fitting",
-      "date": "4712-07-29",
-      "label": "29. Juli · abends",
-      "time": "29. Juli · abends",
-      "title": "Knoten-Kollektion · letzte Anpassung",
-      "note": "Styke, Vesper und Kaitlyn; nach Stykes Rückkehr, abhängig vom tatsächlichen Arbeitsstand.",
+      "id": "fair",
+      "date": "4712-08-15",
+      "label": "15. August",
+      "time": "15. August",
+      "title": "Farholder Jahrmarkt · geplanter Ausflug",
+      "note": "Styke und Grumblejack wollen hin; Reif, freiwillige Teilnahme und tatsächliche Wachübergabe bleiben Voraussetzungen.",
       "links": [
-        "mirelle"
+        "grumblejack",
+        "traya-demarco",
+        "nella"
       ]
     },
     {
-      "id": "marsten-meeting",
-      "date": "4712-07-30",
-      "label": "30. Juli · später Nachmittag",
-      "time": "30. Juli · später Nachmittag",
-      "title": "Marstens Angebot anhören",
-      "note": "Styke, Vesper und Kaitlyn; neutraler privater Raum in Auld’Irey, von Kaitlyn ausgewählt. Inhalt noch unbekannt.",
+      "id": "valenne-aug16",
+      "date": "4712-08-16",
+      "label": "16. August · später Nachmittag",
+      "time": "16. August · später Nachmittag",
+      "title": "Valenne · Hamorhall",
+      "note": "Brief gelesen: mehrere private Stunden ab spätem Nachmittag bis in den Abend; keine zugesagte ganze Nacht.",
       "links": [
-        "kaitlyn",
-        "farholde"
+        "valenne"
+      ]
+    },
+    {
+      "id": "raven-count",
+      "date": "4712-08-20",
+      "label": "20. August",
+      "time": "20. August",
+      "title": "Hornfest · Raven-Gästezahl",
+      "note": "Elise/Frost bedingt zugesagt; restliche Gästezahl vor der Küchenplanung bestätigen.",
+      "links": [
+        "white-ravens",
+        "nella"
       ]
     },
     {
@@ -299,9 +398,33 @@
       "label": "27. August",
       "time": "27. August",
       "title": "Mirelles Atelier · 90 GM netto",
-      "note": "Nächste reguläre Monatsabrechnung; Juli bereits gebucht.",
+      "note": "Nächste reguläre Monatsabrechnung; Juli bereits einmal gebucht.",
       "links": [
         "mirelle"
+      ]
+    },
+    {
+      "id": "horn-feast",
+      "date": "4712-09-05",
+      "label": "5. September",
+      "time": "5. September",
+      "title": "Hausfest im Horn",
+      "note": "Bewohner, Ravens und bedingt Valenne; Sicherheit und tatsächliche Zusagen beachten.",
+      "links": [
+        "horn-abaddon",
+        "nella",
+        "calliaste"
+      ]
+    },
+    {
+      "id": "ritual-finish",
+      "date": "4712-10-10",
+      "label": "10. Oktober · bedingt",
+      "time": "10. Oktober · bedingt",
+      "title": "Ritual · voraussichtlicher Abschluss",
+      "note": "Dämmerung #666 ausschließlich bei ununterbrochener Fortführung; nicht bereits abgeschlossen.",
+      "links": [
+        "horn-abaddon"
       ]
     },
     {
@@ -310,7 +433,7 @@
       "label": "Ungefähr 18. Oktober",
       "time": "Ungefähr 18. Oktober",
       "title": "Yorgun und James · befristete Bindungen",
-      "note": "Kein automatischer dauerhafter Anschluss.",
+      "note": "Ungefährer Endtermin, kein automatischer dauerhafter Anschluss.",
       "links": [
         "yorgun",
         "james-otoole"
@@ -321,8 +444,8 @@
     {
       "id": "treasury",
       "label": "Gemeinsame Mittel",
-      "value": "6.560 GM 7 SM 5 KM",
-      "note": "4.600 GM gebunden · 1.960 GM 7 SM 5 KM frei."
+      "value": "5.540 GM 7 SM 5 KM",
+      "note": "5.100 GM gebunden (inklusive Rikas 500 GM) · 440 GM 7 SM 5 KM frei."
     },
     {
       "id": "level",
@@ -333,14 +456,14 @@
     {
       "id": "ritual",
       "label": "Ritual",
-      "value": "444 / 666 zuletzt belegt",
-      "note": "28. Juli bei Dämmerung bestätigt; 29. Juli ist noch kein vollständiger Tagesabgleich."
+      "value": "494 / 666",
+      "note": "14. August bei Morgengrauen abgeschlossen; #495 bei Dämmerung steht aus. Opfer 2/3."
     },
     {
       "id": "crafting",
       "label": "Magische Fertigung",
-      "value": "Juli-Serie abgeschlossen",
-      "note": "Bottle, drei Clovers und Gloves fertig und übergeben; Material einmal bezahlt."
+      "value": "Grumblejacks Reif · fertig",
+      "note": "2/2 Tage, übergeben und getestet. 3.000 GM Material bereits einmal bezahlt."
     },
     {
       "id": "plate",
@@ -410,9 +533,9 @@
         "max": 54
       },
       "conditions": [],
-      "state": "Zuletzt bestätigte Ressourcen: 28. Juli; der 29.-Juli-Teilcheckpoint enthält keine vollständige Ressourcenbilanz.",
-      "resourceNote": "PP 26/26; Standard-Foki vorhanden. Keine kommende Erholung vorweggenommen.",
-      "gearNote": "Stufe 8 · Stand 28. Juli nach Dämmerung · übliche kompatible Ausrüstung im Dienst. Temporäre Buffs und Restressourcen separat. CHA-Stirnreif +4 und Eyes of the Eagle getragen; KON 11 durch +1 inhärent. Eigener Four-leaf Clover vorhanden; Restnutzungen nicht beziffert.",
+      "state": "14. August: keine akzeptierten Verwundungen; alte Vanderhall-Kampfausgaben sind durch die späteren tatsächlichen Ruhephasen überholt.",
+      "resourceNote": "PP 26/26 zuletzt bestätigt; Fokus vorhanden. Kein fortbestehender alter Reise- oder Vanderhall-Buff.",
+      "gearNote": "Stufe 8 · Stand 14. August, später Nachmittag · übliche kompatible Ausrüstung im Dienst. Temporäre Buffs und Restressourcen separat. CHA-Stirnreif +4 und Eyes of the Eagle getragen; KON 11 durch +1 inhärent. Eigener Four-leaf Clover vorhanden; Restnutzungen nicht beziffert. Eigener Iron Circlet an Valeria verliehen; CHA-Stirnreif bleibt im getrennten Headband-Slot getragen.",
       "pp": {
         "current": 26,
         "max": 26
@@ -428,9 +551,9 @@
         "max": 43
       },
       "conditions": [],
-      "state": "Zuletzt bestätigte Ressourcen: 28. Juli; der 29.-Juli-Teilcheckpoint enthält keine vollständige Ressourcenbilanz.",
-      "resourceNote": "Legend Lore abgeschlossen. Verbleibende Zauberplätze nicht beziffert; unbekannt.",
-      "gearNote": "Stufe 8 · Stand 28. Juli nach Dämmerung · übliche kompatible Ausrüstung im Dienst. Temporäre Buffs und Restressourcen separat. Boots of Elvenkind getragen; Gloves vorhanden, anfängliche Tragefrist nicht bestätigt. Eigener Four-leaf Clover vorhanden; Restnutzungen nicht beziffert.",
+      "state": "14. August: keine akzeptierten Verwundungen; alte Vanderhall-Kampfausgaben sind durch die späteren tatsächlichen Ruhephasen überholt.",
+      "resourceNote": "Vollständige Nacht 12./13. August dokumentiert. Spätere verbleibende Zauberplätze nicht einzeln bilanziert; Anzeige unbekannt statt alter Reiseausgaben. Kapazität 8/8/7/4.",
+      "gearNote": "Stufe 8 · Stand 14. August, später Nachmittag · übliche kompatible Ausrüstung im Dienst. Temporäre Buffs und Restressourcen separat. Boots of Elvenkind getragen; Gloves vorhanden, anfängliche Tragefrist nicht bestätigt. Eigener Four-leaf Clover vorhanden; Restnutzungen nicht beziffert. Wand of Lesser Restoration (18 Ladungen zuletzt bestätigt); eigene Iron Circlet und CHA-Stirnreif sind kompatibel.",
       "verse": {
         "present": true,
         "hpCurrent": null,
@@ -472,9 +595,9 @@
         "max": 52
       },
       "conditions": [],
-      "state": "Zuletzt bestätigte Ressourcen: 28. Juli; der 29.-Juli-Teilcheckpoint enthält keine vollständige Ressourcenbilanz.",
-      "resourceNote": "Begrenzte verbleibende Tageseinsätze nicht beziffert; keine Auffüllung angenommen.",
-      "gearNote": "Stufe 8 · Stand 28. Juli nach Dämmerung · übliche kompatible Ausrüstung im Dienst. Temporäre Buffs und Restressourcen separat. Originaler STR-Gürtel als +4 zurückgegeben und wieder angelegt; STR 20. Eigener Four-leaf Clover vorhanden; Restnutzungen nicht beziffert."
+      "state": "14. August: keine akzeptierten Verwundungen; alte Vanderhall-Kampfausgaben sind durch die späteren tatsächlichen Ruhephasen überholt.",
+      "resourceNote": "Letzte volle gemeinsame Nacht 12./13. August; verbleibende Tageseinsätze am aktuellen Rand nicht einzeln bilanziert.",
+      "gearNote": "Stufe 8 · Stand 14. August, später Nachmittag · übliche kompatible Ausrüstung im Dienst. Temporäre Buffs und Restressourcen separat. Originaler STR-Gürtel als +4 zurückgegeben und wieder angelegt; STR 20. Eigener Four-leaf Clover vorhanden; Restnutzungen nicht beziffert. Ring of Feather Falling getragen; Stykes geliehener Iron Circlet im Head-Slot neben dem eigenen CHA-Stirnreif im Headband-Slot."
     }
   ]
 }

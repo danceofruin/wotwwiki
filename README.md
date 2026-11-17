@@ -1,3 +1,7 @@
+## Aktualisierung 5.5.0 · 17. November 2026
+
+Spielerstand: 14. August 4712 AR, später Nachmittag am Horn. Wiki, Chronik, Live Play und HUD synchronisiert: Ritual 494/666, 5.540 GM 7 SM 5 KM brutto / 440 GM 7 SM 5 KM frei, fertig übergebener und getesteter Grumblejack-Reif, Rikas Marsten-Mandat, Sereth und Valennes 16.-August-Termin. Frühere Artikelabschnitte bleiben datierte Geschichte; ungeprüfte Ergebnisse und verborgene Vorbereitung werden nicht veröffentlicht.
+
 ## Dossiers 5.4.0 · 10. November 2026
 
 Knotenübersicht mit 13 Mitgliedern; zehn Mitgliederdossiers und vier zivile Angestellte vollständig redigiert. Knoten direkt nach dem Kerntrio, vier aus dem Waisenhaus in eigener Gruppe. 14 Spielerillustrationen ergänzt; Rika und Linnet ausschließlich bekleidet bei gewöhnlicher Arbeit. Illustrationen ändern keinen Textkanon. Gespeicherter Spielrand weiterhin 29. Juli später Nachmittag.
