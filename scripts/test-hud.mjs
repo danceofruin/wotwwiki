@@ -15,7 +15,7 @@ for(const c of hud.characters){
  assert.deepEqual(saves,[sheet.stats.fort,sheet.stats.ref,sheet.stats.will]);
 }
 const styke=hud.characters[0],ready=styke.sections.find(s=>s.id==='readied').items;
-assert.equal(ready.length,7);assert.equal(new Set(ready.map(x=>x.name)).size,6);
+assert.equal(ready.length,7);assert.equal(new Set(ready.map(x=>x.name)).size,7);
 assert(ready.some(x=>x.name==='Bilious Strike'&&x.tag.includes('SG 21')));
 assert(ready.some(x=>x.name==='Circle of Razor Feathers'&&x.tag.includes('SG 21')&&x.detail.includes('5 Runden')));
 assert(ready.some(x=>x.name==='Abyssal Lance'&&x.tag.includes('SG 20')));
