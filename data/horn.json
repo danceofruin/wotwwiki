@@ -3,38 +3,38 @@
     "schemaVersion": 1,
     "playerSafe": true,
     "authority": "GENERATED VIEW. DO NOT USE AS CAMPAIGN AUTHORITY.",
-    "reviewedAt": "2026-11-17",
-    "campaignDate": "4712-08-14",
-    "campaignLabel": "14. August 4712 AR · später Nachmittag",
-    "sourceCommit": "6727d735aad999e706b75275b00f9a4a43e0a0b2",
-    "sourceRevision": "66ab9bb3e3f35252f7105dd4713459aaf8aa6157e8cdf60a6323d79852f92dc0",
-    "generatedAt": "2026-11-17T14:16:50+00:00"
+    "reviewedAt": "2026-11-20",
+    "campaignDate": "4712-10-05",
+    "campaignLabel": "5. Oktober 4712 AR · nach dem Erdbeben",
+    "sourceCommit": "ff5c7e1171b38fc3d0b0050cd3efb8c54369c61c",
+    "sourceRevision": "bb610020319a289772f9618287bfb6c171f7711c16a7452598f646cead91c037",
+    "generatedAt": "2026-11-20T21:23:00.789Z"
   },
   "levels": [
     {
       "id": "sanctum",
       "label": "Sanctum",
-      "subtitle": "Ritual · Siegel · Balkon"
+      "subtitle": "Ritualkern steht; niedrige Abtrennung beschädigt. Nachtlager des Kerntrios hier, innerer Zugang braucht Reparatur."
     },
     {
       "id": "three",
       "label": "Ebene Drei",
-      "subtitle": "Labor · Bibliothek · Fluglandeplatz"
+      "subtitle": "Neue große Nordbresche und Durchbruch bei Bibliothek/Sanctum; frühere Zellentüren beschädigt, Sereth zusätzlich angekettet."
     },
     {
       "id": "two",
       "label": "Ebene Zwei",
-      "subtitle": "Kernquartiere · Gäste · Bad"
+      "subtitle": "Mehrere Räume eingestürzt oder beschädigt, darunter Calliastes Zimmer; sichere Kernräume nur nach tatsächlicher Prüfung."
     },
     {
       "id": "one",
       "label": "Ebene Eins",
-      "subtitle": "Death’s Head · Schmiede · Bewohner"
+      "subtitle": "Death’s Head teilweise abgerissen; Brunnen zerstört. Schmiede, große Halle und weitere Kernbereiche benutzbar."
     },
     {
       "id": "caves",
       "label": "Untere Höhlen",
-      "subtitle": "Maw · Zugänge"
+      "subtitle": "Untere Höhlen nach Sichtprüfung ohne vergleichbaren Großschaden; Argossarian lagert in Vespers Silberfigur."
     }
   ],
   "projects": [
@@ -47,10 +47,11 @@
       ],
       "level": "sanctum",
       "status": "active",
-      "progress": "494/666 bis 14. August Morgengrauen; Opfer 2/3.",
-      "next": "Nächstes #495 bei Dämmerung; #666 voraussichtlich 10. Oktober bei ununterbrochener Fortführung.",
-      "done": 494,
-      "total": 666
+      "progress": "650/666",
+      "next": "#651 an der nächsten Mitternacht, bei ununterbrochener Fortführung. Abschluss #666 weiterhin bedingt.",
+      "done": 650,
+      "total": 666,
+      "detail": "#650 nach der Abenddämmerung 5. Oktober vollendet; #651 steht noch aus. Opfer 2/3; Ritualkern steht."
     },
     {
       "id": "retrain",
@@ -401,7 +402,7 @@
         "Darric"
       ],
       "level": "one",
-      "status": "completed",
+      "status": "damaged",
       "progress": "Fluengitter installiert.",
       "next": "Bestehende Sicherung prüfen und erhalten.",
       "done": null,
@@ -618,10 +619,25 @@
         "Hakon"
       ],
       "level": "one",
-      "status": "active",
-      "progress": "Traya, Marta, Halla und Bianca übernehmen die begrenzte Tagesvertretung; Einweisung läuft.",
-      "next": "Reale Übergabe, Schlüssel, Ablösung und freiwillige Ausflugsbesetzung sichern.",
+      "status": "completed",
+      "progress": "Historische Projektübersicht; aktuelle Evakuierung separat.",
+      "next": "Historischer August-Termin; kein neuer Wachauftrag ohne tatsächliche Weisung.",
       "done": null,
+      "total": null,
+      "detail": "Historischer August-Termin; keine neue aktuelle Wachplanung aus diesem Projekt."
+    },
+    {
+      "id": "sanctum-repair",
+      "level": "three",
+      "title": "Sanctum · Stone-Shape-Abdichtung",
+      "status": "planned",
+      "progress": "Noch nicht begonnen",
+      "detail": "Innere Bresche nach dem Beben schließen, sobald Vesper den Zauber regulär vorbereitet; keine zusätzliche Gratismagie.",
+      "owners": [
+        "Vesper"
+      ],
+      "next": "Ab 6. Oktober nach regulärer neuer Arcane-Enlightenment-Auswahl; keine heutige Gratisvorbereitung.",
+      "done": 0,
       "total": null
     }
   ],
@@ -631,8 +647,8 @@
       "level": "one",
       "title": "Haupttreppe 1-1",
       "status": "open",
-      "owner": "Tamsin · Hakon und fünf Männer",
-      "detail": "Einziger offener oberer Landzugang. Zwei funktionsfähige Fallgitter als etwa 30-ft-Falle, Alarm, echte Mehlzugleinen; reguläre Wachbesetzung."
+      "owner": "Tamsin · verbleibender Horn-Wachdienst",
+      "detail": "Der frühere kontrollierte Zugang 1-1 bleibt benutzbar, doch seit dem Beben gibt es zusätzliche Breschen in Ebene Drei. Hakon und seine fünf Männer sind auf der Evakuierungs-/Hofseite."
     },
     {
       "id": "hexor",
@@ -672,7 +688,7 @@
       "title": "Außenzugang 3-1",
       "status": "installed",
       "owner": "Darric / Halla / Tacitus",
-      "detail": "Seit 28. März vollständig geschlossen; früherer Alarm beendet."
+      "detail": "Der ältere Zugang 3-1 war bereits zugemauert; das Beben schuf andernorts eine neue große Bresche in der Nordwand 3-11."
     },
     {
       "id": "balcony",
@@ -694,9 +710,9 @@
       "id": "c5",
       "level": "caves",
       "title": "Verborgener Weg C5–3-12",
-      "status": "open",
+      "status": "installed",
       "owner": "Bestehende Sicherung",
-      "detail": "Eigener interner Zugang, keine neue gewöhnliche Tür."
+      "detail": "Der frühere Weg wurde vor dem Beben mit Stein gesichert; kein gewöhnlich frei zugänglicher Durchgang."
     },
     {
       "id": "fallback",
@@ -710,17 +726,17 @@
       "id": "flue",
       "level": "one",
       "title": "Death’s-Head-Fluengitter",
-      "status": "installed",
+      "status": "damaged",
       "owner": "Osric / Darric",
-      "detail": "Installiert."
+      "detail": "Death’s Head ist teilweise abgerissen; das frühere Kamingitter kann keine unbeschädigte Raumhülle mehr sichern."
     },
     {
       "id": "captives",
-      "level": "one",
+      "level": "three",
       "title": "Sereth · Gefangenenaufsicht",
       "status": "operational",
       "owner": "Tamsin",
-      "detail": "Lebend in Zelle 1-26; Tamsin besitzt die Schlüssel. Verlegung nach Ebene Drei vor einem echten Valenne-Besuch erforderlich und noch offen."
+      "detail": "Sereth lebt. Nach Aufspringen der alten Zellentüren in einer strukturell brauchbaren oberen Zelle an festen Eisenpunkten zusätzlich an Händen und Füßen angekettet."
     },
     {
       "id": "hounds",
@@ -752,7 +768,31 @@
       "title": "Drei Augen S-1",
       "status": "installed",
       "owner": "Ritualkern",
-      "detail": "Alle drei Augen seit 1. April in der Statue installiert; Silbersiegel und Riten nicht aufgehoben."
+      "detail": "Drei Augen und Silbersiegel weiterhin vorhanden; Sanctum selbst steht, doch eine innere Mauerverbindung ist beschädigt."
+    },
+    {
+      "id": "new-north-breach",
+      "level": "three",
+      "title": "Nordwand 3-11 · neue Außenbresche",
+      "status": "open",
+      "owner": "Horn-Verteidigung",
+      "detail": "Nach dem Erdbeben große Öffnung ins Tal, von außen ein möglicher Zugang. Sichtbar von Styke selbst bei Rex-Rundflug."
+    },
+    {
+      "id": "sanctum-inner-breach",
+      "level": "three",
+      "title": "Bibliothek–Sanctum · offener Durchbruch",
+      "status": "open",
+      "owner": "Vesper · geplante Reparatur",
+      "detail": "Beschädigte Innenwand umgeht die alte gesicherte Route; Stone Shape frühestens nach regulärer nächster Zauberauswahl geplant."
+    },
+    {
+      "id": "death-head-collapse",
+      "level": "one",
+      "title": "Death’s Head · Westflügel",
+      "status": "damaged",
+      "owner": "Grumblejack",
+      "detail": "Westseite eingebrochen und fünfzig Fuß tiefer als Trümmer; Grumblejack gerettet, Gebäudeabschnitt nicht bewohnbar."
     }
   ],
   "inventory": [
@@ -761,9 +801,9 @@
       "name": "Wirtschaftlich verfügbare gemeinsame Mittel",
       "owner": "Knoten",
       "group": "Geld",
-      "amount": "5.540 GM 7 SM 5 KM",
-      "state": "5.540 GM 7 SM 5 KM brutto; 5.100 GM gebunden, 440 GM 7 SM 5 KM frei.",
-      "value": 6560.75,
+      "amount": "8.655 GM 7 SM 5 KM",
+      "state": "Letzter nachweislich verbuchter Stand 27. September: 8.655 GM 7 SM 5 KM brutto; 4.600 GM gebunden, 4.055 GM 7 SM 5 KM frei. Kein Oktoberumsatz ohne Beleg.",
+      "value": 8655.75,
       "basis": "Verfügbarkeitsrechnung",
       "note": "Silber und kleinere Wertstücke sind bereits im wirtschaftlichen Gesamtsaldo enthalten, keine zweite Gutschrift."
     },
@@ -817,7 +857,7 @@
       "owner": "Styke",
       "group": "Persönliche Ausrüstung",
       "amount": "siehe Stand",
-      "state": "DEX-Gürtel +4 getragen; DEX 24 auf Stufe 8.",
+      "state": "DEX-Gürtel +4 getragen; DEX 24 auf Stufe 9.",
       "value": null,
       "basis": "Nicht taxiert",
       "note": ""
@@ -1103,7 +1143,7 @@
       "owner": "Valeria",
       "group": "Persönliche Ausrüstung",
       "amount": "siehe Stand",
-      "state": "Seit 30. April getragen; CHA 25 auf Stufe 8.",
+      "state": "Seit 30. April getragen; CHA 25 auf Stufe 9.",
       "value": null,
       "basis": "Nicht taxiert",
       "note": ""
@@ -1665,21 +1705,43 @@
       "value": 3000,
       "basis": "Bezahltes Material; kein weiterer Abzug",
       "note": ""
+    },
+    {
+      "id": "argossarian-figure",
+      "name": "Silberfigur Argossarian",
+      "owner": "Vesper",
+      "group": "Magische Gegenstände",
+      "amount": "1",
+      "state": "Vespers bereits bestehender geistloser Huge Fast Zombie ist darin gespeichert; keine neue Kreatur.",
+      "value": "nicht liquidiert",
+      "basis": "abgeschlossen 25. August",
+      "note": "Nur bei echtem zeitaufwendigem Auslösen und ausreichendem Platz freisetzen."
+    },
+    {
+      "id": "rika-butterfly-swords",
+      "name": "Zwei Meisterarbeits-Butterfly-Swords",
+      "owner": "Rika",
+      "group": "Persönliche Gegenstände",
+      "amount": "2",
+      "state": "Am 2. Oktober tatsächlich an Rika übergeben; Rika ist zur Hofgruppe unterwegs.",
+      "value": "nicht liquidiert",
+      "basis": "80 GM Rohmaterial einmal verbucht",
+      "note": "Noch kein freigeschalteter Charakterklassenaufstieg."
     }
   ],
   "treasury": {
-    "liquid": 5540.75,
-    "earmarked": 5100,
-    "free": 440.75,
+    "liquid": 8655.75,
+    "earmarked": 4600,
+    "free": 4055.75,
     "gold": 0,
     "silver": 0,
     "valuables": 0
   },
   "notes": [
-    "14. August 4712 AR · später Nachmittag; neuester akzeptierter Teil-Checkpoint.",
-    "Ritual #494 bis Morgengrauen abgeschlossen; #495 noch zukünftig.",
-    "Hort: 3.295 GM Münzen bereits enthalten; 8.585 GM unverkaufte Sachwerte und 12.420 GM zugewiesene Magie sind keine zusätzliche Liquidität.",
-    "Reif fertig und übergeben; 3.000 GM Material bereits einmal bezahlt. Rikas 500 GM reserviert, noch unverbraucht.",
-    "Atelier +90 GM netto nächste Abrechnung 27. August; alte Juli-Buchung nicht wiederholen."
+    "Spielstand: 5. Oktober 4712 AR, Abend nach dem Erdbeben; Ritual #650/666 abgeschlossen, #651 noch ausstehend.",
+    "Kassenstand: 27. September zuletzt verlässlich gebucht. 8.655 GM 7 SM 5 KM brutto, 4.600 GM gebunden, 4.055 GM 7 SM 5 KM frei. Oktoberbewegungen nicht ergänzt.",
+    "Die Nordwand von Ebene Drei ist aufgerissen; zusätzlich offener Durchbruch nahe dem Sanctum. Stone Shape erst nach regulärer Vorbereitung.",
+    "Grumblejack gerettet, Sereth nach Versagen der Zellentüren oben angekettet. Evakuierte Bewohner und Hakon sind nicht automatisch noch im Horn.",
+    "Das Atelier buchte +90 GM am 27. September, nächste planmäßige Abrechnung frühestens 27. Oktober."
   ]
 }
