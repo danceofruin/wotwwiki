@@ -1,8 +1,8 @@
 // ==UserScript==
 // @name         Way of the Wicked HUD 2
 // @namespace    https://danceofruin.github.io/wotwwiki/
-// @version      2.2.0
-// @description  Five-tab read-only WotW dashboard plus complete active-branch Markdown chat export for Session Capture.
+// @version      2.3.0
+// @description  Read-only WotW dashboard with live initiative and complete active-branch Markdown chat export for Session Capture.
 // @author       WotW Main
 // @match        https://chatgpt.com/*
 // @match        https://chat.openai.com/*
@@ -12,6 +12,7 @@
 // @grant        GM_getValue
 // @grant        GM_setValue
 // @connect      danceofruin.github.io
+// @connect      raw.githubusercontent.com
 // @updateURL    https://danceofruin.github.io/wotwwiki/userscripts/wotw-hud.user.js
 // @downloadURL  https://danceofruin.github.io/wotwwiki/userscripts/wotw-hud.user.js
 // ==/UserScript==
@@ -20,9 +21,11 @@
   "use strict";
 
   const BASE = "https://danceofruin.github.io/wotwwiki/";
+  const LIVE_MAP_STATE = "https://raw.githubusercontent.com/danceofruin/wotw-live-map/main/state.json";
+  const INITIATIVE_REFRESH_MS = 2000;
   const PREFIX = "wotw-hud-v2:";
-  const TAB_IDS = ["styke", "vesper", "valeria", "notes", "treasury"];
-  const TAB_TITLES = { styke:"STYKE", vesper:"VESPER", valeria:"VALERIA", notes:"NOTES", treasury:"TREASURY" };
+  const TAB_IDS = ["styke", "vesper", "valeria", "initiative", "notes", "treasury"];
+  const TAB_TITLES = { styke:"STYKE", vesper:"VESPER", valeria:"VALERIA", initiative:"INITIATIVE", notes:"NOTES", treasury:"TREASURY" };
   const HOST_ID = "wotw-hud-v2-host";
   const MIN_WIDTH = 390;
   const MIN_HEIGHT = 310;
@@ -315,6 +318,8 @@
     collapsed:Boolean(getStored("collapsed", false)), scratch:String(getStored("scratch", ""))
   };
 
+  const initiative = { snapshot:null, failed:false, loading:false, timer:undefined };
+
   const host = document.createElement("div");
   host.id = HOST_ID;
   document.documentElement.appendChild(host);
@@ -336,7 +341,7 @@
     ".tool{background:#22242a;border:1px solid #393d47;border-radius:6px;color:#ddd;min-width:31px;height:29px;padding:0 7px;cursor:pointer;font-size:16px}",
     ".tool:hover,.tool:focus-visible{background:#363942;outline:1px solid #7086ae}",
     ".tool-export{font-size:15px;font-weight:700;white-space:nowrap;padding:0 8px}.tool:disabled{opacity:.6;cursor:wait}",
-    ".tabs{flex:none;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));background:#111217;border-top:1px solid #2a2b30;border-bottom:1px solid #37393f}",
+    ".tabs{flex:none;display:grid;grid-template-columns:repeat(3,minmax(0,1fr)) minmax(0,1.35fr) repeat(2,minmax(0,1fr));background:#111217;border-top:1px solid #2a2b30;border-bottom:1px solid #37393f}",
     ".tab{color:#b5b9c6;padding:13px 4px 11px;border:0;border-bottom:2px solid transparent;background:transparent;cursor:pointer;font-size:13px;font-weight:800;letter-spacing:.04em;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}",
     ".tab:hover{background:#25272d}.tab[aria-selected=true]{background:#25262d;color:#fff;border-bottom-color:#c4b48a}",
     "#scroll{flex:1;min-height:0;overflow:auto;scrollbar-color:#555 #17181b;scrollbar-width:thin;padding:12px;}",
@@ -353,6 +358,11 @@
     ".weapon strong{display:block;font-size:16px}.weapon b{display:block;margin:2px 0;font-size:16px;color:#e6d29a;font-variant-numeric:tabular-nums}",
     ".tip{font-size:14px;color:#a7aeba;line-height:1.5;margin:5px 0}.empty{padding:24px 16px;text-align:center;color:#b4bdc9}",
     ".warn{font-size:14px;color:#f5c6a2;background:#34251f;border:1px solid #6e5142;border-radius:7px;padding:9px 11px;margin:0 0 10px}",
+    ".initiative-table{width:100%;border-collapse:collapse;text-align:left;font-size:14px}",
+    ".initiative-table th,.initiative-table td{padding:7px 6px;border-bottom:1px solid #2c2e35;vertical-align:top}",
+    ".initiative-table th{font-size:12px;color:#aab3c3}.initiative-table td:first-child{width:1%;color:#ebd18e}",
+    ".initiative-table td:nth-child(3){width:1%;color:#a8dfb9}.initiative-table td:first-child,.initiative-table td:nth-child(3){white-space:nowrap;font-variant-numeric:tabular-nums}",
+    ".initiative-table td:nth-child(2){font-weight:650}.initiative-table td:nth-child(4){color:#c4c8d2}.initiative-table td{overflow-wrap:anywhere}",
     ".section-label{font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:#aeb6c5;margin:18px 0 7px}",
     "details.accordion,details.quest,details.project{border:1px solid #34363c;border-radius:8px;margin:7px 0;overflow:hidden;background:#17181b}",
     "details.accordion[open],details.quest[open],details.project[open]{border-color:#555a65}",
@@ -455,12 +465,11 @@
     panel.hidden = !visible;
     $("#launcher").hidden = visible;
     store("collapsed", !visible);
+    syncInitiative();
   }
-  setVisible(!state.collapsed);
 
-  function requestJson(name) {
+  function requestJson(name, url, validate) {
     return new Promise(function (resolve, reject) {
-      const url = BASE + "data/" + name + ".json?_=" + Date.now();
       if (typeof GM_xmlhttpRequest !== "function") { reject(new Error("GM_xmlhttpRequest fehlt")); return; }
       GM_xmlhttpRequest({
         method:"GET", url:url, timeout:15000, responseType:"json",
@@ -469,14 +478,76 @@
           if (response.status !== 200) { reject(new Error(name + ": HTTP " + response.status)); return; }
           try {
             const object = response.response && typeof response.response === "object" ? response.response : JSON.parse(response.responseText);
-            if (!object || !object.meta || object.meta.playerSafe !== true) throw new Error("Keine geprüfte Spieleransicht");
-            resolve(object);
+            resolve(validate(object));
           } catch (error) { reject(new Error(name + ": " + error.message)); }
         },
         onerror:function () { reject(new Error(name + ": Netzwerkfehler")); },
         ontimeout:function () { reject(new Error(name + ": Zeitüberschreitung")); }
       });
     });
+  }
+
+  function requestWikiJson(name) {
+    return requestJson(name, BASE + "data/" + name + ".json?_=" + Date.now(), function (object) {
+      if (object?.meta?.playerSafe !== true) throw new Error("Keine geprüfte Spieleransicht");
+      return object;
+    });
+  }
+
+  function combatSnapshot(raw) {
+    if (!raw || ![1,2].includes(raw.schema_version) || typeof raw.active !== "boolean" ||
+        !["string","number"].includes(typeof raw.revision)) throw new Error("Ungültiger Kartenstand");
+    const snapshot = { active:raw.active, scene:raw.scene_id, revision:raw.revision,
+      stamp:Date.parse(raw.generated_at) || 0, ordered:false, rows:[] };
+    if (!raw.active) return snapshot;
+    if (!Array.isArray(raw.tokens) || (raw.initiative !== undefined && !Array.isArray(raw.initiative))) {
+      throw new Error("Ungültige Initiativeliste");
+    }
+    const tokens = new Map(raw.tokens.filter(token => token && token.visible !== false).map(token => [token.id, token]));
+    function addRow(token, score) {
+      const statuses = Array.isArray(token.statuses) ? token.statuses.filter(value => typeof value === "string").slice(0,12) : [];
+      snapshot.rows.push({ name:typeof token.name === "string" ? token.name : token.id,
+        score, hp:typeof token.hp === "string" ? token.hp : "", statuses });
+    }
+    for (const entry of raw.initiative || []) {
+      if (!entry || !Number.isSafeInteger(entry.score) || !tokens.has(entry.id)) continue;
+      addRow(tokens.get(entry.id), entry.score);
+      tokens.delete(entry.id);
+      snapshot.ordered = true;
+    }
+    for (const token of tokens.values()) addRow(token, null);
+    return snapshot;
+  }
+
+  function initiativeIsVisible() {
+    return state.tab === "initiative" && !state.collapsed && !document.hidden;
+  }
+
+  async function syncInitiative() {
+    clearTimeout(initiative.timer);
+    if (!initiativeIsVisible() || initiative.loading) return;
+    initiative.loading = true;
+    let changed = false;
+    try {
+      const next = await requestJson("Live-Karte", LIVE_MAP_STATE + "?t=" + Date.now(), combatSnapshot);
+      const previous = initiative.snapshot;
+      if ((!previous || !next.stamp || !previous.stamp || next.stamp >= previous.stamp) &&
+          (!previous || next.revision !== previous.revision || next.scene !== previous.scene || next.active !== previous.active)) {
+        initiative.snapshot = next;
+        changed = true;
+      }
+      changed ||= initiative.failed;
+      initiative.failed = false;
+    } catch (_) {
+      changed = !initiative.failed;
+      initiative.failed = true;
+    } finally {
+      initiative.loading = false;
+      if (initiativeIsVisible()) {
+        if (changed) renderInitiative(true);
+        initiative.timer = setTimeout(syncInitiative, INITIATIVE_REFRESH_MS);
+      }
+    }
   }
 
   function validateBundle(data) {
@@ -502,7 +573,7 @@
     state.loading = true;
     setStatus("GitHub-Pages-Daten werden geprüft …", "neutral");
     const files = ["hud","sheets","live","horn"];
-    Promise.all(files.map(requestJson)).then(function (results) {
+    Promise.all(files.map(requestWikiJson)).then(function (results) {
       const bundle = Object.fromEntries(files.map(function (file, i) { return [file, results[i]]; }));
       const warning = validateBundle(bundle);
       state.data = bundle;
@@ -795,6 +866,27 @@
       '<div class="bottom-links">' + link(urlFor("inventar"), "Inventar & Kasse im Wiki") + '</div>';
   }
 
+  function initiativePage() {
+    const combat = initiative.snapshot;
+    const warning = initiative.failed && combat ? '<p class="warn">Live-Karte gerade nicht erreichbar. Letzter geladener Stand.</p>' : "";
+    if (!combat) return '<p class="empty">' + (initiative.failed ? "Live-Karte derzeit nicht erreichbar." : "Kampfstand wird geladen …") + '</p>';
+    if (!combat.active || !combat.rows.length) return warning + '<p class="empty">Keine aktive Begegnung.</p>';
+    const pending = combat.ordered ? "" : '<p class="tip">Initiative noch nicht übertragen.</p>';
+    const rows = combat.rows.map(function (row) {
+      return '<tr><td>' + esc(row.score ?? "—") + '</td><td>' + esc(row.name) + '</td><td>' +
+        esc(row.hp || "—") + '</td><td>' + esc(row.statuses.join(" · ") || "—") + '</td></tr>';
+    }).join("");
+    return warning + pending + '<table class="initiative-table" aria-label="Initiative">' +
+      '<thead><tr><th scope="col">Ini</th><th scope="col">Name</th><th scope="col">TP</th><th scope="col">Zustand</th></tr></thead><tbody>' +
+      rows + '</tbody></table>';
+  }
+
+  function renderInitiative(keepScroll) {
+    const top = keepScroll ? scroll.scrollTop : 0;
+    scroll.innerHTML = initiativePage();
+    scroll.scrollTop = top;
+  }
+
   function render(keepScroll) {
     renderTabs();
     const d = state.data;
@@ -803,6 +895,10 @@
     else setStatus("Keine Daten geladen", "bad");
 
     $("#footer-date").textContent = d ? "Spielstand " + dateLabel(d.live.scene.date) : "Kein Chat-Tracking";
+    if (state.tab === "initiative") {
+      renderInitiative(keepScroll);
+      return;
+    }
     if (!d) {
       scroll.innerHTML = '<div class="empty">GitHub-Snapshot derzeit nicht erreichbar. Mit ↻ erneut versuchen.</div>';
       return;
@@ -823,8 +919,12 @@
     state.tab = id;
     store("tab", id);
     render(false);
+    syncInitiative();
   });
-  $("#refresh").addEventListener("click", function () { refresh(true); });
+  $("#refresh").addEventListener("click", function () {
+    if (state.tab === "initiative") syncInitiative();
+    else refresh(true);
+  });
   $("#export").addEventListener("click", exportCurrentChat);
   $("#close").addEventListener("click", function () { setVisible(false); });
   $("#collapse").addEventListener("click", function () { setVisible(false); });
@@ -864,6 +964,7 @@
   });
   document.addEventListener("visibilitychange", function () {
     if (document.visibilityState === "visible" && !state.collapsed) refresh(false);
+    syncInitiative();
   });
   window.addEventListener("resize", function () {
     const rect = panel.getBoundingClientRect();
@@ -874,5 +975,6 @@
   });
 
   render(false);
+  setVisible(!state.collapsed);
   refresh(true);
 })();
