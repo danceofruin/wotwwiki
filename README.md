@@ -1,3 +1,7 @@
+## Wappen & Knotenstand 5.6.0 · 25. November 2026
+
+Freigegebenes rundes Wappen The Bound Knot (zwei goldene Kordeln, zwölf rote Stränge, roter Außenring, vier Sterne und vier Nieten), Schwarz/Karmin/Gold-Design, Favicon und Archivkopf. Bestätigter Spielerstand 23. Oktober 4712 AR: 14 Mitglieder seit Rikas freiwilliger Aufnahme am 21. Oktober; Übersicht, ausgewählte Dossiers und Spielrand aktualisiert. Exportierte Live-, Horn-, Sheet- und HUD-Snapshots bleiben auf dem 5. Oktober; die Oberfläche kennzeichnet die getrennten Stände. Keine vorweggenommenen Bauarbeiten, kein GM-only-Inhalt und keine Änderungen am Kampagnenkanon. Die neue WebP-Grafik ist eine weboptimierte Verkleinerung der freigegebenen PNG-Vorlage.
+
 ## Aktualisierung 5.5.0 · 17. November 2026
 
 Spielerstand: 14. August 4712 AR, später Nachmittag am Horn. Wiki, Chronik, Live Play und HUD synchronisiert: Ritual 494/666, 5.540 GM 7 SM 5 KM brutto / 440 GM 7 SM 5 KM frei, fertig übergebener und getesteter Grumblejack-Reif, Rikas Marsten-Mandat, Sereth und Valennes 16.-August-Termin. Frühere Artikelabschnitte bleiben datierte Geschichte; ungeprüfte Ergebnisse und verborgene Vorbereitung werden nicht veröffentlicht.

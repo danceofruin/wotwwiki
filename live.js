@@ -60,7 +60,8 @@ window.WotwLive = (() => {
   }
   function statusLine() {
     const meta=snapshot.live.meta;
-    return `<div class="lp-sync"><span><span class="status-dot"></span>${esc(snapshot.live.scene.dateLabel)} · ${esc(snapshot.live.scene.time)}<br>Geprüft ${esc(readingDate(meta.reviewedAt))}</span><button class="button small" data-live-refresh ${busy?'disabled':''}>${busy?'Wird geladen …':'Stand neu laden'}</button></div>${failure?`<p class="lp-error" role="status">${esc(failure)} Der zuletzt geladene Stand bleibt sichtbar.</p>`:''}`;
+    const older=snapshot.live.scene.date<'4712-10-23';
+    return `${older?'<div class="knot-snapshot-note"><strong>Älterer Datenstand.</strong> Der bestätigte Spielrand ist der 23. Oktober. Diese exportierten Werte bleiben auf ihrem unten angegebenen Datum; <a href="#/artikel/story-so-far">aktuelle redaktionelle Übersicht</a>.</div>':''}<div class="lp-sync"><span><span class="status-dot"></span>${esc(snapshot.live.scene.dateLabel)} · ${esc(snapshot.live.scene.time)}<br>Geprüft ${esc(readingDate(meta.reviewedAt))}</span><button class="button small" data-live-refresh ${busy?'disabled':''}>${busy?'Wird geladen …':'Stand neu laden'}</button></div>${failure?`<p class="lp-error" role="status">${esc(failure)} Der zuletzt geladene Stand bleibt sichtbar.</p>`:''}`;
   }
   function navigation(id) {
     return `<nav class="lp-party-switch" aria-label="Aktive Party"><a href="#/live" ${!id?'aria-current="page"':''}>Live Play</a>${snapshot.live.party.map(p=>`<a href="#/sheet/${p.id}" ${id===p.id?'aria-current="page"':''}>${esc(p.name)}</a>`).join('')}<a href="#/quests">Questlog</a></nav>`;
