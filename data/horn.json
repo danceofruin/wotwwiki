@@ -3,33 +3,33 @@
     "schemaVersion": 1,
     "playerSafe": true,
     "authority": "GENERATED VIEW. DO NOT USE AS CAMPAIGN AUTHORITY.",
-    "reviewedAt": "2026-11-20",
-    "campaignDate": "4712-10-05",
-    "campaignLabel": "5. Oktober 4712 AR · nach dem Erdbeben",
-    "sourceCommit": "ff5c7e1171b38fc3d0b0050cd3efb8c54369c61c",
-    "sourceRevision": "bb610020319a289772f9618287bfb6c171f7711c16a7452598f646cead91c037",
-    "generatedAt": "2026-11-20T21:23:00.789Z"
+    "reviewedAt": "2026-11-28",
+    "campaignDate": "4712-10-29",
+    "campaignLabel": "29. Oktober 4712 AR · später Abend",
+    "sourceCommit": "44ce9fb6e465c15fa5fd60eaa27ae545474ff585",
+    "sourceRevision": "d740bc228b3d5a8c1c4d9fe11cb126c641ae2743b891d2c5b10a5e33f5aecc14",
+    "generatedAt": "2026-11-28T15:06:45.608Z"
   },
   "levels": [
     {
       "id": "sanctum",
       "label": "Sanctum",
-      "subtitle": "Ritualkern steht; niedrige Abtrennung beschädigt. Nachtlager des Kerntrios hier, innerer Zugang braucht Reparatur."
+      "subtitle": "Ritual abgeschlossen, bestehender Kern bleibt; kein laufender Gebetsdienst."
     },
     {
       "id": "three",
       "label": "Ebene Drei",
-      "subtitle": "Neue große Nordbresche und Durchbruch bei Bibliothek/Sanctum; frühere Zellentüren beschädigt, Sereth zusätzlich angekettet."
+      "subtitle": "Beschädigte Nordseite; innere Bresche geschlossen. Werkstätten und Bibliothek vorgesehen."
     },
     {
       "id": "two",
       "label": "Ebene Zwei",
-      "subtitle": "Mehrere Räume eingestürzt oder beschädigt, darunter Calliastes Zimmer; sichere Kernräume nur nach tatsächlicher Prüfung."
+      "subtitle": "Teilweise beschädigt; neue Wohnräume geplant, keine vollständige Fertigstellung."
     },
     {
       "id": "one",
       "label": "Ebene Eins",
-      "subtitle": "Death’s Head teilweise abgerissen; Brunnen zerstört. Schmiede, große Halle und weitere Kernbereiche benutzbar."
+      "subtitle": "Death’s Head beschädigt, Arbeiten angelaufen; große Halle und alter Tisch bleiben."
     },
     {
       "id": "caves",
@@ -46,12 +46,12 @@
         "Vexorandian"
       ],
       "level": "sanctum",
-      "status": "active",
-      "progress": "650/666",
-      "next": "#651 an der nächsten Mitternacht, bei ununterbrochener Fortführung. Abschluss #666 weiterhin bedingt.",
-      "done": 650,
+      "status": "completed",
+      "progress": "666/666 · abgeschlossen 10. Oktober",
+      "next": "Kein weiterer Ritualdienst.",
+      "done": 666,
       "total": 666,
-      "detail": "#650 nach der Abenddämmerung 5. Oktober vollendet; #651 steht noch aus. Opfer 2/3; Ritualkern steht."
+      "detail": "Ritualabschluss und Vetra-Kalis Niederlage tatsächlich erfolgt."
     },
     {
       "id": "retrain",
@@ -461,11 +461,12 @@
         "Valeria"
       ],
       "level": "three",
-      "status": "active",
-      "progress": "Trockene Horn-Isolationsprüfung am 12. August vorgelegt; keine sichere Infektionsstation und keine Erregerprobe.",
-      "next": "Keine gefährliche Forschung ohne eigene Freigabe; weitere sichere Planung bleibt offen.",
+      "status": "completed",
+      "progress": "Forschungsauftrag abgeschlossen.",
+      "next": "Kein laufender Forschungsblock.",
       "done": null,
-      "total": null
+      "total": null,
+      "detail": "Tacitus arbeitet jetzt an der genehmigten Fertigung."
     },
     {
       "id": "portcullises",
@@ -584,16 +585,17 @@
     },
     {
       "id": "atelier",
-      "title": "Mirelles öffentliches Atelier",
+      "title": "Mirelles Atelier · Whitequarter",
       "owners": [
         "Mirelle"
       ],
       "level": "one",
       "status": "active",
-      "progress": "Drei Stücke für Styke, Vesper und Kaitlyn fertig 29. Juli, getragen 30. Juli; übrige Kollektion in Arbeit.",
-      "next": "Nächste Monatsabrechnung +90 GM netto am 27. August.",
+      "progress": "Farholde geschlossen; Ghastenhall-Atelier eröffnet.",
+      "next": "Reguläre Geschäftsabrechnung.",
       "done": null,
-      "total": null
+      "total": null,
+      "detail": "Neue Miete 15 GM/Monat; Kaution 15 GM, bereits berücksichtigt."
     },
     {
       "id": "grumble-circlet",
@@ -630,15 +632,156 @@
       "id": "sanctum-repair",
       "level": "three",
       "title": "Sanctum · Stone-Shape-Abdichtung",
-      "status": "planned",
-      "progress": "Noch nicht begonnen",
-      "detail": "Innere Bresche nach dem Beben schließen, sobald Vesper den Zauber regulär vorbereitet; keine zusätzliche Gratismagie.",
+      "status": "completed",
+      "progress": "Innere gefährliche Bresche geschlossen.",
+      "detail": "Keine pauschale Reparatur der gesamten Nordwand.",
       "owners": [
         "Vesper"
       ],
-      "next": "Ab 6. Oktober nach regulärer neuer Arcane-Enlightenment-Auswahl; keine heutige Gratisvorbereitung.",
+      "next": "Weitere geplante Umbauten getrennt prüfen.",
+      "done": 1,
+      "total": 1
+    },
+    {
+      "id": "western-star",
+      "title": "Valeria · Western Star",
+      "owners": [
+        "Tacitus",
+        "Knittel",
+        "Valeria"
+      ],
+      "level": "three",
+      "status": "completed",
+      "progress": "23. Oktober übergeben; normalerweise aktiv.",
+      "next": "Kein weiterer Fertigungsauftrag.",
+      "done": 1,
+      "total": 1,
+      "detail": "Verbirgt beide Ioun Stones; Stykes Reif zurückgegeben."
+    },
+    {
+      "id": "heavyload-belt",
+      "title": "Argossarian · Heavyload Belt",
+      "owners": [
+        "Tacitus",
+        "Knittel",
+        "Vesper"
+      ],
+      "level": "three",
+      "status": "completed",
+      "progress": "Fertig und angepasst am 22. Oktober.",
+      "next": "Bestehender Untoter in Figur gespeichert.",
+      "done": 1,
+      "total": 1,
+      "detail": ""
+    },
+    {
+      "id": "lyre-of-building",
+      "title": "Lyre of Building",
+      "owners": [
+        "Tacitus",
+        "Knittel",
+        "Bianca"
+      ],
+      "level": "three",
+      "status": "completed",
+      "progress": "28. Oktober fertig; erster Einsatz 29. Oktober.",
+      "next": "Nächste Wochenanwendung frühestens 5. November.",
+      "done": 4,
+      "total": 4,
+      "detail": ""
+    },
+    {
+      "id": "horn-rebuild",
+      "title": "Horn · Wiederaufbau",
+      "owners": [
+        "Branna",
+        "Darric",
+        "Osric",
+        "Tamsin",
+        "Nella"
+      ],
+      "level": "one",
+      "status": "active",
+      "progress": "Vermessung abgeschlossen; erster Lyre-Einsatz erfolgt.",
+      "next": "Konkrete Arbeitsfortschritte und Sicherheitsberichte.",
+      "done": null,
+      "total": null,
+      "detail": "Wohn-/Werkstattpläne bleiben Pläne bis zum tatsächlichen Abschluss."
+    },
+    {
+      "id": "fabricate",
+      "title": "Tacitus · Fabricate",
+      "owners": [
+        "Tacitus"
+      ],
+      "level": "three",
+      "status": "completed",
+      "progress": "Zauber gelernt; 1.375 GM bereits gebucht.",
+      "next": "Reguläre vorbereitete Slots für tatsächliche Arbeit.",
+      "done": 1,
+      "total": 1,
+      "detail": ""
+    },
+    {
+      "id": "bloodstone-receiver",
+      "title": "Bloodstone-Empfänger",
+      "owners": [
+        "Tacitus",
+        "Knittel"
+      ],
+      "level": "three",
+      "status": "active",
+      "progress": "Begonnen; 3.000 GM Material gebucht.",
+      "next": "Fertigstellung/Übergabe bestätigen.",
+      "done": null,
+      "total": null,
+      "detail": ""
+    },
+    {
+      "id": "bloodstone-pendants",
+      "title": "Bloodstone-Pendants",
+      "owners": [
+        "Tacitus",
+        "Knittel"
+      ],
+      "level": "three",
+      "status": "planned",
+      "progress": "Genehmigt; noch nicht als fertig zu führen.",
+      "next": "Nach tatsächlicher Fertigung.",
       "done": 0,
-      "total": null
+      "total": 11,
+      "detail": ""
+    },
+    {
+      "id": "defense-item",
+      "title": "Genehmigter Schutzgegenstand",
+      "owners": [
+        "Tacitus",
+        "Knittel"
+      ],
+      "level": "three",
+      "status": "planned",
+      "progress": "14.500 GM Material vorgesehen, nicht ausgegeben.",
+      "next": "Nach tatsächlicher Fertigung.",
+      "done": 0,
+      "total": 10,
+      "detail": ""
+    },
+    {
+      "id": "valeria-mask",
+      "title": "Valeria · Grinning Skull / Persuasion",
+      "owners": [
+        "Tacitus",
+        "Knittel",
+        "Valeria"
+      ],
+      "level": "three",
+      "status": "planned",
+      "progress": "4.500 GM Material vorgesehen, nicht ausgegeben.",
+      "next": "Nach tatsächlicher Fertigung und Übergabe.",
+      "done": 0,
+      "total": 3,
+      "detail": ""
     }
   ],
   "security": [
@@ -653,18 +796,18 @@
     {
       "id": "hexor",
       "level": "sanctum",
-      "title": "Augenbeobachtung S-1",
+      "title": "Wächterdienst nach Ritualabschluss",
       "status": "operational",
-      "owner": "Hexor/Vexor im Ablösedienst",
-      "detail": "Ein qualifizierter Wächter deckt die tatsächliche Augenbeobachtung; Ritualdienst nur mit realer Ablösung."
+      "owner": "Hexor/Vexor",
+      "detail": "Bewachen den erhaltenen Leichnam in 1-4; kein laufender Ritualdienst."
     },
     {
       "id": "vexor",
       "level": "one",
-      "title": "Dämonische Eingangssicherung",
+      "title": "Horn · Wachorganisation",
       "status": "operational",
-      "owner": "Hexor/Vexor im Ablösedienst",
-      "detail": "Zweiter Wächter am einzigen offenen oberen Eingang 1-1 mit menschlicher Wache und Glut; keine Fernüberwachung."
+      "owner": "Tamsin / Hakon",
+      "detail": "Tatsächliche örtliche Wachen, keine pauschale Fernüberwachung."
     },
     {
       "id": "two",
@@ -733,10 +876,10 @@
     {
       "id": "captives",
       "level": "three",
-      "title": "Sereth · Gefangenenaufsicht",
-      "status": "operational",
-      "owner": "Tamsin",
-      "detail": "Sereth lebt. Nach Aufspringen der alten Zellentüren in einer strukturell brauchbaren oberen Zelle an festen Eisenpunkten zusätzlich an Händen und Füßen angekettet."
+      "title": "Sereth · frühere Gefangenschaft",
+      "status": "closed",
+      "owner": "Historisch",
+      "detail": "Keine lebende Gefangenschaft mehr."
     },
     {
       "id": "hounds",
@@ -781,10 +924,10 @@
     {
       "id": "sanctum-inner-breach",
       "level": "three",
-      "title": "Bibliothek–Sanctum · offener Durchbruch",
-      "status": "open",
-      "owner": "Vesper · geplante Reparatur",
-      "detail": "Beschädigte Innenwand umgeht die alte gesicherte Route; Stone Shape frühestens nach regulärer nächster Zauberauswahl geplant."
+      "title": "Bibliothek–Sanctum · innere Bresche",
+      "status": "installed",
+      "owner": "Horn",
+      "detail": "Gefährlicher innerer Zugang geschlossen; übrige Bauschäden getrennt."
     },
     {
       "id": "death-head-collapse",
@@ -801,11 +944,11 @@
       "name": "Wirtschaftlich verfügbare gemeinsame Mittel",
       "owner": "Knoten",
       "group": "Geld",
-      "amount": "8.655 GM 7 SM 5 KM",
-      "state": "Letzter nachweislich verbuchter Stand 27. September: 8.655 GM 7 SM 5 KM brutto; 4.600 GM gebunden, 4.055 GM 7 SM 5 KM frei. Kein Oktoberumsatz ohne Beleg.",
-      "value": 8655.75,
+      "amount": "62.553 GM 2 SM 5 KM",
+      "state": "Bestätigter gemeinsamer freier Bestand am 29. Oktober: 62.553 GM 2 SM 5 KM. Zwei weitere gewonnene Wettscheine noch ohne bezifferten Nettogewinn.",
+      "value": 62553.25,
       "basis": "Verfügbarkeitsrechnung",
-      "note": "Silber und kleinere Wertstücke sind bereits im wirtschaftlichen Gesamtsaldo enthalten, keine zweite Gutschrift."
+      "note": "Wirtschaftlicher Gesamtbestand, kein zusätzliches Addieren physischer Sachwerte."
     },
     {
       "id": "silver",
@@ -813,10 +956,10 @@
       "owner": "Horn",
       "group": "Sachwerte",
       "amount": "Gesamtbestand",
-      "state": "Physisch bekannte 10.000 GM Silberobjekte. Seit 13./14. April bereits im wirtschaftlichen Gesamtsaldo enthalten; nicht zusätzlich addieren.",
-      "value": 10000,
+      "state": "Historisch bereits im wirtschaftlichen Gesamtbestand angerechnet; aktuelle physische Zusammensetzung nicht exakt bestätigt.",
+      "value": null,
       "basis": "Bereits im Brutto-Saldo angerechnet",
-      "note": "Kein weiterer Verkaufserlös, kein zweiter Transfer."
+      "note": "Kein zusätzliches freies Vermögen."
     },
     {
       "id": "valuables",
@@ -824,10 +967,10 @@
       "owner": "Horn",
       "group": "Sachwerte",
       "amount": "1 Paket",
-      "state": "920 GM kleinere Wertstücke; ebenfalls bereits im Gesamtsaldo angerechnet.",
-      "value": 920,
+      "state": "Historisch bereits im wirtschaftlichen Gesamtbestand angerechnet; aktuelle physische Zusammensetzung nicht exakt bestätigt.",
+      "value": null,
       "basis": "Bereits im Brutto-Saldo angerechnet",
-      "note": "Kein separates zusätzliches freies Vermögen."
+      "note": "Kein zusätzliches freies Vermögen."
     },
     {
       "id": "styke-0",
@@ -908,14 +1051,14 @@
     },
     {
       "id": "styke-7",
-      "name": "Iron Circlet / Verständnishelm",
+      "name": "Iron Circlet +2 INT",
       "owner": "Styke",
       "group": "Persönliche Ausrüstung",
       "amount": "siehe Stand",
-      "state": "Stykes Iron Circlet (Head) ist an Valeria verliehen. CHA-Stirnreif (Headband) bleibt kompatibel; Verständnishelm ist ein eigener Head-Gegenstand.",
+      "state": "An Styke zurückgegeben, normalerweise getragen; INT16, PP44.",
       "value": null,
       "basis": "Nicht taxiert",
-      "note": ""
+      "note": "HEAD-Slot, kompatibel mit CHA-Headband."
     },
     {
       "id": "styke-8",
@@ -1044,10 +1187,10 @@
       "owner": "Vesper",
       "group": "Persönliche Ausrüstung",
       "amount": "siehe Stand",
-      "state": "AWAKENED, nicht Unsealed; letzte bewusste Sitzung 21. Juni.",
+      "state": "UNSEALED; kein neuer Lesevorgang am 29. Oktober.",
       "value": null,
       "basis": "Nicht taxiert",
-      "note": ""
+      "note": "Aktueller bestätigter Zustand."
     },
     {
       "id": "vesper-7",
@@ -1088,10 +1231,10 @@
       "owner": "Vesper",
       "group": "Persönliche Ausrüstung",
       "amount": "siehe Stand",
-      "state": "Befehlstoken bzw. Tarngegenstand, keine Doppelboni",
+      "state": "Eigenes Iron Circlet +2 INT getragen; separater Befehlstoken.",
       "value": null,
       "basis": "Nicht taxiert",
-      "note": ""
+      "note": "INT17; kompatibel mit CHA-Headband."
     },
     {
       "id": "vesper-11",
@@ -1143,7 +1286,7 @@
       "owner": "Valeria",
       "group": "Persönliche Ausrüstung",
       "amount": "siehe Stand",
-      "state": "Seit 30. April getragen; CHA 25 auf Stufe 9.",
+      "state": "CHA25 auf Stufe 10, getragen.",
       "value": null,
       "basis": "Nicht taxiert",
       "note": ""
@@ -1165,7 +1308,7 @@
       "owner": "Valeria",
       "group": "Persönliche Ausrüstung",
       "amount": "siehe Stand",
-      "state": "Im Dienst normalerweise kreisend: Initiative +8; verstaut +7.",
+      "state": "Normalerweise kreisend, +1 Initiative; durch aktiven Western Star verborgen.",
       "value": null,
       "basis": "Nicht taxiert",
       "note": ""
@@ -1439,9 +1582,9 @@
       "value": null,
       "id": "venom-nella",
       "name": "Assassin-Vine-Gift",
-      "amount": "4 Dosen",
+      "amount": "8 bestätigte Dosen",
       "owner": "Nella",
-      "state": "Vier zuletzt bestätigte gesicherte Dosen; spätere Ernten oder Verbrauch nicht beziffert.",
+      "state": "Acht nachweisbare Dosen; nicht belegte spätere Quoten nicht hinzuaddiert.",
       "basis": "Bestätigte gesicherte Dosen"
     },
     {
@@ -1609,11 +1752,11 @@
     },
     {
       "id": "mithral-rika-intended",
-      "name": "Mithralkettenhemd +1 · vorgesehen für Rika",
-      "owner": "Styke",
+      "name": "Mithralkettenhemd +1 · Rika",
+      "owner": "Rika",
       "group": "Ausrüstung / Vorräte",
       "amount": "1",
-      "state": "Geborgenes Beutestück im Besitz Stykes; Übergabe an Rika nicht bestätigt.",
+      "state": "Tatsächlich übergeben und angepasst; nicht mehr in Stykes Beutebestand.",
       "value": 2100,
       "basis": "Marktwert; keine Liquidität",
       "note": ""
@@ -1727,21 +1870,120 @@
       "value": "nicht liquidiert",
       "basis": "80 GM Rohmaterial einmal verbucht",
       "note": "Noch kein freigeschalteter Charakterklassenaufstieg."
+    },
+    {
+      "id": "western-star",
+      "name": "Western Star",
+      "owner": "Valeria",
+      "group": "Ausrüstung",
+      "amount": "1",
+      "state": "Seit 23. Oktober übergeben; normalerweise aktiv, beide Ioun Stones verborgen.",
+      "value": null,
+      "basis": "Nicht taxiert",
+      "note": ""
+    },
+    {
+      "id": "vesper-prism",
+      "name": "Cracked Pale Green Prism",
+      "owner": "Vesper",
+      "group": "Ausrüstung",
+      "amount": "1",
+      "state": "Getragen; +1 Kompetenz auf Angriff.",
+      "value": null,
+      "basis": "Nicht taxiert",
+      "note": ""
+    },
+    {
+      "id": "lyre-of-building",
+      "name": "Lyre of Building",
+      "owner": "Knoten / Bianca",
+      "group": "Werkstatt",
+      "amount": "1",
+      "state": "Fertig am 28. Oktober, erstmals verwendet am 29. Oktober.",
+      "value": null,
+      "basis": "Nicht taxiert",
+      "note": ""
+    },
+    {
+      "id": "argo-heavyload",
+      "name": "Heavyload Belt",
+      "owner": "Argossarian",
+      "group": "Ausrüstung",
+      "amount": "1",
+      "state": "Fertig und angelegt, Figur gespeichert.",
+      "value": null,
+      "basis": "Nicht taxiert",
+      "note": ""
+    },
+    {
+      "id": "izevel-mask",
+      "name": "Goldmaske",
+      "owner": "Styke / Haversack",
+      "group": "Beute",
+      "amount": "1",
+      "state": "Nicht verkauft.",
+      "value": 450,
+      "basis": "Bekannter Wert",
+      "note": "Kein liquider Erlös."
+    },
+    {
+      "id": "izevel-jewelry",
+      "name": "Goldschmuck",
+      "owner": "Styke / Haversack",
+      "group": "Beute",
+      "amount": "1 Paket",
+      "state": "Nicht verkauft.",
+      "value": 1200,
+      "basis": "Bekannter Wert",
+      "note": "Kein liquider Erlös."
+    },
+    {
+      "id": "stone-sword",
+      "name": "Versteinertes +1 Langschwert",
+      "owner": "Styke / Haversack",
+      "group": "Beute",
+      "amount": "1",
+      "state": "Nicht funktional; Wiederherstellung offen.",
+      "value": null,
+      "basis": "Nicht taxiert",
+      "note": ""
+    },
+    {
+      "id": "stone-cloak",
+      "name": "Versteinerter Cloak of Resistance +1",
+      "owner": "Styke / Haversack",
+      "group": "Beute",
+      "amount": "1",
+      "state": "Nicht funktional; Wiederherstellung offen.",
+      "value": null,
+      "basis": "Nicht taxiert",
+      "note": ""
+    },
+    {
+      "id": "trio-portrait",
+      "name": "Gruppenporträt",
+      "owner": "Crowley-Anwesen",
+      "group": "Persönliches",
+      "amount": "1",
+      "state": "Sicher im Anwesen.",
+      "value": null,
+      "basis": "Nicht taxiert",
+      "note": ""
     }
   ],
   "treasury": {
-    "liquid": 8655.75,
-    "earmarked": 4600,
-    "free": 4055.75,
+    "liquid": 62553.25,
+    "earmarked": 0,
+    "free": 62553.25,
     "gold": 0,
     "silver": 0,
     "valuables": 0
   },
   "notes": [
-    "Spielstand: 5. Oktober 4712 AR, Abend nach dem Erdbeben; Ritual #650/666 abgeschlossen, #651 noch ausstehend.",
-    "Kassenstand: 27. September zuletzt verlässlich gebucht. 8.655 GM 7 SM 5 KM brutto, 4.600 GM gebunden, 4.055 GM 7 SM 5 KM frei. Oktoberbewegungen nicht ergänzt.",
-    "Die Nordwand von Ebene Drei ist aufgerissen; zusätzlich offener Durchbruch nahe dem Sanctum. Stone Shape erst nach regulärer Vorbereitung.",
-    "Grumblejack gerettet, Sereth nach Versagen der Zellentüren oben angekettet. Evakuierte Bewohner und Hakon sind nicht automatisch noch im Horn.",
-    "Das Atelier buchte +90 GM am 27. September, nächste planmäßige Abrechnung frühestens 27. Oktober."
+    "Spielstand: 29. Oktober 4712 AR · später Abend, Crowley-Anwesen.",
+    "Kasse: 62.553 GM 2 SM 5 KM frei; keine Vormerkung. Zwei weitere Arenawetten gewonnen, Auszahlungsbeträge offen.",
+    "Ritual beendet. Horn-Umbau angelaufen; tatsächliche Fertigstellungen separat verfolgen.",
+    "Neue Atelieradresse Ghastenhall; Westell geschlossen. Hof bleibt Übergangspunkt.",
+    "Nicht jede ältere Inventarposition wurde erneut physisch inventarisiert; alte bestätigte Besitzangaben sind keine neue Sichtprüfung."
   ]
 }

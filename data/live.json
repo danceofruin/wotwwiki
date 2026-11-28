@@ -4,35 +4,34 @@
     "authority": "GENERATED VIEW. DO NOT USE AS CAMPAIGN AUTHORITY.",
     "generated": true,
     "playerSafe": true,
-    "generatedAt": "2026-11-20T21:23:00.789Z",
-    "reviewedAt": "2026-11-20",
-    "sourceRevision": "bb610020319a289772f9618287bfb6c171f7711c16a7452598f646cead91c037",
-    "sheetRevision": "0427b6197889169f8ac1c1718fdae788228ae818a7e97ae723ef7e1b4f970073"
+    "generatedAt": "2026-11-28T15:06:45.608Z",
+    "reviewedAt": "2026-11-28",
+    "sourceRevision": "d740bc228b3d5a8c1c4d9fe11cb126c641ae2743b891d2c5b10a5e33f5aecc14",
+    "sheetRevision": "c95730ed0a53fe09a12c9133b88055c9936653d1d11d75ea3cb915dfae6ab777"
   },
   "scene": {
-    "date": "4712-10-05",
-    "dateLabel": "5. Oktober 4712 AR",
-    "time": "Abend · nach dem Erdbeben und der Schadensaufnahme",
-    "location": "Horn von Abaddon · Sanctum",
-    "locationId": "horn-abaddon",
-    "detail": "Das Erdbeben hat den Westteil von Death’s Head, den Brunnen und mehrere Innenräume beschädigt. Eine äußere Bresche in Ebene Drei und ein Durchbruch nahe dem Sanctum sind offen. Styke, Vesper und Valeria verlegen ihr Nachtlager ins Sanctum.",
-    "summary": "Ritual #650/666 abgeschlossen, Opfer 2/3. Die drei Augen und das Silbersiegel bestehen. Grumblejack wurde aus den Trümmern gerettet, Sereth ist in einer oberen Zelle zusätzlich angekettet. Vesper plant, den inneren Durchbruch mit Stone Shape nach regulärer Vorbereitung zu verschließen.",
-    "rest": "Kein Gratis-Rest durch Level 9; die heutigen Ressourcen und bereits verbrauchten Zauber bleiben wirksam. Die zusätzlichen Readied-Slots wurden gewählt, gelten aber erst nach regelgerechter Manövervorbereitung."
+    "date": "4712-10-29",
+    "dateLabel": "29. Oktober 4712 AR",
+    "time": "Später Abend",
+    "location": "Ghastenhall · Crowley-Anwesen",
+    "locationId": "ghastenhall",
+    "detail": "Styke, Vesper, Valeria, Grumblejack und Rex sind im hinteren Innenhof nach der Rückkehr und dem Abendessen.",
+    "summary": "Drei Arenasiege am 28. Oktober. Izevel am 29. Oktober lebend besiegt, separat gebunden und Tamsin am Horn übergeben. Der Horn-Umbau hat begonnen, Mirelles Atelier liegt jetzt in Ghastenhall. Der Knoten hat weiterhin 14 Vollmitglieder.",
+    "rest": "Reguläre Nachtruhe 28./29. Oktober bereits abgeschlossen; kein weiterer Tageswechsel. Der heutige Zauberverbrauch bleibt bestehen."
   },
   "quests": [
     {
       "id": "horn",
-      "title": "Horn · Ritual und Wachordnung",
+      "title": "Horn · Ritualabschluss und Wiederaufbau",
       "status": "active",
-      "updated": "4712-10-05",
-      "summary": "Ritual #650/666 abgeschlossen; zwei der drei Opfer vollzogen. Nach dem schweren Erdbeben bestehen mehrere sichtbare Breschen und zerstörte Räume. Der Ritualkern steht weiterhin.",
+      "updated": "4712-10-29",
+      "summary": "Ritual #666 am 10. Oktober abgeschlossen; Vetra-Kali besiegt. Das beschädigte Horn bleibt als künftiger Hauptwohnsitz erhalten.",
       "known": [
-        "Drei Augen installiert und Silbersiegel weiterhin vorhanden.",
-        "Westseite von Death’s Head zerstört; Brunnen gerissen.",
-        "Nordwand Ebene Drei und innere Verbindung beim Sanctum beschädigt.",
-        "Styke, Vesper und Valeria sind ins Sanctum umgezogen; Grumblejack gerettet."
+        "Vermessung abgeschlossen; Lyre of Building fertig und erstmals am 29. Oktober eingesetzt.",
+        "Planung für Wohnräume, Werkstätten, Sicherheit, Bad, Bibliothek und gemeinsame Räume läuft.",
+        "Keine vollständige Wiederherstellung oder abgeschlossene Umsiedlung behauptet."
       ],
-      "next": "#651 zur nächsten Mitternacht bei regulärer Fortführung. Vesper plant am 6. Oktober Stone Shape für den inneren Durchbruch. Voraussichtlicher Abschluss #666 am 10. Oktober bleibt bedingt.",
+      "next": "Baufortschritt und tatsächliche Material-/Sicherheitsberichte abwarten.",
       "links": [
         "horn-abaddon",
         "dirges-apollyon",
@@ -77,15 +76,15 @@
     },
     {
       "id": "captives",
-      "title": "Die Fünf · befristete Eide",
-      "status": "active",
-      "updated": "4712-10-05",
-      "summary": "Sereth überstand das Erdbeben und wird nach Schäden an den oberen Zellen mit zusätzlichen Ketten in einer gesicherten oberen Zelle verwahrt. Yorgun und James besitzen weiterhin befristete Verträge.",
+      "title": "Die Fünf · unterschiedliche Wege",
+      "status": "completed",
+      "updated": "4712-10-29",
+      "summary": "Halla, Marta und Bianca sind Vollmitglieder. Yorgun und James wurden nach Abschluss der Verpflichtung freigelassen; getrennte Verschwiegenheitspflicht.",
       "known": [
-        "Der Knoten zählt 13 volle Mitglieder.",
-        "Für Yorgun und James bleiben die endlichen Sicherheitsbindungen bestehen."
+        "Die drei Frauen besitzen eigenständige Compacts.",
+        "Yorgun und James sind freie Personen."
       ],
-      "next": "Sereth bleibt lebender Gefangener; tatsächliche künftige Entscheidungen offen. Befristete Eide von Yorgun und James ungefähr bis 18. Oktober.",
+      "next": "Keine automatische Rekrutierung.",
       "links": [
         "halla-amon",
         "marta-dian",
@@ -115,14 +114,13 @@
       "id": "social",
       "title": "Kaitlyn · öffentliche Kontakte",
       "status": "active",
-      "updated": "4712-06-28",
-      "summary": "Der Vanderhall-Festtag am 14. Juni ist abgeschlossen.",
+      "updated": "4712-10-29",
+      "summary": "Kaitlyn vertritt den Knoten im Ghastenhaller Stadtleben; Crowley ist öffentlicher Stadtstützpunkt.",
       "known": [
-        "Valeria gewann die Rose von Farholde; Kaitlyn wurde Zweite.",
-        "Styke besiegte alle neun Herausforderer im Champion-Wettbewerb.",
-        "Kaitlyns Kontakte bleiben persönliche und gesellschaftliche Arbeit, kein allwissendes Netz."
+        "Mirelle betreibt ihr neues Atelier.",
+        "Iris-Ring/Forderung bislang nicht eingelöst."
       ],
-      "next": "Berichte und Einladungen nur bei tatsächlicher Nachricht.",
+      "next": "Gewählte gesellschaftliche Kontakte und geschäftliche Vertretung.",
       "links": [
         "kaitlyn",
         "farholde",
@@ -132,15 +130,13 @@
     {
       "id": "valenne",
       "title": "Dame Valenne · nächstes privates Treffen",
-      "status": "active",
-      "updated": "4712-08-14",
-      "summary": "Valennes Brief ist zugestellt und von Styke gelesen: 16. August, später Nachmittag in Hamorhall.",
+      "status": "waiting",
+      "updated": "4712-10-29",
+      "summary": "Eigenständige Beziehung; kein neuer fest bestätigter Besuchstermin.",
       "known": [
-        "Der Besuch am 8. August und die gemeinsame Nacht sind geschehen.",
-        "Mehrere private Stunden bis in den Abend sind angeboten; eine ganze Nacht ist weiterhin nicht verlässlich gedeckt.",
-        "Ihre Garnisonsverantwortung und die bedingte Festteilnahme bleiben bestehen."
+        "Vergangene Treffen bleiben Teil der Chronik."
       ],
-      "next": "Älterer Termin vom 16. August; hier keine unbestätigte neue private Einladung oder Begegnung behauptet.",
+      "next": "Nur auf tatsächliche Nachrichten oder gewählte Begegnung reagieren.",
       "links": [
         "valenne",
         "styke",
@@ -149,16 +145,15 @@
     },
     {
       "id": "atelier",
-      "title": "Mirelle · öffentliches Atelier und Kollektion",
+      "title": "Mirelle · Atelier in Ghastenhall",
       "status": "active",
-      "updated": "4712-09-27",
-      "summary": "Mirelles individuelle Knoten-Kollektion ist seit 4. September fertig. Regulärer Nettoertrag von 90 GM am 27. September gebucht.",
+      "updated": "4712-10-29",
+      "summary": "Farholde-Laden geschlossen, neues Atelier im Whitequarter ab 26. Oktober, Mirelle wohnt im Crowley-Anwesen.",
       "known": [
-        "Letzte Passform- und Bewegungsprobe am 29. Juli; getragen am 30. Juli.",
-        "Die übrige individuelle Kollektion bleibt in Arbeit.",
-        "Juli-Ergebnis +90 GM netto einmal gebucht."
+        "Die frühere Kollektion ist abgeschlossen.",
+        "Neue Ateliermiete 15 GM/Monat; Kaution 15 GM bereits berücksichtigt."
       ],
-      "next": "Nächste planmäßige Monatsabrechnung 27. Oktober, sofern Betrieb und Vereinbarung fortbestehen.",
+      "next": "Nächste reguläre Geschäftsabrechnung nach tatsächlichem Betrieb.",
       "links": [
         "mirelle",
         "farholde"
@@ -167,14 +162,14 @@
     {
       "id": "tacitus-research",
       "title": "Ouroboros · Gegenforschung",
-      "status": "active",
-      "updated": "4712-08-14",
-      "summary": "Tacitus hat ihre trockene Prüfung der Horn-Isolation vorgelegt; kein sicheres Infektionslabor.",
+      "status": "completed",
+      "updated": "4712-10-29",
+      "summary": "Die Ouroboros-Forschung ist abgeschlossen. Tacitus kann sich wieder der genehmigten Fertigung widmen.",
       "known": [
-        "Keine Tears-Probe, keine Heilung und keine freigegebenen Menschenversuche.",
-        "Weitere räumliche Trennung ist Gegenstand der Planung, keine fertig erprobte Einrichtung."
+        "Forschungsauftrag abgeschlossen.",
+        "Kein neuer Forschungsblock gebucht."
       ],
-      "next": "Konkrete sichere nächste Schritte mit Tacitus; gefährliche Tests brauchen eigene Entscheidung.",
+      "next": "Magische Werkstattaufträge.",
       "links": [
         "tacitus",
         "verse"
@@ -253,12 +248,12 @@
       "id": "red-book",
       "title": "Rotes Buch",
       "status": "waiting",
-      "updated": "4712-06-28",
-      "summary": "Das Rote Buch bleibt AWAKENED, nicht Unsealed.",
+      "updated": "4712-10-29",
+      "summary": "Aktueller bekannter Zustand: Unsealed.",
       "known": [
-        "Die gemeinsame Sitzung am 21. Juni ist beendet; keine weitere Buchstufe oder neue reale Fähigkeit entstand."
+        "Kein neuer Lesevorgang am 29. Oktober bestätigt."
       ],
-      "next": "Nur tatsächliche selbst gewählte Nutzung und berichtete Beobachtungen; kein automatisch fortschreitender Effekt.",
+      "next": "Nur auf tatsächliche Beschäftigung mit dem Buch reagieren.",
       "links": [
         "rotes-buch",
         "vesper",
@@ -287,14 +282,13 @@
       "id": "argossarian",
       "title": "Argossarian · Untoter und Beute",
       "status": "active",
-      "updated": "4712-09-08",
-      "summary": "Argossarian ist ein weiterhin kontrollierter, geistloser Huge Fast Zombie in Vespers fertiger Silberfigur. Seine Fly-Kopfbinde wurde im September hergestellt und angelegt.",
+      "updated": "4712-10-29",
+      "summary": "Der bestehende mindlose Huge Fast Zombie Argossarian ist in Vespers Silberfigur gespeichert; Heavyload Belt fertig und angepasst.",
       "known": [
-        "Huge, 19 HD, mindlos; keine Persönlichkeit, Drachenzauber oder Atemwaffen des Lebenden.",
-        "Die nördliche Hortexpedition und der Flug nach Ghastenhall sind geschehen; derzeit in den unteren Hornhöhlen.",
-        "Hortgesamtwert 24.300 GM; 3.295 GM Münzen bereits einmal gebucht. Zugewiesene Magie und unverkaufte Sachwerte bleiben getrennt."
+        "Keine neue Kreatur und keine spontane Freisetzung.",
+        "Belt und Fly-Kopfbinde bereits tatsächlich vorhanden."
       ],
-      "next": "Für Freisetzung ist eine echte einminütige Umwandlung und geeigneter Huge-Platz nötig; keine automatische Beschwörung.",
+      "next": "Nur auf tatsächliche Anweisung/Freisetzung.",
       "links": [
         "argossarian",
         "vesper",
@@ -303,16 +297,14 @@
     },
     {
       "id": "sereth",
-      "title": "Sereth Veylan · lebender Gefangener",
-      "status": "active",
-      "updated": "4712-10-05",
-      "summary": "Sereth ist lebend, nach dem Beben verletzt und nun in einer oberen sicheren Zelle angekettet; die ursprünglichen Türen dort wurden beschädigt.",
+      "title": "Sereth Veylan · abgeschlossene Gefangenschaft",
+      "status": "completed",
+      "updated": "4712-10-29",
+      "summary": "Sereths Gefangenschaft ist beendet; er ist nicht mehr als lebender Gefangener zu führen.",
       "known": [
-        "Er befindet sich unter Tamsins Schlüsselgewalt in Zelle 1-26 auf Ebene Eins.",
-        "Er ist als Nachkomme des Victor identifiziert; noch kein drittes Opfer und kein Eid.",
-        "Vor einem tatsächlichen Valenne-Besuch ist eine sichere Verlegung nach Ebene Drei erforderlich; sie ist noch nicht erfolgt."
+        "Kein aktueller Zelleneintrag für Sereth."
       ],
-      "next": "Lebende Bewachung und tatsächliche Spielerentscheidungen bleiben entscheidend; keine Opferwahl vorwegnehmen.",
+      "next": "Historischer Eintrag.",
       "links": [
         "sereth-veylan",
         "tamsin",
@@ -322,15 +314,13 @@
     {
       "id": "feast",
       "title": "Horn · Hausfest am 5. September",
-      "status": "active",
-      "updated": "4712-08-14",
-      "summary": "Das Hausfest ist terminiert; Musik und Küche werden vorbereitet.",
+      "status": "completed",
+      "updated": "4712-10-29",
+      "summary": "Das Hausfest am 5. September ist vergangen.",
       "known": [
-        "Bianca, Kaitlyn und Calliaste organisieren; Nella koordiniert Versorgung.",
-        "Elise und Frost haben bedingt zugesagt; weitere Raven-Zahl bleibt offen.",
-        "Valennes zusätzlicher Besuch steht unter Dienstvorbehalt und bleibt auf Ebene Eins/Zwei beschränkt."
+        "Historisches Ereignis."
       ],
-      "next": "Frühere Festplanung für den 5. September. Kein unbestätigter Festverlauf wird rückwirkend behauptet.",
+      "next": "Keine Wiederholung als laufender Auftrag.",
       "links": [
         "bianca-devallya",
         "calliaste",
@@ -355,52 +345,127 @@
         "rika",
         "vesper"
       ]
+    },
+    {
+      "id": "city",
+      "title": "Ghastenhall · Stadtstützpunkt",
+      "status": "active",
+      "updated": "4712-10-29",
+      "summary": "Crowley-Anwesen als öffentlicher Stützpunkt; Horn als Hauptwohnsitz vorgesehen.",
+      "known": [
+        "Golden Palace: drei Siege, 1.400 GM Kampfprämien.",
+        "Westell geschlossen; Hof als Übergangspunkt."
+      ],
+      "next": "Nächste tatsächliche Stadtaktivität.",
+      "links": [
+        "ghastenhall",
+        "kaitlyn",
+        "mirelle"
+      ]
+    },
+    {
+      "id": "workshop",
+      "title": "Tacitus · genehmigte Fertigung",
+      "status": "active",
+      "updated": "4712-10-29",
+      "summary": "Lyre fertig; Fabricate gelernt und die weitere Fertigung in Auftrag gegeben.",
+      "known": [
+        "Bloodstone-Empfänger begonnen, 3.000 GM Material gebucht.",
+        "Weitere Aufträge: Pendants, Schutzgegenstand, Valerias Maske."
+      ],
+      "next": "Fertige Gegenstände erst bei bestätigter Fertigstellung/Übergabe.",
+      "links": [
+        "tacitus",
+        "knittel",
+        "horn-abaddon"
+      ]
+    },
+    {
+      "id": "izevel",
+      "title": "Izevel · gesonderter Dienstpakt",
+      "status": "active",
+      "updated": "4712-10-29",
+      "summary": "Lebend gefangen und vertraglich gebunden; kein Vollmitglied des Knotens.",
+      "known": [
+        "Dauerhaft bis Styke und Vesper gemeinsam lösen.",
+        "Versteinerung nur auf ausdrücklichen Befehl von Styke oder Vesper; Augenbinde nahe Verbündeten.",
+        "An Tamsin übergeben."
+      ],
+      "next": "Tatsächliche Einweisung und weiterer Einsatz nach Bericht.",
+      "links": [
+        "izevel",
+        "tamsin",
+        "horn-abaddon"
+      ]
+    },
+    {
+      "id": "scout",
+      "title": "Trayas Gruppe · Pilger-Erkundung",
+      "status": "active",
+      "updated": "4712-10-29",
+      "summary": "Valeria hat Traya, Halla, Marta und Bianca den Aufklärungsauftrag erteilt.",
+      "known": [
+        "Neuntägige Pilgerroute als Plan; keine bereits erfolgte Abreise oder Rückkehr bestätigt."
+      ],
+      "next": "Auf tatsächliche Abreise und späteren Bericht warten.",
+      "links": [
+        "traya-demarco",
+        "halla-amon",
+        "marta-dian",
+        "bianca-devallya"
+      ]
+    },
+    {
+      "id": "vestromo",
+      "title": "Ghastenhall · Kontakt zu Vestromo",
+      "status": "waiting",
+      "updated": "4712-10-29",
+      "summary": "Neutrale Anfrage durch Valeria veranlasst.",
+      "known": [
+        "Keine bestätigte Antwort oder Verabredung."
+      ],
+      "next": "Auf tatsächliche Rückmeldung warten.",
+      "links": [
+        "ghastenhall",
+        "valeria"
+      ]
     }
   ],
   "appointments": [
     {
-      "id": "ritual-next",
-      "date": "4712-10-06",
-      "label": "6. Oktober · Mitternacht",
-      "time": "Mitternacht",
-      "title": "Ritual · Dienst #651",
-      "note": "Nächste planmäßige Durchführung bei ununterbrochener Fortsetzung; keine erfolgreiche Ausführung vorweggenommen.",
+      "id": "horn-next",
+      "date": "4712-10-30",
+      "label": "30. Oktober · vorgesehen",
+      "time": "Tagesverlauf",
+      "title": "Horn · Bau und Sicherheitsbesprechung",
+      "note": "Vorgesehene nächste Arbeitsschritte; keine Fertigstellung vorweggenommen.",
       "links": [
-        "horn-abaddon"
+        "horn-abaddon",
+        "tamsin",
+        "tacitus"
       ]
     },
     {
-      "id": "ritual-finish",
-      "date": "4712-10-10",
-      "label": "10. Oktober · bedingt",
-      "time": "10. Oktober · bedingt",
-      "title": "Ritual · voraussichtlicher Abschluss",
-      "note": "Dämmerung #666 ausschließlich bei ununterbrochener Fortführung; nicht bereits abgeschlossen.",
+      "id": "scout-next",
+      "date": "4712-10-30",
+      "label": "30. Oktober · geplant",
+      "time": "Morgen",
+      "title": "Traya · Pilger-Erkundung",
+      "note": "Buchung erfolgt; Abreise nur bei tatsächlichem Aufbruch.",
       "links": [
-        "horn-abaddon"
+        "traya-demarco"
       ]
     },
     {
-      "id": "temporary-oaths-end",
-      "date": "4712-10-18",
-      "label": "Ungefähr 18. Oktober",
-      "time": "Ungefähr 18. Oktober",
-      "title": "Yorgun und James · befristete Bindungen",
-      "note": "Ungefährer Endtermin, kein automatischer dauerhafter Anschluss.",
+      "id": "lyre-next",
+      "date": "4712-11-05",
+      "label": "5. November · frühestens",
+      "time": "Bei Bedarf",
+      "title": "Lyre of Building · nächste Wochenanwendung",
+      "note": "Erster Einsatz am 29. Oktober; keine weitere vorzeitige Nutzung.",
       "links": [
-        "yorgun",
-        "james-otoole"
-      ]
-    },
-    {
-      "id": "atelier-next",
-      "date": "4712-10-27",
-      "label": "27. Oktober",
-      "time": "Monatsabrechnung",
-      "title": "Mirelles Atelier · 90 GM netto",
-      "note": "Planmäßige Abrechnung nur, wenn das Atelier normal weiterarbeitet; noch nicht verbucht.",
-      "links": [
-        "mirelle"
+        "horn-abaddon",
+        "bianca-devallya"
       ]
     }
   ],
@@ -408,26 +473,26 @@
     {
       "id": "treasury",
       "label": "Gemeinsame Mittel",
-      "value": "8.655 GM 7 SM 5 KM",
-      "note": "Letzter nachweislich gebuchter Stand vom 27. September: 4.600 GM vorgemerkt, 4.055 GM 7 SM 5 KM frei; kein automatisch fortgeschriebener Oktobersaldo."
+      "value": "62.553 GM 2 SM 5 KM",
+      "note": "Bestätigter frei verfügbarer Bestand; 0 GM gebunden. Arenaprämien 1.400 GM bereits gebucht; erster Wettgewinn +50 GM netto. Zwei weitere gewonnene Wettscheine gehören ebenfalls der Gruppenkasse, exakte Beträge nicht überliefert."
     },
     {
       "id": "level",
       "label": "Kerntrio",
-      "value": "Stufe 9",
-      "note": "Styke Zealot 4 / Psion 1 / Awakened Blade 4 · Vesper Oracle 9 · Valeria Antipaladin 9. Tamsin Fighter 7, Grumblejack Fighter 2, Tacitus Evoker 8."
+      "value": "Stufe 10",
+      "note": "Styke Zealot 4 / Psion 1 / Awakened Blade 5 · Vesper Oracle 10 · Valeria Antipaladin 10. Tamsin Fighter 7, Grumblejack Fighter 3, Tacitus Evoker 9."
     },
     {
       "id": "ritual",
       "label": "Ritual",
-      "value": "650 / 666",
-      "note": "5. Oktober bei Dämmerung abgeschlossen; #651 um Mitternacht noch offen, Opfer 2/3."
+      "value": "666 / 666 · abgeschlossen",
+      "note": "Abschluss 10. Oktober, kein weiterer Ritualdienst."
     },
     {
       "id": "crafting",
       "label": "Magische Fertigung",
-      "value": "Grumblejacks Reif · fertig",
-      "note": "Argossarians Silberfigur und Fly-Kopfbinde ebenfalls fertig; kein zusätzlicher täglicher Fertigungsfortschritt erfunden."
+      "value": "Lyre fertig · Empfänger begonnen",
+      "note": "Fabricate gelernt; 20.375 GM verbleibende genehmigte Materialkosten, nicht vorab abgezogen."
     },
     {
       "id": "plate",
@@ -438,14 +503,14 @@
     {
       "id": "collective",
       "label": "Collective",
-      "value": "Vesper · Valeria · Tacitus · Calliaste",
-      "note": "140 ft · sechs mögliche Mitglieder neben Styke; zwei Plätze frei."
+      "value": "Vesper · Valeria · 4 flexible Plätze",
+      "note": "Vesper und Valeria standardmäßig; vier flexible Plätze für willige aktuelle Teilnehmer nach Stykes Absicht. Maximal sechs andere Wesen, 140 ft; freier Wechsel ohne PP. Keine passiven Gedanken oder Sinnesteilung."
     },
     {
       "id": "atelier",
       "label": "Atelier",
-      "value": "90 GM netto / Monat",
-      "note": "27. September tatsächlich verbucht; nächster Monatslauf frühestens 27. Oktober."
+      "value": "Whitequarter · Ghastenhall",
+      "note": "Farholde geschlossen, neue Werkstatt aktiv."
     }
   ],
   "people": [
@@ -485,83 +550,89 @@
     "hester",
     "linnet",
     "traya-demarco",
-    "valenne"
+    "valenne",
+    "izevel"
   ],
   "party": [
     {
       "id": "styke",
       "name": "Styke",
-      "class": "Zealot 4 / Psion 1 / Awakened Blade 4",
+      "class": "Zealot 4 / Psion 1 / Awakened Blade 5",
       "hp": {
-        "current": 54,
-        "max": 60
+        "current": 66,
+        "max": 66
       },
       "conditions": [],
-      "state": "Erdbeben ohne Verletzung überstanden. Level-9-Meilenstein aktiviert; keine zusätzliche Regeneration.",
-      "resourceNote": "54/60 TP · 26/33 PP; psionischer Fokus zuletzt vorhanden. Siebtes Readied-Manöver: Abyssal Lance, wirksam nach nächster rechtmäßiger 10-Minuten-Vorbereitung.",
-      "gearNote": "Aktives Stufe-9-Kampfprofil: normale kompatible Ausrüstung, DEX-Gürtel +4, CHA-Stirnreif +4 und Eyes of the Eagle. Inner Eye +3 nur in der entsprechenden Stance. Vorherige Ausgaben bleiben bestehen.",
+      "state": "Später Abend am Crowley-Anwesen. Reguläre Tageserholung bereits erfolgt.",
+      "resourceNote": "44/44 PP · beide Foki gehalten · Bilious Strike im letzten Kampf eingesetzt; keine zusätzliche Erholung erfunden.",
+      "gearNote": "Iron Circlet +2 INT zurück und normalerweise getragen; INT 16 (+3). Inner Eye als Standard. Vesper und Valeria standardmäßig; vier flexible Plätze für willige aktuelle Teilnehmer nach Stykes Absicht. Maximal sechs andere Wesen, 140 ft; freier Wechsel ohne PP. Keine passiven Gedanken oder Sinnesteilung.",
       "pp": {
-        "current": 26,
-        "max": 33
+        "current": 44,
+        "max": 44
       },
       "focus": true
     },
     {
       "id": "vesper",
       "name": "Vesper",
-      "class": "Oracle (Spirit Guide) 9",
+      "class": "Oracle (Spirit Guide) 10",
       "hp": {
-        "current": 43,
-        "max": 48
+        "current": 53,
+        "max": 53
       },
       "conditions": [],
-      "state": "Erdbeben ohne Verletzung überstanden. Grumblejack gerettet und geheilt; kein Gratis-Rest durch Levelaufstieg.",
-      "resourceNote": "8/8/8/5 maximale Slots nach regulärer Erholung. Heute Cure Serious Wounds und Cure Critical Wounds auf Grumblejack verbraucht, übrige Restplätze nicht durch den Levelaufstieg ergänzt. Decree of Silence als viertes Readied-Manöver gewählt, wirksam nach Vorbereitung. Stone Shape für die nächste legale tägliche Auswahl geplant.",
-      "gearNote": "Aktives Stufe-9-Kampfprofil, normale getragene kompatible Ausrüstung. Argossarian weiterhin in ihrer Silberfigur; keine spontane Freisetzung durch den Levelaufstieg.",
+      "state": "Später Abend am Crowley-Anwesen; tatsächlicher Zauberverbrauch des 29. Oktober berücksichtigt.",
+      "resourceNote": "Grade 1–5: 8/8, 6/8, 5/8, 6/6, 3/4. Heroism, zwei Greater Magic Weapon, zwei CMW (ein SR-Fehlschlag) und einmal Teleport verbraucht.",
+      "gearNote": "Iron Circlet +2 INT und Cracked Pale Green Prism getragen. Argossarian in Silberfigur. Verse-Anwesenheit am Hof nicht ausdrücklich bestätigt.",
       "verse": {
-        "present": true,
+        "present": false,
         "hpCurrent": null,
-        "hpMax": 24
+        "hpMax": 26
       },
       "slots": [
         {
           "level": 1,
-          "current": null,
+          "current": 8,
           "max": 8
         },
         {
           "level": 2,
-          "current": null,
+          "current": 6,
           "max": 8
         },
         {
           "level": 3,
-          "current": null,
+          "current": 5,
           "max": 8
         },
         {
           "level": 4,
-          "current": null,
-          "max": 5
+          "current": 6,
+          "max": 6
+        },
+        {
+          "level": 5,
+          "current": 3,
+          "max": 4
         }
       ],
       "essence": {
         "total": 4,
-        "standard": "2 Witness to Glory · 2 Disrupt Essence · 0 Armaments; aktuelle Investition nicht ohne Erklärung ändern."
+        "standard": "2 Witness to Glory · 2 Disrupt Essence · 0 Armaments als Standard; tatsächliche Investition nicht ungefragt ändern."
       }
     },
     {
       "id": "valeria",
       "name": "Valeria",
-      "class": "Antipaladin 9 · Tyrant / Lord of Darkness",
+      "class": "Antipaladin 10 · Tyrant / Lord of Darkness",
       "hp": {
-        "current": 52,
-        "max": 58
+        "current": 64,
+        "max": 64
       },
       "conditions": [],
-      "state": "Erdbeben ohne Verletzung überstanden. Nach der Schadensaufnahme mit Styke und Vesper im Sanctum; keine Gratis-Regeneration.",
-      "resourceNote": "Smite 3/Tag, Touch of Corruption 11/Tag; verbleibende Tagesnutzungen und heutige vorbereitete Zauber nicht durch den Levelaufstieg aufgefüllt. Neuer Grad-1-Standardsatz erst nach nächster Vorbereitung.",
-      "gearNote": "Aktives Stufe-9-Kampfprofil mit STR20, CHA25, +1 Cruel-Großschwert und Shadow-Platte; Furious Focus auf den ersten passenden Zweihand-Power-Attack-Angriff."
+      "state": "Später Abend am Crowley-Anwesen. Keine neue Erholung oder zusätzliche Nutzung.",
+      "resourceNote": "Smite 4/4 · Touch of Corruption 12/12 · Zauber 4/4, 3/3, 2/2.",
+      "gearNote": "Western Star normalerweise aktiv: behält eigenes Aussehen und verbirgt beide kreisenden Ioun Stones, einschließlich Cracked Dusty Rose Prism. Kein geliehener Iron Circlet mehr."
     }
   ]
 }

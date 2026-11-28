@@ -4,11 +4,11 @@
     "kind": "wotw-hud-party",
     "generatedView": true,
     "playerSafe": true,
-    "source": "danceofruin/wotwGPT aktuelles Level-9-Kernpaket; akzeptierter Meilenstein am 5. Oktober",
-    "updated": "2026-11-20",
-    "revision": "party-4712-10-05-postquake-level9",
-    "sourceCampaignEdge": "5. Oktober 4712 AR · Abend nach Erdbeben",
-    "campaignDate": "4712-10-05"
+    "source": "Geprüftes Stufe-10-Kernpaket und bestätigter Spielerstand",
+    "updated": "2026-11-28",
+    "revision": "party-4712-10-29-level10",
+    "sourceCampaignEdge": "29. Oktober 4712 AR · später Abend",
+    "campaignDate": "4712-10-29"
   },
   "ui": {
     "defaultCharacterOpen": "",
@@ -27,15 +27,15 @@
           "items": [
             {
               "name": "Fortitude",
-              "tag": "+11"
+              "tag": "+12"
             },
             {
               "name": "Reflex",
-              "tag": "+15"
+              "tag": "+16"
             },
             {
               "name": "Will",
-              "tag": "+14"
+              "tag": "+15"
             }
           ]
         },
@@ -46,11 +46,11 @@
           "items": [
             {
               "name": "BAB",
-              "tag": "+8/+3"
+              "tag": "+9/+4"
             },
             {
               "name": "CMB / CMD",
-              "tag": "+14 / 27"
+              "tag": "+15 / 28"
             },
             {
               "name": "Bewegung",
@@ -60,7 +60,7 @@
         },
         {
           "id": "readied",
-          "label": "Vorbereitete Manöver · 6",
+          "label": "Vorbereitete Manöver · 7",
           "type": "maneuvers",
           "items": [
             {
@@ -75,7 +75,7 @@
             },
             {
               "name": "Minute Hand",
-              "detail": "Zusatzangriff +14 · 2d6+23 +1d6 Präzision.",
+              "detail": "Zusatzangriff +15 · 2d6+23 +1d6 Präzision.",
               "tag": "Swift"
             },
             {
@@ -85,7 +85,7 @@
             },
             {
               "name": "Fetch’s Wrath",
-              "detail": "Teleport bis 190 ft und Angriff +16 · 2d6+23 +4d6 +1d6 Präzision.",
+              "detail": "Teleport bis 190 ft und Angriff +17 · 2d6+23 +4d6 +1d6 Präzision.",
               "tag": "Standard"
             },
             {
@@ -95,11 +95,11 @@
             },
             {
               "name": "Abyssal Lance",
-              "detail": "Neu gewählt, ab nächster 10-min-Vorbereitung: Berührungsangriff +15 auf 70 ft, 8d6 profan, 1 Runde stunned bei Fehlschlag.",
+              "detail": "Berührungsangriff +16 auf 70 ft, 8d6 profan, 1 Runde stunned bei Fehlschlag.",
               "tag": "Fort SG 20"
             }
           ],
-          "title": "Vorbereitete Manöver · 7 (Slot 7 nach nächster Vorbereitung)"
+          "title": "Vorbereitete Manöver · 7"
         },
         {
           "id": "reserve",
@@ -107,13 +107,13 @@
           "type": "list",
           "items": [
             {
-              "name": "Rapid Strike",
-              "detail": "Zwei getrennte Angriffe gegen dasselbe Ziel.",
-              "tag": "Standard"
+              "name": "Vengeful Riposte",
+              "detail": "Bekannt, nicht vorbereitet.",
+              "tag": "Reserve"
             },
             {
               "name": "Obsidian Sidestep",
-              "detail": "Craft (Weapons)+9 statt eines passenden Rettungswurfs.",
+              "detail": "Craft (Weapons) +10 statt eines passenden Rettungswurfs.",
               "tag": "Immediate"
             },
             {
@@ -134,7 +134,7 @@
           "type": "spell-groups",
           "groups": [
             {
-              "label": "Grad 1 · ML4",
+              "label": "Grad 1 · ML5",
               "items": [
                 "Minor Metamorphosis",
                 "Defensive Precognition",
@@ -153,6 +153,13 @@
               ]
             },
             {
+              "label": "Grad 3 · je 5 PP",
+              "items": [
+                "Metamorphosis",
+                "Touchsight"
+              ]
+            },
+            {
               "label": "Talente · ohne PP",
               "items": [
                 "Detect Psionics",
@@ -161,7 +168,7 @@
               ]
             }
           ],
-          "subtitle": "ML 4 · Tagesmaximum 33 PP, aktuell 26; maximal 4 PP pro Manifestation."
+          "subtitle": "44 PP · ML5 · INT16; tatsächlich manifeste Kräfte kosten PP."
         },
         {
           "id": "power-notes",
@@ -170,19 +177,19 @@
           "items": [
             {
               "name": "Minor Metamorphosis",
-              "detail": "1 PP/4 min; bei 3 PP zusätzliche Auswahl über Augmentation."
+              "detail": "1 PP/5 min; weitere Auswahl durch Augmentation."
             },
             {
               "name": "Force Screen",
-              "detail": "1 PP/4 min, +4 Schildbonus; Standard-Inner-Eye-Profil AC 29."
+              "detail": "1 PP/5 min, +4 Schildbonus; Standard-Inner-Eye-Profil AC 29."
             },
             {
               "name": "Chameleon",
-              "detail": "3 PP/40 min · +10 Stealth → +29."
+              "detail": "3 PP/50 min · +10 Stealth → +30."
             },
             {
               "name": "Energy Adaptation, Specified",
-              "detail": "3 PP/40 min · Resistenz 10 gegen aktuellen Energietyp."
+              "detail": "3 PP/50 min · Resistenz 10 gegen den gewählten Energietyp."
             },
             {
               "name": "Resist Toxin",
@@ -195,6 +202,10 @@
             {
               "name": "Call to Mind",
               "detail": "1 PP/1 min · Knowledge nach Fehlschlag mit +4 Kompetenz wiederholen."
+            },
+            {
+              "name": "Metamorphosis / Touchsight",
+              "detail": "Grad 3, je 5 PP; konkrete Auswahl und Wirkung nach Kraftregel."
             }
           ]
         },
@@ -209,7 +220,7 @@
             },
             {
               "name": "The Caged Sun",
-              "detail": "2 Essenz: Heilung floor((eingehend+4)×1,5); freier Eintritt bei höchstens 30 TP."
+              "detail": "2 Essenz: Heilung floor((eingehend+4)×1,5); freier Eintritt bei höchstens 33 TP."
             },
             {
               "name": "Black Seraph’s Glare",
@@ -217,7 +228,7 @@
             },
             {
               "name": "Unbroken Stride",
-              "detail": "Neu: Wände, Decken, Wasser und unsichere Flächen begehen; auf IL9 noch KEIN Flug."
+              "detail": "Flug 40 ft (good), kein Hover standardmäßig; Inner Eye nicht gleichzeitig."
             }
           ]
         },
@@ -228,7 +239,7 @@
           "items": [
             {
               "name": "Compartmentalized Aid",
-              "detail": "Move: Aid +4 Angriff oder AC gegen den gewählten Gegner; bis 5 Manöver recovern; Zeal aktivieren."
+              "detail": "Move; Helpful +4 Angriff, +5 AC/Skill bei erfolgreicher Hilfe; bis 5 Manöver recovern."
             },
             {
               "name": "Zeal",
@@ -257,6 +268,14 @@
             {
               "name": "Combat Tenacity",
               "detail": "Gezielte Swift/Immediate-Ausnahme für passende Manöver; keine allgemein kostenlose zweite Swift."
+            },
+            {
+              "name": "Collective",
+              "detail": "Vesper/Valeria Standard; vier flexible Plätze nach Absicht. Maximal sechs andere willige Wesen, 140 ft; Wechsel frei, keine PP."
+            },
+            {
+              "name": "Precognitive Defenses",
+              "detail": "Ein tatsächlicher Fokus für einen zulässigen vorbereiteten Counter als freie Aktion außerhalb des Zuges."
             }
           ]
         },
@@ -275,7 +294,7 @@
             },
             {
               "name": "Craft (Weapons)",
-              "tag": "+9"
+              "tag": "+10"
             },
             {
               "name": "Diplomacy",
@@ -287,23 +306,23 @@
             },
             {
               "name": "Knowledge (All)",
-              "tag": "+14"
+              "tag": "+16"
             },
             {
               "name": "Perception",
-              "tag": "+17 mit Eyes of the Eagle"
+              "tag": "+18 mit Eyes of the Eagle"
             },
             {
               "name": "Stealth",
-              "tag": "+19"
+              "tag": "+20"
             },
             {
               "name": "Spellcraft",
-              "tag": "+12"
+              "tag": "+15"
             },
             {
               "name": "Bluff",
-              "tag": "+9"
+              "tag": "+10"
             }
           ]
         },
@@ -318,11 +337,11 @@
             },
             {
               "name": "Power Attack / Deadly Agility",
-              "detail": "−3 Angriff / +9 Zweihand-Schaden bei BAB8; Deadly Agility mit 1,5×DEX nach Hausregel."
+              "detail": "−3 Angriff / +9 Zweihand-Schaden bei BAB9; Deadly Agility mit 1,5×DEX nach Hausregel."
             },
             {
               "name": "Extra Readied Maneuver",
-              "detail": "Zwei Kopien; insgesamt 7 Readied-Slots, Slot 7 = Abyssal Lance ab nächster Vorbereitung."
+              "detail": "Zwei Kopien; insgesamt 7 vorbereitete Manöver."
             },
             {
               "name": "Advanced Study",
@@ -357,7 +376,7 @@
             },
             {
               "name": "INT",
-              "tag": "14"
+              "tag": "16 (14 +2 eigener Iron Circlet)"
             },
             {
               "name": "WIS",
@@ -397,25 +416,21 @@
             },
             {
               "name": "Head / Headband",
-              "detail": "Iron Circlet (Head) und CHA-Stirnreif (Headband) sind kompatibel. Stykes Circlet ist an Valeria verliehen."
+              "detail": "Eigener Iron Circlet mit +2 INT zurück und getragen; kompatibel mit CHA-Headband."
             }
           ]
         },
         {
           "id": "plan",
-          "label": "Fester Plan9/10",
+          "label": "Aktiver Build",
           "type": "list",
           "items": [
             {
-              "name": "Level 9 · aktiv",
-              "detail": "Awakened Blade 4, Combat Tenacity, Extra Readied#2, Abyssal Lance und Unbroken Stride erhalten."
-            },
-            {
-              "name": "Level 10 · geplant",
-              "detail": "Rapid Strike → Vengeful Riposte; Abyssal Lance bleibt bekannt."
+              "name": "Awakened Blade 5",
+              "detail": "IL10, ML5; Vengeful Riposte bekannt statt Rapid Strike, Metamorphosis und Touchsight gelernt."
             }
           ],
-          "title": "Level-9-Stand und bekannter Plan"
+          "title": "Stufe 10 · aktiv"
         }
       ],
       "summaryResources": [
@@ -456,7 +471,7 @@
             },
             {
               "name": "Will",
-              "tag": "+13"
+              "tag": "+14"
             }
           ]
         },
@@ -467,11 +482,11 @@
           "items": [
             {
               "name": "BAB",
-              "tag": "+6/+1"
+              "tag": "+7/+2"
             },
             {
               "name": "CMB / CMD",
-              "tag": "+6 / 18"
+              "tag": "+7 / 19"
             },
             {
               "name": "Bewegung",
@@ -513,22 +528,29 @@
               "items": [
                 "Delay Poison, Communal",
                 "Dispel Magic",
-                "Magic Vestment",
+                "Align Weapon, Communal",
                 "Cure Serious Wounds",
                 "Locate Object"
               ]
             },
             {
-              "label": "Grad 4 · 5 Plätze/Tag",
+              "label": "Grad 4 · 6 Plätze/Tag",
               "items": [
                 "Freedom of Movement",
                 "Sending",
                 "Cure Critical Wounds",
                 "Legend Lore"
               ]
+            },
+            {
+              "label": "Grad 5 · 4 Plätze/Tag",
+              "items": [
+                "Breath of Life",
+                "Cure line (automatisch)"
+              ]
             }
           ],
-          "subtitle": "CL9 · Konzentration+16 · Zauber-SG 18/19/20/21 (Grad1–4); Kapazitäten, kein Gratis-Rest."
+          "subtitle": "Oracle 10 · CL10 · Grade 1–5"
         },
         {
           "id": "arcane-enlightenment",
@@ -538,7 +560,6 @@
             {
               "label": "Grad 1",
               "items": [
-                "Alarm",
                 "Silent Image"
               ]
             },
@@ -556,6 +577,12 @@
                 "Stinking Cloud",
                 "Greater Magic Weapon"
               ]
+            },
+            {
+              "label": "Grad 5",
+              "items": [
+                "Teleport"
+              ]
             }
           ],
           "subtitle": "7 tägliche Arcane-Enlightenment-Auswahlen, Standardliste unverändert. Stone Shape erst ab nächster legaler Auswahl geplant."
@@ -567,23 +594,23 @@
           "items": [
             {
               "name": "Heroism",
-              "detail": "90 min · +2 Moral auf Angriffe, Rettungswürfe und Fertigkeiten; stapelt nicht mit gleichem Typ."
+              "detail": "100 min · +2 Moral auf Angriffe, Rettungswürfe und Fertigkeiten."
             },
             {
               "name": "Greater Magic Weapon",
-              "detail": "9 h · +2 Waffenverbesserung; auf bestehender +1-Waffe netto +1 Angriff/Schaden."
+              "detail": "10 h · +2 Waffenverbesserung; auf +1-Waffe netto +1 Angriff/Schaden."
             },
             {
               "name": "Ashen Path",
-              "detail": "90 min Gesamtbudget; Sicht durch passenden Nebel/Rauch bis 60 ft."
+              "detail": "100 min Gesamtbudget; Sicht durch passenden Nebel/Rauch."
             },
             {
               "name": "Stinking Cloud",
-              "detail": "9 Runden ·20 ft Radius · Fort SG 20; Nebel und Nauseated nach normalen Regeln."
+              "detail": "10 Runden · 20 ft Radius · Fort SG 20."
             },
             {
               "name": "Freedom of Movement",
-              "detail": "90 min · gegen die genannten Bewegungshindernisse, kein universeller Schutz."
+              "detail": "100 min · gegen die genannten Bewegungshindernisse."
             },
             {
               "name": "Berührungszauber · ursprüngliches Wirken",
@@ -591,7 +618,7 @@
             },
             {
               "name": "Stone Shape · geplant",
-              "detail": "Erst bei nächster rechtmäßiger Arcane-Enlightenment-Auswahl; heutige Zauberplätze/Zauberauswahl nicht rückwirkend ändern."
+              "detail": "Nicht in aktueller Standardauswahl; nur nach rechtmäßiger neuer Arcane-Enlightenment-Auswahl."
             }
           ]
         },
@@ -610,7 +637,8 @@
                 "Guidance",
                 "Enhanced Diplomacy",
                 "Detect Poison",
-                "Mending"
+                "Mending",
+                "Stabilize"
               ]
             }
           ]
@@ -622,12 +650,12 @@
           "items": [
             {
               "name": "Witness to Glory",
-              "detail": "2 Essenz: +9 Initiative und 15 temporäre TP; bindet nächste Swift.",
+              "detail": "2 Essenz: +9 Initiative, 16 temporäre TP für 12 min; tatsächlicher Counter.",
               "tag": "Immediate"
             },
             {
               "name": "Disrupt Essence",
-              "detail": "Sun’s Gleam +8 Berührungsangriff; zwei passende Fähigkeiten bis 9 Runden unterdrücken.",
+              "detail": "Sun’s Gleam +10 Berührungsangriff; passende Fähigkeiten nach aktueller Manöverregel unterdrücken.",
               "tag": "Will SG 26"
             },
             {
@@ -637,7 +665,7 @@
             },
             {
               "name": "Decree of Silence",
-              "detail": "4. Ready ab nächster Vorbereitung: Immediate Counter gegen passende gewirkte Zauber/Kräfte innerhalb 50 ft.",
+              "detail": "Immediate Counter; hypothetischer Schaden 1d6+7, Konzentrations-SG 10+Schaden+Zaubergrad.",
               "tag": "Immediate"
             },
             {
@@ -656,7 +684,7 @@
               "tag": "Reserve"
             }
           ],
-          "title": "Manöver · 4 Ready ab Vorbereitung"
+          "title": "Manöver · 4 vorbereitet"
         },
         {
           "id": "stances",
@@ -688,7 +716,7 @@
           "items": [
             {
               "name": "Elemental Shield",
-              "detail": "Resistenz11 gegen aktiven Energietyp."
+              "detail": "Resistenz12 gegen aktiven Energietyp."
             },
             {
               "name": "Ghost Eating Blade",
@@ -724,7 +752,7 @@
             },
             {
               "name": "Illusionary State",
-              "detail": "1d4+3 Spiegelbilder; höchstens 8 Runden."
+              "detail": "1d4+4 Spiegelbilder; tatsächliche Glyphendauer beachten."
             },
             {
               "name": "Wind Speed",
@@ -732,7 +760,7 @@
             },
             {
               "name": "Death Shield",
-              "detail": "Negative-Energie-Resistenz11; +4 gegen Energiedrain/negative Energie."
+              "detail": "Negative-Energie-Resistenz12; +4 gegen Energiedrain/negative Energie."
             },
             {
               "name": "Hardened Armor",
@@ -744,7 +772,7 @@
             },
             {
               "name": "Dispelling Burn",
-              "detail": "Gezieltes Greater Dispel Magic CL11 (+11) und 1d4 je tatsächlich aufgehobenem Zaubergrad."
+              "detail": "Gezieltes Greater Dispel Magic CL12 (+12) und 1d4 je tatsächlich aufgehobenem Zaubergrad."
             },
             {
               "name": "Drowning Curse",
@@ -788,7 +816,7 @@
           "items": [
             {
               "name": "Werte",
-              "detail": "24 TP Maximum · INT10 · natürliche Rüstung +5; tatsächliche aktuelle TP nicht geraten."
+              "detail": "26 TP Maximum; tatsächliche Anwesenheit und TP nicht geraten."
             },
             {
               "name": "Unterstützung",
@@ -803,15 +831,15 @@
           "items": [
             {
               "name": "Bluff",
-              "tag": "+12"
+              "tag": "+13"
             },
             {
               "name": "Disable Device",
-              "tag": "+18 / +20 mit Meisterwerkzeug"
+              "tag": "+19 / +21 mit Meisterwerkzeug"
             },
             {
               "name": "Diplomacy",
-              "tag": "+19"
+              "tag": "+20"
             },
             {
               "name": "Heal",
@@ -819,11 +847,11 @@
             },
             {
               "name": "Knowledge (All)",
-              "tag": "+18"
+              "tag": "+20"
             },
             {
               "name": "Perception",
-              "tag": "+13"
+              "tag": "+14"
             },
             {
               "name": "Sense Motive",
@@ -831,11 +859,11 @@
             },
             {
               "name": "Spellcraft",
-              "tag": "+14"
+              "tag": "+16"
             },
             {
               "name": "Stealth",
-              "tag": "+18"
+              "tag": "+19"
             },
             {
               "name": "Survival",
@@ -858,7 +886,7 @@
             },
             {
               "name": "Mental Acuity",
-              "detail": "INT14; nächste Steigerung aufOracle10."
+              "detail": "INT15 Basis; INT17 mit eigenem +2 Iron Circlet."
             },
             {
               "name": "Martial Training III / Extra Revelation / Improved Initiative"
@@ -906,7 +934,7 @@
             },
             {
               "name": "Head / Headband",
-              "detail": "Iron Circlet (Head) und CHA-Stirnreif (Headband) sind kompatibel. Stykes Circlet ist an Valeria verliehen."
+              "detail": "Eigenes Iron Circlet +2 INT und CHA-Headband kompatibel; Cracked Pale Green Prism +1 Kompetenz Angriff."
             },
             {
               "name": "Wand of Lesser Restoration",
@@ -953,7 +981,7 @@
           "items": [
             {
               "name": "Fortitude",
-              "tag": "+16"
+              "tag": "+17"
             },
             {
               "name": "Reflex",
@@ -961,7 +989,7 @@
             },
             {
               "name": "Will",
-              "tag": "+16"
+              "tag": "+17"
             }
           ]
         },
@@ -972,11 +1000,11 @@
           "items": [
             {
               "name": "BAB",
-              "tag": "+9/+4"
+              "tag": "+10/+5"
             },
             {
               "name": "CMB / CMD",
-              "tag": "+14 / 25"
+              "tag": "+15 / 26"
             },
             {
               "name": "Bewegung",
@@ -1003,10 +1031,17 @@
                 "Blade Tutor’s Spirit ×2",
                 "Darkvision"
               ]
+            },
+            {
+              "label": "Grad 3 ·2 Plätze",
+              "items": [
+                "Accursed Glare",
+                "Vigilant Rest"
+              ]
             }
           ],
           "subtitle": "CL6 · Konzentration+13 · SG18/19. Heutige vorbereitete Kopien bleiben erhalten, keine Gratis-Vorbereitung.",
-          "title": "Zauber · Stufe-9-Standard ab nächster Vorbereitung"
+          "title": "Zauber · Stufe-10-Standard"
         },
         {
           "id": "daily-resources",
@@ -1015,11 +1050,11 @@
           "items": [
             {
               "name": "Smite Good",
-              "tag": "3/Tag"
+              "tag": "4/Tag"
             },
             {
               "name": "Touch of Corruption",
-              "tag": "11/Tag"
+              "tag": "12/Tag"
             },
             {
               "name": "Challenge",
@@ -1047,7 +1082,7 @@
             },
             {
               "name": "Demoralize",
-              "detail": "+23 gewöhnlich; gegen lebende Ziele innerhalb 10 ft mit Obedience +27."
+              "detail": "+20 regulär, +24 mit Air Grievances, +28 unter qualifizierender Aura."
             },
             {
               "name": "Air Grievances",
@@ -1066,11 +1101,11 @@
           "items": [
             {
               "name": "Power Attack",
-              "detail": "Erster PA-Angriff +15 durch Furious Focus; Folgeangriff +7; je 2d6+17."
+              "detail": "Erster PA-Angriff +16 durch Furious Focus; Folgeangriff +8; je 2d6+17."
             },
             {
               "name": "Smite Good",
-              "detail": "Swift; gegen Good +7 Angriff und +9 Schaden/Treffer; +7 Deflection gegen Ziel."
+              "detail": "Swift; gegen Good +7 Angriff, +10 Schaden bzw. +20 erster Treffer gegen qualifizierte Gegner; +7 Deflection gegen Ziel."
             },
             {
               "name": "Cornugon Smash",
@@ -1086,11 +1121,11 @@
             },
             {
               "name": "Conductive",
-              "detail": "1 Treffer/Runde, 2 Touch-Nutzungen, 4d6 negative Energie +1 Cruelty; nur wenn tatsächlich verliehen."
+              "detail": "1 Treffer/Runde, 2 Touch-Nutzungen, 5d6 negative Energie +1 Cruelty; nur wenn tatsächlich verliehen."
             },
             {
               "name": "Staggered Cruelty",
-              "detail": "Fort SG21; bei Fehlschlag 4 Runden staggered; alternative Cursed-Cruelty möglich."
+              "detail": "Fort SG22; Staggered oder andere zulässige Cruelty."
             },
             {
               "name": "Debuff-Kombination",
@@ -1098,7 +1133,7 @@
             },
             {
               "name": "Cursed Cruelty · neu",
-              "detail": "Fort SG21: Bestow Curse, normalerweise −4 auf Angriff, Saves, Fertigkeiten und Attributsproben; kein AC-Malus."
+              "detail": "Fort SG22: Bestow Curse, gewöhnlich −4 auf Angriff, Saves, Skills und Attributsproben."
             }
           ]
         },
@@ -1109,7 +1144,7 @@
           "items": [
             {
               "name": "Aktivierung",
-              "detail": "Standard ·9 min ·Budget+2."
+              "detail": "Standard ·10 min ·Budget+2."
             },
             {
               "name": "Standardoption",
@@ -1128,11 +1163,11 @@
           "items": [
             {
               "name": "Blade Tutor’s Spirit",
-              "detail": "6 min · PA−3 wird −1 solange aktiv, kein Schadensbonus."
+              "detail": "7 min · PA−3 wird −1 solange aktiv, kein Schadensbonus."
             },
             {
               "name": "Darkvision",
-              "detail": "6 h ·60 ft Dunkelsicht."
+              "detail": "7 h ·60 ft Dunkelsicht."
             },
             {
               "name": "Litany of Sloth",
@@ -1141,6 +1176,10 @@
             {
               "name": "Murderous Command",
               "detail": "Grad1, Standard, 40 ft, Will SG18; Ziel greift nächsten Verbündeten im Folgezug an, wenn möglich."
+            },
+            {
+              "name": "Accursed Glare / Vigilant Rest",
+              "detail": "Grad 3; Accursed Glare volle Runde, Vigilant Rest Standard, Berührung, 8 h."
             }
           ]
         },
@@ -1151,15 +1190,15 @@
           "items": [
             {
               "name": "Challenge",
-              "detail": "Swift: +7 Nahkampfschaden; −2 AC gegen andere Gegner."
+              "detail": "Swift: +8 Nahkampfschaden; −2 AC gegen andere Gegner."
             },
             {
               "name": "Touch of Corruption",
-              "detail": "Standard-Touch:4d6; Fatigued oder Staggered als Cruelty."
+              "detail": "Standard-Touch: 5d6, eine zulässige Cruelty."
             },
             {
               "name": "Channel Negative Energy",
-              "detail": "Standard ·30 ft Radius ·5d6 negativ ·Will SG21 halbiert; kostet 2 Touch, trifft auch lebende Verbündete."
+              "detail": "Standard, 30 ft Radius, 5d6 negativ, kostet 2 Touch-Nutzungen."
             },
             {
               "name": "Unholy Resilience",
@@ -1174,19 +1213,19 @@
           "items": [
             {
               "name": "Intimidate",
-              "tag": "+19 gewöhnlich; mit VMC +23, Obedience situativ +27"
+              "tag": "+20 regulär / +24 Air Grievances / +28 situativ"
             },
             {
               "name": "Diplomacy",
-              "tag": "+19"
+              "tag": "+20"
             },
             {
               "name": "Sense Motive",
-              "tag": "+12"
+              "tag": "+13"
             },
             {
               "name": "Stealth",
-              "tag": "+13 mit Shadow-Platte / +13 ohne Rüstung"
+              "tag": "+14 mit Shadow"
             }
           ]
         },
@@ -1203,7 +1242,7 @@
             },
             {
               "name": "Boots / Ioun Stone",
-              "detail": "Boots getragen:30 ft; Prism normal kreisend:+1 Initiative."
+              "detail": "Boots getragen:30 ft; Cracked Dusty Rose Prism normal kreisend, +1 Initiative."
             },
             {
               "name": "Corset",
@@ -1215,7 +1254,7 @@
             },
             {
               "name": "Head / Headband",
-              "detail": "Iron Circlet (Head) und CHA-Stirnreif (Headband) sind kompatibel. Stykes Circlet ist an Valeria verliehen."
+              "detail": "Kein geliehener Iron Circlet mehr. Western Star normalerweise aktiv, beide Ioun Stones verborgen, eigenes Aussehen."
             },
             {
               "name": "Ring of Feather Falling",
@@ -1247,52 +1286,56 @@
   "resourceDefaults": {
     "styke": {
       "hp": {
-        "current": 54,
-        "max": 60
+        "current": 66,
+        "max": 66
       },
       "pp": {
-        "current": 26,
-        "max": 33
+        "current": 44,
+        "max": 44
       },
       "focus": true,
-      "deepFocus": null
+      "deepFocus": true
     },
     "vesper": {
       "hp": {
-        "current": 43,
-        "max": 48
+        "current": 53,
+        "max": 53
       },
       "slots": {
         "1": {
-          "current": null,
+          "current": 8,
           "max": 8
         },
         "2": {
-          "current": null,
+          "current": 6,
           "max": 8
         },
         "3": {
-          "current": null,
+          "current": 5,
           "max": 8
         },
         "4": {
-          "current": null,
-          "max": 5
+          "current": 6,
+          "max": 6
+        },
+        "5": {
+          "current": 3,
+          "max": 4
         }
       }
     },
     "valeria": {
       "hp": {
-        "current": 52,
-        "max": 58
+        "current": 64,
+        "max": 64
       },
       "smite": {
-        "current": null,
-        "max": 3
+        "current": 4,
+        "max": 4
       },
       "corruption": {
-        "current": null,
-        "max": 11
+        "current": 12,
+        "max": 12
       },
       "challenge": {
         "current": null,
